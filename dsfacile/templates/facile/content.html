@@ -1,4 +1,4 @@
-{% load i18n dsfr_tags %}
+{% load i18n dsfacile_tags %}
 <figure class="facile-content-media{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
         role="group"
         {% if self.caption %} aria-label="{{ self.caption }}"{% endif %}>
@@ -26,6 +26,6 @@
     </figcaption>
   {% endif %}
   {% if self.transcription %}
-    {% dsfr_transcription self.transcription %}
+    {% dsfacile_transcription self.transcription %}
   {% endif %}
 </figure>

@@ -1,4 +1,4 @@
-{% load widget_tweaks dsfr_tags %}
+{% load widget_tweaks dsfacile_tags %}
 <fieldset class="facile-fieldset{% if field.errors %} facile-fieldset--error{% endif %}"
           id="radio-{{ field.auto_id }}"
           aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
@@ -15,9 +15,9 @@
   <div class="facile-fieldset__content">
     <div class="facile-radio-group">
       {% if field.field.disabled %}
-        {{ field|dsfr_input_class_attr|attr:"type:radio"|attr:"disabled" }}
+        {{ field|dsfacile_input_class_attr|attr:"type:radio"|attr:"disabled" }}
       {% else %}
-        {{ field|dsfr_input_class_attr|attr:"type:radio" }}
+        {{ field|dsfacile_input_class_attr|attr:"type:radio" }}
       {% endif %}
     </div>
   </div>

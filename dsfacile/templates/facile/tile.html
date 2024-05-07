@@ -1,4 +1,4 @@
-{% load dsfr_tags %}
+{% load dsfacile_tags %}
 <div class="facile-tile{% if self.enlarge_link %} facile-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
      {% if self.id %}id="{{ self.id }}"{% endif %}>
   <div class="facile-tile__body">
@@ -22,7 +22,7 @@
             <ul class="facile-tags-group">
               {% for tag in self.top_detail.tags %}
                 <li>
-                  {% dsfr_tag tag %}
+                  {% dsfacile_tag tag %}
                 </li>
               {% endfor %}
             </ul>
@@ -30,7 +30,7 @@
             <ul class="facile-badges-group">
               {% for badge in self.top_detail.badges %}
                 <li>
-                  {% dsfr_badge badge %}
+                  {% dsfacile_badge badge %}
                 </li>
               {% endfor %}
             </ul>

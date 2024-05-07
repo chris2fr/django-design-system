@@ -1,4 +1,4 @@
-{% load dsfr_tags %}
+{% load dsfacile_tags %}
 <div class="facile-callout {% if self.icon_class %}{{ self.icon_class }}{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% if self.title %}
     <{{ self.heading_tag | default:"p" }} class="facile-callout__title">
@@ -10,7 +10,7 @@
   </p>
   {% if self.button %}
     {% if self.button.onclick %}
-      {% dsfr_button self.button %}
+      {% dsfacile_button self.button %}
     {% elif self.button.url %}
       <a href="{{ self.button.url }}" class="facile-btn">{{ self.button.label }}</a>
     {% endif %}

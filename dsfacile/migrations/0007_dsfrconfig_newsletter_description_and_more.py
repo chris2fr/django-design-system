@@ -7,33 +7,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("dsfr", "0006_alter_dsfrconfig_accessibility_status"),
+        ("dsfacile", "0006_alter_dsfacileconfig_accessibility_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="newsletter_description",
             field=models.TextField(
                 blank=True, default="", verbose_name="Description de la newsletter"
             ),
         ),
         migrations.AddField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="newsletter_url",
             field=models.URLField(
                 blank=True, default="", verbose_name="URL d’inscription à la newsletter"
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="notice",
             field=models.TextField(
                 blank=True, default="", verbose_name="Bandeau d’information importante"
             ),
         ),
         migrations.CreateModel(
-            name="DsfrSocialMedia",
+            name="dsfacileSocialMedia",
             fields=[
                 (
                     "id",
@@ -65,7 +65,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="dsfr.dsfrconfig",
+                        to="dsfacile.dsfacileconfig",
                     ),
                 ),
             ],

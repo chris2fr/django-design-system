@@ -5,12 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("dsfr", "0001_initial"),
+        ("dsfacile", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="footer_brand",
             field=models.CharField(
                 blank=True,
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="footer_brand_html",
             field=models.CharField(
                 blank=True,
@@ -44,12 +44,12 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="footer_description",
             field=models.TextField(blank=True, default="", verbose_name="Description"),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="header_brand",
             field=models.CharField(
                 blank=True,
@@ -59,7 +59,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="header_brand_html",
             field=models.CharField(
                 blank=True,
@@ -69,7 +69,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="site_tagline",
             field=models.CharField(
                 blank=True,
@@ -79,7 +79,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="site_title",
             field=models.CharField(
                 blank=True,

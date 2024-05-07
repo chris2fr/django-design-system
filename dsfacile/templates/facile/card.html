@@ -1,4 +1,4 @@
-{% load dsfr_tags i18n %}
+{% load dsfacile_tags i18n %}
 {% translate "Opens a new window" as new_window_label %}
 <div class="facile-card{% if self.enlarge_link %} facile-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
      {% if self.id %}id="{{ self.id }}"{% endif %}>
@@ -24,7 +24,7 @@
             <ul class="facile-tags-group">
               {% for tag in self.top_detail.tags %}
                 <li>
-                  {% dsfr_tag tag %}
+                  {% dsfacile_tag tag %}
                 </li>
               {% endfor %}
             </ul>
@@ -32,7 +32,7 @@
             <ul class="facile-badges-group">
               {% for badge in self.top_detail.badges %}
                 <li>
-                  {% dsfr_badge badge %}
+                  {% dsfacile_badge badge %}
                 </li>
               {% endfor %}
             </ul>
@@ -58,7 +58,7 @@
           <ul class="facile-btns-group facile-btns-group--inline-reverse facile-btns-group--inline-lg">
             {% for button in self.call_to_action.buttons %}
               <li>
-                {% dsfr_button button %}
+                {% dsfacile_button button %}
               </li>
             {% endfor %}
           </ul>
@@ -66,7 +66,7 @@
           <ul class="facile-links-group">
             {% for link in self.call_to_action.links %}
               <li>
-                {% dsfr_link link %}
+                {% dsfacile_link link %}
               </li>
             {% endfor %}
           </ul>
@@ -85,7 +85,7 @@
         <ul class="facile-badges-group">
           {% for badge in self.media_badges %}
             <li>
-              {% dsfr_badge badge %}
+              {% dsfacile_badge badge %}
             </li>
           {% endfor %}
         </ul>

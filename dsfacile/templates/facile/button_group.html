@@ -1,8 +1,8 @@
-{% load dsfr_tags %}
+{% load dsfacile_tags %}
 <ul class="facile-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% for item in self.items %}
     <li>
-      {% dsfr_button item %}
+      {% dsfacile_button item %}
     </li>
   {% endfor %}
 </ul>

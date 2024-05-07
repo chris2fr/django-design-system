@@ -5,12 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("dsfr", "0002_auto_20211209_1557"),
+        ("dsfacile", "0002_auto_20211209_1557"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[

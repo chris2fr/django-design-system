@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("dsfr", "0005_dsfrconfig_notice"),
+        ("dsfacile", "0005_dsfacileconfig_notice"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[("FULL", "fully"), ("PART", "partially"), ("NOT", "not")],

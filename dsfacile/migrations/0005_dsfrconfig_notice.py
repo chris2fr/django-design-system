@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("dsfr", "0004_dsfrconfig_beta_tag_dsfrconfig_operator_logo_alt_and_more"),
+        ("dsfacile", "0004_dsfacileconfig_beta_tag_dsfacileconfig_operator_logo_alt_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="dsfrconfig",
+            model_name="dsfacileconfig",
             name="notice",
             field=models.CharField(
                 blank=True,

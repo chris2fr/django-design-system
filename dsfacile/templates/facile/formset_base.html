@@ -2,8 +2,8 @@
 <!-- base template for formset -->
 <!-- to be INCLUDED in the templates where form_base.html is extended, if you need formset -->
 <!-- Check django comments for more information -->
-{# Allows to display the fields with DSFR layout #}
-{% load static dsfr_tags widget_tweaks i18n %}
+{# Allows to display the fields with dsfacile layout #}
+{% load static dsfacile_tags widget_tweaks i18n %}
 {# if formset #}
 {% block form_set %}
   {% if formset %}
@@ -21,7 +21,7 @@
             {# everything that needs to be in the loop for each field for each form in formset #}
             {% block inside_formset_field %}
             {% endblock inside_formset_field %}
-            {% include "dsfr/form_field_snippets/field_snippet.html" %}
+            {% include "dsfacile/form_field_snippets/field_snippet.html" %}
           {% endfor %}
           <div class="facile-mt-2w">
           <a id="remove-0" href="#" onclick="removeFormset(0)">{% translate "Delete this item" %} <span class="facile-fi-delete-line" aria-hidden="true"></span>
