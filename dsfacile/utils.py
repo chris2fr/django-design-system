@@ -110,11 +110,11 @@ def dsfacile_input_class_attr(bf: BoundField):
     if not bf.is_hidden and "class" not in bf.field.widget.attrs:
         bf.field.label_suffix = ""
         if isinstance(bf.field.widget, (widgets.Select, widgets.SelectMultiple)):
-            bf.field.widget.attrs["class"] = "fr-select"
-            bf.field.widget.group_class = "fr-select-group"
+            bf.field.widget.attrs["class"] = "facile-select"
+            bf.field.widget.group_class = "facile-select-group"
         elif isinstance(bf.field.widget, widgets.RadioSelect):
             bf.field.widget.attrs["dsfacile"] = "dsfacile"
-            bf.field.widget.group_class = "fr-radio-group"
+            bf.field.widget.group_class = "facile-radio-group"
         elif isinstance(bf.field.widget, widgets.CheckboxSelectMultiple):
             bf.field.widget.attrs["dsfacile"] = "dsfacile"
         elif not isinstance(
@@ -125,5 +125,5 @@ def dsfacile_input_class_attr(bf: BoundField):
                 widgets.ClearableFileInput,
             ),
         ):
-            bf.field.widget.attrs["class"] = "fr-input"
+            bf.field.widget.attrs["class"] = "facile-input"
     return bf

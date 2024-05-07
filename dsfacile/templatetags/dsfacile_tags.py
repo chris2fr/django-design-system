@@ -179,7 +179,7 @@ def dsfacile_alert(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `fr-alert--sm` : small alert
+    - `facile-alert--sm` : small alert
 
     On normal (median) alerts, the title is mandatory, the content is optional.
     On small alerts, the title is optional, the content is mandatory.
@@ -226,10 +226,10 @@ def dsfacile_badge(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fr-badge--sm`: small-sized badge
-    - `fr-badge--green-menthe` other color codes: change the color of the badge
-    - `fr-badge--success` (or error/info/warning/new): system badges
-    - `fr-badge--no-icon`: removes the icon on system badges
+    - `facile-badge--sm`: small-sized badge
+    - `facile-badge--green-menthe` other color codes: change the color of the badge
+    - `facile-badge--success` (or error/info/warning/new): system badges
+    - `facile-badge--no-icon`: removes the icon on system badges
 
     **Tag name**:
         dsfacile_badge
@@ -312,12 +312,12 @@ def dsfacile_button(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `fr-btn--secondary`: secundary button
-    - `fr-btn--tertiary`: tertiary button
-    - `fr-btn--tertiary-no-outline`: tertiary button with no outline
-    - `fr-btn--icon-left` and `fr-btn--icon-right`: add an icon to the button
+    - `facile-btn--secondary`: secundary button
+    - `facile-btn--tertiary`: tertiary button
+    - `facile-btn--tertiary-no-outline`: tertiary button with no outline
+    - `facile-btn--icon-left` and `facile-btn--icon-right`: add an icon to the button
       (associated with an icon class)
-    - `fr-btn--sm` and `fr-btn--lg`: button smaller or larger than the default size
+    - `facile-btn--sm` and `facile-btn--lg`: button smaller or larger than the default size
 
     **Tag name**:
         dsfacile_button
@@ -353,14 +353,14 @@ def dsfacile_button_group(*args, **kwargs) -> dict:
     ```
     Relevant `extra_classes`:
 
-    - `fr-btns-group--inline-sm`: Inline group, small size
-    - `fr-btns-group--inline-md`: Inline group, normal size
-    - `fr-btns-group--inline-lg`: Inline group, large size
-    - `fr-btns-group--sm`: Vertical group, small size
-    - `fr-btns-group--lg`: Vertical group, large size
-    - `fr-btns-group--equisized`: Width adjusted in Javascript
-    - `fr-btns-group--icon-left`: Buttons with an icon on the left side
-    - `fr-btns-group--icon-right`: Buttons with an icon on the right side
+    - `facile-btns-group--inline-sm`: Inline group, small size
+    - `facile-btns-group--inline-md`: Inline group, normal size
+    - `facile-btns-group--inline-lg`: Inline group, large size
+    - `facile-btns-group--sm`: Vertical group, small size
+    - `facile-btns-group--lg`: Vertical group, large size
+    - `facile-btns-group--equisized`: Width adjusted in Javascript
+    - `facile-btns-group--icon-left`: Buttons with an icon on the left side
+    - `facile-btns-group--icon-right`: Buttons with an icon on the right side
 
     **Tag name**:
         dsfacile_button_group
@@ -400,7 +400,7 @@ def dsfacile_callout(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `fr-callout--green-emeraude`
+    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `facile-callout--green-emeraude`
 
     **Tag name**:
         dsfacile_callout
@@ -449,14 +449,14 @@ def dsfacile_card(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `fr-card--horizontal`: makes the card horizontal
-    - `fr-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
-    - `fr-card--horizontal-half`: allows a 50% ratio instead of the 40% default
-    - `fr-card--download`: replaces the forward arrow icon with a download one
-    - `fr-card--grey`: adds a grey background on the card
-    - `fr-card--no-border`: removes the card border
-    - `fr-card--no-background`: removes the card background
-    - `fr-card--shadow`: adds a shadow to the card border
+    - `facile-card--horizontal`: makes the card horizontal
+    - `facile-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
+    - `facile-card--horizontal-half`: allows a 50% ratio instead of the 40% default
+    - `facile-card--download`: replaces the forward arrow icon with a download one
+    - `facile-card--grey`: adds a grey background on the card
+    - `facile-card--no-border`: removes the card border
+    - `facile-card--no-background`: removes the card background
+    - `facile-card--shadow`: adds a shadow to the card border
 
     Format of the top_detail dict (every field is optional):
 
@@ -464,7 +464,7 @@ def dsfacile_card(*args, **kwargs) -> dict:
     top_detail = {
         "detail": {
             "text": "the detail text",
-            "icon_class": "(Optional) an icon class (eg, fr-icon-warning-fill)"
+            "icon_class": "(Optional) an icon class (eg, facile-icon-warning-fill)"
         },
         "tags": "a list of tag items (mutually exclusive with badges)",
         "badges": "a list of badge items (mutually exclusive with tags)"
@@ -476,7 +476,7 @@ def dsfacile_card(*args, **kwargs) -> dict:
     ```python
     bottom_detail = {
         "text": "the detail text",
-        "icon_class": "(Optional) an icon class (eg, fr-icon-warning-fill)"
+        "icon_class": "(Optional) an icon class (eg, facile-icon-warning-fill)"
     }
     ```
 
@@ -582,24 +582,24 @@ def dsfacile_content(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `fr-content-media--lg`: media is 125% of the main text width.
-    - `fr-content-media--sm`: media is 75% of the the main text width.
+    - `facile-content-media--lg`: media is 125% of the main text width.
+    - `facile-content-media--sm`: media is 75% of the the main text width.
 
     Relevant ratio classes for images:
 
-    - `fr-ratio-32x9`
-    - `fr-ratio-16x9`
-    - `fr-ratio-3x2`
-    - `fr-ratio-4x3`
-    - `fr-ratio-1x1`
-    - `fr-ratio-3x4`
-    - `fr-ratio-2x3`
+    - `facile-ratio-32x9`
+    - `facile-ratio-16x9`
+    - `facile-ratio-3x2`
+    - `facile-ratio-4x3`
+    - `facile-ratio-1x1`
+    - `facile-ratio-3x4`
+    - `facile-ratio-2x3`
 
     Relevant ratio classes for videos:
 
-    - `fr-ratio-16x9`
-    - `fr-ratio-4x3`
-    - `fr-ratio-1x1`
+    - `facile-ratio-16x9`
+    - `facile-ratio-4x3`
+    - `facile-ratio-1x1`
 
     **Tag name**:
         dsfacile_content
@@ -675,12 +675,12 @@ def dsfacile_highlight(*args, **kwargs) -> dict:
 
     Relevant size_classes:
 
-    - `fr-text--sm`
-    - `fr-text--lg`
+    - `facile-text--sm`
+    - `facile-text--lg`
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `fr-highlight--green-emeraude`
+    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `facile-highlight--green-emeraude`
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
@@ -765,9 +765,9 @@ def dsfacile_link(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fr-link--icon-left` or `fr-link--icon-right` with an icon class
-    - `fr-link--sm` for small links
-    - `fr-link--lg` for large links
+    - `facile-link--icon-left` or `facile-link--icon-right` with an icon class
+    - `facile-link--sm` for small links
+    - `facile-link--lg` for large links
 
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
@@ -858,7 +858,7 @@ def dsfacile_quote(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `fr-quote--green-emeraude`
+    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `facile-quote--green-emeraude`
 
     **Tag name**:
         dsfacile_quote
@@ -907,9 +907,9 @@ def dsfacile_select(*args, **kwargs) -> dict:
     ```
     Relevant extra_classes:
 
-    - `fr-sidemenu--sticky`: Makes the menu sticky
-    - `fr-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
-    - `fr-sidemenu--right`: Moves the menu to the right side of the screen
+    - `facile-sidemenu--sticky`: Makes the menu sticky
+    - `facile-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
+    - `facile-sidemenu--right`: Moves the menu to the right side of the screen
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
@@ -1086,12 +1086,12 @@ def dsfacile_table(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `fr-table--green-emeraude`
-    - `fr-table--bordered`: adds a border under each line
-    - `fr-table--no-scroll` prevents horizontal scrolling on mobile
-    - `fr-table--layout-fixed`: forces the table at 100% and equal size columns
-    - `fr-table--no-caption`: hides the caption
-    - `fr-table--caption-bottom`: sets the caption after the table instead of before
+    - Color classes ([See the list](/django-dsfacile/resources/colors)), for example `facile-table--green-emeraude`
+    - `facile-table--bordered`: adds a border under each line
+    - `facile-table--no-scroll` prevents horizontal scrolling on mobile
+    - `facile-table--layout-fixed`: forces the table at 100% and equal size columns
+    - `facile-table--no-caption`: hides the caption
+    - `facile-table--caption-bottom`: sets the caption after the table instead of before
 
     **Tag name**:
         dsfacile_table
@@ -1128,9 +1128,9 @@ def dsfacile_tag(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fr-tag--sm`: for a small tag
+    - `facile-tag--sm`: for a small tag
     - icon classes: an icon for the tag, along with a positional class
-      (eg, `fr-icon-arrow-right-line` `fr-tag--icon-left`)
+      (eg, `facile-icon-arrow-right-line` `facile-tag--icon-left`)
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
@@ -1179,13 +1179,13 @@ def dsfacile_tile(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fr-tile--sm`: for a small (SM) tile
-    - `fr-tile--horizontal`: for an horizontal tile
-    - `fr-tile--download`: Replaces the forward arrow icon with a download one
-    - `fr-tile--grey`: adds a grey background on the tile
-    - `fr-tile--no-border`: removes the tile border
-    - `fr-tile--no-background`: removes the tile background
-    - `fr-tile--shadow`: adds a shadow to the tile border
+    - `facile-tile--sm`: for a small (SM) tile
+    - `facile-tile--horizontal`: for an horizontal tile
+    - `facile-tile--download`: Replaces the forward arrow icon with a download one
+    - `facile-tile--grey`: adds a grey background on the tile
+    - `facile-tile--no-border`: removes the tile border
+    - `facile-tile--no-background`: removes the tile background
+    - `facile-tile--shadow`: adds a shadow to the tile border
 
 
     Format of the top_detail dict (every field is optional):
@@ -1247,8 +1247,8 @@ def dsfacile_toggle(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fr-toggle--label-left`: sets the label on the left side
-    - `fr-toggle--border-bottom`: adds a border at the bottom
+    - `facile-toggle--label-left`: sets the label on the left side
+    - `facile-toggle--border-bottom`: adds a border at the bottom
 
 
     **Tag name**:
@@ -1361,7 +1361,7 @@ def dsfacile_django_messages(
     ```python
     data_dict = {
         "is_collapsible" : "(Optional) Boolean, set to true to add a 'close' button for the alert (default: false)",
-        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `fr-my-4v`)",
+        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `facile-my-4v`)",
         "extra_classes": "(Optional) extra classes for the alert."
     }
     ```
@@ -1370,13 +1370,13 @@ def dsfacile_django_messages(
 
     Relevant extra_classes:
 
-    - `fr-alert--sm` : small alert
+    - `facile-alert--sm` : small alert
 
     See: [https://docs.djangoproject.com/en/4.2/ref/contrib/messages/](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 
     By default, the following message level are mapped to the following alert types:
 
-    <div class="fr-table" markdown="1">
+    <div class="facile-table" markdown="1">
 
     Message level | DSFACILE alert type
     :------------:|:--------------:
@@ -1388,7 +1388,7 @@ def dsfacile_django_messages(
 
     </div>
 
-    There types are then concatenated with ``fr-alert--`` to form the CSS classe in the template.
+    There types are then concatenated with ``facile-alert--`` to form the CSS classe in the template.
 
     These classes can be modified by setting ``DSFACILE_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
 
@@ -1420,7 +1420,7 @@ def dsfacile_django_messages(
     messages.add_message(request, 50, "A serious error occurred.")
     ```
 
-    renders an alert with the following CSS class: `fr-alert--warning`.
+    renders an alert with the following CSS class: `facile-alert--warning`.
 
     **Tag name**:
         dsfacile_django_messages
@@ -1434,7 +1434,7 @@ def dsfacile_django_messages(
     if not messages:
         return ""
 
-    wrapper_classes = wrapper_classes or "fr-my-4v"
+    wrapper_classes = wrapper_classes or "facile-my-4v"
     extra_classes = extra_classes or ""
 
     message_tags_css_classes = {

@@ -80,7 +80,7 @@ class dsfacileThemeModaleTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <h1 id="fr-theme-modal-title" class="fr-modal__title">
+            <h1 id="facile-theme-modal-title" class="facile-modal__title">
                 Paramètres d’affichage
             </h1>
             """,
@@ -102,11 +102,11 @@ class dsfacileAccordionTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <section class="fr-accordion">
-                <h3 class="fr-accordion__title">
-                    <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
+            <section class="facile-accordion">
+                <h3 class="facile-accordion__title">
+                    <button type="button" class="facile-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
                 </h3>
-                <div class="fr-collapse" id="sample-accordion">
+                <div class="facile-collapse" id="sample-accordion">
                     <p><b>Bold</b> and <em>emphatic</em> Example content</p>
                 </div>
             </section>
@@ -168,14 +168,14 @@ class dsfacileAlertTagTest(SimpleTestCase):
     def test_alert_tag_heading_can_be_set(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h3 class="fr-alert__title">Sample title</h3>""", rendered_template
+            """<h3 class="facile-alert__title">Sample title</h3>""", rendered_template
         )
 
     def test_alert_tag_has_collapse_button(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <button class="fr-btn--close fr-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
+            <button class="facile-btn--close facile-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
               Masquer le message
             </button>
             """,  # noqa
@@ -186,7 +186,7 @@ class dsfacileAlertTagTest(SimpleTestCase):
 class dsfacileBadgeTagTest(SimpleTestCase):
     test_data = {
         "label": "badge label",
-        "extra_classes": "fr-badge--success",
+        "extra_classes": "facile-badge--success",
     }
 
     context = Context({"test_data": test_data})
@@ -196,7 +196,7 @@ class dsfacileBadgeTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <p class="fr-badge fr-badge--success">badge label</p>
+            <p class="facile-badge facile-badge--success">badge label</p>
             """,
             rendered_template,
         )
@@ -216,14 +216,14 @@ class dsfacileBreadcrumbTagTest(SimpleTestCase):
     def test_breadcrumb_tag_current_page(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="fr-breadcrumb__link" aria-current="page">Test page</a>""",
+            """<a class="facile-breadcrumb__link" aria-current="page">Test page</a>""",
             rendered_template,
         )
 
     def test_breadcrumb_tag_middle_link(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="fr-breadcrumb__link" href="test-url">Test title</a>""",
+            """<a class="facile-breadcrumb__link" href="test-url">Test title</a>""",
             rendered_template,
         )
 
@@ -234,7 +234,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
         "label": "button label",
         "type": "button",
         "name": "test-button",
-        "extra_classes": "fr-btn--secondary",
+        "extra_classes": "facile-btn--secondary",
     }
 
     context = Context({"test_data": test_data})
@@ -245,7 +245,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <button
-            class="fr-btn fr-btn--secondary"
+            class="facile-btn facile-btn--secondary"
             onclick="alert(&#x27;test button action&#x27;)"
             type="button"
             name="test-button"
@@ -259,7 +259,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
 
 class dsfacileButtonGroupTagTest(SimpleTestCase):
     test_data = {
-        "extra_classes": "fr-btns-group--equisized",
+        "extra_classes": "facile-btns-group--equisized",
         "items": [
             {
                 "onclick": "alert('test button action')",
@@ -273,7 +273,7 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
                 "label": "Button 2 label",
                 "type": "button",
                 "name": "test-button-2",
-                "extra_classes": "fr-btn--secondary",
+                "extra_classes": "facile-btn--secondary",
             },
         ],
     }
@@ -287,9 +287,9 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <ul class="fr-btns-group fr-btns-group--equisized">
+            <ul class="facile-btns-group facile-btns-group--equisized">
                 <li>
-                    <button class="fr-btn"
+                    <button class="facile-btn"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button">
@@ -298,7 +298,7 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
                 </li>
 
                 <li>
-                    <button class="fr-btn fr-btn--secondary"
+                    <button class="facile-btn facile-btn--secondary"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button-2">
@@ -315,7 +315,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
     test_data = {
         "text": "Text of the callout item",
         "title": "Title of the callout item",
-        "icon_class": "fr-icon-information-line",
+        "icon_class": "facile-icon-information-line",
         "heading_tag": "h4",
         "button": {"onclick": "close()", "label": "button label", "type": "button"},
     }
@@ -327,7 +327,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-    <p class="fr-callout__text">
+    <p class="facile-callout__text">
         Text of the callout item
     </p>""",
             rendered_template,
@@ -336,13 +336,13 @@ class dsfacileCalloutTagTest(SimpleTestCase):
     def test_callout_optional_title_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h4 class="fr-callout__title">Title of the callout item</h4>""",
+            """<h4 class="facile-callout__title">Title of the callout item</h4>""",
             rendered_template,
         )
 
     def test_callout_optional_icon_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("fr-icon-information-line" in rendered_template)
+        self.assertTrue("facile-icon-information-line" in rendered_template)
 
     def test_callout_optional_button_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -350,7 +350,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
             """
             <button
                 type="button"
-                class="fr-btn"
+                class="facile-btn"
                 onclick="close()"
             >
                 button label
@@ -381,12 +381,12 @@ class dsfacileCardTagTest(SimpleTestCase):
 
     def test_card_is_created(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("fr-card" in rendered_template)
+        self.assertTrue("facile-card" in rendered_template)
 
     def test_card_has_detail(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="fr-card__detail">Appears before the title of the card item</p>',
+            '<p class="facile-card__detail">Appears before the title of the card item</p>',
             rendered_template,
         )
 
@@ -394,7 +394,7 @@ class dsfacileCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-                <p class="fr-card__title">
+                <p class="facile-card__title">
                 <a href="https://test.gouv.fr" target="_self">
                     Title of the card item
                 </a>
@@ -405,7 +405,7 @@ class dsfacileCardTagTest(SimpleTestCase):
     def test_card_has_description(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="fr-card__desc">Text of the card item</p>',
+            '<p class="facile-card__desc">Text of the card item</p>',
             rendered_template,
         )
 
@@ -413,8 +413,8 @@ class dsfacileCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-card__img">
-                <img src="https://test.gouv.fr/test.png" class="fr-responsive-img" alt="">
+            <div class="facile-card__img">
+                <img src="https://test.gouv.fr/test.png" class="facile-responsive-img" alt="">
             </div>
             """,  # noqa
             rendered_template,
@@ -439,38 +439,38 @@ class dsfacileConsentTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-consent-banner">
-            <h2 class="fr-h6">
+            <div class="facile-consent-banner">
+            <h2 class="facile-h6">
                 À propos des cookies sur Django-dsfacile
             </h2>
-            <div class="fr-consent-banner__content">
-                <p class="fr-text--sm">
+            <div class="facile-consent-banner__content">
+                <p class="facile-text--sm">
                     Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                     services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
                     Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle
                     sur les cookies que vous souhaitez activer.
                 </p>
             </div>
-            <ul class="fr-consent-banner__buttons fr-btns-group fr-btns-group--right fr-btns-group--inline-reverse fr-btns-group--inline-sm">
+            <ul class="facile-consent-banner__buttons facile-btns-group facile-btns-group--right facile-btns-group--inline-reverse facile-btns-group--inline-sm">
                 <li>
-                <button class="fr-btn"
+                <button class="facile-btn"
                         id="consent-accept-all"
                         title="Autoriser tous les cookies">
                     Tout accepter
                 </button>
                 </li>
                 <li>
-                <button class="fr-btn"
+                <button class="facile-btn"
                         id="consent-reject-all"
                         title="Refuser tous les cookies">
                     Tout refuser
                 </button>
                 </li>
                 <li>
-                <button class="fr-btn fr-btn--secondary"
+                <button class="facile-btn facile-btn--secondary"
                         id="consent-customize"
-                        data-fr-opened="false"
-                        aria-controls="fr-consent-modal"
+                        data-facile-opened="false"
+                        aria-controls="facile-consent-modal"
                         title="Personnaliser les cookies">
                     Personnaliser
                 </button>
@@ -487,7 +487,7 @@ class dsfacileContentTagTest(SimpleTestCase):
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
         "image_url": "/django-dsfacile/static/img/placeholder.16x9.svg",
-        "ratio_class": "fr-ratio-4x3",
+        "ratio_class": "facile-ratio-4x3",
     }
 
     context = Context({"test_data": test_data})
@@ -497,13 +497,13 @@ class dsfacileContentTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="fr-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
-            <div class="fr-content-media__img">
-                <img class="fr-responsive-img fr-ratio-4x3"
+            <figure class="facile-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
+            <div class="facile-content-media__img">
+                <img class="facile-responsive-img facile-ratio-4x3"
                     src="/django-dsfacile/static/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
-                <figcaption class="fr-content-media__caption">
+                <figcaption class="facile-content-media__caption">
                 Image en largeur normale et en 4x3
                 </figcaption>
             </figure>""",
@@ -523,11 +523,11 @@ class dsfacileFranceConnectTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-connect-group">
-                <button class="fr-connect"
+            <div class="facile-connect-group">
+                <button class="facile-connect"
                         id="france-connect">
-                    <span class="fr-connect__login">S’identifier avec</span>
-                    <span class="fr-connect__brand">FranceConnect</span>
+                    <span class="facile-connect__login">S’identifier avec</span>
+                    <span class="facile-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/"
@@ -553,11 +553,11 @@ class dsfacileFranceConnectPlusTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-connect-group">
-                <button class="fr-connect fr-connect--plus"
+            <div class="facile-connect-group">
+                <button class="facile-connect facile-connect--plus"
                         id="france-connect-plus">
-                    <span class="fr-connect__login">S’identifier avec</span>
-                    <span class="fr-connect__brand">FranceConnect</span>
+                    <span class="facile-connect__login">S’identifier avec</span>
+                    <span class="facile-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/france-connect-plus"
@@ -576,7 +576,7 @@ class dsfacileHighlightTagTest(SimpleTestCase):
         "content": "Content of the highlight item (can include html)",
         "title": "(Optional) Title of the highlight item",
         "heading_tag": "h4",
-        "size_class": "fr-text--sm",
+        "size_class": "facile-text--sm",
     }
 
     context = Context({"test_data": test_data})
@@ -586,8 +586,8 @@ class dsfacileHighlightTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-highlight">
-                <p class="fr-text--sm">
+            <div class="facile-highlight">
+                <p class="facile-text--sm">
                     Content of the highlight item (can include html)
                 </p>
             </div>
@@ -621,12 +621,12 @@ class dsfacileInputTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fr-input-group ">
-                <label class="fr-label" for="sample-id">
+            <div class="facile-input-group ">
+                <label class="facile-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="fr-input"
+                    class="facile-input"
                     type="text"
                     id="sample-id"
                     name="sample-id"
@@ -644,12 +644,12 @@ class dsfacileInputTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fr-input-group ">
-                <label class="fr-label" for="sample-id">
+            <div class="facile-input-group ">
+                <label class="facile-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="fr-input"
+                    class="facile-input"
                     type="date"
                     id="sample-id"
                     name="sample-id"
@@ -669,7 +669,7 @@ class dsfacileLinkTagTest(SimpleTestCase):
         "url": "http://example.com",
         "label": "Label of the link item",
         "is_external": True,
-        "extra_classes": "fr-link--lg",
+        "extra_classes": "facile-link--lg",
     }
 
     context = Context({"test_data": test_data})
@@ -680,11 +680,11 @@ class dsfacileLinkTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <a
-            class="fr-link fr-icon-external-link-line fr-link--icon-right fr-link--lg"
+            class="facile-link facile-icon-external-link-line facile-link--icon-right facile-link--lg"
             href="http://example.com"
             target="_blank" rel="noopener noreferrer"
             >
-              Label of the link item <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span>
+              Label of the link item <span class="facile-sr-only">Ouvre une nouvelle fenêtre</span>
             </a>
             """,  # noqa
             rendered_template,
@@ -707,14 +707,14 @@ class dsfacileNoticeTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-notice__body">
-                <p class="fr-notice__title">
+            <div class="facile-notice__body">
+                <p class="facile-notice__title">
                     Bandeau d’information importante avec <a href='#'
                         rel='noopener external'
                         title="intitulé - Ouvre une nouvelle fenêtre" target='_blank'>
                         lien</a>.
                 </p>
-                    <button class="fr-btn--close fr-btn"
+                    <button class="facile-btn--close facile-btn"
                         title="Masquer le message"
                         onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
                     Masquer le message
@@ -747,21 +747,21 @@ class dsfacileQuoteTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="fr-quote fr-quote--column">
+            <figure class="facile-quote facile-quote--column">
                 <blockquote cite="https://www.systeme-de-design.gouv.fr/">
                     <p>Développer vos sites et applications en utilisant des composants prêts à l&#x27;emploi, accessibles et ergonomiques</p>
                 </blockquote>
                 <figcaption>
-                    <p class="fr-quote__author">Auteur</p>
-                    <ul class="fr-quote__source">
+                    <p class="facile-quote__author">Auteur</p>
+                    <ul class="facile-quote__source">
                     <li>
                         <cite>Système de Design de l&#x27;État</cite>
                     </li>
                     <li>Détail sans lien</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="facile-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
                     </ul>
-                    <div class="fr-quote__image">
-                    <img src="https://via.placeholder.com/150x150" class="fr-responsive-img" alt="" />
+                    <div class="facile-quote__image">
+                    <img src="https://via.placeholder.com/150x150" class="facile-responsive-img" alt="" />
                     </div>
                 </figcaption>
             </figure>
@@ -821,8 +821,8 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_rendered(self):
         self.assertInHTML(
             """
-            <li class="fr-sidemenu__item">
-                <a class="fr-sidemenu__link" href="#" target="_self" >Une page</a>
+            <li class="facile-sidemenu__item">
+                <a class="facile-sidemenu__link" href="#" target="_self" >Une page</a>
             </li>
 
             """,
@@ -832,7 +832,7 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_heading_can_be_set(self):
         self.assertInHTML(
             """
-            <h2 class="fr-sidemenu__title">Menu</h2>
+            <h2 class="facile-sidemenu__title">Menu</h2>
             """,
             self.rendered_template,
         )
@@ -840,25 +840,25 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_current_page_and_parents_are_active(self):
         self.assertInHTML(
             """
-            <li class="fr-sidemenu__item fr-sidemenu__item--active">
+            <li class="facile-sidemenu__item facile-sidemenu__item--active">
                 <button
                     type="button"
-                    class="fr-sidemenu__btn"
+                    class="facile-sidemenu__btn"
                     aria-expanded="true"
-                    aria-controls="fr-sidemenu-item-2-2"
+                    aria-controls="facile-sidemenu-item-2-2"
                 >
                     Sous-menu ouvert
                 </button>
-                <div class="fr-collapse" id="fr-sidemenu-item-2-2">
-                    <ul class="fr-sidemenu__list">
-                        <li class="fr-sidemenu__item">
-                        <a class="fr-sidemenu__link" href="#" target="_self" >
+                <div class="facile-collapse" id="facile-sidemenu-item-2-2">
+                    <ul class="facile-sidemenu__list">
+                        <li class="facile-sidemenu__item">
+                        <a class="facile-sidemenu__link" href="#" target="_self" >
                             Page non active
                         </a>
                         </li>
 
-                        <li class="fr-sidemenu__item fr-sidemenu__item--active">
-                        <a class="fr-sidemenu__link" href="/django-dsfacile/components/sidemenu/" target="_self"  aria-current="page">
+                        <li class="facile-sidemenu__item facile-sidemenu__item--active">
+                        <a class="facile-sidemenu__link" href="/django-dsfacile/components/sidemenu/" target="_self"  aria-current="page">
                             Page active
                         </a>
                         </li>
@@ -883,16 +883,16 @@ class dsfacileSummaryTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <nav role="navigation" class="fr-summary" aria-labelledby="fr-summary-title">
-                <p class="fr-summary__title" id="fr-summary-title">Sommaire</p>
-                <ol class="fr-summary__list">
+            <nav role="navigation" class="facile-summary" aria-labelledby="facile-summary-title">
+                <p class="facile-summary__title" id="facile-summary-title">Sommaire</p>
+                <ol class="facile-summary__list">
 
                     <li>
-                        <a class="fr-summary__link" href="link 1">First item title</a>
+                        <a class="facile-summary__link" href="link 1">First item title</a>
                     </li>
 
                     <li>
-                        <a class="fr-summary__link" href="link 2">Second item title</a>
+                        <a class="facile-summary__link" href="link 2">Second item title</a>
                     </li>
                 </ol>
             </nav>
@@ -914,14 +914,14 @@ class dsfacileSkiplinksTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-skiplinks">
-                <nav role="navigation" class="fr-container" aria-label="Accès rapide">
-                    <ul class="fr-skiplinks__list">
+            <div class="facile-skiplinks">
+                <nav role="navigation" class="facile-container" aria-label="Accès rapide">
+                    <ul class="facile-skiplinks__list">
                     <li>
-                        <a class="fr-link" href="#contenu">Contenu</a>
+                        <a class="facile-link" href="#contenu">Contenu</a>
                     </li>
                     <li>
-                        <a class="fr-link" href="#header-navigation">Menu</a>
+                        <a class="facile-link" href="#header-navigation">Menu</a>
                     </li>
                     </ul>
                 </nav>
@@ -941,7 +941,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="fr-tag">Label of the tag item</p>""", rendered_template
+            """<p class="facile-tag">Label of the tag item</p>""", rendered_template
         )
 
     def test_tag_with_link_rendered(self):
@@ -951,7 +951,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="/components" class="fr-tag">Label of the tag item</a>""",
+            """<a href="/components" class="facile-tag">Label of the tag item</a>""",
             rendered_template,
         )
 
@@ -960,11 +960,11 @@ class dsfacileTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load dsfacile_tags %} {% dsfacile_tag test_data extra_classes='fr-icon-arrow-right-line fr-tag--icon-left' %}"  # noqa
+            "{% load dsfacile_tags %} {% dsfacile_tag test_data extra_classes='facile-icon-arrow-right-line facile-tag--icon-left' %}"  # noqa
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="fr-tag fr-icon-arrow-right-line fr-tag--icon-left">Label of the tag item</p>""",  # noqa
+            """<p class="facile-tag facile-icon-arrow-right-line facile-tag--icon-left">Label of the tag item</p>""",  # noqa
             rendered_template,
         )
 
@@ -979,7 +979,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="#" class="fr-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
+            """<a href="#" class="facile-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
             rendered_template,
         )
 
@@ -990,7 +990,7 @@ class dsfacileToggleTagTest(SimpleTestCase):
             "label": "Interrupteur complet aligné à gauche",
             "help_text": "Cet interrupteur présente toutes les options disponibles",
             "is_disabled": False,
-            "extra_classes": "fr-toggle--label-left fr-toggle--border-bottom",
+            "extra_classes": "facile-toggle--label-left facile-toggle--border-bottom",
             "id": "toggle-full",
         }
 
@@ -1001,18 +1001,18 @@ class dsfacileToggleTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fr-toggle fr-toggle--label-left fr-toggle--border-bottom">
+            <div class="facile-toggle facile-toggle--label-left facile-toggle--border-bottom">
                 <input type="checkbox"
-                        class="fr-toggle__input"
+                        class="facile-toggle__input"
                         aria-describedby="toggle-full-hint-text"
                         id="toggle-full">
-                <label class="fr-toggle__label"
+                <label class="facile-toggle__label"
                         for="toggle-full"
-                        data-fr-checked-label="Activé"
-                        data-fr-unchecked-label="Désactivé">
+                        data-facile-checked-label="Activé"
+                        data-facile-unchecked-label="Désactivé">
                     Interrupteur complet aligné à gauche
                 </label>
-                    <p class="fr-hint-text" id="toggle-full-hint-text">
+                    <p class="facile-hint-text" id="toggle-full-hint-text">
                     Cet interrupteur présente toutes les options disponibles
                     </p>
                 </div>
@@ -1036,14 +1036,14 @@ class dsfacileTooltipTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <a class="fr-link"
+            <a class="facile-link"
                 aria-describedby="tooltip-test"
                 id="link-tooltip-test"
                 href="#">
                 Libellé du lien
             </a>
 
-            <span class="fr-tooltip fr-placement"
+            <span class="facile-tooltip facile-placement"
                 id="tooltip-test"
                 role="tooltip"
                 aria-hidden="true">Contenu d’une infobule activée au survol</span>
@@ -1067,43 +1067,43 @@ class dsfacileTranscriptionTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fr-transcription">
-                <button class="fr-transcription__btn"
+            <div class="facile-transcription">
+                <button class="facile-transcription__btn"
                         aria-expanded="false"
-                        aria-controls="fr-transcription__collapse-transcription-test">
+                        aria-controls="facile-transcription__collapse-transcription-test">
                     Transcription
                 </button>
-                <div class="fr-collapse" id="fr-transcription__collapse-transcription-test">
-                    <div class="fr-transcription__footer">
-                        <div class="fr-transcription__actions-group">
+                <div class="facile-collapse" id="facile-transcription__collapse-transcription-test">
+                    <div class="facile-transcription__footer">
+                        <div class="facile-transcription__actions-group">
 
-                            <button class="fr-btn fr-btn--fullscreen"
-                                    aria-controls="fr-transcription-modal-transcription-test"
-                                    data-fr-opened="false"
+                            <button class="facile-btn facile-btn--fullscreen"
+                                    aria-controls="facile-transcription-modal-transcription-test"
+                                    data-facile-opened="false"
                                     title="Agrandir">
                                 Agrandir
                             </button>
                         </div>
                     </div>
-                    <dialog id="fr-transcription-modal-transcription-test"
-                            class="fr-modal"
+                    <dialog id="facile-transcription-modal-transcription-test"
+                            class="facile-modal"
                             role="dialog"
-                            aria-labelledby="fr-transcription-modal-transcription-test-title">
-                        <div class="fr-container fr-container--fluid fr-container-md">
-                            <div class="fr-grid-row fr-grid-row--center">
-                                <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
-                                    <div class="fr-modal__body">
-                                        <div class="fr-modal__header">
+                            aria-labelledby="facile-transcription-modal-transcription-test-title">
+                        <div class="facile-container facile-container--fluid facile-container-md">
+                            <div class="facile-grid-row facile-grid-row--center">
+                                <div class="facile-col-12 facile-col-md-10 facile-col-lg-8">
+                                    <div class="facile-modal__body">
+                                        <div class="facile-modal__header">
 
-                                            <button class="fr-btn--close fr-btn"
-                                                    aria-controls="fr-transcription-modal-transcription-test"
+                                            <button class="facile-btn--close facile-btn"
+                                                    aria-controls="facile-transcription-modal-transcription-test"
                                                     title="Fermer">
                                                 Fermer
                                             </button>
                                         </div>
-                                        <div class="fr-modal__content">
-                                            <h1 id="fr-transcription-modal-transcription-test-title"
-                                                class="fr-modal__title">
+                                        <div class="facile-modal__content">
+                                            <h1 id="facile-transcription-modal-transcription-test-title"
+                                                class="facile-modal__title">
                                                 Transcription
                                             </h1>
                                             <div><p>Courte transcription basique</p></div>
