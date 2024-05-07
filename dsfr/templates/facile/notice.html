@@ -1,13 +1,13 @@
 {% load i18n %}
 {% translate "Hide message" as hide_message %}
-<div class="fr-notice fr-notice--info">
-  <div class="fr-container">
-    <div class="fr-notice__body">
-      <p class="fr-notice__title">
+<div class="facile-notice facile-notice--info">
+  <div class="facile-container">
+    <div class="facile-notice__body">
+      <p class="facile-notice__title">
         {{ self.title|safe }}
       </p>
       {% if self.is_collapsible %}
-        <button class="fr-btn--close fr-btn"
+        <button class="facile-btn--close facile-btn"
                 title="{{ hide_message }}"
                 onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
           {{ hide_message }}

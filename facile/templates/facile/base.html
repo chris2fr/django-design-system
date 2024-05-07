@@ -1,8 +1,8 @@
 {% load static dsfr_tags %}
 <!DOCTYPE html>
 <html lang="{% block lang %}fr{% endblock lang %}"
-      data-fr-scheme="system"
-      {% if SITE_CONFIG.mourning %}data-fr-mourning{% endif %}>
+      data-facile-scheme="system"
+      {% if SITE_CONFIG.mourning %}data-facile-mourning{% endif %}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport"
@@ -42,7 +42,7 @@
       {% dsfr_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    <div class="fr-container fr-mt-4w fr-mb-6w">
+    <div class="facile-container facile-mt-4w facile-mb-6w">
       {% block breadcrumb %}
         {% dsfr_breadcrumb %}
       {% endblock breadcrumb %}
