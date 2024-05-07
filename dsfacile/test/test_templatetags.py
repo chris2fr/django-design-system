@@ -20,7 +20,7 @@ class dsfacileCssTagTest(SimpleTestCase):
         template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_css %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            f'<link rel="stylesheet" href="/django-dsfacile/static/dsfacile/dist/dsfacile/dsfacile.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
+            f'<link rel="stylesheet" href="/static/dsfacile/dist/dsfacile/dsfacile.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
             rendered_template,
         )
 
@@ -32,8 +32,8 @@ class dsfacileJsTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/django-dsfacile/static/dsfacile/dist/dsfacile/dsfacile.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
-            <script nomodule src="/django-dsfacile/static/dsfacile/dist/dsfacile/dsfacile.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
+            <script type="module" src="/static/dsfacile/dist/dsfacile/dsfacile.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
+            <script nomodule src="/static/dsfacile/dist/dsfacile/dsfacile.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
             """,  # noqa
             rendered_template,
         )
@@ -48,8 +48,8 @@ class dsfacileJsTagWithNonceTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/django-dsfacile/static/dsfacile/dist/dsfacile/dsfacile.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
-            <script nomodule src="/django-dsfacile/static/dsfacile/dist/dsfacile/dsfacile.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
+            <script type="module" src="/static/dsfacile/dist/dsfacile/dsfacile.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
+            <script nomodule src="/static/dsfacile/dist/dsfacile/dsfacile.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
             """,  # noqa
             rendered_template,
         )
@@ -62,11 +62,11 @@ class dsfacileFaviconTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <link rel="apple-touch-icon" href="/django-dsfacile/static/dsfacile/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
-            <link rel="icon" href="/django-dsfacile/static/dsfacile/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
-            <link rel="shortcut icon" href="/django-dsfacile/static/dsfacile/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
+            <link rel="apple-touch-icon" href="/static/dsfacile/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
+            <link rel="icon" href="/static/dsfacile/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
+            <link rel="shortcut icon" href="/static/dsfacile/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
             <!-- 32×32 -->
-            <link rel="manifest" href="/django-dsfacile/static/dsfacile/dist/favicon/manifest.webmanifest"
+            <link rel="manifest" href="/static/dsfacile/dist/favicon/manifest.webmanifest"
             crossorigin="use-credentials" integrity="{ INTEGRITY_FAVICON_MANIFEST }" />
             """,  # noqa
             rendered_template,
@@ -82,7 +82,7 @@ class dsfacileThemeModaleTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <h1 id="facile-theme-modal-title" class="facile-modal__title">
+            <h1 id="dsfacile-theme-modal-title" class="dsfacile-modal__title">
                 Paramètres d’affichage
             </h1>
             """,
@@ -106,11 +106,11 @@ class dsfacileAccordionTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <section class="facile-accordion">
-                <h3 class="facile-accordion__title">
-                    <button type="button" class="facile-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
+            <section class="dsfacile-accordion">
+                <h3 class="dsfacile-accordion__title">
+                    <button type="button" class="dsfacile-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
                 </h3>
-                <div class="facile-collapse" id="sample-accordion">
+                <div class="dsfacile-collapse" id="sample-accordion">
                     <p><b>Bold</b> and <em>emphatic</em> Example content</p>
                 </div>
             </section>
@@ -174,14 +174,14 @@ class dsfacileAlertTagTest(SimpleTestCase):
     def test_alert_tag_heading_can_be_set(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h3 class="facile-alert__title">Sample title</h3>""", rendered_template
+            """<h3 class="dsfacile-alert__title">Sample title</h3>""", rendered_template
         )
 
     def test_alert_tag_has_collapse_button(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <button class="facile-btn--close facile-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
+            <button class="dsfacile-btn--close dsfacile-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
               Masquer le message
             </button>
             """,  # noqa
@@ -192,7 +192,7 @@ class dsfacileAlertTagTest(SimpleTestCase):
 class dsfacileBadgeTagTest(SimpleTestCase):
     test_data = {
         "label": "badge label",
-        "extra_classes": "facile-badge--success",
+        "extra_classes": "dsfacile-badge--success",
     }
 
     context = Context({"test_data": test_data})
@@ -204,7 +204,7 @@ class dsfacileBadgeTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <p class="facile-badge facile-badge--success">badge label</p>
+            <p class="dsfacile-badge dsfacile-badge--success">badge label</p>
             """,
             rendered_template,
         )
@@ -224,14 +224,14 @@ class dsfacileBreadcrumbTagTest(SimpleTestCase):
     def test_breadcrumb_tag_current_page(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="facile-breadcrumb__link" aria-current="page">Test page</a>""",
+            """<a class="dsfacile-breadcrumb__link" aria-current="page">Test page</a>""",
             rendered_template,
         )
 
     def test_breadcrumb_tag_middle_link(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="facile-breadcrumb__link" href="test-url">Test title</a>""",
+            """<a class="dsfacile-breadcrumb__link" href="test-url">Test title</a>""",
             rendered_template,
         )
 
@@ -242,7 +242,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
         "label": "button label",
         "type": "button",
         "name": "test-button",
-        "extra_classes": "facile-btn--secondary",
+        "extra_classes": "dsfacile-btn--secondary",
     }
 
     context = Context({"test_data": test_data})
@@ -255,7 +255,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <button
-            class="facile-btn facile-btn--secondary"
+            class="dsfacile-btn dsfacile-btn--secondary"
             onclick="alert(&#x27;test button action&#x27;)"
             type="button"
             name="test-button"
@@ -269,7 +269,7 @@ class dsfacileButtonTagTest(SimpleTestCase):
 
 class dsfacileButtonGroupTagTest(SimpleTestCase):
     test_data = {
-        "extra_classes": "facile-btns-group--equisized",
+        "extra_classes": "dsfacile-btns-group--equisized",
         "items": [
             {
                 "onclick": "alert('test button action')",
@@ -283,7 +283,7 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
                 "label": "Button 2 label",
                 "type": "button",
                 "name": "test-button-2",
-                "extra_classes": "facile-btn--secondary",
+                "extra_classes": "dsfacile-btn--secondary",
             },
         ],
     }
@@ -297,9 +297,9 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <ul class="facile-btns-group facile-btns-group--equisized">
+            <ul class="dsfacile-btns-group dsfacile-btns-group--equisized">
                 <li>
-                    <button class="facile-btn"
+                    <button class="dsfacile-btn"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button">
@@ -308,7 +308,7 @@ class dsfacileButtonGroupTagTest(SimpleTestCase):
                 </li>
 
                 <li>
-                    <button class="facile-btn facile-btn--secondary"
+                    <button class="dsfacile-btn dsfacile-btn--secondary"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button-2">
@@ -325,7 +325,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
     test_data = {
         "text": "Text of the callout item",
         "title": "Title of the callout item",
-        "icon_class": "facile-icon-information-line",
+        "icon_class": "dsfacile-icon-information-line",
         "heading_tag": "h4",
         "button": {"onclick": "close()", "label": "button label", "type": "button"},
     }
@@ -339,7 +339,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-    <p class="facile-callout__text">
+    <p class="dsfacile-callout__text">
         Text of the callout item
     </p>""",
             rendered_template,
@@ -348,13 +348,13 @@ class dsfacileCalloutTagTest(SimpleTestCase):
     def test_callout_optional_title_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h4 class="facile-callout__title">Title of the callout item</h4>""",
+            """<h4 class="dsfacile-callout__title">Title of the callout item</h4>""",
             rendered_template,
         )
 
     def test_callout_optional_icon_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("facile-icon-information-line" in rendered_template)
+        self.assertTrue("dsfacile-icon-information-line" in rendered_template)
 
     def test_callout_optional_button_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -362,7 +362,7 @@ class dsfacileCalloutTagTest(SimpleTestCase):
             """
             <button
                 type="button"
-                class="facile-btn"
+                class="dsfacile-btn"
                 onclick="close()"
             >
                 button label
@@ -393,12 +393,12 @@ class dsfacileCardTagTest(SimpleTestCase):
 
     def test_card_is_created(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("facile-card" in rendered_template)
+        self.assertTrue("dsfacile-card" in rendered_template)
 
     def test_card_has_detail(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="facile-card__detail">Appears before the title of the card item</p>',
+            '<p class="dsfacile-card__detail">Appears before the title of the card item</p>',
             rendered_template,
         )
 
@@ -406,7 +406,7 @@ class dsfacileCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-                <p class="facile-card__title">
+                <p class="dsfacile-card__title">
                 <a href="https://test.gouv.fr" target="_self">
                     Title of the card item
                 </a>
@@ -417,7 +417,7 @@ class dsfacileCardTagTest(SimpleTestCase):
     def test_card_has_description(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="facile-card__desc">Text of the card item</p>',
+            '<p class="dsfacile-card__desc">Text of the card item</p>',
             rendered_template,
         )
 
@@ -425,8 +425,8 @@ class dsfacileCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-card__img">
-                <img src="https://test.gouv.fr/test.png" class="facile-responsive-img" alt="">
+            <div class="dsfacile-card__img">
+                <img src="https://test.gouv.fr/test.png" class="dsfacile-responsive-img" alt="">
             </div>
             """,  # noqa
             rendered_template,
@@ -453,38 +453,38 @@ class dsfacileConsentTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-consent-banner">
-            <h2 class="facile-h6">
+            <div class="dsfacile-consent-banner">
+            <h2 class="dsfacile-h6">
                 À propos des cookies sur Django-dsfacile
             </h2>
-            <div class="facile-consent-banner__content">
-                <p class="facile-text--sm">
+            <div class="dsfacile-consent-banner__content">
+                <p class="dsfacile-text--sm">
                     Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                     services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
                     Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle
                     sur les cookies que vous souhaitez activer.
                 </p>
             </div>
-            <ul class="facile-consent-banner__buttons facile-btns-group facile-btns-group--right facile-btns-group--inline-reverse facile-btns-group--inline-sm">
+            <ul class="dsfacile-consent-banner__buttons dsfacile-btns-group dsfacile-btns-group--right dsfacile-btns-group--inline-reverse dsfacile-btns-group--inline-sm">
                 <li>
-                <button class="facile-btn"
+                <button class="dsfacile-btn"
                         id="consent-accept-all"
                         title="Autoriser tous les cookies">
                     Tout accepter
                 </button>
                 </li>
                 <li>
-                <button class="facile-btn"
+                <button class="dsfacile-btn"
                         id="consent-reject-all"
                         title="Refuser tous les cookies">
                     Tout refuser
                 </button>
                 </li>
                 <li>
-                <button class="facile-btn facile-btn--secondary"
+                <button class="dsfacile-btn dsfacile-btn--secondary"
                         id="consent-customize"
-                        data-facile-opened="false"
-                        aria-controls="facile-consent-modal"
+                        data-dsfacile-opened="false"
+                        aria-controls="dsfacile-consent-modal"
                         title="Personnaliser les cookies">
                     Personnaliser
                 </button>
@@ -500,8 +500,8 @@ class dsfacileContentTagTest(SimpleTestCase):
     test_data = {
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
-        "image_url": "/django-dsfacile/static/img/placeholder.16x9.svg",
-        "ratio_class": "facile-ratio-4x3",
+        "image_url": "/static/img/placeholder.16x9.svg",
+        "ratio_class": "dsfacile-ratio-4x3",
     }
 
     context = Context({"test_data": test_data})
@@ -513,13 +513,13 @@ class dsfacileContentTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="facile-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
-            <div class="facile-content-media__img">
-                <img class="facile-responsive-img facile-ratio-4x3"
-                    src="/django-dsfacile/static/img/placeholder.16x9.svg"
+            <figure class="dsfacile-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
+            <div class="dsfacile-content-media__img">
+                <img class="dsfacile-responsive-img dsfacile-ratio-4x3"
+                    src="/static/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
-                <figcaption class="facile-content-media__caption">
+                <figcaption class="dsfacile-content-media__caption">
                 Image en largeur normale et en 4x3
                 </figcaption>
             </figure>""",
@@ -539,11 +539,11 @@ class dsfacileFranceConnectTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-connect-group">
-                <button class="facile-connect"
+            <div class="dsfacile-connect-group">
+                <button class="dsfacile-connect"
                         id="france-connect">
-                    <span class="facile-connect__login">S’identifier avec</span>
-                    <span class="facile-connect__brand">FranceConnect</span>
+                    <span class="dsfacile-connect__login">S’identifier avec</span>
+                    <span class="dsfacile-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/"
@@ -569,11 +569,11 @@ class dsfacileFranceConnectPlusTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-connect-group">
-                <button class="facile-connect facile-connect--plus"
+            <div class="dsfacile-connect-group">
+                <button class="dsfacile-connect dsfacile-connect--plus"
                         id="france-connect-plus">
-                    <span class="facile-connect__login">S’identifier avec</span>
-                    <span class="facile-connect__brand">FranceConnect</span>
+                    <span class="dsfacile-connect__login">S’identifier avec</span>
+                    <span class="dsfacile-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/france-connect-plus"
@@ -592,7 +592,7 @@ class dsfacileHighlightTagTest(SimpleTestCase):
         "content": "Content of the highlight item (can include html)",
         "title": "(Optional) Title of the highlight item",
         "heading_tag": "h4",
-        "size_class": "facile-text--sm",
+        "size_class": "dsfacile-text--sm",
     }
 
     context = Context({"test_data": test_data})
@@ -604,8 +604,8 @@ class dsfacileHighlightTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-highlight">
-                <p class="facile-text--sm">
+            <div class="dsfacile-highlight">
+                <p class="dsfacile-text--sm">
                     Content of the highlight item (can include html)
                 </p>
             </div>
@@ -641,12 +641,12 @@ class dsfacileInputTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="facile-input-group ">
-                <label class="facile-label" for="sample-id">
+            <div class="dsfacile-input-group ">
+                <label class="dsfacile-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="facile-input"
+                    class="dsfacile-input"
                     type="text"
                     id="sample-id"
                     name="sample-id"
@@ -666,12 +666,12 @@ class dsfacileInputTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="facile-input-group ">
-                <label class="facile-label" for="sample-id">
+            <div class="dsfacile-input-group ">
+                <label class="dsfacile-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="facile-input"
+                    class="dsfacile-input"
                     type="date"
                     id="sample-id"
                     name="sample-id"
@@ -691,7 +691,7 @@ class dsfacileLinkTagTest(SimpleTestCase):
         "url": "http://example.com",
         "label": "Label of the link item",
         "is_external": True,
-        "extra_classes": "facile-link--lg",
+        "extra_classes": "dsfacile-link--lg",
     }
 
     context = Context({"test_data": test_data})
@@ -704,11 +704,11 @@ class dsfacileLinkTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <a
-            class="facile-link facile-icon-external-link-line facile-link--icon-right facile-link--lg"
+            class="dsfacile-link dsfacile-icon-external-link-line dsfacile-link--icon-right dsfacile-link--lg"
             href="http://example.com"
             target="_blank" rel="noopener noreferrer"
             >
-              Label of the link item <span class="facile-sr-only">Ouvre une nouvelle fenêtre</span>
+              Label of the link item <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span>
             </a>
             """,  # noqa
             rendered_template,
@@ -733,14 +733,14 @@ class dsfacileNoticeTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-notice__body">
-                <p class="facile-notice__title">
+            <div class="dsfacile-notice__body">
+                <p class="dsfacile-notice__title">
                     Bandeau d’information importante avec <a href='#'
                         rel='noopener external'
                         title="intitulé - Ouvre une nouvelle fenêtre" target='_blank'>
                         lien</a>.
                 </p>
-                    <button class="facile-btn--close facile-btn"
+                    <button class="dsfacile-btn--close dsfacile-btn"
                         title="Masquer le message"
                         onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
                     Masquer le message
@@ -775,21 +775,21 @@ class dsfacileQuoteTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="facile-quote facile-quote--column">
+            <figure class="dsfacile-quote dsfacile-quote--column">
                 <blockquote cite="https://www.systeme-de-design.gouv.fr/">
                     <p>Développer vos sites et applications en utilisant des composants prêts à l&#x27;emploi, accessibles et ergonomiques</p>
                 </blockquote>
                 <figcaption>
-                    <p class="facile-quote__author">Auteur</p>
-                    <ul class="facile-quote__source">
+                    <p class="dsfacile-quote__author">Auteur</p>
+                    <ul class="dsfacile-quote__source">
                     <li>
                         <cite>Système de Design de l&#x27;État</cite>
                     </li>
                     <li>Détail sans lien</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="facile-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
                     </ul>
-                    <div class="facile-quote__image">
-                    <img src="https://via.placeholder.com/150x150" class="facile-responsive-img" alt="" />
+                    <div class="dsfacile-quote__image">
+                    <img src="https://via.placeholder.com/150x150" class="dsfacile-responsive-img" alt="" />
                     </div>
                 </figcaption>
             </figure>
@@ -851,8 +851,8 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_rendered(self):
         self.assertInHTML(
             """
-            <li class="facile-sidemenu__item">
-                <a class="facile-sidemenu__link" href="#" target="_self" >Une page</a>
+            <li class="dsfacile-sidemenu__item">
+                <a class="dsfacile-sidemenu__link" href="#" target="_self" >Une page</a>
             </li>
 
             """,
@@ -862,7 +862,7 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_heading_can_be_set(self):
         self.assertInHTML(
             """
-            <h2 class="facile-sidemenu__title">Menu</h2>
+            <h2 class="dsfacile-sidemenu__title">Menu</h2>
             """,
             self.rendered_template,
         )
@@ -870,25 +870,25 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_current_page_and_parents_are_active(self):
         self.assertInHTML(
             """
-            <li class="facile-sidemenu__item facile-sidemenu__item--active">
+            <li class="dsfacile-sidemenu__item dsfacile-sidemenu__item--active">
                 <button
                     type="button"
-                    class="facile-sidemenu__btn"
+                    class="dsfacile-sidemenu__btn"
                     aria-expanded="true"
-                    aria-controls="facile-sidemenu-item-2-2"
+                    aria-controls="dsfacile-sidemenu-item-2-2"
                 >
                     Sous-menu ouvert
                 </button>
-                <div class="facile-collapse" id="facile-sidemenu-item-2-2">
-                    <ul class="facile-sidemenu__list">
-                        <li class="facile-sidemenu__item">
-                        <a class="facile-sidemenu__link" href="#" target="_self" >
+                <div class="dsfacile-collapse" id="dsfacile-sidemenu-item-2-2">
+                    <ul class="dsfacile-sidemenu__list">
+                        <li class="dsfacile-sidemenu__item">
+                        <a class="dsfacile-sidemenu__link" href="#" target="_self" >
                             Page non active
                         </a>
                         </li>
 
-                        <li class="facile-sidemenu__item facile-sidemenu__item--active">
-                        <a class="facile-sidemenu__link" href="/django-dsfacile/components/sidemenu/" target="_self"  aria-current="page">
+                        <li class="dsfacile-sidemenu__item dsfacile-sidemenu__item--active">
+                        <a class="dsfacile-sidemenu__link" href="/django-dsfacile/components/sidemenu/" target="_self"  aria-current="page">
                             Page active
                         </a>
                         </li>
@@ -915,16 +915,16 @@ class dsfacileSummaryTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <nav role="navigation" class="facile-summary" aria-labelledby="facile-summary-title">
-                <p class="facile-summary__title" id="facile-summary-title">Sommaire</p>
-                <ol class="facile-summary__list">
+            <nav role="navigation" class="dsfacile-summary" aria-labelledby="dsfacile-summary-title">
+                <p class="dsfacile-summary__title" id="dsfacile-summary-title">Sommaire</p>
+                <ol class="dsfacile-summary__list">
 
                     <li>
-                        <a class="facile-summary__link" href="link 1">First item title</a>
+                        <a class="dsfacile-summary__link" href="link 1">First item title</a>
                     </li>
 
                     <li>
-                        <a class="facile-summary__link" href="link 2">Second item title</a>
+                        <a class="dsfacile-summary__link" href="link 2">Second item title</a>
                     </li>
                 </ol>
             </nav>
@@ -948,14 +948,14 @@ class dsfacileSkiplinksTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-skiplinks">
-                <nav role="navigation" class="facile-container" aria-label="Accès rapide">
-                    <ul class="facile-skiplinks__list">
+            <div class="dsfacile-skiplinks">
+                <nav role="navigation" class="dsfacile-container" aria-label="Accès rapide">
+                    <ul class="dsfacile-skiplinks__list">
                     <li>
-                        <a class="facile-link" href="#contenu">Contenu</a>
+                        <a class="dsfacile-link" href="#contenu">Contenu</a>
                     </li>
                     <li>
-                        <a class="facile-link" href="#header-navigation">Menu</a>
+                        <a class="dsfacile-link" href="#header-navigation">Menu</a>
                     </li>
                     </ul>
                 </nav>
@@ -977,7 +977,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="facile-tag">Label of the tag item</p>""", rendered_template
+            """<p class="dsfacile-tag">Label of the tag item</p>""", rendered_template
         )
 
     def test_tag_with_link_rendered(self):
@@ -989,7 +989,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="/components" class="facile-tag">Label of the tag item</a>""",
+            """<a href="/components" class="dsfacile-tag">Label of the tag item</a>""",
             rendered_template,
         )
 
@@ -998,11 +998,11 @@ class dsfacileTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load dsfacile_tags %} {% dsfacile_tag test_data extra_classes='facile-icon-arrow-right-line facile-tag--icon-left' %}"  # noqa
+            "{% load dsfacile_tags %} {% dsfacile_tag test_data extra_classes='dsfacile-icon-arrow-right-line dsfacile-tag--icon-left' %}"  # noqa
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="facile-tag facile-icon-arrow-right-line facile-tag--icon-left">Label of the tag item</p>""",  # noqa
+            """<p class="dsfacile-tag dsfacile-icon-arrow-right-line dsfacile-tag--icon-left">Label of the tag item</p>""",  # noqa
             rendered_template,
         )
 
@@ -1019,7 +1019,7 @@ class dsfacileTagTagTest(SimpleTestCase):
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="#" class="facile-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
+            """<a href="#" class="dsfacile-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
             rendered_template,
         )
 
@@ -1030,7 +1030,7 @@ class dsfacileToggleTagTest(SimpleTestCase):
             "label": "Interrupteur complet aligné à gauche",
             "help_text": "Cet interrupteur présente toutes les options disponibles",
             "is_disabled": False,
-            "extra_classes": "facile-toggle--label-left facile-toggle--border-bottom",
+            "extra_classes": "dsfacile-toggle--label-left dsfacile-toggle--border-bottom",
             "id": "toggle-full",
         }
 
@@ -1041,18 +1041,18 @@ class dsfacileToggleTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="facile-toggle facile-toggle--label-left facile-toggle--border-bottom">
+            <div class="dsfacile-toggle dsfacile-toggle--label-left dsfacile-toggle--border-bottom">
                 <input type="checkbox"
-                        class="facile-toggle__input"
+                        class="dsfacile-toggle__input"
                         aria-describedby="toggle-full-hint-text"
                         id="toggle-full">
-                <label class="facile-toggle__label"
+                <label class="dsfacile-toggle__label"
                         for="toggle-full"
-                        data-facile-checked-label="Activé"
-                        data-facile-unchecked-label="Désactivé">
+                        data-dsfacile-checked-label="Activé"
+                        data-dsfacile-unchecked-label="Désactivé">
                     Interrupteur complet aligné à gauche
                 </label>
-                    <p class="facile-hint-text" id="toggle-full-hint-text">
+                    <p class="dsfacile-hint-text" id="toggle-full-hint-text">
                     Cet interrupteur présente toutes les options disponibles
                     </p>
                 </div>
@@ -1076,14 +1076,14 @@ class dsfacileTooltipTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <a class="facile-link"
+            <a class="dsfacile-link"
                 aria-describedby="tooltip-test"
                 id="link-tooltip-test"
                 href="#">
                 Libellé du lien
             </a>
 
-            <span class="facile-tooltip facile-placement"
+            <span class="dsfacile-tooltip dsfacile-placement"
                 id="tooltip-test"
                 role="tooltip"
                 aria-hidden="true">Contenu d’une infobule activée au survol</span>
@@ -1107,43 +1107,43 @@ class dsfacileTranscriptionTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="facile-transcription">
-                <button class="facile-transcription__btn"
+            <div class="dsfacile-transcription">
+                <button class="dsfacile-transcription__btn"
                         aria-expanded="false"
-                        aria-controls="facile-transcription__collapse-transcription-test">
+                        aria-controls="dsfacile-transcription__collapse-transcription-test">
                     Transcription
                 </button>
-                <div class="facile-collapse" id="facile-transcription__collapse-transcription-test">
-                    <div class="facile-transcription__footer">
-                        <div class="facile-transcription__actions-group">
+                <div class="dsfacile-collapse" id="dsfacile-transcription__collapse-transcription-test">
+                    <div class="dsfacile-transcription__footer">
+                        <div class="dsfacile-transcription__actions-group">
 
-                            <button class="facile-btn facile-btn--fullscreen"
-                                    aria-controls="facile-transcription-modal-transcription-test"
-                                    data-facile-opened="false"
+                            <button class="dsfacile-btn dsfacile-btn--fullscreen"
+                                    aria-controls="dsfacile-transcription-modal-transcription-test"
+                                    data-dsfacile-opened="false"
                                     title="Agrandir">
                                 Agrandir
                             </button>
                         </div>
                     </div>
-                    <dialog id="facile-transcription-modal-transcription-test"
-                            class="facile-modal"
+                    <dialog id="dsfacile-transcription-modal-transcription-test"
+                            class="dsfacile-modal"
                             role="dialog"
-                            aria-labelledby="facile-transcription-modal-transcription-test-title">
-                        <div class="facile-container facile-container--fluid facile-container-md">
-                            <div class="facile-grid-row facile-grid-row--center">
-                                <div class="facile-col-12 facile-col-md-10 facile-col-lg-8">
-                                    <div class="facile-modal__body">
-                                        <div class="facile-modal__header">
+                            aria-labelledby="dsfacile-transcription-modal-transcription-test-title">
+                        <div class="dsfacile-container dsfacile-container--fluid facile-container-md">
+                            <div class="dsfacile-grid-row dsfacile-grid-row--center">
+                                <div class="dsfacile-col-12 dsfacile-col-md-10 dsfacile-col-lg-8">
+                                    <div class="dsfacile-modal__body">
+                                        <div class="dsfacile-modal__header">
 
-                                            <button class="facile-btn--close facile-btn"
-                                                    aria-controls="facile-transcription-modal-transcription-test"
+                                            <button class="dsfacile-btn--close dsfacile-btn"
+                                                    aria-controls="dsfacile-transcription-modal-transcription-test"
                                                     title="Fermer">
                                                 Fermer
                                             </button>
                                         </div>
-                                        <div class="facile-modal__content">
-                                            <h1 id="facile-transcription-modal-transcription-test-title"
-                                                class="facile-modal__title">
+                                        <div class="dsfacile-modal__content">
+                                            <h1 id="dsfacile-transcription-modal-transcription-test-title"
+                                                class="dsfacile-modal__title">
                                                 Transcription
                                             </h1>
                                             <div><p>Courte transcription basique</p></div>

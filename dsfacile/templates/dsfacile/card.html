@@ -1,10 +1,10 @@
 {% load dsfacile_tags i18n %}
 {% translate "Opens a new window" as new_window_label %}
-<div class="facile-card{% if self.enlarge_link %} facile-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+<div class="dsfacile-card{% if self.enlarge_link %} dsfacile-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
      {% if self.id %}id="{{ self.id }}"{% endif %}>
-  <div class="facile-card__body">
-    <div class="facile-card__content">
-      <{{ self.heading_tag | default:"p" }} class="facile-card__title">
+  <div class="dsfacile-card__body">
+    <div class="dsfacile-card__content">
+      <{{ self.heading_tag | default:"p" }} class="dsfacile-card__title">
       {% if self.link %}
         <a href="{{ self.link }}"
            target="{% if self.new_tab %}_blank{% else %}_self{% endif %}"
@@ -15,13 +15,13 @@
         {{ self.title |truncatechars:100 }}
       {% endif %}
       </{{ self.heading_tag | default:"p" }}>
-      <p class="facile-card__desc">
+      <p class="dsfacile-card__desc">
         {{ self.description |truncatechars:200 }}
       </p>
       {% if self.top_detail %}
-        <div class="facile-card__start">
+        <div class="dsfacile-card__start">
           {% if self.top_detail.tags %}
-            <ul class="facile-tags-group">
+            <ul class="dsfacile-tags-group">
               {% for tag in self.top_detail.tags %}
                 <li>
                   {% dsfacile_tag tag %}
@@ -29,7 +29,7 @@
               {% endfor %}
             </ul>
           {% elif self.top_detail.badges %}
-            <ul class="facile-badges-group">
+            <ul class="dsfacile-badges-group">
               {% for badge in self.top_detail.badges %}
                 <li>
                   {% dsfacile_badge badge %}
@@ -38,24 +38,24 @@
             </ul>
           {% endif %}
           {% if self.top_detail.detail %}
-            <p class="facile-card__detail{% if self.top_detail.detail.icon_class %} self.top_detail.detail.icon_class{% endif %}">
+            <p class="dsfacile-card__detail{% if self.top_detail.detail.icon_class %} self.top_detail.detail.icon_class{% endif %}">
               {{ self.top_detail.detail.text }}
             </p>
           {% endif %}
         </div>
       {% endif %}
       {% if self.bottom_detail %}
-        <div class="facile-card__end">
-          <p class="facile-card__detail{% if self.bottom_detail.icon_class %} self.bottom_detail.icon_class{% endif %}">
+        <div class="dsfacile-card__end">
+          <p class="dsfacile-card__detail{% if self.bottom_detail.icon_class %} self.bottom_detail.icon_class{% endif %}">
             {{ self.bottom_detail.text }}
           </p>
         </div>
       {% endif %}
     </div>
     {% if self.call_to_action and not self.bottom_detail %}
-      <div class="facile-card__footer">
+      <div class="dsfacile-card__footer">
         {% if self.call_to_action.buttons %}
-          <ul class="facile-btns-group facile-btns-group--inline-reverse facile-btns-group--inline-lg">
+          <ul class="dsfacile-btns-group dsfacile-btns-group--inline-reverse dsfacile-btns-group--inline-lg">
             {% for button in self.call_to_action.buttons %}
               <li>
                 {% dsfacile_button button %}
@@ -63,7 +63,7 @@
             {% endfor %}
           </ul>
         {% elif self.call_to_action.links %}
-          <ul class="facile-links-group">
+          <ul class="dsfacile-links-group">
             {% for link in self.call_to_action.links %}
               <li>
                 {% dsfacile_link link %}
@@ -74,15 +74,15 @@
       </div>
     {% endif %}
   </div>
-  <div class="facile-card__header">
+  <div class="dsfacile-card__header">
     {% if self.image_url %}
-      <div class="facile-card__img">
-        <img class="facile-responsive-img"
+      <div class="dsfacile-card__img">
+        <img class="dsfacile-responsive-img"
              src="{{ self.image_url }}"
              alt="{{ self.image_alt }}" />
       </div>
       {% if self.media_badges %}
-        <ul class="facile-badges-group">
+        <ul class="dsfacile-badges-group">
           {% for badge in self.media_badges %}
             <li>
               {% dsfacile_badge badge %}

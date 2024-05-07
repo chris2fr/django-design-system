@@ -1,9 +1,9 @@
 {% load i18n %}
 {% translate "Hide message" as hide_message %}
 <div role="alert"
-     class="facile-alert facile-alert--{{ self.type }}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+     class="dsfacile-alert dsfacile-alert--{{ self.type }}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% if self.title %}
-    <{{ self.heading_tag | default:"p" }} class="facile-alert__title">{{ self.title }}</{{ self.heading_tag | default:"p" }}>
+    <{{ self.heading_tag | default:"p" }} class="dsfacile-alert__title">{{ self.title }}</{{ self.heading_tag | default:"p" }}>
   {% endif %}
   {% if self.content %}
     <p>
@@ -11,7 +11,7 @@
     </p>
   {% endif %}
   {% if self.is_collapsible %}
-    <button class="facile-btn--close facile-btn"
+    <button class="dsfacile-btn--close dsfacile-btn"
             title="{{ hide_message }}"
             onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
       {{ hide_message }}

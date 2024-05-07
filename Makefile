@@ -28,7 +28,7 @@ init:
 
 .PHONY: messages
 messages:
-	poetry run django-admin makemessages -l fr --ignore=manage.py,docs/*
+	poetry run django-admin makemessages -l fr --ignore=manage.py,docs/*,./venv/*
 
 .PHONY: compilemessages
 compilemessages:

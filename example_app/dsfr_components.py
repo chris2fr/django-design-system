@@ -235,7 +235,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ cinq lignes dans le mode vertical, et deux en horizontal.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
             },
             {
@@ -245,7 +245,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "fr-card--horizontal",
             },
@@ -256,7 +256,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "fr-card--horizontal fr-card--horizontal-tier",
             },
@@ -267,7 +267,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "fr-card--horizontal fr-card--horizontal-half",
             },
@@ -277,7 +277,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "media_badges": [
                     {
@@ -308,7 +308,7 @@ IMPLEMENTED_COMPONENTS = {
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
                         "icon_class": "fr-icon-warning-fill",
@@ -338,7 +338,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
                 "extra_classes": "fr-card--horizontal",
@@ -355,7 +355,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
                 "extra_classes": "fr-card--horizontal",
@@ -380,14 +380,14 @@ IMPLEMENTED_COMPONENTS = {
                     à environ cinq lignes dans le mode vertical, et deux en horizontal.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
                 "extra_classes": "fr-card--grey fr-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "enlarge_link": False,
                 "extra_classes": "fr-card--horizontal",
             },
@@ -417,19 +417,19 @@ IMPLEMENTED_COMPONENTS = {
         "example_url": "https://main--ds-gouv.netlify.app/example/component/content/",
         "sample_data": [
             {
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "ratio_class": "fr-ratio-16x9",
             },
             {
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "ratio_class": "fr-ratio-4x3",
             },
             {
-                "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+                "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "extra_classes": "fr-content-media--lg",
@@ -582,7 +582,7 @@ IMPLEMENTED_COMPONENTS = {
                         "link": "https://template.incubateur.net/",
                     },
                 ],
-                "image_url": "/django-dsfr/static/img/placeholder.1x1.svg",
+                "image_url": "/static/img/placeholder.1x1.svg",
                 "extra_classes": "fr-quote--green-emeraude",
             },
             {

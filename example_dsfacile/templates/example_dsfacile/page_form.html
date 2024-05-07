@@ -1,0 +1,19 @@
+{% extends "example_dsfacile/base.html" %}
+{% load static dsfacile_tags %}
+{% block content %}
+  <h1>
+    Exemple de formulaire
+  </h1>
+  <form action="{% url 'page_form' %}" method="post">
+    {% csrf_token %}
+    {% dsfacile_form %}
+    <div class="fr-input-group fr-my-4w">
+      <button type="submit" class="fr-btn" title="Valider">
+        Valider ce formulaire
+      </button>
+      <button type="" class="fr-btn fr-btn--secondary" title="Annuler">
+        Annuler
+      </button>
+    </div>
+  </form>
+{% endblock content %}

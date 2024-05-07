@@ -1,20 +1,20 @@
 {% load i18n %}
 {% translate "Checked" as checked_label %}
 {% translate "Unchecked" as unchecked_label %}
-<div class="facile-toggle{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+<div class="dsfacile-toggle{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   <input type="checkbox"
          {% if self.is_disabled %}disabled{% endif %}
-         class="facile-toggle__input"
+         class="dsfacile-toggle__input"
          aria-describedby="{{ self.id }}-hint-text"
          id="{{ self.id }}">
-  <label class="facile-toggle__label"
+  <label class="dsfacile-toggle__label"
          for="{{ self.id }}"
-         data-facile-checked-label="{{ checked_label }}"
-         data-facile-unchecked-label="{{ unchecked_label }}">
+         data-dsfacile-checked-label="{{ checked_label }}"
+         data-dsfacile-unchecked-label="{{ unchecked_label }}">
     {{ self.label }}
   </label>
   {% if self.help_text %}
-    <p class="facile-hint-text" id="{{ self.id }}-hint-text">
+    <p class="dsfacile-hint-text" id="{{ self.id }}-hint-text">
       {{ self.help_text }}
     </p>
   {% endif %}

@@ -1,5 +1,5 @@
 {% load widget_tweaks dsfacile_tags %}
-<div class="facile-checkbox-group{% if field.errors %} facile-checkbox-group--error{% endif %}{% if field.field.disabled %} facile-input-group--disabled{% endif %} facile-mb-2w">
+<div class="dsfacile-checkbox-group{% if field.errors %} dsfacile-checkbox-group--error{% endif %}{% if field.field.disabled %} dsfacile-input-group--disabled{% endif %} dsfacile-mb-2w">
   {% if field.errors %}
     {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
       {{ field|dsfacile_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
@@ -7,10 +7,10 @@
   {% else %}
     {{ field|dsfacile_input_class_attr|attr:"type:checkbox" }}
   {% endif %}
-  <label for="{{ field.id_for_label }}" class="facile-label">
+  <label for="{{ field.id_for_label }}" class="dsfacile-label">
     {{ field.label_tag }}
     {% if field.help_text %}
-      <span class="facile-hint-text">{{ field.help_text }}</span>
+      <span class="dsfacile-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </label>
   {% if field.errors %}

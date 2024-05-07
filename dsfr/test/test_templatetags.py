@@ -20,7 +20,7 @@ class DsfrCssTagTest(SimpleTestCase):
         template_to_render = Template("{% load dsfr_tags %} {% dsfr_css %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            f'<link rel="stylesheet" href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
+            f'<link rel="stylesheet" href="/static/dsfr/dist/dsfr/dsfr.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
             rendered_template,
         )
 
@@ -32,8 +32,8 @@ class DsfrJsTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
-            <script nomodule src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
+            <script type="module" src="/static/dsfr/dist/dsfr/dsfr.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
+            <script nomodule src="/static/dsfr/dist/dsfr/dsfr.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
             """,  # noqa
             rendered_template,
         )
@@ -48,8 +48,8 @@ class DsfrJsTagWithNonceTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
-            <script nomodule src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
+            <script type="module" src="/static/dsfr/dist/dsfr/dsfr.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
+            <script nomodule src="/static/dsfr/dist/dsfr/dsfr.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
             """,  # noqa
             rendered_template,
         )
@@ -62,11 +62,11 @@ class DsfrFaviconTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <link rel="apple-touch-icon" href="/django-dsfr/static/dsfr/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
-            <link rel="icon" href="/django-dsfr/static/dsfr/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
-            <link rel="shortcut icon" href="/django-dsfr/static/dsfr/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
+            <link rel="apple-touch-icon" href="/static/dsfr/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
+            <link rel="icon" href="/static/dsfr/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
+            <link rel="shortcut icon" href="/static/dsfr/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
             <!-- 32×32 -->
-            <link rel="manifest" href="/django-dsfr/static/dsfr/dist/favicon/manifest.webmanifest"
+            <link rel="manifest" href="/static/dsfr/dist/favicon/manifest.webmanifest"
             crossorigin="use-credentials" integrity="{ INTEGRITY_FAVICON_MANIFEST }" />
             """,  # noqa
             rendered_template,
@@ -486,7 +486,7 @@ class DsfrContentTagTest(SimpleTestCase):
     test_data = {
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
-        "image_url": "/django-dsfr/static/img/placeholder.16x9.svg",
+        "image_url": "/static/img/placeholder.16x9.svg",
         "ratio_class": "fr-ratio-4x3",
     }
 
@@ -500,7 +500,7 @@ class DsfrContentTagTest(SimpleTestCase):
             <figure class="fr-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
             <div class="fr-content-media__img">
                 <img class="fr-responsive-img fr-ratio-4x3"
-                    src="/django-dsfr/static/img/placeholder.16x9.svg"
+                    src="/static/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
                 <figcaption class="fr-content-media__caption">

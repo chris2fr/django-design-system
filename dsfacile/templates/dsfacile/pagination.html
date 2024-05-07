@@ -1,15 +1,15 @@
 {% load dsfacile_tags i18n %}
 {% translate "Pagination" as pagination_label %}
 <nav role="navigation"
-     class="facile-pagination"
+     class="dsfacile-pagination"
      aria-label="{{ pagination_label }}">
-  <ul class="facile-pagination__list">
+  <ul class="dsfacile-pagination__list">
     <li>
-      <a class="facile-pagination__link facile-pagination__link--first"
+      <a class="dsfacile-pagination__link dsfacile-pagination__link--first"
          {% if page_obj.has_previous %} href="?{% url_remplace_params page=1 %}" {% endif %}>{% translate "First page" %}</a>
     </li>
     <li>
-      <a class="facile-pagination__link facile-pagination__link--prev facile-pagination__link--lg-label"
+      <a class="dsfacile-pagination__link dsfacile-pagination__link--prev dsfacile-pagination__link--lg-label"
          {% if page_obj.has_previous %} href="?{% url_remplace_params page=page_obj.previous_page_number %}" {% endif %}>
         {% translate "Previous page" %}
       </a>
@@ -18,12 +18,12 @@
       {% for item in page_obj.pages_list %}
         {% if item == "…" %}
           <li>
-            <a class="facile-pagination__link facile-unhidden-lg">…</a>
+            <a class="dsfacile-pagination__link dsfacile-unhidden-lg">…</a>
           </li>
         {% else %}
           <li>
             {% translate "Page" as page_label %}
-            <a class="facile-pagination__link"
+            <a class="dsfacile-pagination__link"
                {% if item == page_obj.number %}aria-current="page"{% endif %}
                title="{{ page_label }} {{ item }}"
                href="?{% url_remplace_params page=item %}">{{ item }}</a>
@@ -32,7 +32,7 @@
       {% endfor %}
     {% else %}
       <li>
-        <a class="facile-pagination__link"
+        <a class="dsfacile-pagination__link"
            aria-current="page"
            title="{{ page_label }} {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}"
            href="?{% url_remplace_params page=page_obj.number %}">
@@ -41,13 +41,13 @@
       </li>
     {% endif %}
     <li>
-      <a class="facile-pagination__link facile-pagination__link--next facile-pagination__link--lg-label"
+      <a class="dsfacile-pagination__link dsfacile-pagination__link--next dsfacile-pagination__link--lg-label"
          {% if page_obj.has_next %} href="?{% url_remplace_params page=page_obj.next_page_number %}" {% endif %}>
         {% translate "Next page" %}
       </a>
     </li>
     <li>
-      <a class="facile-pagination__link facile-pagination__link--last"
+      <a class="dsfacile-pagination__link dsfacile-pagination__link--last"
          {% if page_obj.has_next %} href="?{% url_remplace_params page=page_obj.paginator.num_pages %}" {% endif %}>
         {% translate "Last page" %}
       </a>

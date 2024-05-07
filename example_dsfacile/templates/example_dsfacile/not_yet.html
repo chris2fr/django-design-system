@@ -1,0 +1,9 @@
+{% extends "example_dsfacile/base.html" %}
+{% load static dsfacile_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  {% dsfacile_callout not_yet %}
+  <br />
+{% endblock content %}

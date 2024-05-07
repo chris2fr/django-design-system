@@ -21,14 +21,14 @@ class Command(BaseCommand):
 
         for folder in icons_folders:
             icons_dict = {
-                "prefix": "facile-icon-",
+                "prefix": "dsfacile-icon-",
                 "version": "1.11.2",
                 "icons": [],
             }
 
             files = os.listdir(os.path.join(icons_root, folder))
             files_without_extensions = [
-                f.split(".")[0].replace("facile--", "") for f in files
+                f.split(".")[0].replace("dsfacile--", "") for f in files
             ]
             files_without_extensions.sort()
 
