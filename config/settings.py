@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "csp",
     "widget_tweaks",
     "dsfr",
+    "dsfacile",
     "example_app",
     "django_distill",
 ]

@@ -1447,7 +1447,9 @@ def dsfacile_django_messages(
     }
 
     def _render_alert_tag(message):
-        return Template("{% load dsfacile_tags %}{% dsfacile_alert data_dict %}").render(
+        return Template(
+            "{% load dsfacile_tags %}{% dsfacile_alert data_dict %}"
+        ).render(
             Context(
                 {
                     "data_dict": {

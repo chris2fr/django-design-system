@@ -13,7 +13,9 @@ class Command(BaseCommand):
         icons_folders = os.listdir(icons_root)
         icons_folders.sort()
 
-        json_root = "dsfacile/static/django-dsfacile/icon-picker/assets/icons-libraries/"
+        json_root = (
+            "dsfacile/static/django-dsfacile/icon-picker/assets/icons-libraries/"
+        )
 
         all_folders = []
 

@@ -12,7 +12,8 @@
   <div class="facile-collapse" id="breadcrumb-1">
     <ol class="facile-breadcrumb__list">
       <li>
-        <a class="facile-breadcrumb__link" href="{{ self.root_dir | default:'/' }}">{% translate "Home page" %}</a>
+        <a class="facile-breadcrumb__link"
+           href="{{ self.root_dir | default:'/' }}">{% translate "Home page" %}</a>
       </li>
       {% for link in self.links %}
         <li>

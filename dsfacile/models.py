@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from dsfacile.constants import DJANGO_dsfacile_LANGUAGES
+from dsfacile.constants import DJANGO_DSFACILE_LANGUAGES
 
 
 def validate_image_extension(value):
@@ -19,7 +19,7 @@ class dsfacileConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
-        choices=DJANGO_dsfacile_LANGUAGES,
+        choices=DJANGO_DSFACILE_LANGUAGES,
         help_text=_("Only one configuration is allowed per language"),
         default="fr",
         unique=True,

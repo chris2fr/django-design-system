@@ -13,8 +13,14 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         files = [
-            {"path": "dsfacile/dsfacile.module.min.js", "constant": "INTEGRITY_JS_MODULE"},
-            {"path": "dsfacile/dsfacile.nomodule.min.js", "constant": "INTEGRITY_JS_NOMODULE"},
+            {
+                "path": "dsfacile/dsfacile.module.min.js",
+                "constant": "INTEGRITY_JS_MODULE",
+            },
+            {
+                "path": "dsfacile/dsfacile.nomodule.min.js",
+                "constant": "INTEGRITY_JS_NOMODULE",
+            },
             {"path": "dsfacile/dsfacile.min.css", "constant": "INTEGRITY_CSS"},
             {"path": "utility/utility.min.css", "constant": "INTEGRITY_UTILITY_CSS"},
             {"path": "utility/icons/icons.min.css", "constant": "INTEGRITY_CSS_ICONS"},

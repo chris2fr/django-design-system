@@ -76,7 +76,9 @@ class dsfacileFaviconTagTest(SimpleTestCase):
 class dsfacileThemeModaleTagTest(SimpleTestCase):
     def test_theme_modale_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_theme_modale %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_theme_modale %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
@@ -96,7 +98,9 @@ class dsfacileAccordionTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_accordion test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_accordion test_data %}"
+    )
 
     def test_accordion_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -159,7 +163,9 @@ class dsfacileAlertTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_alert test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_alert test_data %}"
+    )
 
     def test_alert_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -190,7 +196,9 @@ class dsfacileBadgeTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_badge test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_badge test_data %}"
+    )
 
     def test_badge_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -238,7 +246,9 @@ class dsfacileButtonTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_button test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_button test_data %}"
+    )
 
     def test_button_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -321,7 +331,9 @@ class dsfacileCalloutTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_callout test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_callout test_data %}"
+    )
 
     def test_callout_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -433,7 +445,9 @@ class dsfacileConsentTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_consent test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_consent test_data %}"
+    )
 
     def test_consent_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -491,7 +505,9 @@ class dsfacileContentTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_content test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_content test_data %}"
+    )
 
     def test_content_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -580,7 +596,9 @@ class dsfacileHighlightTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_highlight test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_highlight test_data %}"
+    )
 
     def test_highlight_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -617,7 +635,9 @@ class dsfacileInputTagTest(SimpleTestCase):
 
     def test_text_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_text})
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_input test_data %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_input test_data %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
@@ -640,7 +660,9 @@ class dsfacileInputTagTest(SimpleTestCase):
 
     def test_date_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_date})
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_input test_data %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_input test_data %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
@@ -673,7 +695,9 @@ class dsfacileLinkTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_link test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_link test_data %}"
+    )
 
     def test_link_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -701,7 +725,9 @@ class dsfacileNoticeTagTest(SimpleTestCase):
     }
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_notice test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_notice test_data %}"
+    )
 
     def test_notice_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -741,7 +767,9 @@ class dsfacileQuoteTagTest(SimpleTestCase):
         "image_url": "https://via.placeholder.com/150x150",
     }
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_quote test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_quote test_data %}"
+    )
 
     def test_quote_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -815,7 +843,9 @@ class dsfacileSidemenuTagTest(SimpleTestCase):
     request_mock = MagicMock()
     request_mock.path = "/django-dsfacile/components/sidemenu/"
     context = Context({"request": request_mock, "test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_sidemenu test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_sidemenu test_data %}"
+    )
     rendered_template = template_to_render.render(context)
 
     def test_sidemenu_tag_rendered(self):
@@ -877,7 +907,9 @@ class dsfacileSummaryTagTest(SimpleTestCase):
     ]
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_summary test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_summary test_data %}"
+    )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -908,7 +940,9 @@ class dsfacileSkiplinksTagTest(SimpleTestCase):
     ]
 
     context = Context({"test_data": test_data})
-    template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_skiplinks test_data %}")
+    template_to_render = Template(
+        "{% load dsfacile_tags %} {% dsfacile_skiplinks test_data %}"
+    )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -938,7 +972,9 @@ class dsfacileTagTagTest(SimpleTestCase):
         }
 
         context = Context({"test_data": test_data})
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_tag test_data %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """<p class="facile-tag">Label of the tag item</p>""", rendered_template
@@ -948,7 +984,9 @@ class dsfacileTagTagTest(SimpleTestCase):
         test_data = {"label": "Label of the tag item", "link": "/components"}
 
         context = Context({"test_data": test_data})
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_tag test_data %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """<a href="/components" class="facile-tag">Label of the tag item</a>""",
@@ -976,7 +1014,9 @@ class dsfacileTagTagTest(SimpleTestCase):
         }
 
         context = Context({"test_data": test_data})
-        template_to_render = Template("{% load dsfacile_tags %} {% dsfacile_tag test_data %}")
+        template_to_render = Template(
+            "{% load dsfacile_tags %} {% dsfacile_tag test_data %}"
+        )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """<a href="#" class="facile-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa

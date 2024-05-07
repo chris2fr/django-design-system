@@ -6,7 +6,10 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("dsfacile", "0004_dsfacileconfig_beta_tag_dsfacileconfig_operator_logo_alt_and_more"),
+        (
+            "dsfacile",
+            "0004_dsfacileconfig_beta_tag_dsfacileconfig_operator_logo_alt_and_more",
+        ),
     ]
 
     operations = [
