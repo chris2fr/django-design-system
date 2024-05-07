@@ -1,0 +1,6 @@
+{% load dsfr_tags %}
+<div class="fr-accordions-group">
+  {% for item in self.items %}
+    {% dsfr_accordion item %}
+  {% endfor %}
+</div>
