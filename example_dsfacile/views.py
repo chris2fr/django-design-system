@@ -60,7 +60,7 @@ def init_payload(page_title: str, links: list = []):
 
     skiplinks = [
         {"link": "#content", "label": "Contenu"},
-        {"link": "#fr-navigation", "label": "Menu"},
+        {"link": "#dsfacile-navigation", "label": "Menu"},
     ]
 
     implemented_component_tags_unsorted = ALL_IMPLEMENTED_COMPONENTS
@@ -470,7 +470,7 @@ def resource_icons(request):
     summary = []
     for folder in icons_folders:
         files = os.listdir(os.path.join(icons_root, folder))
-        files_without_extensions = [f.split(".")[0].replace("fr--", "") for f in files]
+        files_without_extensions = [f.split(".")[0].replace("dsfacile--", "") for f in files]
         files_without_extensions.sort()
         all_icons[folder] = files_without_extensions
         summary.append({"link": f"#{slugify(folder)}", "label": folder.capitalize()})

@@ -6,7 +6,7 @@
   {% translate "Home page" as home_page %}
   <a href="{{ home_url }}"
      title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
-    <p class="fr-logo">
+    <p class="dsfacile-logo">
       {{ SITE_CONFIG.header_brand_html|default_if_none:"république<br />française" | safe }}
     </p>
   </a>
@@ -14,10 +14,10 @@
 
 {% block service_title %}
   <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
-    <p class="fr-header__service-title">
+    <p class="dsfacile-header__service-title">
       {{ SITE_CONFIG.site_title }}
       {% if SITE_CONFIG.beta_tag %}
-        <span class="fr-badge fr-badge--sm fr-badge--green-emeraude">BETA</span>
+        <span class="dsfacile-badge dsfacile-badge--sm dsfacile-badge--green-emeraude">BETA</span>
       {% endif %}
     </p>
   </a>
@@ -25,9 +25,9 @@
 
 {% block header_tools %}
   <li>
-    <button class="fr-btn--display fr-btn"
-            aria-controls="fr-theme-modal"
-            data-fr-opened="false">
+    <button class="dsfacile-btn--display dsfacile-btn"
+            aria-controls="dsfacile-theme-modal"
+            data-dsfacile-opened="false">
       {% translate "Display settings" %}
     </button>
   </li>
@@ -41,19 +41,19 @@
 {# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
 {% block burger_menu %}
   {% translate "Search" as search_label %}
-  <div class="fr-header__navbar">
-    <button class="fr-btn--search fr-btn"
-            data-fr-opened="false"
+  <div class="dsfacile-header__navbar">
+    <button class="dsfacile-btn--search dsfacile-btn"
+            data-dsfacile-opened="false"
             aria-controls="modal-search"
-            id="fr-btn-search-mobile"
+            id="dsfacile-btn-search-mobile"
             title="{{ search_label }}">
       {{ search_label }}
     </button>
     {% translate "Menu" as menu_label %}
-    <button class="fr-btn--menu fr-btn"
-            data-fr-opened="false"
-            aria-controls="fr-menu-mobile"
-            id="fr-btn-menu-mobile"
+    <button class="dsfacile-btn--menu dsfacile-btn"
+            data-dsfacile-opened="false"
+            aria-controls="dsfacile-menu-mobile"
+            id="dsfacile-btn-menu-mobile"
             title="{{ menu_label }}">
       {{ menu_label }}
     </button>
@@ -66,25 +66,25 @@
 
 {% block header_search %}
   {% translate "Search" as search_label %}
-  <div class="fr-header__search fr-modal" id="modal-search">
-    <div class="fr-container fr-container-lg--fluid">
+  <div class="dsfacile-header__search dsfacile-modal" id="modal-search">
+    <div class="dsfacile-container dsfacile-container-lg--fluid">
       {% translate "Close" as close_label %}
-      <button class="fr-btn--close fr-btn"
+      <button class="dsfacile-btn--close dsfacile-btn"
               aria-controls="modal-search"
               title="{{ close_label }}">
         {{ close_label }}
       </button>
       <form action="{% url 'page_search' %}" method="get">
-        <div class="fr-search-bar" id="search-bar" role="search">
-          <label class="fr-label" for="search-bar-input">
+        <div class="dsfacile-search-bar" id="search-bar" role="search">
+          <label class="dsfacile-label" for="search-bar-input">
             {{ search_label }}
           </label>
-          <input class="fr-input"
+          <input class="dsfacile-input"
                  placeholder="{{ search_label }}"
                  type="search"
                  id="query"
                  name="q">
-          <button class="fr-btn" title="{{ search_label }}">
+          <button class="dsfacile-btn" title="{{ search_label }}">
             {{ search_label }}
           </button>
         </div>

@@ -1,9 +1,9 @@
 {% load static %}
 <script type="module"
         src="{% static 'dsfacile/dist/dsfacile/dsfacile.module.min.js' %}"
-        integrity="{{ self.INTEGRITY_JS_MODULE }}"
+        notintegrity="{{ self.INTEGRITY_JS_MODULE }}"
         {% if self.nonce %} nonce="{{self.nonce}}"{% endif %}></script>
 <script nomodule
         src="{% static 'dsfacile/dist/dsfacile/dsfacile.nomodule.min.js' %}"
-        integrity="{{ self.INTEGRITY_JS_NOMODULE }}"
+        notintegrity="{{ self.INTEGRITY_JS_NOMODULE }}"
         {% if self.nonce %} nonce="{{self.nonce}}"{% endif %}></script>

@@ -51,7 +51,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "type": "warning",
                 "content": "Petite alerte sans titre.",
-                "extra_classes": "fr-alert--sm",
+                "extra_classes": "dsfacile-alert--sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte",
@@ -66,15 +66,15 @@ IMPLEMENTED_COMPONENTS = {
             },
             {
                 "label": "Petit badge",
-                "extra_classes": "fr-badge--sm",
+                "extra_classes": "dsfacile-badge--sm",
             },
             {
                 "label": "Badge coloré",
-                "extra_classes": "fr-badge--green-menthe",
+                "extra_classes": "dsfacile-badge--green-menthe",
             },
             {
                 "label": "Badge système",
-                "extra_classes": "fr-badge--success",
+                "extra_classes": "dsfacile-badge--success",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge",
@@ -96,18 +96,18 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Bouton secondaire",
                 "name": "secundary-button",
                 "type": "button",
-                "extra_classes": "fr-btn--secondary",
+                "extra_classes": "dsfacile-btn--secondary",
                 "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
             },
             {
                 "label": "Bouton tertiaire",
-                "extra_classes": "fr-btn--tertiary",
+                "extra_classes": "dsfacile-btn--tertiary",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
             },
             {
                 "label": "Bouton tertiaire sans bordure",
                 "type": "button",
-                "extra_classes": "fr-btn--tertiary-no-outline",
+                "extra_classes": "dsfacile-btn--tertiary-no-outline",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
             },
         ],
@@ -122,17 +122,17 @@ IMPLEMENTED_COMPONENTS = {
                     {
                         "label": "Bouton principal",
                         "onclick": "alert('Vous avez cliqué sur le bouton principal')",
-                        "extra_classes": "fr-icon-checkbox-circle-line fr-btn--icon-left",
+                        "extra_classes": "dsfacile-icon-checkbox-circle-line dsfacile-btn--icon-left",
                     },
                     {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fr-icon-checkbox-circle-line fr-btn--icon-left fr-btn--secondary",
+                        "extra_classes": "dsfacile-icon-checkbox-circle-line dsfacile-btn--icon-left dsfacile-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                 ],
-                "extra_classes": "fr-btns-group--icon-left",
+                "extra_classes": "dsfacile-btns-group--icon-left",
             },
             {
                 "items": [
@@ -144,22 +144,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fr-btn--secondary",
+                        "extra_classes": "dsfacile-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "fr-btn--tertiary",
+                        "extra_classes": "dsfacile-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "fr-btn--tertiary-no-outline",
+                        "extra_classes": "dsfacile-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "fr-btns-group--equisized",
+                "extra_classes": "dsfacile-btns-group--equisized",
             },
             {
                 "items": [
@@ -171,22 +171,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fr-btn--secondary",
+                        "extra_classes": "dsfacile-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "fr-btn--tertiary",
+                        "extra_classes": "dsfacile-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "fr-btn--tertiary-no-outline",
+                        "extra_classes": "dsfacile-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "fr-btns-group--inline-sm",
+                "extra_classes": "dsfacile-btns-group--inline-sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons",
@@ -198,28 +198,28 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "title": "Mise en avant avec bouton normal",
                 "text": "Cette mise en avant a un bouton normal",
-                "icon_class": "fr-icon-alert-line",
+                "icon_class": "dsfacile-icon-alert-line",
                 "button": {
                     "onclick": "alert('Ce bouton est bien un bouton')",
                     "label": "Bouton normal",
-                    "extra_classes": "fr-btn--secondary",
+                    "extra_classes": "dsfacile-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant avec lien",
                 "text": "Cette mise en avant a un lien d’appel à action",
-                "icon_class": "fr-icon-external-link-line",
+                "icon_class": "dsfacile-icon-external-link-line",
                 "button": {
                     "label": "Bouton qui est un lien",
                     "url": "https://www.systeme-de-design.gouv.fr/",
-                    "extra_classes": "fr-btn--secondary",
+                    "extra_classes": "dsfacile-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant en couleur",
                 "text": "Cette mise en avant a une classe de couleur",
-                "icon_class": "fr-icon-palette-line",
-                "extra_classes": "fr-callout--green-emeraude",
+                "icon_class": "dsfacile-icon-palette-line",
+                "extra_classes": "dsfacile-callout--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant",
@@ -247,7 +247,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fr-card--horizontal",
+                "extra_classes": "dsfacile-card--horizontal",
             },
             {
                 "title": "Carte horizontale, largeur tiers",
@@ -258,7 +258,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fr-card--horizontal fr-card--horizontal-tier",
+                "extra_classes": "dsfacile-card--horizontal dsfacile-card--horizontal-tier",
             },
             {
                 "title": "Carte horizontale, largeur moitié",
@@ -269,7 +269,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fr-card--horizontal fr-card--horizontal-half",
+                "extra_classes": "dsfacile-card--horizontal dsfacile-card--horizontal-half",
             },
             {
                 "title": "Carte avec badge",
@@ -282,7 +282,7 @@ IMPLEMENTED_COMPONENTS = {
                 "media_badges": [
                     {
                         "label": "Nouveau",
-                        "extra_classes": "fr-badge--new",
+                        "extra_classes": "dsfacile-badge--new",
                     }
                 ],
             },
@@ -295,7 +295,7 @@ IMPLEMENTED_COMPONENTS = {
                 "new_tab": True,
                 "top_detail": {
                     "detail": {
-                        "icon_class": "fr-icon-warning-fill",
+                        "icon_class": "dsfacile-icon-warning-fill",
                         "text": "Détail (optionnel) avec icône (optionnelle)",
                     },
                     "tags": [{"label": "tag 1"}, {"label": "tag 2"}],
@@ -311,12 +311,12 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
-                        "icon_class": "fr-icon-warning-fill",
+                        "icon_class": "dsfacile-icon-warning-fill",
                         "text": "Détail (optionnel)",
                     },
                     "badges": [
                         {"label": "Badge 1"},
-                        {"extra_classes": "fr-badge--warning", "label": "Badge 2"},
+                        {"extra_classes": "dsfacile-badge--warning", "label": "Badge 2"},
                     ],
                 },
             },
@@ -328,7 +328,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
                 "bottom_detail": {
-                    "icon": "fr-icon-warning-fill",
+                    "icon": "dsfacile-icon-warning-fill",
                     "text": "Détail (optionnel)",
                 },
             },
@@ -341,10 +341,10 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "fr-card--horizontal",
+                "extra_classes": "dsfacile-card--horizontal",
                 "call_to_action": {
                     "buttons": [
-                        {"label": "Bouton 1", "extra_classes": "fr-btn--secondary"},
+                        {"label": "Bouton 1", "extra_classes": "dsfacile-btn--secondary"},
                         {"label": "Bouton 2"},
                     ]
                 },
@@ -358,7 +358,7 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "fr-card--horizontal",
+                "extra_classes": "dsfacile-card--horizontal",
                 "call_to_action": {
                     "links": [
                         {
@@ -382,14 +382,14 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
-                "extra_classes": "fr-card--grey fr-card--shadow",
+                "extra_classes": "dsfacile-card--grey dsfacile-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "enlarge_link": False,
-                "extra_classes": "fr-card--horizontal",
+                "extra_classes": "dsfacile-card--horizontal",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/carte",
@@ -420,24 +420,24 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "fr-ratio-16x9",
+                "ratio_class": "dsfacile-ratio-16x9",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "fr-ratio-4x3",
+                "ratio_class": "dsfacile-ratio-4x3",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "extra_classes": "fr-content-media--lg",
+                "extra_classes": "dsfacile-content-media--lg",
             },
             {
                 "svg": gov_svg,
                 "caption": """Image SVG avec un lien dans la légende.
-                                <a class="fr-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
+                                <a class="dsfacile-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
                                     rel=noopener external'
                                     title="Source - Ouvre une nouvelle fenêtre" target='_blank'>Source</a>.""",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
@@ -450,7 +450,7 @@ IMPLEMENTED_COMPONENTS = {
                     "url": "https://tube-numerique-educatif.apps.education.fr/videos/embed/9d0b132d-f836-459a-9b9b-97b1a647232d",
                     "sandbox": "allow-same-origin allow-scripts allow-popups",
                 },
-                "ratio_class": "fr-ratio-4x3",
+                "ratio_class": "dsfacile-ratio-4x3",
                 "caption": "Vidéo avec transcription",
                 "alt_text": "",
                 "transcription": {"content": f"<div>{lorem_ipsum}</div>"},
@@ -487,11 +487,11 @@ IMPLEMENTED_COMPONENTS = {
         "sample_data": [
             {
                 "content": "Contenu de la mise en exergue",
-                "size_class": "fr-text--sm",
+                "size_class": "dsfacile-text--sm",
             },
             {
                 "content": "Mise en exergue avec bordure colorée",
-                "extra_classes": "fr-highlight--green-emeraude",
+                "extra_classes": "dsfacile-highlight--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue",
@@ -530,18 +530,18 @@ IMPLEMENTED_COMPONENTS = {
                 "url": "https://www.systeme-de-design.gouv.fr/",
                 "label": "Lien externe, large",
                 "is_external": True,
-                "extra_classes": "fr-link--lg",
+                "extra_classes": "dsfacile-link--lg",
             },
             {
                 "url": "/django-dsfacile/components/link/",
                 "label": "Petit lien interne avec flèche",
                 "is_external": False,
-                "extra_classes": "fr-icon-arrow-right-line fr-link--icon-right fr-link--sm",
+                "extra_classes": "dsfacile-icon-arrow-right-line dsfacile-link--icon-right dsfacile-link--sm",
             },
             {
                 "url": "/django-dsfacile/components/link/",
                 "label": "Lien de téléchargement",
-                "extra_classes": "fr-link--download",
+                "extra_classes": "dsfacile-link--download",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/liens",
@@ -583,7 +583,7 @@ IMPLEMENTED_COMPONENTS = {
                     },
                 ],
                 "image_url": "/static/img/placeholder.1x1.svg",
-                "extra_classes": "fr-quote--green-emeraude",
+                "extra_classes": "dsfacile-quote--green-emeraude",
             },
             {
                 "text": "Citation très basique, sans aucun des champs optionnels.",
@@ -762,7 +762,7 @@ IMPLEMENTED_COMPONENTS = {
                         2,
                     ],
                 ],
-                "extra_classes": "fr-table--green-emeraude fr-table--bordered",
+                "extra_classes": "dsfacile-table--green-emeraude dsfacile-table--bordered",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tableau",
@@ -775,12 +775,12 @@ IMPLEMENTED_COMPONENTS = {
             {"label": "Tag avec lien", "link": "/django-dsfacile/components"},
             {
                 "label": "Petit tag avec icône",
-                "extra_classes": "fr-tag--sm fr-icon-arrow-right-line fr-tag--icon-left",  # noqa
+                "extra_classes": "dsfacile-tag--sm dsfacile-icon-arrow-right-line dsfacile-tag--icon-left",  # noqa
             },
             {
                 "label": "Tag avec action",
                 "link": "#",
-                "extra_classes": "fr-icon-cursor-line fr-tag--icon-right",
+                "extra_classes": "dsfacile-icon-cursor-line dsfacile-tag--icon-right",
                 "onclick": "alert('clicked'); return false;",
             },
             {
@@ -794,7 +794,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "label": "Tag vert",
                 "link": "#",
-                "extra_classes": "fr-tag--green-emeraude",
+                "extra_classes": "dsfacile-tag--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag",
@@ -819,7 +819,7 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "Avec un pictogramme SVG",
                 "url": "/",
                 "id": "tile-cityhall",
-                "extra_classes": "fr-tile--horizontal",
+                "extra_classes": "dsfacile-tile--horizontal",
                 "svg_path": static(
                     "dsfacile/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
@@ -828,7 +828,7 @@ IMPLEMENTED_COMPONENTS = {
                 "title": "Tuile verticale (SM)",
                 "url": "/",
                 "id": "tile-nuclear-plant",
-                "extra_classes": "fr-tile--sm",
+                "extra_classes": "dsfacile-tile--sm",
                 "svg_path": static(
                     "dsfacile/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
@@ -837,12 +837,12 @@ IMPLEMENTED_COMPONENTS = {
                 "title": "Tuile horizontale (SM)",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "fr-tile--horizontal fr-tile--sm",
+                "extra_classes": "dsfacile-tile--horizontal dsfacile-tile--sm",
                 "top_detail": {
                     "badges": [
                         {
                             "label": "Badge coloré",
-                            "extra_classes": "fr-badge--sm fr-badge--purple-glycine",
+                            "extra_classes": "dsfacile-badge--sm dsfacile-badge--purple-glycine",
                         },
                     ]
                 },
@@ -852,14 +852,14 @@ IMPLEMENTED_COMPONENTS = {
                 "title": "Tuile à fond gris et ombre sans bordure",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "fr-tile--horizontal fr-tile--grey fr-tile--shadow fr-tile--no-border",
+                "extra_classes": "dsfacile-tile--horizontal dsfacile-tile--grey dsfacile-tile--shadow dsfacile-tile--no-border",
                 "svg_path": static(
                     "dsfacile/dist/artwork/pictograms/leisure/paint.svg"
                 ),
             },
             {
                 "title": "Tuile de téléchargement",
-                "extra_classes": "fr-tile--horizontal fr-tile--download",
+                "extra_classes": "dsfacile-tile--horizontal dsfacile-tile--download",
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
@@ -887,7 +887,7 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Interrupteur complet aligné à gauche",
                 "help_text": "Cet interrupteur présente toutes les options disponibles",
                 "is_disabled": False,
-                "extra_classes": "fr-toggle--label-left fr-toggle--border-bottom",
+                "extra_classes": "dsfacile-toggle--label-left dsfacile-toggle--border-bottom",
                 "id": "toggle-full",
             },
         ],
@@ -953,23 +953,23 @@ EXTRA_COMPONENTS = {
             [
                 {
                     "label": "Succès",
-                    "extra_classes": "fr-badge--success",
+                    "extra_classes": "dsfacile-badge--success",
                 },
                 {
                     "label": "Info",
-                    "extra_classes": "fr-badge--info",
+                    "extra_classes": "dsfacile-badge--info",
                 },
                 {
                     "label": "Avertissement",
-                    "extra_classes": "fr-badge--warning",
+                    "extra_classes": "dsfacile-badge--warning",
                 },
                 {
                     "label": "Erreur",
-                    "extra_classes": "fr-badge--error",
+                    "extra_classes": "dsfacile-badge--error",
                 },
                 {
                     "label": "Nouveau",
-                    "extra_classes": "fr-badge--new",
+                    "extra_classes": "dsfacile-badge--new",
                 },
             ]
         ],

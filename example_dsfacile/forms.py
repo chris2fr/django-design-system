@@ -169,7 +169,7 @@ class DsfacileBookCreateForm(ModelForm, dsfacileBaseForm):
     book_format = forms.ChoiceField(
         label="Format",
         choices=BOOK_FORMAT,  # If the choices are in a constant
-        widget=forms.RadioSelect(attrs={"class": "fr-fieldset--inline"}),
+        widget=forms.RadioSelect(attrs={"class": "dsfacile-fieldset--inline"}),
     )
 
     # /!\ DsfacileGenre is a model, but it requires to format the list of object before passing to the field

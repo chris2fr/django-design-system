@@ -26,7 +26,7 @@ class dsfacileBaseForm(TestCase):
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(
             response,
-            """<input type="number" name="sample_number" value="-5" class="fr-input"
+            """<input type="number" name="sample_number" value="-5" class="dsfacile-input"
             autofocus="" aria-describedby="id_sample_number-desc-error" aria-invalid="true"
             required id="id_sample_number">""",
             html=True,

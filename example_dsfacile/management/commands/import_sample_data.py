@@ -32,7 +32,7 @@ class Command(BaseCommand):
             site_config=config,
             title="Mastodon",
             url="https://social.numerique.gouv.fr/explore",
-            icon_class="fr-btn--mastodon",
+            icon_class="dsfacile-btn--mastodon",
         )
 
         DsfacileGenre.objects.get_or_create(code="SF", designation="Science-Fiction")

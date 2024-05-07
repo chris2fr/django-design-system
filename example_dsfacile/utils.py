@@ -70,7 +70,7 @@ def md_format_toc(toc: dict) -> list:
 
 # Lorem ipsum paragraphs
 lorem_ipsum = """
-<p class="fr-mb-2w">
+<p class="dsfacile-mb-2w">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim. At risus viverra
     adipiscing at in tellus integer feugiat. Aliquam purus sit amet luctus venenatis lectus.
@@ -80,7 +80,7 @@ lorem_ipsum = """
     ipsum a arcu cursus vitae congue mauris rhoncus. Sed id semper risus in hendrerit gravida.
 </p>
 
-<p class="fr-mb-2w">
+<p class="dsfacile-mb-2w">
     Suspendisse potenti nullam ac tortor vitae purus faucibus. Condimentum lacinia quis vel eros.
     Pellentesque sit amet porttitor eget dolor. Varius duis at consectetur lorem donec massa sapien
     faucibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Tristique magna
@@ -91,7 +91,7 @@ lorem_ipsum = """
     velit dignissim sodales ut eu sem integer.
 </p>
 
-<p class="fr-mb-2w">
+<p class="dsfacile-mb-2w">
     Diam maecenas ultricies mi eget mauris pharetra et ultrices. Justo nec ultrices dui sapien eget
     mi proin. Viverra mauris in aliquam sem fringilla ut. Pretium lectus quam id leo in vitae
     turpis massa. Ultricies integer quis auctor elit sed vulputate mi sit amet. Non quam lacus
@@ -103,7 +103,7 @@ lorem_ipsum = """
     quis auctor elit. Sagittis vitae et leo duis ut diam.
 </p>
 
-<p class="fr-mb-2w">
+<p class="dsfacile-mb-2w">
     Urna porttitor rhoncus dolor purus. Enim eu turpis egestas pretium. Risus ultricies tristique
     nulla aliquet enim tortor at auctor urna. Etiam non quam lacus suspendisse faucibus interdum
     posuere lorem. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Ac tortor
@@ -114,7 +114,7 @@ lorem_ipsum = """
     semper risus in hendrerit gravida rutrum. Tempus iaculis urna id volutpat lacus laoreet.
 </p>
 
-<p class="fr-mb-2w">
+<p class="dsfacile-mb-2w">
     Massa tempor nec feugiat nisl pretium fusce. Urna porttitor rhoncus dolor purus non enim
     praesent. Suspendisse ultrices gravida dictum fusce. Habitant morbi tristique senectus et netus.
     Adipiscing vitae proin sagittis nisl. Bibendum ut tristique et egestas quis. Dictum non

@@ -21,23 +21,23 @@ p code, li code {
 {% endblock extra_css %}
 
 {% block content %}
-  <div class="fr-grid-row fr-grid-row--gutters fr-b__two-col">
-    <div class="fr-col-12 fr-col-md-4">
+  <div class="dsfacile-grid-row dsfacile-grid-row--gutters dsfacile-b__two-col">
+    <div class="dsfacile-col-12 dsfacile-col-md-4">
       {% dsfacile_sidemenu side_menu extra_classes="" %}
     </div>
-    <div class="fr-col-12 fr-col-md-8 fr-py-2w">
+    <div class="dsfacile-col-12 dsfacile-col-md-8 dsfacile-py-2w">
       <h1>
         {{ title }}
       </h1>
       <ul>
         {% if doc_url %}
           <li>
-            {% dsfacile_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="fr-link--lg" %}
+            {% dsfacile_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="dsfacile-link--lg" %}
           </li>
         {% endif %}
         {% if example_url %}
           <li>
-            {% dsfacile_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="fr-link--lg" %}
+            {% dsfacile_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="dsfacile-link--lg" %}
           </li>
         {% endif %}
       </ul>
@@ -50,10 +50,10 @@ p code, li code {
           Exemples
         </h2>
         {% for sample_data_item in sample_data %}
-          <h3 class="fr-mt-3w">
+          <h3 class="dsfacile-mt-3w">
             Données
           </h3>
-          <div class="fr-my-2w">
+          <div class="dsfacile-my-2w">
             {# djlint:off #}
             {% with sample_data_item|pprint as raw_sample_code %}
               {# djlint:off #}
@@ -84,13 +84,13 @@ p code, li code {
             {% dsfacile_callout sample_data_item %}
           {% elif tag_name == "card" %}
             {% if not "horizontal" in sample_data_item.extra_classes %}
-              <div class="fr-grid-row fr-grid-row--gutters">
-                <div class="fr-col-12 fr-col-md-4">
+              <div class="dsfacile-grid-row dsfacile-grid-row--gutters">
+                <div class="dsfacile-col-12 dsfacile-col-md-4">
                   {% dsfacile_card sample_data_item %}
                 </div>
               </div>
             {% else %}
-              <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="dsfacile-grid-row dsfacile-grid-row--gutters">
                 {% dsfacile_card sample_data_item %}
               </div>
             {% endif %}
@@ -130,8 +130,8 @@ p code, li code {
           {% elif tag_name == "tag" %}
             {% dsfacile_tag sample_data_item %}
           {% elif tag_name == "tile" %}
-            <div class="fr-grid-row fr-grid-row--gutters">
-              <div class="fr-col-12">
+            <div class="dsfacile-grid-row dsfacile-grid-row--gutters">
+              <div class="dsfacile-col-12">
                 {% dsfacile_tile sample_data_item %}
               </div>
             </div>

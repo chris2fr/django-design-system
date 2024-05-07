@@ -4,12 +4,12 @@
   <h1>
     Composants du système de design de l’État
   </h1>
-  <div class="fr-tabs">
-    <ul class="fr-tabs__list" role="tablist" aria-label="Composants">
+  <div class="dsfacile-tabs">
+    <ul class="dsfacile-tabs__list" role="tablist" aria-label="Composants">
       <li role="presentation">
         <li role="presentation">
           <button id="tabpanel-documentation"
-                  class="fr-tabs__tab fr-icon-book-2-line fr-tabs__tab--icon-left"
+                  class="dsfacile-tabs__tab dsfacile-icon-book-2-line dsfacile-tabs__tab--icon-left"
                   tabindex="0"
                   role="tab"
                   aria-selected="false"
@@ -18,7 +18,7 @@
           </button>
         </li>
         <button id="tabpanel-implemented"
-                class="fr-tabs__tab fr-icon-checkbox-line fr-tabs__tab--icon-left"
+                class="dsfacile-tabs__tab dsfacile-icon-checkbox-line dsfacile-tabs__tab--icon-left"
                 tabindex="0"
                 role="tab"
                 aria-selected="false"
@@ -28,7 +28,7 @@
       </li>
       <li role="presentation">
         <button id="tabpanel-notyetimplemented"
-                class="fr-tabs__tab fr-icon-close-circle-line fr-tabs__tab--icon-left"
+                class="dsfacile-tabs__tab dsfacile-icon-close-circle-line dsfacile-tabs__tab--icon-left"
                 tabindex="-1"
                 role="tab"
                 aria-selected="false"
@@ -38,7 +38,7 @@
       </li>
       <li role="presentation">
         <button id="tabpanel-extratags"
-                class="fr-tabs__tab fr-icon-add-circle-line fr-tabs__tab--icon-left"
+                class="dsfacile-tabs__tab dsfacile-icon-add-circle-line dsfacile-tabs__tab--icon-left"
                 tabindex="-1"
                 role="tab"
                 aria-selected="false"
@@ -48,7 +48,7 @@
       </li>
     </ul>
     <div id="tabpanel-documentation-panel"
-         class="fr-tabs__panel fr-tabs__panel--selected"
+         class="dsfacile-tabs__panel dsfacile-tabs__panel--selected"
          role="tabpanel"
          aria-labelledby="tabpanel-documentation"
          tabindex="0">
@@ -60,7 +60,7 @@
       </ul>
     </div>
     <div id="tabpanel-implemented-panel"
-         class="fr-tabs__panel"
+         class="dsfacile-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-implemented"
          tabindex="0">
@@ -69,14 +69,14 @@
       </h2>
       <ul>
         {% for component, data in implemented_components.items %}
-          <li class="fr-mb-1w">
+          <li class="dsfacile-mb-1w">
             <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
           </li>
         {% endfor %}
       </ul>
     </div>
     <div id="tabpanel-notyetimplemented-panel"
-         class="fr-tabs__panel"
+         class="dsfacile-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-notyetimplemented"
          tabindex="0">
@@ -85,11 +85,11 @@
       </h2>
       <ul>
         {% for component, data in not_yet.items %}
-          <li class="fr-mb-1w">
+          <li class="dsfacile-mb-1w">
             {{ data.title }} ({{ component }})
-            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>
             —
-            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>)
             {% if data.note %}
               <ul>
                 <li>
@@ -107,9 +107,9 @@
         {% for component, data in wont_be.items %}
           <li>
             {{ data.title }} ({{ component }})
-            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>
             —
-            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="dsfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>)
             <ul>
               <li>
                 Raison : {{ data.reason|safe }}
@@ -120,7 +120,7 @@
       </ul>
     </div>
     <div id="tabpanel-extratags-panel"
-         class="fr-tabs__panel"
+         class="dsfacile-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-extratags"
          tabindex="0">
@@ -129,7 +129,7 @@
       </h2>
       <ul>
         {% for component, data in extra_components.items %}
-          <li class="fr-mb-1w">
+          <li class="dsfacile-mb-1w">
             <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
           </li>
         {% endfor %}
