@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from django_webfacile.constants import DJANGO_WEBFACILE_LANGUAGES
+from django_webfastoche.constants import DJANGO_WEBFACILE_LANGUAGES
 
 
 def validate_image_extension(value):
@@ -15,7 +15,7 @@ def validate_image_extension(value):
         raise ValidationError("Unsupported file extension.")
 
 
-class WebfacileConfig(models.Model):
+class WebfastocheConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
@@ -131,11 +131,11 @@ class WebfacileConfig(models.Model):
         return _("Site config:") + f" {self.site_title} ({self.language})"
 
     def social_media(self):
-        return self.webfacilesocialmedia_set.all()
+        return self.webfastochesocialmedia_set.all()
 
 
-class WebfacileSocialMedia(models.Model):
-    site_config = models.ForeignKey(WebfacileConfig, on_delete=models.CASCADE, null=True)
+class WebfastocheSocialMedia(models.Model):
+    site_config = models.ForeignKey(WebfastocheConfig, on_delete=models.CASCADE, null=True)
     title = models.CharField(_("Title"), max_length=200, default="", blank=True)
 
     url = models.URLField(

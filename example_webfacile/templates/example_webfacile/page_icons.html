@@ -1,38 +1,38 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 {% block content %}
   <h1>
     Icônes
   </h1>
   <ul>
     <li>
-      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
+      <a class="webfastoche-link webfastoche-icon-external-link-line webfastoche-link--icon-right webfastoche-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de documentation du composant sur le Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
     <li>
-      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
+      <a class="webfastoche-link webfastoche-icon-external-link-line webfastoche-link--icon-right webfastoche-link--lg"
          href="https://main--ds-gouv.netlify.app/example/utility/icons/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page sur le site d’exemples du Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
   </ul>
 
-  <div class="webfacile-mt-4w">
+  <div class="webfastoche-mt-4w">
     <h2 id="search-icon-by-name">
       Chercher une icône par son nom
     </h2>
 
-    <div class="webfacile-search-bar" id="icon-filter" role="search">
-      <label class="webfacile-label" for="uip-select-input">
+    <div class="webfastoche-search-bar" id="icon-filter" role="search">
+      <label class="webfastoche-label" for="uip-select-input">
         Chercher une icône
       </label>
-      <input class="webfacile-input"
+      <input class="webfastoche-input"
              type="text"
              name="uip-select-input"
              id="uip-select-input"
@@ -44,11 +44,11 @@
     </div>
   </div>
 
-  <div class="webfacile-mt-4w">
+  <div class="webfastoche-mt-4w">
     <h2 id="full-icon-list">
       Liste complète
     </h2>
-    {% webfacile_summary summary %}
+    {% webfastoche_summary summary %}
 
     <p>
       Cliquer sur une icône ci-dessous pour copier le nom de sa classe.
@@ -57,10 +57,10 @@
       <h3 id="{{ folder|slugify }}" tabindex="-1">
         {{ folder|title }}
       </h3>
-      <div class="webfacile-mb-4w">
+      <div class="webfastoche-mb-4w">
         {% for item in items %}
-          <span class="webfacile-icon-{{ item }} click-to-copy"
-                title="webfacile-icon-{{ item }}"
+          <span class="webfastoche-icon-{{ item }} click-to-copy"
+                title="webfastoche-icon-{{ item }}"
                 aria-hidden="true"></span>
         {% endfor %}
       </div>
@@ -68,11 +68,11 @@
   </div>
 {% endblock content %}
 {% block extra_js %}
-  <script src="{% static 'django-webfacile/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
+  <script src="{% static 'django-webfastoche/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
 
   <script>
     const options = {
-      iconLibraries: ['webfacile-buildings.json', 'webfacile-business.json', 'webfacile-communication.json', 'webfacile-design.json', 'webfacile-development.json', 'webfacile-device.json', 'webfacile-document.json', 'webfacile-editor.json', 'webfacile-finance.json', 'webfacile-health.json', 'webfacile-logo.json', 'webfacile-map.json', 'webfacile-media.json', 'webfacile-others.json', 'webfacile-system.json', 'webfacile-user.json', 'webfacile-weather.json'],
+      iconLibraries: ['webfastoche-buildings.json', 'webfastoche-business.json', 'webfastoche-communication.json', 'webfastoche-design.json', 'webfastoche-development.json', 'webfastoche-device.json', 'webfastoche-document.json', 'webfastoche-editor.json', 'webfastoche-finance.json', 'webfastoche-health.json', 'webfastoche-logo.json', 'webfastoche-map.json', 'webfastoche-media.json', 'webfastoche-others.json', 'webfastoche-system.json', 'webfastoche-user.json', 'webfastoche-weather.json'],
       allowEmpty: true,
       onSelect: function (jsonIconData) {
         document.getElementById('output-icon').innerHTML = "Copié dans le presse-papier : '" +jsonIconData.iconClass + "'";

@@ -1,13 +1,13 @@
-<section class="webfacile-accordion">
-  <{{ self.heading_tag | default:"h3" }} class="webfacile-accordion__title">
+<section class="webfastoche-accordion">
+  <{{ self.heading_tag | default:"h3" }} class="webfastoche-accordion__title">
   <button type="button"
-          class="webfacile-accordion__btn"
+          class="webfastoche-accordion__btn"
           aria-expanded="false"
           aria-controls="{{ self.id }}">
     {{ self.title }}
   </button>
   </{{ self.heading_tag | default:"h3" }}>
-  <div class="webfacile-collapse" id="{{ self.id }}">
+  <div class="webfastoche-collapse" id="{{ self.id }}">
     {{ self.content | safe }}
   </div>
 </section>

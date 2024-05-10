@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="WebfacileAuthor",
+            name="WebfastocheAuthor",
             fields=[
                 (
                     "id",
@@ -37,11 +37,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "webfacile WebfacileAuthor",
+                "verbose_name": "webfastoche WebfastocheAuthor",
             },
         ),
         migrations.CreateModel(
-            name="WebfacileGenre",
+            name="WebfastocheGenre",
             fields=[
                 (
                     "id",
@@ -65,11 +65,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "webfacile WebfacileGenre",
+                "verbose_name": "webfastoche WebfastocheGenre",
             },
         ),
         migrations.CreateModel(
-            name="WebfacileBook",
+            name="WebfastocheBook",
             fields=[
                 (
                     "id",
@@ -100,13 +100,13 @@ class Migration(migrations.Migration):
                     "author",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="example_webfacile.webfacileauthor",
+                        to="example_webfastoche.webfastocheauthor",
                     ),
                 ),
-                ("genre", models.ManyToManyField(to="example_webfacile.webfacilegenre")),
+                ("genre", models.ManyToManyField(to="example_webfastoche.webfastochegenre")),
             ],
             options={
-                "verbose_name": "webfacile WebfacileBook",
+                "verbose_name": "webfastoche WebfastocheBook",
             },
         ),
     ]

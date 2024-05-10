@@ -1,8 +1,8 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 
 {% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/webfacile-code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webfastoche-code.css' %}">
   <style>
     .example-textarea {
       background: var(--background-alt-grey);
@@ -21,23 +21,23 @@ p code, li code {
 {% endblock extra_css %}
 
 {% block content %}
-  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-b__two-col">
-    <div class="webfacile-col-12 webfacile-col-md-4">
-      {% webfacile_sidemenu side_menu extra_classes="" %}
+  <div class="webfastoche-grid-row webfastoche-grid-row--gutters webfastoche-b__two-col">
+    <div class="webfastoche-col-12 webfastoche-col-md-4">
+      {% webfastoche_sidemenu side_menu extra_classes="" %}
     </div>
-    <div class="webfacile-col-12 webfacile-col-md-8 webfacile-py-2w">
+    <div class="webfastoche-col-12 webfastoche-col-md-8 webfastoche-py-2w">
       <h1>
         {{ title }}
       </h1>
       <ul>
         {% if doc_url %}
           <li>
-            {% webfacile_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="webfacile-link--lg" %}
+            {% webfastoche_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="webfastoche-link--lg" %}
           </li>
         {% endif %}
         {% if example_url %}
           <li>
-            {% webfacile_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="webfacile-link--lg" %}
+            {% webfastoche_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="webfastoche-link--lg" %}
           </li>
         {% endif %}
       </ul>
@@ -50,15 +50,15 @@ p code, li code {
           Exemples
         </h2>
         {% for sample_data_item in sample_data %}
-          <h3 class="webfacile-mt-3w">
+          <h3 class="webfastoche-mt-3w">
             Données
           </h3>
-          <div class="webfacile-my-2w">
+          <div class="webfastoche-my-2w">
             {# djlint:off #}
             {% with sample_data_item|pprint as raw_sample_code %}
               {# djlint:off #}
-              {% with '<pre class="webfacile-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
-                {% webfacile_accordion title="Données d’exemple" content=sample_data_code %}
+              {% with '<pre class="webfastoche-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
+                {% webfastoche_accordion title="Données d’exemple" content=sample_data_code %}
               {% endwith %}
             {% endwith %}
             {# djlint:on #}
@@ -67,80 +67,80 @@ p code, li code {
             Résultat
           </h3>
           {% if tag_name == "accordion" %}
-            {% webfacile_accordion sample_data_item %}
+            {% webfastoche_accordion sample_data_item %}
           {% elif tag_name == "accordion_group" %}
-            {% webfacile_accordion_group sample_data_item %}
+            {% webfastoche_accordion_group sample_data_item %}
           {% elif tag_name == "alert" %}
-            {% webfacile_alert sample_data_item %}
+            {% webfastoche_alert sample_data_item %}
           {% elif tag_name == "badge" %}
-            {% webfacile_badge sample_data_item %}
+            {% webfastoche_badge sample_data_item %}
           {% elif tag_name == "badge_group" %}
-            {% webfacile_badge_group sample_data_item %}
+            {% webfastoche_badge_group sample_data_item %}
           {% elif tag_name == "button" %}
-            {% webfacile_button sample_data_item %}
+            {% webfastoche_button sample_data_item %}
           {% elif tag_name == "button_group" %}
-            {% webfacile_button_group sample_data_item %}
+            {% webfastoche_button_group sample_data_item %}
           {% elif tag_name == "callout" %}
-            {% webfacile_callout sample_data_item %}
+            {% webfastoche_callout sample_data_item %}
           {% elif tag_name == "card" %}
             {% if not "horizontal" in sample_data_item.extra_classes %}
-              <div class="webfacile-grid-row webfacile-grid-row--gutters">
-                <div class="webfacile-col-12 webfacile-col-md-4">
-                  {% webfacile_card sample_data_item %}
+              <div class="webfastoche-grid-row webfastoche-grid-row--gutters">
+                <div class="webfastoche-col-12 webfastoche-col-md-4">
+                  {% webfastoche_card sample_data_item %}
                 </div>
               </div>
             {% else %}
-              <div class="webfacile-grid-row webfacile-grid-row--gutters">
-                {% webfacile_card sample_data_item %}
+              <div class="webfastoche-grid-row webfastoche-grid-row--gutters">
+                {% webfastoche_card sample_data_item %}
               </div>
             {% endif %}
           {% elif tag_name == "consent" %}
             <p>
               Voir en bas de votre écran.
             </p>
-            {% webfacile_consent sample_data_item %}
+            {% webfastoche_consent sample_data_item %}
           {% elif tag_name == "content" %}
-            {% webfacile_content sample_data_item %}
+            {% webfastoche_content sample_data_item %}
           {% elif tag_name == "django_messages" %}
-            {% webfacile_django_messages sample_data_item %}
+            {% webfastoche_django_messages sample_data_item %}
           {% elif tag_name == "france_connect" %}
-            {% webfacile_france_connect sample_data_item %}
+            {% webfastoche_france_connect sample_data_item %}
           {% elif tag_name == "highlight" %}
-            {% webfacile_highlight sample_data_item %}
+            {% webfastoche_highlight sample_data_item %}
           {% elif tag_name == "input" %}
-            {% webfacile_input sample_data_item %}
+            {% webfastoche_input sample_data_item %}
           {% elif tag_name == "link" %}
-            {% webfacile_link sample_data_item %}
+            {% webfastoche_link sample_data_item %}
           {% elif tag_name == "notice" %}
-            {% webfacile_notice sample_data_item %}
+            {% webfastoche_notice sample_data_item %}
           {% elif tag_name == "quote" %}
-            {% webfacile_quote sample_data_item %}
+            {% webfastoche_quote sample_data_item %}
           {% elif tag_name == "select" %}
-            {% webfacile_select sample_data_item %}
+            {% webfastoche_select sample_data_item %}
           {% elif tag_name == "sidemenu" %}
-            {% webfacile_sidemenu sample_data_item %}
+            {% webfastoche_sidemenu sample_data_item %}
           {% elif tag_name == "skiplinks" %}
-            {% webfacile_skiplinks sample_data_item %}
+            {% webfastoche_skiplinks sample_data_item %}
           {% elif tag_name == "stepper" %}
-            {% webfacile_stepper sample_data_item %}
+            {% webfastoche_stepper sample_data_item %}
           {% elif tag_name == "summary" %}
-            {% webfacile_summary sample_data_item %}
+            {% webfastoche_summary sample_data_item %}
           {% elif tag_name == "table" %}
-            {% webfacile_table sample_data_item %}
+            {% webfastoche_table sample_data_item %}
           {% elif tag_name == "tag" %}
-            {% webfacile_tag sample_data_item %}
+            {% webfastoche_tag sample_data_item %}
           {% elif tag_name == "tile" %}
-            <div class="webfacile-grid-row webfacile-grid-row--gutters">
-              <div class="webfacile-col-12">
-                {% webfacile_tile sample_data_item %}
+            <div class="webfastoche-grid-row webfastoche-grid-row--gutters">
+              <div class="webfastoche-col-12">
+                {% webfastoche_tile sample_data_item %}
               </div>
             </div>
           {% elif tag_name == "toggle" %}
-            {% webfacile_toggle sample_data_item %}
+            {% webfastoche_toggle sample_data_item %}
           {% elif tag_name == "tooltip" %}
-            {% webfacile_tooltip sample_data_item %}
+            {% webfastoche_tooltip sample_data_item %}
           {% elif tag_name == "transcription" %}
-            {% webfacile_transcription sample_data_item %}
+            {% webfastoche_transcription sample_data_item %}
           {% endif %}
         {% endfor %}
       {% else %}
@@ -148,7 +148,7 @@ p code, li code {
           Résultat
         </h2>
         {% if tag_name == "breadcrumb" %}
-          {% webfacile_breadcrumb %}
+          {% webfastoche_breadcrumb %}
         {% elif tag_name == "css" %}
           <label for="example-textarea">
             Code source :
@@ -157,7 +157,7 @@ p code, li code {
                     readonly
                     rows="8"
                     cols="90"
-                    class="example-textarea">{% webfacile_css %}</textarea>
+                    class="example-textarea">{% webfastoche_css %}</textarea>
           <br />
         {% elif tag_name == "favicon" %}
           <label for="example-textarea">
@@ -167,7 +167,7 @@ p code, li code {
                     readonly
                     rows="14"
                     cols="90"
-                    class="example-textarea">{% webfacile_favicon %}</textarea>
+                    class="example-textarea">{% webfastoche_favicon %}</textarea>
           <br />
         {% elif tag_name == "js" %}
           <label for="example-textarea">
@@ -177,10 +177,10 @@ p code, li code {
                     readonly
                     rows="6"
                     cols="90"
-                    class="example-textarea">{% webfacile_js %}</textarea>
+                    class="example-textarea">{% webfastoche_js %}</textarea>
           <br />
         {% elif tag_name == "pagination" %}
-          {% webfacile_pagination page_obj %}
+          {% webfastoche_pagination page_obj %}
         {% elif tag_name == "theme_modale" %}
           <label for="example-textarea">
             Code source :
@@ -189,7 +189,7 @@ p code, li code {
                     readonly
                     rows="62"
                     cols="120"
-                    class="example-textarea">{% webfacile_theme_modale %}</textarea>
+                    class="example-textarea">{% webfastoche_theme_modale %}</textarea>
           <br />
         {% endif %}
       {% endif %}

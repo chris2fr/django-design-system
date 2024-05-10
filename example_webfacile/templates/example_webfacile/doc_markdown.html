@@ -1,18 +1,18 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 {% block content %}
   <h1>
     {{ title }}
   </h1>
-  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-mb-3w">
-    <div class="webfacile-col-12 webfacile-col-md-4">
+  <div class="webfastoche-grid-row webfastoche-grid-row--gutters webfastoche-mb-3w">
+    <div class="webfastoche-col-12 webfastoche-col-md-4">
       {% if summary_data %}
-        {% webfacile_summary summary_data %}
+        {% webfastoche_summary summary_data %}
       {% endif %}
     </div>
   </div>
   {{ documentation|safe }}
 {% endblock content %}
 {% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/webfacile-code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webfastoche-code.css' %}">
 {% endblock extra_css %}

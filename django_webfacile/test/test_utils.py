@@ -1,5 +1,5 @@
 from django.test import SimpleTestCase
-from django_webfacile.utils import generate_random_id, generate_summary_items
+from django_webfastoche.utils import generate_random_id, generate_summary_items
 
 
 class GenerateRandomIdTestCase(SimpleTestCase):

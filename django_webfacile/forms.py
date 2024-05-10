@@ -5,10 +5,10 @@ from django.forms import Form
 from django.forms.renderers import DjangoTemplates, get_default_renderer
 from django.utils.functional import cached_property
 
-from django_webfacile.utils import webfacile_input_class_attr
+from django_webfastoche.utils import webfastoche_input_class_attr
 
 
-class WebfacileDjangoTemplates(DjangoTemplates):
+class WebfastocheDjangoTemplates(DjangoTemplates):
     @cached_property
     def engine(self):
         return self.backend(
@@ -24,7 +24,7 @@ class WebfacileDjangoTemplates(DjangoTemplates):
         )
 
 
-class WebfacileBaseForm(Form):
+class WebfastocheBaseForm(Form):
     """
     A base form that adds the necessary class on relevant fields
     """
@@ -32,14 +32,14 @@ class WebfacileBaseForm(Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for visible in self.visible_fields():
-            webfacile_input_class_attr(visible)
+            webfastoche_input_class_attr(visible)
 
     @property
     def default_renderer(self):
         from django.conf import settings, global_settings
 
         return (
-            WebfacileDjangoTemplates  # Settings wasn't modified
+            WebfastocheDjangoTemplates  # Settings wasn't modified
             if settings.FORM_RENDERER == global_settings.FORM_RENDERER
             else get_default_renderer()
         )

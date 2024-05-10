@@ -1,5 +1,5 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 
 {% block extra_css %}
   <style nonce="{{ request.csp_nonce }}">
@@ -15,14 +15,14 @@
 
 {% block content %}
   <h1>
-    Django-webfacile
+    Django-webfastoche
   </h1>
   <h2>
     Documentation
   </h2>
   <div>
     <p>
-      <strong>Django-webfacile</strong> est une application django permettant d’utiliser le
+      <strong>Django-webfastoche</strong> est une application django permettant d’utiliser le
       <a href="https://www.systeme-de-design.gouv.fr/">système de design de l’État</a> dans des projets Django.
     </p>
     <p>
@@ -32,9 +32,9 @@
       utilisation), cf. la page <a href="{% url 'components_index' %}">Composants</a>.
     </p>
   </div>
-  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-mb-3w">
-    <div class="webfacile-col-12 webfacile-col-md-4">
-      {% webfacile_summary summary_data %}
+  <div class="webfastoche-grid-row webfastoche-grid-row--gutters webfastoche-mb-3w">
+    <div class="webfastoche-col-12 webfastoche-col-md-4">
+      {% webfastoche_summary summary_data %}
     </div>
   </div>
   <h3 id="installation">
@@ -64,7 +64,7 @@
   </h3>
   <ul>
     <li>
-      Il est possible d’utiliser tous les composants du webfacile directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
+      Il est possible d’utiliser tous les composants du webfastoche directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
     </li>
     <li>
       De même pour certains où il vaut mieux créer un template ad-hoc à chaque utilisation, comme les modales.

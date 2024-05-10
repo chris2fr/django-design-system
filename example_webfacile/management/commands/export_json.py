@@ -8,7 +8,7 @@ from pathlib import Path
 class Command(BaseCommand):
     help = "Exports the whole site as a single JSON file."
 
-    STATIC_ROOT = Path("docs", "django-webfacile")
+    STATIC_ROOT = Path("docs", "django-webfastoche")
 
     def handle(self, *args, **options):
         # Path where django-distill puts the documentation
@@ -28,12 +28,12 @@ class Command(BaseCommand):
         with open(self.STATIC_ROOT / "static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
-        with open("example_webfacile/static/json/search_data.json", "w") as data_file:
+        with open("example_webfastoche/static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
     def get_page_content(self, file: str):
         filename = str(file).split("/")[-2]
-        if filename == "django-webfacile":
+        if filename == "django-webfastoche":
             filename = "homepage"
 
         if filename != "search":

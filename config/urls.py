@@ -17,6 +17,6 @@ urlpatterns = [
     # https://numerique-gouv.github.io/django-dsfr/
     path("admin/", admin.site.urls),
     path("django-dsfr/", include("example_app.urls")),
-    path("django-webfacile/", include("example_webfacile.urls")),
+    path("django-webfastoche/", include("example_webfastoche.urls")),
     path("", RedirectView.as_view(pattern_name="index", permanent=False)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

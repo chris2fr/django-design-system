@@ -7,33 +7,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_webfacile", "0006_alter_webfacileconfig_accessibility_status"),
+        ("django_webfastoche", "0006_alter_webfastocheconfig_accessibility_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="newsletter_description",
             field=models.TextField(
                 blank=True, default="", verbose_name="Description de la newsletter"
             ),
         ),
         migrations.AddField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="newsletter_url",
             field=models.URLField(
                 blank=True, default="", verbose_name="URL d’inscription à la newsletter"
             ),
         ),
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="notice",
             field=models.TextField(
                 blank=True, default="", verbose_name="Bandeau d’information importante"
             ),
         ),
         migrations.CreateModel(
-            name="WebfacileSocialMedia",
+            name="WebfastocheSocialMedia",
             fields=[
                 (
                     "id",
@@ -65,7 +65,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="django_webfacile.webfacileconfig",
+                        to="django_webfastoche.webfastocheconfig",
                     ),
                 ),
             ],

@@ -1,18 +1,18 @@
-{% if widget.attrs.webfacile == "webfacile" %}
-  <div class="webfacile-checkbox-group">
+{% if widget.attrs.webfastoche == "webfastoche" %}
+  <div class="webfastoche-checkbox-group">
   {% endif %}
   {% include "django/forms/widgets/input.html" %}
   {% if widget.wrap_label %}
-    <label class="webfacile-label"
+    <label class="webfastoche-label"
            {% if widget.attrs.id %}for="{{ widget.attrs.id }}"{% endif %}>
       {% if widget.label.label %}
         {{ widget.label.label }}
-        <span class="webfacile-hint-text">{{ widget.label.help_text }}</span>
+        <span class="webfastoche-hint-text">{{ widget.label.help_text }}</span>
       {% else %}
         {{ widget.label }}
       {% endif %}
     </label>
   {% endif %}
-  {% if widget.attrs.webfacile == "webfacile" %}
+  {% if widget.attrs.webfastoche == "webfastoche" %}
   </div>
 {% endif %}

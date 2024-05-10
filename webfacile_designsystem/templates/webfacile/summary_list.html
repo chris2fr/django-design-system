@@ -1,9 +1,9 @@
 <li>
-  <a class="webfacile-summary__link" href="{{ item.link }}">{{ item.label }}</a>
+  <a class="webfastoche-summary__link" href="{{ item.link }}">{{ item.label }}</a>
   {% if item.children %}
     <ol>
       {% for child in item.children %}
-        {% include "webfacile/summary_list.html" with item=child %}
+        {% include "webfastoche/summary_list.html" with item=child %}
       {% endfor %}
     </ol>
   {% endif %}

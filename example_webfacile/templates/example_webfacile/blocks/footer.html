@@ -1,14 +1,14 @@
-{% extends "webfacile/footer.html" %}
+{% extends "webfastoche/footer.html" %}
 {% load i18n %}
 
 {% block footer_links %}
   {{ block.super }}
-  <li class="webfacile-footer__bottom-item">
+  <li class="webfastoche-footer__bottom-item">
     <button id="footer__bottom-link__parametres-affichage"
-            aria-controls="webfacile-theme-modal"
-            data-webfacile-opened="false"
-            class="webfacile-icon-theme-fill webfacile-link--icon-left webfacile-footer__bottom-link"
-            data-webfacile-js-modal-button="true">
+            aria-controls="webfastoche-theme-modal"
+            data-webfastoche-opened="false"
+            class="webfastoche-icon-theme-fill webfastoche-link--icon-left webfastoche-footer__bottom-link"
+            data-webfastoche-js-modal-button="true">
       {% translate "Display settings" %}
     </button>
   </li>
@@ -18,15 +18,15 @@
   {% translate "Back to home page" as back_to_home_label %}
   {% url 'index' as home_url %}
   {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
-    <div class="webfacile-footer__brand webfacile-enlarge-link">
-      <p class="webfacile-logo"
+    <div class="webfastoche-footer__brand webfastoche-enlarge-link">
+      <p class="webfastoche-logo"
          title="{{ SITE_CONFIG.footer_brand|default:'république française' }}">
         {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
       </p>
-      <a class="webfacile-footer__brand-link"
+      <a class="webfastoche-footer__brand-link"
          href="{{ home_url }}"
          title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
-        <img class="webfacile-footer__logo"
+        <img class="webfastoche-footer__logo"
              src="{{ SITE_CONFIG.operator_logo_file.url }}"
              alt="{{ SITE_CONFIG.operator_logo_alt }}"
              {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
@@ -34,12 +34,12 @@
       </a>
     </div>
   {% else %}
-    <div class="webfacile-footer__brand webfacile-enlarge-link">
+    <div class="webfastoche-footer__brand webfastoche-enlarge-link">
       <a id="footer-operator"
          href="{{ home_url }}"
          title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
         {% block brand %}
-          <p class="webfacile-logo">
+          <p class="webfastoche-logo">
             {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
           </p>
         {% endblock brand %}

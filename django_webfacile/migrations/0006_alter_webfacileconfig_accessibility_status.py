@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_webfacile", "0005_webfacileconfig_notice"),
+        ("django_webfastoche", "0005_webfastocheconfig_notice"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[("FULL", "fully"), ("PART", "partially"), ("NOT", "not")],

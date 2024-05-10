@@ -1,9 +1,9 @@
 {% load i18n %}
 {% translate "Hide message" as hide_message %}
 <div role="alert"
-     class="webfacile-alert webfacile-alert--{{ self.type }}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+     class="webfastoche-alert webfastoche-alert--{{ self.type }}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% if self.title %}
-    <{{ self.heading_tag | default:"p" }} class="webfacile-alert__title">{{ self.title }}</{{ self.heading_tag | default:"p" }}>
+    <{{ self.heading_tag | default:"p" }} class="webfastoche-alert__title">{{ self.title }}</{{ self.heading_tag | default:"p" }}>
   {% endif %}
   {% if self.content %}
     <p>
@@ -11,7 +11,7 @@
     </p>
   {% endif %}
   {% if self.is_collapsible %}
-    <button class="webfacile-btn--close webfacile-btn"
+    <button class="webfastoche-btn--close webfastoche-btn"
             title="{{ hide_message }}"
             onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
       {{ hide_message }}

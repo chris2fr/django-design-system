@@ -13,11 +13,11 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
-from django_webfacile.utils import generate_summary_items
+from django_webfastoche.utils import generate_summary_items
 
-from example_webfacile.forms import ColorForm, ExampleForm
+from example_webfastoche.forms import ColorForm, ExampleForm
 
-from example_webfacile.webfacile_components import (
+from example_webfastoche.webfastoche_components import (
     ALL_IMPLEMENTED_COMPONENTS,
     IMPLEMENTED_COMPONENTS,
     EXTRA_COMPONENTS,
@@ -25,19 +25,19 @@ from example_webfacile.webfacile_components import (
     WONT_BE_IMPLEMENTED,
 )
 
-# Used by the module = getattr(globals()["webfacile_tags"], f"webfacile_{tag_name}") line
-from django_webfacile.templatetags import webfacile_tags  # noqa
+# Used by the module = getattr(globals()["webfastoche_tags"], f"webfastoche_{tag_name}") line
+from django_webfastoche.templatetags import webfastoche_tags  # noqa
 
 # /!\ In order to test formset
 from django.views.generic import CreateView
 from django.http import HttpResponse
-from example_webfacile.forms import (
-    WebfacileAuthorCreateForm,
-    WebfacileBookCreateFormSet,
-    WebfacileBookCreateFormHelper,
+from example_webfastoche.forms import (
+    WebfastocheAuthorCreateForm,
+    WebfastocheBookCreateFormSet,
+    WebfastocheBookCreateFormHelper,
 )
-from example_webfacile.models import WebfacileAuthor
-from example_webfacile.utils import format_markdown_from_file
+from example_webfastoche.models import WebfastocheAuthor
+from example_webfastoche.utils import format_markdown_from_file
 
 
 def chunks(data, SIZE=10000):
@@ -55,12 +55,12 @@ def init_payload(page_title: str, links: list = []):
     breadcrumb_data = {
         "current": page_title,
         "links": links,
-        "root_dir": "/django-webfacile",
+        "root_dir": "/django-webfastoche",
     }
 
     skiplinks = [
         {"link": "#content", "label": "Contenu"},
-        {"link": "#webfacile-navigation", "label": "Menu"},
+        {"link": "#webfastoche-navigation", "label": "Menu"},
     ]
 
     implemented_component_tags_unsorted = ALL_IMPLEMENTED_COMPONENTS
@@ -73,7 +73,7 @@ def init_payload(page_title: str, links: list = []):
                 "see_all",
                 {
                     "title": "Voir tous les composants",
-                    "url": "/django-webfacile/components/",
+                    "url": "/django-webfastoche/components/",
                 },
             )
         ]
@@ -102,7 +102,7 @@ def index(request):
         ]
     )
 
-    return render(request, "example_webfacile/index.html", payload)
+    return render(request, "example_webfastoche/index.html", payload)
 
 
 @require_safe
@@ -124,7 +124,7 @@ def components_index(request):
     md = markdown.Markdown(
         extensions=[
             "markdown.extensions.fenced_code",
-            CodeHiliteExtension(css_class="webfacile-code"),
+            CodeHiliteExtension(css_class="webfastoche-code"),
         ],
     )
 
@@ -140,7 +140,7 @@ def components_index(request):
             md.convert(v["reason"]).replace("<p>", "").replace("</p>", "")
         )
     payload["wont_be"] = wont_be
-    return render(request, "example_webfacile/components_index.html", payload)
+    return render(request, "example_webfastoche/components_index.html", payload)
 
 
 @require_safe
@@ -171,14 +171,14 @@ def page_component(request, tag_name):  # NOSONAR
             messages.warning(request, "Ceci est un avertissement")
             messages.error(request, "Ceci est une erreur")
 
-        module = getattr(globals()["webfacile_tags"], f"webfacile_{tag_name}")
+        module = getattr(globals()["webfastoche_tags"], f"webfastoche_{tag_name}")
         payload["tag_comment"] = markdown.markdown(
             dedent(module.__doc__),
             extensions=[
                 "markdown.extensions.tables",
                 "md_in_html",
                 "markdown.extensions.fenced_code",
-                CodeHiliteExtension(css_class="webfacile-code"),
+                CodeHiliteExtension(css_class="webfastoche-code"),
             ],
         )
 
@@ -219,14 +219,14 @@ def page_component(request, tag_name):  # NOSONAR
                 },
             ]
         }
-        return render(request, "example_webfacile/page_component.html", payload)
+        return render(request, "example_webfastoche/page_component.html", payload)
     else:
         payload = init_payload("Non implémenté")
         payload["not_yet"] = {
             "text": "Le contenu recherché n’est pas encore implémenté",
             "title": "Non implémenté",
         }
-        return render(request, "example_webfacile/not_yet.html", payload)
+        return render(request, "example_webfastoche/not_yet.html", payload)
 
 
 @require_safe
@@ -240,7 +240,7 @@ def page_component_header(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
@@ -253,7 +253,7 @@ def page_component_footer(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
@@ -266,7 +266,7 @@ def page_component_follow(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_follow.html", payload)
+    return render(request, "example_webfastoche/doc_follow.html", payload)
 
 
 def page_form(request):
@@ -291,15 +291,15 @@ def page_form(request):
     )
     payload["form"] = form
 
-    return render(request, "example_webfacile/page_form.html", payload)
+    return render(request, "example_webfastoche/page_form.html", payload)
 
 
 # /!\ Example view for form and formset
-class WebfacileAuthorCreateView(CreateView):
-    model = WebfacileAuthor
-    form_class = WebfacileAuthorCreateForm
+class WebfastocheAuthorCreateView(CreateView):
+    model = WebfastocheAuthor
+    form_class = WebfastocheAuthorCreateForm
     formset = None
-    template_name = "example_webfacile/example_form.html"
+    template_name = "example_webfastoche/example_form.html"
     # /!\ Your template needs to extends form_base.html. If you use formset,
     # your template needs to include another template which extends formset_base.html
 
@@ -315,7 +315,7 @@ class WebfacileAuthorCreateView(CreateView):
         form = self.get_form(form_class)
         self.formset = self.get_formset(request)
         formset = self.formset
-        book_formhelper = WebfacileBookCreateFormHelper()  # noqa: F841
+        book_formhelper = WebfastocheBookCreateFormHelper()  # noqa: F841
 
         return self.render_to_response(
             self.get_context_data(form=form, formset=formset)
@@ -323,17 +323,17 @@ class WebfacileAuthorCreateView(CreateView):
 
     def get_formset(self, request, instance=None):
         if request.POST and instance:
-            self.formset = WebfacileBookCreateFormSet(
+            self.formset = WebfastocheBookCreateFormSet(
                 request.POST,
                 request.FILES,
                 instance=instance,
             )
         else:
-            self.formset = WebfacileBookCreateFormSet()
+            self.formset = WebfastocheBookCreateFormSet()
         return self.formset
 
     def get_context_data(self, **kwargs):
-        context = super(WebfacileAuthorCreateView, self).get_context_data(**kwargs)
+        context = super(WebfastocheAuthorCreateView, self).get_context_data(**kwargs)
 
         payload = init_payload(
             "Formulaire avec formset",
@@ -343,7 +343,7 @@ class WebfacileAuthorCreateView(CreateView):
         for key, value in payload.items():
             context[key] = value
 
-        book_formhelper = WebfacileBookCreateFormHelper()
+        book_formhelper = WebfastocheBookCreateFormHelper()
 
         instance = None
         try:
@@ -355,7 +355,7 @@ class WebfacileAuthorCreateView(CreateView):
         # /!\ Pass your form, formset and helper to the context
         if self.request.POST:
             context["form"] = self.form_class(self.request.POST)
-            context["formset"] = WebfacileBookCreateFormSet(
+            context["formset"] = WebfastocheBookCreateFormSet(
                 self.request.POST, self.request.FILES, instance=instance
             )
             context["book_formhelper"] = book_formhelper
@@ -367,7 +367,7 @@ class WebfacileAuthorCreateView(CreateView):
 
         context["object_name"] = "book"
 
-        # /!\ Don't forget your webfacile button
+        # /!\ Don't forget your webfastoche button
         context["btn_submit"] = {
             "label": "Soumettre",
             "onclick": "",
@@ -385,7 +385,7 @@ class WebfacileAuthorCreateView(CreateView):
 
         form_class = self.get_form_class()
         form = self.get_form(form_class)
-        formset = WebfacileBookCreateFormSet(
+        formset = WebfastocheBookCreateFormSet(
             self.request.POST, self.request.FILES, instance=instance
         )
 
@@ -395,7 +395,7 @@ class WebfacileAuthorCreateView(CreateView):
 
     def form_valid(self, form, formset):  # type: ignore
         """
-        Called if all forms are valid. Creates a WebfacileAuthor instance along
+        Called if all forms are valid. Creates a WebfastocheAuthor instance along
         with associated books and then redirects to a success page.
         """
 
@@ -419,34 +419,34 @@ class WebfacileAuthorCreateView(CreateView):
 
 @require_safe
 def doc_contributing(request):
-    payload = init_payload("Contribuer à Django-webfacile")
+    payload = init_payload("Contribuer à Django-webfastoche")
     md = format_markdown_from_file("CONTRIBUTING.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_install(request):
-    payload = init_payload("Installation de Django-webfacile")
+    payload = init_payload("Installation de Django-webfastoche")
 
     md = format_markdown_from_file("INSTALL.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_usage(request):
-    payload = init_payload("Utiliser Django-webfacile")
+    payload = init_payload("Utiliser Django-webfastoche")
 
     md = format_markdown_from_file("doc/usage.md")
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
@@ -456,21 +456,21 @@ def doc_form(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_webfacile/doc_markdown.html", payload)
+    return render(request, "example_webfastoche/doc_markdown.html", payload)
 
 
 @require_safe
 def resource_icons(request):
     payload = init_payload("Icônes")
 
-    icons_root = "webfacile/static/webfacile/dist/icons/"
+    icons_root = "webfastoche/static/webfastoche/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
     summary = []
     for folder in icons_folders:
         files = os.listdir(os.path.join(icons_root, folder))
-        files_without_extensions = [f.split(".")[0].replace("webfacile--", "") for f in files]
+        files_without_extensions = [f.split(".")[0].replace("webfastoche--", "") for f in files]
         files_without_extensions.sort()
         all_icons[folder] = files_without_extensions
         summary.append({"link": f"#{slugify(folder)}", "label": folder.capitalize()})
@@ -478,14 +478,14 @@ def resource_icons(request):
     payload["icons"] = all_icons
     payload["summary"] = summary
 
-    return render(request, "example_webfacile/page_icons.html", payload)
+    return render(request, "example_webfastoche/page_icons.html", payload)
 
 
 @require_safe
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes")
 
-    picto_root = "webfacile/static/webfacile/dist/artwork/pictograms/"
+    picto_root = "webfastoche/static/webfastoche/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}
@@ -499,7 +499,7 @@ def resource_pictograms(request):
     payload["pictograms"] = all_pictos
     payload["summary"] = summary
 
-    return render(request, "example_webfacile/page_pictograms.html", payload)
+    return render(request, "example_webfastoche/page_pictograms.html", payload)
 
 
 @require_safe
@@ -511,11 +511,11 @@ def resource_colors(request):
     payload["form"] = form
     payload["components_data"] = IMPLEMENTED_COMPONENTS
 
-    return render(request, "example_webfacile/page_colors.html", payload)
+    return render(request, "example_webfastoche/page_colors.html", payload)
 
 
 @require_safe
 def search(request):
     payload = init_payload("Recherche")
 
-    return render(request, "example_webfacile/search.html", payload)
+    return render(request, "example_webfastoche/search.html", payload)

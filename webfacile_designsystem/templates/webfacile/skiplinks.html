@@ -1,13 +1,13 @@
 {% load i18n %}
 {% translate "Skip links" as skiplinks_label %}
-<div class="webfacile-skiplinks">
+<div class="webfastoche-skiplinks">
   <nav role="navigation"
-       class="webfacile-container"
+       class="webfastoche-container"
        aria-label="{{ skiplinks_label }}">
-    <ul class="webfacile-skiplinks__list">
+    <ul class="webfastoche-skiplinks__list">
       {% for item in self.items %}
         <li>
-          <a class="webfacile-link" href="{{ item.link }}">{{ item.label }}</a>
+          <a class="webfastoche-link" href="{{ item.link }}">{{ item.label }}</a>
         </li>
       {% endfor %}
     </ul>

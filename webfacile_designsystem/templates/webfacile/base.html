@@ -1,14 +1,14 @@
-{% load static webfacile_tags %}
+{% load static webfastoche_tags %}
 <!DOCTYPE html>
 <html lang="{% block lang %}fr{% endblock lang %}"
-      data-webfacile-scheme="system"
-      {% if SITE_CONFIG.mourning %}data-webfacile-mourning{% endif %}>
+      data-webfastoche-scheme="system"
+      {% if SITE_CONFIG.mourning %}data-webfastoche-mourning{% endif %}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    {% webfacile_css %}
-    {% webfacile_favicon %}
+    {% webfastoche_css %}
+    {% webfastoche_favicon %}
 
     {% block extra_css %}
     {% endblock extra_css %}
@@ -30,21 +30,21 @@
   </head>
   <body>
     {% block skiplinks %}
-      {% webfacile_skiplinks skiplinks %}
+      {% webfastoche_skiplinks skiplinks %}
     {% endblock skiplinks %}
 
     {% block header %}
     {% endblock header %}
 
-    {% webfacile_theme_modale %}
+    {% webfastoche_theme_modale %}
 
     {% if SITE_CONFIG.notice %}
-      {% webfacile_notice title=SITE_CONFIG.notice %}
+      {% webfastoche_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    <div class="webfacile-container webfacile-mt-4w webfacile-mb-6w">
+    <div class="webfastoche-container webfastoche-mt-4w webfastoche-mb-6w">
       {% block breadcrumb %}
-        {% webfacile_breadcrumb %}
+        {% webfastoche_breadcrumb %}
       {% endblock breadcrumb %}
       <main id="content" role="main">
         {% block content %}
@@ -56,10 +56,10 @@
     {% endblock follow_newsletter_social_media %}
 
     {% block footer %}
-      {% include "webfacile/footer.html" %}
+      {% include "webfastoche/footer.html" %}
     {% endblock footer %}
 
-    {% webfacile_js nonce=request.csp_nonce %}
+    {% webfastoche_js nonce=request.csp_nonce %}
 
     {% block extra_js %}
     {% endblock extra_js %}

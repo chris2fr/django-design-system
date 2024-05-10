@@ -1,5 +1,5 @@
 {% if form.non_field_errors %}
-  <section class="webfacile-my-4v webfacile-input-group webfacile-input-group--error">
+  <section class="webfastoche-my-4v webfastoche-input-group webfastoche-input-group--error">
     {{ form.non_field_errors }}
   </section>
 {% endif %}
@@ -7,5 +7,5 @@
   {{ hidden }}
 {% endfor %}
 {% for field in form.visible_fields %}
-  {% include "webfacile/form_field_snippets/field_snippet.html" %}
+  {% include "webfastoche/form_field_snippets/field_snippet.html" %}
 {% endfor %}

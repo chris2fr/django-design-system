@@ -9,19 +9,19 @@ from black import format_str, FileMode
 class Command(BaseCommand):
     help = "Updates the integrity checksums for the css/js/favicon files."
 
-    BASE_PATH = Path("webfacile/static/webfacile/dist")
+    BASE_PATH = Path("webfastoche/static/webfastoche/dist")
 
     def handle(self, *args, **options):
         files = [
             {
-                "path": "webfacile/webfacile.module.min.js",
+                "path": "webfastoche/webfastoche.module.min.js",
                 "constant": "INTEGRITY_JS_MODULE",
             },
             {
-                "path": "webfacile/webfacile.nomodule.min.js",
+                "path": "webfastoche/webfastoche.nomodule.min.js",
                 "constant": "INTEGRITY_JS_NOMODULE",
             },
-            {"path": "webfacile/webfacile.min.css", "constant": "INTEGRITY_CSS"},
+            {"path": "webfastoche/webfastoche.min.css", "constant": "INTEGRITY_CSS"},
             {"path": "utility/utility.min.css", "constant": "INTEGRITY_UTILITY_CSS"},
             {"path": "utility/icons/icons.min.css", "constant": "INTEGRITY_CSS_ICONS"},
             {
@@ -53,7 +53,7 @@ class Command(BaseCommand):
             output_text += f'{constant} = ("{checksum}")\n\n'
 
         output_text = format_str(output_text, mode=FileMode())
-        with open("webfacile/checksums.py", "w") as output_file:
+        with open("webfastoche/checksums.py", "w") as output_file:
             output_file.write(output_text)
 
     def calculate_checksum(self, input_content: bytes):

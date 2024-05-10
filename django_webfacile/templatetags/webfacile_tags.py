@@ -6,7 +6,7 @@ from django.template import Template
 from django.template.context import Context
 from django.utils.html import format_html, format_html_join
 
-from django_webfacile.checksums import (
+from django_webfastoche.checksums import (
     INTEGRITY_CSS,
     INTEGRITY_CSS_ICONS,
     INTEGRITY_FAVICON_APPLE,
@@ -16,31 +16,31 @@ from django_webfacile.checksums import (
     INTEGRITY_JS_MODULE,
     INTEGRITY_JS_NOMODULE,
 )
-from django_webfacile.utils import (
+from django_webfastoche.utils import (
     find_active_menu_items,
     generate_random_id,
     parse_tag_args,
-    webfacile_input_class_attr,
+    webfastoche_input_class_attr,
 )
 
 register = template.Library()
 """
-Tags used in the "webfacile" templates.
+Tags used in the "webfastoche" templates.
 """
 
 # Global tags
 
 
-@register.inclusion_tag("webfacile/global_css.html")
-def webfacile_css() -> dict:
+@register.inclusion_tag("webfastoche/global_css.html")
+def webfastoche_css() -> dict:
     """
-    Returns the HTML for the CSS header tags for webfacile
+    Returns the HTML for the CSS header tags for webfastoche
 
     **Tag name**:
-        webfacile_css
+        webfastoche_css
 
     **Usage**:
-        `{% webfacile_css %}`
+        `{% webfastoche_css %}`
     """
     tag_data = {}
     tag_data["INTEGRITY_CSS"] = INTEGRITY_CSS
@@ -49,16 +49,16 @@ def webfacile_css() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/global_js.html", takes_context=True)
-def webfacile_js(context, *args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/global_js.html", takes_context=True)
+def webfastoche_js(context, *args, **kwargs) -> dict:
     """
-    Returns the HTML for the JS body tags for webfacile
+    Returns the HTML for the JS body tags for webfastoche
 
     **Tag name**:
-        webfacile_js
+        webfastoche_js
 
     **Usage**:
-        `{% webfacile_js %}`
+        `{% webfastoche_js %}`
     """
 
     allowed_keys = [
@@ -72,16 +72,16 @@ def webfacile_js(context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/favicon.html")
-def webfacile_favicon() -> dict:
+@register.inclusion_tag("webfastoche/favicon.html")
+def webfastoche_favicon() -> dict:
     """
-    Returns the HTML for the CSS header tags for the webfacile "Marianne" Favicon
+    Returns the HTML for the CSS header tags for the webfastoche "Marianne" Favicon
 
     **Tag name**:
-        webfacile_favicon
+        webfastoche_favicon
 
     **Usage**:
-        `{% webfacile_favicon %}`
+        `{% webfastoche_favicon %}`
     """
 
     tag_data = {}
@@ -93,25 +93,25 @@ def webfacile_favicon() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/theme_modale.html")
-def webfacile_theme_modale() -> None:
+@register.inclusion_tag("webfastoche/theme_modale.html")
+def webfastoche_theme_modale() -> None:
     """
-    Returns the HTML for the theme selection modale for webfacile
+    Returns the HTML for the theme selection modale for webfastoche
 
     **Tag name**:
-        webfacile_theme_modale
+        webfastoche_theme_modale
 
     **Usage**:
-        `{% webfacile_theme_modale %}`
+        `{% webfastoche_theme_modale %}`
     """
     return None
 
 
-# webfacile components
+# webfastoche components
 
 
-@register.inclusion_tag("webfacile/accordion.html")
-def webfacile_accordion(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/accordion.html")
+def webfastoche_accordion(*args, **kwargs) -> dict:
     """
     Returns an accordion item. Takes a dict as parameter, with the following structure:
 
@@ -126,13 +126,13 @@ def webfacile_accordion(*args, **kwargs) -> dict:
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
-    Can be used alone or in a group with the tag `webfacile_accordion_group`.
+    Can be used alone or in a group with the tag `webfastoche_accordion_group`.
 
     **Tag name**:
-        webfacile_accordion
+        webfastoche_accordion
 
     **Usage**:
-        `{% webfacile_accordion data_dict %}`
+        `{% webfastoche_accordion data_dict %}`
     """
     allowed_keys = ["id", "title", "content", "heading_tag"]
     tag_data = parse_tag_args(args, kwargs, allowed_keys)
@@ -143,23 +143,23 @@ def webfacile_accordion(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/accordion_group.html")
-def webfacile_accordion_group(items: list) -> dict:
+@register.inclusion_tag("webfastoche/accordion_group.html")
+def webfastoche_accordion_group(items: list) -> dict:
     """
     Returns a group of accordion items. Takes a list of dicts as parameters (see the
     accordion tag for the structure of these dicts.)
 
     **Tag name**:
-        webfacile_accordion_group
+        webfastoche_accordion_group
 
     **Usage**:
-        `{% webfacile_accordion_group data_list %}`
+        `{% webfastoche_accordion_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("webfacile/alert.html")
-def webfacile_alert(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/alert.html")
+def webfastoche_alert(*args, **kwargs) -> dict:
     """
     Returns an alert item. Takes a dict as parameter, with the following structure:
 
@@ -179,16 +179,16 @@ def webfacile_alert(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `webfacile-alert--sm` : small alert
+    - `webfastoche-alert--sm` : small alert
 
     On normal (median) alerts, the title is mandatory, the content is optional.
     On small alerts, the title is optional, the content is mandatory.
 
     **Tag name**:
-        webfacile_alert
+        webfastoche_alert
 
     **Usage**:
-        `{% webfacile_alert data_dict %}`
+        `{% webfastoche_alert data_dict %}`
     """  # noqa
 
     allowed_keys = [
@@ -209,8 +209,8 @@ def webfacile_alert(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/badge.html")
-def webfacile_badge(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/badge.html")
+def webfastoche_badge(*args, **kwargs) -> dict:
     """
     Returns a badge item. Takes a dict as parameter, with the following structure:
 
@@ -226,16 +226,16 @@ def webfacile_badge(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `webfacile-badge--sm`: small-sized badge
-    - `webfacile-badge--green-menthe` other color codes: change the color of the badge
-    - `webfacile-badge--success` (or error/info/warning/new): system badges
-    - `webfacile-badge--no-icon`: removes the icon on system badges
+    - `webfastoche-badge--sm`: small-sized badge
+    - `webfastoche-badge--green-menthe` other color codes: change the color of the badge
+    - `webfastoche-badge--success` (or error/info/warning/new): system badges
+    - `webfastoche-badge--no-icon`: removes the icon on system badges
 
     **Tag name**:
-        webfacile_badge
+        webfastoche_badge
 
     **Usage**:
-        `{% webfacile_badge data_dict %}`
+        `{% webfastoche_badge data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -246,24 +246,24 @@ def webfacile_badge(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/badge_group.html")
-def webfacile_badge_group(items: list) -> dict:
+@register.inclusion_tag("webfastoche/badge_group.html")
+def webfastoche_badge_group(items: list) -> dict:
     """
     Returns a group of badge items. Takes a list of dicts as parameters (see the badge
     tag for the structure of these dicts.)
 
 
     **Tag name**:
-        webfacile_badge_group
+        webfastoche_badge_group
 
     **Usage**:
-        `{% webfacile_badge_group data_list %}`
+        `{% webfastoche_badge_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("webfacile/breadcrumb.html", takes_context=True)
-def webfacile_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
+@register.inclusion_tag("webfastoche/breadcrumb.html", takes_context=True)
+def webfastoche_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     """
     Returns a breadcrumb item. Takes a dict as parameter, with the following structure:
 
@@ -278,10 +278,10 @@ def webfacile_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     If the dict is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        webfacile_breadcrumb
+        webfastoche_breadcrumb
 
     **Usage**:
-        `{% webfacile_breadcrumb data_dict %}`
+        `{% webfastoche_breadcrumb data_dict %}`
     """  # noqa
     if not tag_data:
         if "breadcrumb_data" in context:
@@ -291,8 +291,8 @@ def webfacile_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/button.html")
-def webfacile_button(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/button.html")
+def webfastoche_button(*args, **kwargs) -> dict:
     """
     Returns a button item. Takes a dict as parameter, with the following structure:
 
@@ -312,18 +312,18 @@ def webfacile_button(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `webfacile-btn--secondary`: secundary button
-    - `webfacile-btn--tertiary`: tertiary button
-    - `webfacile-btn--tertiary-no-outline`: tertiary button with no outline
-    - `webfacile-btn--icon-left` and `webfacile-btn--icon-right`: add an icon to the button
+    - `webfastoche-btn--secondary`: secundary button
+    - `webfastoche-btn--tertiary`: tertiary button
+    - `webfastoche-btn--tertiary-no-outline`: tertiary button with no outline
+    - `webfastoche-btn--icon-left` and `webfastoche-btn--icon-right`: add an icon to the button
       (associated with an icon class)
-    - `webfacile-btn--sm` and `webfacile-btn--lg`: button smaller or larger than the default size
+    - `webfastoche-btn--sm` and `webfastoche-btn--lg`: button smaller or larger than the default size
 
     **Tag name**:
-        webfacile_button
+        webfastoche_button
 
     **Usage**:
-        `{% webfacile_button data_dict %}`
+        `{% webfastoche_button data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -340,8 +340,8 @@ def webfacile_button(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/button_group.html")
-def webfacile_button_group(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/button_group.html")
+def webfastoche_button_group(*args, **kwargs) -> dict:
     """
     Returns a group of button items. Takes a dict as parameter, with the following structure:
 
@@ -353,20 +353,20 @@ def webfacile_button_group(*args, **kwargs) -> dict:
     ```
     Relevant `extra_classes`:
 
-    - `webfacile-btns-group--inline-sm`: Inline group, small size
-    - `webfacile-btns-group--inline-md`: Inline group, normal size
-    - `webfacile-btns-group--inline-lg`: Inline group, large size
-    - `webfacile-btns-group--sm`: Vertical group, small size
-    - `webfacile-btns-group--lg`: Vertical group, large size
-    - `webfacile-btns-group--equisized`: Width adjusted in Javascript
-    - `webfacile-btns-group--icon-left`: Buttons with an icon on the left side
-    - `webfacile-btns-group--icon-right`: Buttons with an icon on the right side
+    - `webfastoche-btns-group--inline-sm`: Inline group, small size
+    - `webfastoche-btns-group--inline-md`: Inline group, normal size
+    - `webfastoche-btns-group--inline-lg`: Inline group, large size
+    - `webfastoche-btns-group--sm`: Vertical group, small size
+    - `webfastoche-btns-group--lg`: Vertical group, large size
+    - `webfastoche-btns-group--equisized`: Width adjusted in Javascript
+    - `webfastoche-btns-group--icon-left`: Buttons with an icon on the left side
+    - `webfastoche-btns-group--icon-right`: Buttons with an icon on the right side
 
     **Tag name**:
-        webfacile_button_group
+        webfastoche_button_group
 
     **Usage**:
-        `{% webfacile_button_group data_dict %}`
+        `{% webfastoche_button_group data_dict %}`
     """
     allowed_keys = [
         "items",
@@ -377,8 +377,8 @@ def webfacile_button_group(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/callout.html")
-def webfacile_callout(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/callout.html")
+def webfastoche_callout(*args, **kwargs) -> dict:
     """
     Returns a callout item. Takes a dict as parameter, with the following structure:
 
@@ -400,13 +400,13 @@ def webfacile_callout(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-webfacile/resources/colors)), for example `webfacile-callout--green-emeraude`
+    - Color classes ([See the list](/django-webfastoche/resources/colors)), for example `webfastoche-callout--green-emeraude`
 
     **Tag name**:
-        webfacile_callout
+        webfastoche_callout
 
     **Usage**:
-        `{% webfacile_callout data_dict %}`
+        `{% webfastoche_callout data_dict %}`
     """
     allowed_keys = [
         "text",
@@ -421,8 +421,8 @@ def webfacile_callout(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/card.html")
-def webfacile_card(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/card.html")
+def webfastoche_card(*args, **kwargs) -> dict:
     """
     Returns a card item. Takes a dict as parameter, with the following structure:
 
@@ -449,14 +449,14 @@ def webfacile_card(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `webfacile-card--horizontal`: makes the card horizontal
-    - `webfacile-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
-    - `webfacile-card--horizontal-half`: allows a 50% ratio instead of the 40% default
-    - `webfacile-card--download`: replaces the forward arrow icon with a download one
-    - `webfacile-card--grey`: adds a grey background on the card
-    - `webfacile-card--no-border`: removes the card border
-    - `webfacile-card--no-background`: removes the card background
-    - `webfacile-card--shadow`: adds a shadow to the card border
+    - `webfastoche-card--horizontal`: makes the card horizontal
+    - `webfastoche-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
+    - `webfastoche-card--horizontal-half`: allows a 50% ratio instead of the 40% default
+    - `webfastoche-card--download`: replaces the forward arrow icon with a download one
+    - `webfastoche-card--grey`: adds a grey background on the card
+    - `webfastoche-card--no-border`: removes the card border
+    - `webfastoche-card--no-background`: removes the card background
+    - `webfastoche-card--shadow`: adds a shadow to the card border
 
     Format of the top_detail dict (every field is optional):
 
@@ -464,7 +464,7 @@ def webfacile_card(*args, **kwargs) -> dict:
     top_detail = {
         "detail": {
             "text": "the detail text",
-            "icon_class": "(Optional) an icon class (eg, webfacile-icon-warning-fill)"
+            "icon_class": "(Optional) an icon class (eg, webfastoche-icon-warning-fill)"
         },
         "tags": "a list of tag items (mutually exclusive with badges)",
         "badges": "a list of badge items (mutually exclusive with tags)"
@@ -476,16 +476,16 @@ def webfacile_card(*args, **kwargs) -> dict:
     ```python
     bottom_detail = {
         "text": "the detail text",
-        "icon_class": "(Optional) an icon class (eg, webfacile-icon-warning-fill)"
+        "icon_class": "(Optional) an icon class (eg, webfastoche-icon-warning-fill)"
     }
     ```
 
 
     **Tag name**:
-        webfacile_card
+        webfastoche_card
 
     **Usage**:
-        `{% webfacile_card data_dict %}`
+        `{% webfastoche_card data_dict %}`
     """  # noqa
     allowed_keys = [
         "title",
@@ -515,8 +515,8 @@ def webfacile_card(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/consent.html")
-def webfacile_consent(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/consent.html")
+def webfastoche_consent(*args, **kwargs) -> dict:
     """
     Returns a consent banner item. Takes a dict as parameter, with the following structure:
 
@@ -532,10 +532,10 @@ def webfacile_consent(*args, **kwargs) -> dict:
     The tag only manages the banner. The logic needs to be implemented.
 
     **Tag name**:
-        webfacile_consent
+        webfastoche_consent
 
     **Usage**:
-        `{% webfacile_consent data_dict %}`
+        `{% webfastoche_consent data_dict %}`
     """
 
     allowed_keys = [
@@ -547,8 +547,8 @@ def webfacile_consent(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/content.html")
-def webfacile_content(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/content.html")
+def webfastoche_content(*args, **kwargs) -> dict:
     """
     Returns a media content item. Takes a dict as parameter, with the following structure:
 
@@ -561,7 +561,7 @@ def webfacile_content(*args, **kwargs) -> dict:
         "alt_text": "(optional) Alternative text of the media"
         "extra_classes": "(Optional) string with names of extra classes for the whole component",
         "ratio_class": "(Optional) string with the name of a ratio class",
-        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django-webfacile/components/transcription/)",
+        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django-webfastoche/components/transcription/)",
     }
     ```
 
@@ -582,30 +582,30 @@ def webfacile_content(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `webfacile-content-media--lg`: media is 125% of the main text width.
-    - `webfacile-content-media--sm`: media is 75% of the the main text width.
+    - `webfastoche-content-media--lg`: media is 125% of the main text width.
+    - `webfastoche-content-media--sm`: media is 75% of the the main text width.
 
     Relevant ratio classes for images:
 
-    - `webfacile-ratio-32x9`
-    - `webfacile-ratio-16x9`
-    - `webfacile-ratio-3x2`
-    - `webfacile-ratio-4x3`
-    - `webfacile-ratio-1x1`
-    - `webfacile-ratio-3x4`
-    - `webfacile-ratio-2x3`
+    - `webfastoche-ratio-32x9`
+    - `webfastoche-ratio-16x9`
+    - `webfastoche-ratio-3x2`
+    - `webfastoche-ratio-4x3`
+    - `webfastoche-ratio-1x1`
+    - `webfastoche-ratio-3x4`
+    - `webfastoche-ratio-2x3`
 
     Relevant ratio classes for videos:
 
-    - `webfacile-ratio-16x9`
-    - `webfacile-ratio-4x3`
-    - `webfacile-ratio-1x1`
+    - `webfastoche-ratio-16x9`
+    - `webfastoche-ratio-4x3`
+    - `webfastoche-ratio-1x1`
 
     **Tag name**:
-        webfacile_content
+        webfastoche_content
 
     **Usage**:
-        `{% webfacile_content data_dict %}`
+        `{% webfastoche_content data_dict %}`
     """
 
     allowed_keys = [
@@ -624,8 +624,8 @@ def webfacile_content(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/france_connect.html")
-def webfacile_france_connect(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/france_connect.html")
+def webfastoche_france_connect(*args, **kwargs) -> dict:
     """
     Returns a FranceConnect button item. Takes a dict as parameter, with the following structure:
 
@@ -639,10 +639,10 @@ def webfacile_france_connect(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_france_connect
+        webfastoche_france_connect
 
     **Usage**:
-        `{% webfacile_france_connect data_dict %}`
+        `{% webfastoche_france_connect data_dict %}`
     """
 
     allowed_keys = [
@@ -660,8 +660,8 @@ def webfacile_france_connect(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/highlight.html")
-def webfacile_highlight(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/highlight.html")
+def webfastoche_highlight(*args, **kwargs) -> dict:
     """
     Returns a highlight item. Takes a dict as parameter, with the following structure:
 
@@ -675,20 +675,20 @@ def webfacile_highlight(*args, **kwargs) -> dict:
 
     Relevant size_classes:
 
-    - `webfacile-text--sm`
-    - `webfacile-text--lg`
+    - `webfastoche-text--sm`
+    - `webfastoche-text--lg`
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-webfacile/resources/colors)), for example `webfacile-highlight--green-emeraude`
+    - Color classes ([See the list](/django-webfastoche/resources/colors)), for example `webfastoche-highlight--green-emeraude`
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_highlight
+        webfastoche_highlight
 
     **Usage**:
-        `{% webfacile_highlight data_dict %}`
+        `{% webfastoche_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -701,8 +701,8 @@ def webfacile_highlight(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/input.html")
-def webfacile_input(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/input.html")
+def webfastoche_input(*args, **kwargs) -> dict:
     """
     Returns a input item. Prefer the use of an actual form (see documentation)
 
@@ -725,10 +725,10 @@ def webfacile_input(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_input
+        webfastoche_input
 
     **Usage**:
-        `{% webfacile_input data_dict %}`
+        `{% webfastoche_input data_dict %}`
     """
 
     allowed_keys = [
@@ -749,8 +749,8 @@ def webfacile_input(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/link.html")
-def webfacile_link(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/link.html")
+def webfastoche_link(*args, **kwargs) -> dict:
     """
     Returns a link item. Takes a dict as parameter, with the following structure:
 
@@ -765,18 +765,18 @@ def webfacile_link(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `webfacile-link--icon-left` or `webfacile-link--icon-right` with an icon class
-    - `webfacile-link--sm` for small links
-    - `webfacile-link--lg` for large links
+    - `webfastoche-link--icon-left` or `webfastoche-link--icon-right` with an icon class
+    - `webfastoche-link--sm` for small links
+    - `webfastoche-link--lg` for large links
 
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_link
+        webfastoche_link
 
     **Usage**:
-        `{% webfacile_link data_dict %}`
+        `{% webfastoche_link data_dict %}`
     """
 
     allowed_keys = [
@@ -790,8 +790,8 @@ def webfacile_link(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/notice.html")
-def webfacile_notice(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/notice.html")
+def webfastoche_notice(*args, **kwargs) -> dict:
     """
     Returns a notice item. Takes a dict as parameter, with the following structure:
 
@@ -805,10 +805,10 @@ def webfacile_notice(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_notice
+        webfastoche_notice
 
     **Usage**:
-        `{% webfacile_notice data_dict %}`
+        `{% webfastoche_notice data_dict %}`
     """
 
     allowed_keys = [
@@ -820,23 +820,23 @@ def webfacile_notice(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/pagination.html", takes_context=True)
-def webfacile_pagination(context: Context, page_obj: Page) -> dict:
+@register.inclusion_tag("webfastoche/pagination.html", takes_context=True)
+def webfastoche_pagination(context: Context, page_obj: Page) -> dict:
     """
     Returns a pagination item. Takes a Django paginator object as parameter
     Cf. https://docs.djangoproject.com/fr/3.2/topics/pagination/
 
     **Tag name**:
-        webfacile_pagination
+        webfastoche_pagination
 
     **Usage**:
-        `{% webfacile_pagination page_obj %}`
+        `{% webfastoche_pagination page_obj %}`
     """
     return {"request": context["request"], "page_obj": page_obj}
 
 
-@register.inclusion_tag("webfacile/quote.html")
-def webfacile_quote(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/quote.html")
+def webfastoche_quote(*args, **kwargs) -> dict:
     """
     Returns a quote item. Takes a dict as parameter, with the following structure:
 
@@ -858,13 +858,13 @@ def webfacile_quote(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-webfacile/resources/colors)), for example `webfacile-quote--green-emeraude`
+    - Color classes ([See the list](/django-webfastoche/resources/colors)), for example `webfastoche-quote--green-emeraude`
 
     **Tag name**:
-        webfacile_quote
+        webfastoche_quote
 
     **Usage**:
-        `{% webfacile_quote data_dict %}`
+        `{% webfastoche_quote data_dict %}`
     """
 
     allowed_keys = [
@@ -881,8 +881,8 @@ def webfacile_quote(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/select.html")
-def webfacile_select(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/select.html")
+def webfastoche_select(*args, **kwargs) -> dict:
     """
     Returns a select item. Prefer the use of an actual form (see documentation)
 
@@ -907,17 +907,17 @@ def webfacile_select(*args, **kwargs) -> dict:
     ```
     Relevant extra_classes:
 
-    - `webfacile-sidemenu--sticky`: Makes the menu sticky
-    - `webfacile-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
-    - `webfacile-sidemenu--right`: Moves the menu to the right side of the screen
+    - `webfastoche-sidemenu--sticky`: Makes the menu sticky
+    - `webfastoche-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
+    - `webfastoche-sidemenu--right`: Moves the menu to the right side of the screen
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_select
+        webfastoche_select
 
     **Usage**:
-        `{% webfacile_select data_dict %}`
+        `{% webfastoche_select data_dict %}`
     """
 
     allowed_keys = [
@@ -937,8 +937,8 @@ def webfacile_select(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/sidemenu.html", takes_context=True)
-def webfacile_sidemenu(context: Context, *args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/sidemenu.html", takes_context=True)
+def webfastoche_sidemenu(context: Context, *args, **kwargs) -> dict:
     """
     Returns a side menu item. Takes a dict as parameter, with the following structure:
 
@@ -965,10 +965,10 @@ def webfacile_sidemenu(context: Context, *args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_sidemenu
+        webfastoche_sidemenu
 
     **Usage**:
-        `{% webfacile_sidemenu data_dict %}`
+        `{% webfastoche_sidemenu data_dict %}`
     """
 
     allowed_keys = ["label", "items", "heading_tag", "extra_classes"]
@@ -980,8 +980,8 @@ def webfacile_sidemenu(context: Context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/skiplinks.html", takes_context=True)
-def webfacile_skiplinks(context: Context, items: list) -> dict:
+@register.inclusion_tag("webfastoche/skiplinks.html", takes_context=True)
+def webfastoche_skiplinks(context: Context, items: list) -> dict:
     """
     Returns a skiplinks item. Takes a list as parameter, with the following structure:
 
@@ -992,10 +992,10 @@ def webfacile_skiplinks(context: Context, items: list) -> dict:
     If the list is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        webfacile_skiplinks
+        webfastoche_skiplinks
 
     **Usage**:
-        `{% webfacile_skiplinks items %}`
+        `{% webfastoche_skiplinks items %}`
     """
     if not items:
         if "skiplinks" in context:
@@ -1005,8 +1005,8 @@ def webfacile_skiplinks(context: Context, items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("webfacile/stepper.html")
-def webfacile_stepper(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/stepper.html")
+def webfastoche_stepper(*args, **kwargs) -> dict:
     """
     Returns a stepper item. Takes a dict as parameter, with the following structure:
 
@@ -1023,10 +1023,10 @@ def webfacile_stepper(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_stepper
+        webfastoche_stepper
 
     **Usage**:
-        `{% webfacile_stepper data_dict %}`
+        `{% webfastoche_stepper data_dict %}`
     """
     allowed_keys = [
         "current_step_id",
@@ -1040,8 +1040,8 @@ def webfacile_stepper(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/summary.html")
-def webfacile_summary(items: list, heading_tag: str = "p") -> dict:
+@register.inclusion_tag("webfastoche/summary.html")
+def webfastoche_summary(items: list, heading_tag: str = "p") -> dict:
     """
     Returns a summary item. Takes a list as parameter, with the following structure:
 
@@ -1059,16 +1059,16 @@ def webfacile_summary(items: list, heading_tag: str = "p") -> dict:
     Also takes an optional "heading_tag" parameter, which can be "p" (default) or h2>h6.
 
     **Tag name**:
-        webfacile_summary
+        webfastoche_summary
 
     **Usage**:
-        `{% webfacile_summary items heading_tag %}`
+        `{% webfastoche_summary items heading_tag %}`
     """
     return {"self": {"items": items, "heading_tag": heading_tag}}
 
 
-@register.inclusion_tag("webfacile/table.html")
-def webfacile_table(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/table.html")
+def webfastoche_table(*args, **kwargs) -> dict:
     """
     Returns a table item. Takes a dict as parameter, with the following structure:
 
@@ -1086,18 +1086,18 @@ def webfacile_table(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-webfacile/resources/colors)), for example `webfacile-table--green-emeraude`
-    - `webfacile-table--bordered`: adds a border under each line
-    - `webfacile-table--no-scroll` prevents horizontal scrolling on mobile
-    - `webfacile-table--layout-fixed`: forces the table at 100% and equal size columns
-    - `webfacile-table--no-caption`: hides the caption
-    - `webfacile-table--caption-bottom`: sets the caption after the table instead of before
+    - Color classes ([See the list](/django-webfastoche/resources/colors)), for example `webfastoche-table--green-emeraude`
+    - `webfastoche-table--bordered`: adds a border under each line
+    - `webfastoche-table--no-scroll` prevents horizontal scrolling on mobile
+    - `webfastoche-table--layout-fixed`: forces the table at 100% and equal size columns
+    - `webfastoche-table--no-caption`: hides the caption
+    - `webfastoche-table--caption-bottom`: sets the caption after the table instead of before
 
     **Tag name**:
-        webfacile_table
+        webfastoche_table
 
     **Usage**:
-        `{% webfacile_table data_dict %}`
+        `{% webfastoche_table data_dict %}`
     """
     allowed_keys = [
         "caption",
@@ -1110,8 +1110,8 @@ def webfacile_table(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/tag.html")
-def webfacile_tag(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/tag.html")
+def webfastoche_tag(*args, **kwargs) -> dict:
     """
     Returns a tag item. Takes a dict as parameter, with the following structure:
 
@@ -1128,17 +1128,17 @@ def webfacile_tag(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `webfacile-tag--sm`: for a small tag
+    - `webfastoche-tag--sm`: for a small tag
     - icon classes: an icon for the tag, along with a positional class
-      (eg, `webfacile-icon-arrow-right-line` `webfacile-tag--icon-left`)
+      (eg, `webfastoche-icon-arrow-right-line` `webfastoche-tag--icon-left`)
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_highlight
+        webfastoche_highlight
 
     **Usage**:
-        `{% webfacile_highlight data_dict %}`
+        `{% webfastoche_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -1154,8 +1154,8 @@ def webfacile_tag(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/tile.html")
-def webfacile_tile(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/tile.html")
+def webfastoche_tile(*args, **kwargs) -> dict:
     """
     Returns a tile item. Takes a dict as parameter, with the following structure:
 
@@ -1179,13 +1179,13 @@ def webfacile_tile(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `webfacile-tile--sm`: for a small (SM) tile
-    - `webfacile-tile--horizontal`: for an horizontal tile
-    - `webfacile-tile--download`: Replaces the forward arrow icon with a download one
-    - `webfacile-tile--grey`: adds a grey background on the tile
-    - `webfacile-tile--no-border`: removes the tile border
-    - `webfacile-tile--no-background`: removes the tile background
-    - `webfacile-tile--shadow`: adds a shadow to the tile border
+    - `webfastoche-tile--sm`: for a small (SM) tile
+    - `webfastoche-tile--horizontal`: for an horizontal tile
+    - `webfastoche-tile--download`: Replaces the forward arrow icon with a download one
+    - `webfastoche-tile--grey`: adds a grey background on the tile
+    - `webfastoche-tile--no-border`: removes the tile border
+    - `webfastoche-tile--no-background`: removes the tile background
+    - `webfastoche-tile--shadow`: adds a shadow to the tile border
 
 
     Format of the top_detail dict (every field is optional):
@@ -1201,10 +1201,10 @@ def webfacile_tile(*args, **kwargs) -> dict:
     `<svg>` html tag instead of the `<img>` tag.
 
     **Tag name**:
-        webfacile_tile
+        webfastoche_tile
 
     **Usage**:
-        `{% webfacile_tile data_dict %}`
+        `{% webfastoche_tile data_dict %}`
     """
 
     allowed_keys = [
@@ -1227,8 +1227,8 @@ def webfacile_tile(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/toggle.html")
-def webfacile_toggle(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/toggle.html")
+def webfastoche_toggle(*args, **kwargs) -> dict:
     """
     Returns a toggle item. Takes a dict as parameter, with the following structure:
 
@@ -1247,15 +1247,15 @@ def webfacile_toggle(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `webfacile-toggle--label-left`: sets the label on the left side
-    - `webfacile-toggle--border-bottom`: adds a border at the bottom
+    - `webfastoche-toggle--label-left`: sets the label on the left side
+    - `webfastoche-toggle--border-bottom`: adds a border at the bottom
 
 
     **Tag name**:
-        webfacile_toggle
+        webfastoche_toggle
 
     **Usage**:
-        `{% webfacile_toggle data_dict %}`
+        `{% webfastoche_toggle data_dict %}`
     """
 
     allowed_keys = [
@@ -1276,8 +1276,8 @@ def webfacile_toggle(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/tooltip.html")
-def webfacile_tooltip(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/tooltip.html")
+def webfastoche_tooltip(*args, **kwargs) -> dict:
     """
     Returns a tooltip item. Takes a dict as parameter, with the following structure:
 
@@ -1293,10 +1293,10 @@ def webfacile_tooltip(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_tooltip
+        webfastoche_tooltip
 
     **Usage**:
-        `{% webfacile_tooltip data_dict %}`
+        `{% webfastoche_tooltip data_dict %}`
     """
 
     allowed_keys = [
@@ -1313,8 +1313,8 @@ def webfacile_tooltip(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("webfacile/transcription.html")
-def webfacile_transcription(*args, **kwargs) -> dict:
+@register.inclusion_tag("webfastoche/transcription.html")
+def webfastoche_transcription(*args, **kwargs) -> dict:
     """
     Returns a transcription item. Takes a dict as parameter, with the following structure:
 
@@ -1329,10 +1329,10 @@ def webfacile_transcription(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        webfacile_transcription
+        webfastoche_transcription
 
     **Usage**:
-        `{% webfacile_transcription data_dict %}`
+        `{% webfastoche_transcription data_dict %}`
     """
 
     allowed_keys = [
@@ -1352,16 +1352,16 @@ def webfacile_transcription(*args, **kwargs) -> dict:
 
 
 @register.simple_tag(takes_context=True)
-def webfacile_django_messages(
+def webfastoche_django_messages(
     context, is_collapsible=False, extra_classes=None, wrapper_classes=None
 ):
     """
-    Renders django messages in a series a webfacile alerts
+    Renders django messages in a series a webfastoche alerts
 
     ```python
     data_dict = {
         "is_collapsible" : "(Optional) Boolean, set to true to add a 'close' button for the alert (default: false)",
-        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `webfacile-my-4v`)",
+        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `webfastoche-my-4v`)",
         "extra_classes": "(Optional) extra classes for the alert."
     }
     ```
@@ -1370,15 +1370,15 @@ def webfacile_django_messages(
 
     Relevant extra_classes:
 
-    - `webfacile-alert--sm` : small alert
+    - `webfastoche-alert--sm` : small alert
 
     See: [https://docs.djangoproject.com/en/4.2/ref/contrib/messages/](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 
     By default, the following message level are mapped to the following alert types:
 
-    <div class="webfacile-table" markdown="1">
+    <div class="webfastoche-table" markdown="1">
 
-    Message level | webfacile alert type
+    Message level | webfastoche alert type
     :------------:|:--------------:
     `DEBUG`       | `info`
     `INFO`        | `info`
@@ -1388,13 +1388,13 @@ def webfacile_django_messages(
 
     </div>
 
-    There types are then concatenated with ``webfacile-alert--`` to form the CSS classe in the template.
+    There types are then concatenated with ``webfastoche-alert--`` to form the CSS classe in the template.
 
-    These classes can be modified by setting ``webfacile_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
+    These classes can be modified by setting ``webfastoche_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
 
     ```python
     from django.contrib import messages
-    webfacile_MESSAGE_TAGS_CSS_CLASSES = {
+    webfastoche_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "error"
     }
     ```
@@ -1408,7 +1408,7 @@ def webfacile_django_messages(
     MESSAGE_TAGS = {
         50: "fatal"
     }
-    webfacile_MESSAGE_TAGS_CSS_CLASSES = {
+    webfastoche_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "debug",
         50: "warning"
     }
@@ -1420,13 +1420,13 @@ def webfacile_django_messages(
     messages.add_message(request, 50, "A serious error occurred.")
     ```
 
-    renders an alert with the following CSS class: `webfacile-alert--warning`.
+    renders an alert with the following CSS class: `webfastoche-alert--warning`.
 
     **Tag name**:
-        webfacile_django_messages
+        webfastoche_django_messages
 
     **Usage**:
-        `{% webfacile_django_messages data_dict %}`
+        `{% webfastoche_django_messages data_dict %}`
     """  # noqa
 
     messages = context.get("messages")
@@ -1434,7 +1434,7 @@ def webfacile_django_messages(
     if not messages:
         return ""
 
-    wrapper_classes = wrapper_classes or "webfacile-my-4v"
+    wrapper_classes = wrapper_classes or "webfastoche-my-4v"
     extra_classes = extra_classes or ""
 
     message_tags_css_classes = {
@@ -1443,12 +1443,12 @@ def webfacile_django_messages(
         SUCCESS: "success",
         WARNING: "warning",
         ERROR: "error",
-        **getattr(settings, "webfacile_MESSAGE_TAGS_CSS_CLASSES", {}),
+        **getattr(settings, "webfastoche_MESSAGE_TAGS_CSS_CLASSES", {}),
     }
 
     def _render_alert_tag(message):
         return Template(
-            "{% load webfacile_tags %}{% webfacile_alert data_dict %}"
+            "{% load webfastoche_tags %}{% webfastoche_alert data_dict %}"
         ).render(
             Context(
                 {
@@ -1473,35 +1473,35 @@ def webfacile_django_messages(
     )
 
 
-@register.inclusion_tag("webfacile/form_snippet.html", takes_context=True)
-def webfacile_form(context) -> dict:
+@register.inclusion_tag("webfastoche/form_snippet.html", takes_context=True)
+def webfastoche_form(context) -> dict:
     """
     Returns the HTML for a form snippet
 
     **Tag name**:
-        webfacile_form
+        webfastoche_form
 
     **Usage**:
-        `{% webfacile_form %}`
+        `{% webfastoche_form %}`
     """
     return context
 
 
-@register.inclusion_tag("webfacile/form_field_snippets/field_snippet.html")
-def webfacile_form_field(field) -> dict:
+@register.inclusion_tag("webfastoche/form_field_snippets/field_snippet.html")
+def webfastoche_form_field(field) -> dict:
     """
     Returns the HTML for a form field snippet
 
     **Tag name**:
-        webfacile_form_field
+        webfastoche_form_field
 
     **Usage**:
-        `{% webfacile_form_field field %}`
+        `{% webfastoche_form_field field %}`
     """
     return {"field": field}
 
 
-register.filter(name="webfacile_input_class_attr", filter_func=webfacile_input_class_attr)
+register.filter(name="webfastoche_input_class_attr", filter_func=webfastoche_input_class_attr)
 
 
 # Other tags and helpers

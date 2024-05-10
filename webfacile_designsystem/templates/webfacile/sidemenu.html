@@ -1,49 +1,49 @@
-{% load webfacile_tags i18n %}
+{% load webfastoche_tags i18n %}
 {% translate "Side menu" as side_menu_label %}
 <nav role="navigation"
-     class="webfacile-sidemenu{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+     class="webfastoche-sidemenu{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
      aria-label="{{ side_menu_label }}">
-  <div class="webfacile-sidemenu__inner">
+  <div class="webfastoche-sidemenu__inner">
     <button type="button"
-            class="webfacile-sidemenu__btn"
-            aria-controls="webfacile-sidemenu-wrapper"
+            class="webfastoche-sidemenu__btn"
+            aria-controls="webfastoche-sidemenu-wrapper"
             aria-expanded="false">
       {% translate "In this section" %}
     </button>
-    <div class="webfacile-collapse" id="webfacile-sidemenu-wrapper">
+    <div class="webfastoche-collapse" id="webfastoche-sidemenu-wrapper">
       {% if self.title %}
-        <{{ self.heading_tag|default:"div" }} class="webfacile-sidemenu__title">{{ self.title }}</{{ self.heading_tag|default:"div" }}>
+        <{{ self.heading_tag|default:"div" }} class="webfastoche-sidemenu__title">{{ self.title }}</{{ self.heading_tag|default:"div" }}>
       {% endif %}
-      <ul class="webfacile-sidemenu__list">
+      <ul class="webfastoche-sidemenu__list">
         {% for item in self.items %}
           {# Level 1 #}
-          <li class="webfacile-sidemenu__item{% if item.is_active %} webfacile-sidemenu__item--active{% endif %}">
+          <li class="webfastoche-sidemenu__item{% if item.is_active %} webfastoche-sidemenu__item--active{% endif %}">
             {% if "items" in item %}
-              {% with "webfacile-sidemenu-item"|hyphenate:forloop.counter as item_id %}
+              {% with "webfastoche-sidemenu-item"|hyphenate:forloop.counter as item_id %}
                 <button type="button"
-                        class="webfacile-sidemenu__btn"
+                        class="webfastoche-sidemenu__btn"
                         aria-expanded="{% if item.is_active %}true{% else %}false{% endif %}"
                         aria-controls="{{ item_id }}">
                   {{ item.label }}
                 </button>
-                <div class="webfacile-collapse" id="{{ item_id }}">
-                  <ul class="webfacile-sidemenu__list">
+                <div class="webfastoche-collapse" id="{{ item_id }}">
+                  <ul class="webfastoche-sidemenu__list">
                     {% for sub_item in item.items %}
-                      <li class="webfacile-sidemenu__item{% if sub_item.is_active %} webfacile-sidemenu__item--active{% endif %}">
+                      <li class="webfastoche-sidemenu__item{% if sub_item.is_active %} webfastoche-sidemenu__item--active{% endif %}">
                         {% if "items" in sub_item %}
                           {# Level 2 #}
-                          {% with "webfacile-sidemenu-item"|hyphenate:forloop.parentloop.counter|hyphenate:forloop.counter as sub_item_id %}
+                          {% with "webfastoche-sidemenu-item"|hyphenate:forloop.parentloop.counter|hyphenate:forloop.counter as sub_item_id %}
                             <button type="button"
-                                    class="webfacile-sidemenu__btn"
+                                    class="webfastoche-sidemenu__btn"
                                     aria-expanded="{% if sub_item.is_active %}true{% else %}false{% endif %}"
                                     aria-controls="{{ sub_item_id }}">
                               {{ sub_item.label }}
                             </button>
-                            <div class="webfacile-collapse" id="{{ sub_item_id }}">
-                              <ul class="webfacile-sidemenu__list">
+                            <div class="webfastoche-collapse" id="{{ sub_item_id }}">
+                              <ul class="webfastoche-sidemenu__list">
                                 {% for lv3_item in sub_item.items %}
-                                  <li class="webfacile-sidemenu__item{% if lv3_item.is_active %} webfacile-sidemenu__item--active{% endif %}">
-                                    <a class="webfacile-sidemenu__link"
+                                  <li class="webfastoche-sidemenu__item{% if lv3_item.is_active %} webfastoche-sidemenu__item--active{% endif %}">
+                                    <a class="webfastoche-sidemenu__link"
                                        href="{{ lv3_item.link }}"
                                        target="_self"
                                        {% if lv3_item.is_active %}aria-current="page"{% endif %}>
@@ -55,7 +55,7 @@
                             </div>
                           {% endwith %}
                         {% else %}
-                          <a class="webfacile-sidemenu__link"
+                          <a class="webfastoche-sidemenu__link"
                              href="{{ sub_item.link }}"
                              target="_self"
                              {% if sub_item.is_active %}aria-current="page"{% endif %}>{{ sub_item.label }}</a>
@@ -67,7 +67,7 @@
                 </div>
               {% endwith %}
             {% else %}
-              <a class="webfacile-sidemenu__link"
+              <a class="webfastoche-sidemenu__link"
                  href="{{ item.link }}"
                  target="_self"
                  {% if item.is_active %}aria-current="page"{% endif %}>{{ item.label }}</a>

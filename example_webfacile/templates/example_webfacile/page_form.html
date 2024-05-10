@@ -1,17 +1,17 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 {% block content %}
   <h1>
     Exemple de formulaire
   </h1>
   <form action="{% url 'page_form' %}" method="post">
     {% csrf_token %}
-    {% webfacile_form %}
-    <div class="webfacile-input-group webfacile-my-4w">
-      <button type="submit" class="webfacile-btn" title="Valider">
+    {% webfastoche_form %}
+    <div class="webfastoche-input-group webfastoche-my-4w">
+      <button type="submit" class="webfastoche-btn" title="Valider">
         Valider ce formulaire
       </button>
-      <button type="" class="webfacile-btn webfacile-btn--secondary" title="Annuler">
+      <button type="" class="webfastoche-btn webfastoche-btn--secondary" title="Annuler">
         Annuler
       </button>
     </div>

@@ -1,13 +1,13 @@
 from django.contrib import admin
 
-from example_webfacile.models import WebfacileAuthor, WebfacileGenre, WebfacileBook
+from example_webfastoche.models import WebfastocheAuthor, WebfastocheGenre, WebfastocheBook
 
 
 # Register your models here.
-@admin.register(WebfacileAuthor)
-class WebfacileAuthorAdmin(admin.ModelAdmin):
+@admin.register(WebfastocheAuthor)
+class WebfastocheAuthorAdmin(admin.ModelAdmin):
     """
-    Admin model for WebfacileAuthor
+    Admin model for WebfastocheAuthor
     """
 
     list_display = (
@@ -17,10 +17,10 @@ class WebfacileAuthorAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(WebfacileGenre)
-class WebfacileGenreAdmin(admin.ModelAdmin):
+@admin.register(WebfastocheGenre)
+class WebfastocheGenreAdmin(admin.ModelAdmin):
     """
-    Admin model for WebfacileGenre
+    Admin model for WebfastocheGenre
     """
 
     list_display = (
@@ -30,10 +30,10 @@ class WebfacileGenreAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(WebfacileBook)
-class WebfacileBookAdmin(admin.ModelAdmin):
+@admin.register(WebfastocheBook)
+class WebfastocheBookAdmin(admin.ModelAdmin):
     """
-    Admin model for WebfacileBook
+    Admin model for WebfastocheBook
     """
 
     pass

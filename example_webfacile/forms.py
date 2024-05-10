@@ -4,18 +4,18 @@ from django.forms import (
     inlineformset_factory,
 )  # /!\ In order to use formsets
 
-from django_webfacile.constants import COLOR_CHOICES_ILLUSTRATION
-from django_webfacile.forms import WebfacileBaseForm
+from django_webfastoche.constants import COLOR_CHOICES_ILLUSTRATION
+from django_webfastoche.forms import WebfastocheBaseForm
 
 # /!\ In order to use formsets
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, Field
 
-from example_webfacile.models import WebfacileAuthor, WebfacileBook
-from example_webfacile.utils import populate_genre_choices
+from example_webfastoche.models import WebfastocheAuthor, WebfastocheBook
+from example_webfastoche.utils import populate_genre_choices
 
 
-class ExampleForm(WebfacileBaseForm):
+class ExampleForm(WebfastocheBaseForm):
     # basic fields
     user_name = forms.CharField(label="Nom d’utilisateur", max_length=100)
 
@@ -55,7 +55,7 @@ class ExampleForm(WebfacileBaseForm):
     )
 
     """
-    Not managed by the webfacile:
+    Not managed by the webfastoche:
     - DateTimeField
     """
 
@@ -134,9 +134,9 @@ class ExampleForm(WebfacileBaseForm):
         self.set_autofocus_on_first_error()
 
 
-class WebfacileAuthorCreateForm(ModelForm, WebfacileBaseForm):
+class WebfastocheAuthorCreateForm(ModelForm, WebfastocheBaseForm):
     class Meta:
-        model = WebfacileAuthor
+        model = WebfastocheAuthor
         exclude = []
         widgets = {
             "first_name": forms.TextInput(),
@@ -156,9 +156,9 @@ BOOK_FORMAT = (
 )
 
 
-class WebfacileBookCreateForm(ModelForm, WebfacileBaseForm):
+class WebfastocheBookCreateForm(ModelForm, WebfastocheBaseForm):
     class Meta:
-        model = WebfacileBook
+        model = WebfastocheBook
         exclude = []
         widgets = {
             "title": forms.TextInput(),
@@ -169,14 +169,14 @@ class WebfacileBookCreateForm(ModelForm, WebfacileBaseForm):
     book_format = forms.ChoiceField(
         label="Format",
         choices=BOOK_FORMAT,  # If the choices are in a constant
-        widget=forms.RadioSelect(attrs={"class": "webfacile-fieldset--inline"}),
+        widget=forms.RadioSelect(attrs={"class": "webfastoche-fieldset--inline"}),
     )
 
-    # /!\ WebfacileGenre is a model, but it requires to format the list of object before passing to the field
+    # /!\ WebfastocheGenre is a model, but it requires to format the list of object before passing to the field
     # Using a ModelMultipleChoiceField won't show individual help_texts under each checkbox
     # I declared a variable GENRES in order to show individual help_texts
     genre = forms.MultipleChoiceField(
-        label="WebfacileGenre",
+        label="WebfastocheGenre",
         choices=populate_genre_choices,
         widget=forms.CheckboxSelectMultiple(),
         required=False,
@@ -189,9 +189,9 @@ class WebfacileBookCreateForm(ModelForm, WebfacileBaseForm):
 
 
 # /!\ In order to use formsets, you have to define a crispy FormHelper for the form used for the formset
-class WebfacileBookCreateFormHelper(FormHelper):
+class WebfastocheBookCreateFormHelper(FormHelper):
     def __init__(self, *args, **kwargs):
-        super(WebfacileBookCreateFormHelper, self).__init__(*args, **kwargs)
+        super(WebfastocheBookCreateFormHelper, self).__init__(*args, **kwargs)
         # self.form_tag = False
         self.layout = Layout(
             Fieldset(
@@ -205,16 +205,16 @@ class WebfacileBookCreateFormHelper(FormHelper):
 
 
 # /!\ In order to use formsets, you have to define an formset factory
-WebfacileBookCreateFormSet = inlineformset_factory(
-    WebfacileAuthor,
-    WebfacileBook,
-    form=WebfacileBookCreateForm,
+WebfastocheBookCreateFormSet = inlineformset_factory(
+    WebfastocheAuthor,
+    WebfastocheBook,
+    form=WebfastocheBookCreateForm,
     extra=1,
     exclude=[],
 )
 
 
-class ColorForm(WebfacileBaseForm):
+class ColorForm(WebfastocheBaseForm):
     color = forms.ChoiceField(
         label="Choisissez une couleur",
         required=False,

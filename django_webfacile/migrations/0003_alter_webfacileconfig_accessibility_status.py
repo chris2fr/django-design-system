@@ -5,12 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("django_webfacile", "0002_auto_20211209_1557"),
+        ("django_webfastoche", "0002_auto_20211209_1557"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[

@@ -14,25 +14,25 @@
   /*! media xl */
 }
 @media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
-  .webfacile-enlarge-link {
+  .webfastoche-enlarge-link {
     background-color: transparent;
   }
 
-  .webfacile-enlarge-link:hover {
+  .webfastoche-enlarge-link:hover {
     background-color: rgba(0, 0, 0, 0.05);
   }
 
-  .webfacile-enlarge-link:active {
+  .webfastoche-enlarge-link:active {
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .webfacile-enlarge-link [href] {
+  .webfastoche-enlarge-link [href] {
     text-decoration: none;
   }
 
-  .webfacile-raw-link[href]::after,
-  .webfacile-raw-link [href]::after {
+  .webfastoche-raw-link[href]::after,
+  .webfastoche-raw-link [href]::after {
     content: none;
   }
 
@@ -47,7 +47,7 @@
     vertical-align: sub;
   }
 
-  .webfacile-responsive-vid::before {
+  .webfastoche-responsive-vid::before {
     content: "";
     display: block;
     padding-bottom: 56.25%;
@@ -82,10 +82,10 @@
     margin: 0 0 1rem;
   }
 
-  [class^=webfacile-icon-]::before,
-  [class*=" webfacile-icon-"]::before,
-  [class^=webfacile-fi-]::before,
-  [class*=" webfacile-fi-"]::before {
+  [class^=webfastoche-icon-]::before,
+  [class*=" webfastoche-icon-"]::before,
+  [class^=webfastoche-fi-]::before,
+  [class*=" webfastoche-fi-"]::before {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -93,22 +93,22 @@
     height: 1.5rem;
   }
 
-  .webfacile-icon--xs::before {
+  .webfastoche-icon--xs::before {
     width: 0.75rem;
     height: 0.75rem;
   }
 
-  .webfacile-icon--sm::before {
+  .webfastoche-icon--sm::before {
     width: 1rem;
     height: 1rem;
   }
 
-  .webfacile-icon--md::before {
+  .webfastoche-icon--md::before {
     width: 1.5rem;
     height: 1.5rem;
   }
 
-  .webfacile-icon--lg::before {
+  .webfastoche-icon--lg::before {
     width: 2rem;
     height: 2rem;
   }
@@ -131,109 +131,109 @@
     color: #929292;
   }
 
-  .webfacile-artwork-decorative {
+  .webfastoche-artwork-decorative {
     fill: hsl(122, 80%, 96%);
   }
 
-  .webfacile-artwork-minor {
+  .webfastoche-artwork-minor {
     fill: hsl(212, 85%, 25%);
   }
 
-  .webfacile-artwork-major {
+  .webfastoche-artwork-major {
     fill: hsl(122, 75%, 25%);
   }
 
-  .webfacile-artwork-background {
+  .webfastoche-artwork-background {
     fill: #f6f6f6;
   }
 
-  .webfacile-artwork-motif {
+  .webfastoche-artwork-motif {
     fill: #e5e5e5;
   }
 
-  .webfacile-artwork--webfacile-color3 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color3 .webfastoche-artwork-minor {
     fill: hsl(249, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color4 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color4 .webfastoche-artwork-minor {
     fill: hsl(249, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color5 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color5 .webfastoche-artwork-minor {
     fill: hsl(249, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color6 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color6 .webfastoche-artwork-minor {
     fill: hsl(249, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color7 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color7 .webfastoche-artwork-minor {
     fill: hsl(34, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color8 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color8 .webfastoche-artwork-minor {
     fill: hsl(34, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color9 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color9 .webfastoche-artwork-minor {
     fill: hsl(34, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color10 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color10 .webfastoche-artwork-minor {
     fill: hsl(100, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color11 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color11 .webfastoche-artwork-minor {
     fill: hsl(105, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color12 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color12 .webfastoche-artwork-minor {
     fill: hsl(115, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color13 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color13 .webfastoche-artwork-minor {
     fill: hsl(135, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color14 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color14 .webfastoche-artwork-minor {
     fill: hsl(145, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color15 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color15 .webfastoche-artwork-minor {
     fill: hsl(155, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color16 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color16 .webfastoche-artwork-minor {
     fill: hsl(165, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color17 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color17 .webfastoche-artwork-minor {
     fill: hsl(175, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color18 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color18 .webfastoche-artwork-minor {
     fill: hsl(185, 75%, 25%);
   }
 
-  .webfacile-artwork--webfacile-color19 .webfacile-artwork-minor {
+  .webfastoche-artwork--webfastoche-color19 .webfastoche-artwork-minor {
     fill: hsl(195, 75%, 25%);
   }
 
-  [disabled] .webfacile-artwork * {
+  [disabled] .webfastoche-artwork * {
     fill: #929292;
   }
 
-  .webfacile-h6,
-  .webfacile-h5,
-  .webfacile-h4,
-  .webfacile-h3,
-  .webfacile-h2,
-  .webfacile-h1,
-  .webfacile-display-xs,
-  .webfacile-display-sm,
-  .webfacile-display-md,
-  .webfacile-display-lg,
-  .webfacile-display-xl {
+  .webfastoche-h6,
+  .webfastoche-h5,
+  .webfastoche-h4,
+  .webfastoche-h3,
+  .webfastoche-h2,
+  .webfastoche-h1,
+  .webfastoche-display-xs,
+  .webfastoche-display-sm,
+  .webfastoche-display-md,
+  .webfastoche-display-lg,
+  .webfastoche-display-xl {
     color: #161616;
   }
 
@@ -241,12 +241,12 @@
     background-image: linear-gradient(0deg, #ddd, #ddd);
   }
 
-  .webfacile-hr-or::before,
-  .webfacile-hr-or::after {
+  .webfastoche-hr-or::before,
+  .webfastoche-hr-or::after {
     background-color: #ddd;
   }
 
-  .webfacile-hr {
+  .webfastoche-hr {
     background-image: linear-gradient(0deg, #ddd, #ddd);
   }
 }

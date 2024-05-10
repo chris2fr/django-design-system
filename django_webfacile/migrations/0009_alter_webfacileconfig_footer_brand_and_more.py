@@ -7,14 +7,14 @@ class Migration(migrations.Migration):
 
     dependencies = [
         (
-            "django_webfacile",
-            "0008_alter_webfacilesocialmedia_options_webfacileconfig_language_and_more",
+            "django_webfastoche",
+            "0008_alter_webfastochesocialmedia_options_webfastocheconfig_language_and_more",
         ),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="footer_brand",
             field=models.CharField(
                 blank=True,
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="footer_brand_html",
             field=models.CharField(
                 blank=True,
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="header_brand",
             field=models.CharField(
                 blank=True,
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="header_brand_html",
             field=models.CharField(
                 blank=True,

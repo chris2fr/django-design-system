@@ -1,24 +1,24 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 {% block content %}
   <h1>
     Couleurs
   </h1>
-  <ul class="webfacile-mb-4w">
+  <ul class="webfastoche-mb-4w">
     <li>
-      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
+      <a class="webfastoche-link webfastoche-icon-external-link-line webfastoche-link--icon-right webfastoche-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de présentation de la palette de couleurs sur le Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de présentation de la palette de couleurs sur le Système de Design de l’État <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
     <li>
-      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
-         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-utilisation-dans-le-webfacile"
+      <a class="webfastoche-link webfastoche-icon-external-link-line webfastoche-link--icon-right webfastoche-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-utilisation-dans-le-webfastoche"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de règles d’utilisation de la palette de couleurs sur le Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de règles d’utilisation de la palette de couleurs sur le Système de Design de l’État <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
   </ul>
@@ -28,26 +28,26 @@
   <p>
     Les cartes et tuiles peuvent prendre un fond gris à la place de la couleur par défaut.
   </p>
-  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-mb-4w">
-    <div class="webfacile-col-12 webfacile-col-md-6">
-      {% webfacile_card components_data.card.sample_data.0 %}
+  <div class="webfastoche-grid-row webfastoche-grid-row--gutters webfastoche-mb-4w">
+    <div class="webfastoche-col-12 webfastoche-col-md-6">
+      {% webfastoche_card components_data.card.sample_data.0 %}
     </div>
-    <div class="webfacile-col-12 webfacile-col-md-6">
-      {% webfacile_card components_data.card.sample_data.0 extra_classes="webfacile-card--grey" %}
+    <div class="webfastoche-col-12 webfastoche-col-md-6">
+      {% webfastoche_card components_data.card.sample_data.0 extra_classes="webfastoche-card--grey" %}
     </div>
   </div>
-  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-mb-4w">
-    <div class="webfacile-col-12 webfacile-col-md-3">
-      {% webfacile_tile components_data.tile.sample_data.0 %}
+  <div class="webfastoche-grid-row webfastoche-grid-row--gutters webfastoche-mb-4w">
+    <div class="webfastoche-col-12 webfastoche-col-md-3">
+      {% webfastoche_tile components_data.tile.sample_data.0 %}
     </div>
-    <div class="webfacile-col-12 webfacile-col-md-3">
-      {% webfacile_tile components_data.tile.sample_data.0 extra_classes="webfacile-tile--grey" %}
+    <div class="webfastoche-col-12 webfastoche-col-md-3">
+      {% webfastoche_tile components_data.tile.sample_data.0 extra_classes="webfastoche-tile--grey" %}
     </div>
-    <div class="webfacile-col-12 webfacile-col-md-3">
-      {% webfacile_tile components_data.tile.sample_data.0 %}
+    <div class="webfastoche-col-12 webfastoche-col-md-3">
+      {% webfastoche_tile components_data.tile.sample_data.0 %}
     </div>
-    <div class="webfacile-col-12 webfacile-col-md-3">
-      {% webfacile_tile components_data.tile.sample_data.0 extra_classes="webfacile-tile--grey" %}
+    <div class="webfastoche-col-12 webfastoche-col-md-3">
+      {% webfastoche_tile components_data.tile.sample_data.0 extra_classes="webfastoche-tile--grey" %}
     </div>
   </div>
   <h2>
@@ -56,8 +56,8 @@
   <p>
     Certains composants prennent une couleur d’accentuation comme paramètre. Seules les couleurs illustratives sont prises en compte.
   </p>
-  <form class="webfacile-mb-4w">
-    {% webfacile_form %}
+  <form class="webfastoche-mb-4w">
+    {% webfastoche_form %}
   </form>
   <div class="example-use">
     <h3>
@@ -66,40 +66,40 @@
     <p>
       Personnalise la couleur de l’icône.
     </p>
-    {% webfacile_quote components_data.quote.sample_data.0 %}
+    {% webfastoche_quote components_data.quote.sample_data.0 %}
     <h3>
       Mise en avant
     </h3>
     <p>
       Personnalise la couleur du fond et de la bordure.
     </p>
-    {% webfacile_callout components_data.callout.sample_data.0 %}
+    {% webfastoche_callout components_data.callout.sample_data.0 %}
     <h3>
       Mise en exergue
     </h3>
     <p>
       Personnalise la couleur de la bordure.
     </p>
-    {% webfacile_highlight components_data.highlight.sample_data.0 %}
+    {% webfastoche_highlight components_data.highlight.sample_data.0 %}
     <h3>
       Tableau
     </h3>
     <p>
       Personnalise la couleur de la bordure et du fond.
     </p>
-    {% webfacile_table components_data.table.sample_data.0 %}
+    {% webfastoche_table components_data.table.sample_data.0 %}
     <h3>
       Tag
     </h3>
     <p>
       Personnalise la couleur de la bordure, du fond et de l’icône. Seuls les tags cliquables sont pris en compte.
     </p>
-    <ul class="webfacile-tags-group">
+    <ul class="webfastoche-tags-group">
       <li>
-        {% webfacile_tag components_data.tag.sample_data.1 %}
+        {% webfastoche_tag components_data.tag.sample_data.1 %}
       </li>
       <li>
-        {% webfacile_tag components_data.tag.sample_data.3 %}
+        {% webfastoche_tag components_data.tag.sample_data.3 %}
       </li>
     </ul>
   </div>
@@ -146,11 +146,11 @@
 
 
     document.getElementById('id_color').addEventListener('input', function (event) {
-      manageColorClasses("webfacile-quote", event.target.value);
-      manageColorClasses("webfacile-callout", event.target.value);
-      manageColorClasses("webfacile-highlight", event.target.value);
-      manageColorClasses("webfacile-table", event.target.value);
-      manageColorClasses("webfacile-tag", event.target.value);
+      manageColorClasses("webfastoche-quote", event.target.value);
+      manageColorClasses("webfastoche-callout", event.target.value);
+      manageColorClasses("webfastoche-highlight", event.target.value);
+      manageColorClasses("webfastoche-table", event.target.value);
+      manageColorClasses("webfastoche-tag", event.target.value);
     }, false);
   </script>
 {% endblock extra_js %}

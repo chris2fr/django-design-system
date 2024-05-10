@@ -7,14 +7,14 @@ class Migration(migrations.Migration):
 
     dependencies = [
         (
-            "django_webfacile",
-            "0004_webfacileconfig_beta_tag_webfacileconfig_operator_logo_alt_and_more",
+            "django_webfastoche",
+            "0004_webfastocheconfig_beta_tag_webfastocheconfig_operator_logo_alt_and_more",
         ),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="webfacileconfig",
+            model_name="webfastocheconfig",
             name="notice",
             field=models.CharField(
                 blank=True,

@@ -1,9 +1,9 @@
 from django.templatetags.static import static
 
-from example_webfacile.utils import lorem_ipsum
+from example_webfastoche.utils import lorem_ipsum
 
 # Sample SVG file
-with open("example_webfacile/static/img/gouvernement.svg") as svg_file:
+with open("example_webfastoche/static/img/gouvernement.svg") as svg_file:
     gov_svg = svg_file.read()
 
 IMPLEMENTED_COMPONENTS = {
@@ -51,7 +51,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "type": "warning",
                 "content": "Petite alerte sans titre.",
-                "extra_classes": "webfacile-alert--sm",
+                "extra_classes": "webfastoche-alert--sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte",
@@ -66,15 +66,15 @@ IMPLEMENTED_COMPONENTS = {
             },
             {
                 "label": "Petit badge",
-                "extra_classes": "webfacile-badge--sm",
+                "extra_classes": "webfastoche-badge--sm",
             },
             {
                 "label": "Badge coloré",
-                "extra_classes": "webfacile-badge--green-menthe",
+                "extra_classes": "webfastoche-badge--green-menthe",
             },
             {
                 "label": "Badge système",
-                "extra_classes": "webfacile-badge--success",
+                "extra_classes": "webfastoche-badge--success",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge",
@@ -96,18 +96,18 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Bouton secondaire",
                 "name": "secundary-button",
                 "type": "button",
-                "extra_classes": "webfacile-btn--secondary",
+                "extra_classes": "webfastoche-btn--secondary",
                 "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
             },
             {
                 "label": "Bouton tertiaire",
-                "extra_classes": "webfacile-btn--tertiary",
+                "extra_classes": "webfastoche-btn--tertiary",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
             },
             {
                 "label": "Bouton tertiaire sans bordure",
                 "type": "button",
-                "extra_classes": "webfacile-btn--tertiary-no-outline",
+                "extra_classes": "webfastoche-btn--tertiary-no-outline",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
             },
         ],
@@ -122,17 +122,17 @@ IMPLEMENTED_COMPONENTS = {
                     {
                         "label": "Bouton principal",
                         "onclick": "alert('Vous avez cliqué sur le bouton principal')",
-                        "extra_classes": "webfacile-icon-checkbox-circle-line webfacile-btn--icon-left",
+                        "extra_classes": "webfastoche-icon-checkbox-circle-line webfastoche-btn--icon-left",
                     },
                     {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "webfacile-icon-checkbox-circle-line webfacile-btn--icon-left webfacile-btn--secondary",
+                        "extra_classes": "webfastoche-icon-checkbox-circle-line webfastoche-btn--icon-left webfastoche-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                 ],
-                "extra_classes": "webfacile-btns-group--icon-left",
+                "extra_classes": "webfastoche-btns-group--icon-left",
             },
             {
                 "items": [
@@ -144,22 +144,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "webfacile-btn--secondary",
+                        "extra_classes": "webfastoche-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "webfacile-btn--tertiary",
+                        "extra_classes": "webfastoche-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "webfacile-btn--tertiary-no-outline",
+                        "extra_classes": "webfastoche-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "webfacile-btns-group--equisized",
+                "extra_classes": "webfastoche-btns-group--equisized",
             },
             {
                 "items": [
@@ -171,22 +171,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "webfacile-btn--secondary",
+                        "extra_classes": "webfastoche-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "webfacile-btn--tertiary",
+                        "extra_classes": "webfastoche-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "webfacile-btn--tertiary-no-outline",
+                        "extra_classes": "webfastoche-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "webfacile-btns-group--inline-sm",
+                "extra_classes": "webfastoche-btns-group--inline-sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons",
@@ -198,28 +198,28 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "title": "Mise en avant avec bouton normal",
                 "text": "Cette mise en avant a un bouton normal",
-                "icon_class": "webfacile-icon-alert-line",
+                "icon_class": "webfastoche-icon-alert-line",
                 "button": {
                     "onclick": "alert('Ce bouton est bien un bouton')",
                     "label": "Bouton normal",
-                    "extra_classes": "webfacile-btn--secondary",
+                    "extra_classes": "webfastoche-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant avec lien",
                 "text": "Cette mise en avant a un lien d’appel à action",
-                "icon_class": "webfacile-icon-external-link-line",
+                "icon_class": "webfastoche-icon-external-link-line",
                 "button": {
                     "label": "Bouton qui est un lien",
                     "url": "https://www.systeme-de-design.gouv.fr/",
-                    "extra_classes": "webfacile-btn--secondary",
+                    "extra_classes": "webfastoche-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant en couleur",
                 "text": "Cette mise en avant a une classe de couleur",
-                "icon_class": "webfacile-icon-palette-line",
-                "extra_classes": "webfacile-callout--green-emeraude",
+                "icon_class": "webfastoche-icon-palette-line",
+                "extra_classes": "webfastoche-callout--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant",
@@ -247,7 +247,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "webfacile-card--horizontal",
+                "extra_classes": "webfastoche-card--horizontal",
             },
             {
                 "title": "Carte horizontale, largeur tiers",
@@ -258,7 +258,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "webfacile-card--horizontal webfacile-card--horizontal-tier",
+                "extra_classes": "webfastoche-card--horizontal webfastoche-card--horizontal-tier",
             },
             {
                 "title": "Carte horizontale, largeur moitié",
@@ -269,7 +269,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "webfacile-card--horizontal webfacile-card--horizontal-half",
+                "extra_classes": "webfastoche-card--horizontal webfastoche-card--horizontal-half",
             },
             {
                 "title": "Carte avec badge",
@@ -282,7 +282,7 @@ IMPLEMENTED_COMPONENTS = {
                 "media_badges": [
                     {
                         "label": "Nouveau",
-                        "extra_classes": "webfacile-badge--new",
+                        "extra_classes": "webfastoche-badge--new",
                     }
                 ],
             },
@@ -295,7 +295,7 @@ IMPLEMENTED_COMPONENTS = {
                 "new_tab": True,
                 "top_detail": {
                     "detail": {
-                        "icon_class": "webfacile-icon-warning-fill",
+                        "icon_class": "webfastoche-icon-warning-fill",
                         "text": "Détail (optionnel) avec icône (optionnelle)",
                     },
                     "tags": [{"label": "tag 1"}, {"label": "tag 2"}],
@@ -311,12 +311,12 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
-                        "icon_class": "webfacile-icon-warning-fill",
+                        "icon_class": "webfastoche-icon-warning-fill",
                         "text": "Détail (optionnel)",
                     },
                     "badges": [
                         {"label": "Badge 1"},
-                        {"extra_classes": "webfacile-badge--warning", "label": "Badge 2"},
+                        {"extra_classes": "webfastoche-badge--warning", "label": "Badge 2"},
                     ],
                 },
             },
@@ -328,7 +328,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
                 "bottom_detail": {
-                    "icon": "webfacile-icon-warning-fill",
+                    "icon": "webfastoche-icon-warning-fill",
                     "text": "Détail (optionnel)",
                 },
             },
@@ -341,10 +341,10 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "webfacile-card--horizontal",
+                "extra_classes": "webfastoche-card--horizontal",
                 "call_to_action": {
                     "buttons": [
-                        {"label": "Bouton 1", "extra_classes": "webfacile-btn--secondary"},
+                        {"label": "Bouton 1", "extra_classes": "webfastoche-btn--secondary"},
                         {"label": "Bouton 2"},
                     ]
                 },
@@ -358,7 +358,7 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "webfacile-card--horizontal",
+                "extra_classes": "webfastoche-card--horizontal",
                 "call_to_action": {
                     "links": [
                         {
@@ -382,14 +382,14 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
-                "extra_classes": "webfacile-card--grey webfacile-card--shadow",
+                "extra_classes": "webfastoche-card--grey webfastoche-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "enlarge_link": False,
-                "extra_classes": "webfacile-card--horizontal",
+                "extra_classes": "webfastoche-card--horizontal",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/carte",
@@ -401,7 +401,7 @@ IMPLEMENTED_COMPONENTS = {
         "example_url": "https://main--ds-gouv.netlify.app/example/component/consent/",
         "sample_data": [
             {
-                "title": "À propos des cookies sur Django-webfacile",
+                "title": "À propos des cookies sur Django-webfastoche",
                 "content": """
                 Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                 services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
@@ -420,24 +420,24 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "webfacile-ratio-16x9",
+                "ratio_class": "webfastoche-ratio-16x9",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "webfacile-ratio-4x3",
+                "ratio_class": "webfastoche-ratio-4x3",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "extra_classes": "webfacile-content-media--lg",
+                "extra_classes": "webfastoche-content-media--lg",
             },
             {
                 "svg": gov_svg,
                 "caption": """Image SVG avec un lien dans la légende.
-                                <a class="webfacile-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
+                                <a class="webfastoche-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
                                     rel=noopener external'
                                     title="Source - Ouvre une nouvelle fenêtre" target='_blank'>Source</a>.""",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
@@ -450,7 +450,7 @@ IMPLEMENTED_COMPONENTS = {
                     "url": "https://tube-numerique-educatif.apps.education.fr/videos/embed/9d0b132d-f836-459a-9b9b-97b1a647232d",
                     "sandbox": "allow-same-origin allow-scripts allow-popups",
                 },
-                "ratio_class": "webfacile-ratio-4x3",
+                "ratio_class": "webfastoche-ratio-4x3",
                 "caption": "Vidéo avec transcription",
                 "alt_text": "",
                 "transcription": {"content": f"<div>{lorem_ipsum}</div>"},
@@ -487,11 +487,11 @@ IMPLEMENTED_COMPONENTS = {
         "sample_data": [
             {
                 "content": "Contenu de la mise en exergue",
-                "size_class": "webfacile-text--sm",
+                "size_class": "webfastoche-text--sm",
             },
             {
                 "content": "Mise en exergue avec bordure colorée",
-                "extra_classes": "webfacile-highlight--green-emeraude",
+                "extra_classes": "webfastoche-highlight--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue",
@@ -523,25 +523,25 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Lien",
         "sample_data": [
             {
-                "url": "/django-webfacile/components/link/",
+                "url": "/django-webfastoche/components/link/",
                 "label": "Lien interne",
             },
             {
                 "url": "https://www.systeme-de-design.gouv.fr/",
                 "label": "Lien externe, large",
                 "is_external": True,
-                "extra_classes": "webfacile-link--lg",
+                "extra_classes": "webfastoche-link--lg",
             },
             {
-                "url": "/django-webfacile/components/link/",
+                "url": "/django-webfastoche/components/link/",
                 "label": "Petit lien interne avec flèche",
                 "is_external": False,
-                "extra_classes": "webfacile-icon-arrow-right-line webfacile-link--icon-right webfacile-link--sm",
+                "extra_classes": "webfastoche-icon-arrow-right-line webfastoche-link--icon-right webfastoche-link--sm",
             },
             {
-                "url": "/django-webfacile/components/link/",
+                "url": "/django-webfastoche/components/link/",
                 "label": "Lien de téléchargement",
-                "extra_classes": "webfacile-link--download",
+                "extra_classes": "webfastoche-link--download",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/liens",
@@ -583,7 +583,7 @@ IMPLEMENTED_COMPONENTS = {
                     },
                 ],
                 "image_url": "/static/img/placeholder.1x1.svg",
-                "extra_classes": "webfacile-quote--green-emeraude",
+                "extra_classes": "webfastoche-quote--green-emeraude",
             },
             {
                 "text": "Citation très basique, sans aucun des champs optionnels.",
@@ -647,7 +647,7 @@ IMPLEMENTED_COMPONENTS = {
                                     {"label": "Page non active", "link": "#"},
                                     {
                                         "label": "Page active",
-                                        "link": "/django-webfacile/components/sidemenu/",
+                                        "link": "/django-webfastoche/components/sidemenu/",
                                     },
                                 ],
                             },
@@ -762,7 +762,7 @@ IMPLEMENTED_COMPONENTS = {
                         2,
                     ],
                 ],
-                "extra_classes": "webfacile-table--green-emeraude webfacile-table--bordered",
+                "extra_classes": "webfastoche-table--green-emeraude webfastoche-table--bordered",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tableau",
@@ -772,15 +772,15 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Tag",
         "sample_data": [
             {"label": "Tag simple"},
-            {"label": "Tag avec lien", "link": "/django-webfacile/components"},
+            {"label": "Tag avec lien", "link": "/django-webfastoche/components"},
             {
                 "label": "Petit tag avec icône",
-                "extra_classes": "webfacile-tag--sm webfacile-icon-arrow-right-line webfacile-tag--icon-left",  # noqa
+                "extra_classes": "webfastoche-tag--sm webfastoche-icon-arrow-right-line webfastoche-tag--icon-left",  # noqa
             },
             {
                 "label": "Tag avec action",
                 "link": "#",
-                "extra_classes": "webfacile-icon-cursor-line webfacile-tag--icon-right",
+                "extra_classes": "webfastoche-icon-cursor-line webfastoche-tag--icon-right",
                 "onclick": "alert('clicked'); return false;",
             },
             {
@@ -794,7 +794,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "label": "Tag vert",
                 "link": "#",
-                "extra_classes": "webfacile-tag--green-emeraude",
+                "extra_classes": "webfastoche-tag--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag",
@@ -819,51 +819,51 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "Avec un pictogramme SVG",
                 "url": "/",
                 "id": "tile-cityhall",
-                "extra_classes": "webfacile-tile--horizontal",
+                "extra_classes": "webfastoche-tile--horizontal",
                 "svg_path": static(
-                    "webfacile/dist/artwork/pictograms/buildings/city-hall.svg"
+                    "webfastoche/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
             },
             {
                 "title": "Tuile verticale (SM)",
                 "url": "/",
                 "id": "tile-nuclear-plant",
-                "extra_classes": "webfacile-tile--sm",
+                "extra_classes": "webfastoche-tile--sm",
                 "svg_path": static(
-                    "webfacile/dist/artwork/pictograms/buildings/nuclear-plant.svg"
+                    "webfastoche/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
             },
             {
                 "title": "Tuile horizontale (SM)",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "webfacile-tile--horizontal webfacile-tile--sm",
+                "extra_classes": "webfastoche-tile--horizontal webfastoche-tile--sm",
                 "top_detail": {
                     "badges": [
                         {
                             "label": "Badge coloré",
-                            "extra_classes": "webfacile-badge--sm webfacile-badge--purple-glycine",
+                            "extra_classes": "webfastoche-badge--sm webfastoche-badge--purple-glycine",
                         },
                     ]
                 },
-                "svg_path": static("webfacile/dist/artwork/pictograms/map/map.svg"),
+                "svg_path": static("webfastoche/dist/artwork/pictograms/map/map.svg"),
             },
             {
                 "title": "Tuile à fond gris et ombre sans bordure",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "webfacile-tile--horizontal webfacile-tile--grey webfacile-tile--shadow webfacile-tile--no-border",
+                "extra_classes": "webfastoche-tile--horizontal webfastoche-tile--grey webfastoche-tile--shadow webfastoche-tile--no-border",
                 "svg_path": static(
-                    "webfacile/dist/artwork/pictograms/leisure/paint.svg"
+                    "webfastoche/dist/artwork/pictograms/leisure/paint.svg"
                 ),
             },
             {
                 "title": "Tuile de téléchargement",
-                "extra_classes": "webfacile-tile--horizontal webfacile-tile--download",
+                "extra_classes": "webfastoche-tile--horizontal webfastoche-tile--download",
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
-                    "webfacile/dist/artwork/pictograms/document/document-signature.svg"
+                    "webfastoche/dist/artwork/pictograms/document/document-signature.svg"
                 ),
             },
         ],
@@ -887,7 +887,7 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Interrupteur complet aligné à gauche",
                 "help_text": "Cet interrupteur présente toutes les options disponibles",
                 "is_disabled": False,
-                "extra_classes": "webfacile-toggle--label-left webfacile-toggle--border-bottom",
+                "extra_classes": "webfastoche-toggle--label-left webfastoche-toggle--border-bottom",
                 "id": "toggle-full",
             },
         ],
@@ -953,23 +953,23 @@ EXTRA_COMPONENTS = {
             [
                 {
                     "label": "Succès",
-                    "extra_classes": "webfacile-badge--success",
+                    "extra_classes": "webfastoche-badge--success",
                 },
                 {
                     "label": "Info",
-                    "extra_classes": "webfacile-badge--info",
+                    "extra_classes": "webfastoche-badge--info",
                 },
                 {
                     "label": "Avertissement",
-                    "extra_classes": "webfacile-badge--warning",
+                    "extra_classes": "webfastoche-badge--warning",
                 },
                 {
                     "label": "Erreur",
-                    "extra_classes": "webfacile-badge--error",
+                    "extra_classes": "webfastoche-badge--error",
                 },
                 {
                     "label": "Nouveau",
-                    "extra_classes": "webfacile-badge--new",
+                    "extra_classes": "webfastoche-badge--new",
                 },
             ]
         ],
@@ -995,7 +995,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-radio-riche",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/radio/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#126](https://github.com/numerique-gouv/django-webfacile/issues/126)
+        cf. [#126](https://github.com/numerique-gouv/django-webfastoche/issues/126)
         """,
     },
     "segmented_control": {
@@ -1003,7 +1003,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/controle-segmente",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/segmented/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#128](https://github.com/numerique-gouv/django-webfacile/issues/128)
+        cf. [#128](https://github.com/numerique-gouv/django-webfastoche/issues/128)
         """,
     },
     "range": {
@@ -1011,20 +1011,20 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/curseur-range",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/range/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#129](https://github.com/numerique-gouv/django-webfacile/issues/129)
+        cf. [#129](https://github.com/numerique-gouv/django-webfastoche/issues/129)
         """,
     },
 }
 
 # There is no need for specific tags for these
-# (either because the webfacile is implemented globally or because they are
+# (either because the webfastoche is implemented globally or because they are
 # broken down into more specific tags)
 WONT_BE_IMPLEMENTED = {
     "back_to_top": {
         "title": "Retour en haut de page",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/retour-en-haut-de-page",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/link/back-to-top/",
-        "reason": "Utilisez une balise Lien (`webfacile_link`)",
+        "reason": "Utilisez une balise Lien (`webfastoche_link`)",
     },
     "checkbox": {
         "title": "Case à cocher",
@@ -1036,7 +1036,7 @@ WONT_BE_IMPLEMENTED = {
         "title": "Téléchargement de fichier",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/download/",
-        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django-webfacile/components/link/), [carte](/django-webfacile/components/card/), [tuile](/django-webfacile/components/tile/). Voir la documentation de ceux-ci.",
+        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django-webfastoche/components/link/), [carte](/django-webfastoche/components/card/), [tuile](/django-webfastoche/components/tile/). Voir la documentation de ceux-ci.",
     },
     "file_upload": {
         "title": "Ajout de fichier",

@@ -1,7 +1,7 @@
 from django_distill import distill_path
 
-from example_webfacile import views
-from example_webfacile.webfacile_components import ALL_TAGS
+from example_webfastoche import views
+from example_webfastoche.webfastoche_components import ALL_TAGS
 
 
 def get_all_tags():
@@ -11,49 +11,49 @@ def get_all_tags():
 
 urlpatterns = [
     distill_path(
-        "", views.index, name="index", distill_file="django-webfacile/index.html"
+        "", views.index, name="index", distill_file="django-webfastoche/index.html"
     ),
     distill_path(
         "doc-contributing",
         views.doc_contributing,
         name="doc_contributing",
-        distill_file="django-webfacile/doc-contributing/index.html",
+        distill_file="django-webfastoche/doc-contributing/index.html",
     ),
     distill_path(
         "doc-install",
         views.doc_install,
         name="doc_install",
-        distill_file="django-webfacile/doc-install/index.html",
+        distill_file="django-webfastoche/doc-install/index.html",
     ),
     distill_path(
         "doc-usage",
         views.doc_usage,
         name="doc_usage",
-        distill_file="django-webfacile/doc-usage/index.html",
+        distill_file="django-webfastoche/doc-usage/index.html",
     ),
     distill_path(
         "components/",
         views.components_index,
         name="components_index",
-        distill_file="django-webfacile/components/index.html",
+        distill_file="django-webfastoche/components/index.html",
     ),
     distill_path(
         "components/header/",
         views.page_component_header,
         name="page_component_header",
-        distill_file="django-webfacile/components/header/index.html",
+        distill_file="django-webfastoche/components/header/index.html",
     ),
     distill_path(
         "components/footer/",
         views.page_component_footer,
         name="page_component_footer",
-        distill_file="django-webfacile/components/footer/index.html",
+        distill_file="django-webfastoche/components/footer/index.html",
     ),
     distill_path(
         "components/follow/",
         views.page_component_follow,
         name="page_component_follow",
-        distill_file="django-webfacile/components/follow/index.html",
+        distill_file="django-webfastoche/components/follow/index.html",
     ),
     distill_path(
         "components/<slug:tag_name>/",
@@ -65,42 +65,42 @@ urlpatterns = [
         "form/",
         views.doc_form,
         name="doc_form",
-        distill_file="django-webfacile/form/index.html",
+        distill_file="django-webfastoche/form/index.html",
     ),
     distill_path(
         "form/example/",
         views.page_form,
         name="page_form",
-        distill_file="django-webfacile/form/example/index.html",
+        distill_file="django-webfastoche/form/example/index.html",
     ),
     distill_path(
         "form/example-formset/",
-        views.WebfacileAuthorCreateView.as_view(),
+        views.WebfastocheAuthorCreateView.as_view(),
         name="form_formset",
-        distill_file="django-webfacile/form/example-formset/index.html",
+        distill_file="django-webfastoche/form/example-formset/index.html",
     ),
     distill_path(
         "resources/colors",
         views.resource_colors,
         name="resource_colors",
-        distill_file="django-webfacile/resources/colors/index.html",
+        distill_file="django-webfastoche/resources/colors/index.html",
     ),
     distill_path(
         "resources/icons",
         views.resource_icons,
         name="resource_icons",
-        distill_file="django-webfacile/resources/icons/index.html",
+        distill_file="django-webfastoche/resources/icons/index.html",
     ),
     distill_path(
         "resources/pictograms",
         views.resource_pictograms,
         name="resource_pictograms",
-        distill_file="django-webfacile/resources/pictograms/index.html",
+        distill_file="django-webfastoche/resources/pictograms/index.html",
     ),
     distill_path(
         "search/",
         views.search,
         name="page_search",
-        distill_file="django-webfacile/search/index.html",
+        distill_file="django-webfastoche/search/index.html",
     ),
 ]

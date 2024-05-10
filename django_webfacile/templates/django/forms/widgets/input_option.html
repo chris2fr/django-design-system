@@ -1,16 +1,16 @@
 {% if widget.type and widget.type == 'radio' %}
-  <div class="webfacile-radio-group">
+  <div class="webfastoche-radio-group">
   {% endif %}
   {% include "django/forms/widgets/input.html" %}
   {% if widget.wrap_label %}
-    <label class="webfacile-label"
+    <label class="webfastoche-label"
            {% if widget.attrs.id %}for="{{ widget.attrs.id }}"{% endif %}>
       {% if widget.label.label %}
         {{ widget.label.label }}
-        <span class="webfacile-hint-text">{{ widget.label.help_text }}</span>
+        <span class="webfastoche-hint-text">{{ widget.label.help_text }}</span>
       {% else %}
         {{ widget.label }}
-        <span class="webfacile-hint-text">{{ widget.label.help_text }}</span>
+        <span class="webfastoche-hint-text">{{ widget.label.help_text }}</span>
       {% endif %}
     </label>
   {% endif %}

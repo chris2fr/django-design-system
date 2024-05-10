@@ -1,17 +1,17 @@
 from django.contrib import admin
-from django_webfacile.models import WebfacileConfig, WebfacileSocialMedia
+from django_webfastoche.models import WebfastocheConfig, WebfastocheSocialMedia
 
 from django.utils.translation import gettext_lazy as _
 
 
-class WebfacileSocialMediaInline(admin.TabularInline):
-    model = WebfacileSocialMedia
+class WebfastocheSocialMediaInline(admin.TabularInline):
+    model = WebfastocheSocialMedia
     readonly_fields = ("id",)
     extra = 1
 
 
-@admin.register(WebfacileConfig)
-class WebfacileConfigAdmin(admin.ModelAdmin):
+@admin.register(WebfastocheConfig)
+class WebfastocheConfigAdmin(admin.ModelAdmin):
     fieldsets = (
         ("", {"fields": ("language",)}),
         (
@@ -65,4 +65,4 @@ class WebfacileConfigAdmin(admin.ModelAdmin):
             },
         ),
     )
-    inlines = [WebfacileSocialMediaInline]
+    inlines = [WebfastocheSocialMediaInline]

@@ -1,22 +1,22 @@
 {% load i18n %}
 {% translate "Opens a new window" as new_window_label %}
-<div class="webfacile-follow">
-  <div class="webfacile-container">
-    <div class="webfacile-grid-row">
+<div class="webfastoche-follow">
+  <div class="webfastoche-container">
+    <div class="webfastoche-grid-row">
       {% block follow_newsletter %}
-        <div class="webfacile-col-12 webfacile-col-md-8">
-          <div class="webfacile-follow__newsletter">
+        <div class="webfastoche-col-12 webfastoche-col-md-8">
+          <div class="webfastoche-follow__newsletter">
             <div>
-              <h2 class="webfacile-h5">
+              <h2 class="webfastoche-h5">
                 {% translate "Subscribe to our newsletter" context "Section title" %}
               </h2>
-              <p class="webfacile-text--sm">
+              <p class="webfastoche-text--sm">
                 {{ SITE_CONFIG.newsletter_description | safe }}
               </p>
             </div>
-            <div class="webfacile-btns-group webfacile-btns-group--inline-md">
+            <div class="webfastoche-btns-group webfastoche-btns-group--inline-md">
               {% translate "Subscribe to our newsletter" context "Button title" as subcribe_button_title %}
-              <a class="webfacile-btn"
+              <a class="webfastoche-btn"
                  href="{{ SITE_CONFIG.newsletter_url }}"
                  target="_blank"
                  rel="noopener external"
@@ -28,19 +28,19 @@
         </div>
       {% endblock follow_newsletter %}
       {% block follow_social %}
-        <div class="webfacile-col-12 webfacile-col-md-4">
-          <div class="webfacile-follow__social">
-            <h2 class="webfacile-h5">
+        <div class="webfastoche-col-12 webfastoche-col-md-4">
+          <div class="webfastoche-follow__social">
+            <h2 class="webfastoche-h5">
               {% blocktranslate trimmed %}
                 Follow us
                 <br />
                 on social media
               {% endblocktranslate %}
             </h2>
-            <ul class="webfacile-btns-group">
+            <ul class="webfastoche-btns-group">
               {% for link in SITE_CONFIG.social_media %}
                 <li>
-                  <a class="{{ link.icon_class }} webfacile-btn"
+                  <a class="{{ link.icon_class }} webfastoche-btn"
                      href="{{ link.url }}"
                      target="_blank"
                      title="{{ link.title }} - {{ new_window_label }}"

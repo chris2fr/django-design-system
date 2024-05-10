@@ -58,7 +58,7 @@ def parse_tag_args(args, kwargs, allowed_keys: list) -> dict:
 
 def find_active_menu_items(menu: list, active_path: str) -> tuple:
     """
-    Utility function for the webfacile_sidemenu tag: recusively locates the current
+    Utility function for the webfastoche_sidemenu tag: recusively locates the current
     active page and its parent menus and sets them to active
     """
     set_active = False
@@ -92,7 +92,7 @@ def generate_random_id(start: str = ""):
 def generate_summary_items(sections_names: list) -> list:
     """
     Takes a list of section names and returns them as a list of links
-    that can be used with webfacile_summary or webfacile_menu tags.
+    that can be used with webfastoche_summary or webfastoche_menu tags.
     """
     items = []
     for section_name in sections_names:
@@ -106,17 +106,17 @@ def generate_summary_items(sections_names: list) -> list:
     return items
 
 
-def webfacile_input_class_attr(bf: BoundField):
+def webfastoche_input_class_attr(bf: BoundField):
     if not bf.is_hidden and "class" not in bf.field.widget.attrs:
         bf.field.label_suffix = ""
         if isinstance(bf.field.widget, (widgets.Select, widgets.SelectMultiple)):
-            bf.field.widget.attrs["class"] = "webfacile-select"
-            bf.field.widget.group_class = "webfacile-select-group"
+            bf.field.widget.attrs["class"] = "webfastoche-select"
+            bf.field.widget.group_class = "webfastoche-select-group"
         elif isinstance(bf.field.widget, widgets.RadioSelect):
-            bf.field.widget.attrs["webfacile"] = "webfacile"
-            bf.field.widget.group_class = "webfacile-radio-group"
+            bf.field.widget.attrs["webfastoche"] = "webfastoche"
+            bf.field.widget.group_class = "webfastoche-radio-group"
         elif isinstance(bf.field.widget, widgets.CheckboxSelectMultiple):
-            bf.field.widget.attrs["webfacile"] = "webfacile"
+            bf.field.widget.attrs["webfastoche"] = "webfastoche"
         elif not isinstance(
             bf.field.widget,
             (
@@ -125,5 +125,5 @@ def webfacile_input_class_attr(bf: BoundField):
                 widgets.ClearableFileInput,
             ),
         ):
-            bf.field.widget.attrs["class"] = "webfacile-input"
+            bf.field.widget.attrs["class"] = "webfastoche-input"
     return bf

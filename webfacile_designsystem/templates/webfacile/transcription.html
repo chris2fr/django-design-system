@@ -1,43 +1,43 @@
 {% load i18n %}
 {% translate "Transcript" as transcript_label %}
-<div class="webfacile-transcription">
-  <button class="webfacile-transcription__btn"
+<div class="webfastoche-transcription">
+  <button class="webfastoche-transcription__btn"
           aria-expanded="false"
-          aria-controls="webfacile-transcription__collapse-{{ self.id }}">
+          aria-controls="webfastoche-transcription__collapse-{{ self.id }}">
     {{ transcript_label }}
   </button>
-  <div class="webfacile-collapse"
-       id="webfacile-transcription__collapse-{{ self.id }}">
-    <div class="webfacile-transcription__footer">
-      <div class="webfacile-transcription__actions-group">
+  <div class="webfastoche-collapse"
+       id="webfastoche-transcription__collapse-{{ self.id }}">
+    <div class="webfastoche-transcription__footer">
+      <div class="webfastoche-transcription__actions-group">
         {% translate "Enlarge" as enlarge_label %}
-        <button class="webfacile-btn webfacile-btn--fullscreen"
-                aria-controls="webfacile-transcription-modal-{{ self.id }}"
-                data-webfacile-opened="false"
+        <button class="webfastoche-btn webfastoche-btn--fullscreen"
+                aria-controls="webfastoche-transcription-modal-{{ self.id }}"
+                data-webfastoche-opened="false"
                 title="{{ enlarge_label }}">
           {{ enlarge_label }}
         </button>
       </div>
     </div>
-    <dialog id="webfacile-transcription-modal-{{ self.id }}"
-            class="webfacile-modal"
+    <dialog id="webfastoche-transcription-modal-{{ self.id }}"
+            class="webfastoche-modal"
             role="dialog"
-            aria-labelledby="webfacile-transcription-modal-{{ self.id }}-title">
-      <div class="webfacile-container webfacile-container--fluid facile-container-md">
-        <div class="webfacile-grid-row webfacile-grid-row--center">
-          <div class="webfacile-col-12 webfacile-col-md-10 webfacile-col-lg-8">
-            <div class="webfacile-modal__body">
-              <div class="webfacile-modal__header">
+            aria-labelledby="webfastoche-transcription-modal-{{ self.id }}-title">
+      <div class="webfastoche-container webfastoche-container--fluid facile-container-md">
+        <div class="webfastoche-grid-row webfastoche-grid-row--center">
+          <div class="webfastoche-col-12 webfastoche-col-md-10 webfastoche-col-lg-8">
+            <div class="webfastoche-modal__body">
+              <div class="webfastoche-modal__header">
                 {% translate "Close" as close_label %}
-                <button class="webfacile-btn--close webfacile-btn"
-                        aria-controls="webfacile-transcription-modal-{{ self.id }}"
+                <button class="webfastoche-btn--close webfastoche-btn"
+                        aria-controls="webfastoche-transcription-modal-{{ self.id }}"
                         title="{{ close_label }}">
                   {{ close_label }}
                 </button>
               </div>
-              <div class="webfacile-modal__content">
-                <h1 id="webfacile-transcription-modal-{{ self.id }}-title"
-                    class="webfacile-modal__title">
+              <div class="webfastoche-modal__content">
+                <h1 id="webfastoche-transcription-modal-{{ self.id }}-title"
+                    class="webfastoche-modal__title">
                   {{ self.title|default:transcript_label }}
                 </h1>
                 {{ self.content|safe }}

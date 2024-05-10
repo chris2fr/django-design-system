@@ -1,8 +1,8 @@
-{% load webfacile_tags %}
-<ul class="webfacile-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+{% load webfastoche_tags %}
+<ul class="webfastoche-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% for item in self.items %}
     <li>
-      {% webfacile_button item %}
+      {% webfastoche_button item %}
     </li>
   {% endfor %}
 </ul>

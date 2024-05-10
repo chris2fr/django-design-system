@@ -1,15 +1,15 @@
-{% extends "example_webfacile/base.html" %}
-{% load static webfacile_tags %}
+{% extends "example_webfastoche/base.html" %}
+{% load static webfastoche_tags %}
 {% block content %}
   <h1>
     Composants du système de design de l’État
   </h1>
-  <div class="webfacile-tabs">
-    <ul class="webfacile-tabs__list" role="tablist" aria-label="Composants">
+  <div class="webfastoche-tabs">
+    <ul class="webfastoche-tabs__list" role="tablist" aria-label="Composants">
       <li role="presentation">
         <li role="presentation">
           <button id="tabpanel-documentation"
-                  class="webfacile-tabs__tab webfacile-icon-book-2-line webfacile-tabs__tab--icon-left"
+                  class="webfastoche-tabs__tab webfastoche-icon-book-2-line webfastoche-tabs__tab--icon-left"
                   tabindex="0"
                   role="tab"
                   aria-selected="false"
@@ -18,7 +18,7 @@
           </button>
         </li>
         <button id="tabpanel-implemented"
-                class="webfacile-tabs__tab webfacile-icon-checkbox-line webfacile-tabs__tab--icon-left"
+                class="webfastoche-tabs__tab webfastoche-icon-checkbox-line webfastoche-tabs__tab--icon-left"
                 tabindex="0"
                 role="tab"
                 aria-selected="false"
@@ -28,7 +28,7 @@
       </li>
       <li role="presentation">
         <button id="tabpanel-notyetimplemented"
-                class="webfacile-tabs__tab webfacile-icon-close-circle-line webfacile-tabs__tab--icon-left"
+                class="webfastoche-tabs__tab webfastoche-icon-close-circle-line webfastoche-tabs__tab--icon-left"
                 tabindex="-1"
                 role="tab"
                 aria-selected="false"
@@ -38,7 +38,7 @@
       </li>
       <li role="presentation">
         <button id="tabpanel-extratags"
-                class="webfacile-tabs__tab webfacile-icon-add-circle-line webfacile-tabs__tab--icon-left"
+                class="webfastoche-tabs__tab webfastoche-icon-add-circle-line webfastoche-tabs__tab--icon-left"
                 tabindex="-1"
                 role="tab"
                 aria-selected="false"
@@ -48,7 +48,7 @@
       </li>
     </ul>
     <div id="tabpanel-documentation-panel"
-         class="webfacile-tabs__panel webfacile-tabs__panel--selected"
+         class="webfastoche-tabs__panel webfastoche-tabs__panel--selected"
          role="tabpanel"
          aria-labelledby="tabpanel-documentation"
          tabindex="0">
@@ -60,7 +60,7 @@
       </ul>
     </div>
     <div id="tabpanel-implemented-panel"
-         class="webfacile-tabs__panel"
+         class="webfastoche-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-implemented"
          tabindex="0">
@@ -69,14 +69,14 @@
       </h2>
       <ul>
         {% for component, data in implemented_components.items %}
-          <li class="webfacile-mb-1w">
+          <li class="webfastoche-mb-1w">
             <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
           </li>
         {% endfor %}
       </ul>
     </div>
     <div id="tabpanel-notyetimplemented-panel"
-         class="webfacile-tabs__panel"
+         class="webfastoche-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-notyetimplemented"
          tabindex="0">
@@ -85,11 +85,11 @@
       </h2>
       <ul>
         {% for component, data in not_yet.items %}
-          <li class="webfacile-mb-1w">
+          <li class="webfastoche-mb-1w">
             {{ data.title }} ({{ component }})
-            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>
             —
-            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>)
             {% if data.note %}
               <ul>
                 <li>
@@ -107,9 +107,9 @@
         {% for component, data in wont_be.items %}
           <li>
             {{ data.title }} ({{ component }})
-            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>
             —
-            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="webfastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>)
             <ul>
               <li>
                 Raison : {{ data.reason|safe }}
@@ -120,7 +120,7 @@
       </ul>
     </div>
     <div id="tabpanel-extratags-panel"
-         class="webfacile-tabs__panel"
+         class="webfastoche-tabs__panel"
          role="tabpanel"
          aria-labelledby="tabpanel-extratags"
          tabindex="0">
@@ -129,7 +129,7 @@
       </h2>
       <ul>
         {% for component, data in extra_components.items %}
-          <li class="webfacile-mb-1w">
+          <li class="webfastoche-mb-1w">
             <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
           </li>
         {% endfor %}
@@ -138,5 +138,5 @@
   </div>
 {% endblock content %}
 {% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/webfacile-code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webfastoche-code.css' %}">
 {% endblock extra_css %}

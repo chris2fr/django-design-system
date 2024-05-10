@@ -18,95 +18,95 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4\n"
 
-#: webfacile/admin.py:59
+#: webfastoche/admin.py:59
 msgid "Newsletter"
 msgstr "Lettre d’information"
 
-#: webfacile/constants.py:5
+#: webfastoche/constants.py:5
 msgid "English"
 msgstr "Anglais"
 
-#: webfacile/constants.py:6
+#: webfastoche/constants.py:6
 msgid "French"
 msgstr "Français"
 
-#: webfacile/constants.py:12
+#: webfastoche/constants.py:12
 msgid "Blue France"
 msgstr "Bleu France"
 
-#: webfacile/constants.py:13
+#: webfastoche/constants.py:13
 msgid "Red Marianne"
 msgstr "Rouge Marianne"
 
-#: webfacile/constants.py:17
+#: webfastoche/constants.py:17
 msgid "Grey"
 msgstr "Gris"
 
-#: webfacile/constants.py:21
+#: webfastoche/constants.py:21
 msgid "Info"
 msgstr "Info"
 
-#: webfacile/constants.py:22
+#: webfastoche/constants.py:22
 msgid "Success"
 msgstr "Succès"
 
-#: webfacile/constants.py:23
+#: webfastoche/constants.py:23
 msgid "Warning"
 msgstr "Avertissement"
 
-#: webfacile/constants.py:24
+#: webfastoche/constants.py:24
 msgid "Error"
 msgstr "Erreur"
 
-#: webfacile/constants.py:48 webfacile/constants.py:54
+#: webfastoche/constants.py:48 webfastoche/constants.py:54
 msgid "Primary colors"
 msgstr "Couleurs primaires"
 
-#: webfacile/constants.py:49 webfacile/constants.py:55
+#: webfastoche/constants.py:49 webfastoche/constants.py:55
 msgid "Neutral colors"
 msgstr "Couleurs neutres"
 
-#: webfacile/constants.py:50 webfacile/constants.py:57
+#: webfastoche/constants.py:50 webfastoche/constants.py:57
 msgid "Illustration colors"
 msgstr "Couleurs illustratives"
 
-#: webfacile/constants.py:56
+#: webfastoche/constants.py:56
 msgid "System colors"
 msgstr "Couleurs système"
 
-#: webfacile/models.py:20
+#: webfastoche/models.py:20
 msgid "Language"
 msgstr "Langue"
 
-#: webfacile/models.py:23
+#: webfastoche/models.py:23
 msgid "Only one configuration is allowed per language"
 msgstr "Une seule configuration autorisée par langue"
 
-#: webfacile/models.py:29
+#: webfastoche/models.py:29
 msgid "fully"
 msgstr "totalement"
 
-#: webfacile/models.py:30
+#: webfastoche/models.py:30
 msgid "partially"
 msgstr "partiellement"
 
-#: webfacile/models.py:31
+#: webfastoche/models.py:31
 msgid "not"
 msgstr "non"
 
-#: webfacile/models.py:36
+#: webfastoche/models.py:36
 msgid "Site title"
 msgstr "Titre du site"
 
-#: webfacile/models.py:39
+#: webfastoche/models.py:39
 msgid "Site tagline"
 msgstr "Sous-titre du site"
 
-#: webfacile/models.py:42
+#: webfastoche/models.py:42
 msgid "Important notice"
 msgstr "Bandeau d’information importante"
 
-#: webfacile/models.py:46
+#: webfastoche/models.py:46
 msgid ""
 "The important notice banner should only be used for essential and temporary "
 "information.             (Excessive or continuous use risks “drowning” the "
@@ -116,55 +116,55 @@ msgstr ""
 "information primordiale et temporaire.  (Une utilisation excessive ou "
 "continue risque de “noyer” le message)"
 
-#: webfacile/models.py:53
+#: webfastoche/models.py:53
 msgid "Institution (header)"
 msgstr "Institution (en-tête)"
 
-#: webfacile/models.py:59
+#: webfastoche/models.py:59
 msgid "Institution with line break (header)"
 msgstr "Institution avec césure (en-tête)"
 
-#: webfacile/models.py:64
+#: webfastoche/models.py:64
 msgid "Show the BETA tag next to the title"
 msgstr "Afficher la mention BETA à côté du titre"
 
-#: webfacile/models.py:68
+#: webfastoche/models.py:68
 msgid "Institution (footer)"
 msgstr "Institution (pied"
 
-#: webfacile/models.py:74
+#: webfastoche/models.py:74
 msgid "Institution with line break (footer)"
 msgstr "Institution avec césure (pied)"
 
-#: webfacile/models.py:79
+#: webfastoche/models.py:79
 msgid "Description"
 msgstr "Description"
 
-#: webfacile/models.py:82
+#: webfastoche/models.py:82
 msgid "Newsletter description"
 msgstr "Description de la lettre d’information"
 
-#: webfacile/models.py:86
+#: webfastoche/models.py:86
 msgid "Newsletter registration URL"
 msgstr "URL d‘inscription à la lettre d’information"
 
-#: webfacile/models.py:93
+#: webfastoche/models.py:93
 msgid "Operator logo"
 msgstr "Logo opérateur"
 
-#: webfacile/models.py:100
+#: webfastoche/models.py:100
 msgid "Logo alt text"
 msgstr "Alternative textuelle du logo"
 
-#: webfacile/models.py:103
+#: webfastoche/models.py:103
 msgid "Must contain the text present in the image."
 msgstr "Doit impérativement contenir le texte présent dans l’image."
 
-#: webfacile/models.py:106
+#: webfastoche/models.py:106
 msgid "Width (em)"
 msgstr "Largeur (em)"
 
-#: webfacile/models.py:112
+#: webfastoche/models.py:112
 msgid ""
 "To be adjusted according to the width of the logo.            Example for a "
 "vertical logo: 3.5, Example for a horizontal logo: 8."
@@ -172,136 +172,136 @@ msgstr ""
 "À ajuster en fonction de la largeur du logo.  Exemple pour un logo vertical: "
 "3.5, Exemple pour un logo horizontal: 8."
 
-#: webfacile/models.py:118
+#: webfastoche/models.py:118
 msgid "Mourning"
 msgstr "Mise en berne"
 
-#: webfacile/models.py:121
+#: webfastoche/models.py:121
 msgid "Accessibility compliance status"
 msgstr "Statut de conformité de l’accessibilité"
 
-#: webfacile/models.py:128
+#: webfastoche/models.py:128
 msgid "Configuration"
 msgstr "Configuration"
 
-#: webfacile/models.py:131
+#: webfastoche/models.py:131
 msgid "Site config:"
 msgstr "Configuration du site :"
 
-#: webfacile/models.py:139
+#: webfastoche/models.py:139
 msgid "Title"
 msgstr "Titre"
 
-#: webfacile/models.py:142
+#: webfastoche/models.py:142
 msgid "URL"
 msgstr "URL"
 
-#: webfacile/models.py:147
+#: webfastoche/models.py:147
 msgid "Icon class"
 msgstr "Classe d’icône"
 
-#: webfacile/models.py:154
+#: webfastoche/models.py:154
 msgid "Social media"
 msgstr "Réseau social"
 
-#: webfacile/models.py:155
+#: webfastoche/models.py:155
 msgid "Social medias"
 msgstr "Réseaux sociaux"
 
-#: webfacile/templates/webfacile/alert.html:2 webfacile/templates/webfacile/notice.html:2
+#: webfastoche/templates/webfastoche/alert.html:2 webfastoche/templates/webfastoche/notice.html:2
 msgid "Hide message"
 msgstr "Masquer le message"
 
-#: webfacile/templates/webfacile/breadcrumb.html:2
+#: webfastoche/templates/webfastoche/breadcrumb.html:2
 msgid "you are here:"
 msgstr "vous êtes ici :"
 
-#: webfacile/templates/webfacile/breadcrumb.html:10
+#: webfastoche/templates/webfastoche/breadcrumb.html:10
 msgid "See breadcrumb"
 msgstr "Voir le fil d’Ariane"
 
-#: webfacile/templates/webfacile/breadcrumb.html:15 webfacile/templates/webfacile/header.html:10
+#: webfastoche/templates/webfastoche/breadcrumb.html:15 webfastoche/templates/webfastoche/header.html:10
 msgid "Home page"
 msgstr "Accueil"
 
-#: webfacile/templates/webfacile/card.html:2 webfacile/templates/webfacile/follow.html:2
-#: webfacile/templates/webfacile/footer.html:2 webfacile/templates/webfacile/france_connect.html:9
-#: webfacile/templates/webfacile/link.html:7 webfacile/templates/webfacile/quote.html:2
+#: webfastoche/templates/webfastoche/card.html:2 webfastoche/templates/webfastoche/follow.html:2
+#: webfastoche/templates/webfastoche/footer.html:2 webfastoche/templates/webfastoche/france_connect.html:9
+#: webfastoche/templates/webfastoche/link.html:7 webfastoche/templates/webfastoche/quote.html:2
 msgid "Opens a new window"
 msgstr "Ouvre une nouvelle fenêtre"
 
-#: webfacile/templates/webfacile/consent.html:13
+#: webfastoche/templates/webfastoche/consent.html:13
 msgid "Allow all cookies"
 msgstr "Autoriser tous les cookies"
 
-#: webfacile/templates/webfacile/consent.html:17
+#: webfastoche/templates/webfastoche/consent.html:17
 msgid "Accept all"
 msgstr "Tout accepter"
 
-#: webfacile/templates/webfacile/consent.html:21
+#: webfastoche/templates/webfastoche/consent.html:21
 msgid "Reject all cookies"
 msgstr "Refuser tous les cookies"
 
-#: webfacile/templates/webfacile/consent.html:25
+#: webfastoche/templates/webfastoche/consent.html:25
 msgid "Reject all"
 msgstr "Tout refuser"
 
-#: webfacile/templates/webfacile/consent.html:29
+#: webfastoche/templates/webfastoche/consent.html:29
 msgid "Customize cookies"
 msgstr "Personnaliser les cookies"
 
-#: webfacile/templates/webfacile/consent.html:35
+#: webfastoche/templates/webfastoche/consent.html:35
 msgid "Customize"
 msgstr "Personnaliser"
 
-#: webfacile/templates/webfacile/follow.html:11
+#: webfastoche/templates/webfastoche/follow.html:11
 msgctxt "Section title"
 msgid "Subscribe to our newsletter"
 msgstr "Abonnez-vous à notre lettre d’information"
 
-#: webfacile/templates/webfacile/follow.html:18
+#: webfastoche/templates/webfastoche/follow.html:18
 msgctxt "Button title"
 msgid "Subscribe to our newsletter"
 msgstr "S'abonner à notre lettre d’information"
 
-#: webfacile/templates/webfacile/follow.html:24
+#: webfastoche/templates/webfastoche/follow.html:24
 msgid "Subscribe"
 msgstr "S’abonner"
 
-#: webfacile/templates/webfacile/follow.html:34
+#: webfastoche/templates/webfastoche/follow.html:34
 msgid "Follow us <br /> on social media"
 msgstr "Suivez-nous <br /> sur les réseaux sociaux"
 
-#: webfacile/templates/webfacile/footer.html:9
+#: webfastoche/templates/webfastoche/footer.html:9
 msgid "Back to home page"
 msgstr "Retour à l’accueil du site"
 
-#: webfacile/templates/webfacile/footer.html:93
+#: webfastoche/templates/webfastoche/footer.html:93
 msgid "Sitemap"
 msgstr "Plan du site"
 
-#: webfacile/templates/webfacile/footer.html:98
+#: webfastoche/templates/webfastoche/footer.html:98
 #, python-format
 msgid "Accessibility: %(accessibility_status)s compliant"
 msgstr "Accessibilité : %(accessibility_status)s conforme"
 
-#: webfacile/templates/webfacile/footer.html:103
+#: webfastoche/templates/webfastoche/footer.html:103
 msgid "Legal notice"
 msgstr "Mentions légales"
 
-#: webfacile/templates/webfacile/footer.html:106
+#: webfastoche/templates/webfastoche/footer.html:106
 msgid "Personal data"
 msgstr "Données personnelles"
 
-#: webfacile/templates/webfacile/footer.html:109
+#: webfastoche/templates/webfastoche/footer.html:109
 msgid "Cookie management"
 msgstr "Gestion des cookies"
 
-#: webfacile/templates/webfacile/footer.html:115
+#: webfastoche/templates/webfastoche/footer.html:115
 msgid "etalab-2.0 license"
 msgstr "licence etalab-2.0"
 
-#: webfacile/templates/webfacile/footer.html:116
+#: webfastoche/templates/webfastoche/footer.html:116
 msgid ""
 "Unless explicit mention of intellectual property held by third parties, the "
 "contents of this site are offered under"
@@ -309,132 +309,132 @@ msgstr ""
 "Sauf mention explicite de propriété intellectuelle détenue par des tiers, "
 "les contenus de ce site sont proposés sous"
 
-#: webfacile/templates/webfacile/formset_base.html:27
+#: webfastoche/templates/webfastoche/formset_base.html:27
 msgid "Delete this item"
 msgstr "Supprimer cet élément"
 
-#: webfacile/templates/webfacile/formset_base.html:37
+#: webfastoche/templates/webfastoche/formset_base.html:37
 msgid "Add an item"
 msgstr "Ajouter un élément"
 
-#: webfacile/templates/webfacile/france_connect.html:5
+#: webfastoche/templates/webfastoche/france_connect.html:5
 msgid "Login with"
 msgstr "S’identifier avec"
 
-#: webfacile/templates/webfacile/france_connect.html:10
+#: webfastoche/templates/webfastoche/france_connect.html:10
 msgid "What is FranceConnect+?"
 msgstr "Qu’est-ce que FranceConnect+ ?"
 
-#: webfacile/templates/webfacile/france_connect.html:11
+#: webfastoche/templates/webfastoche/france_connect.html:11
 msgid "What is FranceConnect?"
 msgstr "Qu’est-ce que FranceConnect ?"
 
-#: webfacile/templates/webfacile/header.html:29
+#: webfastoche/templates/webfastoche/header.html:29
 msgid "Menu"
 msgstr "Menu"
 
-#: webfacile/templates/webfacile/header.html:87 webfacile/templates/webfacile/theme_modale.html:13
-#: webfacile/templates/webfacile/transcription.html:30
+#: webfastoche/templates/webfastoche/header.html:87 webfastoche/templates/webfastoche/theme_modale.html:13
+#: webfastoche/templates/webfastoche/transcription.html:30
 msgid "Close"
 msgstr "Fermer"
 
-#: webfacile/templates/webfacile/header.html:91
+#: webfastoche/templates/webfastoche/header.html:91
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: webfacile/templates/webfacile/pagination.html:2
+#: webfastoche/templates/webfastoche/pagination.html:2
 msgid "Pagination"
 msgstr "Pagination"
 
-#: webfacile/templates/webfacile/pagination.html:9
+#: webfastoche/templates/webfastoche/pagination.html:9
 msgid "First page"
 msgstr "Première page"
 
-#: webfacile/templates/webfacile/pagination.html:14
+#: webfastoche/templates/webfastoche/pagination.html:14
 msgid "Previous page"
 msgstr "Page précédente"
 
-#: webfacile/templates/webfacile/pagination.html:25
+#: webfastoche/templates/webfastoche/pagination.html:25
 msgid "Page"
 msgstr "Page"
 
-#: webfacile/templates/webfacile/pagination.html:46
+#: webfastoche/templates/webfastoche/pagination.html:46
 msgid "Next page"
 msgstr "Page suivante"
 
-#: webfacile/templates/webfacile/pagination.html:52
+#: webfastoche/templates/webfastoche/pagination.html:52
 msgid "Last page"
 msgstr "Dernière page"
 
-#: webfacile/templates/webfacile/sidemenu.html:2
+#: webfastoche/templates/webfastoche/sidemenu.html:2
 msgid "Side menu"
 msgstr "Menu latéral"
 
-#: webfacile/templates/webfacile/sidemenu.html:11
+#: webfastoche/templates/webfastoche/sidemenu.html:11
 msgid "In this section"
 msgstr "Dans cette rubrique"
 
-#: webfacile/templates/webfacile/skiplinks.html:2
+#: webfastoche/templates/webfastoche/skiplinks.html:2
 msgid "Skip links"
 msgstr "Accès rapide"
 
-#: webfacile/templates/webfacile/stepper.html:6
+#: webfastoche/templates/webfastoche/stepper.html:6
 #, python-format
 msgid "Step %(current_step_id)s of %(total_steps)s"
 msgstr "Étape %(current_step_id)s sur %(total_steps)s"
 
-#: webfacile/templates/webfacile/stepper.html:17
+#: webfastoche/templates/webfastoche/stepper.html:17
 msgid "Next step:"
 msgstr "Étape suivante :"
 
-#: webfacile/templates/webfacile/summary.html:6
+#: webfastoche/templates/webfastoche/summary.html:6
 msgid "Summary"
 msgstr "Sommaire"
 
-#: webfacile/templates/webfacile/tag.html:3
+#: webfastoche/templates/webfastoche/tag.html:3
 msgid "Remove filter"
 msgstr "Retirer le filtre"
 
-#: webfacile/templates/webfacile/theme_modale.html:18
+#: webfastoche/templates/webfastoche/theme_modale.html:18
 msgid "Display settings"
 msgstr "Paramètres d’affichage"
 
-#: webfacile/templates/webfacile/theme_modale.html:24
+#: webfastoche/templates/webfastoche/theme_modale.html:24
 msgid "Choose a theme to customize the appearance of the site."
 msgstr "Choisissez un thème pour personnaliser l’apparence du site."
 
-#: webfacile/templates/webfacile/theme_modale.html:33
+#: webfastoche/templates/webfastoche/theme_modale.html:33
 msgid "Light theme"
 msgstr "Thème clair"
 
-#: webfacile/templates/webfacile/theme_modale.html:46
+#: webfastoche/templates/webfastoche/theme_modale.html:46
 msgid "Dark theme"
 msgstr "Thème sombre"
 
-#: webfacile/templates/webfacile/theme_modale.html:59
+#: webfastoche/templates/webfastoche/theme_modale.html:59
 msgid "System"
 msgstr "Système"
 
-#: webfacile/templates/webfacile/theme_modale.html:60
+#: webfastoche/templates/webfastoche/theme_modale.html:60
 msgid "Uses system settings."
 msgstr "Utilise les paramètres système."
 
-#: webfacile/templates/webfacile/toggle.html:2
+#: webfastoche/templates/webfastoche/toggle.html:2
 msgid "Checked"
 msgstr "Activé"
 
-#: webfacile/templates/webfacile/toggle.html:3
+#: webfastoche/templates/webfastoche/toggle.html:3
 msgid "Unchecked"
 msgstr "Désactivé"
 
-#: webfacile/templates/webfacile/tooltip.html:6
+#: webfastoche/templates/webfastoche/tooltip.html:6
 msgid "Contextual information"
 msgstr "Information contextuelle"
 
-#: webfacile/templates/webfacile/transcription.html:2
+#: webfastoche/templates/webfastoche/transcription.html:2
 msgid "Transcript"
 msgstr "Transcription"
 
-#: webfacile/templates/webfacile/transcription.html:12
+#: webfastoche/templates/webfastoche/transcription.html:12
 msgid "Enlarge"
 msgstr "Agrandir"

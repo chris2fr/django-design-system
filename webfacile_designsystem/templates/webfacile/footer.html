@@ -1,22 +1,22 @@
 {% load i18n %}
 {% translate "Opens a new window" as new_window_label %}
-<footer class="webfacile-footer" role="contentinfo" id="footer">
+<footer class="webfastoche-footer" role="contentinfo" id="footer">
   {% block footer_top %}
   {% endblock footer_top %}
-  <div class="webfacile-container">
-    <div class="webfacile-footer__body">
+  <div class="webfastoche-container">
+    <div class="webfastoche-footer__body">
       {% block footer_brand %}
         {% translate "Back to home page" as back_to_home_label %}
         {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
-          <div class="webfacile-footer__brand facile-enlarge-link">
-            <p class="webfacile-logo"
+          <div class="webfastoche-footer__brand facile-enlarge-link">
+            <p class="webfastoche-logo"
                title="{{ SITE_CONFIG.footer_brand|default:'république française' }}">
               {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
             </p>
-            <a class="webfacile-footer__brand-link"
+            <a class="webfastoche-footer__brand-link"
                href="/"
                title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
-              <img class="webfacile-footer__logo"
+              <img class="webfastoche-footer__logo"
                    src="{{ SITE_CONFIG.operator_logo_file.url }}"
                    alt="{{ SITE_CONFIG.operator_logo_alt }}"
                    {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
@@ -24,12 +24,12 @@
             </a>
           </div>
         {% else %}
-          <div class="webfacile-footer__brand facile-enlarge-link">
+          <div class="webfastoche-footer__brand facile-enlarge-link">
             <a id="footer-operator"
                href="/"
                title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
               {% block brand %}
-                <p class="webfacile-logo">
+                <p class="webfastoche-logo">
                   {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
                 </p>
               {% endblock brand %}
@@ -37,45 +37,45 @@
           </div>
         {% endif %}
       {% endblock footer_brand %}
-      <div class="webfacile-footer__content">
+      <div class="webfastoche-footer__content">
         {% block footer_description %}
-          <p class="webfacile-footer__content-desc">
+          <p class="webfastoche-footer__content-desc">
             {% block footer_content %}
               {{ SITE_CONFIG.footer_description | safe }}
             {% endblock footer_content %}
           </p>
         {% endblock footer_description %}
-        <ul class="webfacile-footer__content-list">
-          <li class="webfacile-footer__content-item">
+        <ul class="webfastoche-footer__content-list">
+          <li class="webfastoche-footer__content-item">
             <a target="_blank"
                rel="noopener external"
                title="legifrance.gouv.fr - {{ new_window_label }}"
                id="footer__content-link-legifrance"
-               class="webfacile-footer__content-link"
+               class="webfastoche-footer__content-link"
                href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
           </li>
-          <li class="webfacile-footer__content-item">
+          <li class="webfastoche-footer__content-item">
             <a target="_blank"
                rel="noopener external"
                title="gouvernement.fr - {{ new_window_label }}"
                id="footer__content-link-gouvernement"
-               class="webfacile-footer__content-link"
+               class="webfastoche-footer__content-link"
                href="https://gouvernement.fr">gouvernement.fr</a>
           </li>
-          <li class="webfacile-footer__content-item">
+          <li class="webfastoche-footer__content-item">
             <a target="_blank"
                rel="noopener external"
                title="service-public.fr - {{ new_window_label }}"
                id="footer__content-link-servicepublic"
-               class="webfacile-footer__content-link"
+               class="webfastoche-footer__content-link"
                href="https://service-public.fr">service-public.fr</a>
           </li>
-          <li class="webfacile-footer__content-item">
+          <li class="webfastoche-footer__content-item">
             <a target="_blank"
                rel="noopener external"
                title="data.gouv.fr - {{ new_window_label }}"
                id="footer__content-link-datagouv"
-               class="webfacile-footer__content-link"
+               class="webfastoche-footer__content-link"
                href="https://data.gouv.fr">data.gouv.fr</a>
           </li>
           {% block footer_content_extra %}
@@ -85,31 +85,31 @@
     </div>
     {% block footer_partners %}
     {% endblock footer_partners %}
-    <div class="webfacile-footer__bottom">
-      <ul class="webfacile-footer__bottom-list">
+    <div class="webfastoche-footer__bottom">
+      <ul class="webfastoche-footer__bottom-list">
         {% block footer_links %}
-          <li class="webfacile-footer__bottom-item">
-            <a class="webfacile-footer__bottom-link" href="#">{% translate "Sitemap" %}</a>
+          <li class="webfastoche-footer__bottom-item">
+            <a class="webfastoche-footer__bottom-link" href="#">{% translate "Sitemap" %}</a>
           </li>
-          <li class="webfacile-footer__bottom-item">
-            <a class="webfacile-footer__bottom-link" href="#">
+          <li class="webfastoche-footer__bottom-item">
+            <a class="webfastoche-footer__bottom-link" href="#">
               {% with accessibility_status=SITE_CONFIG.get_accessibility_status_display|default:"non" %}
                 {% blocktranslate %}Accessibility: {{ accessibility_status }} compliant{% endblocktranslate %}
               {% endwith %}
             </a>
           </li>
-          <li class="webfacile-footer__bottom-item">
-            <a class="webfacile-footer__bottom-link" href="#">{% translate "Legal notice" %}</a>
+          <li class="webfastoche-footer__bottom-item">
+            <a class="webfastoche-footer__bottom-link" href="#">{% translate "Legal notice" %}</a>
           </li>
-          <li class="webfacile-footer__bottom-item">
-            <a class="webfacile-footer__bottom-link" href="#">{% translate "Personal data" %}</a>
+          <li class="webfastoche-footer__bottom-item">
+            <a class="webfastoche-footer__bottom-link" href="#">{% translate "Personal data" %}</a>
           </li>
-          <li class="webfacile-footer__bottom-item">
-            <a class="webfacile-footer__bottom-link" href="#">{% translate "Cookie management" %}</a>
+          <li class="webfastoche-footer__bottom-item">
+            <a class="webfastoche-footer__bottom-link" href="#">{% translate "Cookie management" %}</a>
           </li>
         {% endblock footer_links %}
       </ul>
-      <div class="webfacile-footer__bottom-copy">
+      <div class="webfastoche-footer__bottom-copy">
         <p>
           {% translate "etalab-2.0 license" as etalab_license %}
           {% translate "Unless explicit mention of intellectual property held by third parties, the contents of this site are offered under" %}

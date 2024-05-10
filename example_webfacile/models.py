@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 # These are example models to show how form and formset can work
-class WebfacileAuthor(models.Model):
+class WebfastocheAuthor(models.Model):
     first_name = models.CharField(
         _("First name"), max_length=250, null=False, blank=False
     )
@@ -15,10 +15,10 @@ class WebfacileAuthor(models.Model):
     birth_date = models.DateField(_("Birth date"), null=True, blank=True)
 
     class Meta:
-        verbose_name = _("webfacile WebfacileAuthor")
+        verbose_name = _("webfastoche WebfastocheAuthor")
 
 
-class WebfacileGenre(models.Model):
+class WebfastocheGenre(models.Model):
     code = models.CharField(_("Code"), max_length=15, null=False, blank=False)
     designation = models.CharField(
         _("Designation"), max_length=250, null=False, blank=False
@@ -29,7 +29,7 @@ class WebfacileGenre(models.Model):
         return str(self.designation)
 
     class Meta:
-        verbose_name = _("webfacile WebfacileGenre")
+        verbose_name = _("webfastoche WebfastocheGenre")
 
 
 BOOK_FORMAT = (
@@ -38,16 +38,16 @@ BOOK_FORMAT = (
 )
 
 
-class WebfacileBook(models.Model):
+class WebfastocheBook(models.Model):
     author = models.ForeignKey(
-        WebfacileAuthor, on_delete=models.CASCADE, null=False, blank=False
+        WebfastocheAuthor, on_delete=models.CASCADE, null=False, blank=False
     )
     title = models.CharField(_("Title"), max_length=250, null=False, blank=False)
     number_of_pages = models.CharField(_("Number of pages"), max_length=6, blank=True)
     book_format = models.CharField(
         _("Format"), choices=BOOK_FORMAT, max_length=10, blank=True
     )
-    genre = models.ManyToManyField(WebfacileGenre)
+    genre = models.ManyToManyField(WebfastocheGenre)
 
     class Meta:
-        verbose_name = _("webfacile WebfacileBook")
+        verbose_name = _("webfastoche WebfastocheBook")

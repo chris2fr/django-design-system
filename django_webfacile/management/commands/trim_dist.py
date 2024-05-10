@@ -5,9 +5,9 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Removes extra files from the webfacile/dist folder in order to save space."
+    help = "Removes extra files from the webfastoche/dist folder in order to save space."
 
-    BASE_PATH = "webfacile/static/webfacile/dist"
+    BASE_PATH = "webfastoche/static/webfastoche/dist"
 
     def handle(self, *args, **options):
         print("Delete CSS map files and non-minified CSS files")
