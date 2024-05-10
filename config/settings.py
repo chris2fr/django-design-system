@@ -41,11 +41,13 @@ INSTALLED_APPS = [
     "django_extensions",
     "csp",
     "widget_tweaks",
-    # "dsfr",
+    "webfacile_lesgrandsvoisins",
+    "webfacile_designsystem",
     "django_webfacile",
     "example_app",
     "example_webfacile",
     "django_distill",
+    # "dsfr",
 ]
 
 if DJANGO_VERSION < (5, 0):
