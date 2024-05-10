@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "example_app",
     "example_webfastoche",
     "django_distill",
-    # "dsfr",
+    "dsfr",
 ]
 
 if DJANGO_VERSION < (5, 0):

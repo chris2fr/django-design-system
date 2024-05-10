@@ -1,0 +1,75 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-sidemenu {
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+
+    /*
+    @include elevation.elevate(raised, (legacy:$legacy));
+    @include respond-from(md) {
+      @include elevation.drop((legacy:$legacy));
+    }
+     */
+    display: none;
+  }
+
+  .webfastoche-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .webfastoche-sidemenu__item .webfastoche-sidemenu__link,
+  .webfastoche-sidemenu__item .webfastoche-sidemenu__btn {
+    color: #161616;
+  }
+
+  .webfastoche-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .webfastoche-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .webfastoche-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .webfastoche-sidemenu__link,
+  .webfastoche-sidemenu__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-sidemenu__link[aria-current]:not([aria-current=false]),
+  .webfastoche-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .webfastoche-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+}
+@media print and (min-width: 48em) and (-ms-high-contrast: none), print and (min-width: 48em) and (-ms-high-contrast: active) {
+  .webfastoche-sidemenu {
+    box-shadow: none;
+  }
+
+  .webfastoche-sidemenu__title {
+    box-shadow: none;
+  }
+}
+@media print and (min-width: 48em) {
+  .webfastoche-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .webfastoche-sidemenu--right .webfastoche-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+}

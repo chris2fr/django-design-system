@@ -1,0 +1,156 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur du texte dans la tuile
+  */
+  .webfastoche-tile--download .webfastoche-tile__body,
+  .webfastoche-tile--horizontal .webfastoche-tile__body {
+    flex-basis: 100%;
+  }
+
+  .webfastoche-tile__body,
+  .webfastoche-tile__body > * {
+    max-width: 100%;
+  }
+
+  .webfastoche-tile__title {
+    margin: 0 0 0.5rem;
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .webfastoche-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-tile__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-tile__desc {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .webfastoche-tile__start,
+  .webfastoche-tile__detail {
+    max-width: 100%;
+  }
+
+  .webfastoche-tile--download .webfastoche-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .webfastoche-tile.webfastoche-enlarge-link .webfastoche-tile__title a {
+    text-decoration: none;
+  }
+
+  .webfastoche-tile.webfastoche-enlarge-link .webfastoche-tile__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .webfastoche-tile--sm .webfastoche-tile__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-tile {
+    background-color: #fff;
+  }
+
+  .webfastoche-tile:not(.webfastoche-tile--no-border):not(.webfastoche-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-tile--grey {
+    background-color: #eee;
+  }
+
+  .webfastoche-tile--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .webfastoche-tile--shadow.webfastoche-tile--grey {
+    background-color: #eee;
+  }
+
+  .webfastoche-tile--no-background {
+    background-color: transparent;
+  }
+
+  .webfastoche-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-tile__title:disabled,
+  a.webfastoche-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .webfastoche-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .webfastoche-tile__title a {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%));
+  }
+
+  .webfastoche-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .webfastoche-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .webfastoche-tile--download.webfastoche-tile--vertical\@md .webfastoche-tile__body,
+  .webfastoche-tile--horizontal.webfastoche-tile--vertical\@md .webfastoche-tile__body {
+    flex-basis: auto;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .webfastoche-tile--download.webfastoche-tile--vertical\@lg .webfastoche-tile__body,
+  .webfastoche-tile--horizontal.webfastoche-tile--vertical\@lg .webfastoche-tile__body {
+    flex-basis: auto;
+  }
+}

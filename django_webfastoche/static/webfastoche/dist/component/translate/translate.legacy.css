@@ -1,0 +1,50 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.webfastoche-translate .webfastoche-translate__btn[aria-expanded=true]:hover {
+  background-color: var(--hover-tint);
+}
+
+.webfastoche-translate .webfastoche-translate__btn[aria-expanded=true]:active {
+  background-color: var(--active-tint);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-translate .webfastoche-translate__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/editor/translate-2.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-translate .webfastoche-translate__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-translate .webfastoche-translate__btn[aria-expanded=true] {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .webfastoche-translate__menu .webfastoche-translate__language {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,107 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfastoche-icon-leaf-fill::before,
+.webfastoche-icon-leaf-fill::after {
+  -webkit-mask-image: url("../../../icons/others/leaf-fill.svg");
+  mask-image: url("../../../icons/others/leaf-fill.svg");
+}
+
+.webfastoche-icon-leaf-line::before,
+.webfastoche-icon-leaf-line::after {
+  -webkit-mask-image: url("../../../icons/others/leaf-line.svg");
+  mask-image: url("../../../icons/others/leaf-line.svg");
+}
+
+.webfastoche-icon-lightbulb-fill::before,
+.webfastoche-icon-lightbulb-fill::after {
+  -webkit-mask-image: url("../../../icons/others/lightbulb-fill.svg");
+  mask-image: url("../../../icons/others/lightbulb-fill.svg");
+}
+
+.webfastoche-icon-lightbulb-line::before,
+.webfastoche-icon-lightbulb-line::after {
+  -webkit-mask-image: url("../../../icons/others/lightbulb-line.svg");
+  mask-image: url("../../../icons/others/lightbulb-line.svg");
+}
+
+.webfastoche-icon-plant-fill::before,
+.webfastoche-icon-plant-fill::after {
+  -webkit-mask-image: url("../../../icons/others/plant-fill.svg");
+  mask-image: url("../../../icons/others/plant-fill.svg");
+}
+
+.webfastoche-icon-plant-line::before,
+.webfastoche-icon-plant-line::after {
+  -webkit-mask-image: url("../../../icons/others/plant-line.svg");
+  mask-image: url("../../../icons/others/plant-line.svg");
+}
+
+.webfastoche-icon-recycle-fill::before,
+.webfastoche-icon-recycle-fill::after {
+  -webkit-mask-image: url("../../../icons/others/recycle-fill.svg");
+  mask-image: url("../../../icons/others/recycle-fill.svg");
+}
+
+.webfastoche-icon-recycle-line::before,
+.webfastoche-icon-recycle-line::after {
+  -webkit-mask-image: url("../../../icons/others/recycle-line.svg");
+  mask-image: url("../../../icons/others/recycle-line.svg");
+}
+
+.webfastoche-icon-scales-3-fill::before,
+.webfastoche-icon-scales-3-fill::after {
+  -webkit-mask-image: url("../../../icons/others/scales-3-fill.svg");
+  mask-image: url("../../../icons/others/scales-3-fill.svg");
+}
+
+.webfastoche-icon-scales-3-line::before,
+.webfastoche-icon-scales-3-line::after {
+  -webkit-mask-image: url("../../../icons/others/scales-3-line.svg");
+  mask-image: url("../../../icons/others/scales-3-line.svg");
+}
+
+.webfastoche-icon-seedling-fill::before,
+.webfastoche-icon-seedling-fill::after {
+  -webkit-mask-image: url("../../../icons/others/seedling-fill.svg");
+  mask-image: url("../../../icons/others/seedling-fill.svg");
+}
+
+.webfastoche-icon-seedling-line::before,
+.webfastoche-icon-seedling-line::after {
+  -webkit-mask-image: url("../../../icons/others/seedling-line.svg");
+  mask-image: url("../../../icons/others/seedling-line.svg");
+}
+
+.webfastoche-icon-umbrella-fill::before,
+.webfastoche-icon-umbrella-fill::after {
+  -webkit-mask-image: url("../../../icons/others/umbrella-fill.svg");
+  mask-image: url("../../../icons/others/umbrella-fill.svg");
+}
+
+.webfastoche-icon-umbrella-line::before,
+.webfastoche-icon-umbrella-line::after {
+  -webkit-mask-image: url("../../../icons/others/umbrella-line.svg");
+  mask-image: url("../../../icons/others/umbrella-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

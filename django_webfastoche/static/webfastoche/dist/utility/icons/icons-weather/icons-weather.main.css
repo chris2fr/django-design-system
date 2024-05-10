@@ -1,0 +1,83 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfastoche-icon-cloudy-2-fill::before,
+.webfastoche-icon-cloudy-2-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/cloudy-2-fill.svg");
+  mask-image: url("../../../icons/weather/cloudy-2-fill.svg");
+}
+
+.webfastoche-icon-cloudy-2-line::before,
+.webfastoche-icon-cloudy-2-line::after {
+  -webkit-mask-image: url("../../../icons/weather/cloudy-2-line.svg");
+  mask-image: url("../../../icons/weather/cloudy-2-line.svg");
+}
+
+.webfastoche-icon-flashlight-fill::before,
+.webfastoche-icon-flashlight-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../../icons/weather/flashlight-fill.svg");
+}
+
+.webfastoche-icon-flashlight-line::before,
+.webfastoche-icon-flashlight-line::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-line.svg");
+  mask-image: url("../../../icons/weather/flashlight-line.svg");
+}
+
+.webfastoche-icon-moon-fill::before,
+.webfastoche-icon-moon-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/moon-fill.svg");
+  mask-image: url("../../../icons/weather/moon-fill.svg");
+}
+
+.webfastoche-icon-moon-line::before,
+.webfastoche-icon-moon-line::after {
+  -webkit-mask-image: url("../../../icons/weather/moon-line.svg");
+  mask-image: url("../../../icons/weather/moon-line.svg");
+}
+
+.webfastoche-icon-sun-fill::before,
+.webfastoche-icon-sun-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/sun-fill.svg");
+  mask-image: url("../../../icons/weather/sun-fill.svg");
+}
+
+.webfastoche-icon-sun-line::before,
+.webfastoche-icon-sun-line::after {
+  -webkit-mask-image: url("../../../icons/weather/sun-line.svg");
+  mask-image: url("../../../icons/weather/sun-line.svg");
+}
+
+.webfastoche-fi-flashlight-fill::before,
+.webfastoche-fi-flashlight-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../../icons/weather/flashlight-fill.svg");
+}
+
+.webfastoche-fi-flashlight-line::before,
+.webfastoche-fi-flashlight-line::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-line.svg");
+  mask-image: url("../../../icons/weather/flashlight-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

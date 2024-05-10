@@ -1,0 +1,70 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-card {
+    background-color: #fff;
+  }
+
+  .webfastoche-card:not(.webfastoche-card--no-border):not(.webfastoche-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .webfastoche-card--shadow {
+    background-color: #fff;
+  }
+
+  .webfastoche-card--shadow.webfastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .webfastoche-card--download:not(.webfastoche-card--no-background) .webfastoche-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .webfastoche-card__detail {
+    color: #666;
+    line-height: 1rem !important;
+  }
+
+  .webfastoche-card__title {
+    color: #161616;
+  }
+
+  .webfastoche-card__title a[href] {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-card__title:disabled,
+  a.webfastoche-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .webfastoche-card__detail,
+  .webfastoche-card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .webfastoche-card--shadow {
+    z-index: 500;
+  }
+
+  .webfastoche-card--no-background {
+    background-color: transparent;
+  }
+
+  .webfastoche-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

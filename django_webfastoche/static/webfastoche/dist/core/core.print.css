@@ -1,0 +1,174 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .webfastoche-artwork-decorative {
+    fill: hsl(122, 80%, 96%);
+  }
+
+  .webfastoche-artwork-minor {
+    fill: hsl(212, 85%, 25%);
+  }
+
+  .webfastoche-artwork-major {
+    fill: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .webfastoche-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .webfastoche-artwork--webfastoche-color3 .webfastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color4 .webfastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color5 .webfastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color6 .webfastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color7 .webfastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color8 .webfastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color9 .webfastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color10 .webfastoche-artwork-minor {
+    fill: hsl(100, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color11 .webfastoche-artwork-minor {
+    fill: hsl(105, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color12 .webfastoche-artwork-minor {
+    fill: hsl(115, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color13 .webfastoche-artwork-minor {
+    fill: hsl(135, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color14 .webfastoche-artwork-minor {
+    fill: hsl(145, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color15 .webfastoche-artwork-minor {
+    fill: hsl(155, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color16 .webfastoche-artwork-minor {
+    fill: hsl(165, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color17 .webfastoche-artwork-minor {
+    fill: hsl(175, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color18 .webfastoche-artwork-minor {
+    fill: hsl(185, 75%, 25%);
+  }
+
+  .webfastoche-artwork--webfastoche-color19 .webfastoche-artwork-minor {
+    fill: hsl(195, 75%, 25%);
+  }
+
+  [disabled] .webfastoche-artwork * {
+    fill: #929292;
+  }
+
+  .webfastoche-h6,
+  .webfastoche-h5,
+  .webfastoche-h4,
+  .webfastoche-h3,
+  .webfastoche-h2,
+  .webfastoche-h1,
+  .webfastoche-display-xs,
+  .webfastoche-display-sm,
+  .webfastoche-display-md,
+  .webfastoche-display-lg,
+  .webfastoche-display-xl {
+    color: #161616;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-hr-or::before,
+  .webfastoche-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .webfastoche-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-no-print {
+    display: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .webfastoche-text--sm,
+  .webfastoche-text--xs {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    margin: var(--text-spacing);
+  }
+}

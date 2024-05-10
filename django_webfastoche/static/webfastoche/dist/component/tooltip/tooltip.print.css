@@ -1,0 +1,18 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-tooltip {
+    color: #3a3a3a;
+    display: none;
+  }
+
+  .webfastoche-tooltip.webfastoche-placement {
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .webfastoche-tooltip.webfastoche-placement {
+    z-index: 1000;
+  }
+}

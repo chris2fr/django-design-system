@@ -1,0 +1,195 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-badge::before,
+  .webfastoche-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .webfastoche-badge.webfastoche-badge--info::before,
+  .webfastoche-badge.webfastoche-badge--info::after,
+  .webfastoche-badge--sm.webfastoche-badge--info::before,
+  .webfastoche-badge--sm.webfastoche-badge--info::after {
+    background-image: url("../../icons/system/fr--info-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--success::before,
+  .webfastoche-badge.webfastoche-badge--success::after,
+  .webfastoche-badge--sm.webfastoche-badge--success::before,
+  .webfastoche-badge--sm.webfastoche-badge--success::after {
+    background-image: url("../../icons/system/fr--success-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--error::before,
+  .webfastoche-badge.webfastoche-badge--error::after,
+  .webfastoche-badge--sm.webfastoche-badge--error::before,
+  .webfastoche-badge--sm.webfastoche-badge--error::after {
+    background-image: url("../../icons/system/fr--error-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--warning::before,
+  .webfastoche-badge.webfastoche-badge--warning::after,
+  .webfastoche-badge--sm.webfastoche-badge--warning::before,
+  .webfastoche-badge--sm.webfastoche-badge--warning::after {
+    background-image: url("../../icons/system/fr--warning-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--new::before,
+  .webfastoche-badge.webfastoche-badge--new::after,
+  .webfastoche-badge--sm.webfastoche-badge--new::before,
+  .webfastoche-badge--sm.webfastoche-badge--new::after {
+    background-image: url("../../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.webfastoche-badges-group {
+    list-style-type: none;
+  }
+
+  ol.webfastoche-badges-group {
+    list-style-type: none;
+  }
+
+  ul.webfastoche-badges-group,
+  ol.webfastoche-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .webfastoche-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .webfastoche-badge--info {
+    color: #0063cb;
+    background-color: #e8edff;
+  }
+
+  .webfastoche-badge--error {
+    color: #ce0500;
+    background-color: #ffe9e9;
+  }
+
+  .webfastoche-badge--success {
+    color: #18753c;
+    background-color: #b8fec9;
+  }
+
+  .webfastoche-badge--warning {
+    color: #b34000;
+    background-color: #ffe9e6;
+  }
+
+  .webfastoche-badge--new {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 96%);
+  }
+}

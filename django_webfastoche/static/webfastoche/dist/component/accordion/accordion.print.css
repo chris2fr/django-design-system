@@ -1,0 +1,27 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .webfastoche-accordion__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-accordion__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .webfastoche-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .webfastoche-accordion .webfastoche-collapse:not(.webfastoche-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+}

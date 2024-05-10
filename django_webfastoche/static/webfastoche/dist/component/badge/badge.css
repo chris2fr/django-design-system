@@ -1,0 +1,740 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+/* ------------------------------------ *\
+  Badge
+\* ------------------------------------ */
+.webfastoche-badge {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  padding: 0 0.5rem;
+  overflow: initial;
+  max-height: none;
+  font-weight: 700;
+  max-width: 100%;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  color: var(--text-default-grey);
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.webfastoche-badge::before,
+.webfastoche-badge::after {
+  display: block;
+}
+
+.webfastoche-badge--icon-left[class^=webfastoche-icon-],
+.webfastoche-badge--icon-left[class*=" webfastoche-icon-"],
+.webfastoche-badge--icon-left[class^=webfastoche-fi-],
+.webfastoche-badge--icon-left[class*=" webfastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.webfastoche-badge--icon-left[class^=webfastoche-icon-]::before,
+.webfastoche-badge--icon-left[class*=" webfastoche-icon-"]::before,
+.webfastoche-badge--icon-left[class^=webfastoche-fi-]::before,
+.webfastoche-badge--icon-left[class*=" webfastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+}
+
+.webfastoche-badge[class^=webfastoche-icon-]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge[class*=" webfastoche-icon-"]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge[class^=webfastoche-fi-]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge[class*=" webfastoche-fi-"]:not([class*=webfastoche-badge--icon-])::before {
+  content: none;
+}
+
+.webfastoche-badge--sm {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class^=webfastoche-icon-],
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class*=" webfastoche-icon-"],
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class^=webfastoche-fi-],
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class*=" webfastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class^=webfastoche-icon-]::before,
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class*=" webfastoche-icon-"]::before,
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class^=webfastoche-fi-]::before,
+.webfastoche-badge--sm.webfastoche-badge--icon-left[class*=" webfastoche-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.webfastoche-badge--sm[class^=webfastoche-icon-]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge--sm[class*=" webfastoche-icon-"]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge--sm[class^=webfastoche-fi-]:not([class*=webfastoche-badge--icon-])::before,
+.webfastoche-badge--sm[class*=" webfastoche-fi-"]:not([class*=webfastoche-badge--icon-])::before {
+  content: none;
+}
+
+.webfastoche-badge::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.webfastoche-badge--sm::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.webfastoche-badge.webfastoche-badge--info::before,
+.webfastoche-badge--sm.webfastoche-badge--info::before {
+  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../icons/system/fr--info-fill.svg");
+}
+
+.webfastoche-badge.webfastoche-badge--success::before,
+.webfastoche-badge--sm.webfastoche-badge--success::before {
+  -webkit-mask-image: url("../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../icons/system/fr--success-fill.svg");
+}
+
+.webfastoche-badge.webfastoche-badge--error::before,
+.webfastoche-badge--sm.webfastoche-badge--error::before {
+  -webkit-mask-image: url("../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../icons/system/fr--error-fill.svg");
+}
+
+.webfastoche-badge.webfastoche-badge--warning::before,
+.webfastoche-badge--sm.webfastoche-badge--warning::before {
+  -webkit-mask-image: url("../../icons/system/fr--warning-fill.svg");
+  mask-image: url("../../icons/system/fr--warning-fill.svg");
+}
+
+.webfastoche-badge.webfastoche-badge--new::before,
+.webfastoche-badge--sm.webfastoche-badge--new::before {
+  -webkit-mask-image: url("../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../icons/weather/flashlight-fill.svg");
+}
+
+.webfastoche-badge--info::before,
+.webfastoche-badge--success::before,
+.webfastoche-badge--error::before,
+.webfastoche-badge--warning::before,
+.webfastoche-badge--new::before,
+.webfastoche-badge--sm--info::before,
+.webfastoche-badge--sm--success::before,
+.webfastoche-badge--sm--error::before,
+.webfastoche-badge--sm--warning::before,
+.webfastoche-badge--sm--new::before {
+  content: "";
+}
+
+.webfastoche-badge.webfastoche-badge--no-icon::before,
+.webfastoche-badge--sm.webfastoche-badge--no-icon::before {
+  content: none;
+}
+
+.webfastoche-badges-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  margin-bottom: 0;
+}
+
+.webfastoche-badges-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.webfastoche-badges-group .webfastoche-badge {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.webfastoche-badges-group--sm .webfastoche-badge {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+}
+
+.webfastoche-badges-group--sm .webfastoche-badge::before,
+.webfastoche-badges-group--sm .webfastoche-badge::after {
+  --icon-size: 0.75rem;
+}
+
+.webfastoche-badge--info {
+  color: var(--text-default-info);
+  background-color: var(--background-contrast-info);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-info-hover);
+  --active: var(--background-contrast-info-active);
+}
+
+.webfastoche-badge--error {
+  color: var(--text-default-error);
+  background-color: var(--background-contrast-error);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-error-hover);
+  --active: var(--background-contrast-error-active);
+}
+
+.webfastoche-badge--success {
+  color: var(--text-default-success);
+  background-color: var(--background-contrast-success);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-success-hover);
+  --active: var(--background-contrast-success-active);
+}
+
+.webfastoche-badge--warning {
+  color: var(--text-default-warning);
+  background-color: var(--background-contrast-warning);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-warning-hover);
+  --active: var(--background-contrast-warning-active);
+}
+
+.webfastoche-badge--new {
+  color: var(--text-action-high-webfastoche-color14);
+  background-color: var(--background-contrast-webfastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color14-hover);
+  --active: var(--background-contrast-webfastoche-color14-active);
+}
+
+.webfastoche-badge--webfastoche-color3 {
+  color: var(--text-label-webfastoche-color3);
+  background-color: var(--background-contrast-webfastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color3-hover);
+  --active: var(--background-contrast-webfastoche-color3-active);
+}
+
+.webfastoche-badge--webfastoche-color4 {
+  color: var(--text-label-webfastoche-color4);
+  background-color: var(--background-contrast-webfastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color4-hover);
+  --active: var(--background-contrast-webfastoche-color4-active);
+}
+
+.webfastoche-badge--webfastoche-color5 {
+  color: var(--text-label-webfastoche-color5);
+  background-color: var(--background-contrast-webfastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color5-hover);
+  --active: var(--background-contrast-webfastoche-color5-active);
+}
+
+.webfastoche-badge--webfastoche-color6 {
+  color: var(--text-label-webfastoche-color6);
+  background-color: var(--background-contrast-webfastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color6-hover);
+  --active: var(--background-contrast-webfastoche-color6-active);
+}
+
+.webfastoche-badge--webfastoche-color7 {
+  color: var(--text-label-webfastoche-color7);
+  background-color: var(--background-contrast-webfastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color7-hover);
+  --active: var(--background-contrast-webfastoche-color7-active);
+}
+
+.webfastoche-badge--webfastoche-color8 {
+  color: var(--text-label-webfastoche-color8);
+  background-color: var(--background-contrast-webfastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color8-hover);
+  --active: var(--background-contrast-webfastoche-color8-active);
+}
+
+.webfastoche-badge--webfastoche-color9 {
+  color: var(--text-label-webfastoche-color9);
+  background-color: var(--background-contrast-webfastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color9-hover);
+  --active: var(--background-contrast-webfastoche-color9-active);
+}
+
+.webfastoche-badge--webfastoche-color10 {
+  color: var(--text-label-webfastoche-color10);
+  background-color: var(--background-contrast-webfastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color10-hover);
+  --active: var(--background-contrast-webfastoche-color10-active);
+}
+
+.webfastoche-badge--webfastoche-color11 {
+  color: var(--text-label-webfastoche-color11);
+  background-color: var(--background-contrast-webfastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color11-hover);
+  --active: var(--background-contrast-webfastoche-color11-active);
+}
+
+.webfastoche-badge--webfastoche-color12 {
+  color: var(--text-label-webfastoche-color12);
+  background-color: var(--background-contrast-webfastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color12-hover);
+  --active: var(--background-contrast-webfastoche-color12-active);
+}
+
+.webfastoche-badge--webfastoche-color13 {
+  color: var(--text-label-webfastoche-color13);
+  background-color: var(--background-contrast-webfastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color13-hover);
+  --active: var(--background-contrast-webfastoche-color13-active);
+}
+
+.webfastoche-badge--webfastoche-color14 {
+  color: var(--text-label-webfastoche-color14);
+  background-color: var(--background-contrast-webfastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color14-hover);
+  --active: var(--background-contrast-webfastoche-color14-active);
+}
+
+.webfastoche-badge--webfastoche-color15 {
+  color: var(--text-label-webfastoche-color15);
+  background-color: var(--background-contrast-webfastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color15-hover);
+  --active: var(--background-contrast-webfastoche-color15-active);
+}
+
+.webfastoche-badge--webfastoche-color16 {
+  color: var(--text-label-webfastoche-color16);
+  background-color: var(--background-contrast-webfastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color16-hover);
+  --active: var(--background-contrast-webfastoche-color16-active);
+}
+
+.webfastoche-badge--webfastoche-color17 {
+  color: var(--text-label-webfastoche-color17);
+  background-color: var(--background-contrast-webfastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color17-hover);
+  --active: var(--background-contrast-webfastoche-color17-active);
+}
+
+.webfastoche-badge--webfastoche-color18 {
+  color: var(--text-label-webfastoche-color18);
+  background-color: var(--background-contrast-webfastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color18-hover);
+  --active: var(--background-contrast-webfastoche-color18-active);
+}
+
+.webfastoche-badge--webfastoche-color19 {
+  color: var(--text-label-webfastoche-color19);
+  background-color: var(--background-contrast-webfastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color19-hover);
+  --active: var(--background-contrast-webfastoche-color19-active);
+}
+
+.webfastoche-badge-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.webfastoche-badge-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.webfastoche-badge-group .webfastoche-badge {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-badge::before,
+  .webfastoche-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .webfastoche-badge.webfastoche-badge--info::before,
+  .webfastoche-badge.webfastoche-badge--info::after,
+  .webfastoche-badge--sm.webfastoche-badge--info::before,
+  .webfastoche-badge--sm.webfastoche-badge--info::after {
+    background-image: url("../../icons/system/fr--info-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--success::before,
+  .webfastoche-badge.webfastoche-badge--success::after,
+  .webfastoche-badge--sm.webfastoche-badge--success::before,
+  .webfastoche-badge--sm.webfastoche-badge--success::after {
+    background-image: url("../../icons/system/fr--success-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--error::before,
+  .webfastoche-badge.webfastoche-badge--error::after,
+  .webfastoche-badge--sm.webfastoche-badge--error::before,
+  .webfastoche-badge--sm.webfastoche-badge--error::after {
+    background-image: url("../../icons/system/fr--error-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--warning::before,
+  .webfastoche-badge.webfastoche-badge--warning::after,
+  .webfastoche-badge--sm.webfastoche-badge--warning::before,
+  .webfastoche-badge--sm.webfastoche-badge--warning::after {
+    background-image: url("../../icons/system/fr--warning-fill.svg");
+  }
+
+  .webfastoche-badge.webfastoche-badge--new::before,
+  .webfastoche-badge.webfastoche-badge--new::after,
+  .webfastoche-badge--sm.webfastoche-badge--new::before,
+  .webfastoche-badge--sm.webfastoche-badge--new::after {
+    background-image: url("../../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.webfastoche-badges-group {
+    list-style-type: none;
+  }
+
+  ol.webfastoche-badges-group {
+    list-style-type: none;
+  }
+
+  ul.webfastoche-badges-group,
+  ol.webfastoche-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .webfastoche-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .webfastoche-badge--info {
+    color: #0063cb;
+    background-color: #e8edff;
+  }
+
+  .webfastoche-badge--error {
+    color: #ce0500;
+    background-color: #ffe9e9;
+  }
+
+  .webfastoche-badge--success {
+    color: #18753c;
+    background-color: #b8fec9;
+  }
+
+  .webfastoche-badge--warning {
+    color: #b34000;
+    background-color: #ffe9e6;
+  }
+
+  .webfastoche-badge--new {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 96%);
+  }
+}
+@media print {
+  .webfastoche-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .webfastoche-badge--info {
+    color: #0063cb;
+    background-color: #e8edff;
+  }
+
+  .webfastoche-badge--error {
+    color: #ce0500;
+    background-color: #ffe9e9;
+  }
+
+  .webfastoche-badge--success {
+    color: #18753c;
+    background-color: #b8fec9;
+  }
+
+  .webfastoche-badge--warning {
+    color: #b34000;
+    background-color: #ffe9e6;
+  }
+
+  .webfastoche-badge--new {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-badge--webfastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 96%);
+  }
+}

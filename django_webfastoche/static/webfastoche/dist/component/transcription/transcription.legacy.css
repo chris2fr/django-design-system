@@ -1,0 +1,85 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-transcription {
+    position: relative;
+  }
+
+  .webfastoche-transcription__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-transcription__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-transcription__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  ul.webfastoche-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ol.webfastoche-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ul.webfastoche-transcription__actions-group,
+  ol.webfastoche-transcription__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .webfastoche-transcription .webfastoche-modal:not(.webfastoche-modal--opened) .webfastoche-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .webfastoche-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .webfastoche-transcription__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-transcription__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .webfastoche-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .webfastoche-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .webfastoche-transcription .webfastoche-modal:not(.webfastoche-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}

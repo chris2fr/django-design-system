@@ -1,0 +1,128 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correction largeur max du texte
+  */
+  .webfastoche-quote::before,
+  .webfastoche-quote::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/editor/fr--quote-line.svg");
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul.webfastoche-quote__source {
+    list-style-type: none;
+  }
+
+  ol.webfastoche-quote__source {
+    list-style-type: none;
+  }
+
+  ul.webfastoche-quote__source,
+  ol.webfastoche-quote__source {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .webfastoche-quote blockquote {
+    max-width: 100%;
+  }
+
+  .webfastoche-quote::before {
+    color: hsl(122, 85%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color3::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color4::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color5::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color6::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color7::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color8::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color9::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color10::before {
+    color: hsl(100, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color11::before {
+    color: hsl(105, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color12::before {
+    color: hsl(115, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color13::before {
+    color: hsl(135, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color14::before {
+    color: hsl(145, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color15::before {
+    color: hsl(155, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color16::before {
+    color: hsl(165, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color17::before {
+    color: hsl(175, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color18::before {
+    color: hsl(185, 75%, 25%);
+  }
+
+  .webfastoche-quote--webfastoche-color19::before {
+    color: hsl(195, 75%, 25%);
+  }
+
+  .webfastoche-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-quote__source {
+    color: #666;
+  }
+}

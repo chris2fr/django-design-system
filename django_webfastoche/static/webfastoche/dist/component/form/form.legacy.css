@@ -1,0 +1,207 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .webfastoche-message--error::before,
+  .webfastoche-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-message--valid::before,
+  .webfastoche-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-message--info::before,
+  .webfastoche-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-select-group--valid label,
+  .webfastoche-input-group--valid label,
+  .webfastoche-range-group--valid label,
+  .webfastoche-upload-group--valid label {
+    color: #18753c;
+  }
+
+  .webfastoche-select-group--error label,
+  .webfastoche-input-group--error label,
+  .webfastoche-range-group--error label,
+  .webfastoche-upload-group--error label {
+    color: #ce0500;
+  }
+
+  .webfastoche-select-group--info label,
+  .webfastoche-input-group--info label,
+  .webfastoche-range-group--info label,
+  .webfastoche-upload-group--info label {
+    color: #0063cb;
+  }
+
+  .webfastoche-select-group--disabled label,
+  .webfastoche-select-group--disabled .webfastoche-hint-text,
+  .webfastoche-input-group--disabled label,
+  .webfastoche-input-group--disabled .webfastoche-hint-text,
+  .webfastoche-range-group--disabled label,
+  .webfastoche-range-group--disabled .webfastoche-hint-text,
+  .webfastoche-upload-group--disabled label,
+  .webfastoche-upload-group--disabled .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-label {
+    color: #161616;
+  }
+
+  .webfastoche-label--error {
+    color: #ce0500;
+  }
+
+  .webfastoche-label--success {
+    color: #18753c;
+  }
+
+  .webfastoche-label--info {
+    color: #0063cb;
+  }
+
+  .webfastoche-label--disabled,
+  .webfastoche-label--disabled .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-hint-text,
+  .webfastoche-message {
+    color: #666;
+  }
+
+  .webfastoche-message--error {
+    color: #ce0500;
+  }
+
+  .webfastoche-message--valid {
+    color: #18753c;
+  }
+
+  .webfastoche-message--info {
+    color: #0063cb;
+  }
+
+  .webfastoche-fieldset:disabled .webfastoche-label,
+  .webfastoche-fieldset:disabled .webfastoche-hint-text,
+  .webfastoche-fieldset:disabled .webfastoche-fieldset__legend {
+    color: #929292;
+  }
+
+  .webfastoche-fieldset input:disabled + label,
+  .webfastoche-fieldset input:disabled + label .webfastoche-hint-text,
+  .webfastoche-fieldset input:disabled + label + .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-fieldset--error,
+  .webfastoche-fieldset--error .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .webfastoche-fieldset--error .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--error .webfastoche-label {
+    color: #ce0500;
+  }
+
+  .webfastoche-fieldset--valid,
+  .webfastoche-fieldset--valid .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .webfastoche-fieldset--valid .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--valid .webfastoche-label {
+    color: #18753c;
+  }
+
+  .webfastoche-fieldset--info,
+  .webfastoche-fieldset--info .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .webfastoche-fieldset--info .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--info .webfastoche-label {
+    color: #0063cb;
+  }
+
+  .webfastoche-error-text::before,
+  .webfastoche-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-valid-text::before,
+  .webfastoche-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-error-text {
+    color: #ce0500;
+  }
+
+  .webfastoche-valid-text {
+    color: #18753c;
+  }
+
+  .webfastoche-info-text {
+    color: #0063cb;
+  }
+
+  .webfastoche-fieldset--valid .webfastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #18753c;
+  }
+
+  .webfastoche-fieldset--error .webfastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #ce0500;
+  }
+
+  .webfastoche-fieldset--info .webfastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #0063cb;
+  }
+}

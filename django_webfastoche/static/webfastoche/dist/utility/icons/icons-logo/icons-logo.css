@@ -1,0 +1,863 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfastoche-icon-chrome-fill::before,
+.webfastoche-icon-chrome-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/chrome-fill.svg");
+  mask-image: url("../../../icons/logo/chrome-fill.svg");
+}
+
+.webfastoche-icon-chrome-line::before,
+.webfastoche-icon-chrome-line::after {
+  -webkit-mask-image: url("../../../icons/logo/chrome-line.svg");
+  mask-image: url("../../../icons/logo/chrome-line.svg");
+}
+
+.webfastoche-icon-edge-fill::before,
+.webfastoche-icon-edge-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/edge-fill.svg");
+  mask-image: url("../../../icons/logo/edge-fill.svg");
+}
+
+.webfastoche-icon-edge-line::before,
+.webfastoche-icon-edge-line::after {
+  -webkit-mask-image: url("../../../icons/logo/edge-line.svg");
+  mask-image: url("../../../icons/logo/edge-line.svg");
+}
+
+.webfastoche-icon-facebook-circle-fill::before,
+.webfastoche-icon-facebook-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+}
+
+.webfastoche-icon-facebook-circle-line::before,
+.webfastoche-icon-facebook-circle-line::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+}
+
+.webfastoche-icon-firefox-fill::before,
+.webfastoche-icon-firefox-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/firefox-fill.svg");
+  mask-image: url("../../../icons/logo/firefox-fill.svg");
+}
+
+.webfastoche-icon-firefox-line::before,
+.webfastoche-icon-firefox-line::after {
+  -webkit-mask-image: url("../../../icons/logo/firefox-line.svg");
+  mask-image: url("../../../icons/logo/firefox-line.svg");
+}
+
+.webfastoche-icon-dailymotion-fill::before,
+.webfastoche-icon-dailymotion-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  mask-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+}
+
+.webfastoche-icon-dailymotion-line::before,
+.webfastoche-icon-dailymotion-line::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  mask-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+}
+
+.webfastoche-icon-tiktok-fill::before,
+.webfastoche-icon-tiktok-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--tiktok-fill.svg");
+  mask-image: url("../../../icons/logo/fr--tiktok-fill.svg");
+}
+
+.webfastoche-icon-tiktok-line::before,
+.webfastoche-icon-tiktok-line::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--tiktok-line.svg");
+  mask-image: url("../../../icons/logo/fr--tiktok-line.svg");
+}
+
+.webfastoche-icon-github-fill::before,
+.webfastoche-icon-github-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/github-fill.svg");
+  mask-image: url("../../../icons/logo/github-fill.svg");
+}
+
+.webfastoche-icon-github-line::before,
+.webfastoche-icon-github-line::after {
+  -webkit-mask-image: url("../../../icons/logo/github-line.svg");
+  mask-image: url("../../../icons/logo/github-line.svg");
+}
+
+.webfastoche-icon-google-fill::before,
+.webfastoche-icon-google-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/google-fill.svg");
+  mask-image: url("../../../icons/logo/google-fill.svg");
+}
+
+.webfastoche-icon-google-line::before,
+.webfastoche-icon-google-line::after {
+  -webkit-mask-image: url("../../../icons/logo/google-line.svg");
+  mask-image: url("../../../icons/logo/google-line.svg");
+}
+
+.webfastoche-icon-ie-fill::before,
+.webfastoche-icon-ie-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/ie-fill.svg");
+  mask-image: url("../../../icons/logo/ie-fill.svg");
+}
+
+.webfastoche-icon-ie-line::before,
+.webfastoche-icon-ie-line::after {
+  -webkit-mask-image: url("../../../icons/logo/ie-line.svg");
+  mask-image: url("../../../icons/logo/ie-line.svg");
+}
+
+.webfastoche-icon-instagram-fill::before,
+.webfastoche-icon-instagram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-fill.svg");
+  mask-image: url("../../../icons/logo/instagram-fill.svg");
+}
+
+.webfastoche-icon-instagram-line::before,
+.webfastoche-icon-instagram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-line.svg");
+  mask-image: url("../../../icons/logo/instagram-line.svg");
+}
+
+.webfastoche-icon-linkedin-box-fill::before,
+.webfastoche-icon-linkedin-box-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+}
+
+.webfastoche-icon-linkedin-box-line::before,
+.webfastoche-icon-linkedin-box-line::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+}
+
+.webfastoche-icon-mastodon-fill::before,
+.webfastoche-icon-mastodon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/mastodon-fill.svg");
+  mask-image: url("../../../icons/logo/mastodon-fill.svg");
+}
+
+.webfastoche-icon-mastodon-line::before,
+.webfastoche-icon-mastodon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/mastodon-line.svg");
+  mask-image: url("../../../icons/logo/mastodon-line.svg");
+}
+
+.webfastoche-icon-npmjs-fill::before,
+.webfastoche-icon-npmjs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-fill.svg");
+  mask-image: url("../../../icons/logo/npmjs-fill.svg");
+}
+
+.webfastoche-icon-npmjs-line::before,
+.webfastoche-icon-npmjs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-line.svg");
+  mask-image: url("../../../icons/logo/npmjs-line.svg");
+}
+
+.webfastoche-icon-remixicon-fill::before,
+.webfastoche-icon-remixicon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-fill.svg");
+  mask-image: url("../../../icons/logo/remixicon-fill.svg");
+}
+
+.webfastoche-icon-remixicon-line::before,
+.webfastoche-icon-remixicon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-line.svg");
+  mask-image: url("../../../icons/logo/remixicon-line.svg");
+}
+
+.webfastoche-icon-safari-fill::before,
+.webfastoche-icon-safari-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/safari-fill.svg");
+  mask-image: url("../../../icons/logo/safari-fill.svg");
+}
+
+.webfastoche-icon-safari-line::before,
+.webfastoche-icon-safari-line::after {
+  -webkit-mask-image: url("../../../icons/logo/safari-line.svg");
+  mask-image: url("../../../icons/logo/safari-line.svg");
+}
+
+.webfastoche-icon-slack-fill::before,
+.webfastoche-icon-slack-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-fill.svg");
+  mask-image: url("../../../icons/logo/slack-fill.svg");
+}
+
+.webfastoche-icon-slack-line::before,
+.webfastoche-icon-slack-line::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-line.svg");
+  mask-image: url("../../../icons/logo/slack-line.svg");
+}
+
+.webfastoche-icon-snapchat-fill::before,
+.webfastoche-icon-snapchat-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-fill.svg");
+  mask-image: url("../../../icons/logo/snapchat-fill.svg");
+}
+
+.webfastoche-icon-snapchat-line::before,
+.webfastoche-icon-snapchat-line::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-line.svg");
+  mask-image: url("../../../icons/logo/snapchat-line.svg");
+}
+
+.webfastoche-icon-telegram-fill::before,
+.webfastoche-icon-telegram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-fill.svg");
+  mask-image: url("../../../icons/logo/telegram-fill.svg");
+}
+
+.webfastoche-icon-telegram-line::before,
+.webfastoche-icon-telegram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-line.svg");
+  mask-image: url("../../../icons/logo/telegram-line.svg");
+}
+
+.webfastoche-icon-threads-fill::before,
+.webfastoche-icon-threads-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/threads-fill.svg");
+  mask-image: url("../../../icons/logo/threads-fill.svg");
+}
+
+.webfastoche-icon-threads-line::before,
+.webfastoche-icon-threads-line::after {
+  -webkit-mask-image: url("../../../icons/logo/threads-line.svg");
+  mask-image: url("../../../icons/logo/threads-line.svg");
+}
+
+.webfastoche-icon-twitch-fill::before,
+.webfastoche-icon-twitch-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-fill.svg");
+  mask-image: url("../../../icons/logo/twitch-fill.svg");
+}
+
+.webfastoche-icon-twitch-line::before,
+.webfastoche-icon-twitch-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-line.svg");
+  mask-image: url("../../../icons/logo/twitch-line.svg");
+}
+
+.webfastoche-icon-twitter-fill::before,
+.webfastoche-icon-twitter-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-fill.svg");
+}
+
+.webfastoche-icon-twitter-line::before,
+.webfastoche-icon-twitter-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-line.svg");
+  mask-image: url("../../../icons/logo/twitter-line.svg");
+}
+
+.webfastoche-icon-twitter-x-fill::before,
+.webfastoche-icon-twitter-x-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-x-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-x-fill.svg");
+}
+
+.webfastoche-icon-twitter-x-line::before,
+.webfastoche-icon-twitter-x-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-x-line.svg");
+  mask-image: url("../../../icons/logo/twitter-x-line.svg");
+}
+
+.webfastoche-icon-vimeo-fill::before,
+.webfastoche-icon-vimeo-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-fill.svg");
+  mask-image: url("../../../icons/logo/vimeo-fill.svg");
+}
+
+.webfastoche-icon-vimeo-line::before,
+.webfastoche-icon-vimeo-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-line.svg");
+  mask-image: url("../../../icons/logo/vimeo-line.svg");
+}
+
+.webfastoche-icon-vuejs-fill::before,
+.webfastoche-icon-vuejs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vuejs-fill.svg");
+  mask-image: url("../../../icons/logo/vuejs-fill.svg");
+}
+
+.webfastoche-icon-vuejs-line::before,
+.webfastoche-icon-vuejs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vuejs-line.svg");
+  mask-image: url("../../../icons/logo/vuejs-line.svg");
+}
+
+.webfastoche-icon-youtube-fill::before,
+.webfastoche-icon-youtube-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-fill.svg");
+  mask-image: url("../../../icons/logo/youtube-fill.svg");
+}
+
+.webfastoche-icon-youtube-line::before,
+.webfastoche-icon-youtube-line::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-line.svg");
+  mask-image: url("../../../icons/logo/youtube-line.svg");
+}
+
+.webfastoche-fi-facebook-circle-fill::before,
+.webfastoche-fi-facebook-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+}
+
+.webfastoche-fi-facebook-circle-line::before,
+.webfastoche-fi-facebook-circle-line::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+}
+
+.webfastoche-fi-dailymotion-fill::before,
+.webfastoche-fi-dailymotion-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  mask-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+}
+
+.webfastoche-fi-dailymotion-line::before,
+.webfastoche-fi-dailymotion-line::after {
+  -webkit-mask-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  mask-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+}
+
+.webfastoche-fi-github-fill::before,
+.webfastoche-fi-github-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/github-fill.svg");
+  mask-image: url("../../../icons/logo/github-fill.svg");
+}
+
+.webfastoche-fi-github-line::before,
+.webfastoche-fi-github-line::after {
+  -webkit-mask-image: url("../../../icons/logo/github-line.svg");
+  mask-image: url("../../../icons/logo/github-line.svg");
+}
+
+.webfastoche-fi-instagram-fill::before,
+.webfastoche-fi-instagram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-fill.svg");
+  mask-image: url("../../../icons/logo/instagram-fill.svg");
+}
+
+.webfastoche-fi-instagram-line::before,
+.webfastoche-fi-instagram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-line.svg");
+  mask-image: url("../../../icons/logo/instagram-line.svg");
+}
+
+.webfastoche-fi-linkedin-box-fill::before,
+.webfastoche-fi-linkedin-box-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+}
+
+.webfastoche-fi-linkedin-box-line::before,
+.webfastoche-fi-linkedin-box-line::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+}
+
+.webfastoche-fi-npmjs-fill::before,
+.webfastoche-fi-npmjs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-fill.svg");
+  mask-image: url("../../../icons/logo/npmjs-fill.svg");
+}
+
+.webfastoche-fi-npmjs-line::before,
+.webfastoche-fi-npmjs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-line.svg");
+  mask-image: url("../../../icons/logo/npmjs-line.svg");
+}
+
+.webfastoche-fi-remixicon-fill::before,
+.webfastoche-fi-remixicon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-fill.svg");
+  mask-image: url("../../../icons/logo/remixicon-fill.svg");
+}
+
+.webfastoche-fi-remixicon-line::before,
+.webfastoche-fi-remixicon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-line.svg");
+  mask-image: url("../../../icons/logo/remixicon-line.svg");
+}
+
+.webfastoche-fi-slack-fill::before,
+.webfastoche-fi-slack-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-fill.svg");
+  mask-image: url("../../../icons/logo/slack-fill.svg");
+}
+
+.webfastoche-fi-slack-line::before,
+.webfastoche-fi-slack-line::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-line.svg");
+  mask-image: url("../../../icons/logo/slack-line.svg");
+}
+
+.webfastoche-fi-snapchat-fill::before,
+.webfastoche-fi-snapchat-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-fill.svg");
+  mask-image: url("../../../icons/logo/snapchat-fill.svg");
+}
+
+.webfastoche-fi-snapchat-line::before,
+.webfastoche-fi-snapchat-line::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-line.svg");
+  mask-image: url("../../../icons/logo/snapchat-line.svg");
+}
+
+.webfastoche-fi-telegram-fill::before,
+.webfastoche-fi-telegram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-fill.svg");
+  mask-image: url("../../../icons/logo/telegram-fill.svg");
+}
+
+.webfastoche-fi-telegram-line::before,
+.webfastoche-fi-telegram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-line.svg");
+  mask-image: url("../../../icons/logo/telegram-line.svg");
+}
+
+.webfastoche-fi-twitch-fill::before,
+.webfastoche-fi-twitch-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-fill.svg");
+  mask-image: url("../../../icons/logo/twitch-fill.svg");
+}
+
+.webfastoche-fi-twitch-line::before,
+.webfastoche-fi-twitch-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-line.svg");
+  mask-image: url("../../../icons/logo/twitch-line.svg");
+}
+
+.webfastoche-fi-twitter-fill::before,
+.webfastoche-fi-twitter-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-fill.svg");
+}
+
+.webfastoche-fi-twitter-line::before,
+.webfastoche-fi-twitter-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-line.svg");
+  mask-image: url("../../../icons/logo/twitter-line.svg");
+}
+
+.webfastoche-fi-vimeo-fill::before,
+.webfastoche-fi-vimeo-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-fill.svg");
+  mask-image: url("../../../icons/logo/vimeo-fill.svg");
+}
+
+.webfastoche-fi-vimeo-line::before,
+.webfastoche-fi-vimeo-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-line.svg");
+  mask-image: url("../../../icons/logo/vimeo-line.svg");
+}
+
+.webfastoche-fi-youtube-fill::before,
+.webfastoche-fi-youtube-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-fill.svg");
+  mask-image: url("../../../icons/logo/youtube-fill.svg");
+}
+
+.webfastoche-fi-youtube-line::before,
+.webfastoche-fi-youtube-line::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-line.svg");
+  mask-image: url("../../../icons/logo/youtube-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-icon-chrome-fill::before,
+  .webfastoche-icon-chrome-fill::after {
+    background-image: url("../../../icons/logo/chrome-fill.svg");
+  }
+
+  .webfastoche-icon-chrome-line::before,
+  .webfastoche-icon-chrome-line::after {
+    background-image: url("../../../icons/logo/chrome-line.svg");
+  }
+
+  .webfastoche-icon-edge-fill::before,
+  .webfastoche-icon-edge-fill::after {
+    background-image: url("../../../icons/logo/edge-fill.svg");
+  }
+
+  .webfastoche-icon-edge-line::before,
+  .webfastoche-icon-edge-line::after {
+    background-image: url("../../../icons/logo/edge-line.svg");
+  }
+
+  .webfastoche-icon-facebook-circle-fill::before,
+  .webfastoche-icon-facebook-circle-fill::after {
+    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .webfastoche-icon-facebook-circle-line::before,
+  .webfastoche-icon-facebook-circle-line::after {
+    background-image: url("../../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .webfastoche-icon-firefox-fill::before,
+  .webfastoche-icon-firefox-fill::after {
+    background-image: url("../../../icons/logo/firefox-fill.svg");
+  }
+
+  .webfastoche-icon-firefox-line::before,
+  .webfastoche-icon-firefox-line::after {
+    background-image: url("../../../icons/logo/firefox-line.svg");
+  }
+
+  .webfastoche-icon-dailymotion-fill::before,
+  .webfastoche-icon-dailymotion-fill::after {
+    background-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  }
+
+  .webfastoche-icon-dailymotion-line::before,
+  .webfastoche-icon-dailymotion-line::after {
+    background-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  }
+
+  .webfastoche-icon-tiktok-fill::before,
+  .webfastoche-icon-tiktok-fill::after {
+    background-image: url("../../../icons/logo/fr--tiktok-fill.svg");
+  }
+
+  .webfastoche-icon-tiktok-line::before,
+  .webfastoche-icon-tiktok-line::after {
+    background-image: url("../../../icons/logo/fr--tiktok-line.svg");
+  }
+
+  .webfastoche-icon-github-fill::before,
+  .webfastoche-icon-github-fill::after {
+    background-image: url("../../../icons/logo/github-fill.svg");
+  }
+
+  .webfastoche-icon-github-line::before,
+  .webfastoche-icon-github-line::after {
+    background-image: url("../../../icons/logo/github-line.svg");
+  }
+
+  .webfastoche-icon-google-fill::before,
+  .webfastoche-icon-google-fill::after {
+    background-image: url("../../../icons/logo/google-fill.svg");
+  }
+
+  .webfastoche-icon-google-line::before,
+  .webfastoche-icon-google-line::after {
+    background-image: url("../../../icons/logo/google-line.svg");
+  }
+
+  .webfastoche-icon-ie-fill::before,
+  .webfastoche-icon-ie-fill::after {
+    background-image: url("../../../icons/logo/ie-fill.svg");
+  }
+
+  .webfastoche-icon-ie-line::before,
+  .webfastoche-icon-ie-line::after {
+    background-image: url("../../../icons/logo/ie-line.svg");
+  }
+
+  .webfastoche-icon-instagram-fill::before,
+  .webfastoche-icon-instagram-fill::after {
+    background-image: url("../../../icons/logo/instagram-fill.svg");
+  }
+
+  .webfastoche-icon-instagram-line::before,
+  .webfastoche-icon-instagram-line::after {
+    background-image: url("../../../icons/logo/instagram-line.svg");
+  }
+
+  .webfastoche-icon-linkedin-box-fill::before,
+  .webfastoche-icon-linkedin-box-fill::after {
+    background-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .webfastoche-icon-linkedin-box-line::before,
+  .webfastoche-icon-linkedin-box-line::after {
+    background-image: url("../../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .webfastoche-icon-mastodon-fill::before,
+  .webfastoche-icon-mastodon-fill::after {
+    background-image: url("../../../icons/logo/mastodon-fill.svg");
+  }
+
+  .webfastoche-icon-mastodon-line::before,
+  .webfastoche-icon-mastodon-line::after {
+    background-image: url("../../../icons/logo/mastodon-line.svg");
+  }
+
+  .webfastoche-icon-npmjs-fill::before,
+  .webfastoche-icon-npmjs-fill::after {
+    background-image: url("../../../icons/logo/npmjs-fill.svg");
+  }
+
+  .webfastoche-icon-npmjs-line::before,
+  .webfastoche-icon-npmjs-line::after {
+    background-image: url("../../../icons/logo/npmjs-line.svg");
+  }
+
+  .webfastoche-icon-remixicon-fill::before,
+  .webfastoche-icon-remixicon-fill::after {
+    background-image: url("../../../icons/logo/remixicon-fill.svg");
+  }
+
+  .webfastoche-icon-remixicon-line::before,
+  .webfastoche-icon-remixicon-line::after {
+    background-image: url("../../../icons/logo/remixicon-line.svg");
+  }
+
+  .webfastoche-icon-safari-fill::before,
+  .webfastoche-icon-safari-fill::after {
+    background-image: url("../../../icons/logo/safari-fill.svg");
+  }
+
+  .webfastoche-icon-safari-line::before,
+  .webfastoche-icon-safari-line::after {
+    background-image: url("../../../icons/logo/safari-line.svg");
+  }
+
+  .webfastoche-icon-slack-fill::before,
+  .webfastoche-icon-slack-fill::after {
+    background-image: url("../../../icons/logo/slack-fill.svg");
+  }
+
+  .webfastoche-icon-slack-line::before,
+  .webfastoche-icon-slack-line::after {
+    background-image: url("../../../icons/logo/slack-line.svg");
+  }
+
+  .webfastoche-icon-snapchat-fill::before,
+  .webfastoche-icon-snapchat-fill::after {
+    background-image: url("../../../icons/logo/snapchat-fill.svg");
+  }
+
+  .webfastoche-icon-snapchat-line::before,
+  .webfastoche-icon-snapchat-line::after {
+    background-image: url("../../../icons/logo/snapchat-line.svg");
+  }
+
+  .webfastoche-icon-telegram-fill::before,
+  .webfastoche-icon-telegram-fill::after {
+    background-image: url("../../../icons/logo/telegram-fill.svg");
+  }
+
+  .webfastoche-icon-telegram-line::before,
+  .webfastoche-icon-telegram-line::after {
+    background-image: url("../../../icons/logo/telegram-line.svg");
+  }
+
+  .webfastoche-icon-threads-fill::before,
+  .webfastoche-icon-threads-fill::after {
+    background-image: url("../../../icons/logo/threads-fill.svg");
+  }
+
+  .webfastoche-icon-threads-line::before,
+  .webfastoche-icon-threads-line::after {
+    background-image: url("../../../icons/logo/threads-line.svg");
+  }
+
+  .webfastoche-icon-twitch-fill::before,
+  .webfastoche-icon-twitch-fill::after {
+    background-image: url("../../../icons/logo/twitch-fill.svg");
+  }
+
+  .webfastoche-icon-twitch-line::before,
+  .webfastoche-icon-twitch-line::after {
+    background-image: url("../../../icons/logo/twitch-line.svg");
+  }
+
+  .webfastoche-icon-twitter-fill::before,
+  .webfastoche-icon-twitter-fill::after {
+    background-image: url("../../../icons/logo/twitter-fill.svg");
+  }
+
+  .webfastoche-icon-twitter-line::before,
+  .webfastoche-icon-twitter-line::after {
+    background-image: url("../../../icons/logo/twitter-line.svg");
+  }
+
+  .webfastoche-icon-twitter-x-fill::before,
+  .webfastoche-icon-twitter-x-fill::after {
+    background-image: url("../../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .webfastoche-icon-twitter-x-line::before,
+  .webfastoche-icon-twitter-x-line::after {
+    background-image: url("../../../icons/logo/twitter-x-line.svg");
+  }
+
+  .webfastoche-icon-vimeo-fill::before,
+  .webfastoche-icon-vimeo-fill::after {
+    background-image: url("../../../icons/logo/vimeo-fill.svg");
+  }
+
+  .webfastoche-icon-vimeo-line::before,
+  .webfastoche-icon-vimeo-line::after {
+    background-image: url("../../../icons/logo/vimeo-line.svg");
+  }
+
+  .webfastoche-icon-vuejs-fill::before,
+  .webfastoche-icon-vuejs-fill::after {
+    background-image: url("../../../icons/logo/vuejs-fill.svg");
+  }
+
+  .webfastoche-icon-vuejs-line::before,
+  .webfastoche-icon-vuejs-line::after {
+    background-image: url("../../../icons/logo/vuejs-line.svg");
+  }
+
+  .webfastoche-icon-youtube-fill::before,
+  .webfastoche-icon-youtube-fill::after {
+    background-image: url("../../../icons/logo/youtube-fill.svg");
+  }
+
+  .webfastoche-icon-youtube-line::before,
+  .webfastoche-icon-youtube-line::after {
+    background-image: url("../../../icons/logo/youtube-line.svg");
+  }
+
+  .webfastoche-fi-facebook-circle-fill::before {
+    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .webfastoche-fi-facebook-circle-line::before {
+    background-image: url("../../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .webfastoche-fi-dailymotion-fill::before {
+    background-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  }
+
+  .webfastoche-fi-dailymotion-line::before {
+    background-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  }
+
+  .webfastoche-fi-github-fill::before {
+    background-image: url("../../../icons/logo/github-fill.svg");
+  }
+
+  .webfastoche-fi-github-line::before {
+    background-image: url("../../../icons/logo/github-line.svg");
+  }
+
+  .webfastoche-fi-instagram-fill::before {
+    background-image: url("../../../icons/logo/instagram-fill.svg");
+  }
+
+  .webfastoche-fi-instagram-line::before {
+    background-image: url("../../../icons/logo/instagram-line.svg");
+  }
+
+  .webfastoche-fi-linkedin-box-fill::before {
+    background-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .webfastoche-fi-linkedin-box-line::before {
+    background-image: url("../../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .webfastoche-fi-npmjs-fill::before {
+    background-image: url("../../../icons/logo/npmjs-fill.svg");
+  }
+
+  .webfastoche-fi-npmjs-line::before {
+    background-image: url("../../../icons/logo/npmjs-line.svg");
+  }
+
+  .webfastoche-fi-remixicon-fill::before {
+    background-image: url("../../../icons/logo/remixicon-fill.svg");
+  }
+
+  .webfastoche-fi-remixicon-line::before {
+    background-image: url("../../../icons/logo/remixicon-line.svg");
+  }
+
+  .webfastoche-fi-slack-fill::before {
+    background-image: url("../../../icons/logo/slack-fill.svg");
+  }
+
+  .webfastoche-fi-slack-line::before {
+    background-image: url("../../../icons/logo/slack-line.svg");
+  }
+
+  .webfastoche-fi-snapchat-fill::before {
+    background-image: url("../../../icons/logo/snapchat-fill.svg");
+  }
+
+  .webfastoche-fi-snapchat-line::before {
+    background-image: url("../../../icons/logo/snapchat-line.svg");
+  }
+
+  .webfastoche-fi-telegram-fill::before {
+    background-image: url("../../../icons/logo/telegram-fill.svg");
+  }
+
+  .webfastoche-fi-telegram-line::before {
+    background-image: url("../../../icons/logo/telegram-line.svg");
+  }
+
+  .webfastoche-fi-twitch-fill::before {
+    background-image: url("../../../icons/logo/twitch-fill.svg");
+  }
+
+  .webfastoche-fi-twitch-line::before {
+    background-image: url("../../../icons/logo/twitch-line.svg");
+  }
+
+  .webfastoche-fi-twitter-fill::before {
+    background-image: url("../../../icons/logo/twitter-fill.svg");
+  }
+
+  .webfastoche-fi-twitter-line::before {
+    background-image: url("../../../icons/logo/twitter-line.svg");
+  }
+
+  .webfastoche-fi-vimeo-fill::before {
+    background-image: url("../../../icons/logo/vimeo-fill.svg");
+  }
+
+  .webfastoche-fi-vimeo-line::before {
+    background-image: url("../../../icons/logo/vimeo-line.svg");
+  }
+
+  .webfastoche-fi-youtube-fill::before {
+    background-image: url("../../../icons/logo/youtube-fill.svg");
+  }
+
+  .webfastoche-fi-youtube-line::before {
+    background-image: url("../../../icons/logo/youtube-line.svg");
+  }
+}

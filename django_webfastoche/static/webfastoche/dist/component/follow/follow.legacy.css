@@ -1,0 +1,261 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .webfastoche-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .webfastoche-follow .webfastoche-btn--dailymotion::before {
+    background-image: url("../../icons/logo/fr--dailymotion-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--github::before {
+    background-image: url("../../icons/logo/github-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--instagram::before {
+    background-image: url("../../icons/logo/instagram-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--snapchat::before {
+    background-image: url("../../icons/logo/snapchat-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--telegram::before {
+    background-image: url("../../icons/logo/telegram-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--threads::before {
+    background-image: url("../../icons/logo/threads-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--tiktok::before {
+    background-image: url("../../icons/logo/fr--tiktok-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--twitch::before {
+    background-image: url("../../icons/logo/twitch-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--vimeo::before {
+    background-image: url("../../icons/logo/vimeo-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btn--youtube::before {
+    background-image: url("../../icons/logo/youtube-fill.svg");
+  }
+
+  .webfastoche-follow .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+  .webfastoche-follow .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+  .webfastoche-follow .webfastoche-btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .webfastoche-follow .webfastoche-link--facebook::before,
+  .webfastoche-follow .webfastoche-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-link--twitter::before,
+  .webfastoche-follow .webfastoche-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-link--instagram::before,
+  .webfastoche-follow .webfastoche-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-link--linkedin::before,
+  .webfastoche-follow .webfastoche-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-link--youtube::before,
+  .webfastoche-follow .webfastoche-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-links-group:not(.webfastoche-links-group--sm):not(.webfastoche-links-group--lg) .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+  .webfastoche-follow .webfastoche-links-group:not(.webfastoche-links-group--sm):not(.webfastoche-links-group--lg) .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-follow .webfastoche-links-group--lg .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+  .webfastoche-follow .webfastoche-links-group--lg .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .webfastoche-follow {
+    background-color: hsl(122, 80%, 98%);
+  }
+
+  .webfastoche-follow .webfastoche-input {
+    background-color: #fff;
+  }
+
+  .webfastoche-follow__title {
+    color: #161616;
+  }
+
+  .webfastoche-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .webfastoche-follow__social .webfastoche-btn {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-follow__social .webfastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-follow__social .webfastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-follow__social .webfastoche-btn:disabled,
+  .webfastoche-follow__social a.webfastoche-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .webfastoche-follow__social .webfastoche-btn:disabled:hover,
+  .webfastoche-follow__social a.webfastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-follow__social .webfastoche-btn:disabled:active,
+  .webfastoche-follow__social a.webfastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-follow .webfastoche-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(122, 85%, 25%);
+  }
+
+  .webfastoche-follow__social .webfastoche-link {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-follow__social .webfastoche-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-follow__social .webfastoche-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-follow__social .webfastoche-link:disabled,
+  .webfastoche-follow__social a.webfastoche-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .webfastoche-follow__social .webfastoche-link:disabled:hover,
+  .webfastoche-follow__social a.webfastoche-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-follow__social .webfastoche-link:disabled:active,
+  .webfastoche-follow__social a.webfastoche-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .webfastoche-follow .webfastoche-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(122, 85%, 25%);
+  }
+}

@@ -1,0 +1,5130 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.webfastoche-background-default--grey {
+  background-color: var(--background-default-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-default-grey-hover) !important;
+  --active: var(--background-default-grey-active) !important;
+}
+
+.webfastoche-background-alt--grey {
+  background-color: var(--background-alt-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover) !important;
+  --active: var(--background-alt-grey-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-primary {
+  background-color: var(--background-alt-webfastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-primary-hover) !important;
+  --active: var(--background-alt-webfastoche-primary-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-secondary {
+  background-color: var(--background-alt-webfastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-secondary-hover) !important;
+  --active: var(--background-alt-webfastoche-secondary-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color3 {
+  background-color: var(--background-alt-webfastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color3-hover) !important;
+  --active: var(--background-alt-webfastoche-color3-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color4 {
+  background-color: var(--background-alt-webfastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color4-hover) !important;
+  --active: var(--background-alt-webfastoche-color4-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color5 {
+  background-color: var(--background-alt-webfastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color5-hover) !important;
+  --active: var(--background-alt-webfastoche-color5-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color6 {
+  background-color: var(--background-alt-webfastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color6-hover) !important;
+  --active: var(--background-alt-webfastoche-color6-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color7 {
+  background-color: var(--background-alt-webfastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color7-hover) !important;
+  --active: var(--background-alt-webfastoche-color7-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color8 {
+  background-color: var(--background-alt-webfastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color8-hover) !important;
+  --active: var(--background-alt-webfastoche-color8-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color9 {
+  background-color: var(--background-alt-webfastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color9-hover) !important;
+  --active: var(--background-alt-webfastoche-color9-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color10 {
+  background-color: var(--background-alt-webfastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color10-hover) !important;
+  --active: var(--background-alt-webfastoche-color10-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color11 {
+  background-color: var(--background-alt-webfastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color11-hover) !important;
+  --active: var(--background-alt-webfastoche-color11-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color12 {
+  background-color: var(--background-alt-webfastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color12-hover) !important;
+  --active: var(--background-alt-webfastoche-color12-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color13 {
+  background-color: var(--background-alt-webfastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color13-hover) !important;
+  --active: var(--background-alt-webfastoche-color13-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color14 {
+  background-color: var(--background-alt-webfastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color14-hover) !important;
+  --active: var(--background-alt-webfastoche-color14-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color15 {
+  background-color: var(--background-alt-webfastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color15-hover) !important;
+  --active: var(--background-alt-webfastoche-color15-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color16 {
+  background-color: var(--background-alt-webfastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color16-hover) !important;
+  --active: var(--background-alt-webfastoche-color16-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color17 {
+  background-color: var(--background-alt-webfastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color17-hover) !important;
+  --active: var(--background-alt-webfastoche-color17-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color18 {
+  background-color: var(--background-alt-webfastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color18-hover) !important;
+  --active: var(--background-alt-webfastoche-color18-active) !important;
+}
+
+.webfastoche-background-alt--webfastoche-color19 {
+  background-color: var(--background-alt-webfastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color19-hover) !important;
+  --active: var(--background-alt-webfastoche-color19-active) !important;
+}
+
+.webfastoche-background-contrast--grey {
+  background-color: var(--background-contrast-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover) !important;
+  --active: var(--background-contrast-grey-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-primary {
+  background-color: var(--background-contrast-webfastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-primary-hover) !important;
+  --active: var(--background-contrast-webfastoche-primary-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-secondary {
+  background-color: var(--background-contrast-webfastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-secondary-hover) !important;
+  --active: var(--background-contrast-webfastoche-secondary-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color3 {
+  background-color: var(--background-contrast-webfastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color3-hover) !important;
+  --active: var(--background-contrast-webfastoche-color3-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color4 {
+  background-color: var(--background-contrast-webfastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color4-hover) !important;
+  --active: var(--background-contrast-webfastoche-color4-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color5 {
+  background-color: var(--background-contrast-webfastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color5-hover) !important;
+  --active: var(--background-contrast-webfastoche-color5-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color6 {
+  background-color: var(--background-contrast-webfastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color6-hover) !important;
+  --active: var(--background-contrast-webfastoche-color6-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color7 {
+  background-color: var(--background-contrast-webfastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color7-hover) !important;
+  --active: var(--background-contrast-webfastoche-color7-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color8 {
+  background-color: var(--background-contrast-webfastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color8-hover) !important;
+  --active: var(--background-contrast-webfastoche-color8-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color9 {
+  background-color: var(--background-contrast-webfastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color9-hover) !important;
+  --active: var(--background-contrast-webfastoche-color9-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color10 {
+  background-color: var(--background-contrast-webfastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color10-hover) !important;
+  --active: var(--background-contrast-webfastoche-color10-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color11 {
+  background-color: var(--background-contrast-webfastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color11-hover) !important;
+  --active: var(--background-contrast-webfastoche-color11-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color12 {
+  background-color: var(--background-contrast-webfastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color12-hover) !important;
+  --active: var(--background-contrast-webfastoche-color12-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color13 {
+  background-color: var(--background-contrast-webfastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color13-hover) !important;
+  --active: var(--background-contrast-webfastoche-color13-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color14 {
+  background-color: var(--background-contrast-webfastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color14-hover) !important;
+  --active: var(--background-contrast-webfastoche-color14-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color15 {
+  background-color: var(--background-contrast-webfastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color15-hover) !important;
+  --active: var(--background-contrast-webfastoche-color15-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color16 {
+  background-color: var(--background-contrast-webfastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color16-hover) !important;
+  --active: var(--background-contrast-webfastoche-color16-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color17 {
+  background-color: var(--background-contrast-webfastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color17-hover) !important;
+  --active: var(--background-contrast-webfastoche-color17-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color18 {
+  background-color: var(--background-contrast-webfastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color18-hover) !important;
+  --active: var(--background-contrast-webfastoche-color18-active) !important;
+}
+
+.webfastoche-background-contrast--webfastoche-color19 {
+  background-color: var(--background-contrast-webfastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color19-hover) !important;
+  --active: var(--background-contrast-webfastoche-color19-active) !important;
+}
+
+.webfastoche-background-contrast--info {
+  background-color: var(--background-contrast-info) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-info-hover) !important;
+  --active: var(--background-contrast-info-active) !important;
+}
+
+.webfastoche-background-contrast--success {
+  background-color: var(--background-contrast-success) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-success-hover) !important;
+  --active: var(--background-contrast-success-active) !important;
+}
+
+.webfastoche-background-contrast--warning {
+  background-color: var(--background-contrast-warning) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-warning-hover) !important;
+  --active: var(--background-contrast-warning-active) !important;
+}
+
+.webfastoche-background-contrast--error {
+  background-color: var(--background-contrast-error) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-error-hover) !important;
+  --active: var(--background-contrast-error-active) !important;
+}
+
+.webfastoche-background-flat--grey {
+  background-color: var(--background-flat-grey) !important;
+}
+
+.webfastoche-background-flat--webfastoche-primary {
+  background-color: var(--background-flat-webfastoche-primary) !important;
+}
+
+.webfastoche-background-flat--webfastoche-secondary {
+  background-color: var(--background-flat-webfastoche-secondary) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color3 {
+  background-color: var(--background-flat-webfastoche-color3) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color4 {
+  background-color: var(--background-flat-webfastoche-color4) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color5 {
+  background-color: var(--background-flat-webfastoche-color5) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color6 {
+  background-color: var(--background-flat-webfastoche-color6) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color7 {
+  background-color: var(--background-flat-webfastoche-color7) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color8 {
+  background-color: var(--background-flat-webfastoche-color8) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color9 {
+  background-color: var(--background-flat-webfastoche-color9) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color10 {
+  background-color: var(--background-flat-webfastoche-color10) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color11 {
+  background-color: var(--background-flat-webfastoche-color11) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color12 {
+  background-color: var(--background-flat-webfastoche-color12) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color13 {
+  background-color: var(--background-flat-webfastoche-color13) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color14 {
+  background-color: var(--background-flat-webfastoche-color14) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color15 {
+  background-color: var(--background-flat-webfastoche-color15) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color16 {
+  background-color: var(--background-flat-webfastoche-color16) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color17 {
+  background-color: var(--background-flat-webfastoche-color17) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color18 {
+  background-color: var(--background-flat-webfastoche-color18) !important;
+}
+
+.webfastoche-background-flat--webfastoche-color19 {
+  background-color: var(--background-flat-webfastoche-color19) !important;
+}
+
+.webfastoche-background-flat--info {
+  background-color: var(--background-flat-info) !important;
+}
+
+.webfastoche-background-flat--success {
+  background-color: var(--background-flat-success) !important;
+}
+
+.webfastoche-background-flat--warning {
+  background-color: var(--background-flat-warning) !important;
+}
+
+.webfastoche-background-flat--error {
+  background-color: var(--background-flat-error) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-primary {
+  background-color: var(--background-action-high-webfastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-primary-hover) !important;
+  --active: var(--background-action-high-webfastoche-primary-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-secondary {
+  background-color: var(--background-action-high-webfastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-secondary-hover) !important;
+  --active: var(--background-action-high-webfastoche-secondary-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color3 {
+  background-color: var(--background-action-high-webfastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color3-hover) !important;
+  --active: var(--background-action-high-webfastoche-color3-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color4 {
+  background-color: var(--background-action-high-webfastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color4-hover) !important;
+  --active: var(--background-action-high-webfastoche-color4-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color5 {
+  background-color: var(--background-action-high-webfastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color5-hover) !important;
+  --active: var(--background-action-high-webfastoche-color5-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color6 {
+  background-color: var(--background-action-high-webfastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color6-hover) !important;
+  --active: var(--background-action-high-webfastoche-color6-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color7 {
+  background-color: var(--background-action-high-webfastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color7-hover) !important;
+  --active: var(--background-action-high-webfastoche-color7-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color8 {
+  background-color: var(--background-action-high-webfastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color8-hover) !important;
+  --active: var(--background-action-high-webfastoche-color8-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color9 {
+  background-color: var(--background-action-high-webfastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color9-hover) !important;
+  --active: var(--background-action-high-webfastoche-color9-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color10 {
+  background-color: var(--background-action-high-webfastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color10-hover) !important;
+  --active: var(--background-action-high-webfastoche-color10-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color11 {
+  background-color: var(--background-action-high-webfastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color11-hover) !important;
+  --active: var(--background-action-high-webfastoche-color11-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color12 {
+  background-color: var(--background-action-high-webfastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color12-hover) !important;
+  --active: var(--background-action-high-webfastoche-color12-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color13 {
+  background-color: var(--background-action-high-webfastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color13-hover) !important;
+  --active: var(--background-action-high-webfastoche-color13-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color14 {
+  background-color: var(--background-action-high-webfastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color14-hover) !important;
+  --active: var(--background-action-high-webfastoche-color14-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color15 {
+  background-color: var(--background-action-high-webfastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color15-hover) !important;
+  --active: var(--background-action-high-webfastoche-color15-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color16 {
+  background-color: var(--background-action-high-webfastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color16-hover) !important;
+  --active: var(--background-action-high-webfastoche-color16-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color17 {
+  background-color: var(--background-action-high-webfastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color17-hover) !important;
+  --active: var(--background-action-high-webfastoche-color17-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color18 {
+  background-color: var(--background-action-high-webfastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color18-hover) !important;
+  --active: var(--background-action-high-webfastoche-color18-active) !important;
+}
+
+.webfastoche-background-action-high--webfastoche-color19 {
+  background-color: var(--background-action-high-webfastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-webfastoche-color19-hover) !important;
+  --active: var(--background-action-high-webfastoche-color19-active) !important;
+}
+
+.webfastoche-background-action-high--info {
+  background-color: var(--background-action-high-info) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-info-hover) !important;
+  --active: var(--background-action-high-info-active) !important;
+}
+
+.webfastoche-background-action-high--success {
+  background-color: var(--background-action-high-success) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-success-hover) !important;
+  --active: var(--background-action-high-success-active) !important;
+}
+
+.webfastoche-background-action-high--warning {
+  background-color: var(--background-action-high-warning) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-warning-hover) !important;
+  --active: var(--background-action-high-warning-active) !important;
+}
+
+.webfastoche-background-action-high--error {
+  background-color: var(--background-action-high-error) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-error-hover) !important;
+  --active: var(--background-action-high-error-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-primary {
+  background-color: var(--background-action-low-webfastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-primary-hover) !important;
+  --active: var(--background-action-low-webfastoche-primary-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-secondary {
+  background-color: var(--background-action-low-webfastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-secondary-hover) !important;
+  --active: var(--background-action-low-webfastoche-secondary-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color3 {
+  background-color: var(--background-action-low-webfastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color3-hover) !important;
+  --active: var(--background-action-low-webfastoche-color3-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color4 {
+  background-color: var(--background-action-low-webfastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color4-hover) !important;
+  --active: var(--background-action-low-webfastoche-color4-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color5 {
+  background-color: var(--background-action-low-webfastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color5-hover) !important;
+  --active: var(--background-action-low-webfastoche-color5-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color6 {
+  background-color: var(--background-action-low-webfastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color6-hover) !important;
+  --active: var(--background-action-low-webfastoche-color6-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color7 {
+  background-color: var(--background-action-low-webfastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color7-hover) !important;
+  --active: var(--background-action-low-webfastoche-color7-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color8 {
+  background-color: var(--background-action-low-webfastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color8-hover) !important;
+  --active: var(--background-action-low-webfastoche-color8-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color9 {
+  background-color: var(--background-action-low-webfastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color9-hover) !important;
+  --active: var(--background-action-low-webfastoche-color9-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color10 {
+  background-color: var(--background-action-low-webfastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color10-hover) !important;
+  --active: var(--background-action-low-webfastoche-color10-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color11 {
+  background-color: var(--background-action-low-webfastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color11-hover) !important;
+  --active: var(--background-action-low-webfastoche-color11-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color12 {
+  background-color: var(--background-action-low-webfastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color12-hover) !important;
+  --active: var(--background-action-low-webfastoche-color12-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color13 {
+  background-color: var(--background-action-low-webfastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color13-hover) !important;
+  --active: var(--background-action-low-webfastoche-color13-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color14 {
+  background-color: var(--background-action-low-webfastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color14-hover) !important;
+  --active: var(--background-action-low-webfastoche-color14-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color15 {
+  background-color: var(--background-action-low-webfastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color15-hover) !important;
+  --active: var(--background-action-low-webfastoche-color15-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color16 {
+  background-color: var(--background-action-low-webfastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color16-hover) !important;
+  --active: var(--background-action-low-webfastoche-color16-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color17 {
+  background-color: var(--background-action-low-webfastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color17-hover) !important;
+  --active: var(--background-action-low-webfastoche-color17-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color18 {
+  background-color: var(--background-action-low-webfastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color18-hover) !important;
+  --active: var(--background-action-low-webfastoche-color18-active) !important;
+}
+
+.webfastoche-background-action-low--webfastoche-color19 {
+  background-color: var(--background-action-low-webfastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-webfastoche-color19-hover) !important;
+  --active: var(--background-action-low-webfastoche-color19-active) !important;
+}
+
+.webfastoche-text-default--grey {
+  color: var(--text-default-grey) !important;
+}
+
+.webfastoche-text-default--info {
+  color: var(--text-default-info) !important;
+}
+
+.webfastoche-text-default--success {
+  color: var(--text-default-success) !important;
+}
+
+.webfastoche-text-default--warning {
+  color: var(--text-default-warning) !important;
+}
+
+.webfastoche-text-default--error {
+  color: var(--text-default-error) !important;
+}
+
+.webfastoche-text-title--grey {
+  color: var(--text-title-grey) !important;
+}
+
+.webfastoche-text-title--webfastoche-primary {
+  color: var(--text-title-webfastoche-primary) !important;
+}
+
+.webfastoche-text-title--webfastoche-secondary {
+  color: var(--text-title-webfastoche-secondary) !important;
+}
+
+.webfastoche-text-label--grey {
+  color: var(--text-label-grey) !important;
+}
+
+.webfastoche-text-label--webfastoche-primary {
+  color: var(--text-label-webfastoche-primary) !important;
+}
+
+.webfastoche-text-label--webfastoche-secondary {
+  color: var(--text-label-webfastoche-secondary) !important;
+}
+
+.webfastoche-text-label--webfastoche-color3 {
+  color: var(--text-label-webfastoche-color3) !important;
+}
+
+.webfastoche-text-label--webfastoche-color4 {
+  color: var(--text-label-webfastoche-color4) !important;
+}
+
+.webfastoche-text-label--webfastoche-color5 {
+  color: var(--text-label-webfastoche-color5) !important;
+}
+
+.webfastoche-text-label--webfastoche-color6 {
+  color: var(--text-label-webfastoche-color6) !important;
+}
+
+.webfastoche-text-label--webfastoche-color7 {
+  color: var(--text-label-webfastoche-color7) !important;
+}
+
+.webfastoche-text-label--webfastoche-color8 {
+  color: var(--text-label-webfastoche-color8) !important;
+}
+
+.webfastoche-text-label--webfastoche-color9 {
+  color: var(--text-label-webfastoche-color9) !important;
+}
+
+.webfastoche-text-label--webfastoche-color10 {
+  color: var(--text-label-webfastoche-color10) !important;
+}
+
+.webfastoche-text-label--webfastoche-color11 {
+  color: var(--text-label-webfastoche-color11) !important;
+}
+
+.webfastoche-text-label--webfastoche-color12 {
+  color: var(--text-label-webfastoche-color12) !important;
+}
+
+.webfastoche-text-label--webfastoche-color13 {
+  color: var(--text-label-webfastoche-color13) !important;
+}
+
+.webfastoche-text-label--webfastoche-color14 {
+  color: var(--text-label-webfastoche-color14) !important;
+}
+
+.webfastoche-text-label--webfastoche-color15 {
+  color: var(--text-label-webfastoche-color15) !important;
+}
+
+.webfastoche-text-label--webfastoche-color16 {
+  color: var(--text-label-webfastoche-color16) !important;
+}
+
+.webfastoche-text-label--webfastoche-color17 {
+  color: var(--text-label-webfastoche-color17) !important;
+}
+
+.webfastoche-text-label--webfastoche-color18 {
+  color: var(--text-label-webfastoche-color18) !important;
+}
+
+.webfastoche-text-label--webfastoche-color19 {
+  color: var(--text-label-webfastoche-color19) !important;
+}
+
+.webfastoche-text-mention--grey {
+  color: var(--text-mention-grey) !important;
+}
+
+.webfastoche-text-inverted--grey {
+  color: var(--text-inverted-grey) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-primary {
+  color: var(--text-inverted-webfastoche-primary) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-secondary {
+  color: var(--text-inverted-webfastoche-secondary) !important;
+}
+
+.webfastoche-text-inverted--info {
+  color: var(--text-inverted-info) !important;
+}
+
+.webfastoche-text-inverted--success {
+  color: var(--text-inverted-success) !important;
+}
+
+.webfastoche-text-inverted--warning {
+  color: var(--text-inverted-warning) !important;
+}
+
+.webfastoche-text-inverted--error {
+  color: var(--text-inverted-error) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color3 {
+  color: var(--text-inverted-webfastoche-color3) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color4 {
+  color: var(--text-inverted-webfastoche-color4) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color5 {
+  color: var(--text-inverted-webfastoche-color5) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color6 {
+  color: var(--text-inverted-webfastoche-color6) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color7 {
+  color: var(--text-inverted-webfastoche-color7) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color8 {
+  color: var(--text-inverted-webfastoche-color8) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color9 {
+  color: var(--text-inverted-webfastoche-color9) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color10 {
+  color: var(--text-inverted-webfastoche-color10) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color11 {
+  color: var(--text-inverted-webfastoche-color11) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color12 {
+  color: var(--text-inverted-webfastoche-color12) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color13 {
+  color: var(--text-inverted-webfastoche-color13) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color14 {
+  color: var(--text-inverted-webfastoche-color14) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color15 {
+  color: var(--text-inverted-webfastoche-color15) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color16 {
+  color: var(--text-inverted-webfastoche-color16) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color17 {
+  color: var(--text-inverted-webfastoche-color17) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color18 {
+  color: var(--text-inverted-webfastoche-color18) !important;
+}
+
+.webfastoche-text-inverted--webfastoche-color19 {
+  color: var(--text-inverted-webfastoche-color19) !important;
+}
+
+.webfastoche-text-action-high--grey {
+  color: var(--text-action-high-grey) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-primary {
+  color: var(--text-action-high-webfastoche-primary) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-secondary {
+  color: var(--text-action-high-webfastoche-secondary) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color3 {
+  color: var(--text-action-high-webfastoche-color3) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color4 {
+  color: var(--text-action-high-webfastoche-color4) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color5 {
+  color: var(--text-action-high-webfastoche-color5) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color6 {
+  color: var(--text-action-high-webfastoche-color6) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color7 {
+  color: var(--text-action-high-webfastoche-color7) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color8 {
+  color: var(--text-action-high-webfastoche-color8) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color9 {
+  color: var(--text-action-high-webfastoche-color9) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color10 {
+  color: var(--text-action-high-webfastoche-color10) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color11 {
+  color: var(--text-action-high-webfastoche-color11) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color12 {
+  color: var(--text-action-high-webfastoche-color12) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color13 {
+  color: var(--text-action-high-webfastoche-color13) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color14 {
+  color: var(--text-action-high-webfastoche-color14) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color15 {
+  color: var(--text-action-high-webfastoche-color15) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color16 {
+  color: var(--text-action-high-webfastoche-color16) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color17 {
+  color: var(--text-action-high-webfastoche-color17) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color18 {
+  color: var(--text-action-high-webfastoche-color18) !important;
+}
+
+.webfastoche-text-action-high--webfastoche-color19 {
+  color: var(--text-action-high-webfastoche-color19) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-primary {
+  fill: var(--artwork-major-webfastoche-primary) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-secondary {
+  fill: var(--artwork-major-webfastoche-secondary) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color3 {
+  fill: var(--artwork-major-webfastoche-color3) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color4 {
+  fill: var(--artwork-major-webfastoche-color4) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color5 {
+  fill: var(--artwork-major-webfastoche-color5) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color6 {
+  fill: var(--artwork-major-webfastoche-color6) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color7 {
+  fill: var(--artwork-major-webfastoche-color7) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color8 {
+  fill: var(--artwork-major-webfastoche-color8) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color9 {
+  fill: var(--artwork-major-webfastoche-color9) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color10 {
+  fill: var(--artwork-major-webfastoche-color10) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color11 {
+  fill: var(--artwork-major-webfastoche-color11) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color12 {
+  fill: var(--artwork-major-webfastoche-color12) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color13 {
+  fill: var(--artwork-major-webfastoche-color13) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color14 {
+  fill: var(--artwork-major-webfastoche-color14) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color15 {
+  fill: var(--artwork-major-webfastoche-color15) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color16 {
+  fill: var(--artwork-major-webfastoche-color16) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color17 {
+  fill: var(--artwork-major-webfastoche-color17) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color18 {
+  fill: var(--artwork-major-webfastoche-color18) !important;
+}
+
+.webfastoche-artwork-major--webfastoche-color19 {
+  fill: var(--artwork-major-webfastoche-color19) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-primary {
+  fill: var(--artwork-minor-webfastoche-primary) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-secondary {
+  fill: var(--artwork-minor-webfastoche-secondary) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color3 {
+  fill: var(--artwork-minor-webfastoche-color3) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color4 {
+  fill: var(--artwork-minor-webfastoche-color4) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color5 {
+  fill: var(--artwork-minor-webfastoche-color5) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color6 {
+  fill: var(--artwork-minor-webfastoche-color6) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color7 {
+  fill: var(--artwork-minor-webfastoche-color7) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color8 {
+  fill: var(--artwork-minor-webfastoche-color8) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color9 {
+  fill: var(--artwork-minor-webfastoche-color9) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color10 {
+  fill: var(--artwork-minor-webfastoche-color10) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color11 {
+  fill: var(--artwork-minor-webfastoche-color11) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color12 {
+  fill: var(--artwork-minor-webfastoche-color12) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color13 {
+  fill: var(--artwork-minor-webfastoche-color13) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color14 {
+  fill: var(--artwork-minor-webfastoche-color14) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color15 {
+  fill: var(--artwork-minor-webfastoche-color15) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color16 {
+  fill: var(--artwork-minor-webfastoche-color16) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color17 {
+  fill: var(--artwork-minor-webfastoche-color17) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color18 {
+  fill: var(--artwork-minor-webfastoche-color18) !important;
+}
+
+.webfastoche-artwork-minor--webfastoche-color19 {
+  fill: var(--artwork-minor-webfastoche-color19) !important;
+}
+
+.webfastoche-artwork-decorative--grey {
+  fill: var(--artwork-decorative-grey) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-primary {
+  fill: var(--artwork-decorative-webfastoche-primary) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-secondary {
+  fill: var(--artwork-decorative-webfastoche-secondary) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color3 {
+  fill: var(--artwork-decorative-webfastoche-color3) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color4 {
+  fill: var(--artwork-decorative-webfastoche-color4) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color5 {
+  fill: var(--artwork-decorative-webfastoche-color5) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color6 {
+  fill: var(--artwork-decorative-webfastoche-color6) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color7 {
+  fill: var(--artwork-decorative-webfastoche-color7) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color8 {
+  fill: var(--artwork-decorative-webfastoche-color8) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color9 {
+  fill: var(--artwork-decorative-webfastoche-color9) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color10 {
+  fill: var(--artwork-decorative-webfastoche-color10) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color11 {
+  fill: var(--artwork-decorative-webfastoche-color11) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color12 {
+  fill: var(--artwork-decorative-webfastoche-color12) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color13 {
+  fill: var(--artwork-decorative-webfastoche-color13) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color14 {
+  fill: var(--artwork-decorative-webfastoche-color14) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color15 {
+  fill: var(--artwork-decorative-webfastoche-color15) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color16 {
+  fill: var(--artwork-decorative-webfastoche-color16) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color17 {
+  fill: var(--artwork-decorative-webfastoche-color17) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color18 {
+  fill: var(--artwork-decorative-webfastoche-color18) !important;
+}
+
+.webfastoche-artwork-decorative--webfastoche-color19 {
+  fill: var(--artwork-decorative-webfastoche-color19) !important;
+}
+
+.webfastoche-artwork-background--grey {
+  fill: var(--artwork-background-grey) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-primary {
+  fill: var(--artwork-background-webfastoche-primary) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-secondary {
+  fill: var(--artwork-background-webfastoche-secondary) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color3 {
+  fill: var(--artwork-background-webfastoche-color3) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color4 {
+  fill: var(--artwork-background-webfastoche-color4) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color5 {
+  fill: var(--artwork-background-webfastoche-color5) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color6 {
+  fill: var(--artwork-background-webfastoche-color6) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color7 {
+  fill: var(--artwork-background-webfastoche-color7) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color8 {
+  fill: var(--artwork-background-webfastoche-color8) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color9 {
+  fill: var(--artwork-background-webfastoche-color9) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color10 {
+  fill: var(--artwork-background-webfastoche-color10) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color11 {
+  fill: var(--artwork-background-webfastoche-color11) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color12 {
+  fill: var(--artwork-background-webfastoche-color12) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color13 {
+  fill: var(--artwork-background-webfastoche-color13) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color14 {
+  fill: var(--artwork-background-webfastoche-color14) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color15 {
+  fill: var(--artwork-background-webfastoche-color15) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color16 {
+  fill: var(--artwork-background-webfastoche-color16) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color17 {
+  fill: var(--artwork-background-webfastoche-color17) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color18 {
+  fill: var(--artwork-background-webfastoche-color18) !important;
+}
+
+.webfastoche-artwork-background--webfastoche-color19 {
+  fill: var(--artwork-background-webfastoche-color19) !important;
+}
+
+.webfastoche-artwork-motif--grey {
+  fill: var(--artwork-motif-grey) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-primary {
+  fill: var(--artwork-motif-webfastoche-primary) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-secondary {
+  fill: var(--artwork-motif-webfastoche-secondary) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color3 {
+  fill: var(--artwork-motif-webfastoche-color3) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color4 {
+  fill: var(--artwork-motif-webfastoche-color4) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color5 {
+  fill: var(--artwork-motif-webfastoche-color5) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color6 {
+  fill: var(--artwork-motif-webfastoche-color6) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color7 {
+  fill: var(--artwork-motif-webfastoche-color7) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color8 {
+  fill: var(--artwork-motif-webfastoche-color8) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color9 {
+  fill: var(--artwork-motif-webfastoche-color9) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color10 {
+  fill: var(--artwork-motif-webfastoche-color10) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color11 {
+  fill: var(--artwork-motif-webfastoche-color11) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color12 {
+  fill: var(--artwork-motif-webfastoche-color12) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color13 {
+  fill: var(--artwork-motif-webfastoche-color13) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color14 {
+  fill: var(--artwork-motif-webfastoche-color14) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color15 {
+  fill: var(--artwork-motif-webfastoche-color15) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color16 {
+  fill: var(--artwork-motif-webfastoche-color16) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color17 {
+  fill: var(--artwork-motif-webfastoche-color17) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color18 {
+  fill: var(--artwork-motif-webfastoche-color18) !important;
+}
+
+.webfastoche-artwork-motif--webfastoche-color19 {
+  fill: var(--artwork-motif-webfastoche-color19) !important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .webfastoche-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .webfastoche-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .webfastoche-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .webfastoche-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .webfastoche-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary {
+    background-color: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary {
+    background-color: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10 {
+    background-color: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11 {
+    background-color: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12 {
+    background-color: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13 {
+    background-color: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14 {
+    background-color: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15 {
+    background-color: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16 {
+    background-color: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17 {
+    background-color: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18 {
+    background-color: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19 {
+    background-color: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .webfastoche-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .webfastoche-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary {
+    background-color: hsl(122, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary {
+    background-color: hsl(212, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10 {
+    background-color: hsl(100, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11 {
+    background-color: hsl(105, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12 {
+    background-color: hsl(115, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13 {
+    background-color: hsl(135, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14 {
+    background-color: hsl(145, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15 {
+    background-color: hsl(155, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16 {
+    background-color: hsl(165, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17 {
+    background-color: hsl(175, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18 {
+    background-color: hsl(185, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19 {
+    background-color: hsl(195, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--info {
+    background-color: #e8edff !important;
+  }
+
+  .webfastoche-background-contrast--info:hover {
+    background-color: #c2d1ff !important;
+  }
+
+  .webfastoche-background-contrast--info:active {
+    background-color: #a9bfff !important;
+  }
+
+  .webfastoche-background-contrast--success {
+    background-color: #b8fec9 !important;
+  }
+
+  .webfastoche-background-contrast--success:hover {
+    background-color: #46fd89 !important;
+  }
+
+  .webfastoche-background-contrast--success:active {
+    background-color: #34eb7b !important;
+  }
+
+  .webfastoche-background-contrast--warning {
+    background-color: #ffe9e6 !important;
+  }
+
+  .webfastoche-background-contrast--warning:hover {
+    background-color: #ffc6bd !important;
+  }
+
+  .webfastoche-background-contrast--warning:active {
+    background-color: #ffb0a2 !important;
+  }
+
+  .webfastoche-background-contrast--error {
+    background-color: #ffe9e9 !important;
+  }
+
+  .webfastoche-background-contrast--error:hover {
+    background-color: #ffc5c5 !important;
+  }
+
+  .webfastoche-background-contrast--error:active {
+    background-color: #ffafaf !important;
+  }
+
+  .webfastoche-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-primary {
+    background-color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-secondary {
+    background-color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color3 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color4 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color5 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color6 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color7 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color8 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color9 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color10 {
+    background-color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color11 {
+    background-color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color12 {
+    background-color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color13 {
+    background-color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color14 {
+    background-color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color15 {
+    background-color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color16 {
+    background-color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color17 {
+    background-color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color18 {
+    background-color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color19 {
+    background-color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--info {
+    background-color: #0063cb !important;
+  }
+
+  .webfastoche-background-flat--success {
+    background-color: #18753c !important;
+  }
+
+  .webfastoche-background-flat--warning {
+    background-color: #b34000 !important;
+  }
+
+  .webfastoche-background-flat--error {
+    background-color: #ce0500 !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary {
+    background-color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary:active {
+    background-color: hsl(122, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary {
+    background-color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary:active {
+    background-color: hsl(212, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10 {
+    background-color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10:active {
+    background-color: hsl(100, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11 {
+    background-color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11:active {
+    background-color: hsl(105, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12 {
+    background-color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12:active {
+    background-color: hsl(115, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13 {
+    background-color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13:active {
+    background-color: hsl(135, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14 {
+    background-color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14:active {
+    background-color: hsl(145, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15 {
+    background-color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15:active {
+    background-color: hsl(155, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16 {
+    background-color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16:active {
+    background-color: hsl(165, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17 {
+    background-color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17:active {
+    background-color: hsl(175, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18 {
+    background-color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18:active {
+    background-color: hsl(185, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19 {
+    background-color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19:active {
+    background-color: hsl(195, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--info {
+    background-color: #0063cb !important;
+  }
+
+  .webfastoche-background-action-high--info:hover {
+    background-color: #3b87ff !important;
+  }
+
+  .webfastoche-background-action-high--info:active {
+    background-color: #6798ff !important;
+  }
+
+  .webfastoche-background-action-high--success {
+    background-color: #18753c !important;
+  }
+
+  .webfastoche-background-action-high--success:hover {
+    background-color: #27a959 !important;
+  }
+
+  .webfastoche-background-action-high--success:active {
+    background-color: #2fc368 !important;
+  }
+
+  .webfastoche-background-action-high--warning {
+    background-color: #b34000 !important;
+  }
+
+  .webfastoche-background-action-high--warning:hover {
+    background-color: #ff6218 !important;
+  }
+
+  .webfastoche-background-action-high--warning:active {
+    background-color: #ff7a55 !important;
+  }
+
+  .webfastoche-background-action-high--error {
+    background-color: #ce0500 !important;
+  }
+
+  .webfastoche-background-action-high--error:hover {
+    background-color: #ff2725 !important;
+  }
+
+  .webfastoche-background-action-high--error:active {
+    background-color: #ff4140 !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary {
+    background-color: hsl(122, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary {
+    background-color: hsl(212, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10 {
+    background-color: hsl(100, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11 {
+    background-color: hsl(105, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12 {
+    background-color: hsl(115, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13 {
+    background-color: hsl(135, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14 {
+    background-color: hsl(145, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15 {
+    background-color: hsl(155, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16 {
+    background-color: hsl(165, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17 {
+    background-color: hsl(175, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18 {
+    background-color: hsl(185, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19 {
+    background-color: hsl(195, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .webfastoche-text-default--info {
+    color: #0063cb !important;
+  }
+
+  .webfastoche-text-default--success {
+    color: #18753c !important;
+  }
+
+  .webfastoche-text-default--warning {
+    color: #b34000 !important;
+  }
+
+  .webfastoche-text-default--error {
+    color: #ce0500 !important;
+  }
+
+  .webfastoche-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-title--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-title--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-label--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color3 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color4 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color5 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color6 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color7 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color8 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color9 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color10 {
+    color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color11 {
+    color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color12 {
+    color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color13 {
+    color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color14 {
+    color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color15 {
+    color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color16 {
+    color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color17 {
+    color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color18 {
+    color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color19 {
+    color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .webfastoche-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-primary {
+    color: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-secondary {
+    color: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--info {
+    color: #f4f6ff !important;
+  }
+
+  .webfastoche-text-inverted--success {
+    color: #dffee6 !important;
+  }
+
+  .webfastoche-text-inverted--warning {
+    color: #fff4f3 !important;
+  }
+
+  .webfastoche-text-inverted--error {
+    color: #fff4f4 !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color3 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color4 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color5 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color6 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color7 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color8 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color9 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color10 {
+    color: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color11 {
+    color: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color12 {
+    color: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color13 {
+    color: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color14 {
+    color: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color15 {
+    color: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color16 {
+    color: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color17 {
+    color: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color18 {
+    color: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color19 {
+    color: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color3 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color4 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color5 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color6 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color7 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color8 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color9 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color10 {
+    color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color11 {
+    color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color12 {
+    color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color13 {
+    color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color14 {
+    color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color15 {
+    color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color16 {
+    color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color17 {
+    color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color18 {
+    color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color19 {
+    color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-primary {
+    fill: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-secondary {
+    fill: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color3 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color4 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color5 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color6 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color7 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color8 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color9 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color10 {
+    fill: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color11 {
+    fill: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color12 {
+    fill: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color13 {
+    fill: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color14 {
+    fill: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color15 {
+    fill: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color16 {
+    fill: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color17 {
+    fill: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color18 {
+    fill: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color19 {
+    fill: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-primary {
+    fill: hsl(122, 85%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-secondary {
+    fill: hsl(212, 85%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color3 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color4 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color5 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color6 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color7 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color8 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color9 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color10 {
+    fill: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color11 {
+    fill: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color12 {
+    fill: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color13 {
+    fill: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color14 {
+    fill: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color15 {
+    fill: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color16 {
+    fill: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color17 {
+    fill: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color18 {
+    fill: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color19 {
+    fill: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-primary {
+    fill: hsl(122, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-secondary {
+    fill: hsl(212, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color3 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color4 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color5 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color6 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color7 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color8 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color9 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color10 {
+    fill: hsl(100, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color11 {
+    fill: hsl(105, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color12 {
+    fill: hsl(115, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color13 {
+    fill: hsl(135, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color14 {
+    fill: hsl(145, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color15 {
+    fill: hsl(155, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color16 {
+    fill: hsl(165, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color17 {
+    fill: hsl(175, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color18 {
+    fill: hsl(185, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color19 {
+    fill: hsl(195, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-primary {
+    fill: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-secondary {
+    fill: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color3 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color4 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color5 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color6 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color7 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color8 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color9 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color10 {
+    fill: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color11 {
+    fill: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color12 {
+    fill: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color13 {
+    fill: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color14 {
+    fill: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color15 {
+    fill: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color16 {
+    fill: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color17 {
+    fill: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color18 {
+    fill: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color19 {
+    fill: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-primary {
+    fill: hsl(122, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-secondary {
+    fill: hsl(212, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color3 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color4 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color5 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color6 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color7 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color8 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color9 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color10 {
+    fill: hsl(100, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color11 {
+    fill: hsl(105, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color12 {
+    fill: hsl(115, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color13 {
+    fill: hsl(135, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color14 {
+    fill: hsl(145, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color15 {
+    fill: hsl(155, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color16 {
+    fill: hsl(165, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color17 {
+    fill: hsl(175, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color18 {
+    fill: hsl(185, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color19 {
+    fill: hsl(195, 80%, 93%) !important;
+  }
+}
+
+@media print {
+  .webfastoche-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .webfastoche-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .webfastoche-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .webfastoche-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .webfastoche-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .webfastoche-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary {
+    background-color: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary {
+    background-color: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6 {
+    background-color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9 {
+    background-color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10 {
+    background-color: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11 {
+    background-color: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12 {
+    background-color: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13 {
+    background-color: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14 {
+    background-color: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15 {
+    background-color: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16 {
+    background-color: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17 {
+    background-color: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18 {
+    background-color: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19 {
+    background-color: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-alt--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .webfastoche-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .webfastoche-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary {
+    background-color: hsl(122, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary {
+    background-color: hsl(212, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6 {
+    background-color: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9 {
+    background-color: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10 {
+    background-color: hsl(100, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11 {
+    background-color: hsl(105, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12 {
+    background-color: hsl(115, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13 {
+    background-color: hsl(135, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14 {
+    background-color: hsl(145, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15 {
+    background-color: hsl(155, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16 {
+    background-color: hsl(165, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17 {
+    background-color: hsl(175, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18 {
+    background-color: hsl(185, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19 {
+    background-color: hsl(195, 80%, 96%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-contrast--info {
+    background-color: #e8edff !important;
+  }
+
+  .webfastoche-background-contrast--info:hover {
+    background-color: #c2d1ff !important;
+  }
+
+  .webfastoche-background-contrast--info:active {
+    background-color: #a9bfff !important;
+  }
+
+  .webfastoche-background-contrast--success {
+    background-color: #b8fec9 !important;
+  }
+
+  .webfastoche-background-contrast--success:hover {
+    background-color: #46fd89 !important;
+  }
+
+  .webfastoche-background-contrast--success:active {
+    background-color: #34eb7b !important;
+  }
+
+  .webfastoche-background-contrast--warning {
+    background-color: #ffe9e6 !important;
+  }
+
+  .webfastoche-background-contrast--warning:hover {
+    background-color: #ffc6bd !important;
+  }
+
+  .webfastoche-background-contrast--warning:active {
+    background-color: #ffb0a2 !important;
+  }
+
+  .webfastoche-background-contrast--error {
+    background-color: #ffe9e9 !important;
+  }
+
+  .webfastoche-background-contrast--error:hover {
+    background-color: #ffc5c5 !important;
+  }
+
+  .webfastoche-background-contrast--error:active {
+    background-color: #ffafaf !important;
+  }
+
+  .webfastoche-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-primary {
+    background-color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-secondary {
+    background-color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color3 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color4 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color5 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color6 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color7 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color8 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color9 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color10 {
+    background-color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color11 {
+    background-color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color12 {
+    background-color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color13 {
+    background-color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color14 {
+    background-color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color15 {
+    background-color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color16 {
+    background-color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color17 {
+    background-color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color18 {
+    background-color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--webfastoche-color19 {
+    background-color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-flat--info {
+    background-color: #0063cb !important;
+  }
+
+  .webfastoche-background-flat--success {
+    background-color: #18753c !important;
+  }
+
+  .webfastoche-background-flat--warning {
+    background-color: #b34000 !important;
+  }
+
+  .webfastoche-background-flat--error {
+    background-color: #ce0500 !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary {
+    background-color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-primary:active {
+    background-color: hsl(122, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary {
+    background-color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-secondary:active {
+    background-color: hsl(212, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color3:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color4:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color5:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6 {
+    background-color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color6:active {
+    background-color: hsl(249, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color7:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color8:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9 {
+    background-color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color9:active {
+    background-color: hsl(34, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10 {
+    background-color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color10:active {
+    background-color: hsl(100, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11 {
+    background-color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color11:active {
+    background-color: hsl(105, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12 {
+    background-color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color12:active {
+    background-color: hsl(115, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13 {
+    background-color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color13:active {
+    background-color: hsl(135, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14 {
+    background-color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color14:active {
+    background-color: hsl(145, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15 {
+    background-color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color15:active {
+    background-color: hsl(155, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16 {
+    background-color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color16:active {
+    background-color: hsl(165, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17 {
+    background-color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color17:active {
+    background-color: hsl(175, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18 {
+    background-color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color18:active {
+    background-color: hsl(185, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19 {
+    background-color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 20%) !important;
+  }
+
+  .webfastoche-background-action-high--webfastoche-color19:active {
+    background-color: hsl(195, 40%, 15%) !important;
+  }
+
+  .webfastoche-background-action-high--info {
+    background-color: #0063cb !important;
+  }
+
+  .webfastoche-background-action-high--info:hover {
+    background-color: #3b87ff !important;
+  }
+
+  .webfastoche-background-action-high--info:active {
+    background-color: #6798ff !important;
+  }
+
+  .webfastoche-background-action-high--success {
+    background-color: #18753c !important;
+  }
+
+  .webfastoche-background-action-high--success:hover {
+    background-color: #27a959 !important;
+  }
+
+  .webfastoche-background-action-high--success:active {
+    background-color: #2fc368 !important;
+  }
+
+  .webfastoche-background-action-high--warning {
+    background-color: #b34000 !important;
+  }
+
+  .webfastoche-background-action-high--warning:hover {
+    background-color: #ff6218 !important;
+  }
+
+  .webfastoche-background-action-high--warning:active {
+    background-color: #ff7a55 !important;
+  }
+
+  .webfastoche-background-action-high--error {
+    background-color: #ce0500 !important;
+  }
+
+  .webfastoche-background-action-high--error:hover {
+    background-color: #ff2725 !important;
+  }
+
+  .webfastoche-background-action-high--error:active {
+    background-color: #ff4140 !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary {
+    background-color: hsl(122, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary:hover {
+    background-color: hsl(122, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-primary:active {
+    background-color: hsl(122, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary {
+    background-color: hsl(212, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary:hover {
+    background-color: hsl(212, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-secondary:active {
+    background-color: hsl(212, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6 {
+    background-color: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9 {
+    background-color: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10 {
+    background-color: hsl(100, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11 {
+    background-color: hsl(105, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12 {
+    background-color: hsl(115, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13 {
+    background-color: hsl(135, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14 {
+    background-color: hsl(145, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15 {
+    background-color: hsl(155, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16 {
+    background-color: hsl(165, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17 {
+    background-color: hsl(175, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18 {
+    background-color: hsl(185, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19 {
+    background-color: hsl(195, 80%, 93%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%) !important;
+  }
+
+  .webfastoche-background-action-low--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%) !important;
+  }
+
+  .webfastoche-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .webfastoche-text-default--info {
+    color: #0063cb !important;
+  }
+
+  .webfastoche-text-default--success {
+    color: #18753c !important;
+  }
+
+  .webfastoche-text-default--warning {
+    color: #b34000 !important;
+  }
+
+  .webfastoche-text-default--error {
+    color: #ce0500 !important;
+  }
+
+  .webfastoche-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-title--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-title--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-label--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color3 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color4 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color5 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color6 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color7 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color8 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color9 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color10 {
+    color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color11 {
+    color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color12 {
+    color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color13 {
+    color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color14 {
+    color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color15 {
+    color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color16 {
+    color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color17 {
+    color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color18 {
+    color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-label--webfastoche-color19 {
+    color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .webfastoche-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-primary {
+    color: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-secondary {
+    color: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--info {
+    color: #f4f6ff !important;
+  }
+
+  .webfastoche-text-inverted--success {
+    color: #dffee6 !important;
+  }
+
+  .webfastoche-text-inverted--warning {
+    color: #fff4f3 !important;
+  }
+
+  .webfastoche-text-inverted--error {
+    color: #fff4f4 !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color3 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color4 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color5 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color6 {
+    color: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color7 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color8 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color9 {
+    color: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color10 {
+    color: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color11 {
+    color: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color12 {
+    color: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color13 {
+    color: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color14 {
+    color: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color15 {
+    color: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color16 {
+    color: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color17 {
+    color: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color18 {
+    color: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-inverted--webfastoche-color19 {
+    color: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-primary {
+    color: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-secondary {
+    color: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color3 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color4 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color5 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color6 {
+    color: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color7 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color8 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color9 {
+    color: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color10 {
+    color: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color11 {
+    color: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color12 {
+    color: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color13 {
+    color: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color14 {
+    color: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color15 {
+    color: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color16 {
+    color: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color17 {
+    color: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color18 {
+    color: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-text-action-high--webfastoche-color19 {
+    color: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-primary {
+    fill: hsl(122, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-secondary {
+    fill: hsl(212, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color3 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color4 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color5 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color6 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color7 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color8 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color9 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color10 {
+    fill: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color11 {
+    fill: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color12 {
+    fill: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color13 {
+    fill: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color14 {
+    fill: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color15 {
+    fill: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color16 {
+    fill: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color17 {
+    fill: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color18 {
+    fill: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-major--webfastoche-color19 {
+    fill: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-primary {
+    fill: hsl(122, 85%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-secondary {
+    fill: hsl(212, 85%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color3 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color4 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color5 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color6 {
+    fill: hsl(249, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color7 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color8 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color9 {
+    fill: hsl(34, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color10 {
+    fill: hsl(100, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color11 {
+    fill: hsl(105, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color12 {
+    fill: hsl(115, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color13 {
+    fill: hsl(135, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color14 {
+    fill: hsl(145, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color15 {
+    fill: hsl(155, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color16 {
+    fill: hsl(165, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color17 {
+    fill: hsl(175, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color18 {
+    fill: hsl(185, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-minor--webfastoche-color19 {
+    fill: hsl(195, 75%, 25%) !important;
+  }
+
+  .webfastoche-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-primary {
+    fill: hsl(122, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-secondary {
+    fill: hsl(212, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color3 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color4 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color5 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color6 {
+    fill: hsl(249, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color7 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color8 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color9 {
+    fill: hsl(34, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color10 {
+    fill: hsl(100, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color11 {
+    fill: hsl(105, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color12 {
+    fill: hsl(115, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color13 {
+    fill: hsl(135, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color14 {
+    fill: hsl(145, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color15 {
+    fill: hsl(155, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color16 {
+    fill: hsl(165, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color17 {
+    fill: hsl(175, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color18 {
+    fill: hsl(185, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-decorative--webfastoche-color19 {
+    fill: hsl(195, 80%, 96%) !important;
+  }
+
+  .webfastoche-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-primary {
+    fill: hsl(122, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-secondary {
+    fill: hsl(212, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color3 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color4 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color5 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color6 {
+    fill: hsl(249, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color7 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color8 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color9 {
+    fill: hsl(34, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color10 {
+    fill: hsl(100, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color11 {
+    fill: hsl(105, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color12 {
+    fill: hsl(115, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color13 {
+    fill: hsl(135, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color14 {
+    fill: hsl(145, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color15 {
+    fill: hsl(155, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color16 {
+    fill: hsl(165, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color17 {
+    fill: hsl(175, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color18 {
+    fill: hsl(185, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-background--webfastoche-color19 {
+    fill: hsl(195, 80%, 98%) !important;
+  }
+
+  .webfastoche-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-primary {
+    fill: hsl(122, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-secondary {
+    fill: hsl(212, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color3 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color4 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color5 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color6 {
+    fill: hsl(249, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color7 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color8 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color9 {
+    fill: hsl(34, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color10 {
+    fill: hsl(100, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color11 {
+    fill: hsl(105, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color12 {
+    fill: hsl(115, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color13 {
+    fill: hsl(135, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color14 {
+    fill: hsl(145, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color15 {
+    fill: hsl(155, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color16 {
+    fill: hsl(165, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color17 {
+    fill: hsl(175, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color18 {
+    fill: hsl(185, 80%, 93%) !important;
+  }
+
+  .webfastoche-artwork-motif--webfastoche-color19 {
+    fill: hsl(195, 80%, 93%) !important;
+  }
+}

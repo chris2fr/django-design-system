@@ -1,0 +1,1622 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TABLE
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfastoche-table {
+  --table-offset: 1rem;
+  --text-spacing: 0;
+  --title-spacing: 0;
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-top: var(--table-offset);
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.webfastoche-table:not(.webfastoche-table--no-scroll) table {
+  width: 100%;
+}
+
+.webfastoche-table table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-spacing: 0;
+}
+
+.webfastoche-table[data-webfastoche-js-table=true] caption {
+  position: absolute;
+  top: 0;
+}
+
+.webfastoche-table caption {
+  position: initial;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-title-grey);
+}
+
+.webfastoche-table td,
+.webfastoche-table th {
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+  border: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.webfastoche-table th {
+  font-weight: 700;
+}
+
+.webfastoche-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
+}
+
+.webfastoche-table thead td,
+.webfastoche-table thead th {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+/*
+* Cache la caption
+*/
+.webfastoche-table--no-caption {
+  padding-top: 0;
+}
+
+.webfastoche-table--no-caption caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+  height: 0;
+}
+
+/*
+* Fixe le caption en bas du tableau
+*/
+.webfastoche-table--caption-bottom {
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.webfastoche-table--caption-bottom table {
+  margin-bottom: calc(var(--table-offset) + 2.75rem);
+}
+
+.webfastoche-table--caption-bottom[data-webfastoche-js-table=true] caption {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.webfastoche-table--caption-bottom caption {
+  margin-top: 1rem;
+  height: min-content;
+  caption-side: bottom;
+}
+
+/*
+* pas de scroll ni de shadow
+*/
+.webfastoche-table--no-scroll {
+  min-width: auto;
+}
+
+.webfastoche-table--no-scroll table {
+  overflow-x: hidden;
+}
+
+.webfastoche-table--no-scroll caption {
+  max-width: calc(100vw - 2rem);
+}
+
+/*
+* Fixe la taille des colonnes du tableau
+*/
+.webfastoche-table--layout-fixed table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.webfastoche-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+  /* Style bordered, enleve le style even/odd  */
+}
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+.webfastoche-table__shadow {
+  /**
+  * Modifier ombre à gauche
+  **/
+
+  /**
+  * Modifier ombre à droite
+  **/
+
+  /**
+  * Modifier combinaison ombre à gauche et ombre à droite
+  **/
+}
+
+.webfastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: var(--table-offset);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 0 0 #161616, inset 0 0 0 0 #161616;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: box-shadow 0.3s;
+}
+
+.webfastoche-table__shadow--left::before {
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset 0 0 0 0 #161616;
+}
+
+.webfastoche-table__shadow--right::before {
+  box-shadow: inset 0 0 0 0 #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+.webfastoche-table__shadow--left.webfastoche-table__shadow--right::before {
+  content: "";
+  display: block;
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+/*
+* Positionnement ombres sur le tableau sans caption
+*/
+.webfastoche-table--no-caption .webfastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Positionnement ombres sur le tableau avec caption en bas
+*/
+.webfastoche-table--caption-bottom .webfastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:root[data-webfastoche-theme=dark] .webfastoche-table__shadow::before {
+  opacity: 1;
+}
+
+.webfastoche-table tbody {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.webfastoche-table tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.webfastoche-table--webfastoche-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color3 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color3), var(--border-plain-webfastoche-color3));
+  background-color: var(--background-contrast-webfastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color3-hover);
+  --active: var(--background-contrast-webfastoche-color3-active);
+}
+
+.webfastoche-table--webfastoche-color3 tbody {
+  background-color: var(--background-alt-webfastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color3-hover);
+  --active: var(--background-alt-webfastoche-color3-active);
+}
+
+.webfastoche-table--webfastoche-color3 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color3-hover);
+  --active: var(--background-contrast-webfastoche-color3-active);
+}
+
+.webfastoche-table--webfastoche-color3.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color3), var(--border-default-webfastoche-color3));
+}
+
+.webfastoche-table--webfastoche-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color4 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color4), var(--border-plain-webfastoche-color4));
+  background-color: var(--background-contrast-webfastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color4-hover);
+  --active: var(--background-contrast-webfastoche-color4-active);
+}
+
+.webfastoche-table--webfastoche-color4 tbody {
+  background-color: var(--background-alt-webfastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color4-hover);
+  --active: var(--background-alt-webfastoche-color4-active);
+}
+
+.webfastoche-table--webfastoche-color4 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color4-hover);
+  --active: var(--background-contrast-webfastoche-color4-active);
+}
+
+.webfastoche-table--webfastoche-color4.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color4), var(--border-default-webfastoche-color4));
+}
+
+.webfastoche-table--webfastoche-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color5 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color5), var(--border-plain-webfastoche-color5));
+  background-color: var(--background-contrast-webfastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color5-hover);
+  --active: var(--background-contrast-webfastoche-color5-active);
+}
+
+.webfastoche-table--webfastoche-color5 tbody {
+  background-color: var(--background-alt-webfastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color5-hover);
+  --active: var(--background-alt-webfastoche-color5-active);
+}
+
+.webfastoche-table--webfastoche-color5 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color5-hover);
+  --active: var(--background-contrast-webfastoche-color5-active);
+}
+
+.webfastoche-table--webfastoche-color5.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color5), var(--border-default-webfastoche-color5));
+}
+
+.webfastoche-table--webfastoche-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color6 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color6), var(--border-plain-webfastoche-color6));
+  background-color: var(--background-contrast-webfastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color6-hover);
+  --active: var(--background-contrast-webfastoche-color6-active);
+}
+
+.webfastoche-table--webfastoche-color6 tbody {
+  background-color: var(--background-alt-webfastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color6-hover);
+  --active: var(--background-alt-webfastoche-color6-active);
+}
+
+.webfastoche-table--webfastoche-color6 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color6-hover);
+  --active: var(--background-contrast-webfastoche-color6-active);
+}
+
+.webfastoche-table--webfastoche-color6.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color6), var(--border-default-webfastoche-color6));
+}
+
+.webfastoche-table--webfastoche-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color7 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color7), var(--border-plain-webfastoche-color7));
+  background-color: var(--background-contrast-webfastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color7-hover);
+  --active: var(--background-contrast-webfastoche-color7-active);
+}
+
+.webfastoche-table--webfastoche-color7 tbody {
+  background-color: var(--background-alt-webfastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color7-hover);
+  --active: var(--background-alt-webfastoche-color7-active);
+}
+
+.webfastoche-table--webfastoche-color7 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color7-hover);
+  --active: var(--background-contrast-webfastoche-color7-active);
+}
+
+.webfastoche-table--webfastoche-color7.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color7), var(--border-default-webfastoche-color7));
+}
+
+.webfastoche-table--webfastoche-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color8 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color8), var(--border-plain-webfastoche-color8));
+  background-color: var(--background-contrast-webfastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color8-hover);
+  --active: var(--background-contrast-webfastoche-color8-active);
+}
+
+.webfastoche-table--webfastoche-color8 tbody {
+  background-color: var(--background-alt-webfastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color8-hover);
+  --active: var(--background-alt-webfastoche-color8-active);
+}
+
+.webfastoche-table--webfastoche-color8 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color8-hover);
+  --active: var(--background-contrast-webfastoche-color8-active);
+}
+
+.webfastoche-table--webfastoche-color8.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color8), var(--border-default-webfastoche-color8));
+}
+
+.webfastoche-table--webfastoche-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color9 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color9), var(--border-plain-webfastoche-color9));
+  background-color: var(--background-contrast-webfastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color9-hover);
+  --active: var(--background-contrast-webfastoche-color9-active);
+}
+
+.webfastoche-table--webfastoche-color9 tbody {
+  background-color: var(--background-alt-webfastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color9-hover);
+  --active: var(--background-alt-webfastoche-color9-active);
+}
+
+.webfastoche-table--webfastoche-color9 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color9-hover);
+  --active: var(--background-contrast-webfastoche-color9-active);
+}
+
+.webfastoche-table--webfastoche-color9.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color9), var(--border-default-webfastoche-color9));
+}
+
+.webfastoche-table--webfastoche-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color10 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color10), var(--border-plain-webfastoche-color10));
+  background-color: var(--background-contrast-webfastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color10-hover);
+  --active: var(--background-contrast-webfastoche-color10-active);
+}
+
+.webfastoche-table--webfastoche-color10 tbody {
+  background-color: var(--background-alt-webfastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color10-hover);
+  --active: var(--background-alt-webfastoche-color10-active);
+}
+
+.webfastoche-table--webfastoche-color10 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color10-hover);
+  --active: var(--background-contrast-webfastoche-color10-active);
+}
+
+.webfastoche-table--webfastoche-color10.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color10), var(--border-default-webfastoche-color10));
+}
+
+.webfastoche-table--webfastoche-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color11 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color11), var(--border-plain-webfastoche-color11));
+  background-color: var(--background-contrast-webfastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color11-hover);
+  --active: var(--background-contrast-webfastoche-color11-active);
+}
+
+.webfastoche-table--webfastoche-color11 tbody {
+  background-color: var(--background-alt-webfastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color11-hover);
+  --active: var(--background-alt-webfastoche-color11-active);
+}
+
+.webfastoche-table--webfastoche-color11 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color11-hover);
+  --active: var(--background-contrast-webfastoche-color11-active);
+}
+
+.webfastoche-table--webfastoche-color11.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color11), var(--border-default-webfastoche-color11));
+}
+
+.webfastoche-table--webfastoche-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color12 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color12), var(--border-plain-webfastoche-color12));
+  background-color: var(--background-contrast-webfastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color12-hover);
+  --active: var(--background-contrast-webfastoche-color12-active);
+}
+
+.webfastoche-table--webfastoche-color12 tbody {
+  background-color: var(--background-alt-webfastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color12-hover);
+  --active: var(--background-alt-webfastoche-color12-active);
+}
+
+.webfastoche-table--webfastoche-color12 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color12-hover);
+  --active: var(--background-contrast-webfastoche-color12-active);
+}
+
+.webfastoche-table--webfastoche-color12.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color12), var(--border-default-webfastoche-color12));
+}
+
+.webfastoche-table--webfastoche-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color13 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color13), var(--border-plain-webfastoche-color13));
+  background-color: var(--background-contrast-webfastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color13-hover);
+  --active: var(--background-contrast-webfastoche-color13-active);
+}
+
+.webfastoche-table--webfastoche-color13 tbody {
+  background-color: var(--background-alt-webfastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color13-hover);
+  --active: var(--background-alt-webfastoche-color13-active);
+}
+
+.webfastoche-table--webfastoche-color13 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color13-hover);
+  --active: var(--background-contrast-webfastoche-color13-active);
+}
+
+.webfastoche-table--webfastoche-color13.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color13), var(--border-default-webfastoche-color13));
+}
+
+.webfastoche-table--webfastoche-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color14 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color14), var(--border-plain-webfastoche-color14));
+  background-color: var(--background-contrast-webfastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color14-hover);
+  --active: var(--background-contrast-webfastoche-color14-active);
+}
+
+.webfastoche-table--webfastoche-color14 tbody {
+  background-color: var(--background-alt-webfastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color14-hover);
+  --active: var(--background-alt-webfastoche-color14-active);
+}
+
+.webfastoche-table--webfastoche-color14 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color14-hover);
+  --active: var(--background-contrast-webfastoche-color14-active);
+}
+
+.webfastoche-table--webfastoche-color14.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color14), var(--border-default-webfastoche-color14));
+}
+
+.webfastoche-table--webfastoche-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color15 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color15), var(--border-plain-webfastoche-color15));
+  background-color: var(--background-contrast-webfastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color15-hover);
+  --active: var(--background-contrast-webfastoche-color15-active);
+}
+
+.webfastoche-table--webfastoche-color15 tbody {
+  background-color: var(--background-alt-webfastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color15-hover);
+  --active: var(--background-alt-webfastoche-color15-active);
+}
+
+.webfastoche-table--webfastoche-color15 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color15-hover);
+  --active: var(--background-contrast-webfastoche-color15-active);
+}
+
+.webfastoche-table--webfastoche-color15.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color15), var(--border-default-webfastoche-color15));
+}
+
+.webfastoche-table--webfastoche-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color16 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color16), var(--border-plain-webfastoche-color16));
+  background-color: var(--background-contrast-webfastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color16-hover);
+  --active: var(--background-contrast-webfastoche-color16-active);
+}
+
+.webfastoche-table--webfastoche-color16 tbody {
+  background-color: var(--background-alt-webfastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color16-hover);
+  --active: var(--background-alt-webfastoche-color16-active);
+}
+
+.webfastoche-table--webfastoche-color16 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color16-hover);
+  --active: var(--background-contrast-webfastoche-color16-active);
+}
+
+.webfastoche-table--webfastoche-color16.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color16), var(--border-default-webfastoche-color16));
+}
+
+.webfastoche-table--webfastoche-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color17 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color17), var(--border-plain-webfastoche-color17));
+  background-color: var(--background-contrast-webfastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color17-hover);
+  --active: var(--background-contrast-webfastoche-color17-active);
+}
+
+.webfastoche-table--webfastoche-color17 tbody {
+  background-color: var(--background-alt-webfastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color17-hover);
+  --active: var(--background-alt-webfastoche-color17-active);
+}
+
+.webfastoche-table--webfastoche-color17 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color17-hover);
+  --active: var(--background-contrast-webfastoche-color17-active);
+}
+
+.webfastoche-table--webfastoche-color17.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color17), var(--border-default-webfastoche-color17));
+}
+
+.webfastoche-table--webfastoche-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color18 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color18), var(--border-plain-webfastoche-color18));
+  background-color: var(--background-contrast-webfastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color18-hover);
+  --active: var(--background-contrast-webfastoche-color18-active);
+}
+
+.webfastoche-table--webfastoche-color18 tbody {
+  background-color: var(--background-alt-webfastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color18-hover);
+  --active: var(--background-alt-webfastoche-color18-active);
+}
+
+.webfastoche-table--webfastoche-color18 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color18-hover);
+  --active: var(--background-contrast-webfastoche-color18-active);
+}
+
+.webfastoche-table--webfastoche-color18.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color18), var(--border-default-webfastoche-color18));
+}
+
+.webfastoche-table--webfastoche-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfastoche-table--webfastoche-color19 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfastoche-color19), var(--border-plain-webfastoche-color19));
+  background-color: var(--background-contrast-webfastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color19-hover);
+  --active: var(--background-contrast-webfastoche-color19-active);
+}
+
+.webfastoche-table--webfastoche-color19 tbody {
+  background-color: var(--background-alt-webfastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfastoche-color19-hover);
+  --active: var(--background-alt-webfastoche-color19-active);
+}
+
+.webfastoche-table--webfastoche-color19 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfastoche-color19-hover);
+  --active: var(--background-contrast-webfastoche-color19-active);
+}
+
+.webfastoche-table--webfastoche-color19.webfastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfastoche-color19), var(--border-default-webfastoche-color19));
+}
+
+.webfastoche-table--bordered tbody tr:nth-child(even) {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .webfastoche-table caption {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .webfastoche-table td,
+  .webfastoche-table th {
+    padding: 1rem;
+  }
+
+  .webfastoche-table thead td,
+  .webfastoche-table thead th {
+    padding-bottom: 1.125rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif placement caption
+  */
+  .webfastoche-table[data-webfastoche-js-table=true] caption {
+    position: relative;
+  }
+
+  .webfastoche-table caption {
+    color: #161616;
+  }
+
+  .webfastoche-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .webfastoche-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .webfastoche-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .webfastoche-table--webfastoche-color3 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color3 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color3 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color3.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color4 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color4 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color4 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color4.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color5 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color5 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color5 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color5.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color6 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color6 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color6 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color6.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color7 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color7 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color7 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color7.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color8 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color8 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color8 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color8.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color9 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color9 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color9 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color9.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color10 thead {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color10 tbody {
+    background-color: hsl(100, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color10 tbody tr:nth-child(even) {
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color10.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color11 thead {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color11 tbody {
+    background-color: hsl(105, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color11 tbody tr:nth-child(even) {
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color11.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color12 thead {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color12 tbody {
+    background-color: hsl(115, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color12 tbody tr:nth-child(even) {
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color12.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color13 thead {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color13 tbody {
+    background-color: hsl(135, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color13 tbody tr:nth-child(even) {
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color13.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color14 thead {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color14 tbody {
+    background-color: hsl(145, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color14 tbody tr:nth-child(even) {
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color14.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color15 thead {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color15 tbody {
+    background-color: hsl(155, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color15 tbody tr:nth-child(even) {
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color15.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color16 thead {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color16 tbody {
+    background-color: hsl(165, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color16 tbody tr:nth-child(even) {
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color16.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color17 thead {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color17 tbody {
+    background-color: hsl(175, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color17 tbody tr:nth-child(even) {
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color17.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color18 thead {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color18 tbody {
+    background-color: hsl(185, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color18 tbody tr:nth-child(even) {
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color18.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color19 thead {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color19 tbody {
+    background-color: hsl(195, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color19 tbody tr:nth-child(even) {
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color19.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+
+  .webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfastoche-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .webfastoche-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media print {
+  .webfastoche-table {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table caption {
+    color: #161616;
+  }
+
+  .webfastoche-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .webfastoche-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .webfastoche-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .webfastoche-table--webfastoche-color3 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color3 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color3 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color3 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color3.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color4 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color4 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color4 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color4 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color4.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color5 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color5 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color5 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color5 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color5.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color6 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color6 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color6 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color6 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color6.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color7 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color7 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color7 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color7 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color7.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color8 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color8 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color8 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color8 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color8.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color9 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color9 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color9 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color9 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color9.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color10 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color10 thead {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color10 tbody {
+    background-color: hsl(100, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color10 tbody tr:nth-child(even) {
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color10.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color11 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color11 thead {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color11 tbody {
+    background-color: hsl(105, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color11 tbody tr:nth-child(even) {
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color11.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color12 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color12 thead {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color12 tbody {
+    background-color: hsl(115, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color12 tbody tr:nth-child(even) {
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color12.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color13 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color13 thead {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color13 tbody {
+    background-color: hsl(135, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color13 tbody tr:nth-child(even) {
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color13.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color14 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color14 thead {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color14 tbody {
+    background-color: hsl(145, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color14 tbody tr:nth-child(even) {
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color14.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color15 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color15 thead {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color15 tbody {
+    background-color: hsl(155, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color15 tbody tr:nth-child(even) {
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color15.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color16 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color16 thead {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color16 tbody {
+    background-color: hsl(165, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color16 tbody tr:nth-child(even) {
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color16.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color17 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color17 thead {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color17 tbody {
+    background-color: hsl(175, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color17 tbody tr:nth-child(even) {
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color17.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color18 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color18 thead {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color18 tbody {
+    background-color: hsl(185, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color18 tbody tr:nth-child(even) {
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color18.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .webfastoche-table--webfastoche-color19 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .webfastoche-table--webfastoche-color19 thead {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color19 tbody {
+    background-color: hsl(195, 80%, 98%);
+  }
+
+  .webfastoche-table--webfastoche-color19 tbody tr:nth-child(even) {
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .webfastoche-table--webfastoche-color19.webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+
+  .webfastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+
+    /* Style bordered, enleve le style even/odd  */
+  }
+
+  .webfastoche-table td,
+  .webfastoche-table th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .webfastoche-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .webfastoche-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

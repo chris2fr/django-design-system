@@ -1,0 +1,470 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-tag {
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .webfastoche-tag[aria-pressed=false] {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .webfastoche-tag[aria-pressed=false]:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  .webfastoche-tag[aria-pressed=false]:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  .webfastoche-tag.webfastoche-tag--dismiss {
+    color: hsl(122, 80%, 98%);
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-tag.webfastoche-tag--dismiss:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .webfastoche-tag.webfastoche-tag--dismiss:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  a.webfastoche-tag,
+  button.webfastoche-tag,
+  input[type=button].webfastoche-tag {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  a.webfastoche-tag:hover,
+  button.webfastoche-tag:hover,
+  input[type=button].webfastoche-tag:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  a.webfastoche-tag:active,
+  button.webfastoche-tag:active,
+  input[type=button].webfastoche-tag:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color3,
+  button.webfastoche-tag--webfastoche-color3,
+  input[type=button].webfastoche-tag--webfastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color3:hover,
+  button.webfastoche-tag--webfastoche-color3:hover,
+  input[type=button].webfastoche-tag--webfastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color3:active,
+  button.webfastoche-tag--webfastoche-color3:active,
+  input[type=button].webfastoche-tag--webfastoche-color3:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color4,
+  button.webfastoche-tag--webfastoche-color4,
+  input[type=button].webfastoche-tag--webfastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color4:hover,
+  button.webfastoche-tag--webfastoche-color4:hover,
+  input[type=button].webfastoche-tag--webfastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color4:active,
+  button.webfastoche-tag--webfastoche-color4:active,
+  input[type=button].webfastoche-tag--webfastoche-color4:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color5,
+  button.webfastoche-tag--webfastoche-color5,
+  input[type=button].webfastoche-tag--webfastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color5:hover,
+  button.webfastoche-tag--webfastoche-color5:hover,
+  input[type=button].webfastoche-tag--webfastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color5:active,
+  button.webfastoche-tag--webfastoche-color5:active,
+  input[type=button].webfastoche-tag--webfastoche-color5:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color6,
+  button.webfastoche-tag--webfastoche-color6,
+  input[type=button].webfastoche-tag--webfastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color6:hover,
+  button.webfastoche-tag--webfastoche-color6:hover,
+  input[type=button].webfastoche-tag--webfastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color6:active,
+  button.webfastoche-tag--webfastoche-color6:active,
+  input[type=button].webfastoche-tag--webfastoche-color6:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color7,
+  button.webfastoche-tag--webfastoche-color7,
+  input[type=button].webfastoche-tag--webfastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color7:hover,
+  button.webfastoche-tag--webfastoche-color7:hover,
+  input[type=button].webfastoche-tag--webfastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color7:active,
+  button.webfastoche-tag--webfastoche-color7:active,
+  input[type=button].webfastoche-tag--webfastoche-color7:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color8,
+  button.webfastoche-tag--webfastoche-color8,
+  input[type=button].webfastoche-tag--webfastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color8:hover,
+  button.webfastoche-tag--webfastoche-color8:hover,
+  input[type=button].webfastoche-tag--webfastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color8:active,
+  button.webfastoche-tag--webfastoche-color8:active,
+  input[type=button].webfastoche-tag--webfastoche-color8:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color9,
+  button.webfastoche-tag--webfastoche-color9,
+  input[type=button].webfastoche-tag--webfastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color9:hover,
+  button.webfastoche-tag--webfastoche-color9:hover,
+  input[type=button].webfastoche-tag--webfastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color9:active,
+  button.webfastoche-tag--webfastoche-color9:active,
+  input[type=button].webfastoche-tag--webfastoche-color9:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color10,
+  button.webfastoche-tag--webfastoche-color10,
+  input[type=button].webfastoche-tag--webfastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color10:hover,
+  button.webfastoche-tag--webfastoche-color10:hover,
+  input[type=button].webfastoche-tag--webfastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color10:active,
+  button.webfastoche-tag--webfastoche-color10:active,
+  input[type=button].webfastoche-tag--webfastoche-color10:active {
+    background-color: hsl(100, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color11,
+  button.webfastoche-tag--webfastoche-color11,
+  input[type=button].webfastoche-tag--webfastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color11:hover,
+  button.webfastoche-tag--webfastoche-color11:hover,
+  input[type=button].webfastoche-tag--webfastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color11:active,
+  button.webfastoche-tag--webfastoche-color11:active,
+  input[type=button].webfastoche-tag--webfastoche-color11:active {
+    background-color: hsl(105, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color12,
+  button.webfastoche-tag--webfastoche-color12,
+  input[type=button].webfastoche-tag--webfastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color12:hover,
+  button.webfastoche-tag--webfastoche-color12:hover,
+  input[type=button].webfastoche-tag--webfastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color12:active,
+  button.webfastoche-tag--webfastoche-color12:active,
+  input[type=button].webfastoche-tag--webfastoche-color12:active {
+    background-color: hsl(115, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color13,
+  button.webfastoche-tag--webfastoche-color13,
+  input[type=button].webfastoche-tag--webfastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color13:hover,
+  button.webfastoche-tag--webfastoche-color13:hover,
+  input[type=button].webfastoche-tag--webfastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color13:active,
+  button.webfastoche-tag--webfastoche-color13:active,
+  input[type=button].webfastoche-tag--webfastoche-color13:active {
+    background-color: hsl(135, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color14,
+  button.webfastoche-tag--webfastoche-color14,
+  input[type=button].webfastoche-tag--webfastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color14:hover,
+  button.webfastoche-tag--webfastoche-color14:hover,
+  input[type=button].webfastoche-tag--webfastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color14:active,
+  button.webfastoche-tag--webfastoche-color14:active,
+  input[type=button].webfastoche-tag--webfastoche-color14:active {
+    background-color: hsl(145, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color15,
+  button.webfastoche-tag--webfastoche-color15,
+  input[type=button].webfastoche-tag--webfastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color15:hover,
+  button.webfastoche-tag--webfastoche-color15:hover,
+  input[type=button].webfastoche-tag--webfastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color15:active,
+  button.webfastoche-tag--webfastoche-color15:active,
+  input[type=button].webfastoche-tag--webfastoche-color15:active {
+    background-color: hsl(155, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color16,
+  button.webfastoche-tag--webfastoche-color16,
+  input[type=button].webfastoche-tag--webfastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color16:hover,
+  button.webfastoche-tag--webfastoche-color16:hover,
+  input[type=button].webfastoche-tag--webfastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color16:active,
+  button.webfastoche-tag--webfastoche-color16:active,
+  input[type=button].webfastoche-tag--webfastoche-color16:active {
+    background-color: hsl(165, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color17,
+  button.webfastoche-tag--webfastoche-color17,
+  input[type=button].webfastoche-tag--webfastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color17:hover,
+  button.webfastoche-tag--webfastoche-color17:hover,
+  input[type=button].webfastoche-tag--webfastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color17:active,
+  button.webfastoche-tag--webfastoche-color17:active,
+  input[type=button].webfastoche-tag--webfastoche-color17:active {
+    background-color: hsl(175, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color18,
+  button.webfastoche-tag--webfastoche-color18,
+  input[type=button].webfastoche-tag--webfastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color18:hover,
+  button.webfastoche-tag--webfastoche-color18:hover,
+  input[type=button].webfastoche-tag--webfastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color18:active,
+  button.webfastoche-tag--webfastoche-color18:active,
+  input[type=button].webfastoche-tag--webfastoche-color18:active {
+    background-color: hsl(185, 90%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color19,
+  button.webfastoche-tag--webfastoche-color19,
+  input[type=button].webfastoche-tag--webfastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 93%);
+  }
+
+  a.webfastoche-tag--webfastoche-color19:hover,
+  button.webfastoche-tag--webfastoche-color19:hover,
+  input[type=button].webfastoche-tag--webfastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%);
+  }
+
+  a.webfastoche-tag--webfastoche-color19:active,
+  button.webfastoche-tag--webfastoche-color19:active,
+  input[type=button].webfastoche-tag--webfastoche-color19:active {
+    background-color: hsl(195, 90%, 65%);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].webfastoche-tag[aria-pressed=true]:not(:disabled) {
+    color: hsl(122, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 75%, 25%) 0.625rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].webfastoche-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 60%, 20%) 0.625rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].webfastoche-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 40%, 15%) 0.625rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]::after,
+  input[type=button].webfastoche-tag[aria-pressed=true]::after {
+    color: hsl(122, 75%, 25%);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:disabled,
+  input[type=button].webfastoche-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:disabled::after,
+  input[type=button].webfastoche-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.webfastoche-tag[aria-pressed=true].webfastoche-tag--sm,
+  input[type=button].webfastoche-tag[aria-pressed=true].webfastoche-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:hover,
+  input[type=button].webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:active,
+  input[type=button].webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  button.webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:disabled,
+  input[type=button].webfastoche-tag[aria-pressed=true].webfastoche-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.webfastoche-tag:disabled,
+  input[type=button].webfastoche-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).webfastoche-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .webfastoche-tags-group.webfastoche-tags-group--sm button.webfastoche-tag[aria-pressed=true],
+  .webfastoche-tags-group.webfastoche-tags-group--sm input[type=button].webfastoche-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  .webfastoche-tags-group.webfastoche-tags-group--sm button.webfastoche-tag[aria-pressed=true]:hover,
+  .webfastoche-tags-group.webfastoche-tags-group--sm input[type=button].webfastoche-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  .webfastoche-tags-group.webfastoche-tags-group--sm button.webfastoche-tag[aria-pressed=true]:active,
+  .webfastoche-tags-group.webfastoche-tags-group--sm input[type=button].webfastoche-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  .webfastoche-tags-group.webfastoche-tags-group--sm button.webfastoche-tag[aria-pressed=true]:disabled,
+  .webfastoche-tags-group.webfastoche-tags-group--sm input[type=button].webfastoche-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  button.webfastoche-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].webfastoche-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+  }
+
+  button.webfastoche-tag[aria-pressed=true]:disabled,
+  input[type=button].webfastoche-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+  }
+}

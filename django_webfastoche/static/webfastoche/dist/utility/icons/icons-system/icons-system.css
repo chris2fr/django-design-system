@@ -1,0 +1,1949 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON SYSTEM
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfastoche-icon-add-circle-fill::before,
+.webfastoche-icon-add-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/add-circle-fill.svg");
+  mask-image: url("../../../icons/system/add-circle-fill.svg");
+}
+
+.webfastoche-icon-add-circle-line::before,
+.webfastoche-icon-add-circle-line::after {
+  -webkit-mask-image: url("../../../icons/system/add-circle-line.svg");
+  mask-image: url("../../../icons/system/add-circle-line.svg");
+}
+
+.webfastoche-icon-add-line::before,
+.webfastoche-icon-add-line::after {
+  -webkit-mask-image: url("../../../icons/system/add-line.svg");
+  mask-image: url("../../../icons/system/add-line.svg");
+}
+
+.webfastoche-icon-alarm-warning-fill::before,
+.webfastoche-icon-alarm-warning-fill::after {
+  -webkit-mask-image: url("../../../icons/system/alarm-warning-fill.svg");
+  mask-image: url("../../../icons/system/alarm-warning-fill.svg");
+}
+
+.webfastoche-icon-alarm-warning-line::before,
+.webfastoche-icon-alarm-warning-line::after {
+  -webkit-mask-image: url("../../../icons/system/alarm-warning-line.svg");
+  mask-image: url("../../../icons/system/alarm-warning-line.svg");
+}
+
+.webfastoche-icon-alert-fill::before,
+.webfastoche-icon-alert-fill::after {
+  -webkit-mask-image: url("../../../icons/system/alert-fill.svg");
+  mask-image: url("../../../icons/system/alert-fill.svg");
+}
+
+.webfastoche-icon-alert-line::before,
+.webfastoche-icon-alert-line::after {
+  -webkit-mask-image: url("../../../icons/system/alert-line.svg");
+  mask-image: url("../../../icons/system/alert-line.svg");
+}
+
+.webfastoche-icon-arrow-down-fill::before,
+.webfastoche-icon-arrow-down-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-fill.svg");
+  mask-image: url("../../../icons/system/arrow-down-fill.svg");
+}
+
+.webfastoche-icon-arrow-down-line::before,
+.webfastoche-icon-arrow-down-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-line.svg");
+  mask-image: url("../../../icons/system/arrow-down-line.svg");
+}
+
+.webfastoche-icon-arrow-down-s-fill::before,
+.webfastoche-icon-arrow-down-s-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-s-fill.svg");
+  mask-image: url("../../../icons/system/arrow-down-s-fill.svg");
+}
+
+.webfastoche-icon-arrow-down-s-line::before,
+.webfastoche-icon-arrow-down-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-down-s-line.svg");
+}
+
+.webfastoche-icon-arrow-go-back-fill::before,
+.webfastoche-icon-arrow-go-back-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-back-fill.svg");
+  mask-image: url("../../../icons/system/arrow-go-back-fill.svg");
+}
+
+.webfastoche-icon-arrow-go-back-line::before,
+.webfastoche-icon-arrow-go-back-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-back-line.svg");
+  mask-image: url("../../../icons/system/arrow-go-back-line.svg");
+}
+
+.webfastoche-icon-arrow-go-forward-fill::before,
+.webfastoche-icon-arrow-go-forward-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-forward-fill.svg");
+  mask-image: url("../../../icons/system/arrow-go-forward-fill.svg");
+}
+
+.webfastoche-icon-arrow-go-forward-line::before,
+.webfastoche-icon-arrow-go-forward-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-forward-line.svg");
+  mask-image: url("../../../icons/system/arrow-go-forward-line.svg");
+}
+
+.webfastoche-icon-arrow-left-fill::before,
+.webfastoche-icon-arrow-left-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-fill.svg");
+  mask-image: url("../../../icons/system/arrow-left-fill.svg");
+}
+
+.webfastoche-icon-arrow-left-line::before,
+.webfastoche-icon-arrow-left-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-line.svg");
+  mask-image: url("../../../icons/system/arrow-left-line.svg");
+}
+
+.webfastoche-icon-arrow-left-s-fill::before,
+.webfastoche-icon-arrow-left-s-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-s-fill.svg");
+  mask-image: url("../../../icons/system/arrow-left-s-fill.svg");
+}
+
+.webfastoche-icon-arrow-left-s-line::before,
+.webfastoche-icon-arrow-left-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-left-s-line.svg");
+}
+
+.webfastoche-icon-arrow-right-fill::before,
+.webfastoche-icon-arrow-right-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-fill.svg");
+  mask-image: url("../../../icons/system/arrow-right-fill.svg");
+}
+
+.webfastoche-icon-arrow-right-line::before,
+.webfastoche-icon-arrow-right-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-line.svg");
+}
+
+.webfastoche-icon-arrow-right-s-fill::before,
+.webfastoche-icon-arrow-right-s-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-s-fill.svg");
+  mask-image: url("../../../icons/system/arrow-right-s-fill.svg");
+}
+
+.webfastoche-icon-arrow-right-s-line::before,
+.webfastoche-icon-arrow-right-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-s-line.svg");
+}
+
+.webfastoche-icon-arrow-right-up-line::before,
+.webfastoche-icon-arrow-right-up-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-up-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-up-line.svg");
+}
+
+.webfastoche-icon-arrow-up-fill::before,
+.webfastoche-icon-arrow-up-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-fill.svg");
+  mask-image: url("../../../icons/system/arrow-up-fill.svg");
+}
+
+.webfastoche-icon-arrow-up-line::before,
+.webfastoche-icon-arrow-up-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-line.svg");
+  mask-image: url("../../../icons/system/arrow-up-line.svg");
+}
+
+.webfastoche-icon-arrow-up-s-fill::before,
+.webfastoche-icon-arrow-up-s-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-s-fill.svg");
+  mask-image: url("../../../icons/system/arrow-up-s-fill.svg");
+}
+
+.webfastoche-icon-arrow-up-s-line::before,
+.webfastoche-icon-arrow-up-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-up-s-line.svg");
+}
+
+.webfastoche-icon-check-line::before,
+.webfastoche-icon-check-line::after {
+  -webkit-mask-image: url("../../../icons/system/check-line.svg");
+  mask-image: url("../../../icons/system/check-line.svg");
+}
+
+.webfastoche-icon-checkbox-circle-fill::before,
+.webfastoche-icon-checkbox-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/checkbox-circle-fill.svg");
+  mask-image: url("../../../icons/system/checkbox-circle-fill.svg");
+}
+
+.webfastoche-icon-checkbox-circle-line::before,
+.webfastoche-icon-checkbox-circle-line::after {
+  -webkit-mask-image: url("../../../icons/system/checkbox-circle-line.svg");
+  mask-image: url("../../../icons/system/checkbox-circle-line.svg");
+}
+
+.webfastoche-icon-checkbox-fill::before,
+.webfastoche-icon-checkbox-fill::after {
+  -webkit-mask-image: url("../../../icons/system/checkbox-fill.svg");
+  mask-image: url("../../../icons/system/checkbox-fill.svg");
+}
+
+.webfastoche-icon-checkbox-line::before,
+.webfastoche-icon-checkbox-line::after {
+  -webkit-mask-image: url("../../../icons/system/checkbox-line.svg");
+  mask-image: url("../../../icons/system/checkbox-line.svg");
+}
+
+.webfastoche-icon-close-circle-fill::before,
+.webfastoche-icon-close-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/close-circle-fill.svg");
+  mask-image: url("../../../icons/system/close-circle-fill.svg");
+}
+
+.webfastoche-icon-close-circle-line::before,
+.webfastoche-icon-close-circle-line::after {
+  -webkit-mask-image: url("../../../icons/system/close-circle-line.svg");
+  mask-image: url("../../../icons/system/close-circle-line.svg");
+}
+
+.webfastoche-icon-close-line::before,
+.webfastoche-icon-close-line::after {
+  -webkit-mask-image: url("../../../icons/system/close-line.svg");
+  mask-image: url("../../../icons/system/close-line.svg");
+}
+
+.webfastoche-icon-delete-bin-fill::before,
+.webfastoche-icon-delete-bin-fill::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-fill.svg");
+  mask-image: url("../../../icons/system/delete-bin-fill.svg");
+}
+
+.webfastoche-icon-delete-bin-line::before,
+.webfastoche-icon-delete-bin-line::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-line.svg");
+  mask-image: url("../../../icons/system/delete-bin-line.svg");
+}
+
+.webfastoche-icon-download-fill::before,
+.webfastoche-icon-download-fill::after {
+  -webkit-mask-image: url("../../../icons/system/download-fill.svg");
+  mask-image: url("../../../icons/system/download-fill.svg");
+}
+
+.webfastoche-icon-download-line::before,
+.webfastoche-icon-download-line::after {
+  -webkit-mask-image: url("../../../icons/system/download-line.svg");
+  mask-image: url("../../../icons/system/download-line.svg");
+}
+
+.webfastoche-icon-error-warning-fill::before,
+.webfastoche-icon-error-warning-fill::after {
+  -webkit-mask-image: url("../../../icons/system/error-warning-fill.svg");
+  mask-image: url("../../../icons/system/error-warning-fill.svg");
+}
+
+.webfastoche-icon-error-warning-line::before,
+.webfastoche-icon-error-warning-line::after {
+  -webkit-mask-image: url("../../../icons/system/error-warning-line.svg");
+  mask-image: url("../../../icons/system/error-warning-line.svg");
+}
+
+.webfastoche-icon-external-link-fill::before,
+.webfastoche-icon-external-link-fill::after {
+  -webkit-mask-image: url("../../../icons/system/external-link-fill.svg");
+  mask-image: url("../../../icons/system/external-link-fill.svg");
+}
+
+.webfastoche-icon-external-link-line::before,
+.webfastoche-icon-external-link-line::after {
+  -webkit-mask-image: url("../../../icons/system/external-link-line.svg");
+  mask-image: url("../../../icons/system/external-link-line.svg");
+}
+
+.webfastoche-icon-eye-fill::before,
+.webfastoche-icon-eye-fill::after {
+  -webkit-mask-image: url("../../../icons/system/eye-fill.svg");
+  mask-image: url("../../../icons/system/eye-fill.svg");
+}
+
+.webfastoche-icon-eye-line::before,
+.webfastoche-icon-eye-line::after {
+  -webkit-mask-image: url("../../../icons/system/eye-line.svg");
+  mask-image: url("../../../icons/system/eye-line.svg");
+}
+
+.webfastoche-icon-eye-off-fill::before,
+.webfastoche-icon-eye-off-fill::after {
+  -webkit-mask-image: url("../../../icons/system/eye-off-fill.svg");
+  mask-image: url("../../../icons/system/eye-off-fill.svg");
+}
+
+.webfastoche-icon-eye-off-line::before,
+.webfastoche-icon-eye-off-line::after {
+  -webkit-mask-image: url("../../../icons/system/eye-off-line.svg");
+  mask-image: url("../../../icons/system/eye-off-line.svg");
+}
+
+.webfastoche-icon-filter-fill::before,
+.webfastoche-icon-filter-fill::after {
+  -webkit-mask-image: url("../../../icons/system/filter-fill.svg");
+  mask-image: url("../../../icons/system/filter-fill.svg");
+}
+
+.webfastoche-icon-filter-line::before,
+.webfastoche-icon-filter-line::after {
+  -webkit-mask-image: url("../../../icons/system/filter-line.svg");
+  mask-image: url("../../../icons/system/filter-line.svg");
+}
+
+.webfastoche-icon-arrow-left-s-first-line::before,
+.webfastoche-icon-arrow-left-s-first-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+  mask-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+}
+
+.webfastoche-icon-arrow-left-s-line-double::before,
+.webfastoche-icon-arrow-left-s-line-double::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+  mask-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+}
+
+.webfastoche-icon-arrow-right-down-circle-fill::before,
+.webfastoche-icon-arrow-right-down-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-down-circle-fill.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-down-circle-fill.svg");
+}
+
+.webfastoche-icon-arrow-right-s-last-line::before,
+.webfastoche-icon-arrow-right-s-last-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+}
+
+.webfastoche-icon-arrow-right-s-line-double::before,
+.webfastoche-icon-arrow-right-s-line-double::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+}
+
+.webfastoche-icon-arrow-right-up-circle-fill::before,
+.webfastoche-icon-arrow-right-up-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-up-circle-fill.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-up-circle-fill.svg");
+}
+
+.webfastoche-icon-capslock-line::before,
+.webfastoche-icon-capslock-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--capslock-line.svg");
+  mask-image: url("../../../icons/system/fr--capslock-line.svg");
+}
+
+.webfastoche-icon-equal-circle-fill::before,
+.webfastoche-icon-equal-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--equal-circle-fill.svg");
+  mask-image: url("../../../icons/system/fr--equal-circle-fill.svg");
+}
+
+.webfastoche-icon-error-fill::before,
+.webfastoche-icon-error-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../../icons/system/fr--error-fill.svg");
+}
+
+.webfastoche-icon-error-line::before,
+.webfastoche-icon-error-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--error-line.svg");
+  mask-image: url("../../../icons/system/fr--error-line.svg");
+}
+
+.webfastoche-icon-info-fill::before,
+.webfastoche-icon-info-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../../icons/system/fr--info-fill.svg");
+}
+
+.webfastoche-icon-info-line::before,
+.webfastoche-icon-info-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--info-line.svg");
+  mask-image: url("../../../icons/system/fr--info-line.svg");
+}
+
+.webfastoche-icon-success-fill::before,
+.webfastoche-icon-success-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../../icons/system/fr--success-fill.svg");
+}
+
+.webfastoche-icon-success-line::before,
+.webfastoche-icon-success-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--success-line.svg");
+  mask-image: url("../../../icons/system/fr--success-line.svg");
+}
+
+.webfastoche-icon-theme-fill::before,
+.webfastoche-icon-theme-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--theme-fill.svg");
+  mask-image: url("../../../icons/system/fr--theme-fill.svg");
+}
+
+.webfastoche-icon-warning-fill::before,
+.webfastoche-icon-warning-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--warning-fill.svg");
+  mask-image: url("../../../icons/system/fr--warning-fill.svg");
+}
+
+.webfastoche-icon-warning-line::before,
+.webfastoche-icon-warning-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--warning-line.svg");
+  mask-image: url("../../../icons/system/fr--warning-line.svg");
+}
+
+.webfastoche-icon-information-fill::before,
+.webfastoche-icon-information-fill::after {
+  -webkit-mask-image: url("../../../icons/system/information-fill.svg");
+  mask-image: url("../../../icons/system/information-fill.svg");
+}
+
+.webfastoche-icon-information-line::before,
+.webfastoche-icon-information-line::after {
+  -webkit-mask-image: url("../../../icons/system/information-line.svg");
+  mask-image: url("../../../icons/system/information-line.svg");
+}
+
+.webfastoche-icon-lock-fill::before,
+.webfastoche-icon-lock-fill::after {
+  -webkit-mask-image: url("../../../icons/system/lock-fill.svg");
+  mask-image: url("../../../icons/system/lock-fill.svg");
+}
+
+.webfastoche-icon-lock-line::before,
+.webfastoche-icon-lock-line::after {
+  -webkit-mask-image: url("../../../icons/system/lock-line.svg");
+  mask-image: url("../../../icons/system/lock-line.svg");
+}
+
+.webfastoche-icon-lock-unlock-fill::before,
+.webfastoche-icon-lock-unlock-fill::after {
+  -webkit-mask-image: url("../../../icons/system/lock-unlock-fill.svg");
+  mask-image: url("../../../icons/system/lock-unlock-fill.svg");
+}
+
+.webfastoche-icon-lock-unlock-line::before,
+.webfastoche-icon-lock-unlock-line::after {
+  -webkit-mask-image: url("../../../icons/system/lock-unlock-line.svg");
+  mask-image: url("../../../icons/system/lock-unlock-line.svg");
+}
+
+.webfastoche-icon-logout-box-r-fill::before,
+.webfastoche-icon-logout-box-r-fill::after {
+  -webkit-mask-image: url("../../../icons/system/logout-box-r-fill.svg");
+  mask-image: url("../../../icons/system/logout-box-r-fill.svg");
+}
+
+.webfastoche-icon-logout-box-r-line::before,
+.webfastoche-icon-logout-box-r-line::after {
+  -webkit-mask-image: url("../../../icons/system/logout-box-r-line.svg");
+  mask-image: url("../../../icons/system/logout-box-r-line.svg");
+}
+
+.webfastoche-icon-menu-2-fill::before,
+.webfastoche-icon-menu-2-fill::after {
+  -webkit-mask-image: url("../../../icons/system/menu-2-fill.svg");
+  mask-image: url("../../../icons/system/menu-2-fill.svg");
+}
+
+.webfastoche-icon-menu-fill::before,
+.webfastoche-icon-menu-fill::after {
+  -webkit-mask-image: url("../../../icons/system/menu-fill.svg");
+  mask-image: url("../../../icons/system/menu-fill.svg");
+}
+
+.webfastoche-icon-more-fill::before,
+.webfastoche-icon-more-fill::after {
+  -webkit-mask-image: url("../../../icons/system/more-fill.svg");
+  mask-image: url("../../../icons/system/more-fill.svg");
+}
+
+.webfastoche-icon-more-line::before,
+.webfastoche-icon-more-line::after {
+  -webkit-mask-image: url("../../../icons/system/more-line.svg");
+  mask-image: url("../../../icons/system/more-line.svg");
+}
+
+.webfastoche-icon-notification-badge-fill::before,
+.webfastoche-icon-notification-badge-fill::after {
+  -webkit-mask-image: url("../../../icons/system/notification-badge-fill.svg");
+  mask-image: url("../../../icons/system/notification-badge-fill.svg");
+}
+
+.webfastoche-icon-notification-badge-line::before,
+.webfastoche-icon-notification-badge-line::after {
+  -webkit-mask-image: url("../../../icons/system/notification-badge-line.svg");
+  mask-image: url("../../../icons/system/notification-badge-line.svg");
+}
+
+.webfastoche-icon-question-fill::before,
+.webfastoche-icon-question-fill::after {
+  -webkit-mask-image: url("../../../icons/system/question-fill.svg");
+  mask-image: url("../../../icons/system/question-fill.svg");
+}
+
+.webfastoche-icon-question-line::before,
+.webfastoche-icon-question-line::after {
+  -webkit-mask-image: url("../../../icons/system/question-line.svg");
+  mask-image: url("../../../icons/system/question-line.svg");
+}
+
+.webfastoche-icon-refresh-fill::before,
+.webfastoche-icon-refresh-fill::after {
+  -webkit-mask-image: url("../../../icons/system/refresh-fill.svg");
+  mask-image: url("../../../icons/system/refresh-fill.svg");
+}
+
+.webfastoche-icon-refresh-line::before,
+.webfastoche-icon-refresh-line::after {
+  -webkit-mask-image: url("../../../icons/system/refresh-line.svg");
+  mask-image: url("../../../icons/system/refresh-line.svg");
+}
+
+.webfastoche-icon-search-fill::before,
+.webfastoche-icon-search-fill::after {
+  -webkit-mask-image: url("../../../icons/system/search-fill.svg");
+  mask-image: url("../../../icons/system/search-fill.svg");
+}
+
+.webfastoche-icon-search-line::before,
+.webfastoche-icon-search-line::after {
+  -webkit-mask-image: url("../../../icons/system/search-line.svg");
+  mask-image: url("../../../icons/system/search-line.svg");
+}
+
+.webfastoche-icon-settings-5-fill::before,
+.webfastoche-icon-settings-5-fill::after {
+  -webkit-mask-image: url("../../../icons/system/settings-5-fill.svg");
+  mask-image: url("../../../icons/system/settings-5-fill.svg");
+}
+
+.webfastoche-icon-settings-5-line::before,
+.webfastoche-icon-settings-5-line::after {
+  -webkit-mask-image: url("../../../icons/system/settings-5-line.svg");
+  mask-image: url("../../../icons/system/settings-5-line.svg");
+}
+
+.webfastoche-icon-shield-fill::before,
+.webfastoche-icon-shield-fill::after {
+  -webkit-mask-image: url("../../../icons/system/shield-fill.svg");
+  mask-image: url("../../../icons/system/shield-fill.svg");
+}
+
+.webfastoche-icon-shield-line::before,
+.webfastoche-icon-shield-line::after {
+  -webkit-mask-image: url("../../../icons/system/shield-line.svg");
+  mask-image: url("../../../icons/system/shield-line.svg");
+}
+
+.webfastoche-icon-star-fill::before,
+.webfastoche-icon-star-fill::after {
+  -webkit-mask-image: url("../../../icons/system/star-fill.svg");
+  mask-image: url("../../../icons/system/star-fill.svg");
+}
+
+.webfastoche-icon-star-line::before,
+.webfastoche-icon-star-line::after {
+  -webkit-mask-image: url("../../../icons/system/star-line.svg");
+  mask-image: url("../../../icons/system/star-line.svg");
+}
+
+.webfastoche-icon-star-s-fill::before,
+.webfastoche-icon-star-s-fill::after {
+  -webkit-mask-image: url("../../../icons/system/star-s-fill.svg");
+  mask-image: url("../../../icons/system/star-s-fill.svg");
+}
+
+.webfastoche-icon-star-s-line::before,
+.webfastoche-icon-star-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/star-s-line.svg");
+  mask-image: url("../../../icons/system/star-s-line.svg");
+}
+
+.webfastoche-icon-subtract-line::before,
+.webfastoche-icon-subtract-line::after {
+  -webkit-mask-image: url("../../../icons/system/subtract-line.svg");
+  mask-image: url("../../../icons/system/subtract-line.svg");
+}
+
+.webfastoche-icon-thumb-down-fill::before,
+.webfastoche-icon-thumb-down-fill::after {
+  -webkit-mask-image: url("../../../icons/system/thumb-down-fill.svg");
+  mask-image: url("../../../icons/system/thumb-down-fill.svg");
+}
+
+.webfastoche-icon-thumb-down-line::before,
+.webfastoche-icon-thumb-down-line::after {
+  -webkit-mask-image: url("../../../icons/system/thumb-down-line.svg");
+  mask-image: url("../../../icons/system/thumb-down-line.svg");
+}
+
+.webfastoche-icon-thumb-up-fill::before,
+.webfastoche-icon-thumb-up-fill::after {
+  -webkit-mask-image: url("../../../icons/system/thumb-up-fill.svg");
+  mask-image: url("../../../icons/system/thumb-up-fill.svg");
+}
+
+.webfastoche-icon-thumb-up-line::before,
+.webfastoche-icon-thumb-up-line::after {
+  -webkit-mask-image: url("../../../icons/system/thumb-up-line.svg");
+  mask-image: url("../../../icons/system/thumb-up-line.svg");
+}
+
+.webfastoche-icon-time-fill::before,
+.webfastoche-icon-time-fill::after {
+  -webkit-mask-image: url("../../../icons/system/time-fill.svg");
+  mask-image: url("../../../icons/system/time-fill.svg");
+}
+
+.webfastoche-icon-time-line::before,
+.webfastoche-icon-time-line::after {
+  -webkit-mask-image: url("../../../icons/system/time-line.svg");
+  mask-image: url("../../../icons/system/time-line.svg");
+}
+
+.webfastoche-icon-timer-fill::before,
+.webfastoche-icon-timer-fill::after {
+  -webkit-mask-image: url("../../../icons/system/timer-fill.svg");
+  mask-image: url("../../../icons/system/timer-fill.svg");
+}
+
+.webfastoche-icon-timer-line::before,
+.webfastoche-icon-timer-line::after {
+  -webkit-mask-image: url("../../../icons/system/timer-line.svg");
+  mask-image: url("../../../icons/system/timer-line.svg");
+}
+
+.webfastoche-icon-upload-2-fill::before,
+.webfastoche-icon-upload-2-fill::after {
+  -webkit-mask-image: url("../../../icons/system/upload-2-fill.svg");
+  mask-image: url("../../../icons/system/upload-2-fill.svg");
+}
+
+.webfastoche-icon-upload-2-line::before,
+.webfastoche-icon-upload-2-line::after {
+  -webkit-mask-image: url("../../../icons/system/upload-2-line.svg");
+  mask-image: url("../../../icons/system/upload-2-line.svg");
+}
+
+.webfastoche-icon-upload-fill::before,
+.webfastoche-icon-upload-fill::after {
+  -webkit-mask-image: url("../../../icons/system/upload-fill.svg");
+  mask-image: url("../../../icons/system/upload-fill.svg");
+}
+
+.webfastoche-icon-upload-line::before,
+.webfastoche-icon-upload-line::after {
+  -webkit-mask-image: url("../../../icons/system/upload-line.svg");
+  mask-image: url("../../../icons/system/upload-line.svg");
+}
+
+.webfastoche-icon-zoom-in-fill::before,
+.webfastoche-icon-zoom-in-fill::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-in-fill.svg");
+  mask-image: url("../../../icons/system/zoom-in-fill.svg");
+}
+
+.webfastoche-icon-zoom-in-line::before,
+.webfastoche-icon-zoom-in-line::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-in-line.svg");
+  mask-image: url("../../../icons/system/zoom-in-line.svg");
+}
+
+.webfastoche-icon-zoom-out-fill::before,
+.webfastoche-icon-zoom-out-fill::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-out-fill.svg");
+  mask-image: url("../../../icons/system/zoom-out-fill.svg");
+}
+
+.webfastoche-icon-zoom-out-line::before,
+.webfastoche-icon-zoom-out-line::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-out-line.svg");
+  mask-image: url("../../../icons/system/zoom-out-line.svg");
+}
+
+.webfastoche-fi-add-circle-fill::before,
+.webfastoche-fi-add-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/system/add-circle-fill.svg");
+  mask-image: url("../../../icons/system/add-circle-fill.svg");
+}
+
+.webfastoche-fi-add-circle-line::before,
+.webfastoche-fi-add-circle-line::after {
+  -webkit-mask-image: url("../../../icons/system/add-circle-line.svg");
+  mask-image: url("../../../icons/system/add-circle-line.svg");
+}
+
+.webfastoche-fi-add-line::before,
+.webfastoche-fi-add-line::after {
+  -webkit-mask-image: url("../../../icons/system/add-line.svg");
+  mask-image: url("../../../icons/system/add-line.svg");
+}
+
+.webfastoche-fi-arrow-down-line::before,
+.webfastoche-fi-arrow-down-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-line.svg");
+  mask-image: url("../../../icons/system/arrow-down-line.svg");
+}
+
+.webfastoche-fi-arrow-down-s-line::before,
+.webfastoche-fi-arrow-down-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-down-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-down-s-line.svg");
+}
+
+.webfastoche-fi-arrow-go-back-fill::before,
+.webfastoche-fi-arrow-go-back-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-back-fill.svg");
+  mask-image: url("../../../icons/system/arrow-go-back-fill.svg");
+}
+
+.webfastoche-fi-arrow-go-back-line::before,
+.webfastoche-fi-arrow-go-back-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-go-back-line.svg");
+  mask-image: url("../../../icons/system/arrow-go-back-line.svg");
+}
+
+.webfastoche-fi-arrow-left-line::before,
+.webfastoche-fi-arrow-left-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-line.svg");
+  mask-image: url("../../../icons/system/arrow-left-line.svg");
+}
+
+.webfastoche-fi-arrow-left-s-line::before,
+.webfastoche-fi-arrow-left-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-left-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-left-s-line.svg");
+}
+
+.webfastoche-fi-arrow-right-line::before,
+.webfastoche-fi-arrow-right-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-line.svg");
+}
+
+.webfastoche-fi-arrow-right-s-line::before,
+.webfastoche-fi-arrow-right-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-s-line.svg");
+}
+
+.webfastoche-fi-arrow-right-up-line::before,
+.webfastoche-fi-arrow-right-up-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-right-up-line.svg");
+  mask-image: url("../../../icons/system/arrow-right-up-line.svg");
+}
+
+.webfastoche-fi-arrow-up-fill::before,
+.webfastoche-fi-arrow-up-fill::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-fill.svg");
+  mask-image: url("../../../icons/system/arrow-up-fill.svg");
+}
+
+.webfastoche-fi-arrow-up-line::before,
+.webfastoche-fi-arrow-up-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-line.svg");
+  mask-image: url("../../../icons/system/arrow-up-line.svg");
+}
+
+.webfastoche-fi-arrow-up-s-line::before,
+.webfastoche-fi-arrow-up-s-line::after {
+  -webkit-mask-image: url("../../../icons/system/arrow-up-s-line.svg");
+  mask-image: url("../../../icons/system/arrow-up-s-line.svg");
+}
+
+.webfastoche-fi-check-line::before,
+.webfastoche-fi-check-line::after {
+  -webkit-mask-image: url("../../../icons/system/check-line.svg");
+  mask-image: url("../../../icons/system/check-line.svg");
+}
+
+.webfastoche-fi-checkbox-circle-line::before,
+.webfastoche-fi-checkbox-circle-line::after {
+  -webkit-mask-image: url("../../../icons/system/checkbox-circle-line.svg");
+  mask-image: url("../../../icons/system/checkbox-circle-line.svg");
+}
+
+.webfastoche-fi-close-line::before,
+.webfastoche-fi-close-line::after {
+  -webkit-mask-image: url("../../../icons/system/close-line.svg");
+  mask-image: url("../../../icons/system/close-line.svg");
+}
+
+.webfastoche-fi-download-line::before,
+.webfastoche-fi-download-line::after {
+  -webkit-mask-image: url("../../../icons/system/download-line.svg");
+  mask-image: url("../../../icons/system/download-line.svg");
+}
+
+.webfastoche-fi-error-warning-fill::before,
+.webfastoche-fi-error-warning-fill::after {
+  -webkit-mask-image: url("../../../icons/system/error-warning-fill.svg");
+  mask-image: url("../../../icons/system/error-warning-fill.svg");
+}
+
+.webfastoche-fi-error-warning-line::before,
+.webfastoche-fi-error-warning-line::after {
+  -webkit-mask-image: url("../../../icons/system/error-warning-line.svg");
+  mask-image: url("../../../icons/system/error-warning-line.svg");
+}
+
+.webfastoche-fi-external-link-line::before,
+.webfastoche-fi-external-link-line::after {
+  -webkit-mask-image: url("../../../icons/system/external-link-line.svg");
+  mask-image: url("../../../icons/system/external-link-line.svg");
+}
+
+.webfastoche-fi-eye-fill::before,
+.webfastoche-fi-eye-fill::after {
+  -webkit-mask-image: url("../../../icons/system/eye-fill.svg");
+  mask-image: url("../../../icons/system/eye-fill.svg");
+}
+
+.webfastoche-fi-eye-line::before,
+.webfastoche-fi-eye-line::after {
+  -webkit-mask-image: url("../../../icons/system/eye-line.svg");
+  mask-image: url("../../../icons/system/eye-line.svg");
+}
+
+.webfastoche-fi-eye-off-fill::before,
+.webfastoche-fi-eye-off-fill::after {
+  -webkit-mask-image: url("../../../icons/system/eye-off-fill.svg");
+  mask-image: url("../../../icons/system/eye-off-fill.svg");
+}
+
+.webfastoche-fi-eye-off-line::before,
+.webfastoche-fi-eye-off-line::after {
+  -webkit-mask-image: url("../../../icons/system/eye-off-line.svg");
+  mask-image: url("../../../icons/system/eye-off-line.svg");
+}
+
+.webfastoche-fi-filter-fill::before,
+.webfastoche-fi-filter-fill::after {
+  -webkit-mask-image: url("../../../icons/system/filter-fill.svg");
+  mask-image: url("../../../icons/system/filter-fill.svg");
+}
+
+.webfastoche-fi-filter-line::before,
+.webfastoche-fi-filter-line::after {
+  -webkit-mask-image: url("../../../icons/system/filter-line.svg");
+  mask-image: url("../../../icons/system/filter-line.svg");
+}
+
+.webfastoche-fi-arrow-left-s-first-line::before,
+.webfastoche-fi-arrow-left-s-first-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+  mask-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+}
+
+.webfastoche-fi-arrow-left-s-line-double::before,
+.webfastoche-fi-arrow-left-s-line-double::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+  mask-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+}
+
+.webfastoche-fi-arrow-right-s-last-line::before,
+.webfastoche-fi-arrow-right-s-last-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+}
+
+.webfastoche-fi-arrow-right-s-line-double::before,
+.webfastoche-fi-arrow-right-s-line-double::after {
+  -webkit-mask-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+  mask-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+}
+
+.webfastoche-fi-error-fill::before,
+.webfastoche-fi-error-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../../icons/system/fr--error-fill.svg");
+}
+
+.webfastoche-fi-error-line::before,
+.webfastoche-fi-error-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--error-line.svg");
+  mask-image: url("../../../icons/system/fr--error-line.svg");
+}
+
+.webfastoche-fi-info-fill::before,
+.webfastoche-fi-info-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../../icons/system/fr--info-fill.svg");
+}
+
+.webfastoche-fi-info-line::before,
+.webfastoche-fi-info-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--info-line.svg");
+  mask-image: url("../../../icons/system/fr--info-line.svg");
+}
+
+.webfastoche-fi-success-fill::before,
+.webfastoche-fi-success-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../../icons/system/fr--success-fill.svg");
+}
+
+.webfastoche-fi-success-line::before,
+.webfastoche-fi-success-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--success-line.svg");
+  mask-image: url("../../../icons/system/fr--success-line.svg");
+}
+
+.webfastoche-fi-theme-fill::before,
+.webfastoche-fi-theme-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--theme-fill.svg");
+  mask-image: url("../../../icons/system/fr--theme-fill.svg");
+}
+
+.webfastoche-fi-warning-fill::before,
+.webfastoche-fi-warning-fill::after {
+  -webkit-mask-image: url("../../../icons/system/fr--warning-fill.svg");
+  mask-image: url("../../../icons/system/fr--warning-fill.svg");
+}
+
+.webfastoche-fi-warning-line::before,
+.webfastoche-fi-warning-line::after {
+  -webkit-mask-image: url("../../../icons/system/fr--warning-line.svg");
+  mask-image: url("../../../icons/system/fr--warning-line.svg");
+}
+
+.webfastoche-fi-information-fill::before,
+.webfastoche-fi-information-fill::after {
+  -webkit-mask-image: url("../../../icons/system/information-fill.svg");
+  mask-image: url("../../../icons/system/information-fill.svg");
+}
+
+.webfastoche-fi-information-line::before,
+.webfastoche-fi-information-line::after {
+  -webkit-mask-image: url("../../../icons/system/information-line.svg");
+  mask-image: url("../../../icons/system/information-line.svg");
+}
+
+.webfastoche-fi-lock-fill::before,
+.webfastoche-fi-lock-fill::after {
+  -webkit-mask-image: url("../../../icons/system/lock-fill.svg");
+  mask-image: url("../../../icons/system/lock-fill.svg");
+}
+
+.webfastoche-fi-lock-line::before,
+.webfastoche-fi-lock-line::after {
+  -webkit-mask-image: url("../../../icons/system/lock-line.svg");
+  mask-image: url("../../../icons/system/lock-line.svg");
+}
+
+.webfastoche-fi-logout-box-r-fill::before,
+.webfastoche-fi-logout-box-r-fill::after {
+  -webkit-mask-image: url("../../../icons/system/logout-box-r-fill.svg");
+  mask-image: url("../../../icons/system/logout-box-r-fill.svg");
+}
+
+.webfastoche-fi-logout-box-r-line::before,
+.webfastoche-fi-logout-box-r-line::after {
+  -webkit-mask-image: url("../../../icons/system/logout-box-r-line.svg");
+  mask-image: url("../../../icons/system/logout-box-r-line.svg");
+}
+
+.webfastoche-fi-menu-2-fill::before,
+.webfastoche-fi-menu-2-fill::after {
+  -webkit-mask-image: url("../../../icons/system/menu-2-fill.svg");
+  mask-image: url("../../../icons/system/menu-2-fill.svg");
+}
+
+.webfastoche-fi-menu-fill::before,
+.webfastoche-fi-menu-fill::after {
+  -webkit-mask-image: url("../../../icons/system/menu-fill.svg");
+  mask-image: url("../../../icons/system/menu-fill.svg");
+}
+
+.webfastoche-fi-question-fill::before,
+.webfastoche-fi-question-fill::after {
+  -webkit-mask-image: url("../../../icons/system/question-fill.svg");
+  mask-image: url("../../../icons/system/question-fill.svg");
+}
+
+.webfastoche-fi-question-line::before,
+.webfastoche-fi-question-line::after {
+  -webkit-mask-image: url("../../../icons/system/question-line.svg");
+  mask-image: url("../../../icons/system/question-line.svg");
+}
+
+.webfastoche-fi-refresh-fill::before,
+.webfastoche-fi-refresh-fill::after {
+  -webkit-mask-image: url("../../../icons/system/refresh-fill.svg");
+  mask-image: url("../../../icons/system/refresh-fill.svg");
+}
+
+.webfastoche-fi-refresh-line::before,
+.webfastoche-fi-refresh-line::after {
+  -webkit-mask-image: url("../../../icons/system/refresh-line.svg");
+  mask-image: url("../../../icons/system/refresh-line.svg");
+}
+
+.webfastoche-fi-search-fill::before,
+.webfastoche-fi-search-fill::after {
+  -webkit-mask-image: url("../../../icons/system/search-fill.svg");
+  mask-image: url("../../../icons/system/search-fill.svg");
+}
+
+.webfastoche-fi-search-line::before,
+.webfastoche-fi-search-line::after {
+  -webkit-mask-image: url("../../../icons/system/search-line.svg");
+  mask-image: url("../../../icons/system/search-line.svg");
+}
+
+.webfastoche-fi-subtract-line::before,
+.webfastoche-fi-subtract-line::after {
+  -webkit-mask-image: url("../../../icons/system/subtract-line.svg");
+  mask-image: url("../../../icons/system/subtract-line.svg");
+}
+
+.webfastoche-fi-timer-fill::before,
+.webfastoche-fi-timer-fill::after {
+  -webkit-mask-image: url("../../../icons/system/timer-fill.svg");
+  mask-image: url("../../../icons/system/timer-fill.svg");
+}
+
+.webfastoche-fi-timer-line::before,
+.webfastoche-fi-timer-line::after {
+  -webkit-mask-image: url("../../../icons/system/timer-line.svg");
+  mask-image: url("../../../icons/system/timer-line.svg");
+}
+
+.webfastoche-fi-upload-2-fill::before,
+.webfastoche-fi-upload-2-fill::after {
+  -webkit-mask-image: url("../../../icons/system/upload-2-fill.svg");
+  mask-image: url("../../../icons/system/upload-2-fill.svg");
+}
+
+.webfastoche-fi-upload-2-line::before,
+.webfastoche-fi-upload-2-line::after {
+  -webkit-mask-image: url("../../../icons/system/upload-2-line.svg");
+  mask-image: url("../../../icons/system/upload-2-line.svg");
+}
+
+.webfastoche-fi-zoom-in-fill::before,
+.webfastoche-fi-zoom-in-fill::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-in-fill.svg");
+  mask-image: url("../../../icons/system/zoom-in-fill.svg");
+}
+
+.webfastoche-fi-zoom-in-line::before,
+.webfastoche-fi-zoom-in-line::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-in-line.svg");
+  mask-image: url("../../../icons/system/zoom-in-line.svg");
+}
+
+.webfastoche-fi-zoom-out-fill::before,
+.webfastoche-fi-zoom-out-fill::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-out-fill.svg");
+  mask-image: url("../../../icons/system/zoom-out-fill.svg");
+}
+
+.webfastoche-fi-zoom-out-line::before,
+.webfastoche-fi-zoom-out-line::after {
+  -webkit-mask-image: url("../../../icons/system/zoom-out-line.svg");
+  mask-image: url("../../../icons/system/zoom-out-line.svg");
+}
+
+.webfastoche-fi-delete-line::before,
+.webfastoche-fi-delete-line::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-line.svg");
+  mask-image: url("../../../icons/system/delete-bin-line.svg");
+}
+
+.webfastoche-fi-delete-fill::before,
+.webfastoche-fi-delete-fill::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-fill.svg");
+  mask-image: url("../../../icons/system/delete-bin-fill.svg");
+}
+
+.webfastoche-icon-delete-line::before,
+.webfastoche-icon-delete-line::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-line.svg");
+  mask-image: url("../../../icons/system/delete-bin-line.svg");
+}
+
+.webfastoche-icon-delete-fill::before,
+.webfastoche-icon-delete-fill::after {
+  -webkit-mask-image: url("../../../icons/system/delete-bin-fill.svg");
+  mask-image: url("../../../icons/system/delete-bin-fill.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-icon-add-circle-fill::before,
+  .webfastoche-icon-add-circle-fill::after {
+    background-image: url("../../../icons/system/add-circle-fill.svg");
+  }
+
+  .webfastoche-icon-add-circle-line::before,
+  .webfastoche-icon-add-circle-line::after {
+    background-image: url("../../../icons/system/add-circle-line.svg");
+  }
+
+  .webfastoche-icon-add-line::before,
+  .webfastoche-icon-add-line::after {
+    background-image: url("../../../icons/system/add-line.svg");
+  }
+
+  .webfastoche-icon-alarm-warning-fill::before,
+  .webfastoche-icon-alarm-warning-fill::after {
+    background-image: url("../../../icons/system/alarm-warning-fill.svg");
+  }
+
+  .webfastoche-icon-alarm-warning-line::before,
+  .webfastoche-icon-alarm-warning-line::after {
+    background-image: url("../../../icons/system/alarm-warning-line.svg");
+  }
+
+  .webfastoche-icon-alert-fill::before,
+  .webfastoche-icon-alert-fill::after {
+    background-image: url("../../../icons/system/alert-fill.svg");
+  }
+
+  .webfastoche-icon-alert-line::before,
+  .webfastoche-icon-alert-line::after {
+    background-image: url("../../../icons/system/alert-line.svg");
+  }
+
+  .webfastoche-icon-arrow-down-fill::before,
+  .webfastoche-icon-arrow-down-fill::after {
+    background-image: url("../../../icons/system/arrow-down-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-down-line::before,
+  .webfastoche-icon-arrow-down-line::after {
+    background-image: url("../../../icons/system/arrow-down-line.svg");
+  }
+
+  .webfastoche-icon-arrow-down-s-fill::before,
+  .webfastoche-icon-arrow-down-s-fill::after {
+    background-image: url("../../../icons/system/arrow-down-s-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-down-s-line::before,
+  .webfastoche-icon-arrow-down-s-line::after {
+    background-image: url("../../../icons/system/arrow-down-s-line.svg");
+  }
+
+  .webfastoche-icon-arrow-go-back-fill::before,
+  .webfastoche-icon-arrow-go-back-fill::after {
+    background-image: url("../../../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-go-back-line::before,
+  .webfastoche-icon-arrow-go-back-line::after {
+    background-image: url("../../../icons/system/arrow-go-back-line.svg");
+  }
+
+  .webfastoche-icon-arrow-go-forward-fill::before,
+  .webfastoche-icon-arrow-go-forward-fill::after {
+    background-image: url("../../../icons/system/arrow-go-forward-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-go-forward-line::before,
+  .webfastoche-icon-arrow-go-forward-line::after {
+    background-image: url("../../../icons/system/arrow-go-forward-line.svg");
+  }
+
+  .webfastoche-icon-arrow-left-fill::before,
+  .webfastoche-icon-arrow-left-fill::after {
+    background-image: url("../../../icons/system/arrow-left-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-left-line::before,
+  .webfastoche-icon-arrow-left-line::after {
+    background-image: url("../../../icons/system/arrow-left-line.svg");
+  }
+
+  .webfastoche-icon-arrow-left-s-fill::before,
+  .webfastoche-icon-arrow-left-s-fill::after {
+    background-image: url("../../../icons/system/arrow-left-s-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-left-s-line::before,
+  .webfastoche-icon-arrow-left-s-line::after {
+    background-image: url("../../../icons/system/arrow-left-s-line.svg");
+  }
+
+  .webfastoche-icon-arrow-right-fill::before,
+  .webfastoche-icon-arrow-right-fill::after {
+    background-image: url("../../../icons/system/arrow-right-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-right-line::before,
+  .webfastoche-icon-arrow-right-line::after {
+    background-image: url("../../../icons/system/arrow-right-line.svg");
+  }
+
+  .webfastoche-icon-arrow-right-s-fill::before,
+  .webfastoche-icon-arrow-right-s-fill::after {
+    background-image: url("../../../icons/system/arrow-right-s-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-right-s-line::before,
+  .webfastoche-icon-arrow-right-s-line::after {
+    background-image: url("../../../icons/system/arrow-right-s-line.svg");
+  }
+
+  .webfastoche-icon-arrow-right-up-line::before,
+  .webfastoche-icon-arrow-right-up-line::after {
+    background-image: url("../../../icons/system/arrow-right-up-line.svg");
+  }
+
+  .webfastoche-icon-arrow-up-fill::before,
+  .webfastoche-icon-arrow-up-fill::after {
+    background-image: url("../../../icons/system/arrow-up-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-up-line::before,
+  .webfastoche-icon-arrow-up-line::after {
+    background-image: url("../../../icons/system/arrow-up-line.svg");
+  }
+
+  .webfastoche-icon-arrow-up-s-fill::before,
+  .webfastoche-icon-arrow-up-s-fill::after {
+    background-image: url("../../../icons/system/arrow-up-s-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-up-s-line::before,
+  .webfastoche-icon-arrow-up-s-line::after {
+    background-image: url("../../../icons/system/arrow-up-s-line.svg");
+  }
+
+  .webfastoche-icon-check-line::before,
+  .webfastoche-icon-check-line::after {
+    background-image: url("../../../icons/system/check-line.svg");
+  }
+
+  .webfastoche-icon-checkbox-circle-fill::before,
+  .webfastoche-icon-checkbox-circle-fill::after {
+    background-image: url("../../../icons/system/checkbox-circle-fill.svg");
+  }
+
+  .webfastoche-icon-checkbox-circle-line::before,
+  .webfastoche-icon-checkbox-circle-line::after {
+    background-image: url("../../../icons/system/checkbox-circle-line.svg");
+  }
+
+  .webfastoche-icon-checkbox-fill::before,
+  .webfastoche-icon-checkbox-fill::after {
+    background-image: url("../../../icons/system/checkbox-fill.svg");
+  }
+
+  .webfastoche-icon-checkbox-line::before,
+  .webfastoche-icon-checkbox-line::after {
+    background-image: url("../../../icons/system/checkbox-line.svg");
+  }
+
+  .webfastoche-icon-close-circle-fill::before,
+  .webfastoche-icon-close-circle-fill::after {
+    background-image: url("../../../icons/system/close-circle-fill.svg");
+  }
+
+  .webfastoche-icon-close-circle-line::before,
+  .webfastoche-icon-close-circle-line::after {
+    background-image: url("../../../icons/system/close-circle-line.svg");
+  }
+
+  .webfastoche-icon-close-line::before,
+  .webfastoche-icon-close-line::after {
+    background-image: url("../../../icons/system/close-line.svg");
+  }
+
+  .webfastoche-icon-delete-bin-fill::before,
+  .webfastoche-icon-delete-bin-fill::after {
+    background-image: url("../../../icons/system/delete-bin-fill.svg");
+  }
+
+  .webfastoche-icon-delete-bin-line::before,
+  .webfastoche-icon-delete-bin-line::after {
+    background-image: url("../../../icons/system/delete-bin-line.svg");
+  }
+
+  .webfastoche-icon-download-fill::before,
+  .webfastoche-icon-download-fill::after {
+    background-image: url("../../../icons/system/download-fill.svg");
+  }
+
+  .webfastoche-icon-download-line::before,
+  .webfastoche-icon-download-line::after {
+    background-image: url("../../../icons/system/download-line.svg");
+  }
+
+  .webfastoche-icon-error-warning-fill::before,
+  .webfastoche-icon-error-warning-fill::after {
+    background-image: url("../../../icons/system/error-warning-fill.svg");
+  }
+
+  .webfastoche-icon-error-warning-line::before,
+  .webfastoche-icon-error-warning-line::after {
+    background-image: url("../../../icons/system/error-warning-line.svg");
+  }
+
+  .webfastoche-icon-external-link-fill::before,
+  .webfastoche-icon-external-link-fill::after {
+    background-image: url("../../../icons/system/external-link-fill.svg");
+  }
+
+  .webfastoche-icon-external-link-line::before,
+  .webfastoche-icon-external-link-line::after {
+    background-image: url("../../../icons/system/external-link-line.svg");
+  }
+
+  .webfastoche-icon-eye-fill::before,
+  .webfastoche-icon-eye-fill::after {
+    background-image: url("../../../icons/system/eye-fill.svg");
+  }
+
+  .webfastoche-icon-eye-line::before,
+  .webfastoche-icon-eye-line::after {
+    background-image: url("../../../icons/system/eye-line.svg");
+  }
+
+  .webfastoche-icon-eye-off-fill::before,
+  .webfastoche-icon-eye-off-fill::after {
+    background-image: url("../../../icons/system/eye-off-fill.svg");
+  }
+
+  .webfastoche-icon-eye-off-line::before,
+  .webfastoche-icon-eye-off-line::after {
+    background-image: url("../../../icons/system/eye-off-line.svg");
+  }
+
+  .webfastoche-icon-filter-fill::before,
+  .webfastoche-icon-filter-fill::after {
+    background-image: url("../../../icons/system/filter-fill.svg");
+  }
+
+  .webfastoche-icon-filter-line::before,
+  .webfastoche-icon-filter-line::after {
+    background-image: url("../../../icons/system/filter-line.svg");
+  }
+
+  .webfastoche-icon-arrow-left-s-first-line::before,
+  .webfastoche-icon-arrow-left-s-first-line::after {
+    background-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+  }
+
+  .webfastoche-icon-arrow-left-s-line-double::before,
+  .webfastoche-icon-arrow-left-s-line-double::after {
+    background-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+  }
+
+  .webfastoche-icon-arrow-right-down-circle-fill::before,
+  .webfastoche-icon-arrow-right-down-circle-fill::after {
+    background-image: url("../../../icons/system/fr--arrow-right-down-circle-fill.svg");
+  }
+
+  .webfastoche-icon-arrow-right-s-last-line::before,
+  .webfastoche-icon-arrow-right-s-last-line::after {
+    background-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+  }
+
+  .webfastoche-icon-arrow-right-s-line-double::before,
+  .webfastoche-icon-arrow-right-s-line-double::after {
+    background-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+  }
+
+  .webfastoche-icon-arrow-right-up-circle-fill::before,
+  .webfastoche-icon-arrow-right-up-circle-fill::after {
+    background-image: url("../../../icons/system/fr--arrow-right-up-circle-fill.svg");
+  }
+
+  .webfastoche-icon-capslock-line::before,
+  .webfastoche-icon-capslock-line::after {
+    background-image: url("../../../icons/system/fr--capslock-line.svg");
+  }
+
+  .webfastoche-icon-equal-circle-fill::before,
+  .webfastoche-icon-equal-circle-fill::after {
+    background-image: url("../../../icons/system/fr--equal-circle-fill.svg");
+  }
+
+  .webfastoche-icon-error-fill::before,
+  .webfastoche-icon-error-fill::after {
+    background-image: url("../../../icons/system/fr--error-fill.svg");
+  }
+
+  .webfastoche-icon-error-line::before,
+  .webfastoche-icon-error-line::after {
+    background-image: url("../../../icons/system/fr--error-line.svg");
+  }
+
+  .webfastoche-icon-info-fill::before,
+  .webfastoche-icon-info-fill::after {
+    background-image: url("../../../icons/system/fr--info-fill.svg");
+  }
+
+  .webfastoche-icon-info-line::before,
+  .webfastoche-icon-info-line::after {
+    background-image: url("../../../icons/system/fr--info-line.svg");
+  }
+
+  .webfastoche-icon-success-fill::before,
+  .webfastoche-icon-success-fill::after {
+    background-image: url("../../../icons/system/fr--success-fill.svg");
+  }
+
+  .webfastoche-icon-success-line::before,
+  .webfastoche-icon-success-line::after {
+    background-image: url("../../../icons/system/fr--success-line.svg");
+  }
+
+  .webfastoche-icon-theme-fill::before,
+  .webfastoche-icon-theme-fill::after {
+    background-image: url("../../../icons/system/fr--theme-fill.svg");
+  }
+
+  .webfastoche-icon-warning-fill::before,
+  .webfastoche-icon-warning-fill::after {
+    background-image: url("../../../icons/system/fr--warning-fill.svg");
+  }
+
+  .webfastoche-icon-warning-line::before,
+  .webfastoche-icon-warning-line::after {
+    background-image: url("../../../icons/system/fr--warning-line.svg");
+  }
+
+  .webfastoche-icon-information-fill::before,
+  .webfastoche-icon-information-fill::after {
+    background-image: url("../../../icons/system/information-fill.svg");
+  }
+
+  .webfastoche-icon-information-line::before,
+  .webfastoche-icon-information-line::after {
+    background-image: url("../../../icons/system/information-line.svg");
+  }
+
+  .webfastoche-icon-lock-fill::before,
+  .webfastoche-icon-lock-fill::after {
+    background-image: url("../../../icons/system/lock-fill.svg");
+  }
+
+  .webfastoche-icon-lock-line::before,
+  .webfastoche-icon-lock-line::after {
+    background-image: url("../../../icons/system/lock-line.svg");
+  }
+
+  .webfastoche-icon-lock-unlock-fill::before,
+  .webfastoche-icon-lock-unlock-fill::after {
+    background-image: url("../../../icons/system/lock-unlock-fill.svg");
+  }
+
+  .webfastoche-icon-lock-unlock-line::before,
+  .webfastoche-icon-lock-unlock-line::after {
+    background-image: url("../../../icons/system/lock-unlock-line.svg");
+  }
+
+  .webfastoche-icon-logout-box-r-fill::before,
+  .webfastoche-icon-logout-box-r-fill::after {
+    background-image: url("../../../icons/system/logout-box-r-fill.svg");
+  }
+
+  .webfastoche-icon-logout-box-r-line::before,
+  .webfastoche-icon-logout-box-r-line::after {
+    background-image: url("../../../icons/system/logout-box-r-line.svg");
+  }
+
+  .webfastoche-icon-menu-2-fill::before,
+  .webfastoche-icon-menu-2-fill::after {
+    background-image: url("../../../icons/system/menu-2-fill.svg");
+  }
+
+  .webfastoche-icon-menu-fill::before,
+  .webfastoche-icon-menu-fill::after {
+    background-image: url("../../../icons/system/menu-fill.svg");
+  }
+
+  .webfastoche-icon-more-fill::before,
+  .webfastoche-icon-more-fill::after {
+    background-image: url("../../../icons/system/more-fill.svg");
+  }
+
+  .webfastoche-icon-more-line::before,
+  .webfastoche-icon-more-line::after {
+    background-image: url("../../../icons/system/more-line.svg");
+  }
+
+  .webfastoche-icon-notification-badge-fill::before,
+  .webfastoche-icon-notification-badge-fill::after {
+    background-image: url("../../../icons/system/notification-badge-fill.svg");
+  }
+
+  .webfastoche-icon-notification-badge-line::before,
+  .webfastoche-icon-notification-badge-line::after {
+    background-image: url("../../../icons/system/notification-badge-line.svg");
+  }
+
+  .webfastoche-icon-question-fill::before,
+  .webfastoche-icon-question-fill::after {
+    background-image: url("../../../icons/system/question-fill.svg");
+  }
+
+  .webfastoche-icon-question-line::before,
+  .webfastoche-icon-question-line::after {
+    background-image: url("../../../icons/system/question-line.svg");
+  }
+
+  .webfastoche-icon-refresh-fill::before,
+  .webfastoche-icon-refresh-fill::after {
+    background-image: url("../../../icons/system/refresh-fill.svg");
+  }
+
+  .webfastoche-icon-refresh-line::before,
+  .webfastoche-icon-refresh-line::after {
+    background-image: url("../../../icons/system/refresh-line.svg");
+  }
+
+  .webfastoche-icon-search-fill::before,
+  .webfastoche-icon-search-fill::after {
+    background-image: url("../../../icons/system/search-fill.svg");
+  }
+
+  .webfastoche-icon-search-line::before,
+  .webfastoche-icon-search-line::after {
+    background-image: url("../../../icons/system/search-line.svg");
+  }
+
+  .webfastoche-icon-settings-5-fill::before,
+  .webfastoche-icon-settings-5-fill::after {
+    background-image: url("../../../icons/system/settings-5-fill.svg");
+  }
+
+  .webfastoche-icon-settings-5-line::before,
+  .webfastoche-icon-settings-5-line::after {
+    background-image: url("../../../icons/system/settings-5-line.svg");
+  }
+
+  .webfastoche-icon-shield-fill::before,
+  .webfastoche-icon-shield-fill::after {
+    background-image: url("../../../icons/system/shield-fill.svg");
+  }
+
+  .webfastoche-icon-shield-line::before,
+  .webfastoche-icon-shield-line::after {
+    background-image: url("../../../icons/system/shield-line.svg");
+  }
+
+  .webfastoche-icon-star-fill::before,
+  .webfastoche-icon-star-fill::after {
+    background-image: url("../../../icons/system/star-fill.svg");
+  }
+
+  .webfastoche-icon-star-line::before,
+  .webfastoche-icon-star-line::after {
+    background-image: url("../../../icons/system/star-line.svg");
+  }
+
+  .webfastoche-icon-star-s-fill::before,
+  .webfastoche-icon-star-s-fill::after {
+    background-image: url("../../../icons/system/star-s-fill.svg");
+  }
+
+  .webfastoche-icon-star-s-line::before,
+  .webfastoche-icon-star-s-line::after {
+    background-image: url("../../../icons/system/star-s-line.svg");
+  }
+
+  .webfastoche-icon-subtract-line::before,
+  .webfastoche-icon-subtract-line::after {
+    background-image: url("../../../icons/system/subtract-line.svg");
+  }
+
+  .webfastoche-icon-thumb-down-fill::before,
+  .webfastoche-icon-thumb-down-fill::after {
+    background-image: url("../../../icons/system/thumb-down-fill.svg");
+  }
+
+  .webfastoche-icon-thumb-down-line::before,
+  .webfastoche-icon-thumb-down-line::after {
+    background-image: url("../../../icons/system/thumb-down-line.svg");
+  }
+
+  .webfastoche-icon-thumb-up-fill::before,
+  .webfastoche-icon-thumb-up-fill::after {
+    background-image: url("../../../icons/system/thumb-up-fill.svg");
+  }
+
+  .webfastoche-icon-thumb-up-line::before,
+  .webfastoche-icon-thumb-up-line::after {
+    background-image: url("../../../icons/system/thumb-up-line.svg");
+  }
+
+  .webfastoche-icon-time-fill::before,
+  .webfastoche-icon-time-fill::after {
+    background-image: url("../../../icons/system/time-fill.svg");
+  }
+
+  .webfastoche-icon-time-line::before,
+  .webfastoche-icon-time-line::after {
+    background-image: url("../../../icons/system/time-line.svg");
+  }
+
+  .webfastoche-icon-timer-fill::before,
+  .webfastoche-icon-timer-fill::after {
+    background-image: url("../../../icons/system/timer-fill.svg");
+  }
+
+  .webfastoche-icon-timer-line::before,
+  .webfastoche-icon-timer-line::after {
+    background-image: url("../../../icons/system/timer-line.svg");
+  }
+
+  .webfastoche-icon-upload-2-fill::before,
+  .webfastoche-icon-upload-2-fill::after {
+    background-image: url("../../../icons/system/upload-2-fill.svg");
+  }
+
+  .webfastoche-icon-upload-2-line::before,
+  .webfastoche-icon-upload-2-line::after {
+    background-image: url("../../../icons/system/upload-2-line.svg");
+  }
+
+  .webfastoche-icon-upload-fill::before,
+  .webfastoche-icon-upload-fill::after {
+    background-image: url("../../../icons/system/upload-fill.svg");
+  }
+
+  .webfastoche-icon-upload-line::before,
+  .webfastoche-icon-upload-line::after {
+    background-image: url("../../../icons/system/upload-line.svg");
+  }
+
+  .webfastoche-icon-zoom-in-fill::before,
+  .webfastoche-icon-zoom-in-fill::after {
+    background-image: url("../../../icons/system/zoom-in-fill.svg");
+  }
+
+  .webfastoche-icon-zoom-in-line::before,
+  .webfastoche-icon-zoom-in-line::after {
+    background-image: url("../../../icons/system/zoom-in-line.svg");
+  }
+
+  .webfastoche-icon-zoom-out-fill::before,
+  .webfastoche-icon-zoom-out-fill::after {
+    background-image: url("../../../icons/system/zoom-out-fill.svg");
+  }
+
+  .webfastoche-icon-zoom-out-line::before,
+  .webfastoche-icon-zoom-out-line::after {
+    background-image: url("../../../icons/system/zoom-out-line.svg");
+  }
+
+  .webfastoche-fi-add-circle-fill::before {
+    background-image: url("../../../icons/system/add-circle-fill.svg");
+  }
+
+  .webfastoche-fi-add-circle-line::before {
+    background-image: url("../../../icons/system/add-circle-line.svg");
+  }
+
+  .webfastoche-fi-add-line::before {
+    background-image: url("../../../icons/system/add-line.svg");
+  }
+
+  .webfastoche-fi-arrow-down-line::before {
+    background-image: url("../../../icons/system/arrow-down-line.svg");
+  }
+
+  .webfastoche-fi-arrow-down-s-line::before {
+    background-image: url("../../../icons/system/arrow-down-s-line.svg");
+  }
+
+  .webfastoche-fi-arrow-go-back-fill::before {
+    background-image: url("../../../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .webfastoche-fi-arrow-go-back-line::before {
+    background-image: url("../../../icons/system/arrow-go-back-line.svg");
+  }
+
+  .webfastoche-fi-arrow-left-line::before {
+    background-image: url("../../../icons/system/arrow-left-line.svg");
+  }
+
+  .webfastoche-fi-arrow-left-s-line::before {
+    background-image: url("../../../icons/system/arrow-left-s-line.svg");
+  }
+
+  .webfastoche-fi-arrow-right-line::before {
+    background-image: url("../../../icons/system/arrow-right-line.svg");
+  }
+
+  .webfastoche-fi-arrow-right-s-line::before {
+    background-image: url("../../../icons/system/arrow-right-s-line.svg");
+  }
+
+  .webfastoche-fi-arrow-right-up-line::before {
+    background-image: url("../../../icons/system/arrow-right-up-line.svg");
+  }
+
+  .webfastoche-fi-arrow-up-fill::before {
+    background-image: url("../../../icons/system/arrow-up-fill.svg");
+  }
+
+  .webfastoche-fi-arrow-up-line::before {
+    background-image: url("../../../icons/system/arrow-up-line.svg");
+  }
+
+  .webfastoche-fi-arrow-up-s-line::before {
+    background-image: url("../../../icons/system/arrow-up-s-line.svg");
+  }
+
+  .webfastoche-fi-check-line::before {
+    background-image: url("../../../icons/system/check-line.svg");
+  }
+
+  .webfastoche-fi-checkbox-circle-line::before {
+    background-image: url("../../../icons/system/checkbox-circle-line.svg");
+  }
+
+  .webfastoche-fi-close-line::before {
+    background-image: url("../../../icons/system/close-line.svg");
+  }
+
+  .webfastoche-fi-download-line::before {
+    background-image: url("../../../icons/system/download-line.svg");
+  }
+
+  .webfastoche-fi-error-warning-fill::before {
+    background-image: url("../../../icons/system/error-warning-fill.svg");
+  }
+
+  .webfastoche-fi-error-warning-line::before {
+    background-image: url("../../../icons/system/error-warning-line.svg");
+  }
+
+  .webfastoche-fi-external-link-line::before {
+    background-image: url("../../../icons/system/external-link-line.svg");
+  }
+
+  .webfastoche-fi-eye-fill::before {
+    background-image: url("../../../icons/system/eye-fill.svg");
+  }
+
+  .webfastoche-fi-eye-line::before {
+    background-image: url("../../../icons/system/eye-line.svg");
+  }
+
+  .webfastoche-fi-eye-off-fill::before {
+    background-image: url("../../../icons/system/eye-off-fill.svg");
+  }
+
+  .webfastoche-fi-eye-off-line::before {
+    background-image: url("../../../icons/system/eye-off-line.svg");
+  }
+
+  .webfastoche-fi-filter-fill::before {
+    background-image: url("../../../icons/system/filter-fill.svg");
+  }
+
+  .webfastoche-fi-filter-line::before {
+    background-image: url("../../../icons/system/filter-line.svg");
+  }
+
+  .webfastoche-fi-arrow-left-s-first-line::before {
+    background-image: url("../../../icons/system/fr--arrow-left-s-first-line.svg");
+  }
+
+  .webfastoche-fi-arrow-left-s-line-double::before {
+    background-image: url("../../../icons/system/fr--arrow-left-s-line-double.svg");
+  }
+
+  .webfastoche-fi-arrow-right-s-last-line::before {
+    background-image: url("../../../icons/system/fr--arrow-right-s-last-line.svg");
+  }
+
+  .webfastoche-fi-arrow-right-s-line-double::before {
+    background-image: url("../../../icons/system/fr--arrow-right-s-line-double.svg");
+  }
+
+  .webfastoche-fi-error-fill::before {
+    background-image: url("../../../icons/system/fr--error-fill.svg");
+  }
+
+  .webfastoche-fi-error-line::before {
+    background-image: url("../../../icons/system/fr--error-line.svg");
+  }
+
+  .webfastoche-fi-info-fill::before {
+    background-image: url("../../../icons/system/fr--info-fill.svg");
+  }
+
+  .webfastoche-fi-info-line::before {
+    background-image: url("../../../icons/system/fr--info-line.svg");
+  }
+
+  .webfastoche-fi-success-fill::before {
+    background-image: url("../../../icons/system/fr--success-fill.svg");
+  }
+
+  .webfastoche-fi-success-line::before {
+    background-image: url("../../../icons/system/fr--success-line.svg");
+  }
+
+  .webfastoche-fi-theme-fill::before {
+    background-image: url("../../../icons/system/fr--theme-fill.svg");
+  }
+
+  .webfastoche-fi-warning-fill::before {
+    background-image: url("../../../icons/system/fr--warning-fill.svg");
+  }
+
+  .webfastoche-fi-warning-line::before {
+    background-image: url("../../../icons/system/fr--warning-line.svg");
+  }
+
+  .webfastoche-fi-information-fill::before {
+    background-image: url("../../../icons/system/information-fill.svg");
+  }
+
+  .webfastoche-fi-information-line::before {
+    background-image: url("../../../icons/system/information-line.svg");
+  }
+
+  .webfastoche-fi-lock-fill::before {
+    background-image: url("../../../icons/system/lock-fill.svg");
+  }
+
+  .webfastoche-fi-lock-line::before {
+    background-image: url("../../../icons/system/lock-line.svg");
+  }
+
+  .webfastoche-fi-logout-box-r-fill::before {
+    background-image: url("../../../icons/system/logout-box-r-fill.svg");
+  }
+
+  .webfastoche-fi-logout-box-r-line::before {
+    background-image: url("../../../icons/system/logout-box-r-line.svg");
+  }
+
+  .webfastoche-fi-menu-2-fill::before {
+    background-image: url("../../../icons/system/menu-2-fill.svg");
+  }
+
+  .webfastoche-fi-menu-fill::before {
+    background-image: url("../../../icons/system/menu-fill.svg");
+  }
+
+  .webfastoche-fi-question-fill::before {
+    background-image: url("../../../icons/system/question-fill.svg");
+  }
+
+  .webfastoche-fi-question-line::before {
+    background-image: url("../../../icons/system/question-line.svg");
+  }
+
+  .webfastoche-fi-refresh-fill::before {
+    background-image: url("../../../icons/system/refresh-fill.svg");
+  }
+
+  .webfastoche-fi-refresh-line::before {
+    background-image: url("../../../icons/system/refresh-line.svg");
+  }
+
+  .webfastoche-fi-search-fill::before {
+    background-image: url("../../../icons/system/search-fill.svg");
+  }
+
+  .webfastoche-fi-search-line::before {
+    background-image: url("../../../icons/system/search-line.svg");
+  }
+
+  .webfastoche-fi-subtract-line::before {
+    background-image: url("../../../icons/system/subtract-line.svg");
+  }
+
+  .webfastoche-fi-timer-fill::before {
+    background-image: url("../../../icons/system/timer-fill.svg");
+  }
+
+  .webfastoche-fi-timer-line::before {
+    background-image: url("../../../icons/system/timer-line.svg");
+  }
+
+  .webfastoche-fi-upload-2-fill::before {
+    background-image: url("../../../icons/system/upload-2-fill.svg");
+  }
+
+  .webfastoche-fi-upload-2-line::before {
+    background-image: url("../../../icons/system/upload-2-line.svg");
+  }
+
+  .webfastoche-fi-zoom-in-fill::before {
+    background-image: url("../../../icons/system/zoom-in-fill.svg");
+  }
+
+  .webfastoche-fi-zoom-in-line::before {
+    background-image: url("../../../icons/system/zoom-in-line.svg");
+  }
+
+  .webfastoche-fi-zoom-out-fill::before {
+    background-image: url("../../../icons/system/zoom-out-fill.svg");
+  }
+
+  .webfastoche-fi-zoom-out-line::before {
+    background-image: url("../../../icons/system/zoom-out-line.svg");
+  }
+
+  .webfastoche-fi-delete-line::before,
+  .webfastoche-fi-delete-line::after {
+    background-image: url("../../../icons/system/delete-bin-line.svg");
+  }
+
+  .webfastoche-fi-delete-fill::before,
+  .webfastoche-fi-delete-fill::after {
+    background-image: url("../../../icons/system/delete-bin-fill.svg");
+  }
+
+  .webfastoche-icon-delete-line::before,
+  .webfastoche-icon-delete-line::after {
+    background-image: url("../../../icons/system/delete-bin-line.svg");
+  }
+
+  .webfastoche-icon-delete-fill::before,
+  .webfastoche-icon-delete-fill::after {
+    background-image: url("../../../icons/system/delete-bin-fill.svg");
+  }
+}

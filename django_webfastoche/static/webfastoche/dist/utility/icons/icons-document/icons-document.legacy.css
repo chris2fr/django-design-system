@@ -1,0 +1,180 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-icon-article-fill::before,
+  .webfastoche-icon-article-fill::after {
+    background-image: url("../../../icons/document/article-fill.svg");
+  }
+
+  .webfastoche-icon-article-line::before,
+  .webfastoche-icon-article-line::after {
+    background-image: url("../../../icons/document/article-line.svg");
+  }
+
+  .webfastoche-icon-book-2-fill::before,
+  .webfastoche-icon-book-2-fill::after {
+    background-image: url("../../../icons/document/book-2-fill.svg");
+  }
+
+  .webfastoche-icon-book-2-line::before,
+  .webfastoche-icon-book-2-line::after {
+    background-image: url("../../../icons/document/book-2-line.svg");
+  }
+
+  .webfastoche-icon-booklet-fill::before,
+  .webfastoche-icon-booklet-fill::after {
+    background-image: url("../../../icons/document/booklet-fill.svg");
+  }
+
+  .webfastoche-icon-booklet-line::before,
+  .webfastoche-icon-booklet-line::after {
+    background-image: url("../../../icons/document/booklet-line.svg");
+  }
+
+  .webfastoche-icon-clipboard-fill::before,
+  .webfastoche-icon-clipboard-fill::after {
+    background-image: url("../../../icons/document/clipboard-fill.svg");
+  }
+
+  .webfastoche-icon-clipboard-line::before,
+  .webfastoche-icon-clipboard-line::after {
+    background-image: url("../../../icons/document/clipboard-line.svg");
+  }
+
+  .webfastoche-icon-draft-fill::before,
+  .webfastoche-icon-draft-fill::after {
+    background-image: url("../../../icons/document/draft-fill.svg");
+  }
+
+  .webfastoche-icon-draft-line::before,
+  .webfastoche-icon-draft-line::after {
+    background-image: url("../../../icons/document/draft-line.svg");
+  }
+
+  .webfastoche-icon-file-add-fill::before,
+  .webfastoche-icon-file-add-fill::after {
+    background-image: url("../../../icons/document/file-add-fill.svg");
+  }
+
+  .webfastoche-icon-file-add-line::before,
+  .webfastoche-icon-file-add-line::after {
+    background-image: url("../../../icons/document/file-add-line.svg");
+  }
+
+  .webfastoche-icon-file-download-fill::before,
+  .webfastoche-icon-file-download-fill::after {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .webfastoche-icon-file-download-line::before,
+  .webfastoche-icon-file-download-line::after {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .webfastoche-icon-file-fill::before,
+  .webfastoche-icon-file-fill::after {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .webfastoche-icon-file-line::before,
+  .webfastoche-icon-file-line::after {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .webfastoche-icon-file-pdf-fill::before,
+  .webfastoche-icon-file-pdf-fill::after {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .webfastoche-icon-file-pdf-line::before,
+  .webfastoche-icon-file-pdf-line::after {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+
+  .webfastoche-icon-file-text-fill::before,
+  .webfastoche-icon-file-text-fill::after {
+    background-image: url("../../../icons/document/file-text-fill.svg");
+  }
+
+  .webfastoche-icon-file-text-line::before,
+  .webfastoche-icon-file-text-line::after {
+    background-image: url("../../../icons/document/file-text-line.svg");
+  }
+
+  .webfastoche-icon-folder-2-fill::before,
+  .webfastoche-icon-folder-2-fill::after {
+    background-image: url("../../../icons/document/folder-2-fill.svg");
+  }
+
+  .webfastoche-icon-folder-2-line::before,
+  .webfastoche-icon-folder-2-line::after {
+    background-image: url("../../../icons/document/folder-2-line.svg");
+  }
+
+  .webfastoche-icon-newspaper-fill::before,
+  .webfastoche-icon-newspaper-fill::after {
+    background-image: url("../../../icons/document/newspaper-fill.svg");
+  }
+
+  .webfastoche-icon-newspaper-line::before,
+  .webfastoche-icon-newspaper-line::after {
+    background-image: url("../../../icons/document/newspaper-line.svg");
+  }
+
+  .webfastoche-icon-survey-fill::before,
+  .webfastoche-icon-survey-fill::after {
+    background-image: url("../../../icons/document/survey-fill.svg");
+  }
+
+  .webfastoche-icon-survey-line::before,
+  .webfastoche-icon-survey-line::after {
+    background-image: url("../../../icons/document/survey-line.svg");
+  }
+
+  .webfastoche-icon-todo-fill::before,
+  .webfastoche-icon-todo-fill::after {
+    background-image: url("../../../icons/document/todo-fill.svg");
+  }
+
+  .webfastoche-icon-todo-line::before,
+  .webfastoche-icon-todo-line::after {
+    background-image: url("../../../icons/document/todo-line.svg");
+  }
+
+  .webfastoche-fi-file-download-fill::before {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .webfastoche-fi-file-download-line::before {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .webfastoche-fi-file-fill::before {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .webfastoche-fi-file-line::before {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .webfastoche-fi-file-pdf-fill::before {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .webfastoche-fi-file-pdf-line::before {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+}

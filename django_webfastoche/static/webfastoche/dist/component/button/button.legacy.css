@@ -1,0 +1,380 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfastoche-btn::before,
+  .webfastoche-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn[href] {
+    text-decoration: none;
+  }
+
+  .webfastoche-btn[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-btn--sm::before,
+  .webfastoche-btn--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .webfastoche-btn--sm[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--sm[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--sm[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--sm[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--sm[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--sm[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--sm[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--sm[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--lg::before,
+  .webfastoche-btn--lg::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfastoche-btn--lg[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--lg[class^=webfastoche-icon-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--lg[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--lg[class*=" webfastoche-icon-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--lg[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--lg[class^=webfastoche-fi-]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after,
+  .webfastoche-btn--lg[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::before,
+  .webfastoche-btn--lg[class*=" webfastoche-fi-"]:not([class^=webfastoche-btn--icon-]):not([class*=" webfastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .webfastoche-btn--close::before,
+  .webfastoche-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--tooltip::before,
+  .webfastoche-btn--tooltip::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/question-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--fullscreen::before,
+  .webfastoche-btn--fullscreen::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/fullscreen-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--display::before,
+  .webfastoche-btn--display::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--theme-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--briefcase::before,
+  .webfastoche-btn--briefcase::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/briefcase-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--account::before,
+  .webfastoche-btn--account::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/account-circle-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btn--team::before,
+  .webfastoche-btn--team::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/team-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  ul.webfastoche-btns-group {
+    list-style-type: none;
+  }
+
+  ol.webfastoche-btns-group {
+    list-style-type: none;
+  }
+
+  ul.webfastoche-btns-group,
+  ol.webfastoche-btns-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
+  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
+  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .webfastoche-btn {
+    background-color: hsl(122, 75%, 25%);
+    color: hsl(122, 80%, 98%);
+  }
+
+  .webfastoche-btn:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .webfastoche-btn:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  .webfastoche-btn:disabled,
+  a.webfastoche-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .webfastoche-btn--secondary {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-btn--secondary:disabled,
+  a.webfastoche-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .webfastoche-btn--secondary:disabled:hover,
+  a.webfastoche-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--secondary:disabled:active,
+  a.webfastoche-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-btn--tertiary,
+  .webfastoche-btn--account {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .webfastoche-btn--tertiary:hover,
+  .webfastoche-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--tertiary:active,
+  .webfastoche-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-btn--tertiary:disabled,
+  a.webfastoche-btn--tertiary:not([href]),
+  a.webfastoche-btn--account:not([href]),
+  .webfastoche-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .webfastoche-btn--tertiary:disabled:hover,
+  a.webfastoche-btn--tertiary:not([href]):hover,
+  a.webfastoche-btn--account:not([href]):hover,
+  .webfastoche-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--tertiary:disabled:active,
+  a.webfastoche-btn--tertiary:not([href]):active,
+  a.webfastoche-btn--account:not([href]):active,
+  .webfastoche-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-btn--tertiary-no-outline,
+  .webfastoche-btn--close,
+  .webfastoche-btn--display,
+  .webfastoche-btn--fullscreen,
+  .webfastoche-btn--tooltip,
+  .webfastoche-btn--briefcase,
+  .webfastoche-btn--team {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfastoche-btn--tertiary-no-outline:hover,
+  .webfastoche-btn--close:hover,
+  .webfastoche-btn--display:hover,
+  .webfastoche-btn--fullscreen:hover,
+  .webfastoche-btn--tooltip:hover,
+  .webfastoche-btn--briefcase:hover,
+  .webfastoche-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--tertiary-no-outline:active,
+  .webfastoche-btn--close:active,
+  .webfastoche-btn--display:active,
+  .webfastoche-btn--fullscreen:active,
+  .webfastoche-btn--tooltip:active,
+  .webfastoche-btn--briefcase:active,
+  .webfastoche-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfastoche-btn--tertiary-no-outline:disabled,
+  a.webfastoche-btn--tertiary-no-outline:not([href]),
+  a.webfastoche-btn--close:not([href]),
+  a.webfastoche-btn--display:not([href]),
+  a.webfastoche-btn--fullscreen:not([href]),
+  a.webfastoche-btn--tooltip:not([href]),
+  a.webfastoche-btn--briefcase:not([href]),
+  a.webfastoche-btn--team:not([href]),
+  .webfastoche-btn--close:disabled,
+  .webfastoche-btn--display:disabled,
+  .webfastoche-btn--fullscreen:disabled,
+  .webfastoche-btn--tooltip:disabled,
+  .webfastoche-btn--briefcase:disabled,
+  .webfastoche-btn--team:disabled {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .webfastoche-btn--tertiary-no-outline:disabled:hover,
+  a.webfastoche-btn--tertiary-no-outline:not([href]):hover,
+  a.webfastoche-btn--close:not([href]):hover,
+  a.webfastoche-btn--display:not([href]):hover,
+  a.webfastoche-btn--fullscreen:not([href]):hover,
+  a.webfastoche-btn--tooltip:not([href]):hover,
+  a.webfastoche-btn--briefcase:not([href]):hover,
+  a.webfastoche-btn--team:not([href]):hover,
+  .webfastoche-btn--close:disabled:hover,
+  .webfastoche-btn--display:disabled:hover,
+  .webfastoche-btn--fullscreen:disabled:hover,
+  .webfastoche-btn--tooltip:disabled:hover,
+  .webfastoche-btn--briefcase:disabled:hover,
+  .webfastoche-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfastoche-btn--tertiary-no-outline:disabled:active,
+  a.webfastoche-btn--tertiary-no-outline:not([href]):active,
+  a.webfastoche-btn--close:not([href]):active,
+  a.webfastoche-btn--display:not([href]):active,
+  a.webfastoche-btn--fullscreen:not([href]):active,
+  a.webfastoche-btn--tooltip:not([href]):active,
+  a.webfastoche-btn--briefcase:not([href]):active,
+  a.webfastoche-btn--team:not([href]):active,
+  .webfastoche-btn--close:disabled:active,
+  .webfastoche-btn--display:disabled:active,
+  .webfastoche-btn--fullscreen:disabled:active,
+  .webfastoche-btn--tooltip:disabled:active,
+  .webfastoche-btn--briefcase:disabled:active,
+  .webfastoche-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

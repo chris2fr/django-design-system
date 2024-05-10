@@ -1,0 +1,122 @@
+/*!
+ * WEBFASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfastoche-select-group--valid label,
+  .webfastoche-input-group--valid label,
+  .webfastoche-range-group--valid label,
+  .webfastoche-upload-group--valid label {
+    color: #18753c;
+  }
+
+  .webfastoche-select-group--error label,
+  .webfastoche-input-group--error label,
+  .webfastoche-range-group--error label,
+  .webfastoche-upload-group--error label {
+    color: #ce0500;
+  }
+
+  .webfastoche-select-group--info label,
+  .webfastoche-input-group--info label,
+  .webfastoche-range-group--info label,
+  .webfastoche-upload-group--info label {
+    color: #0063cb;
+  }
+
+  .webfastoche-select-group--disabled label,
+  .webfastoche-select-group--disabled .webfastoche-hint-text,
+  .webfastoche-input-group--disabled label,
+  .webfastoche-input-group--disabled .webfastoche-hint-text,
+  .webfastoche-range-group--disabled label,
+  .webfastoche-range-group--disabled .webfastoche-hint-text,
+  .webfastoche-upload-group--disabled label,
+  .webfastoche-upload-group--disabled .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-label {
+    color: #161616;
+  }
+
+  .webfastoche-label--error {
+    color: #ce0500;
+  }
+
+  .webfastoche-label--success {
+    color: #18753c;
+  }
+
+  .webfastoche-label--info {
+    color: #0063cb;
+  }
+
+  .webfastoche-label--disabled,
+  .webfastoche-label--disabled .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-hint-text,
+  .webfastoche-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .webfastoche-message--error {
+    color: #ce0500;
+  }
+
+  .webfastoche-message--valid {
+    color: #18753c;
+  }
+
+  .webfastoche-message--info {
+    color: #0063cb;
+  }
+
+  .webfastoche-fieldset:disabled .webfastoche-label,
+  .webfastoche-fieldset:disabled .webfastoche-hint-text,
+  .webfastoche-fieldset:disabled .webfastoche-fieldset__legend {
+    color: #929292;
+  }
+
+  .webfastoche-fieldset input:disabled + label,
+  .webfastoche-fieldset input:disabled + label .webfastoche-hint-text,
+  .webfastoche-fieldset input:disabled + label + .webfastoche-hint-text {
+    color: #929292;
+  }
+
+  .webfastoche-fieldset__legend {
+    color: #161616;
+  }
+
+  .webfastoche-fieldset--error,
+  .webfastoche-fieldset--error .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .webfastoche-fieldset--error .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--error .webfastoche-label {
+    color: #ce0500;
+  }
+
+  .webfastoche-fieldset--valid,
+  .webfastoche-fieldset--valid .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .webfastoche-fieldset--valid .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--valid .webfastoche-label {
+    color: #18753c;
+  }
+
+  .webfastoche-fieldset--info,
+  .webfastoche-fieldset--info .webfastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .webfastoche-fieldset--info .webfastoche-fieldset__legend,
+  .webfastoche-fieldset--info .webfastoche-label {
+    color: #0063cb;
+  }
+}
