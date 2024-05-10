@@ -1,6 +1,6 @@
 [tool.poetry]
-authors = ["Sylvain Boissel <sylvain.boissel@beta.gouv.fr>"]
-description = "Integrate the Les Grands Voisins Design System into a Django app"
+authors = ["Chris Mann <chris@mann.fr>"]
+description = "Render the Design System of France into a generic Django app"
 license = "MIT"
 name = "django-webfastoche"
 version = "1.1.2"
@@ -25,11 +25,11 @@ classifiers = [
   "Topic :: Software Development :: Libraries",
   "Topic :: Utilities",
 ]
-documentation = "https://numerique-gouv.github.io/django-dsfr"
-homepage = "https://github.com/numerique-gouv/django-dsfr"
+documentation = "https://"
+homepage = "https://github.com/chris2fr/django-webfastoche"
 keywords = ["django"]
 readme = "README.rst"
-repository = "https://github.com/numerique-gouv/django-webfastoche"
+repository = "https://github.com/chris2fr/django-webfastoche"
 
 packages = [
   {include = "django_webfastoche"},
