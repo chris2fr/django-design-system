@@ -2,7 +2,7 @@
 authors = ["Sylvain Boissel <sylvain.boissel@beta.gouv.fr>"]
 description = "Integrate the Les Grands Voisins Design System into a Django app"
 license = "MIT"
-name = "django-dsfacile"
+name = "django-webfacile"
 version = "1.1.2"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -29,13 +29,13 @@ documentation = "https://numerique-gouv.github.io/django-dsfr"
 homepage = "https://github.com/numerique-gouv/django-dsfr"
 keywords = ["django"]
 readme = "README.rst"
-repository = "https://github.com/numerique-gouv/django-dsfacile"
+repository = "https://github.com/numerique-gouv/django-webfacile"
 
 packages = [
-  {include = "dsfacile"},
+  {include = "django_webfacile"},
 ]
 
-include = ["LICENSE", "README.rst", "dsfacile/static/dsfacile/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "webfacile/static/webfacile/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

@@ -1,0 +1,378 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-icon-chrome-fill::before,
+  .webfacile-icon-chrome-fill::after {
+    background-image: url("../../../icons/logo/chrome-fill.svg");
+  }
+
+  .webfacile-icon-chrome-line::before,
+  .webfacile-icon-chrome-line::after {
+    background-image: url("../../../icons/logo/chrome-line.svg");
+  }
+
+  .webfacile-icon-edge-fill::before,
+  .webfacile-icon-edge-fill::after {
+    background-image: url("../../../icons/logo/edge-fill.svg");
+  }
+
+  .webfacile-icon-edge-line::before,
+  .webfacile-icon-edge-line::after {
+    background-image: url("../../../icons/logo/edge-line.svg");
+  }
+
+  .webfacile-icon-facebook-circle-fill::before,
+  .webfacile-icon-facebook-circle-fill::after {
+    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .webfacile-icon-facebook-circle-line::before,
+  .webfacile-icon-facebook-circle-line::after {
+    background-image: url("../../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .webfacile-icon-firefox-fill::before,
+  .webfacile-icon-firefox-fill::after {
+    background-image: url("../../../icons/logo/firefox-fill.svg");
+  }
+
+  .webfacile-icon-firefox-line::before,
+  .webfacile-icon-firefox-line::after {
+    background-image: url("../../../icons/logo/firefox-line.svg");
+  }
+
+  .webfacile-icon-dailymotion-fill::before,
+  .webfacile-icon-dailymotion-fill::after {
+    background-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  }
+
+  .webfacile-icon-dailymotion-line::before,
+  .webfacile-icon-dailymotion-line::after {
+    background-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  }
+
+  .webfacile-icon-tiktok-fill::before,
+  .webfacile-icon-tiktok-fill::after {
+    background-image: url("../../../icons/logo/fr--tiktok-fill.svg");
+  }
+
+  .webfacile-icon-tiktok-line::before,
+  .webfacile-icon-tiktok-line::after {
+    background-image: url("../../../icons/logo/fr--tiktok-line.svg");
+  }
+
+  .webfacile-icon-github-fill::before,
+  .webfacile-icon-github-fill::after {
+    background-image: url("../../../icons/logo/github-fill.svg");
+  }
+
+  .webfacile-icon-github-line::before,
+  .webfacile-icon-github-line::after {
+    background-image: url("../../../icons/logo/github-line.svg");
+  }
+
+  .webfacile-icon-google-fill::before,
+  .webfacile-icon-google-fill::after {
+    background-image: url("../../../icons/logo/google-fill.svg");
+  }
+
+  .webfacile-icon-google-line::before,
+  .webfacile-icon-google-line::after {
+    background-image: url("../../../icons/logo/google-line.svg");
+  }
+
+  .webfacile-icon-ie-fill::before,
+  .webfacile-icon-ie-fill::after {
+    background-image: url("../../../icons/logo/ie-fill.svg");
+  }
+
+  .webfacile-icon-ie-line::before,
+  .webfacile-icon-ie-line::after {
+    background-image: url("../../../icons/logo/ie-line.svg");
+  }
+
+  .webfacile-icon-instagram-fill::before,
+  .webfacile-icon-instagram-fill::after {
+    background-image: url("../../../icons/logo/instagram-fill.svg");
+  }
+
+  .webfacile-icon-instagram-line::before,
+  .webfacile-icon-instagram-line::after {
+    background-image: url("../../../icons/logo/instagram-line.svg");
+  }
+
+  .webfacile-icon-linkedin-box-fill::before,
+  .webfacile-icon-linkedin-box-fill::after {
+    background-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .webfacile-icon-linkedin-box-line::before,
+  .webfacile-icon-linkedin-box-line::after {
+    background-image: url("../../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .webfacile-icon-mastodon-fill::before,
+  .webfacile-icon-mastodon-fill::after {
+    background-image: url("../../../icons/logo/mastodon-fill.svg");
+  }
+
+  .webfacile-icon-mastodon-line::before,
+  .webfacile-icon-mastodon-line::after {
+    background-image: url("../../../icons/logo/mastodon-line.svg");
+  }
+
+  .webfacile-icon-npmjs-fill::before,
+  .webfacile-icon-npmjs-fill::after {
+    background-image: url("../../../icons/logo/npmjs-fill.svg");
+  }
+
+  .webfacile-icon-npmjs-line::before,
+  .webfacile-icon-npmjs-line::after {
+    background-image: url("../../../icons/logo/npmjs-line.svg");
+  }
+
+  .webfacile-icon-remixicon-fill::before,
+  .webfacile-icon-remixicon-fill::after {
+    background-image: url("../../../icons/logo/remixicon-fill.svg");
+  }
+
+  .webfacile-icon-remixicon-line::before,
+  .webfacile-icon-remixicon-line::after {
+    background-image: url("../../../icons/logo/remixicon-line.svg");
+  }
+
+  .webfacile-icon-safari-fill::before,
+  .webfacile-icon-safari-fill::after {
+    background-image: url("../../../icons/logo/safari-fill.svg");
+  }
+
+  .webfacile-icon-safari-line::before,
+  .webfacile-icon-safari-line::after {
+    background-image: url("../../../icons/logo/safari-line.svg");
+  }
+
+  .webfacile-icon-slack-fill::before,
+  .webfacile-icon-slack-fill::after {
+    background-image: url("../../../icons/logo/slack-fill.svg");
+  }
+
+  .webfacile-icon-slack-line::before,
+  .webfacile-icon-slack-line::after {
+    background-image: url("../../../icons/logo/slack-line.svg");
+  }
+
+  .webfacile-icon-snapchat-fill::before,
+  .webfacile-icon-snapchat-fill::after {
+    background-image: url("../../../icons/logo/snapchat-fill.svg");
+  }
+
+  .webfacile-icon-snapchat-line::before,
+  .webfacile-icon-snapchat-line::after {
+    background-image: url("../../../icons/logo/snapchat-line.svg");
+  }
+
+  .webfacile-icon-telegram-fill::before,
+  .webfacile-icon-telegram-fill::after {
+    background-image: url("../../../icons/logo/telegram-fill.svg");
+  }
+
+  .webfacile-icon-telegram-line::before,
+  .webfacile-icon-telegram-line::after {
+    background-image: url("../../../icons/logo/telegram-line.svg");
+  }
+
+  .webfacile-icon-threads-fill::before,
+  .webfacile-icon-threads-fill::after {
+    background-image: url("../../../icons/logo/threads-fill.svg");
+  }
+
+  .webfacile-icon-threads-line::before,
+  .webfacile-icon-threads-line::after {
+    background-image: url("../../../icons/logo/threads-line.svg");
+  }
+
+  .webfacile-icon-twitch-fill::before,
+  .webfacile-icon-twitch-fill::after {
+    background-image: url("../../../icons/logo/twitch-fill.svg");
+  }
+
+  .webfacile-icon-twitch-line::before,
+  .webfacile-icon-twitch-line::after {
+    background-image: url("../../../icons/logo/twitch-line.svg");
+  }
+
+  .webfacile-icon-twitter-fill::before,
+  .webfacile-icon-twitter-fill::after {
+    background-image: url("../../../icons/logo/twitter-fill.svg");
+  }
+
+  .webfacile-icon-twitter-line::before,
+  .webfacile-icon-twitter-line::after {
+    background-image: url("../../../icons/logo/twitter-line.svg");
+  }
+
+  .webfacile-icon-twitter-x-fill::before,
+  .webfacile-icon-twitter-x-fill::after {
+    background-image: url("../../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .webfacile-icon-twitter-x-line::before,
+  .webfacile-icon-twitter-x-line::after {
+    background-image: url("../../../icons/logo/twitter-x-line.svg");
+  }
+
+  .webfacile-icon-vimeo-fill::before,
+  .webfacile-icon-vimeo-fill::after {
+    background-image: url("../../../icons/logo/vimeo-fill.svg");
+  }
+
+  .webfacile-icon-vimeo-line::before,
+  .webfacile-icon-vimeo-line::after {
+    background-image: url("../../../icons/logo/vimeo-line.svg");
+  }
+
+  .webfacile-icon-vuejs-fill::before,
+  .webfacile-icon-vuejs-fill::after {
+    background-image: url("../../../icons/logo/vuejs-fill.svg");
+  }
+
+  .webfacile-icon-vuejs-line::before,
+  .webfacile-icon-vuejs-line::after {
+    background-image: url("../../../icons/logo/vuejs-line.svg");
+  }
+
+  .webfacile-icon-youtube-fill::before,
+  .webfacile-icon-youtube-fill::after {
+    background-image: url("../../../icons/logo/youtube-fill.svg");
+  }
+
+  .webfacile-icon-youtube-line::before,
+  .webfacile-icon-youtube-line::after {
+    background-image: url("../../../icons/logo/youtube-line.svg");
+  }
+
+  .webfacile-fi-facebook-circle-fill::before {
+    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .webfacile-fi-facebook-circle-line::before {
+    background-image: url("../../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .webfacile-fi-dailymotion-fill::before {
+    background-image: url("../../../icons/logo/fr--dailymotion-fill.svg");
+  }
+
+  .webfacile-fi-dailymotion-line::before {
+    background-image: url("../../../icons/logo/fr--dailymotion-line.svg");
+  }
+
+  .webfacile-fi-github-fill::before {
+    background-image: url("../../../icons/logo/github-fill.svg");
+  }
+
+  .webfacile-fi-github-line::before {
+    background-image: url("../../../icons/logo/github-line.svg");
+  }
+
+  .webfacile-fi-instagram-fill::before {
+    background-image: url("../../../icons/logo/instagram-fill.svg");
+  }
+
+  .webfacile-fi-instagram-line::before {
+    background-image: url("../../../icons/logo/instagram-line.svg");
+  }
+
+  .webfacile-fi-linkedin-box-fill::before {
+    background-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .webfacile-fi-linkedin-box-line::before {
+    background-image: url("../../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .webfacile-fi-npmjs-fill::before {
+    background-image: url("../../../icons/logo/npmjs-fill.svg");
+  }
+
+  .webfacile-fi-npmjs-line::before {
+    background-image: url("../../../icons/logo/npmjs-line.svg");
+  }
+
+  .webfacile-fi-remixicon-fill::before {
+    background-image: url("../../../icons/logo/remixicon-fill.svg");
+  }
+
+  .webfacile-fi-remixicon-line::before {
+    background-image: url("../../../icons/logo/remixicon-line.svg");
+  }
+
+  .webfacile-fi-slack-fill::before {
+    background-image: url("../../../icons/logo/slack-fill.svg");
+  }
+
+  .webfacile-fi-slack-line::before {
+    background-image: url("../../../icons/logo/slack-line.svg");
+  }
+
+  .webfacile-fi-snapchat-fill::before {
+    background-image: url("../../../icons/logo/snapchat-fill.svg");
+  }
+
+  .webfacile-fi-snapchat-line::before {
+    background-image: url("../../../icons/logo/snapchat-line.svg");
+  }
+
+  .webfacile-fi-telegram-fill::before {
+    background-image: url("../../../icons/logo/telegram-fill.svg");
+  }
+
+  .webfacile-fi-telegram-line::before {
+    background-image: url("../../../icons/logo/telegram-line.svg");
+  }
+
+  .webfacile-fi-twitch-fill::before {
+    background-image: url("../../../icons/logo/twitch-fill.svg");
+  }
+
+  .webfacile-fi-twitch-line::before {
+    background-image: url("../../../icons/logo/twitch-line.svg");
+  }
+
+  .webfacile-fi-twitter-fill::before {
+    background-image: url("../../../icons/logo/twitter-fill.svg");
+  }
+
+  .webfacile-fi-twitter-line::before {
+    background-image: url("../../../icons/logo/twitter-line.svg");
+  }
+
+  .webfacile-fi-vimeo-fill::before {
+    background-image: url("../../../icons/logo/vimeo-fill.svg");
+  }
+
+  .webfacile-fi-vimeo-line::before {
+    background-image: url("../../../icons/logo/vimeo-line.svg");
+  }
+
+  .webfacile-fi-youtube-fill::before {
+    background-image: url("../../../icons/logo/youtube-fill.svg");
+  }
+
+  .webfacile-fi-youtube-line::before {
+    background-image: url("../../../icons/logo/youtube-line.svg");
+  }
+}

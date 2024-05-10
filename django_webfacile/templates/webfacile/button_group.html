@@ -1,0 +1,8 @@
+{% load webfacile_tags %}
+<ul class="webfacile-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% for item in self.items %}
+    <li>
+      {% webfacile_button item %}
+    </li>
+  {% endfor %}
+</ul>

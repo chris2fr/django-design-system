@@ -1,0 +1,21 @@
+{% load widget_tweaks webfacile_tags %}
+<div class="webfacile-checkbox-group{% if field.errors %} webfacile-checkbox-group--error{% endif %}{% if field.field.disabled %} webfacile-input-group--disabled{% endif %} webfacile-mb-2w">
+  {% if field.errors %}
+    {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
+      {{ field|webfacile_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+    {% endwith %}
+  {% else %}
+    {{ field|webfacile_input_class_attr|attr:"type:checkbox" }}
+  {% endif %}
+  <label for="{{ field.id_for_label }}" class="webfacile-label">
+    {{ field.label_tag }}
+    {% if field.help_text %}
+      <span class="webfacile-hint-text">{{ field.help_text }}</span>
+    {% endif %}
+  </label>
+  {% if field.errors %}
+    <div id="{{ field.auto_id }}-desc-error">
+      {{ field.errors }}
+    </div>
+  {% endif %}
+</div>

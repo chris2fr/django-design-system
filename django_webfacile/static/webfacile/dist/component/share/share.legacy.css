@@ -1,0 +1,137 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-share__group > li {
+    list-style: none;
+  }
+
+  .webfacile-share .webfacile-btns-group:not(.webfacile-btns-group--sm):not(.webfacile-btns-group--lg) .webfacile-btn:not([class^=webfacile-icon-]):not([class*=" webfacile-icon-"]):not([class^=webfacile-fi-]):not([class*=" webfacile-fi-"])::before,
+  .webfacile-share .webfacile-btns-group:not(.webfacile-btns-group--sm):not(.webfacile-btns-group--lg) .webfacile-btn:not([class^=webfacile-icon-]):not([class*=" webfacile-icon-"]):not([class^=webfacile-fi-]):not([class*=" webfacile-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfacile-share .webfacile-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--threads::before {
+    background-image: url("../../icons/logo/threads-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-line.svg");
+  }
+
+  .webfacile-share .webfacile-btn--mail::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/mail-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfacile-share .webfacile-btn--copy::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/links-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfacile-share .webfacile-btn {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .webfacile-share .webfacile-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-share .webfacile-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfacile-share .webfacile-btn:disabled,
+  .webfacile-share a.webfacile-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .webfacile-share .webfacile-btn:disabled:hover,
+  .webfacile-share a.webfacile-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-share .webfacile-btn:disabled:active,
+  .webfacile-share a.webfacile-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfacile-share__text {
+    color: #666;
+  }
+
+  .webfacile-share__link {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .webfacile-share__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-share__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfacile-share__link:disabled,
+  a.webfacile-share__link:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .webfacile-share__link:disabled:hover,
+  a.webfacile-share__link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-share__link:disabled:active,
+  a.webfacile-share__link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

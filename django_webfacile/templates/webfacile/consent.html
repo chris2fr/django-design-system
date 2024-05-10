@@ -1,0 +1,39 @@
+{% load i18n %}
+<div class="webfacile-consent-banner">
+  <h2 class="webfacile-h6">
+    {{ self.title }}
+  </h2>
+  <div class="webfacile-consent-banner__content">
+    <p class="webfacile-text--sm">
+      {{ self.content|safe }}
+    </p>
+  </div>
+  <ul class="webfacile-consent-banner__buttons webfacile-btns-group webfacile-btns-group--right webfacile-btns-group--inline-reverse webfacile-btns-group--inline-sm">
+    <li>
+      {% translate "Allow all cookies" as allow_all_cookies %}
+      <button class="webfacile-btn"
+              id="consent-accept-all"
+              title="{{ allow_all_cookies }}">
+        {% translate "Accept all" %}
+      </button>
+    </li>
+    <li>
+      {% translate "Reject all cookies" as reject_all_cookies %}
+      <button class="webfacile-btn"
+              id="consent-reject-all"
+              title="{{ reject_all_cookies }}">
+        {% translate "Reject all" %}
+      </button>
+    </li>
+    <li>
+      {% translate "Customize cookies" as customize_cookies %}
+      <button class="webfacile-btn webfacile-btn--secondary"
+              id="consent-customize"
+              data-webfacile-opened="false"
+              aria-controls="webfacile-consent-modal"
+              title="{{ customize_cookies }}">
+        {% translate "Customize" %}
+      </button>
+    </li>
+  </ul>
+</div>

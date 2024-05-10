@@ -1,0 +1,166 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-card--no-icon::after {
+    content: none;
+  }
+
+  .webfacile-card__title,
+  .webfacile-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .webfacile-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .webfacile-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-card--download .webfacile-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .webfacile-card--download .webfacile-card__header {
+    padding-top: 56.25%;
+  }
+
+  .webfacile-card--download .webfacile-card__header .webfacile-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .webfacile-card.webfacile-enlarge-link .webfacile-card__title a {
+    text-decoration: none;
+  }
+
+  .webfacile-card.webfacile-enlarge-link .webfacile-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .webfacile-card--sm.webfacile-enlarge-link .webfacile-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-card--sm .webfacile-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-card--lg.webfacile-enlarge-link .webfacile-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .webfacile-card--lg .webfacile-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .webfacile-card > .webfacile-card__img {
+    flex-shrink: 0;
+  }
+
+  .webfacile-card {
+    background-color: #fff;
+  }
+
+  .webfacile-card:not(.webfacile-card--no-border):not(.webfacile-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfacile-card--grey {
+    background-color: #eee;
+  }
+
+  .webfacile-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .webfacile-card--shadow.webfacile-card--grey {
+    background-color: #eee;
+  }
+
+  .webfacile-card--no-background {
+    background-color: transparent;
+  }
+
+  .webfacile-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfacile-card--download:not(.webfacile-card--no-background) .webfacile-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .webfacile-card__detail {
+    color: #666;
+  }
+
+  .webfacile-card__title {
+    color: #161616;
+  }
+
+  .webfacile-card__title a[href] {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfacile-card__title:disabled,
+  a.webfacile-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .webfacile-card--download .webfacile-card__header {
+    padding-top: 0;
+  }
+
+  .webfacile-card--download .webfacile-card__body,
+  .webfacile-card--horizontal .webfacile-card__body,
+  .webfacile-card--horizontal-half .webfacile-card__body,
+  .webfacile-card--horizontal-tier .webfacile-card__body {
+    flex-basis: 100%;
+  }
+}

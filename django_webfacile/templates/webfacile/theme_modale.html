@@ -1,0 +1,76 @@
+{% load static i18n %}
+<dialog id="webfacile-theme-modal"
+        class="webfacile-modal"
+        aria-labelledby="webfacile-theme-modal-title">
+  <div class="webfacile-container webfacile-container--fluid facile-container-md">
+    <div class="webfacile-grid-row webfacile-grid-row--center">
+      <div class="webfacile-col-12 webfacile-col-md-6 webfacile-col-lg-4">
+        <div class="webfacile-modal__body">
+          <div class="webfacile-modal__header">
+            <button class="webfacile-btn--close webfacile-btn"
+                    aria-describedby="webfacile-theme-modal-title"
+                    aria-controls="webfacile-theme-modal">
+              {% translate "Close" %}
+            </button>
+          </div>
+          <div class="webfacile-modal__content">
+            <h1 id="webfacile-theme-modal-title" class="webfacile-modal__title">
+              {% translate "Display settings" %}
+            </h1>
+            <div id="webfacile-display" class="webfacile-form-group webfacile-display">
+              <div class="webfacile-form-group">
+                <fieldset class="webfacile-fieldset">
+                  <legend class="webfacile-fieldset__legend facile-text--regular" id="-legend">
+                    {% translate "Choose a theme to customize the appearance of the site." %}
+                  </legend>
+                  <div class="webfacile-fieldset__content">
+                    <div class="webfacile-radio-group webfacile-radio-rich">
+                      <input value="light"
+                             type="radio"
+                             id="webfacile-radios-theme-light"
+                             name="webfacile-radios-theme" />
+                      <label class="webfacile-label" for="webfacile-radios-theme-light">
+                        {% translate "Light theme" %}
+                      </label>
+                      <div class="webfacile-radio-rich__img" data-webfacile-inject-svg>
+                        <img src="{% static 'webfacile/dist/artwork/light.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="webfacile-radio-group webfacile-radio-rich">
+                      <input value="dark"
+                             type="radio"
+                             id="webfacile-radios-theme-dark"
+                             name="webfacile-radios-theme" />
+                      <label class="webfacile-label" for="webfacile-radios-theme-dark">
+                        {% translate "Dark theme" %}
+                      </label>
+                      <div class="webfacile-radio-rich__img" data-webfacile-inject-svg>
+                        <img src="{% static 'webfacile/dist/artwork/dark.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="webfacile-radio-group webfacile-radio-rich">
+                      <input value="system"
+                             type="radio"
+                             id="webfacile-radios-theme-system"
+                             name="webfacile-radios-theme" />
+                      <label class="webfacile-label" for="webfacile-radios-theme-system">
+                        {% translate "System" %}
+                        <span class="webfacile-hint-text">{% translate "Uses system settings." %}</span>
+                      </label>
+                      <div class="webfacile-radio-rich__img" data-webfacile-inject-svg>
+                        <img src="{% static 'webfacile/dist/artwork/system.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

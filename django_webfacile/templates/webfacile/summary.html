@@ -1,0 +1,13 @@
+{% load i18n %}
+<nav role="navigation"
+     class="webfacile-summary"
+     aria-labelledby="webfacile-summary-title">
+  <{{ self.heading_tag | default:"p" }} class="webfacile-summary__title" id="webfacile-summary-title">
+  {% translate "Summary" %}
+  </{{ self.heading_tag | default:"p" }}>
+  <ol class="webfacile-summary__list">
+    {% for item in self.items %}
+      {% include "webfacile/summary_list.html" with item=item %}
+    {% endfor %}
+  </ol>
+</nav>

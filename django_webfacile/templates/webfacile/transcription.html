@@ -1,0 +1,51 @@
+{% load i18n %}
+{% translate "Transcript" as transcript_label %}
+<div class="webfacile-transcription">
+  <button class="webfacile-transcription__btn"
+          aria-expanded="false"
+          aria-controls="webfacile-transcription__collapse-{{ self.id }}">
+    {{ transcript_label }}
+  </button>
+  <div class="webfacile-collapse"
+       id="webfacile-transcription__collapse-{{ self.id }}">
+    <div class="webfacile-transcription__footer">
+      <div class="webfacile-transcription__actions-group">
+        {% translate "Enlarge" as enlarge_label %}
+        <button class="webfacile-btn webfacile-btn--fullscreen"
+                aria-controls="webfacile-transcription-modal-{{ self.id }}"
+                data-webfacile-opened="false"
+                title="{{ enlarge_label }}">
+          {{ enlarge_label }}
+        </button>
+      </div>
+    </div>
+    <dialog id="webfacile-transcription-modal-{{ self.id }}"
+            class="webfacile-modal"
+            role="dialog"
+            aria-labelledby="webfacile-transcription-modal-{{ self.id }}-title">
+      <div class="webfacile-container webfacile-container--fluid facile-container-md">
+        <div class="webfacile-grid-row webfacile-grid-row--center">
+          <div class="webfacile-col-12 webfacile-col-md-10 webfacile-col-lg-8">
+            <div class="webfacile-modal__body">
+              <div class="webfacile-modal__header">
+                {% translate "Close" as close_label %}
+                <button class="webfacile-btn--close webfacile-btn"
+                        aria-controls="webfacile-transcription-modal-{{ self.id }}"
+                        title="{{ close_label }}">
+                  {{ close_label }}
+                </button>
+              </div>
+              <div class="webfacile-modal__content">
+                <h1 id="webfacile-transcription-modal-{{ self.id }}-title"
+                    class="webfacile-modal__title">
+                  {{ self.title|default:transcript_label }}
+                </h1>
+                {{ self.content|safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</div>

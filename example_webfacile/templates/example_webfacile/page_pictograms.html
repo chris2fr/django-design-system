@@ -1,0 +1,62 @@
+{% extends "example_webfacile/base.html" %}
+{% load static webfacile_tags %}
+{% block content %}
+  <h1>
+    Pictogrammes
+  </h1>
+  <div class="webfacile-mb-4w">
+    {% webfacile_summary summary %}
+  </div>
+  <ul>
+    <li>
+      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/pictogramme"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+    <li>
+      <a class="webfacile-link webfacile-icon-external-link-line webfacile-link--icon-right webfacile-link--lg"
+         href="https://main--ds-gouv.netlify.app/example/utility/pictograms/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="webfacile-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+  </ul>
+  {% for folder, files in pictograms.items %}
+    <h2 id="{{ folder|slugify }}" tabindex="-1">
+      {{ folder|title }}
+    </h2>
+    <div class="webfacile-grid-row webfacile-grid-row--gutters">
+      {% for file in files %}
+        <div class="webfacile-col-12 webfacile-col-md-3 webfacile-mb-4w">
+          <div class="webfacile-tile webfacile-enlarge-link">
+            <div class="webfacile-tile__body">
+              <div class="webfacile-tile__content">
+                <h3 class="webfacile-tile__title">
+                  <a class="webfacile-tile__link"
+                     href="/static/webfacile/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
+                </h3>
+              </div>
+            </div>
+            <div class="webfacile-tile__header">
+              <div class="webfacile-tile__pictogram">
+                <svg aria-hidden="true"
+                     class="webfacile-artwork"
+                     viewBox="0 0 80 80"
+                     width="80px"
+                     height="80px">
+                  <use class="webfacile-artwork-decorative" href="/static/webfacile/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
+                  <use class="webfacile-artwork-minor" href="/static/webfacile/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
+                  <use class="webfacile-artwork-major" href="/static/webfacile/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock content %}

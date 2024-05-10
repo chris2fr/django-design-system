@@ -1,0 +1,19 @@
+{% extends "example_webfacile/base.html" %}
+{% load static webfacile_tags %}
+{% block content %}
+  <h1>
+    Exemple de formulaire
+  </h1>
+  <form action="{% url 'page_form' %}" method="post">
+    {% csrf_token %}
+    {% webfacile_form %}
+    <div class="webfacile-input-group webfacile-my-4w">
+      <button type="submit" class="webfacile-btn" title="Valider">
+        Valider ce formulaire
+      </button>
+      <button type="" class="webfacile-btn webfacile-btn--secondary" title="Annuler">
+        Annuler
+      </button>
+    </div>
+  </form>
+{% endblock content %}

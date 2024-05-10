@@ -1,0 +1,6 @@
+{% load webfacile_tags %}
+<div class="webfacile-accordions-group">
+  {% for item in self.items %}
+    {% webfacile_accordion item %}
+  {% endfor %}
+</div>

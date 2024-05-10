@@ -1,0 +1,43 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .webfacile-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .webfacile-consent-banner {
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+    display: none;
+  }
+
+  .webfacile-consent-manager__header,
+  .webfacile-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .webfacile-consent-manager__header .webfacile-radio-group + .webfacile-radio-group::before,
+  .webfacile-consent-service .webfacile-radio-group + .webfacile-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .webfacile-consent-service__title {
+    color: #161616;
+  }
+
+  .webfacile-consent-service .webfacile-consent-service__collapse-btn {
+    color: hsl(122, 75%, 25%);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .webfacile-consent-banner {
+    z-index: 1500;
+  }
+
+  .webfacile-consent-service:last-of-type,
+  .webfacile-consent-service .webfacile-consent-service {
+    box-shadow: none;
+  }
+}

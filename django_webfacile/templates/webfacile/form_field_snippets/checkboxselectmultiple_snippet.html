@@ -1,0 +1,36 @@
+{% load widget_tweaks webfacile_tags %}
+<fieldset class="webfacile-fieldset{% if field.errors %} webfacile-fieldset--error{% endif %}"
+          id="checkboxes-{{ field.auto_id }}"
+          aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
+  <legend class="webfacile-fieldset__legend facile-text--regular"
+          id="{{ field.auto_id }}-legend">
+    {{ field.label_tag }}
+    {% if field.field.required %}
+      *
+    {% endif %}
+    {% if field.help_text %}
+      <span class="webfacile-hint-text">{{ field.help_text }}</span>
+    {% endif %}
+  </legend>
+  <div class="webfacile-fieldset__content">
+    <div class="webfacile-checkbox-group{% if field.errors %} webfacile-checkbox-group--error{% endif %}{% if field.field.disabled %} webfacile-input-group--disabled{% endif %}">
+      {% if field.errors %}
+        {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
+          {{ field|webfacile_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+        {% endwith %}
+      {% else %}
+        {{ field|webfacile_input_class_attr|attr:"type:checkbox" }}
+      {% endif %}
+      {% if field.errors %}
+        <div id="{{ field.auto_id }}-desc-error" class="webfacile-error-text">
+          {{ field.errors }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if field.errors %}
+    <div id="{{ field.auto_id }}-messages">
+      {{ field.errors }}
+    </div>
+  {% endif %}
+</fieldset>

@@ -1,0 +1,118 @@
+{% load i18n %}
+<header role="banner" class="webfacile-header">
+  <div class="webfacile-header__body">
+    <div class="webfacile-container">
+      <div class="webfacile-header__body-row">
+        <div class="webfacile-header__brand facile-enlarge-link">
+          <div class="webfacile-header__brand-top">
+            <div class="webfacile-header__logo">
+              {% block brand %}
+                {% translate "Home page" as home_page %}
+                <a href="/" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+                  <p class="webfacile-logo">
+                    {{ SITE_CONFIG.header_brand_html|default_if_none:"république<br />française" | safe }}
+                  </p>
+                </a>
+              {% endblock brand %}
+            </div>
+            {% block operator_logo %}
+              {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
+                <div class="webfacile-header__operator">
+                  <img class="webfacile-responsive-img"
+                       src="{{ SITE_CONFIG.operator_logo_file.url }}"
+                       alt="{{ SITE_CONFIG.operator_logo_alt }}"
+                       {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
+                </div>
+              {% endif %}
+            {% endblock operator_logo %}
+            {% block burger_menu %}
+              {% translate "Menu" as menu_label %}
+              <div class="webfacile-header__navbar">
+                <button class="webfacile-btn--menu webfacile-btn"
+                        data-webfacile-opened="false"
+                        aria-controls="webfacile-modal-menu-mobile"
+                        id="webfacile-btn-menu-mobile"
+                        title="{{ menu_label }}">
+                  {{ menu_label }}
+                </button>
+              </div>
+            {% endblock burger_menu %}
+          </div>
+          <div class="webfacile-header__service">
+            {% block service_title %}
+              <a href="/" title="Accueil — {{ SITE_CONFIG.site_title }}">
+                <p class="webfacile-header__service-title">
+                  {{ SITE_CONFIG.site_title }}
+                  {% if SITE_CONFIG.beta_tag %}
+                    <span class="webfacile-badge webfacile-badge--sm webfacile-badge--green-emeraude">BETA</span>
+                  {% endif %}
+                </p>
+              </a>
+            {% endblock service_title %}
+            <p class="webfacile-header__service-tagline">
+              {% block service_tagline %}
+                {{ SITE_CONFIG.site_tagline }}
+              {% endblock service_tagline %}
+            </p>
+          </div>
+        </div>
+        <div class="webfacile-header__tools">
+          <div class="webfacile-header__tools-links">
+            <ul class="webfacile-btns-group">
+              {% block header_tools %}
+                <li>
+                  <a class="webfacile-icon-add-circle-line webfacile-btn"
+                     href="[url - à modifier]">Créer un espace</a>
+                </li>
+                <li>
+                  <a class="webfacile-icon-lock-line webfacile-btn"
+                     href="[url - à modifier]">Se connecter</a>
+                </li>
+                <li>
+                  <a class="webfacile-icon-account-line webfacile-btn"
+                     href="[url - à modifier]">S’enregistrer</a>
+                </li>
+              {% endblock header_tools %}
+            </ul>
+          </div>
+          {% block header_search %}
+          {% endblock header_search %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% block main_menu %}
+    <div class="webfacile-header__menu webfacile-modal"
+         id="webfacile-menu-mobile"
+         aria-labelledby="webfacile-btn-menu-mobile">
+      <div class="webfacile-container">
+        <button class="webfacile-btn--close webfacile-btn"
+                aria-controls="webfacile-menu-mobile">
+          {% translate "Close" %}
+        </button>
+        <div class="webfacile-header__menu-links">
+        </div>
+        {% translate "Main menu" as main_menu_label %}
+        <nav role="navigation"
+             class="webfacile-nav"
+             id="webfacile-navigation"
+             aria-label="{{ main_menu_label }}">
+          <ul class="webfacile-nav__list">
+            <li class="webfacile-nav__item">
+              <a class="webfacile-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="webfacile-nav__item">
+              <a class="webfacile-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="webfacile-nav__item">
+              <a class="webfacile-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="webfacile-nav__item">
+              <a class="webfacile-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  {% endblock main_menu %}
+</header>

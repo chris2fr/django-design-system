@@ -1,0 +1,22 @@
+{% extends "example_webfacile/base.html" %}
+{% load static webfacile_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="webfacile-grid-row webfacile-grid-row--gutters webfacile-mb-3w">
+    <div class="webfacile-col-12 webfacile-col-md-4">
+      {% if summary_data %}
+        {% webfacile_summary summary_data %}
+      {% endif %}
+    </div>
+  </div>
+  {{ documentation|safe }}
+{% endblock content %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/webfacile-code.css' %}">
+{% endblock extra_css %}
+
+{% block follow_newsletter_social_media %}
+  {% include "webfacile/follow.html" %}
+{% endblock follow_newsletter_social_media %}

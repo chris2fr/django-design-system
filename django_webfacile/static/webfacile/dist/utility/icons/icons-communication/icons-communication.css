@@ -1,0 +1,275 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfacile-icon-chat-2-fill::before,
+.webfacile-icon-chat-2-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-2-fill.svg");
+  mask-image: url("../../../icons/communication/chat-2-fill.svg");
+}
+
+.webfacile-icon-chat-2-line::before,
+.webfacile-icon-chat-2-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-2-line.svg");
+  mask-image: url("../../../icons/communication/chat-2-line.svg");
+}
+
+.webfacile-icon-chat-3-fill::before,
+.webfacile-icon-chat-3-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-3-fill.svg");
+  mask-image: url("../../../icons/communication/chat-3-fill.svg");
+}
+
+.webfacile-icon-chat-3-line::before,
+.webfacile-icon-chat-3-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-3-line.svg");
+  mask-image: url("../../../icons/communication/chat-3-line.svg");
+}
+
+.webfacile-icon-chat-check-fill::before,
+.webfacile-icon-chat-check-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-check-fill.svg");
+  mask-image: url("../../../icons/communication/chat-check-fill.svg");
+}
+
+.webfacile-icon-chat-check-line::before,
+.webfacile-icon-chat-check-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-check-line.svg");
+  mask-image: url("../../../icons/communication/chat-check-line.svg");
+}
+
+.webfacile-icon-chat-delete-fill::before,
+.webfacile-icon-chat-delete-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-delete-fill.svg");
+  mask-image: url("../../../icons/communication/chat-delete-fill.svg");
+}
+
+.webfacile-icon-chat-delete-line::before,
+.webfacile-icon-chat-delete-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-delete-line.svg");
+  mask-image: url("../../../icons/communication/chat-delete-line.svg");
+}
+
+.webfacile-icon-chat-poll-fill::before,
+.webfacile-icon-chat-poll-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-poll-fill.svg");
+  mask-image: url("../../../icons/communication/chat-poll-fill.svg");
+}
+
+.webfacile-icon-chat-poll-line::before,
+.webfacile-icon-chat-poll-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-poll-line.svg");
+  mask-image: url("../../../icons/communication/chat-poll-line.svg");
+}
+
+.webfacile-icon-discuss-fill::before,
+.webfacile-icon-discuss-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/discuss-fill.svg");
+  mask-image: url("../../../icons/communication/discuss-fill.svg");
+}
+
+.webfacile-icon-discuss-line::before,
+.webfacile-icon-discuss-line::after {
+  -webkit-mask-image: url("../../../icons/communication/discuss-line.svg");
+  mask-image: url("../../../icons/communication/discuss-line.svg");
+}
+
+.webfacile-icon-feedback-fill::before,
+.webfacile-icon-feedback-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/feedback-fill.svg");
+  mask-image: url("../../../icons/communication/feedback-fill.svg");
+}
+
+.webfacile-icon-feedback-line::before,
+.webfacile-icon-feedback-line::after {
+  -webkit-mask-image: url("../../../icons/communication/feedback-line.svg");
+  mask-image: url("../../../icons/communication/feedback-line.svg");
+}
+
+.webfacile-icon-message-2-fill::before,
+.webfacile-icon-message-2-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/message-2-fill.svg");
+  mask-image: url("../../../icons/communication/message-2-fill.svg");
+}
+
+.webfacile-icon-message-2-line::before,
+.webfacile-icon-message-2-line::after {
+  -webkit-mask-image: url("../../../icons/communication/message-2-line.svg");
+  mask-image: url("../../../icons/communication/message-2-line.svg");
+}
+
+.webfacile-icon-question-answer-fill::before,
+.webfacile-icon-question-answer-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/question-answer-fill.svg");
+  mask-image: url("../../../icons/communication/question-answer-fill.svg");
+}
+
+.webfacile-icon-question-answer-line::before,
+.webfacile-icon-question-answer-line::after {
+  -webkit-mask-image: url("../../../icons/communication/question-answer-line.svg");
+  mask-image: url("../../../icons/communication/question-answer-line.svg");
+}
+
+.webfacile-icon-questionnaire-fill::before,
+.webfacile-icon-questionnaire-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/questionnaire-fill.svg");
+  mask-image: url("../../../icons/communication/questionnaire-fill.svg");
+}
+
+.webfacile-icon-questionnaire-line::before,
+.webfacile-icon-questionnaire-line::after {
+  -webkit-mask-image: url("../../../icons/communication/questionnaire-line.svg");
+  mask-image: url("../../../icons/communication/questionnaire-line.svg");
+}
+
+.webfacile-icon-video-chat-fill::before,
+.webfacile-icon-video-chat-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/video-chat-fill.svg");
+  mask-image: url("../../../icons/communication/video-chat-fill.svg");
+}
+
+.webfacile-icon-video-chat-line::before,
+.webfacile-icon-video-chat-line::after {
+  -webkit-mask-image: url("../../../icons/communication/video-chat-line.svg");
+  mask-image: url("../../../icons/communication/video-chat-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-icon-chat-2-fill::before,
+  .webfacile-icon-chat-2-fill::after {
+    background-image: url("../../../icons/communication/chat-2-fill.svg");
+  }
+
+  .webfacile-icon-chat-2-line::before,
+  .webfacile-icon-chat-2-line::after {
+    background-image: url("../../../icons/communication/chat-2-line.svg");
+  }
+
+  .webfacile-icon-chat-3-fill::before,
+  .webfacile-icon-chat-3-fill::after {
+    background-image: url("../../../icons/communication/chat-3-fill.svg");
+  }
+
+  .webfacile-icon-chat-3-line::before,
+  .webfacile-icon-chat-3-line::after {
+    background-image: url("../../../icons/communication/chat-3-line.svg");
+  }
+
+  .webfacile-icon-chat-check-fill::before,
+  .webfacile-icon-chat-check-fill::after {
+    background-image: url("../../../icons/communication/chat-check-fill.svg");
+  }
+
+  .webfacile-icon-chat-check-line::before,
+  .webfacile-icon-chat-check-line::after {
+    background-image: url("../../../icons/communication/chat-check-line.svg");
+  }
+
+  .webfacile-icon-chat-delete-fill::before,
+  .webfacile-icon-chat-delete-fill::after {
+    background-image: url("../../../icons/communication/chat-delete-fill.svg");
+  }
+
+  .webfacile-icon-chat-delete-line::before,
+  .webfacile-icon-chat-delete-line::after {
+    background-image: url("../../../icons/communication/chat-delete-line.svg");
+  }
+
+  .webfacile-icon-chat-poll-fill::before,
+  .webfacile-icon-chat-poll-fill::after {
+    background-image: url("../../../icons/communication/chat-poll-fill.svg");
+  }
+
+  .webfacile-icon-chat-poll-line::before,
+  .webfacile-icon-chat-poll-line::after {
+    background-image: url("../../../icons/communication/chat-poll-line.svg");
+  }
+
+  .webfacile-icon-discuss-fill::before,
+  .webfacile-icon-discuss-fill::after {
+    background-image: url("../../../icons/communication/discuss-fill.svg");
+  }
+
+  .webfacile-icon-discuss-line::before,
+  .webfacile-icon-discuss-line::after {
+    background-image: url("../../../icons/communication/discuss-line.svg");
+  }
+
+  .webfacile-icon-feedback-fill::before,
+  .webfacile-icon-feedback-fill::after {
+    background-image: url("../../../icons/communication/feedback-fill.svg");
+  }
+
+  .webfacile-icon-feedback-line::before,
+  .webfacile-icon-feedback-line::after {
+    background-image: url("../../../icons/communication/feedback-line.svg");
+  }
+
+  .webfacile-icon-message-2-fill::before,
+  .webfacile-icon-message-2-fill::after {
+    background-image: url("../../../icons/communication/message-2-fill.svg");
+  }
+
+  .webfacile-icon-message-2-line::before,
+  .webfacile-icon-message-2-line::after {
+    background-image: url("../../../icons/communication/message-2-line.svg");
+  }
+
+  .webfacile-icon-question-answer-fill::before,
+  .webfacile-icon-question-answer-fill::after {
+    background-image: url("../../../icons/communication/question-answer-fill.svg");
+  }
+
+  .webfacile-icon-question-answer-line::before,
+  .webfacile-icon-question-answer-line::after {
+    background-image: url("../../../icons/communication/question-answer-line.svg");
+  }
+
+  .webfacile-icon-questionnaire-fill::before,
+  .webfacile-icon-questionnaire-fill::after {
+    background-image: url("../../../icons/communication/questionnaire-fill.svg");
+  }
+
+  .webfacile-icon-questionnaire-line::before,
+  .webfacile-icon-questionnaire-line::after {
+    background-image: url("../../../icons/communication/questionnaire-line.svg");
+  }
+
+  .webfacile-icon-video-chat-fill::before,
+  .webfacile-icon-video-chat-fill::after {
+    background-image: url("../../../icons/communication/video-chat-fill.svg");
+  }
+
+  .webfacile-icon-video-chat-line::before,
+  .webfacile-icon-video-chat-line::after {
+    background-image: url("../../../icons/communication/video-chat-line.svg");
+  }
+}

@@ -1,0 +1,261 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  HIGHLIGHT
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfacile-highlight {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-size: 0.25rem 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-primary), var(--border-default-webfacile-primary));
+}
+
+.webfacile-highlight--webfacile-color3 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color3), var(--border-default-webfacile-color3));
+}
+
+.webfacile-highlight--webfacile-color4 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color4), var(--border-default-webfacile-color4));
+}
+
+.webfacile-highlight--webfacile-color5 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color5), var(--border-default-webfacile-color5));
+}
+
+.webfacile-highlight--webfacile-color6 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color6), var(--border-default-webfacile-color6));
+}
+
+.webfacile-highlight--webfacile-color7 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color7), var(--border-default-webfacile-color7));
+}
+
+.webfacile-highlight--webfacile-color8 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color8), var(--border-default-webfacile-color8));
+}
+
+.webfacile-highlight--webfacile-color9 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color9), var(--border-default-webfacile-color9));
+}
+
+.webfacile-highlight--webfacile-color10 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color10), var(--border-default-webfacile-color10));
+}
+
+.webfacile-highlight--webfacile-color11 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color11), var(--border-default-webfacile-color11));
+}
+
+.webfacile-highlight--webfacile-color12 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color12), var(--border-default-webfacile-color12));
+}
+
+.webfacile-highlight--webfacile-color13 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color13), var(--border-default-webfacile-color13));
+}
+
+.webfacile-highlight--webfacile-color14 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color14), var(--border-default-webfacile-color14));
+}
+
+.webfacile-highlight--webfacile-color15 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color15), var(--border-default-webfacile-color15));
+}
+
+.webfacile-highlight--webfacile-color16 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color16), var(--border-default-webfacile-color16));
+}
+
+.webfacile-highlight--webfacile-color17 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color17), var(--border-default-webfacile-color17));
+}
+
+.webfacile-highlight--webfacile-color18 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color18), var(--border-default-webfacile-color18));
+}
+
+.webfacile-highlight--webfacile-color19 {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color19), var(--border-default-webfacile-color19));
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .webfacile-highlight {
+    padding-left: 2.25rem;
+    margin-left: 2rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-highlight {
+    background-image: linear-gradient(0deg, hsl(122, 85%, 25%), hsl(122, 85%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color3 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color4 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color5 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color6 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color7 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color8 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color9 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color10 {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color11 {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color12 {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color13 {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color14 {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color15 {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color16 {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color17 {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color18 {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color19 {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+}
+
+@media print {
+  .webfacile-highlight {
+    background-image: linear-gradient(0deg, hsl(122, 85%, 25%), hsl(122, 85%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color3 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color4 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color5 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color6 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color7 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color8 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color9 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color10 {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color11 {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color12 {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color13 {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color14 {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color15 {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color16 {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color17 {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color18 {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .webfacile-highlight--webfacile-color19 {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+}

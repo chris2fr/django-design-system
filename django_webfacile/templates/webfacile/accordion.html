@@ -1,0 +1,13 @@
+<section class="webfacile-accordion">
+  <{{ self.heading_tag | default:"h3" }} class="webfacile-accordion__title">
+  <button type="button"
+          class="webfacile-accordion__btn"
+          aria-expanded="false"
+          aria-controls="{{ self.id }}">
+    {{ self.title }}
+  </button>
+  </{{ self.heading_tag | default:"h3" }}>
+  <div class="webfacile-collapse" id="{{ self.id }}">
+    {{ self.content | safe }}
+  </div>
+</section>

@@ -1,0 +1,156 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur du texte dans la tuile
+  */
+  .webfacile-tile--download .webfacile-tile__body,
+  .webfacile-tile--horizontal .webfacile-tile__body {
+    flex-basis: 100%;
+  }
+
+  .webfacile-tile__body,
+  .webfacile-tile__body > * {
+    max-width: 100%;
+  }
+
+  .webfacile-tile__title {
+    margin: 0 0 0.5rem;
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .webfacile-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-tile__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-tile__desc {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .webfacile-tile__start,
+  .webfacile-tile__detail {
+    max-width: 100%;
+  }
+
+  .webfacile-tile--download .webfacile-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .webfacile-tile.webfacile-enlarge-link .webfacile-tile__title a {
+    text-decoration: none;
+  }
+
+  .webfacile-tile.webfacile-enlarge-link .webfacile-tile__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .webfacile-tile--sm .webfacile-tile__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .webfacile-tile {
+    background-color: #fff;
+  }
+
+  .webfacile-tile:not(.webfacile-tile--no-border):not(.webfacile-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .webfacile-tile--grey {
+    background-color: #eee;
+  }
+
+  .webfacile-tile--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .webfacile-tile--shadow.webfacile-tile--grey {
+    background-color: #eee;
+  }
+
+  .webfacile-tile--no-background {
+    background-color: transparent;
+  }
+
+  .webfacile-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .webfacile-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .webfacile-tile__title:disabled,
+  a.webfacile-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .webfacile-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .webfacile-tile__title a {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .webfacile-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%));
+  }
+
+  .webfacile-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .webfacile-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .webfacile-tile--download.webfacile-tile--vertical\@md .webfacile-tile__body,
+  .webfacile-tile--horizontal.webfacile-tile--vertical\@md .webfacile-tile__body {
+    flex-basis: auto;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .webfacile-tile--download.webfacile-tile--vertical\@lg .webfacile-tile__body,
+  .webfacile-tile--horizontal.webfacile-tile--vertical\@lg .webfacile-tile__body {
+    flex-basis: auto;
+  }
+}

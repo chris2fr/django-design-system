@@ -1,0 +1,28 @@
+{% load i18n %}
+<nav role="navigation" class="webfacile-translate webfacile-nav">
+  {% get_current_language as LANGUAGE_CODE %}
+  {% get_available_languages as LANGUAGES %}
+  {% get_language_info_list for LANGUAGES as languages %}
+  <div class="webfacile-nav__item">
+    <button class="webfacile-translate__btn webfacile-btn webfacile-btn--tertiary"
+            aria-controls="translate-menu"
+            aria-expanded="false"
+            title="{% translate 'Select language' %}">
+      {% get_language_info for LANGUAGE_CODE as current_lang %}{{ current_lang.code|upper }}
+      <span class="webfacile-hidden-lg"> - {{ current_lang.name_local |title }}</span>
+    </button>
+    <div class="webfacile-collapse webfacile-translate__menu webfacile-menu" id="translate-menu">
+      <ul class="webfacile-menu__list">
+        {% for language in languages %}
+          <li>
+            <a class="webfacile-translate__language webfacile-nav__link"
+               hreflang="{{ language.code|lower }}"
+               lang="{{ language.code|lower }}"
+               href="#"
+               {% if language.code == LANGUAGE_CODE %}aria-current="true"{% endif %}>{{ language.code|upper }} - {{ language.name_local }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

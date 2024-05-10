@@ -1,0 +1,8 @@
+{% load webfacile_tags %}
+<ul class="webfacile-badge-group">
+  {% for item in self.items %}
+    <li>
+      {% webfacile_badge item %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,467 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfacile-icon-bluetooth-fill::before,
+.webfacile-icon-bluetooth-fill::after {
+  -webkit-mask-image: url("../../../icons/device/bluetooth-fill.svg");
+  mask-image: url("../../../icons/device/bluetooth-fill.svg");
+}
+
+.webfacile-icon-bluetooth-line::before,
+.webfacile-icon-bluetooth-line::after {
+  -webkit-mask-image: url("../../../icons/device/bluetooth-line.svg");
+  mask-image: url("../../../icons/device/bluetooth-line.svg");
+}
+
+.webfacile-icon-computer-fill::before,
+.webfacile-icon-computer-fill::after {
+  -webkit-mask-image: url("../../../icons/device/computer-fill.svg");
+  mask-image: url("../../../icons/device/computer-fill.svg");
+}
+
+.webfacile-icon-computer-line::before,
+.webfacile-icon-computer-line::after {
+  -webkit-mask-image: url("../../../icons/device/computer-line.svg");
+  mask-image: url("../../../icons/device/computer-line.svg");
+}
+
+.webfacile-icon-dashboard-3-fill::before,
+.webfacile-icon-dashboard-3-fill::after {
+  -webkit-mask-image: url("../../../icons/device/dashboard-3-fill.svg");
+  mask-image: url("../../../icons/device/dashboard-3-fill.svg");
+}
+
+.webfacile-icon-dashboard-3-line::before,
+.webfacile-icon-dashboard-3-line::after {
+  -webkit-mask-image: url("../../../icons/device/dashboard-3-line.svg");
+  mask-image: url("../../../icons/device/dashboard-3-line.svg");
+}
+
+.webfacile-icon-database-fill::before,
+.webfacile-icon-database-fill::after {
+  -webkit-mask-image: url("../../../icons/device/database-fill.svg");
+  mask-image: url("../../../icons/device/database-fill.svg");
+}
+
+.webfacile-icon-database-line::before,
+.webfacile-icon-database-line::after {
+  -webkit-mask-image: url("../../../icons/device/database-line.svg");
+  mask-image: url("../../../icons/device/database-line.svg");
+}
+
+.webfacile-icon-device-fill::before,
+.webfacile-icon-device-fill::after {
+  -webkit-mask-image: url("../../../icons/device/device-fill.svg");
+  mask-image: url("../../../icons/device/device-fill.svg");
+}
+
+.webfacile-icon-device-line::before,
+.webfacile-icon-device-line::after {
+  -webkit-mask-image: url("../../../icons/device/device-line.svg");
+  mask-image: url("../../../icons/device/device-line.svg");
+}
+
+.webfacile-icon-hard-drive-2-fill::before,
+.webfacile-icon-hard-drive-2-fill::after {
+  -webkit-mask-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  mask-image: url("../../../icons/device/hard-drive-2-fill.svg");
+}
+
+.webfacile-icon-hard-drive-2-line::before,
+.webfacile-icon-hard-drive-2-line::after {
+  -webkit-mask-image: url("../../../icons/device/hard-drive-2-line.svg");
+  mask-image: url("../../../icons/device/hard-drive-2-line.svg");
+}
+
+.webfacile-icon-mac-fill::before,
+.webfacile-icon-mac-fill::after {
+  -webkit-mask-image: url("../../../icons/device/mac-fill.svg");
+  mask-image: url("../../../icons/device/mac-fill.svg");
+}
+
+.webfacile-icon-mac-line::before,
+.webfacile-icon-mac-line::after {
+  -webkit-mask-image: url("../../../icons/device/mac-line.svg");
+  mask-image: url("../../../icons/device/mac-line.svg");
+}
+
+.webfacile-icon-phone-fill::before,
+.webfacile-icon-phone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/phone-fill.svg");
+  mask-image: url("../../../icons/device/phone-fill.svg");
+}
+
+.webfacile-icon-phone-line::before,
+.webfacile-icon-phone-line::after {
+  -webkit-mask-image: url("../../../icons/device/phone-line.svg");
+  mask-image: url("../../../icons/device/phone-line.svg");
+}
+
+.webfacile-icon-qr-code-fill::before,
+.webfacile-icon-qr-code-fill::after {
+  -webkit-mask-image: url("../../../icons/device/qr-code-fill.svg");
+  mask-image: url("../../../icons/device/qr-code-fill.svg");
+}
+
+.webfacile-icon-qr-code-line::before,
+.webfacile-icon-qr-code-line::after {
+  -webkit-mask-image: url("../../../icons/device/qr-code-line.svg");
+  mask-image: url("../../../icons/device/qr-code-line.svg");
+}
+
+.webfacile-icon-rss-fill::before,
+.webfacile-icon-rss-fill::after {
+  -webkit-mask-image: url("../../../icons/device/rss-fill.svg");
+  mask-image: url("../../../icons/device/rss-fill.svg");
+}
+
+.webfacile-icon-rss-line::before,
+.webfacile-icon-rss-line::after {
+  -webkit-mask-image: url("../../../icons/device/rss-line.svg");
+  mask-image: url("../../../icons/device/rss-line.svg");
+}
+
+.webfacile-icon-save-3-fill::before,
+.webfacile-icon-save-3-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-3-fill.svg");
+  mask-image: url("../../../icons/device/save-3-fill.svg");
+}
+
+.webfacile-icon-save-3-line::before,
+.webfacile-icon-save-3-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-3-line.svg");
+  mask-image: url("../../../icons/device/save-3-line.svg");
+}
+
+.webfacile-icon-save-fill::before,
+.webfacile-icon-save-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-fill.svg");
+  mask-image: url("../../../icons/device/save-fill.svg");
+}
+
+.webfacile-icon-save-line::before,
+.webfacile-icon-save-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-line.svg");
+  mask-image: url("../../../icons/device/save-line.svg");
+}
+
+.webfacile-icon-server-fill::before,
+.webfacile-icon-server-fill::after {
+  -webkit-mask-image: url("../../../icons/device/server-fill.svg");
+  mask-image: url("../../../icons/device/server-fill.svg");
+}
+
+.webfacile-icon-server-line::before,
+.webfacile-icon-server-line::after {
+  -webkit-mask-image: url("../../../icons/device/server-line.svg");
+  mask-image: url("../../../icons/device/server-line.svg");
+}
+
+.webfacile-icon-smartphone-fill::before,
+.webfacile-icon-smartphone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/smartphone-fill.svg");
+  mask-image: url("../../../icons/device/smartphone-fill.svg");
+}
+
+.webfacile-icon-smartphone-line::before,
+.webfacile-icon-smartphone-line::after {
+  -webkit-mask-image: url("../../../icons/device/smartphone-line.svg");
+  mask-image: url("../../../icons/device/smartphone-line.svg");
+}
+
+.webfacile-icon-tablet-fill::before,
+.webfacile-icon-tablet-fill::after {
+  -webkit-mask-image: url("../../../icons/device/tablet-fill.svg");
+  mask-image: url("../../../icons/device/tablet-fill.svg");
+}
+
+.webfacile-icon-tablet-line::before,
+.webfacile-icon-tablet-line::after {
+  -webkit-mask-image: url("../../../icons/device/tablet-line.svg");
+  mask-image: url("../../../icons/device/tablet-line.svg");
+}
+
+.webfacile-icon-tv-fill::before,
+.webfacile-icon-tv-fill::after {
+  -webkit-mask-image: url("../../../icons/device/tv-fill.svg");
+  mask-image: url("../../../icons/device/tv-fill.svg");
+}
+
+.webfacile-icon-tv-line::before,
+.webfacile-icon-tv-line::after {
+  -webkit-mask-image: url("../../../icons/device/tv-line.svg");
+  mask-image: url("../../../icons/device/tv-line.svg");
+}
+
+.webfacile-icon-wifi-fill::before,
+.webfacile-icon-wifi-fill::after {
+  -webkit-mask-image: url("../../../icons/device/wifi-fill.svg");
+  mask-image: url("../../../icons/device/wifi-fill.svg");
+}
+
+.webfacile-icon-wifi-line::before,
+.webfacile-icon-wifi-line::after {
+  -webkit-mask-image: url("../../../icons/device/wifi-line.svg");
+  mask-image: url("../../../icons/device/wifi-line.svg");
+}
+
+.webfacile-fi-phone-fill::before,
+.webfacile-fi-phone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/phone-fill.svg");
+  mask-image: url("../../../icons/device/phone-fill.svg");
+}
+
+.webfacile-fi-phone-line::before,
+.webfacile-fi-phone-line::after {
+  -webkit-mask-image: url("../../../icons/device/phone-line.svg");
+  mask-image: url("../../../icons/device/phone-line.svg");
+}
+
+.webfacile-fi-rss-fill::before,
+.webfacile-fi-rss-fill::after {
+  -webkit-mask-image: url("../../../icons/device/rss-fill.svg");
+  mask-image: url("../../../icons/device/rss-fill.svg");
+}
+
+.webfacile-fi-rss-line::before,
+.webfacile-fi-rss-line::after {
+  -webkit-mask-image: url("../../../icons/device/rss-line.svg");
+  mask-image: url("../../../icons/device/rss-line.svg");
+}
+
+.webfacile-fi-save-fill::before,
+.webfacile-fi-save-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-fill.svg");
+  mask-image: url("../../../icons/device/save-fill.svg");
+}
+
+.webfacile-fi-save-line::before,
+.webfacile-fi-save-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-line.svg");
+  mask-image: url("../../../icons/device/save-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .webfacile-icon-bluetooth-fill::before,
+  .webfacile-icon-bluetooth-fill::after {
+    background-image: url("../../../icons/device/bluetooth-fill.svg");
+  }
+
+  .webfacile-icon-bluetooth-line::before,
+  .webfacile-icon-bluetooth-line::after {
+    background-image: url("../../../icons/device/bluetooth-line.svg");
+  }
+
+  .webfacile-icon-computer-fill::before,
+  .webfacile-icon-computer-fill::after {
+    background-image: url("../../../icons/device/computer-fill.svg");
+  }
+
+  .webfacile-icon-computer-line::before,
+  .webfacile-icon-computer-line::after {
+    background-image: url("../../../icons/device/computer-line.svg");
+  }
+
+  .webfacile-icon-dashboard-3-fill::before,
+  .webfacile-icon-dashboard-3-fill::after {
+    background-image: url("../../../icons/device/dashboard-3-fill.svg");
+  }
+
+  .webfacile-icon-dashboard-3-line::before,
+  .webfacile-icon-dashboard-3-line::after {
+    background-image: url("../../../icons/device/dashboard-3-line.svg");
+  }
+
+  .webfacile-icon-database-fill::before,
+  .webfacile-icon-database-fill::after {
+    background-image: url("../../../icons/device/database-fill.svg");
+  }
+
+  .webfacile-icon-database-line::before,
+  .webfacile-icon-database-line::after {
+    background-image: url("../../../icons/device/database-line.svg");
+  }
+
+  .webfacile-icon-device-fill::before,
+  .webfacile-icon-device-fill::after {
+    background-image: url("../../../icons/device/device-fill.svg");
+  }
+
+  .webfacile-icon-device-line::before,
+  .webfacile-icon-device-line::after {
+    background-image: url("../../../icons/device/device-line.svg");
+  }
+
+  .webfacile-icon-hard-drive-2-fill::before,
+  .webfacile-icon-hard-drive-2-fill::after {
+    background-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .webfacile-icon-hard-drive-2-line::before,
+  .webfacile-icon-hard-drive-2-line::after {
+    background-image: url("../../../icons/device/hard-drive-2-line.svg");
+  }
+
+  .webfacile-icon-mac-fill::before,
+  .webfacile-icon-mac-fill::after {
+    background-image: url("../../../icons/device/mac-fill.svg");
+  }
+
+  .webfacile-icon-mac-line::before,
+  .webfacile-icon-mac-line::after {
+    background-image: url("../../../icons/device/mac-line.svg");
+  }
+
+  .webfacile-icon-phone-fill::before,
+  .webfacile-icon-phone-fill::after {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .webfacile-icon-phone-line::before,
+  .webfacile-icon-phone-line::after {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .webfacile-icon-qr-code-fill::before,
+  .webfacile-icon-qr-code-fill::after {
+    background-image: url("../../../icons/device/qr-code-fill.svg");
+  }
+
+  .webfacile-icon-qr-code-line::before,
+  .webfacile-icon-qr-code-line::after {
+    background-image: url("../../../icons/device/qr-code-line.svg");
+  }
+
+  .webfacile-icon-rss-fill::before,
+  .webfacile-icon-rss-fill::after {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .webfacile-icon-rss-line::before,
+  .webfacile-icon-rss-line::after {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .webfacile-icon-save-3-fill::before,
+  .webfacile-icon-save-3-fill::after {
+    background-image: url("../../../icons/device/save-3-fill.svg");
+  }
+
+  .webfacile-icon-save-3-line::before,
+  .webfacile-icon-save-3-line::after {
+    background-image: url("../../../icons/device/save-3-line.svg");
+  }
+
+  .webfacile-icon-save-fill::before,
+  .webfacile-icon-save-fill::after {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .webfacile-icon-save-line::before,
+  .webfacile-icon-save-line::after {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+
+  .webfacile-icon-server-fill::before,
+  .webfacile-icon-server-fill::after {
+    background-image: url("../../../icons/device/server-fill.svg");
+  }
+
+  .webfacile-icon-server-line::before,
+  .webfacile-icon-server-line::after {
+    background-image: url("../../../icons/device/server-line.svg");
+  }
+
+  .webfacile-icon-smartphone-fill::before,
+  .webfacile-icon-smartphone-fill::after {
+    background-image: url("../../../icons/device/smartphone-fill.svg");
+  }
+
+  .webfacile-icon-smartphone-line::before,
+  .webfacile-icon-smartphone-line::after {
+    background-image: url("../../../icons/device/smartphone-line.svg");
+  }
+
+  .webfacile-icon-tablet-fill::before,
+  .webfacile-icon-tablet-fill::after {
+    background-image: url("../../../icons/device/tablet-fill.svg");
+  }
+
+  .webfacile-icon-tablet-line::before,
+  .webfacile-icon-tablet-line::after {
+    background-image: url("../../../icons/device/tablet-line.svg");
+  }
+
+  .webfacile-icon-tv-fill::before,
+  .webfacile-icon-tv-fill::after {
+    background-image: url("../../../icons/device/tv-fill.svg");
+  }
+
+  .webfacile-icon-tv-line::before,
+  .webfacile-icon-tv-line::after {
+    background-image: url("../../../icons/device/tv-line.svg");
+  }
+
+  .webfacile-icon-wifi-fill::before,
+  .webfacile-icon-wifi-fill::after {
+    background-image: url("../../../icons/device/wifi-fill.svg");
+  }
+
+  .webfacile-icon-wifi-line::before,
+  .webfacile-icon-wifi-line::after {
+    background-image: url("../../../icons/device/wifi-line.svg");
+  }
+
+  .webfacile-fi-phone-fill::before {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .webfacile-fi-phone-line::before {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .webfacile-fi-rss-fill::before {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .webfacile-fi-rss-line::before {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .webfacile-fi-save-fill::before {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .webfacile-fi-save-line::before {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+}

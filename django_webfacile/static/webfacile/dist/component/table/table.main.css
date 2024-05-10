@@ -1,0 +1,852 @@
+/*!
+ * WEBFACILE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TABLE
+\* ˍˍˍˍˍˍˍˍˍ */
+.webfacile-table {
+  --table-offset: 1rem;
+  --text-spacing: 0;
+  --title-spacing: 0;
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-top: var(--table-offset);
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.webfacile-table:not(.webfacile-table--no-scroll) table {
+  width: 100%;
+}
+
+.webfacile-table table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-spacing: 0;
+}
+
+.webfacile-table[data-webfacile-js-table=true] caption {
+  position: absolute;
+  top: 0;
+}
+
+.webfacile-table caption {
+  position: initial;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-title-grey);
+}
+
+.webfacile-table td,
+.webfacile-table th {
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+  border: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.webfacile-table th {
+  font-weight: 700;
+}
+
+.webfacile-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
+}
+
+.webfacile-table thead td,
+.webfacile-table thead th {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+/*
+* Cache la caption
+*/
+.webfacile-table--no-caption {
+  padding-top: 0;
+}
+
+.webfacile-table--no-caption caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+  height: 0;
+}
+
+/*
+* Fixe le caption en bas du tableau
+*/
+.webfacile-table--caption-bottom {
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.webfacile-table--caption-bottom table {
+  margin-bottom: calc(var(--table-offset) + 2.75rem);
+}
+
+.webfacile-table--caption-bottom[data-webfacile-js-table=true] caption {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.webfacile-table--caption-bottom caption {
+  margin-top: 1rem;
+  height: min-content;
+  caption-side: bottom;
+}
+
+/*
+* pas de scroll ni de shadow
+*/
+.webfacile-table--no-scroll {
+  min-width: auto;
+}
+
+.webfacile-table--no-scroll table {
+  overflow-x: hidden;
+}
+
+.webfacile-table--no-scroll caption {
+  max-width: calc(100vw - 2rem);
+}
+
+/*
+* Fixe la taille des colonnes du tableau
+*/
+.webfacile-table--layout-fixed table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.webfacile-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+}
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+.webfacile-table__shadow {
+  /**
+  * Modifier ombre à gauche
+  **/
+
+  /**
+  * Modifier ombre à droite
+  **/
+
+  /**
+  * Modifier combinaison ombre à gauche et ombre à droite
+  **/
+}
+
+.webfacile-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: var(--table-offset);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 0 0 #161616, inset 0 0 0 0 #161616;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: box-shadow 0.3s;
+}
+
+.webfacile-table__shadow--left::before {
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset 0 0 0 0 #161616;
+}
+
+.webfacile-table__shadow--right::before {
+  box-shadow: inset 0 0 0 0 #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+.webfacile-table__shadow--left.webfacile-table__shadow--right::before {
+  content: "";
+  display: block;
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+/*
+* Positionnement ombres sur le tableau sans caption
+*/
+.webfacile-table--no-caption .webfacile-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Positionnement ombres sur le tableau avec caption en bas
+*/
+.webfacile-table--caption-bottom .webfacile-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:root[data-webfacile-theme=dark] .webfacile-table__shadow::before {
+  opacity: 1;
+}
+
+.webfacile-table tbody {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.webfacile-table tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.webfacile-table--webfacile-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color3 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color3), var(--border-plain-webfacile-color3));
+  background-color: var(--background-contrast-webfacile-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color3-hover);
+  --active: var(--background-contrast-webfacile-color3-active);
+}
+
+.webfacile-table--webfacile-color3 tbody {
+  background-color: var(--background-alt-webfacile-color3);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color3-hover);
+  --active: var(--background-alt-webfacile-color3-active);
+}
+
+.webfacile-table--webfacile-color3 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color3-hover);
+  --active: var(--background-contrast-webfacile-color3-active);
+}
+
+.webfacile-table--webfacile-color3.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color3), var(--border-default-webfacile-color3));
+}
+
+.webfacile-table--webfacile-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color4 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color4), var(--border-plain-webfacile-color4));
+  background-color: var(--background-contrast-webfacile-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color4-hover);
+  --active: var(--background-contrast-webfacile-color4-active);
+}
+
+.webfacile-table--webfacile-color4 tbody {
+  background-color: var(--background-alt-webfacile-color4);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color4-hover);
+  --active: var(--background-alt-webfacile-color4-active);
+}
+
+.webfacile-table--webfacile-color4 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color4-hover);
+  --active: var(--background-contrast-webfacile-color4-active);
+}
+
+.webfacile-table--webfacile-color4.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color4), var(--border-default-webfacile-color4));
+}
+
+.webfacile-table--webfacile-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color5 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color5), var(--border-plain-webfacile-color5));
+  background-color: var(--background-contrast-webfacile-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color5-hover);
+  --active: var(--background-contrast-webfacile-color5-active);
+}
+
+.webfacile-table--webfacile-color5 tbody {
+  background-color: var(--background-alt-webfacile-color5);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color5-hover);
+  --active: var(--background-alt-webfacile-color5-active);
+}
+
+.webfacile-table--webfacile-color5 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color5-hover);
+  --active: var(--background-contrast-webfacile-color5-active);
+}
+
+.webfacile-table--webfacile-color5.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color5), var(--border-default-webfacile-color5));
+}
+
+.webfacile-table--webfacile-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color6 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color6), var(--border-plain-webfacile-color6));
+  background-color: var(--background-contrast-webfacile-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color6-hover);
+  --active: var(--background-contrast-webfacile-color6-active);
+}
+
+.webfacile-table--webfacile-color6 tbody {
+  background-color: var(--background-alt-webfacile-color6);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color6-hover);
+  --active: var(--background-alt-webfacile-color6-active);
+}
+
+.webfacile-table--webfacile-color6 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color6-hover);
+  --active: var(--background-contrast-webfacile-color6-active);
+}
+
+.webfacile-table--webfacile-color6.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color6), var(--border-default-webfacile-color6));
+}
+
+.webfacile-table--webfacile-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color7 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color7), var(--border-plain-webfacile-color7));
+  background-color: var(--background-contrast-webfacile-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color7-hover);
+  --active: var(--background-contrast-webfacile-color7-active);
+}
+
+.webfacile-table--webfacile-color7 tbody {
+  background-color: var(--background-alt-webfacile-color7);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color7-hover);
+  --active: var(--background-alt-webfacile-color7-active);
+}
+
+.webfacile-table--webfacile-color7 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color7-hover);
+  --active: var(--background-contrast-webfacile-color7-active);
+}
+
+.webfacile-table--webfacile-color7.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color7), var(--border-default-webfacile-color7));
+}
+
+.webfacile-table--webfacile-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color8 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color8), var(--border-plain-webfacile-color8));
+  background-color: var(--background-contrast-webfacile-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color8-hover);
+  --active: var(--background-contrast-webfacile-color8-active);
+}
+
+.webfacile-table--webfacile-color8 tbody {
+  background-color: var(--background-alt-webfacile-color8);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color8-hover);
+  --active: var(--background-alt-webfacile-color8-active);
+}
+
+.webfacile-table--webfacile-color8 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color8-hover);
+  --active: var(--background-contrast-webfacile-color8-active);
+}
+
+.webfacile-table--webfacile-color8.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color8), var(--border-default-webfacile-color8));
+}
+
+.webfacile-table--webfacile-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color9 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color9), var(--border-plain-webfacile-color9));
+  background-color: var(--background-contrast-webfacile-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color9-hover);
+  --active: var(--background-contrast-webfacile-color9-active);
+}
+
+.webfacile-table--webfacile-color9 tbody {
+  background-color: var(--background-alt-webfacile-color9);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color9-hover);
+  --active: var(--background-alt-webfacile-color9-active);
+}
+
+.webfacile-table--webfacile-color9 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color9-hover);
+  --active: var(--background-contrast-webfacile-color9-active);
+}
+
+.webfacile-table--webfacile-color9.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color9), var(--border-default-webfacile-color9));
+}
+
+.webfacile-table--webfacile-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color10 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color10), var(--border-plain-webfacile-color10));
+  background-color: var(--background-contrast-webfacile-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color10-hover);
+  --active: var(--background-contrast-webfacile-color10-active);
+}
+
+.webfacile-table--webfacile-color10 tbody {
+  background-color: var(--background-alt-webfacile-color10);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color10-hover);
+  --active: var(--background-alt-webfacile-color10-active);
+}
+
+.webfacile-table--webfacile-color10 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color10-hover);
+  --active: var(--background-contrast-webfacile-color10-active);
+}
+
+.webfacile-table--webfacile-color10.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color10), var(--border-default-webfacile-color10));
+}
+
+.webfacile-table--webfacile-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color11 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color11), var(--border-plain-webfacile-color11));
+  background-color: var(--background-contrast-webfacile-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color11-hover);
+  --active: var(--background-contrast-webfacile-color11-active);
+}
+
+.webfacile-table--webfacile-color11 tbody {
+  background-color: var(--background-alt-webfacile-color11);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color11-hover);
+  --active: var(--background-alt-webfacile-color11-active);
+}
+
+.webfacile-table--webfacile-color11 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color11-hover);
+  --active: var(--background-contrast-webfacile-color11-active);
+}
+
+.webfacile-table--webfacile-color11.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color11), var(--border-default-webfacile-color11));
+}
+
+.webfacile-table--webfacile-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color12 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color12), var(--border-plain-webfacile-color12));
+  background-color: var(--background-contrast-webfacile-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color12-hover);
+  --active: var(--background-contrast-webfacile-color12-active);
+}
+
+.webfacile-table--webfacile-color12 tbody {
+  background-color: var(--background-alt-webfacile-color12);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color12-hover);
+  --active: var(--background-alt-webfacile-color12-active);
+}
+
+.webfacile-table--webfacile-color12 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color12-hover);
+  --active: var(--background-contrast-webfacile-color12-active);
+}
+
+.webfacile-table--webfacile-color12.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color12), var(--border-default-webfacile-color12));
+}
+
+.webfacile-table--webfacile-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color13 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color13), var(--border-plain-webfacile-color13));
+  background-color: var(--background-contrast-webfacile-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color13-hover);
+  --active: var(--background-contrast-webfacile-color13-active);
+}
+
+.webfacile-table--webfacile-color13 tbody {
+  background-color: var(--background-alt-webfacile-color13);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color13-hover);
+  --active: var(--background-alt-webfacile-color13-active);
+}
+
+.webfacile-table--webfacile-color13 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color13-hover);
+  --active: var(--background-contrast-webfacile-color13-active);
+}
+
+.webfacile-table--webfacile-color13.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color13), var(--border-default-webfacile-color13));
+}
+
+.webfacile-table--webfacile-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color14 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color14), var(--border-plain-webfacile-color14));
+  background-color: var(--background-contrast-webfacile-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color14-hover);
+  --active: var(--background-contrast-webfacile-color14-active);
+}
+
+.webfacile-table--webfacile-color14 tbody {
+  background-color: var(--background-alt-webfacile-color14);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color14-hover);
+  --active: var(--background-alt-webfacile-color14-active);
+}
+
+.webfacile-table--webfacile-color14 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color14-hover);
+  --active: var(--background-contrast-webfacile-color14-active);
+}
+
+.webfacile-table--webfacile-color14.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color14), var(--border-default-webfacile-color14));
+}
+
+.webfacile-table--webfacile-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color15 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color15), var(--border-plain-webfacile-color15));
+  background-color: var(--background-contrast-webfacile-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color15-hover);
+  --active: var(--background-contrast-webfacile-color15-active);
+}
+
+.webfacile-table--webfacile-color15 tbody {
+  background-color: var(--background-alt-webfacile-color15);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color15-hover);
+  --active: var(--background-alt-webfacile-color15-active);
+}
+
+.webfacile-table--webfacile-color15 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color15-hover);
+  --active: var(--background-contrast-webfacile-color15-active);
+}
+
+.webfacile-table--webfacile-color15.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color15), var(--border-default-webfacile-color15));
+}
+
+.webfacile-table--webfacile-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color16 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color16), var(--border-plain-webfacile-color16));
+  background-color: var(--background-contrast-webfacile-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color16-hover);
+  --active: var(--background-contrast-webfacile-color16-active);
+}
+
+.webfacile-table--webfacile-color16 tbody {
+  background-color: var(--background-alt-webfacile-color16);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color16-hover);
+  --active: var(--background-alt-webfacile-color16-active);
+}
+
+.webfacile-table--webfacile-color16 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color16-hover);
+  --active: var(--background-contrast-webfacile-color16-active);
+}
+
+.webfacile-table--webfacile-color16.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color16), var(--border-default-webfacile-color16));
+}
+
+.webfacile-table--webfacile-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color17 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color17), var(--border-plain-webfacile-color17));
+  background-color: var(--background-contrast-webfacile-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color17-hover);
+  --active: var(--background-contrast-webfacile-color17-active);
+}
+
+.webfacile-table--webfacile-color17 tbody {
+  background-color: var(--background-alt-webfacile-color17);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color17-hover);
+  --active: var(--background-alt-webfacile-color17-active);
+}
+
+.webfacile-table--webfacile-color17 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color17-hover);
+  --active: var(--background-contrast-webfacile-color17-active);
+}
+
+.webfacile-table--webfacile-color17.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color17), var(--border-default-webfacile-color17));
+}
+
+.webfacile-table--webfacile-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color18 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color18), var(--border-plain-webfacile-color18));
+  background-color: var(--background-contrast-webfacile-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color18-hover);
+  --active: var(--background-contrast-webfacile-color18-active);
+}
+
+.webfacile-table--webfacile-color18 tbody {
+  background-color: var(--background-alt-webfacile-color18);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color18-hover);
+  --active: var(--background-alt-webfacile-color18-active);
+}
+
+.webfacile-table--webfacile-color18 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color18-hover);
+  --active: var(--background-contrast-webfacile-color18-active);
+}
+
+.webfacile-table--webfacile-color18.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color18), var(--border-default-webfacile-color18));
+}
+
+.webfacile-table--webfacile-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.webfacile-table--webfacile-color19 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-webfacile-color19), var(--border-plain-webfacile-color19));
+  background-color: var(--background-contrast-webfacile-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color19-hover);
+  --active: var(--background-contrast-webfacile-color19-active);
+}
+
+.webfacile-table--webfacile-color19 tbody {
+  background-color: var(--background-alt-webfacile-color19);
+
+  --idle: transparent;
+  --hover: var(--background-alt-webfacile-color19-hover);
+  --active: var(--background-alt-webfacile-color19-active);
+}
+
+.webfacile-table--webfacile-color19 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-webfacile-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-webfacile-color19-hover);
+  --active: var(--background-contrast-webfacile-color19-active);
+}
+
+.webfacile-table--webfacile-color19.webfacile-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-webfacile-color19), var(--border-default-webfacile-color19));
+}
+
+.webfacile-table--bordered tbody tr:nth-child(even) {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .webfacile-table caption {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .webfacile-table td,
+  .webfacile-table th {
+    padding: 1rem;
+  }
+
+  .webfacile-table thead td,
+  .webfacile-table thead th {
+    padding-bottom: 1.125rem;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

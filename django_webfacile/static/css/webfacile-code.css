@@ -1,0 +1,371 @@
+.webfacile-code .hll {
+  background-color: var(--background-contrast-grey)
+}
+
+.webfacile-code pre,
+pre.webfacile-code {
+  background: var(--background-alt-grey);
+  border: 1px solid var(--border-default-grey);
+  color: var(--text-default-grey);
+  padding: 1rem;
+  margin: 2rem 0;
+  white-space: pre-wrap;
+}
+
+/* Comment */
+.webfacile-code .c {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Error */
+.webfacile-code .err {
+  border: 1px solid var(--red-marianne-main-472)
+}
+
+/* Keyword */
+.webfacile-code .k {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Operator */
+.webfacile-code .o {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Comment.Hashbang */
+.webfacile-code .ch {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Multiline */
+.webfacile-code .cm {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Preproc */
+.webfacile-code .cp {
+  color: var(--warning-main-525)
+}
+
+/* Comment.PreprocFile */
+.webfacile-code .cpf {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Single */
+.webfacile-code .c1 {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Comment.Special */
+.webfacile-code .cs {
+  color: var(--green-emeraude-sun-425);
+  font-style: italic
+}
+
+/* Generic.Deleted */
+.webfacile-code .gd {
+  color: var(--red-marianne-200)
+}
+
+/* Generic.Emph */
+.webfacile-code .ge {
+  font-style: italic
+}
+
+/* Generic.Error */
+.webfacile-code .gr {
+  color: var(--red-marianne-main-472)
+}
+
+/* Generic.Heading */
+.webfacile-code .gh {
+  color: var(--blue-france-125);
+  font-weight: bold
+}
+
+/* Generic.Inserted */
+.webfacile-code .gi {
+  color: var(--green-bourgeon-850)
+}
+
+/* Generic.Output */
+.webfacile-code .go {
+  color: var(--grey-main-525)
+}
+
+/* Generic.Prompt */
+.webfacile-code .gp {
+  color: var(--blue-france-125);
+  font-weight: bold
+}
+
+/* Generic.Strong */
+.webfacile-code .gs {
+  font-weight: bold
+}
+
+/* Generic.Subheading */
+.webfacile-code .gu {
+  color: var(--purple-glycine-sun-319);
+  font-weight: bold
+}
+
+/* Generic.Traceback */
+.webfacile-code .gt {
+  color: var(--blue-cumulus-main-526)
+}
+
+/* Keyword.Constant */
+.webfacile-code .kc {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Declaration */
+.webfacile-code .kd {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Namespace */
+.webfacile-code .kn {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Pseudo */
+.webfacile-code .kp {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Keyword.Reserved */
+.webfacile-code .kr {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Keyword.Type */
+.webfacile-code .kt {
+  color: var(--pink-tuile-200)
+}
+
+/* Literal.Number */
+.webfacile-code .m {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.String */
+.webfacile-code .s {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Name.Attribute */
+.webfacile-code .na {
+  color: var(--green-tilleul-verveine-main-707)
+}
+
+/* Name.Builtin */
+.webfacile-code .nb {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Name.Class */
+.webfacile-code .nc {
+  color: var(--blue-ecume-main-400);
+  font-weight: bold
+}
+
+/* Name.Constant */
+.webfacile-code .no {
+  color: var(--warning-200)
+}
+
+/* Name.Decorator */
+.webfacile-code .nd {
+  color: var(--purple-glycine-main-494)
+}
+
+/* Name.Entity */
+.webfacile-code .ni {
+  color: var(--grey-625);
+  font-weight: bold
+}
+
+/* Name.Exception */
+.webfacile-code .ne {
+  color: var(--pink-tuile-sun-425);
+  font-weight: bold
+}
+
+/* Name.Function */
+.webfacile-code .nf {
+  color: var(--blue-ecume-main-400)
+}
+
+/* Name.Label */
+.webfacile-code .nl {
+  color: var(--green-tilleul-verveine-main-707)
+}
+
+/* Name.Namespace */
+.webfacile-code .nn {
+  color: var(--blue-ecume-main-400);
+  font-weight: bold
+}
+
+/* Name.Tag */
+.webfacile-code .nt {
+  color: var(--green-bourgeon-main-640);
+  font-weight: bold
+}
+
+/* Name.Variable */
+.webfacile-code .nv {
+  color: var(--blue-cumulus-200)
+}
+
+/* Operator.Word */
+.webfacile-code .ow {
+  color: var(--purple-glycine-main-494);
+  font-weight: bold
+}
+
+/* Text.Whitespace */
+.webfacile-code .w {
+  color: var(--beige-gris-galet-main-702)
+}
+
+/* Literal.Number.Bin */
+.webfacile-code .mb {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Float */
+.webfacile-code .mf {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Hex */
+.webfacile-code .mh {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Integer */
+.webfacile-code .mi {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.Number.Oct */
+.webfacile-code .mo {
+  color: var(--beige-gris-galet-sun-407)
+}
+
+/* Literal.String.Affix */
+.webfacile-code .sa {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Backtick */
+.webfacile-code .sb {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Char */
+.webfacile-code .sc {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Delimiter */
+.webfacile-code .dl {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Doc */
+.webfacile-code .sd {
+  color: var(--pink-tuile-main-556);
+  font-style: italic
+}
+
+/* Literal.String.Double */
+.webfacile-code .s2 {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Escape */
+.webfacile-code .se {
+  color: var(--brown-caramel-main-648);
+  font-weight: bold
+}
+
+/* Literal.String.Heredoc */
+.webfacile-code .sh {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Interpol */
+.webfacile-code .si {
+  color: var(--purple-glycine-main-494);
+  font-weight: bold
+}
+
+/* Literal.String.Other */
+.webfacile-code .sx {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Literal.String.Regex */
+.webfacile-code .sr {
+  color: var(--purple-glycine-main-494)
+}
+
+/* Literal.String.Single */
+.webfacile-code .s1 {
+  color: var(--pink-tuile-main-556)
+}
+
+/* Literal.String.Symbol */
+.webfacile-code .ss {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Builtin.Pseudo */
+.webfacile-code .bp {
+  color: var(--green-bourgeon-main-640)
+}
+
+/* Name.Function.Magic */
+.webfacile-code .fm {
+  color: var(--blue-ecume-main-400)
+}
+
+/* Name.Variable.Class */
+.webfacile-code .vc {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Global */
+.webfacile-code .vg {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Instance */
+.webfacile-code .vi {
+  color: var(--blue-cumulus-200)
+}
+
+/* Name.Variable.Magic */
+.webfacile-code .vm {
+  color: var(--blue-cumulus-200)
+}
+
+/* Literal.Number.Integer.Long */
+.webfacile-code .il {
+  color: var(--beige-gris-galet-sun-407)
+}
