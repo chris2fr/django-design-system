@@ -55,7 +55,7 @@
     {% if self.call_to_action and not self.bottom_detail %}
       <div class="fastoche-card__footer">
         {% if self.call_to_action.buttons %}
-          <ul class="btns-group btns-group--inline-reverse btns-group--inline-lg">
+          <ul class="fastoche-btns-group fastoche-btns-group--inline-reverse fastoche-btns-group--inline-lg">
             {% for button in self.call_to_action.buttons %}
               <li>
                 {% fastoche_button button %}
@@ -63,7 +63,7 @@
             {% endfor %}
           </ul>
         {% elif self.call_to_action.links %}
-          <ul class="links-group">
+          <ul class="fastoche-links-group">
             {% for link in self.call_to_action.links %}
               <li>
                 {% fastoche_link link %}

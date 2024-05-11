@@ -1,20 +1,20 @@
 {% load static i18n %}
 <dialog id="fastoche-theme-modal"
-        class="modal"
+        class="fastoche-modal"
         aria-labelledby="fastoche-theme-modal-title">
   <div class="fastoche-container fastoche-container--fluid facile-container-md">
     <div class="fastoche-grid-row fastoche-grid-row--center">
       <div class="fastoche-col-12 fastoche-col-md-6 fastoche-col-lg-4">
-        <div class="modal__body">
-          <div class="modal__header">
+        <div class="fastoche-modal__body">
+          <div class="fastoche-modal__header">
             <button class="fastoche-btn--close fastoche-btn"
                     aria-describedby="fastoche-theme-modal-title"
                     aria-controls="fastoche-theme-modal">
               {% translate "Close" %}
             </button>
           </div>
-          <div class="modal__content">
-            <h1 id="fastoche-theme-modal-title" class="modal__title">
+          <div class="fastoche-modal__content">
+            <h1 id="fastoche-theme-modal-title" class="fastoche-modal__title">
               {% translate "Display settings" %}
             </h1>
             <div id="fastoche-display" class="fastoche-form-group fastoche-display">

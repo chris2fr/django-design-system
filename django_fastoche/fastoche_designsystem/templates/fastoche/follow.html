@@ -14,7 +14,7 @@
                 {{ SITE_CONFIG.newsletter_description | safe }}
               </p>
             </div>
-            <div class="btns-group btns-group--inline-md">
+            <div class="fastoche-btns-group fastoche-btns-group--inline-md">
               {% translate "Subscribe to our newsletter" context "Button title" as subcribe_button_title %}
               <a class="fastoche-btn"
                  href="{{ SITE_CONFIG.newsletter_url }}"
@@ -37,7 +37,7 @@
                 on social media
               {% endblocktranslate %}
             </h2>
-            <ul class="btns-group">
+            <ul class="fastoche-btns-group">
               {% for link in SITE_CONFIG.social_media %}
                 <li>
                   <a class="{{ link.icon_class }} fastoche-btn"

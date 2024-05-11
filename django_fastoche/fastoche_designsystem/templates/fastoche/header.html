@@ -1,5 +1,5 @@
 {% load i18n %}
-<header role="banner" class="header">
+<header role="banner" class="fastoche-header">
   <div class="fastoche-header__body">
     <div class="fastoche-container">
       <div class="fastoche-header__body-row">
@@ -30,7 +30,7 @@
               <div class="fastoche-header__navbar">
                 <button class="fastoche-btn--menu fastoche-btn"
                         data-fastoche-opened="false"
-                        aria-controls="modal-menu-mobile"
+                        aria-controls="fastoche-modal-menu-mobile"
                         id="fastoche-btn-menu-mobile"
                         title="{{ menu_label }}">
                   {{ menu_label }}
@@ -56,9 +56,9 @@
             </p>
           </div>
         </div>
-        <div class="header__tools">
-          <div class="header__tools-links">
-            <ul class="btns-group">
+        <div class="fastoche-header__tools">
+          <div class="fastoche-header__tools-links">
+            <ul class="fastoche-btns-group">
               {% block header_tools %}
                 <li>
                   <a class="fastoche-icon-add-circle-line fastoche-btn"
@@ -82,7 +82,7 @@
     </div>
   </div>
   {% block main_menu %}
-    <div class="header__menu modal"
+    <div class="fastoche-header__menu modal"
          id="fastoche-menu-mobile"
          aria-labelledby="fastoche-btn-menu-mobile">
       <div class="fastoche-container">
@@ -90,7 +90,7 @@
                 aria-controls="fastoche-menu-mobile">
           {% translate "Close" %}
         </button>
-        <div class="header__menu-links">
+        <div class="fastoche-header__menu-links">
         </div>
         {% translate "Main menu" as main_menu_label %}
         <nav role="navigation"
