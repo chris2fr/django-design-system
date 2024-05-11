@@ -1,7 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 
 # List of languages for which the interface translation is currently available
-DJANGO_WEBFACILE_LANGUAGES = [
+DJANGO_FASTOCHE_LANGUAGES = [
     ("en", _("English")),
     ("fr", _("French")),
 ]

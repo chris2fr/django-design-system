@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from django_fastoche.constants import DJANGO_WEBFACILE_LANGUAGES
+from django_fastoche.constants import DJANGO_FASTOCHE_LANGUAGES
 
 
 def validate_image_extension(value):
@@ -19,7 +19,7 @@ class FastocheConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
-        choices=DJANGO_WEBFACILE_LANGUAGES,
+        choices=DJANGO_FASTOCHE_LANGUAGES,
         help_text=_("Only one configuration is allowed per language"),
         default="fr",
         unique=True,
@@ -52,13 +52,13 @@ class FastocheConfig(models.Model):
     header_brand = models.CharField(
         _("Institution (header)"),
         max_length=200,
-        default="République française",
+        default="Web Fastoche",
         blank=True,
     )
     header_brand_html = models.CharField(
         _("Institution with line break (header)"),
         max_length=200,
-        default="République<br />française",
+        default="Web<br />Fastoche",
         blank=True,
     )
     beta_tag = models.BooleanField(_("Show the BETA tag next to the title"), default=False)  # type: ignore
@@ -67,13 +67,13 @@ class FastocheConfig(models.Model):
     footer_brand = models.CharField(
         _("Institution (footer)"),
         max_length=200,
-        default="République française",
+        default="Web Fastoche",
         blank=True,
     )
     footer_brand_html = models.CharField(
         _("Institution with line break (footer)"),
         max_length=200,
-        default="République<br />française",
+        default="Web<br />Fastoche",
         blank=True,
     )
     footer_description = models.TextField(_("Description"), default="", blank=True)
