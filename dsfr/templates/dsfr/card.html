@@ -55,7 +55,7 @@
     {% if self.call_to_action and not self.bottom_detail %}
       <div class="fr-card__footer">
         {% if self.call_to_action.buttons %}
-          <ul class="fr-fastoche-btns-group fr-fastoche-btns-group--inline-reverse fr-fastoche-btns-group--inline-lg">
+          <ul class="fr-btns-group fr-btns-group--inline-reverse fr-btns-group--inline-lg">
             {% for button in self.call_to_action.buttons %}
               <li>
                 {% dsfr_button button %}

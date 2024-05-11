@@ -30,7 +30,7 @@
               <div class="fastoche-header__navbar">
                 <button class="fastoche-btn--menu fastoche-btn"
                         data-fastoche-opened="false"
-                        aria-controls="fastoche-modal-menu-mobile"
+                        aria-controls="fastoche-menu-mobile"
                         id="fastoche-btn-menu-mobile"
                         title="{{ menu_label }}">
                   {{ menu_label }}
@@ -82,7 +82,7 @@
     </div>
   </div>
   {% block main_menu %}
-    <div class="fastoche-header__menu modal"
+    <div class="fastoche-header__menu fastoche-modal"
          id="fastoche-menu-mobile"
          aria-labelledby="fastoche-btn-menu-mobile">
       <div class="fastoche-container">
