@@ -1,0 +1,230 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .fastoche-btn {
+    background-color: hsl(122, 75%, 25%);
+    color: hsl(122, 80%, 98%);
+  }
+
+  .fastoche-btn:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .fastoche-btn:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  .fastoche-btn:disabled,
+  a.fastoche-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-btn--secondary {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(122, 75%, 25%);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    color: #929292;
+  }
+
+  .fastoche-btn--secondary,
+  .fastoche-btn--tertiary,
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .fastoche-btn--secondary {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:disabled:hover,
+  a.fastoche-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:disabled:active,
+  a.fastoche-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:hover,
+  .fastoche-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:active,
+  .fastoche-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:disabled:hover,
+  a.fastoche-btn--tertiary:not([href]):hover,
+  a.fastoche-btn--account:not([href]):hover,
+  .fastoche-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:disabled:active,
+  a.fastoche-btn--tertiary:not([href]):active,
+  a.fastoche-btn--account:not([href]):active,
+  .fastoche-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:hover,
+  .fastoche-btn--close:hover,
+  .fastoche-btn--display:hover,
+  .fastoche-btn--fullscreen:hover,
+  .fastoche-btn--tooltip:hover,
+  .fastoche-btn--briefcase:hover,
+  .fastoche-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:active,
+  .fastoche-btn--close:active,
+  .fastoche-btn--display:active,
+  .fastoche-btn--fullscreen:active,
+  .fastoche-btn--tooltip:active,
+  .fastoche-btn--briefcase:active,
+  .fastoche-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:hover,
+  a.fastoche-btn--tertiary-no-outline:not([href]):hover,
+  a.fastoche-btn--close:not([href]):hover,
+  a.fastoche-btn--display:not([href]):hover,
+  a.fastoche-btn--fullscreen:not([href]):hover,
+  a.fastoche-btn--tooltip:not([href]):hover,
+  a.fastoche-btn--briefcase:not([href]):hover,
+  a.fastoche-btn--team:not([href]):hover,
+  .fastoche-btn--close:disabled:hover,
+  .fastoche-btn--display:disabled:hover,
+  .fastoche-btn--fullscreen:disabled:hover,
+  .fastoche-btn--tooltip:disabled:hover,
+  .fastoche-btn--briefcase:disabled:hover,
+  .fastoche-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:active,
+  a.fastoche-btn--tertiary-no-outline:not([href]):active,
+  a.fastoche-btn--close:not([href]):active,
+  a.fastoche-btn--display:not([href]):active,
+  a.fastoche-btn--fullscreen:not([href]):active,
+  a.fastoche-btn--tooltip:not([href]):active,
+  a.fastoche-btn--briefcase:not([href]):active,
+  a.fastoche-btn--team:not([href]):active,
+  .fastoche-btn--close:disabled:active,
+  .fastoche-btn--display:disabled:active,
+  .fastoche-btn--fullscreen:disabled:active,
+  .fastoche-btn--tooltip:disabled:active,
+  .fastoche-btn--briefcase:disabled:active,
+  .fastoche-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,118 @@
+{% load i18n %}
+<header role="banner" class="header">
+  <div class="fastoche-header__body">
+    <div class="fastoche-container">
+      <div class="fastoche-header__body-row">
+        <div class="fastoche-header__brand facile-enlarge-link">
+          <div class="fastoche-header__brand-top">
+            <div class="fastoche-header__logo">
+              {% block brand %}
+                {% translate "Home page" as home_page %}
+                <a href="/" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+                  <p class="fastoche-logo">
+                    {{ SITE_CONFIG.header_brand_html|default_if_none:"république<br />française" | safe }}
+                  </p>
+                </a>
+              {% endblock brand %}
+            </div>
+            {% block operator_logo %}
+              {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
+                <div class="fastoche-header__operator">
+                  <img class="fastoche-responsive-img"
+                       src="{{ SITE_CONFIG.operator_logo_file.url }}"
+                       alt="{{ SITE_CONFIG.operator_logo_alt }}"
+                       {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
+                </div>
+              {% endif %}
+            {% endblock operator_logo %}
+            {% block burger_menu %}
+              {% translate "Menu" as menu_label %}
+              <div class="fastoche-header__navbar">
+                <button class="fastoche-btn--menu fastoche-btn"
+                        data-fastoche-opened="false"
+                        aria-controls="modal-menu-mobile"
+                        id="fastoche-btn-menu-mobile"
+                        title="{{ menu_label }}">
+                  {{ menu_label }}
+                </button>
+              </div>
+            {% endblock burger_menu %}
+          </div>
+          <div class="fastoche-header__service">
+            {% block service_title %}
+              <a href="/" title="Accueil — {{ SITE_CONFIG.site_title }}">
+                <p class="fastoche-header__service-title">
+                  {{ SITE_CONFIG.site_title }}
+                  {% if SITE_CONFIG.beta_tag %}
+                    <span class="fastoche-badge fastoche-badge--sm fastoche-badge--green-emeraude">BETA</span>
+                  {% endif %}
+                </p>
+              </a>
+            {% endblock service_title %}
+            <p class="fastoche-header__service-tagline">
+              {% block service_tagline %}
+                {{ SITE_CONFIG.site_tagline }}
+              {% endblock service_tagline %}
+            </p>
+          </div>
+        </div>
+        <div class="header__tools">
+          <div class="header__tools-links">
+            <ul class="btns-group">
+              {% block header_tools %}
+                <li>
+                  <a class="fastoche-icon-add-circle-line fastoche-btn"
+                     href="[url - à modifier]">Créer un espace</a>
+                </li>
+                <li>
+                  <a class="fastoche-icon-lock-line fastoche-btn"
+                     href="[url - à modifier]">Se connecter</a>
+                </li>
+                <li>
+                  <a class="fastoche-icon-account-line fastoche-btn"
+                     href="[url - à modifier]">S’enregistrer</a>
+                </li>
+              {% endblock header_tools %}
+            </ul>
+          </div>
+          {% block header_search %}
+          {% endblock header_search %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% block main_menu %}
+    <div class="header__menu modal"
+         id="fastoche-menu-mobile"
+         aria-labelledby="fastoche-btn-menu-mobile">
+      <div class="fastoche-container">
+        <button class="fastoche-btn--close fastoche-btn"
+                aria-controls="fastoche-menu-mobile">
+          {% translate "Close" %}
+        </button>
+        <div class="header__menu-links">
+        </div>
+        {% translate "Main menu" as main_menu_label %}
+        <nav role="navigation"
+             class="fastoche-nav"
+             id="fastoche-navigation"
+             aria-label="{{ main_menu_label }}">
+          <ul class="fastoche-nav__list">
+            <li class="fastoche-nav__item">
+              <a class="fastoche-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="fastoche-nav__item">
+              <a class="fastoche-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="fastoche-nav__item">
+              <a class="fastoche-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+            <li class="fastoche-nav__item">
+              <a class="fastoche-nav__link" href="#" target="_self">accès direct</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  {% endblock main_menu %}
+</header>

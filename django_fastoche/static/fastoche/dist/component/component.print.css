@@ -1,0 +1,3128 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media print {
+  .fastoche-upload {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-accordion__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-accordion__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .fastoche-accordion .fastoche-collapse:not(.fastoche-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+
+  .fastoche-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .fastoche-badge--info {
+    color: #0063cb;
+    background-color: #e8edff;
+  }
+
+  .fastoche-badge--error {
+    color: #ce0500;
+    background-color: #ffe9e9;
+  }
+
+  .fastoche-badge--success {
+    color: #18753c;
+    background-color: #b8fec9;
+  }
+
+  .fastoche-badge--warning {
+    color: #b34000;
+    background-color: #ffe9e6;
+  }
+
+  .fastoche-badge--new {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-badge--fastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-logo {
+    color: #000;
+  }
+
+  .fastoche-logo::after {
+    background-position: 0 calc(100% + 1.875rem) !important;
+  }
+
+  .fastoche-btn {
+    background-color: hsl(122, 75%, 25%);
+    color: hsl(122, 80%, 98%);
+  }
+
+  .fastoche-btn:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .fastoche-btn:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  .fastoche-btn:disabled,
+  a.fastoche-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-btn--secondary {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(122, 75%, 25%);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    color: #929292;
+  }
+
+  .fastoche-btn--secondary,
+  .fastoche-btn--tertiary,
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip {
+    background-color: transparent;
+  }
+
+  .fastoche-connect {
+    background-color: hsl(122, 75%, 25%);
+    color: hsl(122, 80%, 98%);
+  }
+
+  .fastoche-connect:disabled,
+  a.fastoche-connect:not([href]) {
+    background-color: #e5e5e5;
+    color: #929292;
+  }
+
+  .fastoche-connect-group .fastoche-connect + p a {
+    color: hsl(122, 75%, 25%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-connect-group p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-quote::before {
+    color: hsl(122, 85%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color3::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color4::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color5::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color6::before {
+    color: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color7::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color8::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color9::before {
+    color: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color10::before {
+    color: hsl(100, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color11::before {
+    color: hsl(105, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color12::before {
+    color: hsl(115, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color13::before {
+    color: hsl(135, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color14::before {
+    color: hsl(145, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color15::before {
+    color: hsl(155, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color16::before {
+    color: hsl(165, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color17::before {
+    color: hsl(175, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color18::before {
+    color: hsl(185, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color19::before {
+    color: hsl(195, 75%, 25%);
+  }
+
+  .fastoche-quote__source {
+    color: #666;
+  }
+
+  .fastoche-quote__author,
+  .fastoche-quote cite,
+  .fastoche-quote figcaption li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-breadcrumb {
+    color: #666;
+    display: none;
+  }
+
+  .fastoche-breadcrumb__link[aria-current]:not([aria-current=false]) {
+    color: #3a3a3a;
+  }
+
+  .fastoche-select-group--valid label,
+  .fastoche-input-group--valid label,
+  .fastoche-range-group--valid label,
+  .fastoche-upload-group--valid label {
+    color: #18753c;
+  }
+
+  .fastoche-select-group--error label,
+  .fastoche-input-group--error label,
+  .fastoche-range-group--error label,
+  .fastoche-upload-group--error label {
+    color: #ce0500;
+  }
+
+  .fastoche-select-group--info label,
+  .fastoche-input-group--info label,
+  .fastoche-range-group--info label,
+  .fastoche-upload-group--info label {
+    color: #0063cb;
+  }
+
+  .fastoche-select-group--disabled label,
+  .fastoche-select-group--disabled .fastoche-hint-text,
+  .fastoche-input-group--disabled label,
+  .fastoche-input-group--disabled .fastoche-hint-text,
+  .fastoche-range-group--disabled label,
+  .fastoche-range-group--disabled .fastoche-hint-text,
+  .fastoche-upload-group--disabled label,
+  .fastoche-upload-group--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-label {
+    color: #161616;
+  }
+
+  .fastoche-label--error {
+    color: #ce0500;
+  }
+
+  .fastoche-label--success {
+    color: #18753c;
+  }
+
+  .fastoche-label--info {
+    color: #0063cb;
+  }
+
+  .fastoche-label--disabled,
+  .fastoche-label--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-hint-text,
+  .fastoche-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-message--error {
+    color: #ce0500;
+  }
+
+  .fastoche-message--valid {
+    color: #18753c;
+  }
+
+  .fastoche-message--info {
+    color: #0063cb;
+  }
+
+  .fastoche-fieldset:disabled .fastoche-label,
+  .fastoche-fieldset:disabled .fastoche-hint-text,
+  .fastoche-fieldset:disabled .fastoche-fieldset__legend {
+    color: #929292;
+  }
+
+  .fastoche-fieldset input:disabled + label,
+  .fastoche-fieldset input:disabled + label .fastoche-hint-text,
+  .fastoche-fieldset input:disabled + label + .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-fieldset__legend {
+    color: #161616;
+  }
+
+  .fastoche-fieldset--error,
+  .fastoche-fieldset--error .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .fastoche-fieldset--error .fastoche-fieldset__legend,
+  .fastoche-fieldset--error .fastoche-label {
+    color: #ce0500;
+  }
+
+  .fastoche-fieldset--valid,
+  .fastoche-fieldset--valid .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .fastoche-fieldset--valid .fastoche-fieldset__legend,
+  .fastoche-fieldset--valid .fastoche-label {
+    color: #18753c;
+  }
+
+  .fastoche-fieldset--info,
+  .fastoche-fieldset--info .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .fastoche-fieldset--info .fastoche-fieldset__legend,
+  .fastoche-fieldset--info .fastoche-label {
+    color: #0063cb;
+  }
+
+  .fastoche-stepper__title {
+    color: #161616;
+  }
+
+  .fastoche-stepper__state {
+    color: #666;
+  }
+
+  .fastoche-stepper__details {
+    color: #666;
+  }
+
+  .fastoche-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(122, 75%, 25%) 0, hsl(122, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .fastoche-stepper__state,
+  .fastoche-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-tooltip {
+    color: #3a3a3a;
+    display: none;
+  }
+
+  .fastoche-tooltip.fastoche-placement {
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+
+  .fastoche-link {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-link__detail {
+    color: #666;
+  }
+
+  .fastoche-links-group li::marker {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-sidemenu {
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+
+    /*
+    @include elevation.elevate(raised, (legacy:$legacy));
+    @include respond-from(md) {
+      @include elevation.drop((legacy:$legacy));
+    }
+     */
+    display: none;
+  }
+
+  .fastoche-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .fastoche-sidemenu__item .fastoche-sidemenu__link,
+  .fastoche-sidemenu__item .fastoche-sidemenu__btn {
+    color: #161616;
+  }
+
+  .fastoche-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .fastoche-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .fastoche-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .fastoche-sidemenu__link,
+  .fastoche-sidemenu__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-sidemenu__link[aria-current]:not([aria-current=false]),
+  .fastoche-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .fastoche-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-highlight {
+    background-image: linear-gradient(0deg, hsl(122, 85%, 25%), hsl(122, 85%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color3 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color4 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color5 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color6 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color7 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color8 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color9 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color10 {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color11 {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color12 {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color13 {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color14 {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color15 {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color16 {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color17 {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color18 {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .fastoche-highlight--fastoche-color19 {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+
+  .fastoche-tabs {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+
+    /**
+    * Tab button
+    */
+  }
+
+  .fastoche-tabs::before {
+    box-shadow: inset 0 1px 0 0 #ddd, inset 1px 0 0 0 #ddd, inset -1px 0 0 0 #ddd;
+  }
+
+  .fastoche-tabs__tab {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    box-shadow: 0 2px 0 0 #fff;
+  }
+
+  .fastoche-tabs__tab:not([aria-selected=true]) {
+    background-color: hsl(122, 80%, 93%);
+    color: #161616;
+  }
+
+  .fastoche-tabs__tab[aria-selected=true]:not(:disabled) {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-tabs__tab:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-pagination {
+    color: #161616;
+  }
+
+  .fastoche-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(122, 75%, 25%);
+    color: hsl(122, 80%, 98%);
+  }
+
+  .fastoche-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .fastoche-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  .fastoche-pagination__link:not([aria-current]):disabled,
+  a.fastoche-pagination__link:not([aria-current]):not([href]),
+  a.fastoche-pagination__link[aria-current=false]:not([href]),
+  .fastoche-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+
+  .fastoche-summary {
+    background-color: #eee;
+    display: none;
+  }
+
+  .fastoche-summary__title {
+    color: #161616;
+  }
+
+  .fastoche-summary li > a {
+    color: #161616;
+  }
+
+  .fastoche-table {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table caption {
+    color: #161616;
+  }
+
+  .fastoche-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .fastoche-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .fastoche-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .fastoche-table--fastoche-color3 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color3 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color3 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color3 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color3.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color4 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color4 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color4 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color4 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color4.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color5 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color5 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color5 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color5 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color5.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color6 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color6 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color6 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color6 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color6.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color7 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color7 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color7 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color7 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color7.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color8 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color8 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color8 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color8 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color8.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color9 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color9 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color9 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color9 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color9.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color10 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color10 thead {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color10 tbody {
+    background-color: hsl(100, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color10 tbody tr:nth-child(even) {
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color10.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color11 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color11 thead {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color11 tbody {
+    background-color: hsl(105, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color11 tbody tr:nth-child(even) {
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color11.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color12 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color12 thead {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color12 tbody {
+    background-color: hsl(115, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color12 tbody tr:nth-child(even) {
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color12.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color13 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color13 thead {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color13 tbody {
+    background-color: hsl(135, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color13 tbody tr:nth-child(even) {
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color13.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color14 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color14 thead {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color14 tbody {
+    background-color: hsl(145, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color14 tbody tr:nth-child(even) {
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color14.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color15 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color15 thead {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color15 tbody {
+    background-color: hsl(155, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color15 tbody tr:nth-child(even) {
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color15.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color16 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color16 thead {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color16 tbody {
+    background-color: hsl(165, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color16 tbody tr:nth-child(even) {
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color16.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color17 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color17 thead {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color17 tbody {
+    background-color: hsl(175, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color17 tbody tr:nth-child(even) {
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color17.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color18 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color18 thead {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color18 tbody {
+    background-color: hsl(185, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color18 tbody tr:nth-child(even) {
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color18.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color19 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .fastoche-table--fastoche-color19 thead {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color19 tbody {
+    background-color: hsl(195, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color19 tbody tr:nth-child(even) {
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color19.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+
+  .fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+
+    /* Style bordered, enleve le style even/odd  */
+  }
+
+  .fastoche-table td,
+  .fastoche-table th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-tag {
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .fastoche-tag[aria-pressed=false] {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-tag[aria-pressed=false]:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  .fastoche-tag[aria-pressed=false]:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss {
+    color: hsl(122, 80%, 98%);
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  a.fastoche-tag,
+  button.fastoche-tag,
+  input[type=button].fastoche-tag {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  a.fastoche-tag:hover,
+  button.fastoche-tag:hover,
+  input[type=button].fastoche-tag:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  a.fastoche-tag:active,
+  button.fastoche-tag:active,
+  input[type=button].fastoche-tag:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color3,
+  button.fastoche-tag--fastoche-color3,
+  input[type=button].fastoche-tag--fastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color3:hover,
+  button.fastoche-tag--fastoche-color3:hover,
+  input[type=button].fastoche-tag--fastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color3:active,
+  button.fastoche-tag--fastoche-color3:active,
+  input[type=button].fastoche-tag--fastoche-color3:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color4,
+  button.fastoche-tag--fastoche-color4,
+  input[type=button].fastoche-tag--fastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color4:hover,
+  button.fastoche-tag--fastoche-color4:hover,
+  input[type=button].fastoche-tag--fastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color4:active,
+  button.fastoche-tag--fastoche-color4:active,
+  input[type=button].fastoche-tag--fastoche-color4:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color5,
+  button.fastoche-tag--fastoche-color5,
+  input[type=button].fastoche-tag--fastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color5:hover,
+  button.fastoche-tag--fastoche-color5:hover,
+  input[type=button].fastoche-tag--fastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color5:active,
+  button.fastoche-tag--fastoche-color5:active,
+  input[type=button].fastoche-tag--fastoche-color5:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color6,
+  button.fastoche-tag--fastoche-color6,
+  input[type=button].fastoche-tag--fastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color6:hover,
+  button.fastoche-tag--fastoche-color6:hover,
+  input[type=button].fastoche-tag--fastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color6:active,
+  button.fastoche-tag--fastoche-color6:active,
+  input[type=button].fastoche-tag--fastoche-color6:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color7,
+  button.fastoche-tag--fastoche-color7,
+  input[type=button].fastoche-tag--fastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color7:hover,
+  button.fastoche-tag--fastoche-color7:hover,
+  input[type=button].fastoche-tag--fastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color7:active,
+  button.fastoche-tag--fastoche-color7:active,
+  input[type=button].fastoche-tag--fastoche-color7:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color8,
+  button.fastoche-tag--fastoche-color8,
+  input[type=button].fastoche-tag--fastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color8:hover,
+  button.fastoche-tag--fastoche-color8:hover,
+  input[type=button].fastoche-tag--fastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color8:active,
+  button.fastoche-tag--fastoche-color8:active,
+  input[type=button].fastoche-tag--fastoche-color8:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color9,
+  button.fastoche-tag--fastoche-color9,
+  input[type=button].fastoche-tag--fastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color9:hover,
+  button.fastoche-tag--fastoche-color9:hover,
+  input[type=button].fastoche-tag--fastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color9:active,
+  button.fastoche-tag--fastoche-color9:active,
+  input[type=button].fastoche-tag--fastoche-color9:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color10,
+  button.fastoche-tag--fastoche-color10,
+  input[type=button].fastoche-tag--fastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color10:hover,
+  button.fastoche-tag--fastoche-color10:hover,
+  input[type=button].fastoche-tag--fastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color10:active,
+  button.fastoche-tag--fastoche-color10:active,
+  input[type=button].fastoche-tag--fastoche-color10:active {
+    background-color: hsl(100, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color11,
+  button.fastoche-tag--fastoche-color11,
+  input[type=button].fastoche-tag--fastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color11:hover,
+  button.fastoche-tag--fastoche-color11:hover,
+  input[type=button].fastoche-tag--fastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color11:active,
+  button.fastoche-tag--fastoche-color11:active,
+  input[type=button].fastoche-tag--fastoche-color11:active {
+    background-color: hsl(105, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color12,
+  button.fastoche-tag--fastoche-color12,
+  input[type=button].fastoche-tag--fastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color12:hover,
+  button.fastoche-tag--fastoche-color12:hover,
+  input[type=button].fastoche-tag--fastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color12:active,
+  button.fastoche-tag--fastoche-color12:active,
+  input[type=button].fastoche-tag--fastoche-color12:active {
+    background-color: hsl(115, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color13,
+  button.fastoche-tag--fastoche-color13,
+  input[type=button].fastoche-tag--fastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color13:hover,
+  button.fastoche-tag--fastoche-color13:hover,
+  input[type=button].fastoche-tag--fastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color13:active,
+  button.fastoche-tag--fastoche-color13:active,
+  input[type=button].fastoche-tag--fastoche-color13:active {
+    background-color: hsl(135, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color14,
+  button.fastoche-tag--fastoche-color14,
+  input[type=button].fastoche-tag--fastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color14:hover,
+  button.fastoche-tag--fastoche-color14:hover,
+  input[type=button].fastoche-tag--fastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color14:active,
+  button.fastoche-tag--fastoche-color14:active,
+  input[type=button].fastoche-tag--fastoche-color14:active {
+    background-color: hsl(145, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color15,
+  button.fastoche-tag--fastoche-color15,
+  input[type=button].fastoche-tag--fastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color15:hover,
+  button.fastoche-tag--fastoche-color15:hover,
+  input[type=button].fastoche-tag--fastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color15:active,
+  button.fastoche-tag--fastoche-color15:active,
+  input[type=button].fastoche-tag--fastoche-color15:active {
+    background-color: hsl(155, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color16,
+  button.fastoche-tag--fastoche-color16,
+  input[type=button].fastoche-tag--fastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color16:hover,
+  button.fastoche-tag--fastoche-color16:hover,
+  input[type=button].fastoche-tag--fastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color16:active,
+  button.fastoche-tag--fastoche-color16:active,
+  input[type=button].fastoche-tag--fastoche-color16:active {
+    background-color: hsl(165, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color17,
+  button.fastoche-tag--fastoche-color17,
+  input[type=button].fastoche-tag--fastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color17:hover,
+  button.fastoche-tag--fastoche-color17:hover,
+  input[type=button].fastoche-tag--fastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color17:active,
+  button.fastoche-tag--fastoche-color17:active,
+  input[type=button].fastoche-tag--fastoche-color17:active {
+    background-color: hsl(175, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color18,
+  button.fastoche-tag--fastoche-color18,
+  input[type=button].fastoche-tag--fastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color18:hover,
+  button.fastoche-tag--fastoche-color18:hover,
+  input[type=button].fastoche-tag--fastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color18:active,
+  button.fastoche-tag--fastoche-color18:active,
+  input[type=button].fastoche-tag--fastoche-color18:active {
+    background-color: hsl(185, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color19,
+  button.fastoche-tag--fastoche-color19,
+  input[type=button].fastoche-tag--fastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color19:hover,
+  button.fastoche-tag--fastoche-color19:hover,
+  input[type=button].fastoche-tag--fastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color19:active,
+  button.fastoche-tag--fastoche-color19:active,
+  input[type=button].fastoche-tag--fastoche-color19:active {
+    background-color: hsl(195, 90%, 65%);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled) {
+    color: hsl(122, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 75%, 25%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 60%, 20%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 40%, 15%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]::after,
+  input[type=button].fastoche-tag[aria-pressed=true]::after {
+    color: hsl(122, 75%, 25%);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:disabled,
+  input[type=button].fastoche-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:disabled::after,
+  input[type=button].fastoche-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:hover,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:active,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:disabled,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.fastoche-tag:disabled,
+  input[type=button].fastoche-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).fastoche-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true],
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:hover,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:active,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:disabled,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  .fastoche-alert {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .fastoche-alert::before {
+    color: #fff;
+  }
+
+  .fastoche-alert--info {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb), linear-gradient(0deg, #0063cb, #0063cb), linear-gradient(0deg, #0063cb, #0063cb), linear-gradient(0deg, #0063cb, #0063cb), linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .fastoche-alert--error {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500), linear-gradient(0deg, #ce0500, #ce0500), linear-gradient(0deg, #ce0500, #ce0500), linear-gradient(0deg, #ce0500, #ce0500), linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .fastoche-alert--success {
+    background-image: linear-gradient(0deg, #18753c, #18753c), linear-gradient(0deg, #18753c, #18753c), linear-gradient(0deg, #18753c, #18753c), linear-gradient(0deg, #18753c, #18753c), linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .fastoche-alert--warning {
+    background-image: linear-gradient(0deg, #b34000, #b34000), linear-gradient(0deg, #b34000, #b34000), linear-gradient(0deg, #b34000, #b34000), linear-gradient(0deg, #b34000, #b34000), linear-gradient(0deg, #b34000, #b34000);
+  }
+
+  .fastoche-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .fastoche-notice--info {
+    background-color: #e8edff;
+    color: #0063cb;
+  }
+
+  .fastoche-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(122, 75%, 25%) 11px, transparent 12px);
+  }
+
+  .fastoche-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .fastoche-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(122, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(122, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .fastoche-radio-group input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, #ce0500 11px, transparent 12px);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, #ce0500 11px, transparent 12px), radial-gradient(hsl(122, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, #18753c 11px, transparent 12px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, #18753c 11px, transparent 12px), radial-gradient(hsl(122, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, #0063cb 11px, transparent 12px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, #0063cb 11px, transparent 12px), radial-gradient(hsl(122, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-group input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .fastoche-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(122, 75%, 25%) 7px, transparent 8px);
+  }
+
+  .fastoche-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .fastoche-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(122, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-radio-group--sm input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, #ce0500 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, #ce0500 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, #18753c 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, #18753c 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, #0063cb 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, #0063cb 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-group--sm input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .fastoche-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .fastoche-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(122, 75%, 25%) 7px, transparent 8px);
+    background-color: #fff;
+  }
+
+  .fastoche-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .fastoche-radio-rich input[type=radio]:disabled ~ .fastoche-radio-rich__pictogram svg * {
+    fill: #929292;
+  }
+
+  .fastoche-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), radial-gradient(transparent 6px, hsl(122, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-radio-rich input[type=radio]:checked ~ .fastoche-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-radio-rich input[type=radio]:checked:disabled + label {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .fastoche-radio-rich input[type=radio]:checked:disabled ~ .fastoche-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #ce0500 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--error .fastoche-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), radial-gradient(transparent 6px, #ce0500 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #18753c 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--valid .fastoche-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), radial-gradient(transparent 6px, #18753c 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #0063cb 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset--info .fastoche-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%)), radial-gradient(transparent 6px, #0063cb 7px, transparent 8px), radial-gradient(hsl(122, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .fastoche-fieldset .fastoche-radio-rich input[type=radio]:disabled:checked + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .fastoche-card {
+    background-color: #fff;
+  }
+
+  .fastoche-card:not(.fastoche-card--no-border):not(.fastoche-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-card--shadow {
+    background-color: #fff;
+  }
+
+  .fastoche-card--shadow.fastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-card--download:not(.fastoche-card--no-background) .fastoche-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .fastoche-card__detail {
+    color: #666;
+    line-height: 1rem !important;
+  }
+
+  .fastoche-card__title {
+    color: #161616;
+  }
+
+  .fastoche-card__title a[href] {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-card__title:disabled,
+  a.fastoche-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-card__detail,
+  .fastoche-card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), var(--data-uri-svg);
+  }
+
+  .fastoche-checkbox-group input[type=checkbox]:checked + label::before {
+    background-color: var(--background-active-fastoche-primary);
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-fastoche-primary) 4px, var(--border-active-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-active-fastoche-primary), var(--border-active-fastoche-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-fastoche-primary) 4px, var(--border-active-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-active-fastoche-primary), var(--border-active-fastoche-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-fastoche-primary) 4px, var(--border-active-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-active-fastoche-primary), var(--border-active-fastoche-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-fastoche-primary) 4px, var(--border-active-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-active-fastoche-primary), var(--border-active-fastoche-primary)), var(--data-uri-svg);
+
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(122, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  :root[data-fastoche-theme=dark] .fastoche-checkbox-group input[type=checkbox]:checked + label::before {
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(122, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  .fastoche-checkbox-group input[type=checkbox]:disabled + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), var(--data-uri-svg);
+  }
+
+  .fastoche-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+    background-color: var(--background-disabled-grey);
+
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  :root[data-fastoche-theme=dark] .fastoche-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  .fastoche-checkbox-group--error input[type=checkbox] + label,
+  .fastoche-checkbox-group--error input[type=checkbox]:checked + label {
+    color: #ce0500;
+  }
+
+  .fastoche-checkbox-group--error input[type=checkbox] + label::before,
+  .fastoche-checkbox-group--error input[type=checkbox]:checked + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+  }
+
+  .fastoche-checkbox-group--error::before {
+    background-color: #ce0500;
+  }
+
+  .fastoche-checkbox-group--valid input[type=checkbox] + label,
+  .fastoche-checkbox-group--valid input[type=checkbox]:checked + label {
+    color: #18753c;
+  }
+
+  .fastoche-checkbox-group--valid input[type=checkbox] + label::before,
+  .fastoche-checkbox-group--valid input[type=checkbox]:checked + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+  }
+
+  .fastoche-checkbox-group--valid::before {
+    background-color: #18753c;
+  }
+
+  .fastoche-fieldset--error .fastoche-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+  }
+
+  .fastoche-fieldset--valid .fastoche-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+  }
+
+  .fastoche-toggle label {
+    color: #161616;
+  }
+
+  .fastoche-toggle label::before {
+    color: hsl(122, 75%, 25%);
+    content: "";
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-toggle label::after {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(122, 75%, 25%);
+    background-color: #fff;
+  }
+
+  .fastoche-toggle input[type=checkbox] {
+    box-shadow: inset 0 0 0 1px hsl(122, 75%, 25%);
+  }
+
+  .fastoche-toggle input[type=checkbox]:checked {
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled:checked {
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled ~ .fastoche-toggle__label::before {
+    color: #929292;
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled ~ .fastoche-toggle__label::after {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-toggle .fastoche-hint-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-toggle--border-bottom {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .fastoche-toggle--error label,
+  .fastoche-fieldset--error .fastoche-toggle label {
+    color: #ce0500;
+  }
+
+  .fastoche-toggle--error label::before,
+  .fastoche-fieldset--error .fastoche-toggle label::before {
+    color: #ce0500;
+  }
+
+  .fastoche-toggle--error label::after,
+  .fastoche-fieldset--error .fastoche-toggle label::after {
+    box-shadow: inset 0 0 0 1px #ce0500;
+  }
+
+  .fastoche-toggle--valid label,
+  .fastoche-fieldset--valid .fastoche-toggle label {
+    color: #18753c;
+  }
+
+  .fastoche-toggle--valid label::before,
+  .fastoche-fieldset--valid .fastoche-toggle label::before {
+    color: #18753c;
+  }
+
+  .fastoche-toggle--valid label::after,
+  .fastoche-fieldset--valid .fastoche-toggle label::after {
+    box-shadow: inset 0 0 0 1px #18753c;
+  }
+
+  .fastoche-skiplinks {
+    background-color: #eee;
+  }
+
+  .fastoche-skiplink {
+    display: none;
+  }
+
+  .fastoche-select {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+
+    /**
+    * Mixin pour gérer l'état disabled
+    */
+
+    /**
+    * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+    * sur les navigateurs webkit.
+    */
+  }
+
+  .fastoche-fieldset--valid .fastoche-select,
+  .fastoche-select-group--valid .fastoche-select {
+    box-shadow: inset 0 -2px 0 0 #18753c;
+  }
+
+  .fastoche-fieldset--error .fastoche-select,
+  .fastoche-select-group--error .fastoche-select {
+    box-shadow: inset 0 -2px 0 0 #ce0500;
+  }
+
+  .fastoche-select-group--error::before {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .fastoche-select-group--valid::before {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .fastoche-select-group--info::before {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .fastoche-select:disabled {
+    color: #929292;
+    box-shadow: inset 0 -2px 0 0 #e5e5e5;
+  }
+
+  .fastoche-select:-webkit-autofill,
+  .fastoche-select:-webkit-autofill:hover,
+  .fastoche-select:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(122, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .fastoche-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(122, 85%, 25%), hsl(122, 85%, 25%));
+  }
+
+  .fastoche-callout::before {
+    color: #161616;
+  }
+
+  .fastoche-callout__title {
+    color: #161616;
+  }
+
+  .fastoche-callout--fastoche-color3 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color4 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color5 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color6 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color7 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color8 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color9 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color10 {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color11 {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color12 {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color13 {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color14 {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color15 {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color16 {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color17 {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color18 {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-callout--fastoche-color19 {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-modal__body {
+    background-color: #fff;
+  }
+
+  .fastoche-modal__title {
+    color: #161616;
+  }
+
+  .fastoche-modal__footer {
+    background-color: #fff;
+  }
+
+  .fastoche-modal__body.fastoche-scroll-divider .fastoche-modal__footer {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-modal {
+    display: none;
+  }
+
+  .fastoche-navigation {
+    display: none;
+  }
+
+  .fastoche-share .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-share .fastoche-btn:disabled,
+  .fastoche-share a.fastoche-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-share__text {
+    color: #666;
+  }
+
+  .fastoche-share {
+    display: none;
+  }
+
+  .fastoche-footer {
+    box-shadow: inset 0 2px 0 0 hsl(122, 75%, 25%), inset 0 -1px 0 0 #ddd;
+    display: none;
+  }
+
+  .fastoche-footer__content-link {
+    color: #3a3a3a;
+  }
+
+  .fastoche-footer__top-cat {
+    color: #161616;
+  }
+
+  .fastoche-footer__top {
+    background-color: #f6f6f6;
+  }
+
+  .fastoche-footer__bottom {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-footer__bottom .fastoche-btn {
+    color: #666;
+  }
+
+  .fastoche-footer__bottom-item::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-footer__bottom-link {
+    color: #666;
+  }
+
+  .fastoche-footer__bottom-copy {
+    color: #666;
+  }
+
+  .fastoche-footer__partners {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-footer__partners-title {
+    color: #3a3a3a;
+  }
+
+  .fastoche-footer__partners .fastoche-footer__logo {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-tile {
+    background-color: #fff;
+  }
+
+  .fastoche-tile:not(.fastoche-tile--no-border):not(.fastoche-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-tile--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-tile--shadow {
+    background-color: #fff;
+  }
+
+  .fastoche-tile--shadow.fastoche-tile--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-tile__title {
+    color: #161616;
+  }
+
+  .fastoche-tile__title:disabled,
+  a.fastoche-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .fastoche-tile__title a {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(122, 75%, 25%), hsl(122, 75%, 25%));
+  }
+
+  .fastoche-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+
+  .fastoche-tile .fastoche-tile__desc,
+  .fastoche-tile .fastoche-tile__detail,
+  .fastoche-tile__desc,
+  .fastoche-tile__detail,
+  .fastoche-tile--sm .fastoche-tile__desc,
+  .fastoche-tile--sm .fastoche-tile__detail,
+  .fastoche-tile--sm__desc,
+  .fastoche-tile--sm__detail {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-translate .fastoche-translate__btn[aria-expanded=true] {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-translate .fastoche-translate__btn[aria-expanded=true]:hover {
+    background-color: var(--hover-tint);
+  }
+
+  .fastoche-translate .fastoche-translate__btn[aria-expanded=true]:active {
+    background-color: var(--active-tint);
+  }
+
+  .fastoche-translate .fastoche-translate__btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-transcription__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-transcription__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-transcription .fastoche-modal:not(.fastoche-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-transcription {
+    display: none;
+  }
+
+  .fastoche-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .fastoche-input::placeholder {
+    color: #666;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .fastoche-input:disabled {
+    color: var(--text-disabled-grey);
+    box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+  }
+
+  .fastoche-input:autofill,
+  .fastoche-input:autofill:hover,
+  .fastoche-input:autofill:focus,
+  .fastoche-input:-webkit-autofill,
+  .fastoche-input:-webkit-autofill:hover,
+  .fastoche-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px #e8edff;
+    -webkit-text-fill-color: #161616;
+  }
+
+  .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(122, 75%, 25%);
+  }
+
+  .fastoche-fieldset--valid .fastoche-input,
+  .fastoche-fieldset--valid .fastoche-input-wrap--addon > .fastoche-input:not(:last-child),
+  .fastoche-input-group--valid .fastoche-input,
+  .fastoche-input-group--valid .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 #18753c;
+  }
+
+  .fastoche-fieldset--error .fastoche-input,
+  .fastoche-fieldset--error .fastoche-input-wrap--addon > .fastoche-input:not(:last-child),
+  .fastoche-input-group--error .fastoche-input,
+  .fastoche-input-group--error .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 #ce0500;
+  }
+
+  .fastoche-input-group--error::before {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .fastoche-input-group--valid::before {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .fastoche-input-group--info::before {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .fastoche-search-bar .fastoche-input {
+    box-shadow: inset 0 -2px 0 0 hsl(122, 75%, 25%);
+  }
+
+  .fastoche-search-bar .fastoche-input--valid {
+    box-shadow: inset 0 -2px 0 0 #18753c;
+  }
+
+  .fastoche-search-bar .fastoche-input--error {
+    box-shadow: inset 0 -2px 0 0 #ce0500;
+  }
+
+  .fastoche-content-media__caption,
+  .fastoche-content-media .fastoche-link {
+    color: #666;
+  }
+
+  .fastoche-content-media__caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-content-media__caption .fastoche-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0;
+  }
+
+  .fastoche-content-media__caption .fastoche-link::before,
+  .fastoche-content-media__caption .fastoche-link::after {
+    --icon-size: 1rem;
+  }
+
+  .fastoche-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .fastoche-consent-banner {
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+    display: none;
+  }
+
+  .fastoche-consent-manager__header,
+  .fastoche-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .fastoche-consent-manager__header .fastoche-radio-group + .fastoche-radio-group::before,
+  .fastoche-consent-service .fastoche-radio-group + .fastoche-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-consent-service__title {
+    color: #161616;
+  }
+
+  .fastoche-consent-service .fastoche-consent-service__collapse-btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+  .fastoche-follow {
+    background-color: hsl(122, 80%, 98%);
+  }
+
+  .fastoche-follow .fastoche-input {
+    background-color: #fff;
+  }
+
+  .fastoche-follow__title {
+    color: #161616;
+  }
+
+  .fastoche-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .fastoche-follow__social .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled,
+  .fastoche-follow__social a.fastoche-btn:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-follow .fastoche-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(122, 85%, 25%);
+  }
+
+  .fastoche-password__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-password__btn:disabled,
+  a.fastoche-password__btn:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-password .fastoche-password__checkbox input[type=checkbox] + label {
+    color: #161616;
+  }
+
+  .fastoche-password .fastoche-password__checkbox input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-fastoche-primary) 4px, var(--border-action-high-fastoche-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-fastoche-primary), var(--border-action-high-fastoche-primary)), var(--data-uri-svg);
+  }
+
+  .fastoche-header__brand {
+    background-color: #fff;
+    flex-wrap: nowrap;
+  }
+
+  .fastoche-header__service {
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+    box-shadow: none;
+  }
+
+  .fastoche-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-header__menu-links .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:disabled,
+  .fastoche-header__menu-links a.fastoche-btn:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-header__tools-links .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:disabled,
+  .fastoche-header__tools-links a.fastoche-btn:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:disabled,
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child a.fastoche-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-header__navbar .fastoche-service__title {
+    color: #161616;
+  }
+
+  .fastoche-header__navbar .fastoche-btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-header__navbar .fastoche-btn:disabled,
+  .fastoche-header__navbar a.fastoche-btn:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu {
+    color: hsl(122, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:disabled,
+  .fastoche-header__navbar a.fastoche-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-header .fastoche-modal {
+    background-color: #fff;
+  }
+
+  .fastoche-header__menu {
+    display: none;
+  }
+
+  .fastoche-header__body-row {
+    padding: 0;
+  }
+
+  .fastoche-header__body .fastoche-header__tools,
+  .fastoche-header__body .fastoche-header__navbar {
+    display: none;
+  }
+
+  .fastoche-header__brand-top {
+    width: auto;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .fastoche-btn--secondary {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:disabled:hover,
+  a.fastoche-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:disabled:active,
+  a.fastoche-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:hover,
+  .fastoche-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:active,
+  .fastoche-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:disabled:hover,
+  a.fastoche-btn--tertiary:not([href]):hover,
+  a.fastoche-btn--account:not([href]):hover,
+  .fastoche-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:disabled:active,
+  a.fastoche-btn--tertiary:not([href]):active,
+  a.fastoche-btn--account:not([href]):active,
+  .fastoche-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:hover,
+  .fastoche-btn--close:hover,
+  .fastoche-btn--display:hover,
+  .fastoche-btn--fullscreen:hover,
+  .fastoche-btn--tooltip:hover,
+  .fastoche-btn--briefcase:hover,
+  .fastoche-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:active,
+  .fastoche-btn--close:active,
+  .fastoche-btn--display:active,
+  .fastoche-btn--fullscreen:active,
+  .fastoche-btn--tooltip:active,
+  .fastoche-btn--briefcase:active,
+  .fastoche-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:hover,
+  a.fastoche-btn--tertiary-no-outline:not([href]):hover,
+  a.fastoche-btn--close:not([href]):hover,
+  a.fastoche-btn--display:not([href]):hover,
+  a.fastoche-btn--fullscreen:not([href]):hover,
+  a.fastoche-btn--tooltip:not([href]):hover,
+  a.fastoche-btn--briefcase:not([href]):hover,
+  a.fastoche-btn--team:not([href]):hover,
+  .fastoche-btn--close:disabled:hover,
+  .fastoche-btn--display:disabled:hover,
+  .fastoche-btn--fullscreen:disabled:hover,
+  .fastoche-btn--tooltip:disabled:hover,
+  .fastoche-btn--briefcase:disabled:hover,
+  .fastoche-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:active,
+  a.fastoche-btn--tertiary-no-outline:not([href]):active,
+  a.fastoche-btn--close:not([href]):active,
+  a.fastoche-btn--display:not([href]):active,
+  a.fastoche-btn--fullscreen:not([href]):active,
+  a.fastoche-btn--tooltip:not([href]):active,
+  a.fastoche-btn--briefcase:not([href]):active,
+  a.fastoche-btn--team:not([href]):active,
+  .fastoche-btn--close:disabled:active,
+  .fastoche-btn--display:disabled:active,
+  .fastoche-btn--fullscreen:disabled:active,
+  .fastoche-btn--tooltip:disabled:active,
+  .fastoche-btn--briefcase:disabled:active,
+  .fastoche-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-tooltip.fastoche-placement {
+    z-index: 1000;
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+  }
+
+  button.fastoche-tag[aria-pressed=true]:disabled,
+  input[type=button].fastoche-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-card--shadow {
+    z-index: 500;
+  }
+
+  .fastoche-card--no-background {
+    background-color: transparent;
+  }
+
+  .fastoche-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(122, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle input[type=checkbox]:checked ~ .fastoche-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(122, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(122, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle input[type=checkbox]:checked ~ .fastoche-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(122, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled:checked ~ .fastoche-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='%23e5e5e5' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled:checked ~ .fastoche-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle input[type=checkbox]:disabled ~ .fastoche-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle--error label::before,
+  .fastoche-fieldset--error .fastoche-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23ce0500' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle--error input[type=checkbox]:checked ~ .fastoche-toggle__label::before,
+  .fastoche-fieldset--error .fastoche-toggle input[type=checkbox]:checked ~ .fastoche-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23ce0500' height='24' viewBox='0 0 40 24' fill='hsl(122, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle--valid label::before,
+  .fastoche-fieldset--valid .fastoche-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%2318753c' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-toggle--valid input[type=checkbox]:checked ~ .fastoche-toggle__label::before,
+  .fastoche-fieldset--valid .fastoche-toggle input[type=checkbox]:checked ~ .fastoche-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%2318753c' height='24' viewBox='0 0 40 24' fill='hsl(122, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .fastoche-select {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23161616' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-select:disabled {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23929292' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-modal__body {
+    z-index: 2000;
+  }
+
+  .fastoche-share .fastoche-btn {
+    background-color: transparent;
+  }
+
+  .fastoche-share .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-share .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-share .fastoche-btn:disabled,
+  .fastoche-share a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-share .fastoche-btn:disabled:hover,
+  .fastoche-share a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-share .fastoche-btn:disabled:active,
+  .fastoche-share a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-tile--shadow {
+    z-index: 500;
+  }
+
+  .fastoche-tile--no-background {
+    background-color: transparent;
+  }
+
+  .fastoche-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-translate__menu .fastoche-translate__language {
+    box-shadow: none;
+  }
+
+  .fastoche-search-bar .fastoche-input::-webkit-search-cancel-button {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='%23161616' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-11.414L9.172 7.757 7.757 9.172 10.586 12l-2.829 2.828 1.415 1.415L12 13.414l2.828 2.829 1.415-1.415L13.414 12l2.829-2.828-1.415-1.415L12 10.586z'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-consent-banner {
+    z-index: 1500;
+  }
+
+  .fastoche-consent-service:last-of-type,
+  .fastoche-consent-service .fastoche-consent-service {
+    box-shadow: none;
+  }
+
+  .fastoche-follow__social .fastoche-btn {
+    background-color: transparent;
+  }
+
+  .fastoche-follow__social .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled,
+  .fastoche-follow__social a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled:hover,
+  .fastoche-follow__social a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled:active,
+  .fastoche-follow__social a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-password__btn {
+    background-color: transparent;
+  }
+
+  .fastoche-password__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-password__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-password__btn:disabled,
+  a.fastoche-password__btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-password__btn:disabled:hover,
+  a.fastoche-password__btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-password__btn:disabled:active,
+  a.fastoche-password__btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-password [data-fastoche-capslock]::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23161616' d='M22.668 0C23.4023 0 24 .5977 24 1.332v21.336c0 .7343-.5977 1.332-1.332 1.332H1.332C.5977 24 0 23.4023 0 22.668V1.332C0 .5977.5977 0 1.332 0Zm-1.336 2.668H2.668v18.664h18.664Zm-4.664 12.664V18H7.332v-2.668ZM12 5.332 16.668 10H14v3.332h-4V10H7.332Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  .fastoche-header__brand {
+    z-index: 750;
+  }
+
+  .fastoche-header__menu-links .fastoche-btn {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:disabled,
+  .fastoche-header__menu-links a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:disabled:hover,
+  .fastoche-header__menu-links a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__menu-links .fastoche-btn:disabled:active,
+  .fastoche-header__menu-links a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__tools-links .fastoche-btn {
+    background-color: transparent;
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:disabled,
+  .fastoche-header__tools-links a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:disabled:hover,
+  .fastoche-header__tools-links a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__tools-links .fastoche-btn:disabled:active,
+  .fastoche-header__tools-links a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn {
+    background-color: transparent;
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:disabled,
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:disabled:hover,
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child .fastoche-btn:disabled:active,
+  .fastoche-header__tools-links > .fastoche-translate:first-child:last-child a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__navbar .fastoche-btn {
+    background-color: transparent;
+  }
+
+  .fastoche-header__navbar .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__navbar .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__navbar .fastoche-btn:disabled,
+  .fastoche-header__navbar a.fastoche-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-header__navbar .fastoche-btn:disabled:hover,
+  .fastoche-header__navbar a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__navbar .fastoche-btn:disabled:active,
+  .fastoche-header__navbar a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu {
+    background-color: transparent;
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:disabled,
+  .fastoche-header__navbar a.fastoche-btn--menu:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:disabled:hover,
+  .fastoche-header__navbar a.fastoche-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-header__navbar .fastoche-btn--menu:disabled:active,
+  .fastoche-header__navbar a.fastoche-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 48em) and (-ms-high-contrast: none), print and (min-width: 48em) and (-ms-high-contrast: active) {
+  .fastoche-sidemenu {
+    box-shadow: none;
+  }
+
+  .fastoche-sidemenu__title {
+    box-shadow: none;
+  }
+}
+@media print and (min-width: 48em) {
+  .fastoche-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .fastoche-sidemenu--right .fastoche-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+
+  .fastoche-follow .fastoche-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(122, 85%, 25%);
+  }
+}
+@media print and (min-width: 62em) {
+  .fastoche-header {
+    background-color: #fff;
+  }
+
+  .fastoche-header .fastoche-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
+@media print and (min-width: 62em) and (-ms-high-contrast: none), print and (min-width: 62em) and (-ms-high-contrast: active) {
+  .fastoche-header {
+    z-index: 750;
+  }
+
+  .fastoche-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .fastoche-header__service {
+    box-shadow: none;
+  }
+}

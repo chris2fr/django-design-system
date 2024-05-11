@@ -1,8 +1,0 @@
-{% load webfastoche_tags %}
-<ul class="btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
-  {% for item in self.items %}
-    <li>
-      {% webfastoche_button item %}
-    </li>
-  {% endfor %}
-</ul>

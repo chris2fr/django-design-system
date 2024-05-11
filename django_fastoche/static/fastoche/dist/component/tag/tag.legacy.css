@@ -1,0 +1,585 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-tag {
+    text-decoration: none;
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .fastoche-tag::before,
+  .fastoche-tag::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-tag .fastoche-tag--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .fastoche-tag[aria-pressed=true],
+  input[type=button] .fastoche-tag[aria-pressed=true] {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  button .fastoche-tag[aria-pressed=true]::after,
+  input[type=button] .fastoche-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/checkbox-circle-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .fastoche-tag[aria-pressed=true] .fastoche-tag--sm::after,
+  input[type=button] .fastoche-tag[aria-pressed=true] .fastoche-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .fastoche-tag .fastoche-tag--dismiss::after,
+  input[type=button] .fastoche-tag .fastoche-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .fastoche-tag .fastoche-tag--dismiss .fastoche-tag--sm::after,
+  input[type=button] .fastoche-tag .fastoche-tag--dismiss .fastoche-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ul.fastoche-tags-group {
+    list-style-type: none;
+  }
+
+  ol.fastoche-tags-group {
+    list-style-type: none;
+  }
+
+  ul.fastoche-tags-group,
+  ol.fastoche-tags-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fastoche-tags-group--sm::before,
+  .fastoche-tags-group--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-tags-group--sm a .fastoche-tag .fastoche-tag--dismiss::after,
+  .fastoche-tags-group--sm button .fastoche-tag .fastoche-tag--dismiss::after,
+  .fastoche-tags-group--sm input[type=button] .fastoche-tag .fastoche-tag--dismiss::after,
+  .fastoche-tags-group--sm input[type=image] .fastoche-tag .fastoche-tag--dismiss::after,
+  .fastoche-tags-group--sm input[type=reset] .fastoche-tag .fastoche-tag--dismiss::after,
+  .fastoche-tags-group--sm input[type=submit] .fastoche-tag .fastoche-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .fastoche-tags-group--sm a .fastoche-tag[aria-pressed=true]::after,
+  .fastoche-tags-group--sm button .fastoche-tag[aria-pressed=true]::after,
+  .fastoche-tags-group--sm input[type=button] .fastoche-tag[aria-pressed=true]::after,
+  .fastoche-tags-group--sm input[type=image] .fastoche-tag[aria-pressed=true]::after,
+  .fastoche-tags-group--sm input[type=reset] .fastoche-tag[aria-pressed=true]::after,
+  .fastoche-tags-group--sm input[type=submit] .fastoche-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent !important;
+  }
+
+  .fastoche-tag[aria-pressed=false] {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-tag[aria-pressed=false]:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  .fastoche-tag[aria-pressed=false]:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss {
+    color: hsl(122, 80%, 98%);
+    background-color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss:hover {
+    background-color: hsl(122, 60%, 20%);
+  }
+
+  .fastoche-tag.fastoche-tag--dismiss:active {
+    background-color: hsl(122, 40%, 15%);
+  }
+
+  a.fastoche-tag,
+  button.fastoche-tag,
+  input[type=button].fastoche-tag {
+    color: hsl(122, 75%, 25%);
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  a.fastoche-tag:hover,
+  button.fastoche-tag:hover,
+  input[type=button].fastoche-tag:hover {
+    background-color: hsl(122, 60%, 65%);
+  }
+
+  a.fastoche-tag:active,
+  button.fastoche-tag:active,
+  input[type=button].fastoche-tag:active {
+    background-color: hsl(122, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color3,
+  button.fastoche-tag--fastoche-color3,
+  input[type=button].fastoche-tag--fastoche-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color3:hover,
+  button.fastoche-tag--fastoche-color3:hover,
+  input[type=button].fastoche-tag--fastoche-color3:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color3:active,
+  button.fastoche-tag--fastoche-color3:active,
+  input[type=button].fastoche-tag--fastoche-color3:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color4,
+  button.fastoche-tag--fastoche-color4,
+  input[type=button].fastoche-tag--fastoche-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color4:hover,
+  button.fastoche-tag--fastoche-color4:hover,
+  input[type=button].fastoche-tag--fastoche-color4:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color4:active,
+  button.fastoche-tag--fastoche-color4:active,
+  input[type=button].fastoche-tag--fastoche-color4:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color5,
+  button.fastoche-tag--fastoche-color5,
+  input[type=button].fastoche-tag--fastoche-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color5:hover,
+  button.fastoche-tag--fastoche-color5:hover,
+  input[type=button].fastoche-tag--fastoche-color5:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color5:active,
+  button.fastoche-tag--fastoche-color5:active,
+  input[type=button].fastoche-tag--fastoche-color5:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color6,
+  button.fastoche-tag--fastoche-color6,
+  input[type=button].fastoche-tag--fastoche-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color6:hover,
+  button.fastoche-tag--fastoche-color6:hover,
+  input[type=button].fastoche-tag--fastoche-color6:hover {
+    background-color: hsl(249, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color6:active,
+  button.fastoche-tag--fastoche-color6:active,
+  input[type=button].fastoche-tag--fastoche-color6:active {
+    background-color: hsl(249, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color7,
+  button.fastoche-tag--fastoche-color7,
+  input[type=button].fastoche-tag--fastoche-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color7:hover,
+  button.fastoche-tag--fastoche-color7:hover,
+  input[type=button].fastoche-tag--fastoche-color7:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color7:active,
+  button.fastoche-tag--fastoche-color7:active,
+  input[type=button].fastoche-tag--fastoche-color7:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color8,
+  button.fastoche-tag--fastoche-color8,
+  input[type=button].fastoche-tag--fastoche-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color8:hover,
+  button.fastoche-tag--fastoche-color8:hover,
+  input[type=button].fastoche-tag--fastoche-color8:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color8:active,
+  button.fastoche-tag--fastoche-color8:active,
+  input[type=button].fastoche-tag--fastoche-color8:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color9,
+  button.fastoche-tag--fastoche-color9,
+  input[type=button].fastoche-tag--fastoche-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color9:hover,
+  button.fastoche-tag--fastoche-color9:hover,
+  input[type=button].fastoche-tag--fastoche-color9:hover {
+    background-color: hsl(34, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color9:active,
+  button.fastoche-tag--fastoche-color9:active,
+  input[type=button].fastoche-tag--fastoche-color9:active {
+    background-color: hsl(34, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color10,
+  button.fastoche-tag--fastoche-color10,
+  input[type=button].fastoche-tag--fastoche-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color10:hover,
+  button.fastoche-tag--fastoche-color10:hover,
+  input[type=button].fastoche-tag--fastoche-color10:hover {
+    background-color: hsl(100, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color10:active,
+  button.fastoche-tag--fastoche-color10:active,
+  input[type=button].fastoche-tag--fastoche-color10:active {
+    background-color: hsl(100, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color11,
+  button.fastoche-tag--fastoche-color11,
+  input[type=button].fastoche-tag--fastoche-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color11:hover,
+  button.fastoche-tag--fastoche-color11:hover,
+  input[type=button].fastoche-tag--fastoche-color11:hover {
+    background-color: hsl(105, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color11:active,
+  button.fastoche-tag--fastoche-color11:active,
+  input[type=button].fastoche-tag--fastoche-color11:active {
+    background-color: hsl(105, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color12,
+  button.fastoche-tag--fastoche-color12,
+  input[type=button].fastoche-tag--fastoche-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color12:hover,
+  button.fastoche-tag--fastoche-color12:hover,
+  input[type=button].fastoche-tag--fastoche-color12:hover {
+    background-color: hsl(115, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color12:active,
+  button.fastoche-tag--fastoche-color12:active,
+  input[type=button].fastoche-tag--fastoche-color12:active {
+    background-color: hsl(115, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color13,
+  button.fastoche-tag--fastoche-color13,
+  input[type=button].fastoche-tag--fastoche-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color13:hover,
+  button.fastoche-tag--fastoche-color13:hover,
+  input[type=button].fastoche-tag--fastoche-color13:hover {
+    background-color: hsl(135, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color13:active,
+  button.fastoche-tag--fastoche-color13:active,
+  input[type=button].fastoche-tag--fastoche-color13:active {
+    background-color: hsl(135, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color14,
+  button.fastoche-tag--fastoche-color14,
+  input[type=button].fastoche-tag--fastoche-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color14:hover,
+  button.fastoche-tag--fastoche-color14:hover,
+  input[type=button].fastoche-tag--fastoche-color14:hover {
+    background-color: hsl(145, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color14:active,
+  button.fastoche-tag--fastoche-color14:active,
+  input[type=button].fastoche-tag--fastoche-color14:active {
+    background-color: hsl(145, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color15,
+  button.fastoche-tag--fastoche-color15,
+  input[type=button].fastoche-tag--fastoche-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color15:hover,
+  button.fastoche-tag--fastoche-color15:hover,
+  input[type=button].fastoche-tag--fastoche-color15:hover {
+    background-color: hsl(155, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color15:active,
+  button.fastoche-tag--fastoche-color15:active,
+  input[type=button].fastoche-tag--fastoche-color15:active {
+    background-color: hsl(155, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color16,
+  button.fastoche-tag--fastoche-color16,
+  input[type=button].fastoche-tag--fastoche-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color16:hover,
+  button.fastoche-tag--fastoche-color16:hover,
+  input[type=button].fastoche-tag--fastoche-color16:hover {
+    background-color: hsl(165, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color16:active,
+  button.fastoche-tag--fastoche-color16:active,
+  input[type=button].fastoche-tag--fastoche-color16:active {
+    background-color: hsl(165, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color17,
+  button.fastoche-tag--fastoche-color17,
+  input[type=button].fastoche-tag--fastoche-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color17:hover,
+  button.fastoche-tag--fastoche-color17:hover,
+  input[type=button].fastoche-tag--fastoche-color17:hover {
+    background-color: hsl(175, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color17:active,
+  button.fastoche-tag--fastoche-color17:active,
+  input[type=button].fastoche-tag--fastoche-color17:active {
+    background-color: hsl(175, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color18,
+  button.fastoche-tag--fastoche-color18,
+  input[type=button].fastoche-tag--fastoche-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color18:hover,
+  button.fastoche-tag--fastoche-color18:hover,
+  input[type=button].fastoche-tag--fastoche-color18:hover {
+    background-color: hsl(185, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color18:active,
+  button.fastoche-tag--fastoche-color18:active,
+  input[type=button].fastoche-tag--fastoche-color18:active {
+    background-color: hsl(185, 90%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color19,
+  button.fastoche-tag--fastoche-color19,
+  input[type=button].fastoche-tag--fastoche-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 93%);
+  }
+
+  a.fastoche-tag--fastoche-color19:hover,
+  button.fastoche-tag--fastoche-color19:hover,
+  input[type=button].fastoche-tag--fastoche-color19:hover {
+    background-color: hsl(195, 60%, 65%);
+  }
+
+  a.fastoche-tag--fastoche-color19:active,
+  button.fastoche-tag--fastoche-color19:active,
+  input[type=button].fastoche-tag--fastoche-color19:active {
+    background-color: hsl(195, 90%, 65%);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+    color: hsl(122, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 75%, 25%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 60%, 20%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].fastoche-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(122, 40%, 15%) 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]::after,
+  input[type=button].fastoche-tag[aria-pressed=true]::after {
+    color: hsl(122, 75%, 25%);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:disabled,
+  input[type=button].fastoche-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true]:disabled::after,
+  input[type=button].fastoche-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:hover,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:active,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  button.fastoche-tag[aria-pressed=true].fastoche-tag--sm:disabled,
+  input[type=button].fastoche-tag[aria-pressed=true].fastoche-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.fastoche-tag:disabled,
+  input[type=button].fastoche-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).fastoche-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true],
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 75%, 25%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:hover,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 60%, 20%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:active,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(122, 40%, 15%) 0.5rem);
+  }
+
+  .fastoche-tags-group.fastoche-tags-group--sm button.fastoche-tag[aria-pressed=true]:disabled,
+  .fastoche-tags-group.fastoche-tags-group--sm input[type=button].fastoche-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}

@@ -1,0 +1,8 @@
+{% load fastoche_tags %}
+<ul class="fastoche-badge-group">
+  {% for item in self.items %}
+    <li>
+      {% fastoche_badge item %}
+    </li>
+  {% endfor %}
+</ul>

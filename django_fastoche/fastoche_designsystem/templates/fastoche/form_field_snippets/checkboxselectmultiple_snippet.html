@@ -1,0 +1,36 @@
+{% load widget_tweaks fastoche_tags %}
+<fieldset class="fastoche-fieldset{% if field.errors %} fastoche-fieldset--error{% endif %}"
+          id="checkboxes-{{ field.auto_id }}"
+          aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
+  <legend class="fastoche-fieldset__legend facile-text--regular"
+          id="{{ field.auto_id }}-legend">
+    {{ field.label_tag }}
+    {% if field.field.required %}
+      *
+    {% endif %}
+    {% if field.help_text %}
+      <span class="fastoche-hint-text">{{ field.help_text }}</span>
+    {% endif %}
+  </legend>
+  <div class="fastoche-fieldset__content">
+    <div class="fastoche-checkbox-group{% if field.errors %} fastoche-checkbox-group--error{% endif %}{% if field.field.disabled %} fastoche-input-group--disabled{% endif %}">
+      {% if field.errors %}
+        {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
+          {{ field|fastoche_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+        {% endwith %}
+      {% else %}
+        {{ field|fastoche_input_class_attr|attr:"type:checkbox" }}
+      {% endif %}
+      {% if field.errors %}
+        <div id="{{ field.auto_id }}-desc-error" class="fastoche-error-text">
+          {{ field.errors }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if field.errors %}
+    <div id="{{ field.auto_id }}-messages">
+      {{ field.errors }}
+    </div>
+  {% endif %}
+</fieldset>

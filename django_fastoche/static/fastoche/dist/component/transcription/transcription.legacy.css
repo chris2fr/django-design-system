@@ -1,0 +1,85 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-transcription {
+    position: relative;
+  }
+
+  .fastoche-transcription__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-transcription__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-transcription__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  ul.fastoche-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ol.fastoche-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ul.fastoche-transcription__actions-group,
+  ol.fastoche-transcription__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fastoche-transcription .fastoche-modal:not(.fastoche-modal--opened) .fastoche-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .fastoche-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-transcription__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-transcription__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-transcription .fastoche-modal:not(.fastoche-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}

@@ -1,0 +1,13 @@
+{% load i18n %}
+<nav role="navigation"
+     class="fastoche-summary"
+     aria-labelledby="fastoche-summary-title">
+  <{{ self.heading_tag | default:"p" }} class="fastoche-summary__title" id="fastoche-summary-title">
+  {% translate "Summary" %}
+  </{{ self.heading_tag | default:"p" }}>
+  <ol class="fastoche-summary__list">
+    {% for item in self.items %}
+      {% include "fastoche/summary_list.html" with item=item %}
+    {% endfor %}
+  </ol>
+</nav>

@@ -1,0 +1,21 @@
+{% load widget_tweaks fastoche_tags %}
+<div class="fastoche-checkbox-group{% if field.errors %} fastoche-checkbox-group--error{% endif %}{% if field.field.disabled %} fastoche-input-group--disabled{% endif %} fastoche-mb-2w">
+  {% if field.errors %}
+    {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
+      {{ field|fastoche_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+    {% endwith %}
+  {% else %}
+    {{ field|fastoche_input_class_attr|attr:"type:checkbox" }}
+  {% endif %}
+  <label for="{{ field.id_for_label }}" class="fastoche-label">
+    {{ field.label_tag }}
+    {% if field.help_text %}
+      <span class="fastoche-hint-text">{{ field.help_text }}</span>
+    {% endif %}
+  </label>
+  {% if field.errors %}
+    <div id="{{ field.auto_id }}-desc-error">
+      {{ field.errors }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,9 @@
+{% load i18n %}
+<a class="fastoche-link{% if self.is_external %} fastoche-icon-external-link-line fastoche-link--icon-right{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+   href="{{ self.url }}"
+   {% if self.is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+  {{ self.label }}
+  {% if self.is_external %}
+    <span class="fastoche-sr-only">{% translate "Opens a new window" %}</span>
+  {% endif %}
+</a>
