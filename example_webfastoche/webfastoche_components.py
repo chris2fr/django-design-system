@@ -132,7 +132,7 @@ IMPLEMENTED_COMPONENTS = {
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                 ],
-                "extra_classes": "webfastoche-btns-group--icon-left",
+                "extra_classes": "btns-group--icon-left",
             },
             {
                 "items": [
@@ -159,7 +159,7 @@ IMPLEMENTED_COMPONENTS = {
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "webfastoche-btns-group--equisized",
+                "extra_classes": "btns-group--equisized",
             },
             {
                 "items": [
@@ -186,7 +186,7 @@ IMPLEMENTED_COMPONENTS = {
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "webfastoche-btns-group--inline-sm",
+                "extra_classes": "btns-group--inline-sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons",

@@ -6,7 +6,7 @@
 /* ¯¯¯¯¯¯¯¯¯ *\
   HEADER
 \* ˍˍˍˍˍˍˍˍˍ */
-.webfastoche-header {
+.header {
   --underline-img: none;
   --ul-type: none;
   --ol-type: none;
@@ -130,7 +130,7 @@
   line-height: 1.5rem;
 }
 
-.webfastoche-header .webfastoche-modal {
+.header .modal {
   overflow: auto;
   justify-content: initial;
   background-color: var(--background-lifted-grey);
@@ -140,23 +140,23 @@
   --active: var(--background-lifted-grey-active);
 }
 
-.webfastoche-header .webfastoche-modal:not([role=dialog]) {
+.header .modal:not([role=dialog]) {
   transition: none;
 }
 
-.webfastoche-header .webfastoche-modal::before {
+.header .modal::before {
   content: none;
 }
 
-.webfastoche-header .webfastoche-modal::after {
+.header .modal::after {
   content: none;
 }
 
-.webfastoche-header .webfastoche-modal > * > .webfastoche-btn--close {
+.header .modal > * > .webfastoche-btn--close {
   margin-bottom: 1.5rem;
 }
 
-.webfastoche-header .webfastoche-modal > .webfastoche-container {
+.header .modal > .webfastoche-container {
   pointer-events: all;
   padding-top: 1rem;
   padding-bottom: 4.5rem;
@@ -243,7 +243,7 @@
   content: "";
 }
 
-.webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn {
+.header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn {
   justify-content: flex-start;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -254,20 +254,20 @@
   max-height: none;
 }
 
-.webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn::before {
+.header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-header__tools-links {
+.header__tools-links {
   display: none;
 }
 
-.webfastoche-header__tools-links > .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-header__tools-links > .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-header__tools-links > .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-header__tools-links > .webfastoche-btn[class*=" webfastoche-fi-"] {
+.header__tools-links > .webfastoche-btn[class^=webfastoche-icon-],
+.header__tools-links > .webfastoche-btn[class*=" webfastoche-icon-"],
+.header__tools-links > .webfastoche-btn[class^=webfastoche-fi-],
+.header__tools-links > .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -277,16 +277,16 @@
   max-height: none;
 }
 
-.webfastoche-header__tools-links > .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-header__tools-links > .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-header__tools-links > .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-header__tools-links > .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.header__tools-links > .webfastoche-btn[class^=webfastoche-icon-]::before,
+.header__tools-links > .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.header__tools-links > .webfastoche-btn[class^=webfastoche-fi-]::before,
+.header__tools-links > .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-header__tools-links > .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.header__tools-links > .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -296,13 +296,13 @@
   max-height: none;
 }
 
-.webfastoche-header__tools-links > .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
+.header__tools-links > .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-header .webfastoche-header__menu-links::after {
+.header .webfastoche-header__menu-links::after {
   content: "";
   display: block;
   margin: 0.75rem -1rem;
@@ -310,41 +310,41 @@
   height: 1px;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-translate {
+.header .webfastoche-header__menu-links .webfastoche-translate {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-translate__btn {
+.header .webfastoche-header__menu-links .webfastoche-translate__btn {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) {
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) {
   display: flex;
   flex-direction: column;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn {
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn {
   margin-bottom: 0;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
   min-height: 3rem;
   padding-left: 0;
   padding-right: 0;
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.header .webfastoche-header__menu-links .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   min-height: 3rem;
   padding-left: 0;
   padding-right: 0;
 }
 
-.webfastoche-header .webfastoche-links-group {
+.header .links-group {
   --ul-type: none;
   --ol-type: none;
   --ul-start: 0;
@@ -357,40 +357,40 @@
   flex-wrap: wrap;
 }
 
-.webfastoche-header .webfastoche-links-group > li,
-.webfastoche-header .webfastoche-links-group > div {
+.header .links-group > li,
+.header .links-group > div {
   width: 100%;
   max-width: 100%;
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-btn {
+.header .links-group .webfastoche-btn {
   width: calc(100% - 1rem);
   margin: 0 0.5rem 1rem;
   justify-content: center;
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-link {
+.header .links-group .webfastoche-link {
   --underline-img: none;
   --hover-tint: var(--hover);
   --active-tint: var(--active);
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.header .links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
   padding: 0.25rem 0.75rem;
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
-.webfastoche-header .webfastoche-links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+.header .links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+.header .links-group .webfastoche-link:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
   --icon-size: 1rem;
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class^=webfastoche-icon-],
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class*=" webfastoche-icon-"],
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class^=webfastoche-fi-],
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class*=" webfastoche-fi-"] {
+.header .links-group .webfastoche-link[class^=webfastoche-icon-],
+.header .links-group .webfastoche-link[class*=" webfastoche-icon-"],
+.header .links-group .webfastoche-link[class^=webfastoche-fi-],
+.header .links-group .webfastoche-link[class*=" webfastoche-fi-"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -400,24 +400,24 @@
   max-height: none;
 }
 
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class^=webfastoche-icon-]::before,
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class*=" webfastoche-icon-"]::before,
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class^=webfastoche-fi-]::before,
-.webfastoche-header .webfastoche-links-group .webfastoche-link[class*=" webfastoche-fi-"]::before {
+.header .links-group .webfastoche-link[class^=webfastoche-icon-]::before,
+.header .links-group .webfastoche-link[class*=" webfastoche-icon-"]::before,
+.header .links-group .webfastoche-link[class^=webfastoche-fi-]::before,
+.header .links-group .webfastoche-link[class*=" webfastoche-fi-"]::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
   content: "";
 }
 
-.webfastoche-header .webfastoche-header__menu-links .webfastoche-links-group .webfastoche-link {
+.header .webfastoche-header__menu-links .links-group .webfastoche-link {
   width: 100%;
   min-height: 3rem;
   padding-left: 0;
   margin-bottom: 0;
 }
 
-.webfastoche-header .webfastoche-modal > * > .webfastoche-link--close {
+.header .modal > * > .webfastoche-link--close {
   margin-bottom: 1.5rem;
 }
 
@@ -443,7 +443,7 @@
   --active: inherit;
 }
 
-.webfastoche-header__tools-links .webfastoche-btn {
+.header__tools-links .webfastoche-btn {
   background-color: transparent;
 
   --hover: inherit;
@@ -451,8 +451,8 @@
   color: var(--text-action-high-webfastoche-primary);
 }
 
-.webfastoche-header__tools-links .webfastoche-btn:disabled,
-.webfastoche-header__tools-links a.webfastoche-btn:not([href]) {
+.header__tools-links .webfastoche-btn:disabled,
+.header__tools-links a.webfastoche-btn:not([href]) {
   color: var(--text-disabled-grey);
   background-color: transparent;
 
@@ -460,7 +460,7 @@
   --active: inherit;
 }
 
-.webfastoche-header__tools-links > .webfastoche-translate:first-child:last-child .webfastoche-btn {
+.header__tools-links > .webfastoche-translate:first-child:last-child .webfastoche-btn {
   background-color: transparent;
 
   --hover: inherit;
@@ -469,8 +469,8 @@
   box-shadow: inset 0 0 0 1px var(--border-default-grey);
 }
 
-.webfastoche-header__tools-links > .webfastoche-translate:first-child:last-child .webfastoche-btn:disabled,
-.webfastoche-header__tools-links > .webfastoche-translate:first-child:last-child a.webfastoche-btn:not([href]) {
+.header__tools-links > .webfastoche-translate:first-child:last-child .webfastoche-btn:disabled,
+.header__tools-links > .webfastoche-translate:first-child:last-child a.webfastoche-btn:not([href]) {
   color: var(--text-disabled-grey);
   box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
   background-color: transparent;
@@ -529,7 +529,7 @@
   --active: inherit;
 }
 
-.webfastoche-header__tools-links .webfastoche-link {
+.header__tools-links .webfastoche-link {
   background-color: transparent;
 
   --hover: inherit;
@@ -537,8 +537,8 @@
   color: var(--text-action-high-webfastoche-primary);
 }
 
-.webfastoche-header__tools-links .webfastoche-link:disabled,
-.webfastoche-header__tools-links a.webfastoche-link:not([href]) {
+.header__tools-links .webfastoche-link:disabled,
+.header__tools-links a.webfastoche-link:not([href]) {
   color: var(--text-disabled-grey);
   background-color: transparent;
 
@@ -590,7 +590,7 @@
     box-shadow: none;
   }
 
-  .webfastoche-header .webfastoche-modal {
+  .header .modal {
     margin: 0;
     width: auto;
     height: auto;
@@ -601,11 +601,11 @@
     overflow: initial;
   }
 
-  .webfastoche-header .webfastoche-modal > * > .webfastoche-btn--close {
+  .header .modal > * > .webfastoche-btn--close {
     display: none;
   }
 
-  .webfastoche-header .webfastoche-modal > .webfastoche-container {
+  .header .modal > .webfastoche-container {
     padding-top: 0;
     padding-bottom: 0;
     height: auto;
@@ -615,7 +615,7 @@
     display: none;
   }
 
-  .webfastoche-header__tools {
+  .header__tools {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
@@ -625,19 +625,19 @@
     flex: 1 0 auto;
   }
 
-  .webfastoche-header__tools-links + .webfastoche-header__search {
+  .header__tools-links + .webfastoche-header__search {
     margin-top: 1rem;
   }
 
-  .webfastoche-header__tools .webfastoche-header__search {
+  .header__tools .webfastoche-header__search {
     max-width: 24rem;
     margin-left: auto;
   }
 
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
     font-size: 0.875rem;
     line-height: 1.5rem;
     min-height: 2rem;
@@ -647,16 +647,16 @@
     max-height: none;
   }
 
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
     --icon-size: 1rem;
     margin-left: -0.125rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
     font-size: 0.875rem;
     line-height: 1.5rem;
     min-height: 2rem;
@@ -666,25 +666,25 @@
     max-height: none;
   }
 
-  .webfastoche-header .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
+  .header .btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
     --icon-size: 1rem;
     margin-left: -0.125rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-header__tools-links {
+  .header__tools-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 0.5rem;
   }
 
-  .webfastoche-header__tools-links .webfastoche-btns-group {
+  .header__tools-links .btns-group {
     justify-content: flex-end;
     margin: 0 -0.25rem -1rem;
   }
 
-  .webfastoche-header__tools-links .webfastoche-btns-group .webfastoche-btn {
+  .header__tools-links .btns-group .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
@@ -693,77 +693,77 @@
     margin-right: 0.25rem;
   }
 
-  .webfastoche-header__tools-links .webfastoche-btns-group > li {
+  .header__tools-links .btns-group > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
     align-items: flex-start;
   }
 
-  .webfastoche-header .webfastoche-header__menu-links .webfastoche-translate {
+  .header .webfastoche-header__menu-links .webfastoche-translate {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: -1rem;
   }
 
-  .webfastoche-header .webfastoche-header__menu-links {
+  .header .webfastoche-header__menu-links {
     display: none;
   }
 
-  .webfastoche-header .webfastoche-nav {
+  .header .webfastoche-nav {
     justify-content: flex-start;
   }
 
-  .webfastoche-header .webfastoche-nav__list {
+  .header .webfastoche-nav__list {
     margin: 0 -1rem;
     max-width: calc(100% + 1rem);
   }
 
-  .webfastoche-header .webfastoche-links-group {
+  .header .links-group {
     justify-content: flex-end;
   }
 
-  .webfastoche-header .webfastoche-links-group .webfastoche-btn {
+  .header .links-group .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-header .webfastoche-links-group > li {
+  .header .links-group > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
   }
 
-  .webfastoche-header__tools-links .webfastoche-links-group {
+  .header__tools-links .links-group {
     justify-content: flex-end;
     margin: 0 -0.25rem;
   }
 
-  .webfastoche-header__tools-links .webfastoche-links-group .webfastoche-btn {
+  .header__tools-links .links-group .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-header__tools-links .webfastoche-links-group > li {
+  .header__tools-links .links-group > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
   }
 
-  .webfastoche-header__tools-links .webfastoche-links-group .webfastoche-link {
+  .header__tools-links .links-group .webfastoche-link {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
 
-  .webfastoche-header .webfastoche-modal > * > .webfastoche-link--close {
+  .header .modal > * > .webfastoche-link--close {
     display: none;
   }
 
-  .webfastoche-header {
+  .header {
     z-index: calc(var(--ground) + 750);
     background-color: var(--background-raised-grey);
 
@@ -773,7 +773,7 @@
     filter: drop-shadow(var(--raised-shadow));
   }
 
-  .webfastoche-header .webfastoche-header__menu {
+  .header .webfastoche-header__menu {
     box-shadow: inset 0 1px 0 0 var(--border-default-grey);
   }
 }

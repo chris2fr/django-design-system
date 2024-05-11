@@ -75,12 +75,12 @@
   --title-spacing: 0 0 0.75rem;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group {
+.webfastoche-follow__social .btns-group {
   margin-bottom: -1rem;
   width: auto;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group .webfastoche-btn {
+.webfastoche-follow__social .btns-group .webfastoche-btn {
   width: auto;
   max-width: 100%;
   margin-left: 0.5rem;
@@ -88,13 +88,13 @@
   justify-content: flex-start;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group > li {
+.webfastoche-follow__social .btns-group > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.webfastoche-follow__social .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
@@ -107,7 +107,7 @@
   padding-right: 0.5rem;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
+.webfastoche-follow__social .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
   margin-left: 0;
   margin-right: 0.5rem;
   flex: 0 0 auto;
@@ -122,7 +122,7 @@
   content: "";
 }
 
-.webfastoche-follow__social .webfastoche-btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.webfastoche-follow__social .btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 1.125rem;
   line-height: 1.75rem;
   min-height: 3rem;
@@ -135,7 +135,7 @@
   padding-right: 0.5rem;
 }
 
-.webfastoche-follow__social .webfastoche-btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
+.webfastoche-follow__social .btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
   margin-left: 0;
   margin-right: 0.5rem;
   flex: 0 0 auto;
@@ -231,7 +231,7 @@
   mask-image: url("../../icons/logo/youtube-fill.svg");
 }
 
-.webfastoche-follow .webfastoche-links-group {
+.webfastoche-follow .links-group {
   --ul-type: none;
   --ol-type: none;
   --ul-start: 0;
@@ -245,14 +245,14 @@
   flex-wrap: wrap;
 }
 
-.webfastoche-follow .webfastoche-links-group .webfastoche-btn {
+.webfastoche-follow .links-group .webfastoche-btn {
   width: auto;
   max-width: 100%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-follow .webfastoche-links-group > li {
+.webfastoche-follow .links-group > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;

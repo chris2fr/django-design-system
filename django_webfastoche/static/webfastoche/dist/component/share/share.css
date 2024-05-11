@@ -27,12 +27,12 @@
   color: var(--text-mention-grey);
 }
 
-.webfastoche-share .webfastoche-btns-group {
+.webfastoche-share .btns-group {
   width: auto;
   order: 2;
 }
 
-.webfastoche-share .webfastoche-btns-group .webfastoche-btn {
+.webfastoche-share .btns-group .webfastoche-btn {
   width: auto;
   max-width: 100%;
   margin-left: 0.5rem;
@@ -40,13 +40,13 @@
   justify-content: flex-start;
 }
 
-.webfastoche-share .webfastoche-btns-group > li {
+.webfastoche-share .btns-group > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;
 }
 
-.webfastoche-share .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.webfastoche-share .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
@@ -59,7 +59,7 @@
   padding-right: 0.5rem;
 }
 
-.webfastoche-share .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
+.webfastoche-share .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before {
   margin-left: 0;
   margin-right: 0.5rem;
   flex: 0 0 auto;
@@ -363,8 +363,8 @@ a.webfastoche-share__link:not([href]) {
     list-style: none;
   }
 
-  .webfastoche-share .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
-  .webfastoche-share .webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
+  .webfastoche-share .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::before,
+  .webfastoche-share .btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"])::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;

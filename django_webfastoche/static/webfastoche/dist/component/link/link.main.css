@@ -369,11 +369,11 @@
 }
 
 .webfastoche-links-group--download .webfastoche-link,
-.webfastoche-links-group .webfastoche-link--download {
+.links-group .webfastoche-link--download {
   margin-bottom: 2.5rem;
 }
 
-.webfastoche-links-group {
+.links-group {
   --li-bottom: 0.5rem;
 }
 
@@ -496,7 +496,7 @@
   color: var(--text-mention-grey);
 }
 
-.webfastoche-links-group li::marker {
+.links-group li::marker {
   color: var(--text-action-high-webfastoche-primary);
 }
 
@@ -514,7 +514,7 @@ a.webfastoche-link--close:not([href]) {
 @media (min-width: 48em) {
   /*! media md */
   .webfastoche-links-group--download .webfastoche-link,
-  .webfastoche-links-group .webfastoche-link--download {
+  .links-group .webfastoche-link--download {
     margin-bottom: 3rem;
   }
 

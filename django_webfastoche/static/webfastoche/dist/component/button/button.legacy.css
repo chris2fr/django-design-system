@@ -160,29 +160,29 @@
     height: 1rem;
   }
 
-  ul.webfastoche-btns-group {
+  ul.btns-group {
     list-style-type: none;
   }
 
-  ol.webfastoche-btns-group {
+  ol.btns-group {
     list-style-type: none;
   }
 
-  ul.webfastoche-btns-group,
-  ol.webfastoche-btns-group {
+  ul.btns-group,
+  ol.btns-group {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
-  .webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
+  .btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -190,14 +190,14 @@
     height: 1rem;
   }
 
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
-  .webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::after,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::after,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before,
+  .btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;

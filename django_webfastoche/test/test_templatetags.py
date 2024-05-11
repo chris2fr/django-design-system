@@ -82,7 +82,7 @@ class WebfastocheThemeModaleTagTest(SimpleTestCase):
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <h1 id="webfastoche-theme-modal-title" class="webfastoche-modal__title">
+            <h1 id="webfastoche-theme-modal-title" class="modal__title">
                 Paramètres d’affichage
             </h1>
             """,
@@ -269,7 +269,7 @@ class WebfastocheButtonTagTest(SimpleTestCase):
 
 class WebfastocheButtonGroupTagTest(SimpleTestCase):
     test_data = {
-        "extra_classes": "webfastoche-btns-group--equisized",
+        "extra_classes": "btns-group--equisized",
         "items": [
             {
                 "onclick": "alert('test button action')",
@@ -297,7 +297,7 @@ class WebfastocheButtonGroupTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <ul class="webfastoche-btns-group webfastoche-btns-group--equisized">
+            <ul class="btns-group btns-group--equisized">
                 <li>
                     <button class="webfastoche-btn"
                         onclick="alert(&#x27;test button action&#x27;)"
@@ -465,7 +465,7 @@ class WebfastocheConsentTagTest(SimpleTestCase):
                     sur les cookies que vous souhaitez activer.
                 </p>
             </div>
-            <ul class="webfastoche-consent-banner__buttons webfastoche-btns-group webfastoche-btns-group--right webfastoche-btns-group--inline-reverse webfastoche-btns-group--inline-sm">
+            <ul class="webfastoche-consent-banner__buttons btns-group btns-group--right btns-group--inline-reverse btns-group--inline-sm">
                 <li>
                 <button class="webfastoche-btn"
                         id="consent-accept-all"
@@ -1126,14 +1126,14 @@ class WebfastocheTranscriptionTagTest(SimpleTestCase):
                         </div>
                     </div>
                     <dialog id="webfastoche-transcription-modal-transcription-test"
-                            class="webfastoche-modal"
+                            class="modal"
                             role="dialog"
                             aria-labelledby="webfastoche-transcription-modal-transcription-test-title">
                         <div class="webfastoche-container webfastoche-container--fluid facile-container-md">
                             <div class="webfastoche-grid-row webfastoche-grid-row--center">
                                 <div class="webfastoche-col-12 webfastoche-col-md-10 webfastoche-col-lg-8">
-                                    <div class="webfastoche-modal__body">
-                                        <div class="webfastoche-modal__header">
+                                    <div class="modal__body">
+                                        <div class="modal__header">
 
                                             <button class="webfastoche-btn--close webfastoche-btn"
                                                     aria-controls="webfastoche-transcription-modal-transcription-test"
@@ -1141,9 +1141,9 @@ class WebfastocheTranscriptionTagTest(SimpleTestCase):
                                                 Fermer
                                             </button>
                                         </div>
-                                        <div class="webfastoche-modal__content">
+                                        <div class="modal__content">
                                             <h1 id="webfastoche-transcription-modal-transcription-test-title"
-                                                class="webfastoche-modal__title">
+                                                class="modal__title">
                                                 Transcription
                                             </h1>
                                             <div><p>Courte transcription basique</p></div>

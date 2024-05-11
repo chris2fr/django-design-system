@@ -376,7 +376,7 @@
   margin-right: -1.3125rem;
 }
 
-.webfastoche-btns-group {
+.btns-group {
   --ul-type: none;
   --ol-type: none;
   --ul-start: 0;
@@ -391,117 +391,117 @@
   margin-right: -0.5rem;
 
   /**
-  * webfastoche-btns-group--inline : aligne les boutons horizontalement dans tout les cas
-  * webfastoche-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  * btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
   */
 
   /**
-  * webfastoche-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  * btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
   */
 
   /**
-  * webfastoche-btns-group--right : aligne les boutons sur la droite
+  * btns-group--right : aligne les boutons sur la droite
   */
 
   /**
-  * webfastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * btns-group--center : aligne les boutons au centre du conteneur
   */
 
   /**
-  * webfastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * btns-group--center : aligne les boutons au centre du conteneur
   */
 
   /**
-  * webfastoche-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  * btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
   */
 
   /**
-  * webfastoche-btns-group--sm : Fixe les boutons à la taille SM
+  * btns-group--sm : Fixe les boutons à la taille SM
   */
 
   /**
-  * webfastoche-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  * btns-group--md : (défaut) Fixe les boutons à la taille MD
   */
 
   /**
-  * webfastoche-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  * btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
   */
 }
 
-.webfastoche-btns-group > li,
-.webfastoche-btns-group > div {
+.btns-group > li,
+.btns-group > div {
   width: 100%;
   max-width: 100%;
 }
 
-.webfastoche-btns-group .webfastoche-btn {
+.btns-group .webfastoche-btn {
   width: calc(100% - 1rem);
   margin: 0 0.5rem 1rem;
   justify-content: center;
 }
 
-.webfastoche-btns-group--inline .webfastoche-btn {
+.btns-group--inline .webfastoche-btn {
   width: auto;
   max-width: 100%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group--inline > li {
+.btns-group--inline > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;
 }
 
-.webfastoche-btns-group--inline.webfastoche-btns-group--right.webfastoche-btns-group--inline-reverse {
+.btns-group--inline.btns-group--right.btns-group--inline-reverse {
   flex-direction: row-reverse;
   justify-content: flex-start;
 }
 
-.webfastoche-btns-group--left,
-.webfastoche-btns-group--left li {
+.btns-group--left,
+.btns-group--left li {
   justify-content: flex-start;
   text-align: left;
 }
 
-.webfastoche-btns-group--right,
-.webfastoche-btns-group--right li {
+.btns-group--right,
+.btns-group--right li {
   justify-content: flex-end;
   text-align: right;
 }
 
-.webfastoche-btns-group--center,
-.webfastoche-btns-group--center li {
+.btns-group--center,
+.btns-group--center li {
   justify-content: center;
   text-align: center;
 }
 
-.webfastoche-btns-group--between,
-.webfastoche-btns-group--between li {
+.btns-group--between,
+.btns-group--between li {
   justify-content: space-between;
   text-align: center;
 }
 
-.webfastoche-btns-group--equisized {
+.btns-group--equisized {
   --equisized-width: auto;
 }
 
-.webfastoche-btns-group--equisized .webfastoche-btn {
+.btns-group--equisized .webfastoche-btn {
   justify-content: center;
   width: var(--equisized-width);
 }
 
-.webfastoche-btns-group--sm .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.btns-group--sm .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
   padding: 0.25rem 0.75rem;
 }
 
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -515,19 +515,19 @@
   justify-content: flex-start;
 }
 
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--sm:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--sm:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1rem;
   margin-left: 0;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -537,19 +537,19 @@
   max-height: none;
 }
 
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--sm.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   min-height: 2rem;
@@ -559,10 +559,10 @@
   max-height: none;
 }
 
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
   content: "";
 
   --icon-size: 1rem;
@@ -570,24 +570,24 @@
   margin-left: 0.5rem;
 }
 
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--sm.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--sm.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   content: none;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg) .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
   padding: 0.5rem 1rem;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
@@ -601,19 +601,19 @@
   justify-content: flex-start;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg):not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg):not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1.5rem;
   margin-left: 0;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
@@ -623,19 +623,19 @@
   max-height: none;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1rem;
   margin-left: -0.125rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1rem;
   line-height: 1.5rem;
   min-height: 2.5rem;
@@ -645,10 +645,10 @@
   max-height: none;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
   content: "";
 
   --icon-size: 1rem;
@@ -656,24 +656,24 @@
   margin-left: 0.5rem;
 }
 
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group:not(.webfastoche-btns-group--sm):not(.webfastoche-btns-group--lg).webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group:not(.btns-group--sm):not(.btns-group--lg).btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   content: none;
 }
 
-.webfastoche-btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
+.btns-group--lg .webfastoche-btn:not([class^=webfastoche-icon-]):not([class*=" webfastoche-icon-"]):not([class^=webfastoche-fi-]):not([class*=" webfastoche-fi-"]) {
   font-size: 1.125rem;
   line-height: 1.75rem;
   min-height: 3rem;
   padding: 0.5rem 1.5rem;
 }
 
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1.125rem;
   line-height: 1.75rem;
   min-height: 3rem;
@@ -687,19 +687,19 @@
   justify-content: flex-start;
 }
 
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--lg:not([class^=webfastoche-btns-group--icon-]):not([class*=" webfastoche-btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--lg:not([class^=btns-group--icon-]):not([class*=" btns-group--icon-"]) .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 2rem;
   margin-left: 0;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1.125rem;
   line-height: 1.75rem;
   min-height: 3rem;
@@ -709,19 +709,19 @@
   max-height: none;
 }
 
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--lg.btns-group--icon-left .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   --icon-size: 1.5rem;
   margin-left: -0.1875rem;
   margin-right: 0.5rem;
 }
 
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-],
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"],
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-],
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"] {
   font-size: 1.125rem;
   line-height: 1.75rem;
   min-height: 3rem;
@@ -731,10 +731,10 @@
   max-height: none;
 }
 
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::after,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::after,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::after,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::after {
   content: "";
 
   --icon-size: 1.5rem;
@@ -742,14 +742,14 @@
   margin-left: 0.5rem;
 }
 
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
-.webfastoche-btns-group--lg.webfastoche-btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-icon-]::before,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-icon-"]::before,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class^=webfastoche-fi-]::before,
+.btns-group--lg.btns-group--icon-right .webfastoche-btn[class*=" webfastoche-fi-"]::before {
   content: none;
 }
 
-.webfastoche-fieldset__element > .webfastoche-btns-group {
+.webfastoche-fieldset__element > .btns-group {
   margin-bottom: -1rem;
 }
 
@@ -1044,60 +1044,60 @@ a.webfastoche-btn--team:not([href]),
 }
 @media (min-width: 36em) {
   /*! media sm */
-  .webfastoche-btns-group--inline-sm .webfastoche-btn {
+  .btns-group--inline-sm .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-btns-group--inline-sm > li {
+  .btns-group--inline-sm > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
   }
 
-  .webfastoche-btns-group--inline-sm.webfastoche-btns-group--right.webfastoche-btns-group--inline-reverse {
+  .btns-group--inline-sm.btns-group--right.btns-group--inline-reverse {
     flex-direction: row-reverse;
     justify-content: flex-start;
   }
 }
 @media (min-width: 48em) {
   /*! media md */
-  .webfastoche-btns-group--inline-md .webfastoche-btn {
+  .btns-group--inline-md .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-btns-group--inline-md > li {
+  .btns-group--inline-md > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
   }
 
-  .webfastoche-btns-group--inline-md.webfastoche-btns-group--right.webfastoche-btns-group--inline-reverse {
+  .btns-group--inline-md.btns-group--right.btns-group--inline-reverse {
     flex-direction: row-reverse;
     justify-content: flex-start;
   }
 }
 @media (min-width: 62em) {
   /*! media lg */
-  .webfastoche-btns-group--inline-lg .webfastoche-btn {
+  .btns-group--inline-lg .webfastoche-btn {
     width: auto;
     max-width: 100%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .webfastoche-btns-group--inline-lg > li {
+  .btns-group--inline-lg > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
   }
 
-  .webfastoche-btns-group--inline-lg.webfastoche-btns-group--right.webfastoche-btns-group--inline-reverse {
+  .btns-group--inline-lg.btns-group--right.btns-group--inline-reverse {
     flex-direction: row-reverse;
     justify-content: flex-start;
   }

@@ -353,14 +353,14 @@ def webfastoche_button_group(*args, **kwargs) -> dict:
     ```
     Relevant `extra_classes`:
 
-    - `webfastoche-btns-group--inline-sm`: Inline group, small size
-    - `webfastoche-btns-group--inline-md`: Inline group, normal size
-    - `webfastoche-btns-group--inline-lg`: Inline group, large size
-    - `webfastoche-btns-group--sm`: Vertical group, small size
-    - `webfastoche-btns-group--lg`: Vertical group, large size
-    - `webfastoche-btns-group--equisized`: Width adjusted in Javascript
-    - `webfastoche-btns-group--icon-left`: Buttons with an icon on the left side
-    - `webfastoche-btns-group--icon-right`: Buttons with an icon on the right side
+    - `btns-group--inline-sm`: Inline group, small size
+    - `btns-group--inline-md`: Inline group, normal size
+    - `btns-group--inline-lg`: Inline group, large size
+    - `btns-group--sm`: Vertical group, small size
+    - `btns-group--lg`: Vertical group, large size
+    - `btns-group--equisized`: Width adjusted in Javascript
+    - `btns-group--icon-left`: Buttons with an icon on the left side
+    - `btns-group--icon-right`: Buttons with an icon on the right side
 
     **Tag name**:
         webfastoche_button_group

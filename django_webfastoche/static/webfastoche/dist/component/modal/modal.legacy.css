@@ -14,20 +14,20 @@
   /*! media xl */
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .webfastoche-modal__body {
+  .modal__body {
     z-index: 2000;
     background-color: #fff;
   }
 
-  .webfastoche-modal__title {
+  .modal__title {
     color: #161616;
   }
 
-  .webfastoche-modal__footer {
+  .modal__footer {
     background-color: #fff;
   }
 
-  .webfastoche-modal__body.webfastoche-scroll-divider .webfastoche-modal__footer {
+  .modal__body.webfastoche-scroll-divider .modal__footer {
     background-image: linear-gradient(0deg, #ddd, #ddd);
   }
 }

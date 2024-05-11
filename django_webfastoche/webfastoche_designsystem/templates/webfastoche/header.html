@@ -1,5 +1,5 @@
 {% load i18n %}
-<header role="banner" class="webfastoche-header">
+<header role="banner" class="header">
   <div class="webfastoche-header__body">
     <div class="webfastoche-container">
       <div class="webfastoche-header__body-row">
@@ -30,7 +30,7 @@
               <div class="webfastoche-header__navbar">
                 <button class="webfastoche-btn--menu webfastoche-btn"
                         data-webfastoche-opened="false"
-                        aria-controls="webfastoche-modal-menu-mobile"
+                        aria-controls="modal-menu-mobile"
                         id="webfastoche-btn-menu-mobile"
                         title="{{ menu_label }}">
                   {{ menu_label }}
@@ -56,9 +56,9 @@
             </p>
           </div>
         </div>
-        <div class="webfastoche-header__tools">
-          <div class="webfastoche-header__tools-links">
-            <ul class="webfastoche-btns-group">
+        <div class="header__tools">
+          <div class="header__tools-links">
+            <ul class="btns-group">
               {% block header_tools %}
                 <li>
                   <a class="webfastoche-icon-add-circle-line webfastoche-btn"
@@ -82,7 +82,7 @@
     </div>
   </div>
   {% block main_menu %}
-    <div class="webfastoche-header__menu webfastoche-modal"
+    <div class="header__menu modal"
          id="webfastoche-menu-mobile"
          aria-labelledby="webfastoche-btn-menu-mobile">
       <div class="webfastoche-container">
@@ -90,7 +90,7 @@
                 aria-controls="webfastoche-menu-mobile">
           {% translate "Close" %}
         </button>
-        <div class="webfastoche-header__menu-links">
+        <div class="header__menu-links">
         </div>
         {% translate "Main menu" as main_menu_label %}
         <nav role="navigation"

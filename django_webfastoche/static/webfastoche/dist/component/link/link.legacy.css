@@ -44,16 +44,16 @@
     height: 1.5rem;
   }
 
-  ul.webfastoche-links-group {
+  ul.links-group {
     list-style-type: none;
   }
 
-  ol.webfastoche-links-group {
+  ol.links-group {
     list-style-type: none;
   }
 
   ul.webfastoche-links-group,
-  ol.webfastoche-links-group {
+  ol.links-group {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -63,7 +63,7 @@
     color: #666;
   }
 
-  .webfastoche-links-group li::marker {
+  .links-group li::marker {
     color: hsl(122, 75%, 25%);
   }
 
