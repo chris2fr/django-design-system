@@ -1,0 +1,27 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .fastoche-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .fastoche-accordion__btn {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-accordion__btn[aria-expanded=true] {
+    background-color: hsl(122, 80%, 93%);
+  }
+
+  .fastoche-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .fastoche-accordion .fastoche-collapse:not(.fastoche-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+}

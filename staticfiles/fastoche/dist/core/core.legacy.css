@@ -1,0 +1,252 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .fastoche-enlarge-link {
+    background-color: transparent;
+  }
+
+  .fastoche-enlarge-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-enlarge-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-enlarge-link [href] {
+    text-decoration: none;
+  }
+
+  .fastoche-raw-link[href]::after,
+  .fastoche-raw-link [href]::after {
+    content: none;
+  }
+
+  [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    vertical-align: sub;
+  }
+
+  .fastoche-responsive-vid::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.5rem;
+    color: #161616;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  [class^=fastoche-icon-]::before,
+  [class*=" fastoche-icon-"]::before,
+  [class^=fastoche-fi-]::before,
+  [class*=" fastoche-fi-"]::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-icon--xs::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .fastoche-icon--sm::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-icon--md::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-icon--lg::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-artwork-decorative {
+    fill: hsl(122, 80%, 96%);
+  }
+
+  .fastoche-artwork-minor {
+    fill: hsl(212, 85%, 25%);
+  }
+
+  .fastoche-artwork-major {
+    fill: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .fastoche-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .fastoche-artwork--fastoche-color3 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color4 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color5 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color6 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color7 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color8 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color9 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color10 .fastoche-artwork-minor {
+    fill: hsl(100, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color11 .fastoche-artwork-minor {
+    fill: hsl(105, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color12 .fastoche-artwork-minor {
+    fill: hsl(115, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color13 .fastoche-artwork-minor {
+    fill: hsl(135, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color14 .fastoche-artwork-minor {
+    fill: hsl(145, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color15 .fastoche-artwork-minor {
+    fill: hsl(155, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color16 .fastoche-artwork-minor {
+    fill: hsl(165, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color17 .fastoche-artwork-minor {
+    fill: hsl(175, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color18 .fastoche-artwork-minor {
+    fill: hsl(185, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color19 .fastoche-artwork-minor {
+    fill: hsl(195, 75%, 25%);
+  }
+
+  [disabled] .fastoche-artwork * {
+    fill: #929292;
+  }
+
+  .fastoche-h6,
+  .fastoche-h5,
+  .fastoche-h4,
+  .fastoche-h3,
+  .fastoche-h2,
+  .fastoche-h1,
+  .fastoche-display-xs,
+  .fastoche-display-sm,
+  .fastoche-display-md,
+  .fastoche-display-lg,
+  .fastoche-display-xl {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-hr-or::before,
+  .fastoche-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .fastoche-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+}

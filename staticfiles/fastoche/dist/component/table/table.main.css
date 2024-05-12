@@ -1,0 +1,852 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TABLE
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-table {
+  --table-offset: 1rem;
+  --text-spacing: 0;
+  --title-spacing: 0;
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-top: var(--table-offset);
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.fastoche-table:not(.fastoche-table--no-scroll) table {
+  width: 100%;
+}
+
+.fastoche-table table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-spacing: 0;
+}
+
+.fastoche-table[data-fastoche-js-table=true] caption {
+  position: absolute;
+  top: 0;
+}
+
+.fastoche-table caption {
+  position: initial;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-title-grey);
+}
+
+.fastoche-table td,
+.fastoche-table th {
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+  border: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.fastoche-table th {
+  font-weight: 700;
+}
+
+.fastoche-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
+}
+
+.fastoche-table thead td,
+.fastoche-table thead th {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+/*
+* Cache la caption
+*/
+.fastoche-table--no-caption {
+  padding-top: 0;
+}
+
+.fastoche-table--no-caption caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+  height: 0;
+}
+
+/*
+* Fixe le caption en bas du tableau
+*/
+.fastoche-table--caption-bottom {
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.fastoche-table--caption-bottom table {
+  margin-bottom: calc(var(--table-offset) + 2.75rem);
+}
+
+.fastoche-table--caption-bottom[data-fastoche-js-table=true] caption {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.fastoche-table--caption-bottom caption {
+  margin-top: 1rem;
+  height: min-content;
+  caption-side: bottom;
+}
+
+/*
+* pas de scroll ni de shadow
+*/
+.fastoche-table--no-scroll {
+  min-width: auto;
+}
+
+.fastoche-table--no-scroll table {
+  overflow-x: hidden;
+}
+
+.fastoche-table--no-scroll caption {
+  max-width: calc(100vw - 2rem);
+}
+
+/*
+* Fixe la taille des colonnes du tableau
+*/
+.fastoche-table--layout-fixed table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.fastoche-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+}
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+.fastoche-table__shadow {
+  /**
+  * Modifier ombre à gauche
+  **/
+
+  /**
+  * Modifier ombre à droite
+  **/
+
+  /**
+  * Modifier combinaison ombre à gauche et ombre à droite
+  **/
+}
+
+.fastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: var(--table-offset);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 0 0 #161616, inset 0 0 0 0 #161616;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: box-shadow 0.3s;
+}
+
+.fastoche-table__shadow--left::before {
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset 0 0 0 0 #161616;
+}
+
+.fastoche-table__shadow--right::before {
+  box-shadow: inset 0 0 0 0 #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+.fastoche-table__shadow--left.fastoche-table__shadow--right::before {
+  content: "";
+  display: block;
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+/*
+* Positionnement ombres sur le tableau sans caption
+*/
+.fastoche-table--no-caption .fastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Positionnement ombres sur le tableau avec caption en bas
+*/
+.fastoche-table--caption-bottom .fastoche-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:root[data-fastoche-theme=dark] .fastoche-table__shadow::before {
+  opacity: 1;
+}
+
+.fastoche-table tbody {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.fastoche-table tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.fastoche-table--fastoche-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color3 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color3), var(--border-plain-fastoche-color3));
+  background-color: var(--background-contrast-fastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color3-hover);
+  --active: var(--background-contrast-fastoche-color3-active);
+}
+
+.fastoche-table--fastoche-color3 tbody {
+  background-color: var(--background-alt-fastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color3-hover);
+  --active: var(--background-alt-fastoche-color3-active);
+}
+
+.fastoche-table--fastoche-color3 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color3-hover);
+  --active: var(--background-contrast-fastoche-color3-active);
+}
+
+.fastoche-table--fastoche-color3.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color3), var(--border-default-fastoche-color3));
+}
+
+.fastoche-table--fastoche-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color4 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color4), var(--border-plain-fastoche-color4));
+  background-color: var(--background-contrast-fastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color4-hover);
+  --active: var(--background-contrast-fastoche-color4-active);
+}
+
+.fastoche-table--fastoche-color4 tbody {
+  background-color: var(--background-alt-fastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color4-hover);
+  --active: var(--background-alt-fastoche-color4-active);
+}
+
+.fastoche-table--fastoche-color4 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color4-hover);
+  --active: var(--background-contrast-fastoche-color4-active);
+}
+
+.fastoche-table--fastoche-color4.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color4), var(--border-default-fastoche-color4));
+}
+
+.fastoche-table--fastoche-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color5 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color5), var(--border-plain-fastoche-color5));
+  background-color: var(--background-contrast-fastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color5-hover);
+  --active: var(--background-contrast-fastoche-color5-active);
+}
+
+.fastoche-table--fastoche-color5 tbody {
+  background-color: var(--background-alt-fastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color5-hover);
+  --active: var(--background-alt-fastoche-color5-active);
+}
+
+.fastoche-table--fastoche-color5 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color5-hover);
+  --active: var(--background-contrast-fastoche-color5-active);
+}
+
+.fastoche-table--fastoche-color5.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color5), var(--border-default-fastoche-color5));
+}
+
+.fastoche-table--fastoche-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color6 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color6), var(--border-plain-fastoche-color6));
+  background-color: var(--background-contrast-fastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color6-hover);
+  --active: var(--background-contrast-fastoche-color6-active);
+}
+
+.fastoche-table--fastoche-color6 tbody {
+  background-color: var(--background-alt-fastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color6-hover);
+  --active: var(--background-alt-fastoche-color6-active);
+}
+
+.fastoche-table--fastoche-color6 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color6-hover);
+  --active: var(--background-contrast-fastoche-color6-active);
+}
+
+.fastoche-table--fastoche-color6.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color6), var(--border-default-fastoche-color6));
+}
+
+.fastoche-table--fastoche-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color7 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color7), var(--border-plain-fastoche-color7));
+  background-color: var(--background-contrast-fastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color7-hover);
+  --active: var(--background-contrast-fastoche-color7-active);
+}
+
+.fastoche-table--fastoche-color7 tbody {
+  background-color: var(--background-alt-fastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color7-hover);
+  --active: var(--background-alt-fastoche-color7-active);
+}
+
+.fastoche-table--fastoche-color7 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color7-hover);
+  --active: var(--background-contrast-fastoche-color7-active);
+}
+
+.fastoche-table--fastoche-color7.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color7), var(--border-default-fastoche-color7));
+}
+
+.fastoche-table--fastoche-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color8 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color8), var(--border-plain-fastoche-color8));
+  background-color: var(--background-contrast-fastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color8-hover);
+  --active: var(--background-contrast-fastoche-color8-active);
+}
+
+.fastoche-table--fastoche-color8 tbody {
+  background-color: var(--background-alt-fastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color8-hover);
+  --active: var(--background-alt-fastoche-color8-active);
+}
+
+.fastoche-table--fastoche-color8 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color8-hover);
+  --active: var(--background-contrast-fastoche-color8-active);
+}
+
+.fastoche-table--fastoche-color8.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color8), var(--border-default-fastoche-color8));
+}
+
+.fastoche-table--fastoche-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color9 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color9), var(--border-plain-fastoche-color9));
+  background-color: var(--background-contrast-fastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color9-hover);
+  --active: var(--background-contrast-fastoche-color9-active);
+}
+
+.fastoche-table--fastoche-color9 tbody {
+  background-color: var(--background-alt-fastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color9-hover);
+  --active: var(--background-alt-fastoche-color9-active);
+}
+
+.fastoche-table--fastoche-color9 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color9-hover);
+  --active: var(--background-contrast-fastoche-color9-active);
+}
+
+.fastoche-table--fastoche-color9.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color9), var(--border-default-fastoche-color9));
+}
+
+.fastoche-table--fastoche-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color10 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color10), var(--border-plain-fastoche-color10));
+  background-color: var(--background-contrast-fastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color10-hover);
+  --active: var(--background-contrast-fastoche-color10-active);
+}
+
+.fastoche-table--fastoche-color10 tbody {
+  background-color: var(--background-alt-fastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color10-hover);
+  --active: var(--background-alt-fastoche-color10-active);
+}
+
+.fastoche-table--fastoche-color10 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color10-hover);
+  --active: var(--background-contrast-fastoche-color10-active);
+}
+
+.fastoche-table--fastoche-color10.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color10), var(--border-default-fastoche-color10));
+}
+
+.fastoche-table--fastoche-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color11 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color11), var(--border-plain-fastoche-color11));
+  background-color: var(--background-contrast-fastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color11-hover);
+  --active: var(--background-contrast-fastoche-color11-active);
+}
+
+.fastoche-table--fastoche-color11 tbody {
+  background-color: var(--background-alt-fastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color11-hover);
+  --active: var(--background-alt-fastoche-color11-active);
+}
+
+.fastoche-table--fastoche-color11 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color11-hover);
+  --active: var(--background-contrast-fastoche-color11-active);
+}
+
+.fastoche-table--fastoche-color11.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color11), var(--border-default-fastoche-color11));
+}
+
+.fastoche-table--fastoche-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color12 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color12), var(--border-plain-fastoche-color12));
+  background-color: var(--background-contrast-fastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color12-hover);
+  --active: var(--background-contrast-fastoche-color12-active);
+}
+
+.fastoche-table--fastoche-color12 tbody {
+  background-color: var(--background-alt-fastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color12-hover);
+  --active: var(--background-alt-fastoche-color12-active);
+}
+
+.fastoche-table--fastoche-color12 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color12-hover);
+  --active: var(--background-contrast-fastoche-color12-active);
+}
+
+.fastoche-table--fastoche-color12.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color12), var(--border-default-fastoche-color12));
+}
+
+.fastoche-table--fastoche-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color13 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color13), var(--border-plain-fastoche-color13));
+  background-color: var(--background-contrast-fastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color13-hover);
+  --active: var(--background-contrast-fastoche-color13-active);
+}
+
+.fastoche-table--fastoche-color13 tbody {
+  background-color: var(--background-alt-fastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color13-hover);
+  --active: var(--background-alt-fastoche-color13-active);
+}
+
+.fastoche-table--fastoche-color13 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color13-hover);
+  --active: var(--background-contrast-fastoche-color13-active);
+}
+
+.fastoche-table--fastoche-color13.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color13), var(--border-default-fastoche-color13));
+}
+
+.fastoche-table--fastoche-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color14 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color14), var(--border-plain-fastoche-color14));
+  background-color: var(--background-contrast-fastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color14-hover);
+  --active: var(--background-contrast-fastoche-color14-active);
+}
+
+.fastoche-table--fastoche-color14 tbody {
+  background-color: var(--background-alt-fastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color14-hover);
+  --active: var(--background-alt-fastoche-color14-active);
+}
+
+.fastoche-table--fastoche-color14 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color14-hover);
+  --active: var(--background-contrast-fastoche-color14-active);
+}
+
+.fastoche-table--fastoche-color14.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color14), var(--border-default-fastoche-color14));
+}
+
+.fastoche-table--fastoche-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color15 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color15), var(--border-plain-fastoche-color15));
+  background-color: var(--background-contrast-fastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color15-hover);
+  --active: var(--background-contrast-fastoche-color15-active);
+}
+
+.fastoche-table--fastoche-color15 tbody {
+  background-color: var(--background-alt-fastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color15-hover);
+  --active: var(--background-alt-fastoche-color15-active);
+}
+
+.fastoche-table--fastoche-color15 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color15-hover);
+  --active: var(--background-contrast-fastoche-color15-active);
+}
+
+.fastoche-table--fastoche-color15.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color15), var(--border-default-fastoche-color15));
+}
+
+.fastoche-table--fastoche-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color16 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color16), var(--border-plain-fastoche-color16));
+  background-color: var(--background-contrast-fastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color16-hover);
+  --active: var(--background-contrast-fastoche-color16-active);
+}
+
+.fastoche-table--fastoche-color16 tbody {
+  background-color: var(--background-alt-fastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color16-hover);
+  --active: var(--background-alt-fastoche-color16-active);
+}
+
+.fastoche-table--fastoche-color16 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color16-hover);
+  --active: var(--background-contrast-fastoche-color16-active);
+}
+
+.fastoche-table--fastoche-color16.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color16), var(--border-default-fastoche-color16));
+}
+
+.fastoche-table--fastoche-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color17 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color17), var(--border-plain-fastoche-color17));
+  background-color: var(--background-contrast-fastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color17-hover);
+  --active: var(--background-contrast-fastoche-color17-active);
+}
+
+.fastoche-table--fastoche-color17 tbody {
+  background-color: var(--background-alt-fastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color17-hover);
+  --active: var(--background-alt-fastoche-color17-active);
+}
+
+.fastoche-table--fastoche-color17 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color17-hover);
+  --active: var(--background-contrast-fastoche-color17-active);
+}
+
+.fastoche-table--fastoche-color17.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color17), var(--border-default-fastoche-color17));
+}
+
+.fastoche-table--fastoche-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color18 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color18), var(--border-plain-fastoche-color18));
+  background-color: var(--background-contrast-fastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color18-hover);
+  --active: var(--background-contrast-fastoche-color18-active);
+}
+
+.fastoche-table--fastoche-color18 tbody {
+  background-color: var(--background-alt-fastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color18-hover);
+  --active: var(--background-alt-fastoche-color18-active);
+}
+
+.fastoche-table--fastoche-color18 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color18-hover);
+  --active: var(--background-contrast-fastoche-color18-active);
+}
+
+.fastoche-table--fastoche-color18.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color18), var(--border-default-fastoche-color18));
+}
+
+.fastoche-table--fastoche-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color19 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-fastoche-color19), var(--border-plain-fastoche-color19));
+  background-color: var(--background-contrast-fastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color19-hover);
+  --active: var(--background-contrast-fastoche-color19-active);
+}
+
+.fastoche-table--fastoche-color19 tbody {
+  background-color: var(--background-alt-fastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color19-hover);
+  --active: var(--background-alt-fastoche-color19-active);
+}
+
+.fastoche-table--fastoche-color19 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-fastoche-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color19-hover);
+  --active: var(--background-contrast-fastoche-color19-active);
+}
+
+.fastoche-table--fastoche-color19.fastoche-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-fastoche-color19), var(--border-default-fastoche-color19));
+}
+
+.fastoche-table--bordered tbody tr:nth-child(even) {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .fastoche-table caption {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .fastoche-table td,
+  .fastoche-table th {
+    padding: 1rem;
+  }
+
+  .fastoche-table thead td,
+  .fastoche-table thead th {
+    padding-bottom: 1.125rem;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

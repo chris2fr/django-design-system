@@ -1,0 +1,25 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .fastoche-content-media__caption,
+  .fastoche-content-media .fastoche-link {
+    color: #666;
+  }
+
+  .fastoche-content-media__caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-content-media__caption .fastoche-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0;
+  }
+
+  .fastoche-content-media__caption .fastoche-link::before,
+  .fastoche-content-media__caption .fastoche-link::after {
+    --icon-size: 1rem;
+  }
+}

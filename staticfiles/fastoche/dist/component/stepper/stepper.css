@@ -1,0 +1,209 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  STEPPER
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-stepper {
+  --title-spacing: 0;
+  --text-spacing: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.fastoche-stepper__title {
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  --title-spacing: 0 0 0.75rem 0;
+  --text-spacing: 0 0 0.75rem 0;
+  color: var(--text-title-grey);
+}
+
+.fastoche-stepper__state {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+
+  --title-spacing: 0 0 0.25rem 0;
+  --text-spacing: 0 0 0.25rem 0;
+  font-weight: 400;
+  color: var(--text-mention-grey);
+}
+
+.fastoche-stepper__state::after {
+  content: "\a";
+  white-space: pre;
+  line-height: 2rem;
+}
+
+.fastoche-stepper__details {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-top: 0.75rem;
+  color: var(--text-mention-grey);
+}
+
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="2"][data-fastoche-current-step="2"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="3"][data-fastoche-current-step="3"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="4"][data-fastoche-current-step="4"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="5"][data-fastoche-current-step="5"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="6"][data-fastoche-current-step="6"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="7"][data-fastoche-current-step="7"] + .fastoche-stepper__details,
+.fastoche-stepper .fastoche-stepper__steps[data-fastoche-steps="8"][data-fastoche-current-step="8"] + .fastoche-stepper__details {
+  display: none;
+}
+
+.fastoche-stepper__steps {
+  --stepper-size: 0.5rem;
+  --default-outer: calc((100% + var(--stepper-size)) / var(--steps));
+  --default-inner: calc(var(--default-outer) - var(--stepper-size));
+  --active-outer: calc((100% + var(--stepper-size)) / var(--current-step));
+  --active-inner: calc(var(--active-outer) - var(--stepper-size));
+  width: 100%;
+  height: var(--stepper-size);
+  background-repeat: no-repeat;
+  background-size: calc((100% + var(--stepper-size)) * var(--current-step) / var(--steps) - var(--stepper-size)) 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+
+  --current-step: 0;
+  background-image: repeating-linear-gradient(to right, var(--background-active-fastoche-primary) 0, var(--background-active-fastoche-primary) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, var(--background-contrast-grey) 0, var(--background-contrast-grey) var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="2"] {
+  --steps: 2;
+  --step-width: calc(100% / 2);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="3"] {
+  --steps: 3;
+  --step-width: calc(100% / 3);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="4"] {
+  --steps: 4;
+  --step-width: calc(100% / 4);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="5"] {
+  --steps: 5;
+  --step-width: calc(100% / 5);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="6"] {
+  --steps: 6;
+  --step-width: calc(100% / 6);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="7"] {
+  --steps: 7;
+  --step-width: calc(100% / 7);
+}
+
+.fastoche-stepper__steps[data-fastoche-steps="8"] {
+  --steps: 8;
+  --step-width: calc(100% / 8);
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="1"] {
+  --current-step: 1;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="2"] {
+  --current-step: 2;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="3"] {
+  --current-step: 3;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="4"] {
+  --current-step: 4;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="5"] {
+  --current-step: 5;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="6"] {
+  --current-step: 6;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="7"] {
+  --current-step: 7;
+}
+
+.fastoche-stepper__steps[data-fastoche-current-step="8"] {
+  --current-step: 8;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .fastoche-stepper__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-stepper__title {
+    margin-bottom: 0.75rem;
+    color: #161616;
+  }
+
+  .fastoche-stepper__steps {
+    display: none;
+    background-image: repeating-linear-gradient(to right, hsl(122, 75%, 25%) 0, hsl(122, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .fastoche-stepper__state {
+    color: #666;
+  }
+
+  .fastoche-stepper__details {
+    color: #666;
+  }
+}
+@media print {
+  .fastoche-stepper__title {
+    color: #161616;
+  }
+
+  .fastoche-stepper__state {
+    color: #666;
+  }
+
+  .fastoche-stepper__details {
+    color: #666;
+  }
+
+  .fastoche-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(122, 75%, 25%) 0, hsl(122, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .fastoche-stepper__state,
+  .fastoche-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

@@ -1,0 +1,515 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON DESIGN
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-icon-ball-pen-fill::before,
+.fastoche-icon-ball-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-fill.svg");
+  mask-image: url("../../../icons/design/ball-pen-fill.svg");
+}
+
+.fastoche-icon-ball-pen-line::before,
+.fastoche-icon-ball-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-line.svg");
+  mask-image: url("../../../icons/design/ball-pen-line.svg");
+}
+
+.fastoche-icon-brush-3-fill::before,
+.fastoche-icon-brush-3-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-fill.svg");
+  mask-image: url("../../../icons/design/brush-3-fill.svg");
+}
+
+.fastoche-icon-brush-3-line::before,
+.fastoche-icon-brush-3-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-line.svg");
+  mask-image: url("../../../icons/design/brush-3-line.svg");
+}
+
+.fastoche-icon-brush-fill::before,
+.fastoche-icon-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-fill.svg");
+  mask-image: url("../../../icons/design/brush-fill.svg");
+}
+
+.fastoche-icon-brush-line::before,
+.fastoche-icon-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-line.svg");
+  mask-image: url("../../../icons/design/brush-line.svg");
+}
+
+.fastoche-icon-contrast-fill::before,
+.fastoche-icon-contrast-fill::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-fill.svg");
+  mask-image: url("../../../icons/design/contrast-fill.svg");
+}
+
+.fastoche-icon-contrast-line::before,
+.fastoche-icon-contrast-line::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-line.svg");
+  mask-image: url("../../../icons/design/contrast-line.svg");
+}
+
+.fastoche-icon-crop-fill::before,
+.fastoche-icon-crop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/crop-fill.svg");
+  mask-image: url("../../../icons/design/crop-fill.svg");
+}
+
+.fastoche-icon-crop-line::before,
+.fastoche-icon-crop-line::after {
+  -webkit-mask-image: url("../../../icons/design/crop-line.svg");
+  mask-image: url("../../../icons/design/crop-line.svg");
+}
+
+.fastoche-icon-drag-move-2-fill::before,
+.fastoche-icon-drag-move-2-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+  mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+}
+
+.fastoche-icon-drag-move-2-line::before,
+.fastoche-icon-drag-move-2-line::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-line.svg");
+  mask-image: url("../../../icons/design/drag-move-2-line.svg");
+}
+
+.fastoche-icon-drop-fill::before,
+.fastoche-icon-drop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drop-fill.svg");
+  mask-image: url("../../../icons/design/drop-fill.svg");
+}
+
+.fastoche-icon-drop-line::before,
+.fastoche-icon-drop-line::after {
+  -webkit-mask-image: url("../../../icons/design/drop-line.svg");
+  mask-image: url("../../../icons/design/drop-line.svg");
+}
+
+.fastoche-icon-edit-box-fill::before,
+.fastoche-icon-edit-box-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-fill.svg");
+  mask-image: url("../../../icons/design/edit-box-fill.svg");
+}
+
+.fastoche-icon-edit-box-line::before,
+.fastoche-icon-edit-box-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-line.svg");
+  mask-image: url("../../../icons/design/edit-box-line.svg");
+}
+
+.fastoche-icon-edit-fill::before,
+.fastoche-icon-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.fastoche-icon-edit-line::before,
+.fastoche-icon-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+.fastoche-icon-ink-bottle-fill::before,
+.fastoche-icon-ink-bottle-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+  mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+}
+
+.fastoche-icon-ink-bottle-line::before,
+.fastoche-icon-ink-bottle-line::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-line.svg");
+  mask-image: url("../../../icons/design/ink-bottle-line.svg");
+}
+
+.fastoche-icon-layout-grid-fill::before,
+.fastoche-icon-layout-grid-fill::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-fill.svg");
+  mask-image: url("../../../icons/design/layout-grid-fill.svg");
+}
+
+.fastoche-icon-layout-grid-line::before,
+.fastoche-icon-layout-grid-line::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-line.svg");
+  mask-image: url("../../../icons/design/layout-grid-line.svg");
+}
+
+.fastoche-icon-mark-pen-fill::before,
+.fastoche-icon-mark-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-fill.svg");
+  mask-image: url("../../../icons/design/mark-pen-fill.svg");
+}
+
+.fastoche-icon-mark-pen-line::before,
+.fastoche-icon-mark-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-line.svg");
+  mask-image: url("../../../icons/design/mark-pen-line.svg");
+}
+
+.fastoche-icon-paint-brush-fill::before,
+.fastoche-icon-paint-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-fill.svg");
+  mask-image: url("../../../icons/design/paint-brush-fill.svg");
+}
+
+.fastoche-icon-paint-brush-line::before,
+.fastoche-icon-paint-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-line.svg");
+  mask-image: url("../../../icons/design/paint-brush-line.svg");
+}
+
+.fastoche-icon-paint-fill::before,
+.fastoche-icon-paint-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-fill.svg");
+  mask-image: url("../../../icons/design/paint-fill.svg");
+}
+
+.fastoche-icon-paint-line::before,
+.fastoche-icon-paint-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-line.svg");
+  mask-image: url("../../../icons/design/paint-line.svg");
+}
+
+.fastoche-icon-palette-fill::before,
+.fastoche-icon-palette-fill::after {
+  -webkit-mask-image: url("../../../icons/design/palette-fill.svg");
+  mask-image: url("../../../icons/design/palette-fill.svg");
+}
+
+.fastoche-icon-palette-line::before,
+.fastoche-icon-palette-line::after {
+  -webkit-mask-image: url("../../../icons/design/palette-line.svg");
+  mask-image: url("../../../icons/design/palette-line.svg");
+}
+
+.fastoche-icon-pantone-fill::before,
+.fastoche-icon-pantone-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-fill.svg");
+  mask-image: url("../../../icons/design/pantone-fill.svg");
+}
+
+.fastoche-icon-pantone-line::before,
+.fastoche-icon-pantone-line::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-line.svg");
+  mask-image: url("../../../icons/design/pantone-line.svg");
+}
+
+.fastoche-icon-pen-nib-fill::before,
+.fastoche-icon-pen-nib-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-fill.svg");
+  mask-image: url("../../../icons/design/pen-nib-fill.svg");
+}
+
+.fastoche-icon-pen-nib-line::before,
+.fastoche-icon-pen-nib-line::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-line.svg");
+  mask-image: url("../../../icons/design/pen-nib-line.svg");
+}
+
+.fastoche-icon-pencil-fill::before,
+.fastoche-icon-pencil-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-fill.svg");
+  mask-image: url("../../../icons/design/pencil-fill.svg");
+}
+
+.fastoche-icon-pencil-line::before,
+.fastoche-icon-pencil-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-line.svg");
+  mask-image: url("../../../icons/design/pencil-line.svg");
+}
+
+.fastoche-icon-pencil-ruler-fill::before,
+.fastoche-icon-pencil-ruler-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+}
+
+.fastoche-icon-pencil-ruler-line::before,
+.fastoche-icon-pencil-ruler-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+}
+
+.fastoche-icon-sip-fill::before,
+.fastoche-icon-sip-fill::after {
+  -webkit-mask-image: url("../../../icons/design/sip-fill.svg");
+  mask-image: url("../../../icons/design/sip-fill.svg");
+}
+
+.fastoche-icon-sip-line::before,
+.fastoche-icon-sip-line::after {
+  -webkit-mask-image: url("../../../icons/design/sip-line.svg");
+  mask-image: url("../../../icons/design/sip-line.svg");
+}
+
+.fastoche-icon-table-fill::before,
+.fastoche-icon-table-fill::after {
+  -webkit-mask-image: url("../../../icons/design/table-fill.svg");
+  mask-image: url("../../../icons/design/table-fill.svg");
+}
+
+.fastoche-icon-table-line::before,
+.fastoche-icon-table-line::after {
+  -webkit-mask-image: url("../../../icons/design/table-line.svg");
+  mask-image: url("../../../icons/design/table-line.svg");
+}
+
+.fastoche-fi-edit-fill::before,
+.fastoche-fi-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.fastoche-fi-edit-line::before,
+.fastoche-fi-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-icon-ball-pen-fill::before,
+  .fastoche-icon-ball-pen-fill::after {
+    background-image: url("../../../icons/design/ball-pen-fill.svg");
+  }
+
+  .fastoche-icon-ball-pen-line::before,
+  .fastoche-icon-ball-pen-line::after {
+    background-image: url("../../../icons/design/ball-pen-line.svg");
+  }
+
+  .fastoche-icon-brush-3-fill::before,
+  .fastoche-icon-brush-3-fill::after {
+    background-image: url("../../../icons/design/brush-3-fill.svg");
+  }
+
+  .fastoche-icon-brush-3-line::before,
+  .fastoche-icon-brush-3-line::after {
+    background-image: url("../../../icons/design/brush-3-line.svg");
+  }
+
+  .fastoche-icon-brush-fill::before,
+  .fastoche-icon-brush-fill::after {
+    background-image: url("../../../icons/design/brush-fill.svg");
+  }
+
+  .fastoche-icon-brush-line::before,
+  .fastoche-icon-brush-line::after {
+    background-image: url("../../../icons/design/brush-line.svg");
+  }
+
+  .fastoche-icon-contrast-fill::before,
+  .fastoche-icon-contrast-fill::after {
+    background-image: url("../../../icons/design/contrast-fill.svg");
+  }
+
+  .fastoche-icon-contrast-line::before,
+  .fastoche-icon-contrast-line::after {
+    background-image: url("../../../icons/design/contrast-line.svg");
+  }
+
+  .fastoche-icon-crop-fill::before,
+  .fastoche-icon-crop-fill::after {
+    background-image: url("../../../icons/design/crop-fill.svg");
+  }
+
+  .fastoche-icon-crop-line::before,
+  .fastoche-icon-crop-line::after {
+    background-image: url("../../../icons/design/crop-line.svg");
+  }
+
+  .fastoche-icon-drag-move-2-fill::before,
+  .fastoche-icon-drag-move-2-fill::after {
+    background-image: url("../../../icons/design/drag-move-2-fill.svg");
+  }
+
+  .fastoche-icon-drag-move-2-line::before,
+  .fastoche-icon-drag-move-2-line::after {
+    background-image: url("../../../icons/design/drag-move-2-line.svg");
+  }
+
+  .fastoche-icon-drop-fill::before,
+  .fastoche-icon-drop-fill::after {
+    background-image: url("../../../icons/design/drop-fill.svg");
+  }
+
+  .fastoche-icon-drop-line::before,
+  .fastoche-icon-drop-line::after {
+    background-image: url("../../../icons/design/drop-line.svg");
+  }
+
+  .fastoche-icon-edit-box-fill::before,
+  .fastoche-icon-edit-box-fill::after {
+    background-image: url("../../../icons/design/edit-box-fill.svg");
+  }
+
+  .fastoche-icon-edit-box-line::before,
+  .fastoche-icon-edit-box-line::after {
+    background-image: url("../../../icons/design/edit-box-line.svg");
+  }
+
+  .fastoche-icon-edit-fill::before,
+  .fastoche-icon-edit-fill::after {
+    background-image: url("../../../icons/design/edit-fill.svg");
+  }
+
+  .fastoche-icon-edit-line::before,
+  .fastoche-icon-edit-line::after {
+    background-image: url("../../../icons/design/edit-line.svg");
+  }
+
+  .fastoche-icon-ink-bottle-fill::before,
+  .fastoche-icon-ink-bottle-fill::after {
+    background-image: url("../../../icons/design/ink-bottle-fill.svg");
+  }
+
+  .fastoche-icon-ink-bottle-line::before,
+  .fastoche-icon-ink-bottle-line::after {
+    background-image: url("../../../icons/design/ink-bottle-line.svg");
+  }
+
+  .fastoche-icon-layout-grid-fill::before,
+  .fastoche-icon-layout-grid-fill::after {
+    background-image: url("../../../icons/design/layout-grid-fill.svg");
+  }
+
+  .fastoche-icon-layout-grid-line::before,
+  .fastoche-icon-layout-grid-line::after {
+    background-image: url("../../../icons/design/layout-grid-line.svg");
+  }
+
+  .fastoche-icon-mark-pen-fill::before,
+  .fastoche-icon-mark-pen-fill::after {
+    background-image: url("../../../icons/design/mark-pen-fill.svg");
+  }
+
+  .fastoche-icon-mark-pen-line::before,
+  .fastoche-icon-mark-pen-line::after {
+    background-image: url("../../../icons/design/mark-pen-line.svg");
+  }
+
+  .fastoche-icon-paint-brush-fill::before,
+  .fastoche-icon-paint-brush-fill::after {
+    background-image: url("../../../icons/design/paint-brush-fill.svg");
+  }
+
+  .fastoche-icon-paint-brush-line::before,
+  .fastoche-icon-paint-brush-line::after {
+    background-image: url("../../../icons/design/paint-brush-line.svg");
+  }
+
+  .fastoche-icon-paint-fill::before,
+  .fastoche-icon-paint-fill::after {
+    background-image: url("../../../icons/design/paint-fill.svg");
+  }
+
+  .fastoche-icon-paint-line::before,
+  .fastoche-icon-paint-line::after {
+    background-image: url("../../../icons/design/paint-line.svg");
+  }
+
+  .fastoche-icon-palette-fill::before,
+  .fastoche-icon-palette-fill::after {
+    background-image: url("../../../icons/design/palette-fill.svg");
+  }
+
+  .fastoche-icon-palette-line::before,
+  .fastoche-icon-palette-line::after {
+    background-image: url("../../../icons/design/palette-line.svg");
+  }
+
+  .fastoche-icon-pantone-fill::before,
+  .fastoche-icon-pantone-fill::after {
+    background-image: url("../../../icons/design/pantone-fill.svg");
+  }
+
+  .fastoche-icon-pantone-line::before,
+  .fastoche-icon-pantone-line::after {
+    background-image: url("../../../icons/design/pantone-line.svg");
+  }
+
+  .fastoche-icon-pen-nib-fill::before,
+  .fastoche-icon-pen-nib-fill::after {
+    background-image: url("../../../icons/design/pen-nib-fill.svg");
+  }
+
+  .fastoche-icon-pen-nib-line::before,
+  .fastoche-icon-pen-nib-line::after {
+    background-image: url("../../../icons/design/pen-nib-line.svg");
+  }
+
+  .fastoche-icon-pencil-fill::before,
+  .fastoche-icon-pencil-fill::after {
+    background-image: url("../../../icons/design/pencil-fill.svg");
+  }
+
+  .fastoche-icon-pencil-line::before,
+  .fastoche-icon-pencil-line::after {
+    background-image: url("../../../icons/design/pencil-line.svg");
+  }
+
+  .fastoche-icon-pencil-ruler-fill::before,
+  .fastoche-icon-pencil-ruler-fill::after {
+    background-image: url("../../../icons/design/pencil-ruler-fill.svg");
+  }
+
+  .fastoche-icon-pencil-ruler-line::before,
+  .fastoche-icon-pencil-ruler-line::after {
+    background-image: url("../../../icons/design/pencil-ruler-line.svg");
+  }
+
+  .fastoche-icon-sip-fill::before,
+  .fastoche-icon-sip-fill::after {
+    background-image: url("../../../icons/design/sip-fill.svg");
+  }
+
+  .fastoche-icon-sip-line::before,
+  .fastoche-icon-sip-line::after {
+    background-image: url("../../../icons/design/sip-line.svg");
+  }
+
+  .fastoche-icon-table-fill::before,
+  .fastoche-icon-table-fill::after {
+    background-image: url("../../../icons/design/table-fill.svg");
+  }
+
+  .fastoche-icon-table-line::before,
+  .fastoche-icon-table-line::after {
+    background-image: url("../../../icons/design/table-line.svg");
+  }
+
+  .fastoche-fi-edit-fill::before {
+    background-image: url("../../../icons/design/edit-fill.svg");
+  }
+
+  .fastoche-fi-edit-line::before {
+    background-image: url("../../../icons/design/edit-line.svg");
+  }
+}

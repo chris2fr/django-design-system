@@ -1,0 +1,50 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-content-media__caption,
+  .fastoche-content-media .fastoche-link {
+    color: #666;
+  }
+
+  .fastoche-content-media__transcription .fastoche-link {
+    background-color: transparent;
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-content-media__transcription .fastoche-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-content-media__transcription .fastoche-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-content-media__transcription .fastoche-link:disabled,
+  .fastoche-content-media__transcription a.fastoche-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .fastoche-content-media__transcription .fastoche-link:disabled:hover,
+  .fastoche-content-media__transcription a.fastoche-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-content-media__transcription .fastoche-link:disabled:active,
+  .fastoche-content-media__transcription a.fastoche-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

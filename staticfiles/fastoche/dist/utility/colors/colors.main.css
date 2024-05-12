@@ -1,0 +1,1478 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.fastoche-background-default--grey {
+  background-color: var(--background-default-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-default-grey-hover) !important;
+  --active: var(--background-default-grey-active) !important;
+}
+
+.fastoche-background-alt--grey {
+  background-color: var(--background-alt-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover) !important;
+  --active: var(--background-alt-grey-active) !important;
+}
+
+.fastoche-background-alt--fastoche-primary {
+  background-color: var(--background-alt-fastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-primary-hover) !important;
+  --active: var(--background-alt-fastoche-primary-active) !important;
+}
+
+.fastoche-background-alt--fastoche-secondary {
+  background-color: var(--background-alt-fastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-secondary-hover) !important;
+  --active: var(--background-alt-fastoche-secondary-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color3 {
+  background-color: var(--background-alt-fastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color3-hover) !important;
+  --active: var(--background-alt-fastoche-color3-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color4 {
+  background-color: var(--background-alt-fastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color4-hover) !important;
+  --active: var(--background-alt-fastoche-color4-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color5 {
+  background-color: var(--background-alt-fastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color5-hover) !important;
+  --active: var(--background-alt-fastoche-color5-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color6 {
+  background-color: var(--background-alt-fastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color6-hover) !important;
+  --active: var(--background-alt-fastoche-color6-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color7 {
+  background-color: var(--background-alt-fastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color7-hover) !important;
+  --active: var(--background-alt-fastoche-color7-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color8 {
+  background-color: var(--background-alt-fastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color8-hover) !important;
+  --active: var(--background-alt-fastoche-color8-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color9 {
+  background-color: var(--background-alt-fastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color9-hover) !important;
+  --active: var(--background-alt-fastoche-color9-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color10 {
+  background-color: var(--background-alt-fastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color10-hover) !important;
+  --active: var(--background-alt-fastoche-color10-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color11 {
+  background-color: var(--background-alt-fastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color11-hover) !important;
+  --active: var(--background-alt-fastoche-color11-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color12 {
+  background-color: var(--background-alt-fastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color12-hover) !important;
+  --active: var(--background-alt-fastoche-color12-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color13 {
+  background-color: var(--background-alt-fastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color13-hover) !important;
+  --active: var(--background-alt-fastoche-color13-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color14 {
+  background-color: var(--background-alt-fastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color14-hover) !important;
+  --active: var(--background-alt-fastoche-color14-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color15 {
+  background-color: var(--background-alt-fastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color15-hover) !important;
+  --active: var(--background-alt-fastoche-color15-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color16 {
+  background-color: var(--background-alt-fastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color16-hover) !important;
+  --active: var(--background-alt-fastoche-color16-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color17 {
+  background-color: var(--background-alt-fastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color17-hover) !important;
+  --active: var(--background-alt-fastoche-color17-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color18 {
+  background-color: var(--background-alt-fastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color18-hover) !important;
+  --active: var(--background-alt-fastoche-color18-active) !important;
+}
+
+.fastoche-background-alt--fastoche-color19 {
+  background-color: var(--background-alt-fastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-alt-fastoche-color19-hover) !important;
+  --active: var(--background-alt-fastoche-color19-active) !important;
+}
+
+.fastoche-background-contrast--grey {
+  background-color: var(--background-contrast-grey) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover) !important;
+  --active: var(--background-contrast-grey-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-primary {
+  background-color: var(--background-contrast-fastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-primary-hover) !important;
+  --active: var(--background-contrast-fastoche-primary-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-secondary {
+  background-color: var(--background-contrast-fastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-secondary-hover) !important;
+  --active: var(--background-contrast-fastoche-secondary-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color3 {
+  background-color: var(--background-contrast-fastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color3-hover) !important;
+  --active: var(--background-contrast-fastoche-color3-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color4 {
+  background-color: var(--background-contrast-fastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color4-hover) !important;
+  --active: var(--background-contrast-fastoche-color4-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color5 {
+  background-color: var(--background-contrast-fastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color5-hover) !important;
+  --active: var(--background-contrast-fastoche-color5-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color6 {
+  background-color: var(--background-contrast-fastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color6-hover) !important;
+  --active: var(--background-contrast-fastoche-color6-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color7 {
+  background-color: var(--background-contrast-fastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color7-hover) !important;
+  --active: var(--background-contrast-fastoche-color7-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color8 {
+  background-color: var(--background-contrast-fastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color8-hover) !important;
+  --active: var(--background-contrast-fastoche-color8-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color9 {
+  background-color: var(--background-contrast-fastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color9-hover) !important;
+  --active: var(--background-contrast-fastoche-color9-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color10 {
+  background-color: var(--background-contrast-fastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color10-hover) !important;
+  --active: var(--background-contrast-fastoche-color10-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color11 {
+  background-color: var(--background-contrast-fastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color11-hover) !important;
+  --active: var(--background-contrast-fastoche-color11-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color12 {
+  background-color: var(--background-contrast-fastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color12-hover) !important;
+  --active: var(--background-contrast-fastoche-color12-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color13 {
+  background-color: var(--background-contrast-fastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color13-hover) !important;
+  --active: var(--background-contrast-fastoche-color13-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color14 {
+  background-color: var(--background-contrast-fastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color14-hover) !important;
+  --active: var(--background-contrast-fastoche-color14-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color15 {
+  background-color: var(--background-contrast-fastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color15-hover) !important;
+  --active: var(--background-contrast-fastoche-color15-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color16 {
+  background-color: var(--background-contrast-fastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color16-hover) !important;
+  --active: var(--background-contrast-fastoche-color16-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color17 {
+  background-color: var(--background-contrast-fastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color17-hover) !important;
+  --active: var(--background-contrast-fastoche-color17-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color18 {
+  background-color: var(--background-contrast-fastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color18-hover) !important;
+  --active: var(--background-contrast-fastoche-color18-active) !important;
+}
+
+.fastoche-background-contrast--fastoche-color19 {
+  background-color: var(--background-contrast-fastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-fastoche-color19-hover) !important;
+  --active: var(--background-contrast-fastoche-color19-active) !important;
+}
+
+.fastoche-background-contrast--info {
+  background-color: var(--background-contrast-info) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-info-hover) !important;
+  --active: var(--background-contrast-info-active) !important;
+}
+
+.fastoche-background-contrast--success {
+  background-color: var(--background-contrast-success) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-success-hover) !important;
+  --active: var(--background-contrast-success-active) !important;
+}
+
+.fastoche-background-contrast--warning {
+  background-color: var(--background-contrast-warning) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-warning-hover) !important;
+  --active: var(--background-contrast-warning-active) !important;
+}
+
+.fastoche-background-contrast--error {
+  background-color: var(--background-contrast-error) !important;
+
+  --idle: transparent;
+  --hover: var(--background-contrast-error-hover) !important;
+  --active: var(--background-contrast-error-active) !important;
+}
+
+.fastoche-background-flat--grey {
+  background-color: var(--background-flat-grey) !important;
+}
+
+.fastoche-background-flat--fastoche-primary {
+  background-color: var(--background-flat-fastoche-primary) !important;
+}
+
+.fastoche-background-flat--fastoche-secondary {
+  background-color: var(--background-flat-fastoche-secondary) !important;
+}
+
+.fastoche-background-flat--fastoche-color3 {
+  background-color: var(--background-flat-fastoche-color3) !important;
+}
+
+.fastoche-background-flat--fastoche-color4 {
+  background-color: var(--background-flat-fastoche-color4) !important;
+}
+
+.fastoche-background-flat--fastoche-color5 {
+  background-color: var(--background-flat-fastoche-color5) !important;
+}
+
+.fastoche-background-flat--fastoche-color6 {
+  background-color: var(--background-flat-fastoche-color6) !important;
+}
+
+.fastoche-background-flat--fastoche-color7 {
+  background-color: var(--background-flat-fastoche-color7) !important;
+}
+
+.fastoche-background-flat--fastoche-color8 {
+  background-color: var(--background-flat-fastoche-color8) !important;
+}
+
+.fastoche-background-flat--fastoche-color9 {
+  background-color: var(--background-flat-fastoche-color9) !important;
+}
+
+.fastoche-background-flat--fastoche-color10 {
+  background-color: var(--background-flat-fastoche-color10) !important;
+}
+
+.fastoche-background-flat--fastoche-color11 {
+  background-color: var(--background-flat-fastoche-color11) !important;
+}
+
+.fastoche-background-flat--fastoche-color12 {
+  background-color: var(--background-flat-fastoche-color12) !important;
+}
+
+.fastoche-background-flat--fastoche-color13 {
+  background-color: var(--background-flat-fastoche-color13) !important;
+}
+
+.fastoche-background-flat--fastoche-color14 {
+  background-color: var(--background-flat-fastoche-color14) !important;
+}
+
+.fastoche-background-flat--fastoche-color15 {
+  background-color: var(--background-flat-fastoche-color15) !important;
+}
+
+.fastoche-background-flat--fastoche-color16 {
+  background-color: var(--background-flat-fastoche-color16) !important;
+}
+
+.fastoche-background-flat--fastoche-color17 {
+  background-color: var(--background-flat-fastoche-color17) !important;
+}
+
+.fastoche-background-flat--fastoche-color18 {
+  background-color: var(--background-flat-fastoche-color18) !important;
+}
+
+.fastoche-background-flat--fastoche-color19 {
+  background-color: var(--background-flat-fastoche-color19) !important;
+}
+
+.fastoche-background-flat--info {
+  background-color: var(--background-flat-info) !important;
+}
+
+.fastoche-background-flat--success {
+  background-color: var(--background-flat-success) !important;
+}
+
+.fastoche-background-flat--warning {
+  background-color: var(--background-flat-warning) !important;
+}
+
+.fastoche-background-flat--error {
+  background-color: var(--background-flat-error) !important;
+}
+
+.fastoche-background-action-high--fastoche-primary {
+  background-color: var(--background-action-high-fastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-primary-hover) !important;
+  --active: var(--background-action-high-fastoche-primary-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-secondary {
+  background-color: var(--background-action-high-fastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-secondary-hover) !important;
+  --active: var(--background-action-high-fastoche-secondary-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color3 {
+  background-color: var(--background-action-high-fastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color3-hover) !important;
+  --active: var(--background-action-high-fastoche-color3-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color4 {
+  background-color: var(--background-action-high-fastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color4-hover) !important;
+  --active: var(--background-action-high-fastoche-color4-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color5 {
+  background-color: var(--background-action-high-fastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color5-hover) !important;
+  --active: var(--background-action-high-fastoche-color5-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color6 {
+  background-color: var(--background-action-high-fastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color6-hover) !important;
+  --active: var(--background-action-high-fastoche-color6-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color7 {
+  background-color: var(--background-action-high-fastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color7-hover) !important;
+  --active: var(--background-action-high-fastoche-color7-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color8 {
+  background-color: var(--background-action-high-fastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color8-hover) !important;
+  --active: var(--background-action-high-fastoche-color8-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color9 {
+  background-color: var(--background-action-high-fastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color9-hover) !important;
+  --active: var(--background-action-high-fastoche-color9-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color10 {
+  background-color: var(--background-action-high-fastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color10-hover) !important;
+  --active: var(--background-action-high-fastoche-color10-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color11 {
+  background-color: var(--background-action-high-fastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color11-hover) !important;
+  --active: var(--background-action-high-fastoche-color11-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color12 {
+  background-color: var(--background-action-high-fastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color12-hover) !important;
+  --active: var(--background-action-high-fastoche-color12-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color13 {
+  background-color: var(--background-action-high-fastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color13-hover) !important;
+  --active: var(--background-action-high-fastoche-color13-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color14 {
+  background-color: var(--background-action-high-fastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color14-hover) !important;
+  --active: var(--background-action-high-fastoche-color14-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color15 {
+  background-color: var(--background-action-high-fastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color15-hover) !important;
+  --active: var(--background-action-high-fastoche-color15-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color16 {
+  background-color: var(--background-action-high-fastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color16-hover) !important;
+  --active: var(--background-action-high-fastoche-color16-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color17 {
+  background-color: var(--background-action-high-fastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color17-hover) !important;
+  --active: var(--background-action-high-fastoche-color17-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color18 {
+  background-color: var(--background-action-high-fastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color18-hover) !important;
+  --active: var(--background-action-high-fastoche-color18-active) !important;
+}
+
+.fastoche-background-action-high--fastoche-color19 {
+  background-color: var(--background-action-high-fastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-color19-hover) !important;
+  --active: var(--background-action-high-fastoche-color19-active) !important;
+}
+
+.fastoche-background-action-high--info {
+  background-color: var(--background-action-high-info) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-info-hover) !important;
+  --active: var(--background-action-high-info-active) !important;
+}
+
+.fastoche-background-action-high--success {
+  background-color: var(--background-action-high-success) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-success-hover) !important;
+  --active: var(--background-action-high-success-active) !important;
+}
+
+.fastoche-background-action-high--warning {
+  background-color: var(--background-action-high-warning) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-warning-hover) !important;
+  --active: var(--background-action-high-warning-active) !important;
+}
+
+.fastoche-background-action-high--error {
+  background-color: var(--background-action-high-error) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-high-error-hover) !important;
+  --active: var(--background-action-high-error-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-primary {
+  background-color: var(--background-action-low-fastoche-primary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-primary-hover) !important;
+  --active: var(--background-action-low-fastoche-primary-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-secondary {
+  background-color: var(--background-action-low-fastoche-secondary) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-secondary-hover) !important;
+  --active: var(--background-action-low-fastoche-secondary-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color3 {
+  background-color: var(--background-action-low-fastoche-color3) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color3-hover) !important;
+  --active: var(--background-action-low-fastoche-color3-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color4 {
+  background-color: var(--background-action-low-fastoche-color4) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color4-hover) !important;
+  --active: var(--background-action-low-fastoche-color4-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color5 {
+  background-color: var(--background-action-low-fastoche-color5) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color5-hover) !important;
+  --active: var(--background-action-low-fastoche-color5-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color6 {
+  background-color: var(--background-action-low-fastoche-color6) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color6-hover) !important;
+  --active: var(--background-action-low-fastoche-color6-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color7 {
+  background-color: var(--background-action-low-fastoche-color7) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color7-hover) !important;
+  --active: var(--background-action-low-fastoche-color7-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color8 {
+  background-color: var(--background-action-low-fastoche-color8) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color8-hover) !important;
+  --active: var(--background-action-low-fastoche-color8-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color9 {
+  background-color: var(--background-action-low-fastoche-color9) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color9-hover) !important;
+  --active: var(--background-action-low-fastoche-color9-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color10 {
+  background-color: var(--background-action-low-fastoche-color10) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color10-hover) !important;
+  --active: var(--background-action-low-fastoche-color10-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color11 {
+  background-color: var(--background-action-low-fastoche-color11) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color11-hover) !important;
+  --active: var(--background-action-low-fastoche-color11-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color12 {
+  background-color: var(--background-action-low-fastoche-color12) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color12-hover) !important;
+  --active: var(--background-action-low-fastoche-color12-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color13 {
+  background-color: var(--background-action-low-fastoche-color13) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color13-hover) !important;
+  --active: var(--background-action-low-fastoche-color13-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color14 {
+  background-color: var(--background-action-low-fastoche-color14) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color14-hover) !important;
+  --active: var(--background-action-low-fastoche-color14-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color15 {
+  background-color: var(--background-action-low-fastoche-color15) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color15-hover) !important;
+  --active: var(--background-action-low-fastoche-color15-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color16 {
+  background-color: var(--background-action-low-fastoche-color16) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color16-hover) !important;
+  --active: var(--background-action-low-fastoche-color16-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color17 {
+  background-color: var(--background-action-low-fastoche-color17) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color17-hover) !important;
+  --active: var(--background-action-low-fastoche-color17-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color18 {
+  background-color: var(--background-action-low-fastoche-color18) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color18-hover) !important;
+  --active: var(--background-action-low-fastoche-color18-active) !important;
+}
+
+.fastoche-background-action-low--fastoche-color19 {
+  background-color: var(--background-action-low-fastoche-color19) !important;
+
+  --idle: transparent;
+  --hover: var(--background-action-low-fastoche-color19-hover) !important;
+  --active: var(--background-action-low-fastoche-color19-active) !important;
+}
+
+.fastoche-text-default--grey {
+  color: var(--text-default-grey) !important;
+}
+
+.fastoche-text-default--info {
+  color: var(--text-default-info) !important;
+}
+
+.fastoche-text-default--success {
+  color: var(--text-default-success) !important;
+}
+
+.fastoche-text-default--warning {
+  color: var(--text-default-warning) !important;
+}
+
+.fastoche-text-default--error {
+  color: var(--text-default-error) !important;
+}
+
+.fastoche-text-title--grey {
+  color: var(--text-title-grey) !important;
+}
+
+.fastoche-text-title--fastoche-primary {
+  color: var(--text-title-fastoche-primary) !important;
+}
+
+.fastoche-text-title--fastoche-secondary {
+  color: var(--text-title-fastoche-secondary) !important;
+}
+
+.fastoche-text-label--grey {
+  color: var(--text-label-grey) !important;
+}
+
+.fastoche-text-label--fastoche-primary {
+  color: var(--text-label-fastoche-primary) !important;
+}
+
+.fastoche-text-label--fastoche-secondary {
+  color: var(--text-label-fastoche-secondary) !important;
+}
+
+.fastoche-text-label--fastoche-color3 {
+  color: var(--text-label-fastoche-color3) !important;
+}
+
+.fastoche-text-label--fastoche-color4 {
+  color: var(--text-label-fastoche-color4) !important;
+}
+
+.fastoche-text-label--fastoche-color5 {
+  color: var(--text-label-fastoche-color5) !important;
+}
+
+.fastoche-text-label--fastoche-color6 {
+  color: var(--text-label-fastoche-color6) !important;
+}
+
+.fastoche-text-label--fastoche-color7 {
+  color: var(--text-label-fastoche-color7) !important;
+}
+
+.fastoche-text-label--fastoche-color8 {
+  color: var(--text-label-fastoche-color8) !important;
+}
+
+.fastoche-text-label--fastoche-color9 {
+  color: var(--text-label-fastoche-color9) !important;
+}
+
+.fastoche-text-label--fastoche-color10 {
+  color: var(--text-label-fastoche-color10) !important;
+}
+
+.fastoche-text-label--fastoche-color11 {
+  color: var(--text-label-fastoche-color11) !important;
+}
+
+.fastoche-text-label--fastoche-color12 {
+  color: var(--text-label-fastoche-color12) !important;
+}
+
+.fastoche-text-label--fastoche-color13 {
+  color: var(--text-label-fastoche-color13) !important;
+}
+
+.fastoche-text-label--fastoche-color14 {
+  color: var(--text-label-fastoche-color14) !important;
+}
+
+.fastoche-text-label--fastoche-color15 {
+  color: var(--text-label-fastoche-color15) !important;
+}
+
+.fastoche-text-label--fastoche-color16 {
+  color: var(--text-label-fastoche-color16) !important;
+}
+
+.fastoche-text-label--fastoche-color17 {
+  color: var(--text-label-fastoche-color17) !important;
+}
+
+.fastoche-text-label--fastoche-color18 {
+  color: var(--text-label-fastoche-color18) !important;
+}
+
+.fastoche-text-label--fastoche-color19 {
+  color: var(--text-label-fastoche-color19) !important;
+}
+
+.fastoche-text-mention--grey {
+  color: var(--text-mention-grey) !important;
+}
+
+.fastoche-text-inverted--grey {
+  color: var(--text-inverted-grey) !important;
+}
+
+.fastoche-text-inverted--fastoche-primary {
+  color: var(--text-inverted-fastoche-primary) !important;
+}
+
+.fastoche-text-inverted--fastoche-secondary {
+  color: var(--text-inverted-fastoche-secondary) !important;
+}
+
+.fastoche-text-inverted--info {
+  color: var(--text-inverted-info) !important;
+}
+
+.fastoche-text-inverted--success {
+  color: var(--text-inverted-success) !important;
+}
+
+.fastoche-text-inverted--warning {
+  color: var(--text-inverted-warning) !important;
+}
+
+.fastoche-text-inverted--error {
+  color: var(--text-inverted-error) !important;
+}
+
+.fastoche-text-inverted--fastoche-color3 {
+  color: var(--text-inverted-fastoche-color3) !important;
+}
+
+.fastoche-text-inverted--fastoche-color4 {
+  color: var(--text-inverted-fastoche-color4) !important;
+}
+
+.fastoche-text-inverted--fastoche-color5 {
+  color: var(--text-inverted-fastoche-color5) !important;
+}
+
+.fastoche-text-inverted--fastoche-color6 {
+  color: var(--text-inverted-fastoche-color6) !important;
+}
+
+.fastoche-text-inverted--fastoche-color7 {
+  color: var(--text-inverted-fastoche-color7) !important;
+}
+
+.fastoche-text-inverted--fastoche-color8 {
+  color: var(--text-inverted-fastoche-color8) !important;
+}
+
+.fastoche-text-inverted--fastoche-color9 {
+  color: var(--text-inverted-fastoche-color9) !important;
+}
+
+.fastoche-text-inverted--fastoche-color10 {
+  color: var(--text-inverted-fastoche-color10) !important;
+}
+
+.fastoche-text-inverted--fastoche-color11 {
+  color: var(--text-inverted-fastoche-color11) !important;
+}
+
+.fastoche-text-inverted--fastoche-color12 {
+  color: var(--text-inverted-fastoche-color12) !important;
+}
+
+.fastoche-text-inverted--fastoche-color13 {
+  color: var(--text-inverted-fastoche-color13) !important;
+}
+
+.fastoche-text-inverted--fastoche-color14 {
+  color: var(--text-inverted-fastoche-color14) !important;
+}
+
+.fastoche-text-inverted--fastoche-color15 {
+  color: var(--text-inverted-fastoche-color15) !important;
+}
+
+.fastoche-text-inverted--fastoche-color16 {
+  color: var(--text-inverted-fastoche-color16) !important;
+}
+
+.fastoche-text-inverted--fastoche-color17 {
+  color: var(--text-inverted-fastoche-color17) !important;
+}
+
+.fastoche-text-inverted--fastoche-color18 {
+  color: var(--text-inverted-fastoche-color18) !important;
+}
+
+.fastoche-text-inverted--fastoche-color19 {
+  color: var(--text-inverted-fastoche-color19) !important;
+}
+
+.fastoche-text-action-high--grey {
+  color: var(--text-action-high-grey) !important;
+}
+
+.fastoche-text-action-high--fastoche-primary {
+  color: var(--text-action-high-fastoche-primary) !important;
+}
+
+.fastoche-text-action-high--fastoche-secondary {
+  color: var(--text-action-high-fastoche-secondary) !important;
+}
+
+.fastoche-text-action-high--fastoche-color3 {
+  color: var(--text-action-high-fastoche-color3) !important;
+}
+
+.fastoche-text-action-high--fastoche-color4 {
+  color: var(--text-action-high-fastoche-color4) !important;
+}
+
+.fastoche-text-action-high--fastoche-color5 {
+  color: var(--text-action-high-fastoche-color5) !important;
+}
+
+.fastoche-text-action-high--fastoche-color6 {
+  color: var(--text-action-high-fastoche-color6) !important;
+}
+
+.fastoche-text-action-high--fastoche-color7 {
+  color: var(--text-action-high-fastoche-color7) !important;
+}
+
+.fastoche-text-action-high--fastoche-color8 {
+  color: var(--text-action-high-fastoche-color8) !important;
+}
+
+.fastoche-text-action-high--fastoche-color9 {
+  color: var(--text-action-high-fastoche-color9) !important;
+}
+
+.fastoche-text-action-high--fastoche-color10 {
+  color: var(--text-action-high-fastoche-color10) !important;
+}
+
+.fastoche-text-action-high--fastoche-color11 {
+  color: var(--text-action-high-fastoche-color11) !important;
+}
+
+.fastoche-text-action-high--fastoche-color12 {
+  color: var(--text-action-high-fastoche-color12) !important;
+}
+
+.fastoche-text-action-high--fastoche-color13 {
+  color: var(--text-action-high-fastoche-color13) !important;
+}
+
+.fastoche-text-action-high--fastoche-color14 {
+  color: var(--text-action-high-fastoche-color14) !important;
+}
+
+.fastoche-text-action-high--fastoche-color15 {
+  color: var(--text-action-high-fastoche-color15) !important;
+}
+
+.fastoche-text-action-high--fastoche-color16 {
+  color: var(--text-action-high-fastoche-color16) !important;
+}
+
+.fastoche-text-action-high--fastoche-color17 {
+  color: var(--text-action-high-fastoche-color17) !important;
+}
+
+.fastoche-text-action-high--fastoche-color18 {
+  color: var(--text-action-high-fastoche-color18) !important;
+}
+
+.fastoche-text-action-high--fastoche-color19 {
+  color: var(--text-action-high-fastoche-color19) !important;
+}
+
+.fastoche-artwork-major--fastoche-primary {
+  fill: var(--artwork-major-fastoche-primary) !important;
+}
+
+.fastoche-artwork-major--fastoche-secondary {
+  fill: var(--artwork-major-fastoche-secondary) !important;
+}
+
+.fastoche-artwork-major--fastoche-color3 {
+  fill: var(--artwork-major-fastoche-color3) !important;
+}
+
+.fastoche-artwork-major--fastoche-color4 {
+  fill: var(--artwork-major-fastoche-color4) !important;
+}
+
+.fastoche-artwork-major--fastoche-color5 {
+  fill: var(--artwork-major-fastoche-color5) !important;
+}
+
+.fastoche-artwork-major--fastoche-color6 {
+  fill: var(--artwork-major-fastoche-color6) !important;
+}
+
+.fastoche-artwork-major--fastoche-color7 {
+  fill: var(--artwork-major-fastoche-color7) !important;
+}
+
+.fastoche-artwork-major--fastoche-color8 {
+  fill: var(--artwork-major-fastoche-color8) !important;
+}
+
+.fastoche-artwork-major--fastoche-color9 {
+  fill: var(--artwork-major-fastoche-color9) !important;
+}
+
+.fastoche-artwork-major--fastoche-color10 {
+  fill: var(--artwork-major-fastoche-color10) !important;
+}
+
+.fastoche-artwork-major--fastoche-color11 {
+  fill: var(--artwork-major-fastoche-color11) !important;
+}
+
+.fastoche-artwork-major--fastoche-color12 {
+  fill: var(--artwork-major-fastoche-color12) !important;
+}
+
+.fastoche-artwork-major--fastoche-color13 {
+  fill: var(--artwork-major-fastoche-color13) !important;
+}
+
+.fastoche-artwork-major--fastoche-color14 {
+  fill: var(--artwork-major-fastoche-color14) !important;
+}
+
+.fastoche-artwork-major--fastoche-color15 {
+  fill: var(--artwork-major-fastoche-color15) !important;
+}
+
+.fastoche-artwork-major--fastoche-color16 {
+  fill: var(--artwork-major-fastoche-color16) !important;
+}
+
+.fastoche-artwork-major--fastoche-color17 {
+  fill: var(--artwork-major-fastoche-color17) !important;
+}
+
+.fastoche-artwork-major--fastoche-color18 {
+  fill: var(--artwork-major-fastoche-color18) !important;
+}
+
+.fastoche-artwork-major--fastoche-color19 {
+  fill: var(--artwork-major-fastoche-color19) !important;
+}
+
+.fastoche-artwork-minor--fastoche-primary {
+  fill: var(--artwork-minor-fastoche-primary) !important;
+}
+
+.fastoche-artwork-minor--fastoche-secondary {
+  fill: var(--artwork-minor-fastoche-secondary) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color3 {
+  fill: var(--artwork-minor-fastoche-color3) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color4 {
+  fill: var(--artwork-minor-fastoche-color4) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color5 {
+  fill: var(--artwork-minor-fastoche-color5) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color6 {
+  fill: var(--artwork-minor-fastoche-color6) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color7 {
+  fill: var(--artwork-minor-fastoche-color7) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color8 {
+  fill: var(--artwork-minor-fastoche-color8) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color9 {
+  fill: var(--artwork-minor-fastoche-color9) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color10 {
+  fill: var(--artwork-minor-fastoche-color10) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color11 {
+  fill: var(--artwork-minor-fastoche-color11) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color12 {
+  fill: var(--artwork-minor-fastoche-color12) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color13 {
+  fill: var(--artwork-minor-fastoche-color13) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color14 {
+  fill: var(--artwork-minor-fastoche-color14) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color15 {
+  fill: var(--artwork-minor-fastoche-color15) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color16 {
+  fill: var(--artwork-minor-fastoche-color16) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color17 {
+  fill: var(--artwork-minor-fastoche-color17) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color18 {
+  fill: var(--artwork-minor-fastoche-color18) !important;
+}
+
+.fastoche-artwork-minor--fastoche-color19 {
+  fill: var(--artwork-minor-fastoche-color19) !important;
+}
+
+.fastoche-artwork-decorative--grey {
+  fill: var(--artwork-decorative-grey) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-primary {
+  fill: var(--artwork-decorative-fastoche-primary) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-secondary {
+  fill: var(--artwork-decorative-fastoche-secondary) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color3 {
+  fill: var(--artwork-decorative-fastoche-color3) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color4 {
+  fill: var(--artwork-decorative-fastoche-color4) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color5 {
+  fill: var(--artwork-decorative-fastoche-color5) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color6 {
+  fill: var(--artwork-decorative-fastoche-color6) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color7 {
+  fill: var(--artwork-decorative-fastoche-color7) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color8 {
+  fill: var(--artwork-decorative-fastoche-color8) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color9 {
+  fill: var(--artwork-decorative-fastoche-color9) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color10 {
+  fill: var(--artwork-decorative-fastoche-color10) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color11 {
+  fill: var(--artwork-decorative-fastoche-color11) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color12 {
+  fill: var(--artwork-decorative-fastoche-color12) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color13 {
+  fill: var(--artwork-decorative-fastoche-color13) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color14 {
+  fill: var(--artwork-decorative-fastoche-color14) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color15 {
+  fill: var(--artwork-decorative-fastoche-color15) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color16 {
+  fill: var(--artwork-decorative-fastoche-color16) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color17 {
+  fill: var(--artwork-decorative-fastoche-color17) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color18 {
+  fill: var(--artwork-decorative-fastoche-color18) !important;
+}
+
+.fastoche-artwork-decorative--fastoche-color19 {
+  fill: var(--artwork-decorative-fastoche-color19) !important;
+}
+
+.fastoche-artwork-background--grey {
+  fill: var(--artwork-background-grey) !important;
+}
+
+.fastoche-artwork-background--fastoche-primary {
+  fill: var(--artwork-background-fastoche-primary) !important;
+}
+
+.fastoche-artwork-background--fastoche-secondary {
+  fill: var(--artwork-background-fastoche-secondary) !important;
+}
+
+.fastoche-artwork-background--fastoche-color3 {
+  fill: var(--artwork-background-fastoche-color3) !important;
+}
+
+.fastoche-artwork-background--fastoche-color4 {
+  fill: var(--artwork-background-fastoche-color4) !important;
+}
+
+.fastoche-artwork-background--fastoche-color5 {
+  fill: var(--artwork-background-fastoche-color5) !important;
+}
+
+.fastoche-artwork-background--fastoche-color6 {
+  fill: var(--artwork-background-fastoche-color6) !important;
+}
+
+.fastoche-artwork-background--fastoche-color7 {
+  fill: var(--artwork-background-fastoche-color7) !important;
+}
+
+.fastoche-artwork-background--fastoche-color8 {
+  fill: var(--artwork-background-fastoche-color8) !important;
+}
+
+.fastoche-artwork-background--fastoche-color9 {
+  fill: var(--artwork-background-fastoche-color9) !important;
+}
+
+.fastoche-artwork-background--fastoche-color10 {
+  fill: var(--artwork-background-fastoche-color10) !important;
+}
+
+.fastoche-artwork-background--fastoche-color11 {
+  fill: var(--artwork-background-fastoche-color11) !important;
+}
+
+.fastoche-artwork-background--fastoche-color12 {
+  fill: var(--artwork-background-fastoche-color12) !important;
+}
+
+.fastoche-artwork-background--fastoche-color13 {
+  fill: var(--artwork-background-fastoche-color13) !important;
+}
+
+.fastoche-artwork-background--fastoche-color14 {
+  fill: var(--artwork-background-fastoche-color14) !important;
+}
+
+.fastoche-artwork-background--fastoche-color15 {
+  fill: var(--artwork-background-fastoche-color15) !important;
+}
+
+.fastoche-artwork-background--fastoche-color16 {
+  fill: var(--artwork-background-fastoche-color16) !important;
+}
+
+.fastoche-artwork-background--fastoche-color17 {
+  fill: var(--artwork-background-fastoche-color17) !important;
+}
+
+.fastoche-artwork-background--fastoche-color18 {
+  fill: var(--artwork-background-fastoche-color18) !important;
+}
+
+.fastoche-artwork-background--fastoche-color19 {
+  fill: var(--artwork-background-fastoche-color19) !important;
+}
+
+.fastoche-artwork-motif--grey {
+  fill: var(--artwork-motif-grey) !important;
+}
+
+.fastoche-artwork-motif--fastoche-primary {
+  fill: var(--artwork-motif-fastoche-primary) !important;
+}
+
+.fastoche-artwork-motif--fastoche-secondary {
+  fill: var(--artwork-motif-fastoche-secondary) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color3 {
+  fill: var(--artwork-motif-fastoche-color3) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color4 {
+  fill: var(--artwork-motif-fastoche-color4) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color5 {
+  fill: var(--artwork-motif-fastoche-color5) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color6 {
+  fill: var(--artwork-motif-fastoche-color6) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color7 {
+  fill: var(--artwork-motif-fastoche-color7) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color8 {
+  fill: var(--artwork-motif-fastoche-color8) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color9 {
+  fill: var(--artwork-motif-fastoche-color9) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color10 {
+  fill: var(--artwork-motif-fastoche-color10) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color11 {
+  fill: var(--artwork-motif-fastoche-color11) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color12 {
+  fill: var(--artwork-motif-fastoche-color12) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color13 {
+  fill: var(--artwork-motif-fastoche-color13) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color14 {
+  fill: var(--artwork-motif-fastoche-color14) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color15 {
+  fill: var(--artwork-motif-fastoche-color15) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color16 {
+  fill: var(--artwork-motif-fastoche-color16) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color17 {
+  fill: var(--artwork-motif-fastoche-color17) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color18 {
+  fill: var(--artwork-motif-fastoche-color18) !important;
+}
+
+.fastoche-artwork-motif--fastoche-color19 {
+  fill: var(--artwork-motif-fastoche-color19) !important;
+}

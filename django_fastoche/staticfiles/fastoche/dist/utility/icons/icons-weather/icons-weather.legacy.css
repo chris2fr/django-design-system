@@ -1,0 +1,64 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-icon-cloudy-2-fill::before,
+  .fastoche-icon-cloudy-2-fill::after {
+    background-image: url("../../../icons/weather/cloudy-2-fill.svg");
+  }
+
+  .fastoche-icon-cloudy-2-line::before,
+  .fastoche-icon-cloudy-2-line::after {
+    background-image: url("../../../icons/weather/cloudy-2-line.svg");
+  }
+
+  .fastoche-icon-flashlight-fill::before,
+  .fastoche-icon-flashlight-fill::after {
+    background-image: url("../../../icons/weather/flashlight-fill.svg");
+  }
+
+  .fastoche-icon-flashlight-line::before,
+  .fastoche-icon-flashlight-line::after {
+    background-image: url("../../../icons/weather/flashlight-line.svg");
+  }
+
+  .fastoche-icon-moon-fill::before,
+  .fastoche-icon-moon-fill::after {
+    background-image: url("../../../icons/weather/moon-fill.svg");
+  }
+
+  .fastoche-icon-moon-line::before,
+  .fastoche-icon-moon-line::after {
+    background-image: url("../../../icons/weather/moon-line.svg");
+  }
+
+  .fastoche-icon-sun-fill::before,
+  .fastoche-icon-sun-fill::after {
+    background-image: url("../../../icons/weather/sun-fill.svg");
+  }
+
+  .fastoche-icon-sun-line::before,
+  .fastoche-icon-sun-line::after {
+    background-image: url("../../../icons/weather/sun-line.svg");
+  }
+
+  .fastoche-fi-flashlight-fill::before {
+    background-image: url("../../../icons/weather/flashlight-fill.svg");
+  }
+
+  .fastoche-fi-flashlight-line::before {
+    background-image: url("../../../icons/weather/flashlight-line.svg");
+  }
+}

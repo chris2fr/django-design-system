@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n static %}
 <header role="banner" class="fastoche-header">
   <div class="fastoche-header__body">
     <div class="fastoche-container">
@@ -9,9 +9,7 @@
               {% block brand %}
                 {% translate "Home page" as home_page %}
                 <a href="/" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
-                  <p class="fastoche-logo">
-                    {{ SITE_CONFIG.header_brand_html|default_if_none:"république<br />française" | safe }}
-                  </p>
+                  <img src="{% static 'fastoche/dist/artwork/logo/logo.svg' %} class="fastoche-logo" alt="logo" />
                 </a>
               {% endblock brand %}
             </div>

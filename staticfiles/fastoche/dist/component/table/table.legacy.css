@@ -1,0 +1,426 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.fastoche-table {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--fastoche-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.fastoche-table--bordered tbody tr {
+  /* Style bordered, enleve le style even/odd  */
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif placement caption
+  */
+  .fastoche-table[data-fastoche-js-table=true] caption {
+    position: relative;
+  }
+
+  .fastoche-table caption {
+    color: #161616;
+  }
+
+  .fastoche-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .fastoche-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .fastoche-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .fastoche-table--fastoche-color3 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color3 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color3 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color3.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color4 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color4 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color4 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color4.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color5 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color5 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color5 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color5.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color6 thead {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color6 tbody {
+    background-color: hsl(249, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color6 tbody tr:nth-child(even) {
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color6.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color7 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color7 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color7 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color7.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color8 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color8 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color8 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color8.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color9 thead {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color9 tbody {
+    background-color: hsl(34, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color9 tbody tr:nth-child(even) {
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color9.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color10 thead {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color10 tbody {
+    background-color: hsl(100, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color10 tbody tr:nth-child(even) {
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color10.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color11 thead {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color11 tbody {
+    background-color: hsl(105, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color11 tbody tr:nth-child(even) {
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color11.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color12 thead {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color12 tbody {
+    background-color: hsl(115, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color12 tbody tr:nth-child(even) {
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color12.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color13 thead {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color13 tbody {
+    background-color: hsl(135, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color13 tbody tr:nth-child(even) {
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color13.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color14 thead {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color14 tbody {
+    background-color: hsl(145, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color14 tbody tr:nth-child(even) {
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color14.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color15 thead {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color15 tbody {
+    background-color: hsl(155, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color15 tbody tr:nth-child(even) {
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color15.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color16 thead {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color16 tbody {
+    background-color: hsl(165, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color16 tbody tr:nth-child(even) {
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color16.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color17 thead {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color17 tbody {
+    background-color: hsl(175, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color17 tbody tr:nth-child(even) {
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color17.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color18 thead {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color18 tbody {
+    background-color: hsl(185, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color18 tbody tr:nth-child(even) {
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color18.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+  }
+
+  .fastoche-table--fastoche-color19 thead {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color19 tbody {
+    background-color: hsl(195, 80%, 98%);
+  }
+
+  .fastoche-table--fastoche-color19 tbody tr:nth-child(even) {
+    background-color: hsl(195, 80%, 96%);
+  }
+
+  .fastoche-table--fastoche-color19.fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+  }
+
+  .fastoche-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

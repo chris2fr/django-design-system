@@ -1,0 +1,210 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-icon-bluetooth-fill::before,
+  .fastoche-icon-bluetooth-fill::after {
+    background-image: url("../../../icons/device/bluetooth-fill.svg");
+  }
+
+  .fastoche-icon-bluetooth-line::before,
+  .fastoche-icon-bluetooth-line::after {
+    background-image: url("../../../icons/device/bluetooth-line.svg");
+  }
+
+  .fastoche-icon-computer-fill::before,
+  .fastoche-icon-computer-fill::after {
+    background-image: url("../../../icons/device/computer-fill.svg");
+  }
+
+  .fastoche-icon-computer-line::before,
+  .fastoche-icon-computer-line::after {
+    background-image: url("../../../icons/device/computer-line.svg");
+  }
+
+  .fastoche-icon-dashboard-3-fill::before,
+  .fastoche-icon-dashboard-3-fill::after {
+    background-image: url("../../../icons/device/dashboard-3-fill.svg");
+  }
+
+  .fastoche-icon-dashboard-3-line::before,
+  .fastoche-icon-dashboard-3-line::after {
+    background-image: url("../../../icons/device/dashboard-3-line.svg");
+  }
+
+  .fastoche-icon-database-fill::before,
+  .fastoche-icon-database-fill::after {
+    background-image: url("../../../icons/device/database-fill.svg");
+  }
+
+  .fastoche-icon-database-line::before,
+  .fastoche-icon-database-line::after {
+    background-image: url("../../../icons/device/database-line.svg");
+  }
+
+  .fastoche-icon-device-fill::before,
+  .fastoche-icon-device-fill::after {
+    background-image: url("../../../icons/device/device-fill.svg");
+  }
+
+  .fastoche-icon-device-line::before,
+  .fastoche-icon-device-line::after {
+    background-image: url("../../../icons/device/device-line.svg");
+  }
+
+  .fastoche-icon-hard-drive-2-fill::before,
+  .fastoche-icon-hard-drive-2-fill::after {
+    background-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .fastoche-icon-hard-drive-2-line::before,
+  .fastoche-icon-hard-drive-2-line::after {
+    background-image: url("../../../icons/device/hard-drive-2-line.svg");
+  }
+
+  .fastoche-icon-mac-fill::before,
+  .fastoche-icon-mac-fill::after {
+    background-image: url("../../../icons/device/mac-fill.svg");
+  }
+
+  .fastoche-icon-mac-line::before,
+  .fastoche-icon-mac-line::after {
+    background-image: url("../../../icons/device/mac-line.svg");
+  }
+
+  .fastoche-icon-phone-fill::before,
+  .fastoche-icon-phone-fill::after {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .fastoche-icon-phone-line::before,
+  .fastoche-icon-phone-line::after {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .fastoche-icon-qr-code-fill::before,
+  .fastoche-icon-qr-code-fill::after {
+    background-image: url("../../../icons/device/qr-code-fill.svg");
+  }
+
+  .fastoche-icon-qr-code-line::before,
+  .fastoche-icon-qr-code-line::after {
+    background-image: url("../../../icons/device/qr-code-line.svg");
+  }
+
+  .fastoche-icon-rss-fill::before,
+  .fastoche-icon-rss-fill::after {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .fastoche-icon-rss-line::before,
+  .fastoche-icon-rss-line::after {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .fastoche-icon-save-3-fill::before,
+  .fastoche-icon-save-3-fill::after {
+    background-image: url("../../../icons/device/save-3-fill.svg");
+  }
+
+  .fastoche-icon-save-3-line::before,
+  .fastoche-icon-save-3-line::after {
+    background-image: url("../../../icons/device/save-3-line.svg");
+  }
+
+  .fastoche-icon-save-fill::before,
+  .fastoche-icon-save-fill::after {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .fastoche-icon-save-line::before,
+  .fastoche-icon-save-line::after {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+
+  .fastoche-icon-server-fill::before,
+  .fastoche-icon-server-fill::after {
+    background-image: url("../../../icons/device/server-fill.svg");
+  }
+
+  .fastoche-icon-server-line::before,
+  .fastoche-icon-server-line::after {
+    background-image: url("../../../icons/device/server-line.svg");
+  }
+
+  .fastoche-icon-smartphone-fill::before,
+  .fastoche-icon-smartphone-fill::after {
+    background-image: url("../../../icons/device/smartphone-fill.svg");
+  }
+
+  .fastoche-icon-smartphone-line::before,
+  .fastoche-icon-smartphone-line::after {
+    background-image: url("../../../icons/device/smartphone-line.svg");
+  }
+
+  .fastoche-icon-tablet-fill::before,
+  .fastoche-icon-tablet-fill::after {
+    background-image: url("../../../icons/device/tablet-fill.svg");
+  }
+
+  .fastoche-icon-tablet-line::before,
+  .fastoche-icon-tablet-line::after {
+    background-image: url("../../../icons/device/tablet-line.svg");
+  }
+
+  .fastoche-icon-tv-fill::before,
+  .fastoche-icon-tv-fill::after {
+    background-image: url("../../../icons/device/tv-fill.svg");
+  }
+
+  .fastoche-icon-tv-line::before,
+  .fastoche-icon-tv-line::after {
+    background-image: url("../../../icons/device/tv-line.svg");
+  }
+
+  .fastoche-icon-wifi-fill::before,
+  .fastoche-icon-wifi-fill::after {
+    background-image: url("../../../icons/device/wifi-fill.svg");
+  }
+
+  .fastoche-icon-wifi-line::before,
+  .fastoche-icon-wifi-line::after {
+    background-image: url("../../../icons/device/wifi-line.svg");
+  }
+
+  .fastoche-fi-phone-fill::before {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .fastoche-fi-phone-line::before {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .fastoche-fi-rss-fill::before {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .fastoche-fi-rss-line::before {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .fastoche-fi-save-fill::before {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .fastoche-fi-save-line::before {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+}

@@ -1,0 +1,122 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .fastoche-select-group--valid label,
+  .fastoche-input-group--valid label,
+  .fastoche-range-group--valid label,
+  .fastoche-upload-group--valid label {
+    color: #18753c;
+  }
+
+  .fastoche-select-group--error label,
+  .fastoche-input-group--error label,
+  .fastoche-range-group--error label,
+  .fastoche-upload-group--error label {
+    color: #ce0500;
+  }
+
+  .fastoche-select-group--info label,
+  .fastoche-input-group--info label,
+  .fastoche-range-group--info label,
+  .fastoche-upload-group--info label {
+    color: #0063cb;
+  }
+
+  .fastoche-select-group--disabled label,
+  .fastoche-select-group--disabled .fastoche-hint-text,
+  .fastoche-input-group--disabled label,
+  .fastoche-input-group--disabled .fastoche-hint-text,
+  .fastoche-range-group--disabled label,
+  .fastoche-range-group--disabled .fastoche-hint-text,
+  .fastoche-upload-group--disabled label,
+  .fastoche-upload-group--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-label {
+    color: #161616;
+  }
+
+  .fastoche-label--error {
+    color: #ce0500;
+  }
+
+  .fastoche-label--success {
+    color: #18753c;
+  }
+
+  .fastoche-label--info {
+    color: #0063cb;
+  }
+
+  .fastoche-label--disabled,
+  .fastoche-label--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-hint-text,
+  .fastoche-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .fastoche-message--error {
+    color: #ce0500;
+  }
+
+  .fastoche-message--valid {
+    color: #18753c;
+  }
+
+  .fastoche-message--info {
+    color: #0063cb;
+  }
+
+  .fastoche-fieldset:disabled .fastoche-label,
+  .fastoche-fieldset:disabled .fastoche-hint-text,
+  .fastoche-fieldset:disabled .fastoche-fieldset__legend {
+    color: #929292;
+  }
+
+  .fastoche-fieldset input:disabled + label,
+  .fastoche-fieldset input:disabled + label .fastoche-hint-text,
+  .fastoche-fieldset input:disabled + label + .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-fieldset__legend {
+    color: #161616;
+  }
+
+  .fastoche-fieldset--error,
+  .fastoche-fieldset--error .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .fastoche-fieldset--error .fastoche-fieldset__legend,
+  .fastoche-fieldset--error .fastoche-label {
+    color: #ce0500;
+  }
+
+  .fastoche-fieldset--valid,
+  .fastoche-fieldset--valid .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .fastoche-fieldset--valid .fastoche-fieldset__legend,
+  .fastoche-fieldset--valid .fastoche-label {
+    color: #18753c;
+  }
+
+  .fastoche-fieldset--info,
+  .fastoche-fieldset--info .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .fastoche-fieldset--info .fastoche-fieldset__legend,
+  .fastoche-fieldset--info .fastoche-label {
+    color: #0063cb;
+  }
+}

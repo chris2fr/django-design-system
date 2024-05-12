@@ -1,0 +1,166 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-card--no-icon::after {
+    content: none;
+  }
+
+  .fastoche-card__title,
+  .fastoche-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .fastoche-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .fastoche-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-card--download .fastoche-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .fastoche-card--download .fastoche-card__header {
+    padding-top: 56.25%;
+  }
+
+  .fastoche-card--download .fastoche-card__header .fastoche-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .fastoche-card.fastoche-enlarge-link .fastoche-card__title a {
+    text-decoration: none;
+  }
+
+  .fastoche-card.fastoche-enlarge-link .fastoche-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .fastoche-card--sm.fastoche-enlarge-link .fastoche-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-card--sm .fastoche-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-card--lg.fastoche-enlarge-link .fastoche-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fastoche-card--lg .fastoche-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-card > .fastoche-card__img {
+    flex-shrink: 0;
+  }
+
+  .fastoche-card {
+    background-color: #fff;
+  }
+
+  .fastoche-card:not(.fastoche-card--no-border):not(.fastoche-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .fastoche-card--shadow.fastoche-card--grey {
+    background-color: #eee;
+  }
+
+  .fastoche-card--no-background {
+    background-color: transparent;
+  }
+
+  .fastoche-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-card--download:not(.fastoche-card--no-background) .fastoche-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .fastoche-card__detail {
+    color: #666;
+  }
+
+  .fastoche-card__title {
+    color: #161616;
+  }
+
+  .fastoche-card__title a[href] {
+    color: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-card__title:disabled,
+  a.fastoche-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .fastoche-card--download .fastoche-card__header {
+    padding-top: 0;
+  }
+
+  .fastoche-card--download .fastoche-card__body,
+  .fastoche-card--horizontal .fastoche-card__body,
+  .fastoche-card--horizontal-half .fastoche-card__body,
+  .fastoche-card--horizontal-tier .fastoche-card__body {
+    flex-basis: 100%;
+  }
+}

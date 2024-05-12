@@ -1,0 +1,26 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .fastoche-stepper__title {
+    color: #161616;
+  }
+
+  .fastoche-stepper__state {
+    color: #666;
+  }
+
+  .fastoche-stepper__details {
+    color: #666;
+  }
+
+  .fastoche-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(122, 75%, 25%) 0, hsl(122, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .fastoche-stepper__state,
+  .fastoche-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

@@ -1,0 +1,174 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .fastoche-artwork-decorative {
+    fill: hsl(122, 80%, 96%);
+  }
+
+  .fastoche-artwork-minor {
+    fill: hsl(212, 85%, 25%);
+  }
+
+  .fastoche-artwork-major {
+    fill: hsl(122, 75%, 25%);
+  }
+
+  .fastoche-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .fastoche-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .fastoche-artwork--fastoche-color3 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color4 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color5 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color6 .fastoche-artwork-minor {
+    fill: hsl(249, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color7 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color8 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color9 .fastoche-artwork-minor {
+    fill: hsl(34, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color10 .fastoche-artwork-minor {
+    fill: hsl(100, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color11 .fastoche-artwork-minor {
+    fill: hsl(105, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color12 .fastoche-artwork-minor {
+    fill: hsl(115, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color13 .fastoche-artwork-minor {
+    fill: hsl(135, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color14 .fastoche-artwork-minor {
+    fill: hsl(145, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color15 .fastoche-artwork-minor {
+    fill: hsl(155, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color16 .fastoche-artwork-minor {
+    fill: hsl(165, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color17 .fastoche-artwork-minor {
+    fill: hsl(175, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color18 .fastoche-artwork-minor {
+    fill: hsl(185, 75%, 25%);
+  }
+
+  .fastoche-artwork--fastoche-color19 .fastoche-artwork-minor {
+    fill: hsl(195, 75%, 25%);
+  }
+
+  [disabled] .fastoche-artwork * {
+    fill: #929292;
+  }
+
+  .fastoche-h6,
+  .fastoche-h5,
+  .fastoche-h4,
+  .fastoche-h3,
+  .fastoche-h2,
+  .fastoche-h1,
+  .fastoche-display-xs,
+  .fastoche-display-sm,
+  .fastoche-display-md,
+  .fastoche-display-lg,
+  .fastoche-display-xl {
+    color: #161616;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-hr-or::before,
+  .fastoche-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .fastoche-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-no-print {
+    display: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .fastoche-text--sm,
+  .fastoche-text--xs {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    margin: var(--text-spacing);
+  }
+}

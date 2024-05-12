@@ -1,0 +1,83 @@
+/*!
+ * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-icon-cloudy-2-fill::before,
+.fastoche-icon-cloudy-2-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/cloudy-2-fill.svg");
+  mask-image: url("../../../icons/weather/cloudy-2-fill.svg");
+}
+
+.fastoche-icon-cloudy-2-line::before,
+.fastoche-icon-cloudy-2-line::after {
+  -webkit-mask-image: url("../../../icons/weather/cloudy-2-line.svg");
+  mask-image: url("../../../icons/weather/cloudy-2-line.svg");
+}
+
+.fastoche-icon-flashlight-fill::before,
+.fastoche-icon-flashlight-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../../icons/weather/flashlight-fill.svg");
+}
+
+.fastoche-icon-flashlight-line::before,
+.fastoche-icon-flashlight-line::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-line.svg");
+  mask-image: url("../../../icons/weather/flashlight-line.svg");
+}
+
+.fastoche-icon-moon-fill::before,
+.fastoche-icon-moon-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/moon-fill.svg");
+  mask-image: url("../../../icons/weather/moon-fill.svg");
+}
+
+.fastoche-icon-moon-line::before,
+.fastoche-icon-moon-line::after {
+  -webkit-mask-image: url("../../../icons/weather/moon-line.svg");
+  mask-image: url("../../../icons/weather/moon-line.svg");
+}
+
+.fastoche-icon-sun-fill::before,
+.fastoche-icon-sun-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/sun-fill.svg");
+  mask-image: url("../../../icons/weather/sun-fill.svg");
+}
+
+.fastoche-icon-sun-line::before,
+.fastoche-icon-sun-line::after {
+  -webkit-mask-image: url("../../../icons/weather/sun-line.svg");
+  mask-image: url("../../../icons/weather/sun-line.svg");
+}
+
+.fastoche-fi-flashlight-fill::before,
+.fastoche-fi-flashlight-fill::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../../icons/weather/flashlight-fill.svg");
+}
+
+.fastoche-fi-flashlight-line::before,
+.fastoche-fi-flashlight-line::after {
+  -webkit-mask-image: url("../../../icons/weather/flashlight-line.svg");
+  mask-image: url("../../../icons/weather/flashlight-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}
