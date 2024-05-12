@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -796,28 +796,28 @@
   .fastoche-badge.fastoche-badge--info::after,
   .fastoche-badge--sm.fastoche-badge--info::before,
   .fastoche-badge--sm.fastoche-badge--info::after {
-    background-image: url("../icons/system/fastoche--info-fill.svg");
+    background-image: url("../icons/system/fr--info-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--success::before,
   .fastoche-badge.fastoche-badge--success::after,
   .fastoche-badge--sm.fastoche-badge--success::before,
   .fastoche-badge--sm.fastoche-badge--success::after {
-    background-image: url("../icons/system/fastoche--success-fill.svg");
+    background-image: url("../icons/system/fr--success-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--error::before,
   .fastoche-badge.fastoche-badge--error::after,
   .fastoche-badge--sm.fastoche-badge--error::before,
   .fastoche-badge--sm.fastoche-badge--error::after {
-    background-image: url("../icons/system/fastoche--error-fill.svg");
+    background-image: url("../icons/system/fr--error-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--warning::before,
   .fastoche-badge.fastoche-badge--warning::after,
   .fastoche-badge--sm.fastoche-badge--warning::before,
   .fastoche-badge--sm.fastoche-badge--warning::after {
-    background-image: url("../icons/system/fastoche--warning-fill.svg");
+    background-image: url("../icons/system/fr--warning-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--new::before,
@@ -1072,7 +1072,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--theme-fill.svg");
+    background-image: url("../icons/system/fr--theme-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -1352,7 +1352,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/editor/fastoche--quote-line.svg");
+    background-image: url("../icons/editor/fr--quote-line.svg");
     width: 2rem;
     height: 2rem;
   }
@@ -1502,7 +1502,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--error-fill.svg");
+    background-image: url("../icons/system/fr--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -1512,7 +1512,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--success-fill.svg");
+    background-image: url("../icons/system/fr--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -1522,7 +1522,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--info-fill.svg");
+    background-image: url("../icons/system/fr--info-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -1644,7 +1644,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--error-fill.svg");
+    background-image: url("../icons/system/fr--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -1654,7 +1654,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--success-fill.svg");
+    background-image: url("../icons/system/fr--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -2096,7 +2096,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+    background-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -2126,7 +2126,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+    background-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -3084,19 +3084,19 @@
   }
 
   .fastoche-alert--info::before {
-    background-image: url("../icons/system/fastoche--info-fill.svg");
+    background-image: url("../icons/system/fr--info-fill.svg");
   }
 
   .fastoche-alert--success::before {
-    background-image: url("../icons/system/fastoche--success-fill.svg");
+    background-image: url("../icons/system/fr--success-fill.svg");
   }
 
   .fastoche-alert--error::before {
-    background-image: url("../icons/system/fastoche--error-fill.svg");
+    background-image: url("../icons/system/fr--error-fill.svg");
   }
 
   .fastoche-alert--warning::before {
-    background-image: url("../icons/system/fastoche--warning-fill.svg");
+    background-image: url("../icons/system/fr--warning-fill.svg");
   }
 
   .fastoche-alert .fastoche-btn--close::before,
@@ -3155,7 +3155,7 @@
   }
 
   .fastoche-notice--info .fastoche-notice__body::before {
-    background-image: url("../icons/system/fastoche--info-fill.svg");
+    background-image: url("../icons/system/fr--info-fill.svg");
     width: 1.5rem;
     height: 1.5rem;
     color: transparent;
@@ -4567,7 +4567,7 @@
   }
 
   .fastoche-follow .fastoche-btn--dailymotion::before {
-    background-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
+    background-image: url("../icons/logo/fr--dailymotion-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--facebook::before {
@@ -4603,7 +4603,7 @@
   }
 
   .fastoche-follow .fastoche-btn--tiktok::before {
-    background-image: url("../icons/logo/fastoche--tiktok-fill.svg");
+    background-image: url("../icons/logo/fr--tiktok-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--twitch::before {

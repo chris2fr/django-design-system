@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @media (min-width: 36em) {
   /*! media sm */
@@ -32,19 +32,19 @@
   }
 
   .fastoche-alert--info::before {
-    background-image: url("../../icons/system/fastoche--info-fill.svg");
+    background-image: url("../../icons/system/fr--info-fill.svg");
   }
 
   .fastoche-alert--success::before {
-    background-image: url("../../icons/system/fastoche--success-fill.svg");
+    background-image: url("../../icons/system/fr--success-fill.svg");
   }
 
   .fastoche-alert--error::before {
-    background-image: url("../../icons/system/fastoche--error-fill.svg");
+    background-image: url("../../icons/system/fr--error-fill.svg");
   }
 
   .fastoche-alert--warning::before {
-    background-image: url("../../icons/system/fastoche--warning-fill.svg");
+    background-image: url("../../icons/system/fr--warning-fill.svg");
   }
 
   .fastoche-alert .fastoche-btn--close::before,

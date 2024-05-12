@@ -1,4 +1,4 @@
-/*! FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
+/*! FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
 
 (function () {
   'use strict';
@@ -69,7 +69,7 @@
   var config = {
     prefix: 'fastoche',
     namespace: 'fastoche',
-    version: '1.11.2'
+    version: '11.2.1'
   };
 
   var LogLevel = function LogLevel (level, light, dark, logger) {

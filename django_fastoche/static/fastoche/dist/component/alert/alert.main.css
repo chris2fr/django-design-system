@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -79,23 +79,23 @@
 }
 
 .fastoche-alert--info::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--info-fill.svg");
-  mask-image: url("../../icons/system/fastoche--info-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../icons/system/fr--info-fill.svg");
 }
 
 .fastoche-alert--success::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--success-fill.svg");
-  mask-image: url("../../icons/system/fastoche--success-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../icons/system/fr--success-fill.svg");
 }
 
 .fastoche-alert--error::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--error-fill.svg");
-  mask-image: url("../../icons/system/fastoche--error-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../icons/system/fr--error-fill.svg");
 }
 
 .fastoche-alert--warning::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--warning-fill.svg");
-  mask-image: url("../../icons/system/fastoche--warning-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--warning-fill.svg");
+  mask-image: url("../../icons/system/fr--warning-fill.svg");
 }
 
 .fastoche-alert--info::before,

@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -200,18 +200,18 @@
 }
 
 .fastoche-message--error::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--error-fill.svg");
-  mask-image: url("../../icons/system/fastoche--error-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../icons/system/fr--error-fill.svg");
 }
 
 .fastoche-message--valid::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--success-fill.svg");
-  mask-image: url("../../icons/system/fastoche--success-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../icons/system/fr--success-fill.svg");
 }
 
 .fastoche-message--info::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--info-fill.svg");
-  mask-image: url("../../icons/system/fastoche--info-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../icons/system/fr--info-fill.svg");
 }
 
 .fastoche-select-group--valid label,
@@ -443,18 +443,18 @@
 }
 
 .fastoche-error-text::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--error-fill.svg");
-  mask-image: url("../../icons/system/fastoche--error-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../icons/system/fr--error-fill.svg");
 }
 
 .fastoche-valid-text::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--success-fill.svg");
-  mask-image: url("../../icons/system/fastoche--success-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../icons/system/fr--success-fill.svg");
 }
 
 .fastoche-info-text::before {
-  -webkit-mask-image: url("../../icons/system/fastoche--info-fill.svg");
-  mask-image: url("../../icons/system/fastoche--info-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../icons/system/fr--info-fill.svg");
 }
 
 .fastoche-error-text {
@@ -514,7 +514,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fastoche--error-fill.svg");
+    background-image: url("../../icons/system/fr--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -524,7 +524,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fastoche--success-fill.svg");
+    background-image: url("../../icons/system/fr--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -534,7 +534,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fastoche--info-fill.svg");
+    background-image: url("../../icons/system/fr--info-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -656,7 +656,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fastoche--error-fill.svg");
+    background-image: url("../../icons/system/fr--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -666,7 +666,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fastoche--success-fill.svg");
+    background-image: url("../../icons/system/fr--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }

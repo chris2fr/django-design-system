@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -26,8 +26,8 @@
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../../icons/editor/fastoche--quote-line.svg");
-  mask-image: url("../../icons/editor/fastoche--quote-line.svg");
+  -webkit-mask-image: url("../../icons/editor/fr--quote-line.svg");
+  mask-image: url("../../icons/editor/fr--quote-line.svg");
   --icon-size: 2rem;
 }
 

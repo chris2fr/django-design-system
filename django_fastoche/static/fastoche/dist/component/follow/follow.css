@@ -1,5 +1,5 @@
 /*!
- * FASTOCHE v1.11.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * FASTOCHE v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -157,8 +157,8 @@
 }
 
 .fastoche-follow .fastoche-btn--dailymotion::before {
-  -webkit-mask-image: url("../../icons/logo/fastoche--dailymotion-fill.svg");
-  mask-image: url("../../icons/logo/fastoche--dailymotion-fill.svg");
+  -webkit-mask-image: url("../../icons/logo/fr--dailymotion-fill.svg");
+  mask-image: url("../../icons/logo/fr--dailymotion-fill.svg");
 }
 
 .fastoche-follow .fastoche-btn--facebook::before {
@@ -202,8 +202,8 @@
 }
 
 .fastoche-follow .fastoche-btn--tiktok::before {
-  -webkit-mask-image: url("../../icons/logo/fastoche--tiktok-fill.svg");
-  mask-image: url("../../icons/logo/fastoche--tiktok-fill.svg");
+  -webkit-mask-image: url("../../icons/logo/fr--tiktok-fill.svg");
+  mask-image: url("../../icons/logo/fr--tiktok-fill.svg");
 }
 
 .fastoche-follow .fastoche-btn--twitch::before {
@@ -542,7 +542,7 @@
   }
 
   .fastoche-follow .fastoche-btn--dailymotion::before {
-    background-image: url("../../icons/logo/fastoche--dailymotion-fill.svg");
+    background-image: url("../../icons/logo/fr--dailymotion-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--facebook::before {
@@ -578,7 +578,7 @@
   }
 
   .fastoche-follow .fastoche-btn--tiktok::before {
-    background-image: url("../../icons/logo/fastoche--tiktok-fill.svg");
+    background-image: url("../../icons/logo/fr--tiktok-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--twitch::before {
