@@ -1,5 +1,5 @@
 """
-ASGI config for django-dsfr project.
+ASGI config for django-fastoche project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

@@ -1,0 +1,62 @@
+{% extends "example_app/base.html" %}
+{% load static fastoche_tags %}
+{% block content %}
+  <h1>
+    Pictogrammes
+  </h1>
+  <div class="fastoche-mb-4w">
+    {% fastoche_summary summary %}
+  </div>
+  <ul>
+    <li>
+      <a class="fastoche-link fastoche-icon-external-link-line fastoche-link--icon-right fastoche-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/pictogramme"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+    <li>
+      <a class="fastoche-link fastoche-icon-external-link-line fastoche-link--icon-right fastoche-link--lg"
+         href="https://main--ds-gouv.netlify.app/example/utility/pictograms/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+  </ul>
+  {% for folder, files in pictograms.items %}
+    <h2 id="{{ folder|slugify }}" tabindex="-1">
+      {{ folder|title }}
+    </h2>
+    <div class="fastoche-grid-row fastoche-grid-row--gutters">
+      {% for file in files %}
+        <div class="fastoche-col-12 fastoche-col-md-3 fastoche-mb-4w">
+          <div class="fastoche-tile fastoche-enlarge-link">
+            <div class="fastoche-tile__body">
+              <div class="fastoche-tile__content">
+                <h3 class="fastoche-tile__title">
+                  <a class="fastoche-tile__link"
+                     href="/static/fastoche/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
+                </h3>
+              </div>
+            </div>
+            <div class="fastoche-tile__header">
+              <div class="fastoche-tile__pictogram">
+                <svg aria-hidden="true"
+                     class="fastoche-artwork"
+                     viewBox="0 0 80 80"
+                     width="80px"
+                     height="80px">
+                  <use class="fastoche-artwork-decorative" href="/static/fastoche/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
+                  <use class="fastoche-artwork-minor" href="/static/fastoche/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
+                  <use class="fastoche-artwork-major" href="/static/fastoche/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock content %}

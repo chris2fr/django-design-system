@@ -1,0 +1,18 @@
+{% extends "example_app/base.html" %}
+{% load static fastoche_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="fastoche-grid-row fastoche-grid-row--gutters fastoche-mb-3w">
+    <div class="fastoche-col-12 fastoche-col-md-4">
+      {% if summary_data %}
+        {% fastoche_summary summary_data %}
+      {% endif %}
+    </div>
+  </div>
+  {{ documentation|safe }}
+{% endblock content %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/fastoche-code.css' %}">
+{% endblock extra_css %}

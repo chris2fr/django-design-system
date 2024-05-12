@@ -871,8 +871,8 @@
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../../icons/system/fr--theme-fill.svg");
-  mask-image: url("../../icons/system/fr--theme-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fastoche--theme-fill.svg");
+  mask-image: url("../../icons/system/fastoche--theme-fill.svg");
   content: "";
 }
 
@@ -1225,7 +1225,7 @@ a.fastoche-btn--team:not([href]),
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/system/fr--theme-fill.svg");
+    background-image: url("../../icons/system/fastoche--theme-fill.svg");
     width: 1rem;
     height: 1rem;
   }

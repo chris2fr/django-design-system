@@ -549,26 +549,26 @@
 
 .fastoche-badge.fastoche-badge--info::before,
 .fastoche-badge--sm.fastoche-badge--info::before {
-  -webkit-mask-image: url("../icons/system/fr--info-fill.svg");
-  mask-image: url("../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../icons/system/fastoche--info-fill.svg");
 }
 
 .fastoche-badge.fastoche-badge--success::before,
 .fastoche-badge--sm.fastoche-badge--success::before {
-  -webkit-mask-image: url("../icons/system/fr--success-fill.svg");
-  mask-image: url("../icons/system/fr--success-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--success-fill.svg");
+  mask-image: url("../icons/system/fastoche--success-fill.svg");
 }
 
 .fastoche-badge.fastoche-badge--error::before,
 .fastoche-badge--sm.fastoche-badge--error::before {
-  -webkit-mask-image: url("../icons/system/fr--error-fill.svg");
-  mask-image: url("../icons/system/fr--error-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--error-fill.svg");
+  mask-image: url("../icons/system/fastoche--error-fill.svg");
 }
 
 .fastoche-badge.fastoche-badge--warning::before,
 .fastoche-badge--sm.fastoche-badge--warning::before {
-  -webkit-mask-image: url("../icons/system/fr--warning-fill.svg");
-  mask-image: url("../icons/system/fr--warning-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--warning-fill.svg");
+  mask-image: url("../icons/system/fastoche--warning-fill.svg");
 }
 
 .fastoche-badge.fastoche-badge--new::before,
@@ -1733,8 +1733,8 @@
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/system/fr--theme-fill.svg");
-  mask-image: url("../icons/system/fr--theme-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--theme-fill.svg");
+  mask-image: url("../icons/system/fastoche--theme-fill.svg");
   content: "";
 }
 
@@ -2034,8 +2034,8 @@ a.fastoche-connect:not([href]) {
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/editor/fr--quote-line.svg");
-  mask-image: url("../icons/editor/fr--quote-line.svg");
+  -webkit-mask-image: url("../icons/editor/fastoche--quote-line.svg");
+  mask-image: url("../icons/editor/fastoche--quote-line.svg");
   --icon-size: 2rem;
 }
 
@@ -2524,18 +2524,18 @@ un padding de 4px et une marge négative en compensation sont mis en place afin 
 }
 
 .fastoche-message--error::before {
-  -webkit-mask-image: url("../icons/system/fr--error-fill.svg");
-  mask-image: url("../icons/system/fr--error-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--error-fill.svg");
+  mask-image: url("../icons/system/fastoche--error-fill.svg");
 }
 
 .fastoche-message--valid::before {
-  -webkit-mask-image: url("../icons/system/fr--success-fill.svg");
-  mask-image: url("../icons/system/fr--success-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--success-fill.svg");
+  mask-image: url("../icons/system/fastoche--success-fill.svg");
 }
 
 .fastoche-message--info::before {
-  -webkit-mask-image: url("../icons/system/fr--info-fill.svg");
-  mask-image: url("../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../icons/system/fastoche--info-fill.svg");
 }
 
 .fastoche-select-group--valid label,
@@ -2767,18 +2767,18 @@ un padding de 4px et une marge négative en compensation sont mis en place afin 
 }
 
 .fastoche-error-text::before {
-  -webkit-mask-image: url("../icons/system/fr--error-fill.svg");
-  mask-image: url("../icons/system/fr--error-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--error-fill.svg");
+  mask-image: url("../icons/system/fastoche--error-fill.svg");
 }
 
 .fastoche-valid-text::before {
-  -webkit-mask-image: url("../icons/system/fr--success-fill.svg");
-  mask-image: url("../icons/system/fr--success-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--success-fill.svg");
+  mask-image: url("../icons/system/fastoche--success-fill.svg");
 }
 
 .fastoche-info-text::before {
-  -webkit-mask-image: url("../icons/system/fr--info-fill.svg");
-  mask-image: url("../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../icons/system/fastoche--info-fill.svg");
 }
 
 .fastoche-error-text {
@@ -4209,8 +4209,8 @@ a.fastoche-link--close:not([href]) {
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
-  mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+  mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
   content: "";
 }
 
@@ -4236,8 +4236,8 @@ a.fastoche-link--close:not([href]) {
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
-  mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+  mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
   content: "";
 }
 
@@ -4385,8 +4385,8 @@ a.fastoche-link--close:not([href]) {
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
-  mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+  mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
   content: "";
 }
 
@@ -4413,8 +4413,8 @@ a.fastoche-link--close:not([href]) {
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
-  mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+  mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
   content: "";
 }
 
@@ -6166,23 +6166,23 @@ a:not([href]).fastoche-tag {
 }
 
 .fastoche-alert--info::before {
-  -webkit-mask-image: url("../icons/system/fr--info-fill.svg");
-  mask-image: url("../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../icons/system/fastoche--info-fill.svg");
 }
 
 .fastoche-alert--success::before {
-  -webkit-mask-image: url("../icons/system/fr--success-fill.svg");
-  mask-image: url("../icons/system/fr--success-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--success-fill.svg");
+  mask-image: url("../icons/system/fastoche--success-fill.svg");
 }
 
 .fastoche-alert--error::before {
-  -webkit-mask-image: url("../icons/system/fr--error-fill.svg");
-  mask-image: url("../icons/system/fr--error-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--error-fill.svg");
+  mask-image: url("../icons/system/fastoche--error-fill.svg");
 }
 
 .fastoche-alert--warning::before {
-  -webkit-mask-image: url("../icons/system/fr--warning-fill.svg");
-  mask-image: url("../icons/system/fr--warning-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--warning-fill.svg");
+  mask-image: url("../icons/system/fastoche--warning-fill.svg");
 }
 
 .fastoche-alert--info::before,
@@ -6324,8 +6324,8 @@ a:not([href]).fastoche-tag {
 }
 
 .fastoche-notice--info .fastoche-notice__body::before {
-  -webkit-mask-image: url("../icons/system/fr--info-fill.svg");
-  mask-image: url("../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../icons/system/fastoche--info-fill.svg");
   content: "";
 }
 
@@ -10997,8 +10997,8 @@ textarea.fastoche-input {
 }
 
 .fastoche-follow .fastoche-btn--dailymotion::before {
-  -webkit-mask-image: url("../icons/logo/fr--dailymotion-fill.svg");
-  mask-image: url("../icons/logo/fr--dailymotion-fill.svg");
+  -webkit-mask-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
+  mask-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
 }
 
 .fastoche-follow .fastoche-btn--facebook::before {
@@ -11042,8 +11042,8 @@ textarea.fastoche-input {
 }
 
 .fastoche-follow .fastoche-btn--tiktok::before {
-  -webkit-mask-image: url("../icons/logo/fr--tiktok-fill.svg");
-  mask-image: url("../icons/logo/fr--tiktok-fill.svg");
+  -webkit-mask-image: url("../icons/logo/fastoche--tiktok-fill.svg");
+  mask-image: url("../icons/logo/fastoche--tiktok-fill.svg");
 }
 
 .fastoche-follow .fastoche-btn--twitch::before {
@@ -13164,8 +13164,8 @@ a.fastoche-password__btn:not([href]) {
     height: var(--icon-size);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-    -webkit-mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
-    mask-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
+    -webkit-mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+    mask-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
     content: "";
   }
 
@@ -13251,8 +13251,8 @@ a.fastoche-password__btn:not([href]) {
     height: var(--icon-size);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-    -webkit-mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
-    mask-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
+    -webkit-mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+    mask-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
     content: "";
   }
 
@@ -14339,28 +14339,28 @@ a.fastoche-password__btn:not([href]) {
   .fastoche-badge.fastoche-badge--info::after,
   .fastoche-badge--sm.fastoche-badge--info::before,
   .fastoche-badge--sm.fastoche-badge--info::after {
-    background-image: url("../icons/system/fr--info-fill.svg");
+    background-image: url("../icons/system/fastoche--info-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--success::before,
   .fastoche-badge.fastoche-badge--success::after,
   .fastoche-badge--sm.fastoche-badge--success::before,
   .fastoche-badge--sm.fastoche-badge--success::after {
-    background-image: url("../icons/system/fr--success-fill.svg");
+    background-image: url("../icons/system/fastoche--success-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--error::before,
   .fastoche-badge.fastoche-badge--error::after,
   .fastoche-badge--sm.fastoche-badge--error::before,
   .fastoche-badge--sm.fastoche-badge--error::after {
-    background-image: url("../icons/system/fr--error-fill.svg");
+    background-image: url("../icons/system/fastoche--error-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--warning::before,
   .fastoche-badge.fastoche-badge--warning::after,
   .fastoche-badge--sm.fastoche-badge--warning::before,
   .fastoche-badge--sm.fastoche-badge--warning::after {
-    background-image: url("../icons/system/fr--warning-fill.svg");
+    background-image: url("../icons/system/fastoche--warning-fill.svg");
   }
 
   .fastoche-badge.fastoche-badge--new::before,
@@ -14615,7 +14615,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--theme-fill.svg");
+    background-image: url("../icons/system/fastoche--theme-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -14895,7 +14895,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/editor/fr--quote-line.svg");
+    background-image: url("../icons/editor/fastoche--quote-line.svg");
     width: 2rem;
     height: 2rem;
   }
@@ -15045,7 +15045,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--error-fill.svg");
+    background-image: url("../icons/system/fastoche--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -15055,7 +15055,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--success-fill.svg");
+    background-image: url("../icons/system/fastoche--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -15065,7 +15065,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--info-fill.svg");
+    background-image: url("../icons/system/fastoche--info-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -15187,7 +15187,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--error-fill.svg");
+    background-image: url("../icons/system/fastoche--error-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -15197,7 +15197,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--success-fill.svg");
+    background-image: url("../icons/system/fastoche--success-fill.svg");
     width: 1rem;
     height: 1rem;
   }
@@ -15639,7 +15639,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--arrow-left-s-first-line.svg");
+    background-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -15669,7 +15669,7 @@ a.fastoche-password__btn:not([href]) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../icons/system/fr--arrow-right-s-last-line.svg");
+    background-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -16627,19 +16627,19 @@ a.fastoche-password__btn:not([href]) {
   }
 
   .fastoche-alert--info::before {
-    background-image: url("../icons/system/fr--info-fill.svg");
+    background-image: url("../icons/system/fastoche--info-fill.svg");
   }
 
   .fastoche-alert--success::before {
-    background-image: url("../icons/system/fr--success-fill.svg");
+    background-image: url("../icons/system/fastoche--success-fill.svg");
   }
 
   .fastoche-alert--error::before {
-    background-image: url("../icons/system/fr--error-fill.svg");
+    background-image: url("../icons/system/fastoche--error-fill.svg");
   }
 
   .fastoche-alert--warning::before {
-    background-image: url("../icons/system/fr--warning-fill.svg");
+    background-image: url("../icons/system/fastoche--warning-fill.svg");
   }
 
   .fastoche-alert .fastoche-btn--close::before,
@@ -16698,7 +16698,7 @@ a.fastoche-password__btn:not([href]) {
   }
 
   .fastoche-notice--info .fastoche-notice__body::before {
-    background-image: url("../icons/system/fr--info-fill.svg");
+    background-image: url("../icons/system/fastoche--info-fill.svg");
     width: 1.5rem;
     height: 1.5rem;
     color: transparent;
@@ -18110,7 +18110,7 @@ a.fastoche-password__btn:not([href]) {
   }
 
   .fastoche-follow .fastoche-btn--dailymotion::before {
-    background-image: url("../icons/logo/fr--dailymotion-fill.svg");
+    background-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--facebook::before {
@@ -18146,7 +18146,7 @@ a.fastoche-password__btn:not([href]) {
   }
 
   .fastoche-follow .fastoche-btn--tiktok::before {
-    background-image: url("../icons/logo/fr--tiktok-fill.svg");
+    background-image: url("../icons/logo/fastoche--tiktok-fill.svg");
   }
 
   .fastoche-follow .fastoche-btn--twitch::before {

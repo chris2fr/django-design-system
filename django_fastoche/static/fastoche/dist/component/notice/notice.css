@@ -77,8 +77,8 @@
 }
 
 .fastoche-notice--info .fastoche-notice__body::before {
-  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
-  mask-image: url("../../icons/system/fr--info-fill.svg");
+  -webkit-mask-image: url("../../icons/system/fastoche--info-fill.svg");
+  mask-image: url("../../icons/system/fastoche--info-fill.svg");
   content: "";
 }
 
@@ -120,7 +120,7 @@
   }
 
   .fastoche-notice--info .fastoche-notice__body::before {
-    background-image: url("../../icons/system/fr--info-fill.svg");
+    background-image: url("../../icons/system/fastoche--info-fill.svg");
     width: 1.5rem;
     height: 1.5rem;
     color: transparent;

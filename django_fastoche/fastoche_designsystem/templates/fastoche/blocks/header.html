@@ -1,0 +1,93 @@
+{% extends "fastoche/header.html" %}
+{% load i18n static %}
+{% url 'index' as home_url %}
+
+{% block brand %}
+  {% translate "Home page" as home_page %}
+  <a href="{{ home_url }}"
+     title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+     <img src="{% static 'fastoche/dist/artwork/logo/logo.svg' %}" class="fastoche-logo" alt="logo" />
+
+  </a>
+{% endblock brand %}
+
+{% block service_title %}
+  <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
+    <p class="fastoche-header__service-title">
+      {{ SITE_CONFIG.site_title }}
+      {% if SITE_CONFIG.beta_tag %}
+        <span class="fastoche-badge fastoche-badge--sm fastoche-badge--green-emeraude">BETA</span>
+      {% endif %}
+    </p>
+  </a>
+{% endblock service_title %}
+
+{% block header_tools %}
+  <li>
+    <button class="fastoche-btn--display fastoche-btn"
+            aria-controls="fastoche-theme-modal"
+            data-fastoche-opened="false">
+      {% translate "Display settings" %}
+    </button>
+  </li>
+  {% if "127.0.0.1" in request.get_host %}
+    <li>
+      {% include "fastoche/blocks/language_selector.html" %}
+    </li>
+  {% endif %}
+{% endblock header_tools %}
+
+{# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
+{% block burger_menu %}
+  {% translate "Search" as search_label %}
+  <div class="fastoche-header__navbar">
+    <button class="fastoche-btn--search fastoche-btn"
+            data-fastoche-opened="false"
+            aria-controls="modal-search"
+            id="fastoche-btn-search-mobile"
+            title="{{ search_label }}">
+      {{ search_label }}
+    </button>
+    {% translate "Menu" as menu_label %}
+    <button class="fastoche-btn--menu fastoche-btn"
+            data-fastoche-opened="false"
+            aria-controls="fastoche-menu-mobile"
+            id="fastoche-btn-menu-mobile"
+            title="{{ menu_label }}">
+      {{ menu_label }}
+    </button>
+  </div>
+{% endblock burger_menu %}
+
+{% block main_menu %}
+  {% include "fastoche/blocks/main_menu.html" %}
+{% endblock main_menu %}
+
+{% block header_search %}
+  {% translate "Search" as search_label %}
+  <div class="fastoche-header__search fastoche-modal" id="modal-search">
+    <div class="fastoche-container fastoche-container-lg--fluid">
+      {% translate "Close" as close_label %}
+      <button class="fastoche-btn--close fastoche-btn"
+              aria-controls="modal-search"
+              title="{{ close_label }}">
+        {{ close_label }}
+      </button>
+      <form action="{% url 'page_search' %}" method="get">
+        <div class="fastoche-search-bar" id="search-bar" role="search">
+          <label class="fastoche-label" for="search-bar-input">
+            {{ search_label }}
+          </label>
+          <input class="fastoche-input"
+                 placeholder="{{ search_label }}"
+                 type="search"
+                 id="query"
+                 name="q">
+          <button class="fastoche-btn" title="{{ search_label }}">
+            {{ search_label }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock header_search %}

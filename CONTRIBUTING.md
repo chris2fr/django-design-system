@@ -1,4 +1,4 @@
-# Contribuer à Django-DSFR
+# Contribuer à Django-FASTOCHE
 
 ## Installation en local
 L’installation a été testée sur Ubuntu 22.04 avec Python 3.10 et poetry installé.
@@ -75,16 +75,16 @@ pre-commit update
 Quand une nouvelle version du système de design de l’État est publiée, il est possible de le mettre à jour automatiquement via la commande :
 
 ```{ .bash }
-make update_dsfr
+make update_fastoche
 ```
 
-La commande télécharge la dernière version depuis le dépôt Github, la met dans le répertoire `dsfr/static/dsfr/dist/`, retire des fichiers pour réduire la taille du paquet Python et met à jour les sommes de contrôle d’intégrité dans le fichier `dsfr/checksums`.
+La commande télécharge la dernière version depuis le dépôt Github, la met dans le répertoire `fastoche/static/fastoche/dist/`, retire des fichiers pour réduire la taille du paquet Python et met à jour les sommes de contrôle d’intégrité dans le fichier `fastoche/checksums`.
 
 Une fois la mise à jour faite, il reste à :
 - lancer les tests unitaires avec `make test` ;
 - ouvrir le site de test et vérifier que tous les composants s’affichent toujours bien ;
 - mettre à jour la liste des composants en vérifiant depuis le site du système de design de l’État ;
-- mettre à jour le fichier README.rst pour indiquer la nouvelle version du DSFR ;
+- mettre à jour le fichier README.rst pour indiquer la nouvelle version du FASTOCHE ;
 - mettre à jour les composants si nécessaire, en se basant sur le site du système de design de l’État (ou ouvrir des *issues*)
 
 ## Publication d’une nouvelle version
@@ -97,4 +97,4 @@ La numérotation suit le principe de [versionnage sémantique](https://semver.or
 
 ## Mise à jour de la documentation
 
-De la même manière, lorsqu’une PR est mergée dans la branche `main`, une tâche Github Actions ([deploy-doc.yml]([./.github/workflows/deploy-doc.yml)) met à jour la [documentation statique](https://numerique-gouv.github.io/django-dsfr/) en faisant un export statique du site d’exemple.
+De la même manière, lorsqu’une PR est mergée dans la branche `main`, une tâche Github Actions ([deploy-doc.yml]([./.github/workflows/deploy-doc.yml)) met à jour la [documentation statique](https://numerique-gouv.github.io/django-fastoche/) en faisant un export statique du site d’exemple.

@@ -1,0 +1,142 @@
+{% extends "example_app/base.html" %}
+{% load static fastoche_tags %}
+{% block content %}
+  <h1>
+    Composants du système de design de l’État
+  </h1>
+  <div class="fastoche-tabs">
+    <ul class="fastoche-tabs__list" role="tablist" aria-label="Composants">
+      <li role="presentation">
+        <li role="presentation">
+          <button id="tabpanel-documentation"
+                  class="fastoche-tabs__tab fastoche-icon-book-2-line fastoche-tabs__tab--icon-left"
+                  tabindex="0"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="tabpanel-documentation-panel">
+            Documentation
+          </button>
+        </li>
+        <button id="tabpanel-implemented"
+                class="fastoche-tabs__tab fastoche-icon-checkbox-line fastoche-tabs__tab--icon-left"
+                tabindex="0"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-implemented-panel">
+          Composants implémentés
+        </button>
+      </li>
+      <li role="presentation">
+        <button id="tabpanel-notyetimplemented"
+                class="fastoche-tabs__tab fastoche-icon-close-circle-line fastoche-tabs__tab--icon-left"
+                tabindex="-1"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-notyetimplemented-panel">
+          Composants non implémentés
+        </button>
+      </li>
+      <li role="presentation">
+        <button id="tabpanel-extratags"
+                class="fastoche-tabs__tab fastoche-icon-add-circle-line fastoche-tabs__tab--icon-left"
+                tabindex="-1"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-extratags-panel">
+          Balises supplémentaires
+        </button>
+      </li>
+    </ul>
+    <div id="tabpanel-documentation-panel"
+         class="fastoche-tabs__panel fastoche-tabs__panel--selected"
+         role="tabpanel"
+         aria-labelledby="tabpanel-documentation"
+         tabindex="0">
+      <h2>
+        Documentation
+      </h2>
+      <ul>
+        {{ documentation|safe }}
+      </ul>
+    </div>
+    <div id="tabpanel-implemented-panel"
+         class="fastoche-tabs__panel"
+         role="tabpanel"
+         aria-labelledby="tabpanel-implemented"
+         tabindex="0">
+      <h2>
+        Composants implémentés
+      </h2>
+      <ul>
+        {% for component, data in implemented_components.items %}
+          <li class="fastoche-mb-1w">
+            <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="tabpanel-notyetimplemented-panel"
+         class="fastoche-tabs__panel"
+         role="tabpanel"
+         aria-labelledby="tabpanel-notyetimplemented"
+         tabindex="0">
+      <h2>
+        Composants pas encore implémentés
+      </h2>
+      <ul>
+        {% for component, data in not_yet.items %}
+          <li class="fastoche-mb-1w">
+            {{ data.title }} ({{ component }})
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            —
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            {% if data.note %}
+              <ul>
+                <li>
+                  Note : {{ data.note|safe }}
+                </li>
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+      <h2>
+        Composants qui ne seront pas implémentés
+      </h2>
+      <ul>
+        {% for component, data in wont_be.items %}
+          <li>
+            {{ data.title }} ({{ component }})
+            (<a href="{{ data.doc_url }}" target="_blank" rel="noopener">Documentation <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>
+            —
+            <a href="{{ data.example_url }}" target="_blank" rel="noopener">Exemple <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span></a>)
+            <ul>
+              <li>
+                Raison : {{ data.reason|safe }}
+              </li>
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="tabpanel-extratags-panel"
+         class="fastoche-tabs__panel"
+         role="tabpanel"
+         aria-labelledby="tabpanel-extratags"
+         tabindex="0">
+      <h2>
+        Balises supplémentaires
+      </h2>
+      <ul>
+        {% for component, data in extra_components.items %}
+          <li class="fastoche-mb-1w">
+            <a href="{% url 'page_component' component %}">{{ data.title }} ({{ component }})</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock content %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/fastoche-code.css' %}">
+{% endblock extra_css %}

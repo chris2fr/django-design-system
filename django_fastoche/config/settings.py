@@ -45,10 +45,8 @@ INSTALLED_APPS = [
     "django_fastoche.fastoche_lesgrandsvoisins",
     "django_fastoche.fastoche_designsystem",
     "django_fastoche",
-    "example_app",
     "example_fastoche",
     "django_distill",
-    "dsfr",
 ]
 
 if DJANGO_VERSION < (5, 0):
@@ -80,7 +78,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django_fastoche.context_processors.site_config",
-                # "dsfr.context_processors.site_config",
+                # "fastoche.context_processors.site_config",
             ],
         },
     },
@@ -144,6 +142,7 @@ LANGUAGES = [
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+print(BASE_DIR)
 STATIC_URL = "static/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

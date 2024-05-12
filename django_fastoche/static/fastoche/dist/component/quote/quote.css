@@ -26,8 +26,8 @@
   height: var(--icon-size);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  -webkit-mask-image: url("../../icons/editor/fr--quote-line.svg");
-  mask-image: url("../../icons/editor/fr--quote-line.svg");
+  -webkit-mask-image: url("../../icons/editor/fastoche--quote-line.svg");
+  mask-image: url("../../icons/editor/fastoche--quote-line.svg");
   --icon-size: 2rem;
 }
 
@@ -266,7 +266,7 @@
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../../icons/editor/fr--quote-line.svg");
+    background-image: url("../../icons/editor/fastoche--quote-line.svg");
     width: 2rem;
     height: 2rem;
   }

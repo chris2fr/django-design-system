@@ -10,13 +10,12 @@ urlpatterns = [
     path(
         "favicon.ico",
         RedirectView.as_view(
-            url=staticfiles_storage.url("dsfr/dist/favicon/favicon.ico")
+            url=staticfiles_storage.url("fastoche/dist/favicon/favicon.ico")
         ),
     ),
-    # The "django-dsfr/" prefix is here because this site is deployed as doc on
-    # https://numerique-gouv.github.io/django-dsfr/
+    # The "django-fastoche/" prefix is here because this site is deployed as doc on
+    # https://numerique-gouv.github.io/django-fastoche/
     path("admin/", admin.site.urls),
-    path("django-dsfr/", include("example_app.urls")),
     path("django-fastoche/", include("example_fastoche.urls")),
     path("", RedirectView.as_view(pattern_name="index", permanent=False)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # clean the dist directory
-cd dsfr/static/dsfr/
+cd fastoche/static/fastoche/
 rm dist/* -rf
 
 # Get the latest release
 latest_release="$(
-curl -s https://api.github.com/repos/GouvernementFR/dsfr/releases/latest \
+curl -s https://api.github.com/repos/GouvernementFR/fastoche/releases/latest \
 | grep browser_download_url \
 | sed -re 's/.*: "([^"]+)".*/\1/' \
 )"

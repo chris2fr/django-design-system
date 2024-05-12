@@ -1,0 +1,28 @@
+{% load i18n %}
+<nav role="navigation" class="fastoche-translate fastoche-nav">
+  {% get_current_language as LANGUAGE_CODE %}
+  {% get_available_languages as LANGUAGES %}
+  {% get_language_info_list for LANGUAGES as languages %}
+  <div class="fastoche-nav__item">
+    <button class="fastoche-translate__btn fastoche-btn fastoche-btn--tertiary"
+            aria-controls="translate-menu"
+            aria-expanded="false"
+            title="{% translate 'Select language' %}">
+      {% get_language_info for LANGUAGE_CODE as current_lang %}{{ current_lang.code|upper }}
+      <span class="fastoche-hidden-lg"> - {{ current_lang.name_local |title }}</span>
+    </button>
+    <div class="fastoche-collapse fastoche-translate__menu fastoche-menu" id="translate-menu">
+      <ul class="fastoche-menu__list">
+        {% for language in languages %}
+          <li>
+            <a class="fastoche-translate__language fastoche-nav__link"
+               hreflang="{{ language.code|lower }}"
+               lang="{{ language.code|lower }}"
+               href="#"
+               {% if language.code == LANGUAGE_CODE %}aria-current="true"{% endif %}>{{ language.code|upper }} - {{ language.name_local }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
