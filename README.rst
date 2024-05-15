@@ -7,7 +7,7 @@ Django-Cfran is an attempt at rendering a generique version of Django-CFRAN.
 Documentation
 -------------
 
-It is my conviction that the work done in CFRAN (`"Système de design de l’État français" <https://www.systeme-de-design.gouv.fr/>`_)  and as visible in the Django-CFRAN Python Package (`documentation (in French) <https://numerique-gouv.github.io/django-cfran/>`_) is fantastic. The only problem is that the website design itself is the French Government, and not any lamba website. 
+It is my conviction that the work done in DSFR (`"Système de design de l’État français" <https://www.systeme-de-design.gouv.fr/>`_)  and as visible in the Django-CFRAN Python Package (`documentation (in French) <https://numerique-gouv.github.io/django-cfran/>`_) is fantastic. The only problem is that the website design itself is the French Government, and not any lamba website. 
 
 So, unless you want the French Foriegn Legion knocking at your door (actually, it wouldn't be them, but they are well known enough to illustrate my point), we need the grace to accept a very intentional work to bettering web-mastery, readability and accessibility by all. 
 
