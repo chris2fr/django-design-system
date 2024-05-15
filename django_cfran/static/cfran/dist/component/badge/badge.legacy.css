@@ -1,0 +1,195 @@
+/*!
+ * CFRAN v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-badge::before,
+  .cfran-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-badge.cfran-badge--info::before,
+  .cfran-badge.cfran-badge--info::after,
+  .cfran-badge--sm.cfran-badge--info::before,
+  .cfran-badge--sm.cfran-badge--info::after {
+    background-image: url("../../icons/system/fr--info-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--success::before,
+  .cfran-badge.cfran-badge--success::after,
+  .cfran-badge--sm.cfran-badge--success::before,
+  .cfran-badge--sm.cfran-badge--success::after {
+    background-image: url("../../icons/system/fr--success-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--error::before,
+  .cfran-badge.cfran-badge--error::after,
+  .cfran-badge--sm.cfran-badge--error::before,
+  .cfran-badge--sm.cfran-badge--error::after {
+    background-image: url("../../icons/system/fr--error-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--warning::before,
+  .cfran-badge.cfran-badge--warning::after,
+  .cfran-badge--sm.cfran-badge--warning::before,
+  .cfran-badge--sm.cfran-badge--warning::after {
+    background-image: url("../../icons/system/fr--warning-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--new::before,
+  .cfran-badge.cfran-badge--new::after,
+  .cfran-badge--sm.cfran-badge--new::before,
+  .cfran-badge--sm.cfran-badge--new::after {
+    background-image: url("../../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.cfran-badges-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-badges-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-badges-group,
+  ol.cfran-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .cfran-badge--info {
+    color: #0063cb;
+    background-color: #e8edff;
+  }
+
+  .cfran-badge--error {
+    color: #ce0500;
+    background-color: #ffe9e9;
+  }
+
+  .cfran-badge--success {
+    color: #18753c;
+    background-color: #b8fec9;
+  }
+
+  .cfran-badge--warning {
+    color: #b34000;
+    background-color: #ffe9e6;
+  }
+
+  .cfran-badge--new {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color3 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color4 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color5 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color6 {
+    color: hsl(249, 75%, 25%);
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color7 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color8 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color9 {
+    color: hsl(34, 75%, 25%);
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color10 {
+    color: hsl(100, 75%, 25%);
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color11 {
+    color: hsl(105, 75%, 25%);
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color12 {
+    color: hsl(115, 75%, 25%);
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color13 {
+    color: hsl(135, 75%, 25%);
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color14 {
+    color: hsl(145, 75%, 25%);
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color15 {
+    color: hsl(155, 75%, 25%);
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color16 {
+    color: hsl(165, 75%, 25%);
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color17 {
+    color: hsl(175, 75%, 25%);
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color18 {
+    color: hsl(185, 75%, 25%);
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color19 {
+    color: hsl(195, 75%, 25%);
+    background-color: hsl(195, 80%, 96%);
+  }
+}

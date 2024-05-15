@@ -1,0 +1,207 @@
+/*!
+ * CFRAN v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cfran-message--error::before,
+  .cfran-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-message--valid::before,
+  .cfran-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-message--info::before,
+  .cfran-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-select-group--valid label,
+  .cfran-input-group--valid label,
+  .cfran-range-group--valid label,
+  .cfran-upload-group--valid label {
+    color: #18753c;
+  }
+
+  .cfran-select-group--error label,
+  .cfran-input-group--error label,
+  .cfran-range-group--error label,
+  .cfran-upload-group--error label {
+    color: #ce0500;
+  }
+
+  .cfran-select-group--info label,
+  .cfran-input-group--info label,
+  .cfran-range-group--info label,
+  .cfran-upload-group--info label {
+    color: #0063cb;
+  }
+
+  .cfran-select-group--disabled label,
+  .cfran-select-group--disabled .cfran-hint-text,
+  .cfran-input-group--disabled label,
+  .cfran-input-group--disabled .cfran-hint-text,
+  .cfran-range-group--disabled label,
+  .cfran-range-group--disabled .cfran-hint-text,
+  .cfran-upload-group--disabled label,
+  .cfran-upload-group--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-label {
+    color: #161616;
+  }
+
+  .cfran-label--error {
+    color: #ce0500;
+  }
+
+  .cfran-label--success {
+    color: #18753c;
+  }
+
+  .cfran-label--info {
+    color: #0063cb;
+  }
+
+  .cfran-label--disabled,
+  .cfran-label--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-hint-text,
+  .cfran-message {
+    color: #666;
+  }
+
+  .cfran-message--error {
+    color: #ce0500;
+  }
+
+  .cfran-message--valid {
+    color: #18753c;
+  }
+
+  .cfran-message--info {
+    color: #0063cb;
+  }
+
+  .cfran-fieldset:disabled .cfran-label,
+  .cfran-fieldset:disabled .cfran-hint-text,
+  .cfran-fieldset:disabled .cfran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cfran-fieldset input:disabled + label,
+  .cfran-fieldset input:disabled + label .cfran-hint-text,
+  .cfran-fieldset input:disabled + label + .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-fieldset--error,
+  .cfran-fieldset--error .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, #ce0500, #ce0500);
+  }
+
+  .cfran-fieldset--error .cfran-fieldset__legend,
+  .cfran-fieldset--error .cfran-label {
+    color: #ce0500;
+  }
+
+  .cfran-fieldset--valid,
+  .cfran-fieldset--valid .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, #18753c, #18753c);
+  }
+
+  .cfran-fieldset--valid .cfran-fieldset__legend,
+  .cfran-fieldset--valid .cfran-label {
+    color: #18753c;
+  }
+
+  .cfran-fieldset--info,
+  .cfran-fieldset--info .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, #0063cb, #0063cb);
+  }
+
+  .cfran-fieldset--info .cfran-fieldset__legend,
+  .cfran-fieldset--info .cfran-label {
+    color: #0063cb;
+  }
+
+  .cfran-error-text::before,
+  .cfran-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-valid-text::before,
+  .cfran-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fr--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-error-text {
+    color: #ce0500;
+  }
+
+  .cfran-valid-text {
+    color: #18753c;
+  }
+
+  .cfran-info-text {
+    color: #0063cb;
+  }
+
+  .cfran-fieldset--valid .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #18753c;
+  }
+
+  .cfran-fieldset--error .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #ce0500;
+  }
+
+  .cfran-fieldset--info .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 #0063cb;
+  }
+}

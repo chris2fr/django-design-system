@@ -1,0 +1,102 @@
+/*!
+ * CFRAN v11.2.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(122, 85%, 25%), hsl(122, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout__title {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(249, 75%, 25%), hsl(249, 75%, 25%));
+    background-color: hsl(249, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(34, 75%, 25%), hsl(34, 75%, 25%));
+    background-color: hsl(34, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(100, 75%, 25%), hsl(100, 75%, 25%));
+    background-color: hsl(100, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(105, 75%, 25%), hsl(105, 75%, 25%));
+    background-color: hsl(105, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(115, 75%, 25%), hsl(115, 75%, 25%));
+    background-color: hsl(115, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(135, 75%, 25%), hsl(135, 75%, 25%));
+    background-color: hsl(135, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(145, 75%, 25%), hsl(145, 75%, 25%));
+    background-color: hsl(145, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(155, 75%, 25%), hsl(155, 75%, 25%));
+    background-color: hsl(155, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(165, 75%, 25%), hsl(165, 75%, 25%));
+    background-color: hsl(165, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(175, 75%, 25%), hsl(175, 75%, 25%));
+    background-color: hsl(175, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(185, 75%, 25%), hsl(185, 75%, 25%));
+    background-color: hsl(185, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(195, 75%, 25%), hsl(195, 75%, 25%));
+    background-color: hsl(195, 80%, 96%);
+  }
+}
