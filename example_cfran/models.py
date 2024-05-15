@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 # These are example models to show how form and formset can work
-class FastocheAuthor(models.Model):
+class CfranAuthor(models.Model):
     first_name = models.CharField(
         _("First name"), max_length=250, null=False, blank=False
     )
@@ -15,10 +15,10 @@ class FastocheAuthor(models.Model):
     birth_date = models.DateField(_("Birth date"), null=True, blank=True)
 
     class Meta:
-        verbose_name = _("fastoche FastocheAuthor")
+        verbose_name = _("cfran CfranAuthor")
 
 
-class FastocheGenre(models.Model):
+class CfranGenre(models.Model):
     code = models.CharField(_("Code"), max_length=15, null=False, blank=False)
     designation = models.CharField(
         _("Designation"), max_length=250, null=False, blank=False
@@ -29,7 +29,7 @@ class FastocheGenre(models.Model):
         return str(self.designation)
 
     class Meta:
-        verbose_name = _("fastoche FastocheGenre")
+        verbose_name = _("cfran CfranGenre")
 
 
 BOOK_FORMAT = (
@@ -38,16 +38,16 @@ BOOK_FORMAT = (
 )
 
 
-class FastocheBook(models.Model):
+class CfranBook(models.Model):
     author = models.ForeignKey(
-        FastocheAuthor, on_delete=models.CASCADE, null=False, blank=False
+        CfranAuthor, on_delete=models.CASCADE, null=False, blank=False
     )
     title = models.CharField(_("Title"), max_length=250, null=False, blank=False)
     number_of_pages = models.CharField(_("Number of pages"), max_length=6, blank=True)
     book_format = models.CharField(
         _("Format"), choices=BOOK_FORMAT, max_length=10, blank=True
     )
-    genre = models.ManyToManyField(FastocheGenre)
+    genre = models.ManyToManyField(CfranGenre)
 
     class Meta:
-        verbose_name = _("fastoche FastocheBook")
+        verbose_name = _("cfran CfranBook")

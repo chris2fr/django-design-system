@@ -1,17 +1,17 @@
 {% load i18n %}
-<div class="fastoche-consent-banner">
-  <h2 class="fastoche-h6">
+<div class="cfran-consent-banner">
+  <h2 class="cfran-h6">
     {{ self.title }}
   </h2>
-  <div class="fastoche-consent-banner__content">
-    <p class="fastoche-text--sm">
+  <div class="cfran-consent-banner__content">
+    <p class="cfran-text--sm">
       {{ self.content|safe }}
     </p>
   </div>
-  <ul class="fastoche-consent-banner__buttons fastoche-btns-group fastoche-btns-group--right fastoche-btns-group--inline-reverse fastoche-btns-group--inline-sm">
+  <ul class="cfran-consent-banner__buttons cfran-btns-group cfran-btns-group--right cfran-btns-group--inline-reverse cfran-btns-group--inline-sm">
     <li>
       {% translate "Allow all cookies" as allow_all_cookies %}
-      <button class="fastoche-btn"
+      <button class="cfran-btn"
               id="consent-accept-all"
               title="{{ allow_all_cookies }}">
         {% translate "Accept all" %}
@@ -19,7 +19,7 @@
     </li>
     <li>
       {% translate "Reject all cookies" as reject_all_cookies %}
-      <button class="fastoche-btn"
+      <button class="cfran-btn"
               id="consent-reject-all"
               title="{{ reject_all_cookies }}">
         {% translate "Reject all" %}
@@ -27,10 +27,10 @@
     </li>
     <li>
       {% translate "Customize cookies" as customize_cookies %}
-      <button class="fastoche-btn fastoche-btn--secondary"
+      <button class="cfran-btn cfran-btn--secondary"
               id="consent-customize"
-              data-fastoche-opened="false"
-              aria-controls="fastoche-consent-modal"
+              data-cfran-opened="false"
+              aria-controls="cfran-consent-modal"
               title="{{ customize_cookies }}">
         {% translate "Customize" %}
       </button>

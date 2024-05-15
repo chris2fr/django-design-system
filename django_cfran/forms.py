@@ -5,10 +5,10 @@ from django.forms import Form
 from django.forms.renderers import DjangoTemplates, get_default_renderer
 from django.utils.functional import cached_property
 
-from django_fastoche.utils import fastoche_input_class_attr
+from django_cfran.utils import cfran_input_class_attr
 
 
-class FastocheDjangoTemplates(DjangoTemplates):
+class CfranDjangoTemplates(DjangoTemplates):
     @cached_property
     def engine(self):
         return self.backend(
@@ -24,7 +24,7 @@ class FastocheDjangoTemplates(DjangoTemplates):
         )
 
 
-class FastocheBaseForm(Form):
+class CfranBaseForm(Form):
     """
     A base form that adds the necessary class on relevant fields
     """
@@ -32,14 +32,14 @@ class FastocheBaseForm(Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for visible in self.visible_fields():
-            fastoche_input_class_attr(visible)
+            cfran_input_class_attr(visible)
 
     @property
     def default_renderer(self):
         from django.conf import settings, global_settings
 
         return (
-            FastocheDjangoTemplates  # Settings wasn't modified
+            CfranDjangoTemplates  # Settings wasn't modified
             if settings.FORM_RENDERER == global_settings.FORM_RENDERER
             else get_default_renderer()
         )

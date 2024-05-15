@@ -4,8 +4,8 @@ from django.forms import (
     inlineformset_factory,
 )  # /!\ In order to use formsets
 
-from fastoche.constants import COLOR_CHOICES_ILLUSTRATION
-from fastoche.forms import FastocheBaseForm
+from cfran.constants import COLOR_CHOICES_ILLUSTRATION
+from cfran.forms import CfranBaseForm
 
 # /!\ In order to use formsets
 from crispy_forms.helper import FormHelper
@@ -15,7 +15,7 @@ from example_app.models import Author, Book
 from example_app.utils import populate_genre_choices
 
 
-class ExampleForm(FastocheBaseForm):
+class ExampleForm(CfranBaseForm):
     # basic fields
     user_name = forms.CharField(label="Nom d’utilisateur", max_length=100)
 
@@ -55,7 +55,7 @@ class ExampleForm(FastocheBaseForm):
     )
 
     """
-    Not managed by the FASTOCHE:
+    Not managed by the CFRAN:
     - DateTimeField
     """
 
@@ -134,7 +134,7 @@ class ExampleForm(FastocheBaseForm):
         self.set_autofocus_on_first_error()
 
 
-class AuthorCreateForm(ModelForm, FastocheBaseForm):
+class AuthorCreateForm(ModelForm, CfranBaseForm):
     class Meta:
         model = Author
         exclude = []
@@ -156,7 +156,7 @@ BOOK_FORMAT = (
 )
 
 
-class BookCreateForm(ModelForm, FastocheBaseForm):
+class BookCreateForm(ModelForm, CfranBaseForm):
     class Meta:
         model = Book
         exclude = []
@@ -169,7 +169,7 @@ class BookCreateForm(ModelForm, FastocheBaseForm):
     book_format = forms.ChoiceField(
         label="Format",
         choices=BOOK_FORMAT,  # If the choices are in a constant
-        widget=forms.RadioSelect(attrs={"class": "fastoche-fieldset--inline"}),
+        widget=forms.RadioSelect(attrs={"class": "cfran-fieldset--inline"}),
     )
 
     # /!\ Genre is a model, but it requires to format the list of object before passing to the field
@@ -214,7 +214,7 @@ BookCreateFormSet = inlineformset_factory(
 )
 
 
-class ColorForm(FastocheBaseForm):
+class ColorForm(CfranBaseForm):
     color = forms.ChoiceField(
         label="Choisissez une couleur",
         required=False,

@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="FastocheAuthor",
+            name="CfranAuthor",
             fields=[
                 (
                     "id",
@@ -37,11 +37,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "fastoche FastocheAuthor",
+                "verbose_name": "cfran CfranAuthor",
             },
         ),
         migrations.CreateModel(
-            name="FastocheGenre",
+            name="CfranGenre",
             fields=[
                 (
                     "id",
@@ -65,11 +65,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "fastoche FastocheGenre",
+                "verbose_name": "cfran CfranGenre",
             },
         ),
         migrations.CreateModel(
-            name="FastocheBook",
+            name="CfranBook",
             fields=[
                 (
                     "id",
@@ -100,13 +100,13 @@ class Migration(migrations.Migration):
                     "author",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="example_fastoche.fastocheauthor",
+                        to="example_cfran.cfranauthor",
                     ),
                 ),
-                ("genre", models.ManyToManyField(to="example_fastoche.fastochegenre")),
+                ("genre", models.ManyToManyField(to="example_cfran.cfrangenre")),
             ],
             options={
-                "verbose_name": "fastoche FastocheBook",
+                "verbose_name": "cfran CfranBook",
             },
         ),
     ]

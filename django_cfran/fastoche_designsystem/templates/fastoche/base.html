@@ -1,14 +1,14 @@
-{% load static fastoche_tags %}
+{% load static cfran_tags %}
 <!DOCTYPE html>
 <html lang="{% block lang %}fr{% endblock lang %}"
-      data-fastoche-scheme="system"
-      {% if SITE_CONFIG.mourning %}data-fastoche-mourning{% endif %}>
+      data-cfran-scheme="system"
+      {% if SITE_CONFIG.mourning %}data-cfran-mourning{% endif %}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    {% fastoche_css %}
-    {% fastoche_favicon %}
+    {% cfran_css %}
+    {% cfran_favicon %}
 
     {% block extra_css %}
     {% endblock extra_css %}
@@ -30,21 +30,21 @@
   </head>
   <body>
     {% block skiplinks %}
-      {% fastoche_skiplinks skiplinks %}
+      {% cfran_skiplinks skiplinks %}
     {% endblock skiplinks %}
 
     {% block header %}
     {% endblock header %}
 
-    {% fastoche_theme_modale %}
+    {% cfran_theme_modale %}
 
     {% if SITE_CONFIG.notice %}
-      {% fastoche_notice title=SITE_CONFIG.notice %}
+      {% cfran_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    <div class="fastoche-container fastoche-mt-4w fastoche-mb-6w">
+    <div class="cfran-container cfran-mt-4w cfran-mb-6w">
       {% block breadcrumb %}
-        {% fastoche_breadcrumb %}
+        {% cfran_breadcrumb %}
       {% endblock breadcrumb %}
       <main id="content" role="main">
         {% block content %}
@@ -56,10 +56,10 @@
     {% endblock follow_newsletter_social_media %}
 
     {% block footer %}
-      {% include "fastoche/footer.html" %}
+      {% include "cfran/footer.html" %}
     {% endblock footer %}
 
-    {% fastoche_js nonce=request.csp_nonce %}
+    {% cfran_js nonce=request.csp_nonce %}
 
     {% block extra_js %}
     {% endblock extra_js %}

@@ -1,5 +1,5 @@
 {% extends "example_app/base.html" %}
-{% load static fastoche_tags %}
+{% load static cfran_tags %}
 
 {% block extra_css %}
   <style nonce="{{ request.csp_nonce }}">
@@ -15,14 +15,14 @@
 
 {% block content %}
   <h1>
-    Django-FASTOCHE
+    Django-CFRAN
   </h1>
   <h2>
     Documentation
   </h2>
   <div>
     <p>
-      <strong>Django-fastoche</strong> est une application django permettant d’utiliser le
+      <strong>Django-cfran</strong> est une application django permettant d’utiliser le
       <a href="https://www.systeme-de-design.gouv.fr/">système de design de l’État</a> dans des projets Django.
     </p>
     <p>
@@ -32,9 +32,9 @@
       utilisation), cf. la page <a href="{% url 'components_index' %}">Composants</a>.
     </p>
   </div>
-  <div class="fastoche-grid-row fastoche-grid-row--gutters fastoche-mb-3w">
-    <div class="fastoche-col-12 fastoche-col-md-4">
-      {% fastoche_summary summary_data %}
+  <div class="cfran-grid-row cfran-grid-row--gutters cfran-mb-3w">
+    <div class="cfran-col-12 cfran-col-md-4">
+      {% cfran_summary summary_data %}
     </div>
   </div>
   <h3 id="installation">
@@ -64,7 +64,7 @@
   </h3>
   <ul>
     <li>
-      Il est possible d’utiliser tous les composants du FASTOCHE directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
+      Il est possible d’utiliser tous les composants du CFRAN directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
     </li>
     <li>
       De même pour certains où il vaut mieux créer un template ad-hoc à chaque utilisation, comme les modales.

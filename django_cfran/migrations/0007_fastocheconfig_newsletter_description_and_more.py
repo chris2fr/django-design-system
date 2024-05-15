@@ -7,33 +7,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_fastoche", "0006_alter_fastocheconfig_accessibility_status"),
+        ("django_cfran", "0006_alter_cfranconfig_accessibility_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="newsletter_description",
             field=models.TextField(
                 blank=True, default="", verbose_name="Description de la newsletter"
             ),
         ),
         migrations.AddField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="newsletter_url",
             field=models.URLField(
                 blank=True, default="", verbose_name="URL d’inscription à la newsletter"
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="notice",
             field=models.TextField(
                 blank=True, default="", verbose_name="Bandeau d’information importante"
             ),
         ),
         migrations.CreateModel(
-            name="FastocheSocialMedia",
+            name="CfranSocialMedia",
             fields=[
                 (
                     "id",
@@ -65,7 +65,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="django_fastoche.fastocheconfig",
+                        to="django_cfran.cfranconfig",
                     ),
                 ),
             ],

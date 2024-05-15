@@ -1,17 +1,17 @@
 from django.contrib import admin
-from django_fastoche.models import FastocheConfig, FastocheSocialMedia
+from django_cfran.models import CfranConfig, CfranSocialMedia
 
 from django.utils.translation import gettext_lazy as _
 
 
-class FastocheSocialMediaInline(admin.TabularInline):
-    model = FastocheSocialMedia
+class CfranSocialMediaInline(admin.TabularInline):
+    model = CfranSocialMedia
     readonly_fields = ("id",)
     extra = 1
 
 
-@admin.register(FastocheConfig)
-class FastocheConfigAdmin(admin.ModelAdmin):
+@admin.register(CfranConfig)
+class CfranConfigAdmin(admin.ModelAdmin):
     fieldsets = (
         ("", {"fields": ("language",)}),
         (
@@ -65,4 +65,4 @@ class FastocheConfigAdmin(admin.ModelAdmin):
             },
         ),
     )
-    inlines = [FastocheSocialMediaInline]
+    inlines = [CfranSocialMediaInline]

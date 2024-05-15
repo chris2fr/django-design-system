@@ -1,8 +1,8 @@
 {% extends "example_app/base.html" %}
-{% load static fastoche_tags %}
+{% load static cfran_tags %}
 
 {% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/fastoche-code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cfran-code.css' %}">
   <style>
     .example-textarea {
       background: var(--background-alt-grey);
@@ -21,23 +21,23 @@ p code, li code {
 {% endblock extra_css %}
 
 {% block content %}
-  <div class="fastoche-grid-row fastoche-grid-row--gutters fastoche-b__two-col">
-    <div class="fastoche-col-12 fastoche-col-md-4">
-      {% fastoche_sidemenu side_menu extra_classes="" %}
+  <div class="cfran-grid-row cfran-grid-row--gutters cfran-b__two-col">
+    <div class="cfran-col-12 cfran-col-md-4">
+      {% cfran_sidemenu side_menu extra_classes="" %}
     </div>
-    <div class="fastoche-col-12 fastoche-col-md-8 fastoche-py-2w">
+    <div class="cfran-col-12 cfran-col-md-8 cfran-py-2w">
       <h1>
         {{ title }}
       </h1>
       <ul>
         {% if doc_url %}
           <li>
-            {% fastoche_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="fastoche-link--lg" %}
+            {% cfran_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="cfran-link--lg" %}
           </li>
         {% endif %}
         {% if example_url %}
           <li>
-            {% fastoche_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="fastoche-link--lg" %}
+            {% cfran_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="cfran-link--lg" %}
           </li>
         {% endif %}
       </ul>
@@ -50,15 +50,15 @@ p code, li code {
           Exemples
         </h2>
         {% for sample_data_item in sample_data %}
-          <h3 class="fastoche-mt-3w">
+          <h3 class="cfran-mt-3w">
             Données
           </h3>
-          <div class="fastoche-my-2w">
+          <div class="cfran-my-2w">
             {# djlint:off #}
             {% with sample_data_item|pprint as raw_sample_code %}
               {# djlint:off #}
-              {% with '<pre class="fastoche-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
-                {% fastoche_accordion title="Données d’exemple" content=sample_data_code %}
+              {% with '<pre class="cfran-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
+                {% cfran_accordion title="Données d’exemple" content=sample_data_code %}
               {% endwith %}
             {% endwith %}
             {# djlint:on #}
@@ -67,80 +67,80 @@ p code, li code {
             Résultat
           </h3>
           {% if tag_name == "accordion" %}
-            {% fastoche_accordion sample_data_item %}
+            {% cfran_accordion sample_data_item %}
           {% elif tag_name == "accordion_group" %}
-            {% fastoche_accordion_group sample_data_item %}
+            {% cfran_accordion_group sample_data_item %}
           {% elif tag_name == "alert" %}
-            {% fastoche_alert sample_data_item %}
+            {% cfran_alert sample_data_item %}
           {% elif tag_name == "badge" %}
-            {% fastoche_badge sample_data_item %}
+            {% cfran_badge sample_data_item %}
           {% elif tag_name == "badge_group" %}
-            {% fastoche_badge_group sample_data_item %}
+            {% cfran_badge_group sample_data_item %}
           {% elif tag_name == "button" %}
-            {% fastoche_button sample_data_item %}
+            {% cfran_button sample_data_item %}
           {% elif tag_name == "button_group" %}
-            {% fastoche_button_group sample_data_item %}
+            {% cfran_button_group sample_data_item %}
           {% elif tag_name == "callout" %}
-            {% fastoche_callout sample_data_item %}
+            {% cfran_callout sample_data_item %}
           {% elif tag_name == "card" %}
             {% if not "horizontal" in sample_data_item.extra_classes %}
-              <div class="fastoche-grid-row fastoche-grid-row--gutters">
-                <div class="fastoche-col-12 fastoche-col-md-4">
-                  {% fastoche_card sample_data_item %}
+              <div class="cfran-grid-row cfran-grid-row--gutters">
+                <div class="cfran-col-12 cfran-col-md-4">
+                  {% cfran_card sample_data_item %}
                 </div>
               </div>
             {% else %}
-              <div class="fastoche-grid-row fastoche-grid-row--gutters">
-                {% fastoche_card sample_data_item %}
+              <div class="cfran-grid-row cfran-grid-row--gutters">
+                {% cfran_card sample_data_item %}
               </div>
             {% endif %}
           {% elif tag_name == "consent" %}
             <p>
               Voir en bas de votre écran.
             </p>
-            {% fastoche_consent sample_data_item %}
+            {% cfran_consent sample_data_item %}
           {% elif tag_name == "content" %}
-            {% fastoche_content sample_data_item %}
+            {% cfran_content sample_data_item %}
           {% elif tag_name == "django_messages" %}
-            {% fastoche_django_messages sample_data_item %}
+            {% cfran_django_messages sample_data_item %}
           {% elif tag_name == "france_connect" %}
-            {% fastoche_france_connect sample_data_item %}
+            {% cfran_france_connect sample_data_item %}
           {% elif tag_name == "highlight" %}
-            {% fastoche_highlight sample_data_item %}
+            {% cfran_highlight sample_data_item %}
           {% elif tag_name == "input" %}
-            {% fastoche_input sample_data_item %}
+            {% cfran_input sample_data_item %}
           {% elif tag_name == "link" %}
-            {% fastoche_link sample_data_item %}
+            {% cfran_link sample_data_item %}
           {% elif tag_name == "notice" %}
-            {% fastoche_notice sample_data_item %}
+            {% cfran_notice sample_data_item %}
           {% elif tag_name == "quote" %}
-            {% fastoche_quote sample_data_item %}
+            {% cfran_quote sample_data_item %}
           {% elif tag_name == "select" %}
-            {% fastoche_select sample_data_item %}
+            {% cfran_select sample_data_item %}
           {% elif tag_name == "sidemenu" %}
-            {% fastoche_sidemenu sample_data_item %}
+            {% cfran_sidemenu sample_data_item %}
           {% elif tag_name == "skiplinks" %}
-            {% fastoche_skiplinks sample_data_item %}
+            {% cfran_skiplinks sample_data_item %}
           {% elif tag_name == "stepper" %}
-            {% fastoche_stepper sample_data_item %}
+            {% cfran_stepper sample_data_item %}
           {% elif tag_name == "summary" %}
-            {% fastoche_summary sample_data_item %}
+            {% cfran_summary sample_data_item %}
           {% elif tag_name == "table" %}
-            {% fastoche_table sample_data_item %}
+            {% cfran_table sample_data_item %}
           {% elif tag_name == "tag" %}
-            {% fastoche_tag sample_data_item %}
+            {% cfran_tag sample_data_item %}
           {% elif tag_name == "tile" %}
-            <div class="fastoche-grid-row fastoche-grid-row--gutters">
-              <div class="fastoche-col-12">
-                {% fastoche_tile sample_data_item %}
+            <div class="cfran-grid-row cfran-grid-row--gutters">
+              <div class="cfran-col-12">
+                {% cfran_tile sample_data_item %}
               </div>
             </div>
           {% elif tag_name == "toggle" %}
-            {% fastoche_toggle sample_data_item %}
+            {% cfran_toggle sample_data_item %}
           {% elif tag_name == "tooltip" %}
-            {% fastoche_tooltip sample_data_item %}
+            {% cfran_tooltip sample_data_item %}
           {% elif tag_name == "transcription" %}
-            {% fastoche_transcription sample_data_item %}
+            {% cfran_transcription sample_data_item %}
           {% endif %}
         {% endfor %}
       {% else %}
@@ -148,7 +148,7 @@ p code, li code {
           Résultat
         </h2>
         {% if tag_name == "breadcrumb" %}
-          {% fastoche_breadcrumb %}
+          {% cfran_breadcrumb %}
         {% elif tag_name == "css" %}
           <label for="example-textarea">
             Code source :
@@ -157,7 +157,7 @@ p code, li code {
                     readonly
                     rows="8"
                     cols="90"
-                    class="example-textarea">{% fastoche_css %}</textarea>
+                    class="example-textarea">{% cfran_css %}</textarea>
           <br />
         {% elif tag_name == "favicon" %}
           <label for="example-textarea">
@@ -167,7 +167,7 @@ p code, li code {
                     readonly
                     rows="14"
                     cols="90"
-                    class="example-textarea">{% fastoche_favicon %}</textarea>
+                    class="example-textarea">{% cfran_favicon %}</textarea>
           <br />
         {% elif tag_name == "js" %}
           <label for="example-textarea">
@@ -177,10 +177,10 @@ p code, li code {
                     readonly
                     rows="6"
                     cols="90"
-                    class="example-textarea">{% fastoche_js %}</textarea>
+                    class="example-textarea">{% cfran_js %}</textarea>
           <br />
         {% elif tag_name == "pagination" %}
-          {% fastoche_pagination page_obj %}
+          {% cfran_pagination page_obj %}
         {% elif tag_name == "theme_modale" %}
           <label for="example-textarea">
             Code source :
@@ -189,7 +189,7 @@ p code, li code {
                     readonly
                     rows="62"
                     cols="120"
-                    class="example-textarea">{% fastoche_theme_modale %}</textarea>
+                    class="example-textarea">{% cfran_theme_modale %}</textarea>
           <br />
         {% endif %}
       {% endif %}

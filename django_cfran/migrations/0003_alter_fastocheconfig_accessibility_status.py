@@ -5,12 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("django_fastoche", "0002_auto_20211209_1557"),
+        ("django_cfran", "0002_auto_20211209_1557"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[

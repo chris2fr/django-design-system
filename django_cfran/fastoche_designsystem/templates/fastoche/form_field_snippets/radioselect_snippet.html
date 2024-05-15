@@ -1,28 +1,28 @@
-{% load widget_tweaks fastoche_tags %}
-<fieldset class="fastoche-fieldset{% if field.errors %} fastoche-fieldset--error{% endif %}"
+{% load widget_tweaks cfran_tags %}
+<fieldset class="cfran-fieldset{% if field.errors %} cfran-fieldset--error{% endif %}"
           id="radio-{{ field.auto_id }}"
           aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
-  <legend class="fastoche-fieldset__legend facile-text--regular"
+  <legend class="cfran-fieldset__legend facile-text--regular"
           id="{{ field.auto_id }}-legend">
     {{ field.label_tag }}
     {% if field.field.required %}
       *
     {% endif %}
     {% if field.help_text %}
-      <span class="fastoche-hint-text">{{ field.help_text }}</span>
+      <span class="cfran-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </legend>
-  <div class="fastoche-fieldset__content">
-    <div class="fastoche-radio-group">
+  <div class="cfran-fieldset__content">
+    <div class="cfran-radio-group">
       {% if field.field.disabled %}
-        {{ field|fastoche_input_class_attr|attr:"type:radio"|attr:"disabled" }}
+        {{ field|cfran_input_class_attr|attr:"type:radio"|attr:"disabled" }}
       {% else %}
-        {{ field|fastoche_input_class_attr|attr:"type:radio" }}
+        {{ field|cfran_input_class_attr|attr:"type:radio" }}
       {% endif %}
     </div>
   </div>
   {% if field.errors %}
-    <div class="fastoche-messages-group" id="{{ field.auto_id }}-messages">
+    <div class="cfran-messages-group" id="{{ field.auto_id }}-messages">
       {{ field.errors }}
     </div>
   {% endif %}

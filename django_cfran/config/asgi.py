@@ -1,5 +1,5 @@
 """
-ASGI config for django-fastoche project.
+ASGI config for django-cfran project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_fastoche.config.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_cfran.config.settings")
 
 application = get_asgi_application()

@@ -1,20 +1,20 @@
 {% load i18n %}
 {% translate "Checked" as checked_label %}
 {% translate "Unchecked" as unchecked_label %}
-<div class="fastoche-toggle{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+<div class="cfran-toggle{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   <input type="checkbox"
          {% if self.is_disabled %}disabled{% endif %}
-         class="fastoche-toggle__input"
+         class="cfran-toggle__input"
          aria-describedby="{{ self.id }}-hint-text"
          id="{{ self.id }}">
-  <label class="fastoche-toggle__label"
+  <label class="cfran-toggle__label"
          for="{{ self.id }}"
-         data-fastoche-checked-label="{{ checked_label }}"
-         data-fastoche-unchecked-label="{{ unchecked_label }}">
+         data-cfran-checked-label="{{ checked_label }}"
+         data-cfran-unchecked-label="{{ unchecked_label }}">
     {{ self.label }}
   </label>
   {% if self.help_text %}
-    <p class="fastoche-hint-text" id="{{ self.id }}-hint-text">
+    <p class="cfran-hint-text" id="{{ self.id }}-hint-text">
       {{ self.help_text }}
     </p>
   {% endif %}

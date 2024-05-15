@@ -2,7 +2,7 @@
 authors = ["Chris Mann <chris@mann.fr>"]
 description = "Render the Design System of France into a generic Django app"
 license = "MIT"
-name = "django-fastoche"
+name = "django-cfran"
 version = "11.2.1"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -26,16 +26,16 @@ classifiers = [
   "Topic :: Utilities",
 ]
 documentation = "https://"
-homepage = "https://github.com/chris2fr/django-fastoche"
+homepage = "https://github.com/chris2fr/django-cfran"
 keywords = ["django"]
 readme = "README.rst"
-repository = "https://github.com/chris2fr/django-fastoche"
+repository = "https://github.com/chris2fr/django-cfran"
 
 packages = [
-  {include = "django_fastoche"},
+  {include = "django_cfran"},
 ]
 
-include = ["LICENSE", "README.rst", "fastoche/static/fastoche/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "cfran/static/cfran/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

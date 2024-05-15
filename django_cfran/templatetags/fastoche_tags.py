@@ -6,7 +6,7 @@ from django.template import Template
 from django.template.context import Context
 from django.utils.html import format_html, format_html_join
 
-from django_fastoche.checksums import (
+from django_cfran.checksums import (
     INTEGRITY_CSS,
     INTEGRITY_CSS_ICONS,
     INTEGRITY_FAVICON_APPLE,
@@ -16,31 +16,31 @@ from django_fastoche.checksums import (
     INTEGRITY_JS_MODULE,
     INTEGRITY_JS_NOMODULE,
 )
-from django_fastoche.utils import (
+from django_cfran.utils import (
     find_active_menu_items,
     generate_random_id,
     parse_tag_args,
-    fastoche_input_class_attr,
+    cfran_input_class_attr,
 )
 
 register = template.Library()
 """
-Tags used in the "fastoche" templates.
+Tags used in the "cfran" templates.
 """
 
 # Global tags
 
 
-@register.inclusion_tag("fastoche/global_css.html")
-def fastoche_css() -> dict:
+@register.inclusion_tag("cfran/global_css.html")
+def cfran_css() -> dict:
     """
-    Returns the HTML for the CSS header tags for fastoche
+    Returns the HTML for the CSS header tags for cfran
 
     **Tag name**:
-        fastoche_css
+        cfran_css
 
     **Usage**:
-        `{% fastoche_css %}`
+        `{% cfran_css %}`
     """
     tag_data = {}
     tag_data["INTEGRITY_CSS"] = INTEGRITY_CSS
@@ -49,16 +49,16 @@ def fastoche_css() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/global_js.html", takes_context=True)
-def fastoche_js(context, *args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/global_js.html", takes_context=True)
+def cfran_js(context, *args, **kwargs) -> dict:
     """
-    Returns the HTML for the JS body tags for fastoche
+    Returns the HTML for the JS body tags for cfran
 
     **Tag name**:
-        fastoche_js
+        cfran_js
 
     **Usage**:
-        `{% fastoche_js %}`
+        `{% cfran_js %}`
     """
 
     allowed_keys = [
@@ -72,16 +72,16 @@ def fastoche_js(context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/favicon.html")
-def fastoche_favicon() -> dict:
+@register.inclusion_tag("cfran/favicon.html")
+def cfran_favicon() -> dict:
     """
-    Returns the HTML for the CSS header tags for the fastoche "Marianne" Favicon
+    Returns the HTML for the CSS header tags for the cfran "Marianne" Favicon
 
     **Tag name**:
-        fastoche_favicon
+        cfran_favicon
 
     **Usage**:
-        `{% fastoche_favicon %}`
+        `{% cfran_favicon %}`
     """
 
     tag_data = {}
@@ -93,25 +93,25 @@ def fastoche_favicon() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/theme_modale.html")
-def fastoche_theme_modale() -> None:
+@register.inclusion_tag("cfran/theme_modale.html")
+def cfran_theme_modale() -> None:
     """
-    Returns the HTML for the theme selection modale for fastoche
+    Returns the HTML for the theme selection modale for cfran
 
     **Tag name**:
-        fastoche_theme_modale
+        cfran_theme_modale
 
     **Usage**:
-        `{% fastoche_theme_modale %}`
+        `{% cfran_theme_modale %}`
     """
     return None
 
 
-# fastoche components
+# cfran components
 
 
-@register.inclusion_tag("fastoche/accordion.html")
-def fastoche_accordion(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/accordion.html")
+def cfran_accordion(*args, **kwargs) -> dict:
     """
     Returns an accordion item. Takes a dict as parameter, with the following structure:
 
@@ -126,13 +126,13 @@ def fastoche_accordion(*args, **kwargs) -> dict:
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
-    Can be used alone or in a group with the tag `fastoche_accordion_group`.
+    Can be used alone or in a group with the tag `cfran_accordion_group`.
 
     **Tag name**:
-        fastoche_accordion
+        cfran_accordion
 
     **Usage**:
-        `{% fastoche_accordion data_dict %}`
+        `{% cfran_accordion data_dict %}`
     """
     allowed_keys = ["id", "title", "content", "heading_tag"]
     tag_data = parse_tag_args(args, kwargs, allowed_keys)
@@ -143,23 +143,23 @@ def fastoche_accordion(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/accordion_group.html")
-def fastoche_accordion_group(items: list) -> dict:
+@register.inclusion_tag("cfran/accordion_group.html")
+def cfran_accordion_group(items: list) -> dict:
     """
     Returns a group of accordion items. Takes a list of dicts as parameters (see the
     accordion tag for the structure of these dicts.)
 
     **Tag name**:
-        fastoche_accordion_group
+        cfran_accordion_group
 
     **Usage**:
-        `{% fastoche_accordion_group data_list %}`
+        `{% cfran_accordion_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("fastoche/alert.html")
-def fastoche_alert(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/alert.html")
+def cfran_alert(*args, **kwargs) -> dict:
     """
     Returns an alert item. Takes a dict as parameter, with the following structure:
 
@@ -179,16 +179,16 @@ def fastoche_alert(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `fastoche-alert--sm` : small alert
+    - `cfran-alert--sm` : small alert
 
     On normal (median) alerts, the title is mandatory, the content is optional.
     On small alerts, the title is optional, the content is mandatory.
 
     **Tag name**:
-        fastoche_alert
+        cfran_alert
 
     **Usage**:
-        `{% fastoche_alert data_dict %}`
+        `{% cfran_alert data_dict %}`
     """  # noqa
 
     allowed_keys = [
@@ -209,8 +209,8 @@ def fastoche_alert(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/badge.html")
-def fastoche_badge(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/badge.html")
+def cfran_badge(*args, **kwargs) -> dict:
     """
     Returns a badge item. Takes a dict as parameter, with the following structure:
 
@@ -226,16 +226,16 @@ def fastoche_badge(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fastoche-badge--sm`: small-sized badge
-    - `fastoche-badge--green-menthe` other color codes: change the color of the badge
-    - `fastoche-badge--success` (or error/info/warning/new): system badges
-    - `fastoche-badge--no-icon`: removes the icon on system badges
+    - `cfran-badge--sm`: small-sized badge
+    - `cfran-badge--green-menthe` other color codes: change the color of the badge
+    - `cfran-badge--success` (or error/info/warning/new): system badges
+    - `cfran-badge--no-icon`: removes the icon on system badges
 
     **Tag name**:
-        fastoche_badge
+        cfran_badge
 
     **Usage**:
-        `{% fastoche_badge data_dict %}`
+        `{% cfran_badge data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -246,24 +246,24 @@ def fastoche_badge(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/badge_group.html")
-def fastoche_badge_group(items: list) -> dict:
+@register.inclusion_tag("cfran/badge_group.html")
+def cfran_badge_group(items: list) -> dict:
     """
     Returns a group of badge items. Takes a list of dicts as parameters (see the badge
     tag for the structure of these dicts.)
 
 
     **Tag name**:
-        fastoche_badge_group
+        cfran_badge_group
 
     **Usage**:
-        `{% fastoche_badge_group data_list %}`
+        `{% cfran_badge_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("fastoche/breadcrumb.html", takes_context=True)
-def fastoche_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
+@register.inclusion_tag("cfran/breadcrumb.html", takes_context=True)
+def cfran_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     """
     Returns a breadcrumb item. Takes a dict as parameter, with the following structure:
 
@@ -278,10 +278,10 @@ def fastoche_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     If the dict is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        fastoche_breadcrumb
+        cfran_breadcrumb
 
     **Usage**:
-        `{% fastoche_breadcrumb data_dict %}`
+        `{% cfran_breadcrumb data_dict %}`
     """  # noqa
     if not tag_data:
         if "breadcrumb_data" in context:
@@ -291,8 +291,8 @@ def fastoche_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/button.html")
-def fastoche_button(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/button.html")
+def cfran_button(*args, **kwargs) -> dict:
     """
     Returns a button item. Takes a dict as parameter, with the following structure:
 
@@ -312,18 +312,18 @@ def fastoche_button(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `fastoche-btn--secondary`: secundary button
-    - `fastoche-btn--tertiary`: tertiary button
-    - `fastoche-btn--tertiary-no-outline`: tertiary button with no outline
-    - `fastoche-btn--icon-left` and `fastoche-btn--icon-right`: add an icon to the button
+    - `cfran-btn--secondary`: secundary button
+    - `cfran-btn--tertiary`: tertiary button
+    - `cfran-btn--tertiary-no-outline`: tertiary button with no outline
+    - `cfran-btn--icon-left` and `cfran-btn--icon-right`: add an icon to the button
       (associated with an icon class)
-    - `fastoche-btn--sm` and `fastoche-btn--lg`: button smaller or larger than the default size
+    - `cfran-btn--sm` and `cfran-btn--lg`: button smaller or larger than the default size
 
     **Tag name**:
-        fastoche_button
+        cfran_button
 
     **Usage**:
-        `{% fastoche_button data_dict %}`
+        `{% cfran_button data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -340,8 +340,8 @@ def fastoche_button(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/button_group.html")
-def fastoche_button_group(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/button_group.html")
+def cfran_button_group(*args, **kwargs) -> dict:
     """
     Returns a group of button items. Takes a dict as parameter, with the following structure:
 
@@ -363,10 +363,10 @@ def fastoche_button_group(*args, **kwargs) -> dict:
     - `btns-group--icon-right`: Buttons with an icon on the right side
 
     **Tag name**:
-        fastoche_button_group
+        cfran_button_group
 
     **Usage**:
-        `{% fastoche_button_group data_dict %}`
+        `{% cfran_button_group data_dict %}`
     """
     allowed_keys = [
         "items",
@@ -377,8 +377,8 @@ def fastoche_button_group(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/callout.html")
-def fastoche_callout(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/callout.html")
+def cfran_callout(*args, **kwargs) -> dict:
     """
     Returns a callout item. Takes a dict as parameter, with the following structure:
 
@@ -400,13 +400,13 @@ def fastoche_callout(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-fastoche/resources/colors)), for example `fastoche-callout--green-emeraude`
+    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-callout--green-emeraude`
 
     **Tag name**:
-        fastoche_callout
+        cfran_callout
 
     **Usage**:
-        `{% fastoche_callout data_dict %}`
+        `{% cfran_callout data_dict %}`
     """
     allowed_keys = [
         "text",
@@ -421,8 +421,8 @@ def fastoche_callout(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/card.html")
-def fastoche_card(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/card.html")
+def cfran_card(*args, **kwargs) -> dict:
     """
     Returns a card item. Takes a dict as parameter, with the following structure:
 
@@ -449,14 +449,14 @@ def fastoche_card(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `fastoche-card--horizontal`: makes the card horizontal
-    - `fastoche-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
-    - `fastoche-card--horizontal-half`: allows a 50% ratio instead of the 40% default
-    - `fastoche-card--download`: replaces the forward arrow icon with a download one
-    - `fastoche-card--grey`: adds a grey background on the card
-    - `fastoche-card--no-border`: removes the card border
-    - `fastoche-card--no-background`: removes the card background
-    - `fastoche-card--shadow`: adds a shadow to the card border
+    - `cfran-card--horizontal`: makes the card horizontal
+    - `cfran-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
+    - `cfran-card--horizontal-half`: allows a 50% ratio instead of the 40% default
+    - `cfran-card--download`: replaces the forward arrow icon with a download one
+    - `cfran-card--grey`: adds a grey background on the card
+    - `cfran-card--no-border`: removes the card border
+    - `cfran-card--no-background`: removes the card background
+    - `cfran-card--shadow`: adds a shadow to the card border
 
     Format of the top_detail dict (every field is optional):
 
@@ -464,7 +464,7 @@ def fastoche_card(*args, **kwargs) -> dict:
     top_detail = {
         "detail": {
             "text": "the detail text",
-            "icon_class": "(Optional) an icon class (eg, fastoche-icon-warning-fill)"
+            "icon_class": "(Optional) an icon class (eg, cfran-icon-warning-fill)"
         },
         "tags": "a list of tag items (mutually exclusive with badges)",
         "badges": "a list of badge items (mutually exclusive with tags)"
@@ -476,16 +476,16 @@ def fastoche_card(*args, **kwargs) -> dict:
     ```python
     bottom_detail = {
         "text": "the detail text",
-        "icon_class": "(Optional) an icon class (eg, fastoche-icon-warning-fill)"
+        "icon_class": "(Optional) an icon class (eg, cfran-icon-warning-fill)"
     }
     ```
 
 
     **Tag name**:
-        fastoche_card
+        cfran_card
 
     **Usage**:
-        `{% fastoche_card data_dict %}`
+        `{% cfran_card data_dict %}`
     """  # noqa
     allowed_keys = [
         "title",
@@ -515,8 +515,8 @@ def fastoche_card(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/consent.html")
-def fastoche_consent(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/consent.html")
+def cfran_consent(*args, **kwargs) -> dict:
     """
     Returns a consent banner item. Takes a dict as parameter, with the following structure:
 
@@ -532,10 +532,10 @@ def fastoche_consent(*args, **kwargs) -> dict:
     The tag only manages the banner. The logic needs to be implemented.
 
     **Tag name**:
-        fastoche_consent
+        cfran_consent
 
     **Usage**:
-        `{% fastoche_consent data_dict %}`
+        `{% cfran_consent data_dict %}`
     """
 
     allowed_keys = [
@@ -547,8 +547,8 @@ def fastoche_consent(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/content.html")
-def fastoche_content(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/content.html")
+def cfran_content(*args, **kwargs) -> dict:
     """
     Returns a media content item. Takes a dict as parameter, with the following structure:
 
@@ -561,7 +561,7 @@ def fastoche_content(*args, **kwargs) -> dict:
         "alt_text": "(optional) Alternative text of the media"
         "extra_classes": "(Optional) string with names of extra classes for the whole component",
         "ratio_class": "(Optional) string with the name of a ratio class",
-        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django-fastoche/components/transcription/)",
+        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django-cfran/components/transcription/)",
     }
     ```
 
@@ -582,30 +582,30 @@ def fastoche_content(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `fastoche-content-media--lg`: media is 125% of the main text width.
-    - `fastoche-content-media--sm`: media is 75% of the the main text width.
+    - `cfran-content-media--lg`: media is 125% of the main text width.
+    - `cfran-content-media--sm`: media is 75% of the the main text width.
 
     Relevant ratio classes for images:
 
-    - `fastoche-ratio-32x9`
-    - `fastoche-ratio-16x9`
-    - `fastoche-ratio-3x2`
-    - `fastoche-ratio-4x3`
-    - `fastoche-ratio-1x1`
-    - `fastoche-ratio-3x4`
-    - `fastoche-ratio-2x3`
+    - `cfran-ratio-32x9`
+    - `cfran-ratio-16x9`
+    - `cfran-ratio-3x2`
+    - `cfran-ratio-4x3`
+    - `cfran-ratio-1x1`
+    - `cfran-ratio-3x4`
+    - `cfran-ratio-2x3`
 
     Relevant ratio classes for videos:
 
-    - `fastoche-ratio-16x9`
-    - `fastoche-ratio-4x3`
-    - `fastoche-ratio-1x1`
+    - `cfran-ratio-16x9`
+    - `cfran-ratio-4x3`
+    - `cfran-ratio-1x1`
 
     **Tag name**:
-        fastoche_content
+        cfran_content
 
     **Usage**:
-        `{% fastoche_content data_dict %}`
+        `{% cfran_content data_dict %}`
     """
 
     allowed_keys = [
@@ -624,8 +624,8 @@ def fastoche_content(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/france_connect.html")
-def fastoche_france_connect(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/france_connect.html")
+def cfran_france_connect(*args, **kwargs) -> dict:
     """
     Returns a FranceConnect button item. Takes a dict as parameter, with the following structure:
 
@@ -639,10 +639,10 @@ def fastoche_france_connect(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_france_connect
+        cfran_france_connect
 
     **Usage**:
-        `{% fastoche_france_connect data_dict %}`
+        `{% cfran_france_connect data_dict %}`
     """
 
     allowed_keys = [
@@ -660,8 +660,8 @@ def fastoche_france_connect(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/highlight.html")
-def fastoche_highlight(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/highlight.html")
+def cfran_highlight(*args, **kwargs) -> dict:
     """
     Returns a highlight item. Takes a dict as parameter, with the following structure:
 
@@ -675,20 +675,20 @@ def fastoche_highlight(*args, **kwargs) -> dict:
 
     Relevant size_classes:
 
-    - `fastoche-text--sm`
-    - `fastoche-text--lg`
+    - `cfran-text--sm`
+    - `cfran-text--lg`
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-fastoche/resources/colors)), for example `fastoche-highlight--green-emeraude`
+    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-highlight--green-emeraude`
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_highlight
+        cfran_highlight
 
     **Usage**:
-        `{% fastoche_highlight data_dict %}`
+        `{% cfran_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -701,8 +701,8 @@ def fastoche_highlight(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/input.html")
-def fastoche_input(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/input.html")
+def cfran_input(*args, **kwargs) -> dict:
     """
     Returns a input item. Prefer the use of an actual form (see documentation)
 
@@ -725,10 +725,10 @@ def fastoche_input(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_input
+        cfran_input
 
     **Usage**:
-        `{% fastoche_input data_dict %}`
+        `{% cfran_input data_dict %}`
     """
 
     allowed_keys = [
@@ -749,8 +749,8 @@ def fastoche_input(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/link.html")
-def fastoche_link(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/link.html")
+def cfran_link(*args, **kwargs) -> dict:
     """
     Returns a link item. Takes a dict as parameter, with the following structure:
 
@@ -765,18 +765,18 @@ def fastoche_link(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fastoche-link--icon-left` or `fastoche-link--icon-right` with an icon class
-    - `fastoche-link--sm` for small links
-    - `fastoche-link--lg` for large links
+    - `cfran-link--icon-left` or `cfran-link--icon-right` with an icon class
+    - `cfran-link--sm` for small links
+    - `cfran-link--lg` for large links
 
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_link
+        cfran_link
 
     **Usage**:
-        `{% fastoche_link data_dict %}`
+        `{% cfran_link data_dict %}`
     """
 
     allowed_keys = [
@@ -790,8 +790,8 @@ def fastoche_link(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/notice.html")
-def fastoche_notice(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/notice.html")
+def cfran_notice(*args, **kwargs) -> dict:
     """
     Returns a notice item. Takes a dict as parameter, with the following structure:
 
@@ -805,10 +805,10 @@ def fastoche_notice(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_notice
+        cfran_notice
 
     **Usage**:
-        `{% fastoche_notice data_dict %}`
+        `{% cfran_notice data_dict %}`
     """
 
     allowed_keys = [
@@ -820,23 +820,23 @@ def fastoche_notice(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/pagination.html", takes_context=True)
-def fastoche_pagination(context: Context, page_obj: Page) -> dict:
+@register.inclusion_tag("cfran/pagination.html", takes_context=True)
+def cfran_pagination(context: Context, page_obj: Page) -> dict:
     """
     Returns a pagination item. Takes a Django paginator object as parameter
     Cf. https://docs.djangoproject.com/fr/3.2/topics/pagination/
 
     **Tag name**:
-        fastoche_pagination
+        cfran_pagination
 
     **Usage**:
-        `{% fastoche_pagination page_obj %}`
+        `{% cfran_pagination page_obj %}`
     """
     return {"request": context["request"], "page_obj": page_obj}
 
 
-@register.inclusion_tag("fastoche/quote.html")
-def fastoche_quote(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/quote.html")
+def cfran_quote(*args, **kwargs) -> dict:
     """
     Returns a quote item. Takes a dict as parameter, with the following structure:
 
@@ -858,13 +858,13 @@ def fastoche_quote(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-fastoche/resources/colors)), for example `fastoche-quote--green-emeraude`
+    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-quote--green-emeraude`
 
     **Tag name**:
-        fastoche_quote
+        cfran_quote
 
     **Usage**:
-        `{% fastoche_quote data_dict %}`
+        `{% cfran_quote data_dict %}`
     """
 
     allowed_keys = [
@@ -881,8 +881,8 @@ def fastoche_quote(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/select.html")
-def fastoche_select(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/select.html")
+def cfran_select(*args, **kwargs) -> dict:
     """
     Returns a select item. Prefer the use of an actual form (see documentation)
 
@@ -907,17 +907,17 @@ def fastoche_select(*args, **kwargs) -> dict:
     ```
     Relevant extra_classes:
 
-    - `fastoche-sidemenu--sticky`: Makes the menu sticky
-    - `fastoche-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
-    - `fastoche-sidemenu--right`: Moves the menu to the right side of the screen
+    - `cfran-sidemenu--sticky`: Makes the menu sticky
+    - `cfran-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
+    - `cfran-sidemenu--right`: Moves the menu to the right side of the screen
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_select
+        cfran_select
 
     **Usage**:
-        `{% fastoche_select data_dict %}`
+        `{% cfran_select data_dict %}`
     """
 
     allowed_keys = [
@@ -937,8 +937,8 @@ def fastoche_select(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/sidemenu.html", takes_context=True)
-def fastoche_sidemenu(context: Context, *args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/sidemenu.html", takes_context=True)
+def cfran_sidemenu(context: Context, *args, **kwargs) -> dict:
     """
     Returns a side menu item. Takes a dict as parameter, with the following structure:
 
@@ -965,10 +965,10 @@ def fastoche_sidemenu(context: Context, *args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_sidemenu
+        cfran_sidemenu
 
     **Usage**:
-        `{% fastoche_sidemenu data_dict %}`
+        `{% cfran_sidemenu data_dict %}`
     """
 
     allowed_keys = ["label", "items", "heading_tag", "extra_classes"]
@@ -980,8 +980,8 @@ def fastoche_sidemenu(context: Context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/skiplinks.html", takes_context=True)
-def fastoche_skiplinks(context: Context, items: list) -> dict:
+@register.inclusion_tag("cfran/skiplinks.html", takes_context=True)
+def cfran_skiplinks(context: Context, items: list) -> dict:
     """
     Returns a skiplinks item. Takes a list as parameter, with the following structure:
 
@@ -992,10 +992,10 @@ def fastoche_skiplinks(context: Context, items: list) -> dict:
     If the list is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        fastoche_skiplinks
+        cfran_skiplinks
 
     **Usage**:
-        `{% fastoche_skiplinks items %}`
+        `{% cfran_skiplinks items %}`
     """
     if not items:
         if "skiplinks" in context:
@@ -1005,8 +1005,8 @@ def fastoche_skiplinks(context: Context, items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("fastoche/stepper.html")
-def fastoche_stepper(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/stepper.html")
+def cfran_stepper(*args, **kwargs) -> dict:
     """
     Returns a stepper item. Takes a dict as parameter, with the following structure:
 
@@ -1023,10 +1023,10 @@ def fastoche_stepper(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_stepper
+        cfran_stepper
 
     **Usage**:
-        `{% fastoche_stepper data_dict %}`
+        `{% cfran_stepper data_dict %}`
     """
     allowed_keys = [
         "current_step_id",
@@ -1040,8 +1040,8 @@ def fastoche_stepper(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/summary.html")
-def fastoche_summary(items: list, heading_tag: str = "p") -> dict:
+@register.inclusion_tag("cfran/summary.html")
+def cfran_summary(items: list, heading_tag: str = "p") -> dict:
     """
     Returns a summary item. Takes a list as parameter, with the following structure:
 
@@ -1059,16 +1059,16 @@ def fastoche_summary(items: list, heading_tag: str = "p") -> dict:
     Also takes an optional "heading_tag" parameter, which can be "p" (default) or h2>h6.
 
     **Tag name**:
-        fastoche_summary
+        cfran_summary
 
     **Usage**:
-        `{% fastoche_summary items heading_tag %}`
+        `{% cfran_summary items heading_tag %}`
     """
     return {"self": {"items": items, "heading_tag": heading_tag}}
 
 
-@register.inclusion_tag("fastoche/table.html")
-def fastoche_table(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/table.html")
+def cfran_table(*args, **kwargs) -> dict:
     """
     Returns a table item. Takes a dict as parameter, with the following structure:
 
@@ -1086,18 +1086,18 @@ def fastoche_table(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-fastoche/resources/colors)), for example `fastoche-table--green-emeraude`
-    - `fastoche-table--bordered`: adds a border under each line
-    - `fastoche-table--no-scroll` prevents horizontal scrolling on mobile
-    - `fastoche-table--layout-fixed`: forces the table at 100% and equal size columns
-    - `fastoche-table--no-caption`: hides the caption
-    - `fastoche-table--caption-bottom`: sets the caption after the table instead of before
+    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-table--green-emeraude`
+    - `cfran-table--bordered`: adds a border under each line
+    - `cfran-table--no-scroll` prevents horizontal scrolling on mobile
+    - `cfran-table--layout-fixed`: forces the table at 100% and equal size columns
+    - `cfran-table--no-caption`: hides the caption
+    - `cfran-table--caption-bottom`: sets the caption after the table instead of before
 
     **Tag name**:
-        fastoche_table
+        cfran_table
 
     **Usage**:
-        `{% fastoche_table data_dict %}`
+        `{% cfran_table data_dict %}`
     """
     allowed_keys = [
         "caption",
@@ -1110,8 +1110,8 @@ def fastoche_table(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/tag.html")
-def fastoche_tag(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/tag.html")
+def cfran_tag(*args, **kwargs) -> dict:
     """
     Returns a tag item. Takes a dict as parameter, with the following structure:
 
@@ -1128,17 +1128,17 @@ def fastoche_tag(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fastoche-tag--sm`: for a small tag
+    - `cfran-tag--sm`: for a small tag
     - icon classes: an icon for the tag, along with a positional class
-      (eg, `fastoche-icon-arrow-right-line` `fastoche-tag--icon-left`)
+      (eg, `cfran-icon-arrow-right-line` `cfran-tag--icon-left`)
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_highlight
+        cfran_highlight
 
     **Usage**:
-        `{% fastoche_highlight data_dict %}`
+        `{% cfran_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -1154,8 +1154,8 @@ def fastoche_tag(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/tile.html")
-def fastoche_tile(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/tile.html")
+def cfran_tile(*args, **kwargs) -> dict:
     """
     Returns a tile item. Takes a dict as parameter, with the following structure:
 
@@ -1179,13 +1179,13 @@ def fastoche_tile(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fastoche-tile--sm`: for a small (SM) tile
-    - `fastoche-tile--horizontal`: for an horizontal tile
-    - `fastoche-tile--download`: Replaces the forward arrow icon with a download one
-    - `fastoche-tile--grey`: adds a grey background on the tile
-    - `fastoche-tile--no-border`: removes the tile border
-    - `fastoche-tile--no-background`: removes the tile background
-    - `fastoche-tile--shadow`: adds a shadow to the tile border
+    - `cfran-tile--sm`: for a small (SM) tile
+    - `cfran-tile--horizontal`: for an horizontal tile
+    - `cfran-tile--download`: Replaces the forward arrow icon with a download one
+    - `cfran-tile--grey`: adds a grey background on the tile
+    - `cfran-tile--no-border`: removes the tile border
+    - `cfran-tile--no-background`: removes the tile background
+    - `cfran-tile--shadow`: adds a shadow to the tile border
 
 
     Format of the top_detail dict (every field is optional):
@@ -1201,10 +1201,10 @@ def fastoche_tile(*args, **kwargs) -> dict:
     `<svg>` html tag instead of the `<img>` tag.
 
     **Tag name**:
-        fastoche_tile
+        cfran_tile
 
     **Usage**:
-        `{% fastoche_tile data_dict %}`
+        `{% cfran_tile data_dict %}`
     """
 
     allowed_keys = [
@@ -1227,8 +1227,8 @@ def fastoche_tile(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/toggle.html")
-def fastoche_toggle(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/toggle.html")
+def cfran_toggle(*args, **kwargs) -> dict:
     """
     Returns a toggle item. Takes a dict as parameter, with the following structure:
 
@@ -1247,15 +1247,15 @@ def fastoche_toggle(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `fastoche-toggle--label-left`: sets the label on the left side
-    - `fastoche-toggle--border-bottom`: adds a border at the bottom
+    - `cfran-toggle--label-left`: sets the label on the left side
+    - `cfran-toggle--border-bottom`: adds a border at the bottom
 
 
     **Tag name**:
-        fastoche_toggle
+        cfran_toggle
 
     **Usage**:
-        `{% fastoche_toggle data_dict %}`
+        `{% cfran_toggle data_dict %}`
     """
 
     allowed_keys = [
@@ -1276,8 +1276,8 @@ def fastoche_toggle(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/tooltip.html")
-def fastoche_tooltip(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/tooltip.html")
+def cfran_tooltip(*args, **kwargs) -> dict:
     """
     Returns a tooltip item. Takes a dict as parameter, with the following structure:
 
@@ -1293,10 +1293,10 @@ def fastoche_tooltip(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_tooltip
+        cfran_tooltip
 
     **Usage**:
-        `{% fastoche_tooltip data_dict %}`
+        `{% cfran_tooltip data_dict %}`
     """
 
     allowed_keys = [
@@ -1313,8 +1313,8 @@ def fastoche_tooltip(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("fastoche/transcription.html")
-def fastoche_transcription(*args, **kwargs) -> dict:
+@register.inclusion_tag("cfran/transcription.html")
+def cfran_transcription(*args, **kwargs) -> dict:
     """
     Returns a transcription item. Takes a dict as parameter, with the following structure:
 
@@ -1329,10 +1329,10 @@ def fastoche_transcription(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        fastoche_transcription
+        cfran_transcription
 
     **Usage**:
-        `{% fastoche_transcription data_dict %}`
+        `{% cfran_transcription data_dict %}`
     """
 
     allowed_keys = [
@@ -1352,16 +1352,16 @@ def fastoche_transcription(*args, **kwargs) -> dict:
 
 
 @register.simple_tag(takes_context=True)
-def fastoche_django_messages(
+def cfran_django_messages(
     context, is_collapsible=False, extra_classes=None, wrapper_classes=None
 ):
     """
-    Renders django messages in a series a fastoche alerts
+    Renders django messages in a series a cfran alerts
 
     ```python
     data_dict = {
         "is_collapsible" : "(Optional) Boolean, set to true to add a 'close' button for the alert (default: false)",
-        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `fastoche-my-4v`)",
+        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `cfran-my-4v`)",
         "extra_classes": "(Optional) extra classes for the alert."
     }
     ```
@@ -1370,15 +1370,15 @@ def fastoche_django_messages(
 
     Relevant extra_classes:
 
-    - `fastoche-alert--sm` : small alert
+    - `cfran-alert--sm` : small alert
 
     See: [https://docs.djangoproject.com/en/4.2/ref/contrib/messages/](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 
     By default, the following message level are mapped to the following alert types:
 
-    <div class="fastoche-table" markdown="1">
+    <div class="cfran-table" markdown="1">
 
-    Message level | fastoche alert type
+    Message level | cfran alert type
     :------------:|:--------------:
     `DEBUG`       | `info`
     `INFO`        | `info`
@@ -1388,13 +1388,13 @@ def fastoche_django_messages(
 
     </div>
 
-    There types are then concatenated with ``fastoche-alert--`` to form the CSS classe in the template.
+    There types are then concatenated with ``cfran-alert--`` to form the CSS classe in the template.
 
-    These classes can be modified by setting ``fastoche_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
+    These classes can be modified by setting ``cfran_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
 
     ```python
     from django.contrib import messages
-    fastoche_MESSAGE_TAGS_CSS_CLASSES = {
+    cfran_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "error"
     }
     ```
@@ -1408,7 +1408,7 @@ def fastoche_django_messages(
     MESSAGE_TAGS = {
         50: "fatal"
     }
-    fastoche_MESSAGE_TAGS_CSS_CLASSES = {
+    cfran_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "debug",
         50: "warning"
     }
@@ -1420,13 +1420,13 @@ def fastoche_django_messages(
     messages.add_message(request, 50, "A serious error occurred.")
     ```
 
-    renders an alert with the following CSS class: `fastoche-alert--warning`.
+    renders an alert with the following CSS class: `cfran-alert--warning`.
 
     **Tag name**:
-        fastoche_django_messages
+        cfran_django_messages
 
     **Usage**:
-        `{% fastoche_django_messages data_dict %}`
+        `{% cfran_django_messages data_dict %}`
     """  # noqa
 
     messages = context.get("messages")
@@ -1434,7 +1434,7 @@ def fastoche_django_messages(
     if not messages:
         return ""
 
-    wrapper_classes = wrapper_classes or "fastoche-my-4v"
+    wrapper_classes = wrapper_classes or "cfran-my-4v"
     extra_classes = extra_classes or ""
 
     message_tags_css_classes = {
@@ -1443,12 +1443,12 @@ def fastoche_django_messages(
         SUCCESS: "success",
         WARNING: "warning",
         ERROR: "error",
-        **getattr(settings, "fastoche_MESSAGE_TAGS_CSS_CLASSES", {}),
+        **getattr(settings, "cfran_MESSAGE_TAGS_CSS_CLASSES", {}),
     }
 
     def _render_alert_tag(message):
         return Template(
-            "{% load fastoche_tags %}{% fastoche_alert data_dict %}"
+            "{% load cfran_tags %}{% cfran_alert data_dict %}"
         ).render(
             Context(
                 {
@@ -1473,35 +1473,35 @@ def fastoche_django_messages(
     )
 
 
-@register.inclusion_tag("fastoche/form_snippet.html", takes_context=True)
-def fastoche_form(context) -> dict:
+@register.inclusion_tag("cfran/form_snippet.html", takes_context=True)
+def cfran_form(context) -> dict:
     """
     Returns the HTML for a form snippet
 
     **Tag name**:
-        fastoche_form
+        cfran_form
 
     **Usage**:
-        `{% fastoche_form %}`
+        `{% cfran_form %}`
     """
     return context
 
 
-@register.inclusion_tag("fastoche/form_field_snippets/field_snippet.html")
-def fastoche_form_field(field) -> dict:
+@register.inclusion_tag("cfran/form_field_snippets/field_snippet.html")
+def cfran_form_field(field) -> dict:
     """
     Returns the HTML for a form field snippet
 
     **Tag name**:
-        fastoche_form_field
+        cfran_form_field
 
     **Usage**:
-        `{% fastoche_form_field field %}`
+        `{% cfran_form_field field %}`
     """
     return {"field": field}
 
 
-register.filter(name="fastoche_input_class_attr", filter_func=fastoche_input_class_attr)
+register.filter(name="cfran_input_class_attr", filter_func=cfran_input_class_attr)
 
 
 # Other tags and helpers

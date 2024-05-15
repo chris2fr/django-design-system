@@ -7,14 +7,14 @@ class Migration(migrations.Migration):
 
     dependencies = [
         (
-            "django_fastoche",
-            "0004_fastocheconfig_beta_tag_fastocheconfig_operator_logo_alt_and_more",
+            "django_cfran",
+            "0004_cfranconfig_beta_tag_cfranconfig_operator_logo_alt_and_more",
         ),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="notice",
             field=models.CharField(
                 blank=True,

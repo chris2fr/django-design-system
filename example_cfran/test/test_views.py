@@ -2,7 +2,7 @@ import unittest
 from django.test import Client
 from django.urls import reverse
 
-from example_fastoche.fastoche_components import ALL_TAGS
+from example_cfran.cfran_components import ALL_TAGS
 
 
 class BasicPagesTest(unittest.TestCase):

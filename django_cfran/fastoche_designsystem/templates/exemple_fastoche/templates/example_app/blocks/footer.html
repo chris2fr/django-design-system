@@ -1,14 +1,14 @@
-{% extends "fastoche/footer.html" %}
+{% extends "cfran/footer.html" %}
 {% load i18n %}
 
 {% block footer_links %}
   {{ block.super }}
-  <li class="fastoche-footer__bottom-item">
+  <li class="cfran-footer__bottom-item">
     <button id="footer__bottom-link__parametres-affichage"
-            aria-controls="fastoche-theme-modal"
-            data-fastoche-opened="false"
-            class="fastoche-icon-theme-fill fastoche-link--icon-left fastoche-footer__bottom-link"
-            data-fastoche-js-modal-button="true">
+            aria-controls="cfran-theme-modal"
+            data-cfran-opened="false"
+            class="cfran-icon-theme-fill cfran-link--icon-left cfran-footer__bottom-link"
+            data-cfran-js-modal-button="true">
       {% translate "Display settings" %}
     </button>
   </li>
@@ -18,15 +18,15 @@
   {% translate "Back to home page" as back_to_home_label %}
   {% url 'index' as home_url %}
   {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
-    <div class="fastoche-footer__brand fastoche-enlarge-link">
-      <p class="fastoche-logo"
+    <div class="cfran-footer__brand cfran-enlarge-link">
+      <p class="cfran-logo"
          title="{{ SITE_CONFIG.footer_brand|default:'république française' }}">
         {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
       </p>
-      <a class="fastoche-footer__brand-link"
+      <a class="cfran-footer__brand-link"
          href="{{ home_url }}"
          title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
-        <img class="fastoche-footer__logo"
+        <img class="cfran-footer__logo"
              src="{{ SITE_CONFIG.operator_logo_file.url }}"
              alt="{{ SITE_CONFIG.operator_logo_alt }}"
              {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
@@ -34,12 +34,12 @@
       </a>
     </div>
   {% else %}
-    <div class="fastoche-footer__brand fastoche-enlarge-link">
+    <div class="cfran-footer__brand cfran-enlarge-link">
       <a id="footer-operator"
          href="{{ home_url }}"
          title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'république française' }}">
         {% block brand %}
-          <p class="fastoche-logo">
+          <p class="cfran-logo">
             {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
           </p>
         {% endblock brand %}

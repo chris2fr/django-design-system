@@ -1,4 +1,4 @@
-name: Django-FASTOCHE deploy documentation
+name: Django-CFRAN deploy documentation
 
 on:
   push:
@@ -29,10 +29,10 @@ jobs:
     - name: 📄 Build docs
       run: |
         make export_static
-        touch docs/django-fastoche/.nojekyll
+        touch docs/django-cfran/.nojekyll
     - name: 🚀 Deploy Github Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages     # <- Branche sur laquelle seront commités les fichiers
-        FOLDER: docs/django-fastoche/  # <- Dossier contenant notre documentation générée
+        FOLDER: docs/django-cfran/  # <- Dossier contenant notre documentation générée

@@ -6,46 +6,46 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_fastoche", "0009_alter_fastocheconfig_footer_brand_and_more"),
+        ("django_cfran", "0009_alter_cfranconfig_footer_brand_and_more"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="footer_brand",
             field=models.CharField(
                 blank=True,
-                default="Web Fastoche",
+                default="Web Cfran",
                 max_length=200,
                 verbose_name="Institution (footer)",
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="footer_brand_html",
             field=models.CharField(
                 blank=True,
-                default="Web<br />Fastoche",
+                default="Web<br />Cfran",
                 max_length=200,
                 verbose_name="Institution with line break (footer)",
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="header_brand",
             field=models.CharField(
                 blank=True,
-                default="Web Fastoche",
+                default="Web Cfran",
                 max_length=200,
                 verbose_name="Institution (header)",
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="header_brand_html",
             field=models.CharField(
                 blank=True,
-                default="Web<br />Fastoche",
+                default="Web<br />Cfran",
                 max_length=200,
                 verbose_name="Institution with line break (header)",
             ),

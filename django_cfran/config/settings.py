@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     "django_extensions",
     "csp",
     "widget_tweaks",
-    "django_fastoche.fastoche_lesgrandsvoisins",
-    "django_fastoche.fastoche_designsystem",
-    "django_fastoche",
-    "example_fastoche",
+    "django_cfran.cfran_lesgrandsvoisins",
+    "django_cfran.cfran_designsystem",
+    "django_cfran",
+    "example_cfran",
     "django_distill",
 ]
 
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "django_fastoche.config.urls"
+ROOT_URLCONF = "django_cfran.config.urls"
 
 TEMPLATES = [
     {
@@ -77,8 +77,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "django_fastoche.context_processors.site_config",
-                # "fastoche.context_processors.site_config",
+                "django_cfran.context_processors.site_config",
+                # "cfran.context_processors.site_config",
             ],
         },
     },
@@ -87,7 +87,7 @@ TEMPLATES = [
 if DJANGO_VERSION < (5, 0):
     FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
-WSGI_APPLICATION = "django_fastoche.config.wsgi.application"
+WSGI_APPLICATION = "django_cfran.config.wsgi.application"
 
 
 # Database

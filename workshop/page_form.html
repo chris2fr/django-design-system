@@ -1,17 +1,17 @@
-{% extends "example_fastoche/base.html" %}
-{% load static fastoche_tags %}
+{% extends "example_cfran/base.html" %}
+{% load static cfran_tags %}
 {% block content %}
   <h1>
     Exemple de formulaire
   </h1>
   <form action="{% url 'page_form' %}" method="post">
     {% csrf_token %}
-    {% fastoche_form %}
-    <div class="fastoche-input-group fastoche-my-4w">
-      <button type="submit" class="fastoche-btn" title="Valider">
+    {% cfran_form %}
+    <div class="cfran-input-group cfran-my-4w">
+      <button type="submit" class="cfran-btn" title="Valider">
         Valider ce formulaire
       </button>
-      <button type="" class="fastoche-btn fastoche-btn--secondary" title="Annuler">
+      <button type="" class="cfran-btn cfran-btn--secondary" title="Annuler">
         Annuler
       </button>
     </div>

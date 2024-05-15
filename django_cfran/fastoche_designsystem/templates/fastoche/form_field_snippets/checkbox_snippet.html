@@ -1,16 +1,16 @@
-{% load widget_tweaks fastoche_tags %}
-<div class="fastoche-checkbox-group{% if field.errors %} fastoche-checkbox-group--error{% endif %}{% if field.field.disabled %} fastoche-input-group--disabled{% endif %} fastoche-mb-2w">
+{% load widget_tweaks cfran_tags %}
+<div class="cfran-checkbox-group{% if field.errors %} cfran-checkbox-group--error{% endif %}{% if field.field.disabled %} cfran-input-group--disabled{% endif %} cfran-mb-2w">
   {% if field.errors %}
     {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
-      {{ field|fastoche_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+      {{ field|cfran_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
     {% endwith %}
   {% else %}
-    {{ field|fastoche_input_class_attr|attr:"type:checkbox" }}
+    {{ field|cfran_input_class_attr|attr:"type:checkbox" }}
   {% endif %}
-  <label for="{{ field.id_for_label }}" class="fastoche-label">
+  <label for="{{ field.id_for_label }}" class="cfran-label">
     {{ field.label_tag }}
     {% if field.help_text %}
-      <span class="fastoche-hint-text">{{ field.help_text }}</span>
+      <span class="cfran-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </label>
   {% if field.errors %}

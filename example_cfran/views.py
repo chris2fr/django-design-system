@@ -13,11 +13,11 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
-from django_fastoche.utils import generate_summary_items
+from django_cfran.utils import generate_summary_items
 
-from example_fastoche.forms import ColorForm, ExampleForm
+from example_cfran.forms import ColorForm, ExampleForm
 
-from example_fastoche.fastoche_components import (
+from example_cfran.cfran_components import (
     ALL_IMPLEMENTED_COMPONENTS,
     IMPLEMENTED_COMPONENTS,
     EXTRA_COMPONENTS,
@@ -25,19 +25,19 @@ from example_fastoche.fastoche_components import (
     WONT_BE_IMPLEMENTED,
 )
 
-# Used by the module = getattr(globals()["fastoche_tags"], f"fastoche_{tag_name}") line
-from django_fastoche.templatetags import fastoche_tags  # noqa
+# Used by the module = getattr(globals()["cfran_tags"], f"cfran_{tag_name}") line
+from django_cfran.templatetags import cfran_tags  # noqa
 
 # /!\ In order to test formset
 from django.views.generic import CreateView
 from django.http import HttpResponse
-from example_fastoche.forms import (
-    FastocheAuthorCreateForm,
-    FastocheBookCreateFormSet,
-    FastocheBookCreateFormHelper,
+from example_cfran.forms import (
+    CfranAuthorCreateForm,
+    CfranBookCreateFormSet,
+    CfranBookCreateFormHelper,
 )
-from example_fastoche.models import FastocheAuthor
-from example_fastoche.utils import format_markdown_from_file
+from example_cfran.models import CfranAuthor
+from example_cfran.utils import format_markdown_from_file
 
 
 def chunks(data, SIZE=10000):
@@ -55,12 +55,12 @@ def init_payload(page_title: str, links: list = []):
     breadcrumb_data = {
         "current": page_title,
         "links": links,
-        "root_dir": "/django-fastoche",
+        "root_dir": "/django-cfran",
     }
 
     skiplinks = [
         {"link": "#content", "label": "Contenu"},
-        {"link": "#fastoche-navigation", "label": "Menu"},
+        {"link": "#cfran-navigation", "label": "Menu"},
     ]
 
     implemented_component_tags_unsorted = ALL_IMPLEMENTED_COMPONENTS
@@ -73,7 +73,7 @@ def init_payload(page_title: str, links: list = []):
                 "see_all",
                 {
                     "title": "Voir tous les composants",
-                    "url": "/django-fastoche/components/",
+                    "url": "/django-cfran/components/",
                 },
             )
         ]
@@ -102,7 +102,7 @@ def index(request):
         ]
     )
 
-    return render(request, "example_fastoche/index.html", payload)
+    return render(request, "example_cfran/index.html", payload)
 
 
 @require_safe
@@ -124,7 +124,7 @@ def components_index(request):
     md = markdown.Markdown(
         extensions=[
             "markdown.extensions.fenced_code",
-            CodeHiliteExtension(css_class="fastoche-code"),
+            CodeHiliteExtension(css_class="cfran-code"),
         ],
     )
 
@@ -140,7 +140,7 @@ def components_index(request):
             md.convert(v["reason"]).replace("<p>", "").replace("</p>", "")
         )
     payload["wont_be"] = wont_be
-    return render(request, "example_fastoche/components_index.html", payload)
+    return render(request, "example_cfran/components_index.html", payload)
 
 
 @require_safe
@@ -171,14 +171,14 @@ def page_component(request, tag_name):  # NOSONAR
             messages.warning(request, "Ceci est un avertissement")
             messages.error(request, "Ceci est une erreur")
 
-        module = getattr(globals()["fastoche_tags"], f"fastoche_{tag_name}")
+        module = getattr(globals()["cfran_tags"], f"cfran_{tag_name}")
         payload["tag_comment"] = markdown.markdown(
             dedent(module.__doc__),
             extensions=[
                 "markdown.extensions.tables",
                 "md_in_html",
                 "markdown.extensions.fenced_code",
-                CodeHiliteExtension(css_class="fastoche-code"),
+                CodeHiliteExtension(css_class="cfran-code"),
             ],
         )
 
@@ -219,14 +219,14 @@ def page_component(request, tag_name):  # NOSONAR
                 },
             ]
         }
-        return render(request, "example_fastoche/page_component.html", payload)
+        return render(request, "example_cfran/page_component.html", payload)
     else:
         payload = init_payload("Non implémenté")
         payload["not_yet"] = {
             "text": "Le contenu recherché n’est pas encore implémenté",
             "title": "Non implémenté",
         }
-        return render(request, "example_fastoche/not_yet.html", payload)
+        return render(request, "example_cfran/not_yet.html", payload)
 
 
 @require_safe
@@ -240,7 +240,7 @@ def page_component_header(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -253,7 +253,7 @@ def page_component_footer(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -266,7 +266,7 @@ def page_component_follow(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_follow.html", payload)
+    return render(request, "example_cfran/doc_follow.html", payload)
 
 
 def page_form(request):
@@ -291,15 +291,15 @@ def page_form(request):
     )
     payload["form"] = form
 
-    return render(request, "example_fastoche/page_form.html", payload)
+    return render(request, "example_cfran/page_form.html", payload)
 
 
 # /!\ Example view for form and formset
-class FastocheAuthorCreateView(CreateView):
-    model = FastocheAuthor
-    form_class = FastocheAuthorCreateForm
+class CfranAuthorCreateView(CreateView):
+    model = CfranAuthor
+    form_class = CfranAuthorCreateForm
     formset = None
-    template_name = "example_fastoche/example_form.html"
+    template_name = "example_cfran/example_form.html"
     # /!\ Your template needs to extends form_base.html. If you use formset,
     # your template needs to include another template which extends formset_base.html
 
@@ -315,7 +315,7 @@ class FastocheAuthorCreateView(CreateView):
         form = self.get_form(form_class)
         self.formset = self.get_formset(request)
         formset = self.formset
-        book_formhelper = FastocheBookCreateFormHelper()  # noqa: F841
+        book_formhelper = CfranBookCreateFormHelper()  # noqa: F841
 
         return self.render_to_response(
             self.get_context_data(form=form, formset=formset)
@@ -323,17 +323,17 @@ class FastocheAuthorCreateView(CreateView):
 
     def get_formset(self, request, instance=None):
         if request.POST and instance:
-            self.formset = FastocheBookCreateFormSet(
+            self.formset = CfranBookCreateFormSet(
                 request.POST,
                 request.FILES,
                 instance=instance,
             )
         else:
-            self.formset = FastocheBookCreateFormSet()
+            self.formset = CfranBookCreateFormSet()
         return self.formset
 
     def get_context_data(self, **kwargs):
-        context = super(FastocheAuthorCreateView, self).get_context_data(**kwargs)
+        context = super(CfranAuthorCreateView, self).get_context_data(**kwargs)
 
         payload = init_payload(
             "Formulaire avec formset",
@@ -343,7 +343,7 @@ class FastocheAuthorCreateView(CreateView):
         for key, value in payload.items():
             context[key] = value
 
-        book_formhelper = FastocheBookCreateFormHelper()
+        book_formhelper = CfranBookCreateFormHelper()
 
         instance = None
         try:
@@ -355,7 +355,7 @@ class FastocheAuthorCreateView(CreateView):
         # /!\ Pass your form, formset and helper to the context
         if self.request.POST:
             context["form"] = self.form_class(self.request.POST)
-            context["formset"] = FastocheBookCreateFormSet(
+            context["formset"] = CfranBookCreateFormSet(
                 self.request.POST, self.request.FILES, instance=instance
             )
             context["book_formhelper"] = book_formhelper
@@ -367,7 +367,7 @@ class FastocheAuthorCreateView(CreateView):
 
         context["object_name"] = "book"
 
-        # /!\ Don't forget your fastoche button
+        # /!\ Don't forget your cfran button
         context["btn_submit"] = {
             "label": "Soumettre",
             "onclick": "",
@@ -385,7 +385,7 @@ class FastocheAuthorCreateView(CreateView):
 
         form_class = self.get_form_class()
         form = self.get_form(form_class)
-        formset = FastocheBookCreateFormSet(
+        formset = CfranBookCreateFormSet(
             self.request.POST, self.request.FILES, instance=instance
         )
 
@@ -395,7 +395,7 @@ class FastocheAuthorCreateView(CreateView):
 
     def form_valid(self, form, formset):  # type: ignore
         """
-        Called if all forms are valid. Creates a FastocheAuthor instance along
+        Called if all forms are valid. Creates a CfranAuthor instance along
         with associated books and then redirects to a success page.
         """
 
@@ -419,34 +419,34 @@ class FastocheAuthorCreateView(CreateView):
 
 @require_safe
 def doc_contributing(request):
-    payload = init_payload("Contribuer à Django-fastoche")
+    payload = init_payload("Contribuer à Django-cfran")
     md = format_markdown_from_file("CONTRIBUTING.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_install(request):
-    payload = init_payload("Installation de Django-fastoche")
+    payload = init_payload("Installation de Django-cfran")
 
     md = format_markdown_from_file("INSTALL.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_usage(request):
-    payload = init_payload("Utiliser Django-fastoche")
+    payload = init_payload("Utiliser Django-cfran")
 
     md = format_markdown_from_file("doc/usage.md")
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -456,21 +456,21 @@ def doc_form(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_fastoche/doc_markdown.html", payload)
+    return render(request, "example_cfran/doc_markdown.html", payload)
 
 
 @require_safe
 def resource_icons(request):
     payload = init_payload("Icônes")
 
-    icons_root = "fastoche/static/fastoche/dist/icons/"
+    icons_root = "cfran/static/cfran/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
     summary = []
     for folder in icons_folders:
         files = os.listdir(os.path.join(icons_root, folder))
-        files_without_extensions = [f.split(".")[0].replace("fastoche--", "") for f in files]
+        files_without_extensions = [f.split(".")[0].replace("cfran--", "") for f in files]
         files_without_extensions.sort()
         all_icons[folder] = files_without_extensions
         summary.append({"link": f"#{slugify(folder)}", "label": folder.capitalize()})
@@ -478,14 +478,14 @@ def resource_icons(request):
     payload["icons"] = all_icons
     payload["summary"] = summary
 
-    return render(request, "example_fastoche/page_icons.html", payload)
+    return render(request, "example_cfran/page_icons.html", payload)
 
 
 @require_safe
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes")
 
-    picto_root = "fastoche/static/fastoche/dist/artwork/pictograms/"
+    picto_root = "cfran/static/cfran/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}
@@ -499,7 +499,7 @@ def resource_pictograms(request):
     payload["pictograms"] = all_pictos
     payload["summary"] = summary
 
-    return render(request, "example_fastoche/page_pictograms.html", payload)
+    return render(request, "example_cfran/page_pictograms.html", payload)
 
 
 @require_safe
@@ -511,11 +511,11 @@ def resource_colors(request):
     payload["form"] = form
     payload["components_data"] = IMPLEMENTED_COMPONENTS
 
-    return render(request, "example_fastoche/page_colors.html", payload)
+    return render(request, "example_cfran/page_colors.html", payload)
 
 
 @require_safe
 def search(request):
     payload = init_payload("Recherche")
 
-    return render(request, "example_fastoche/search.html", payload)
+    return render(request, "example_cfran/search.html", payload)

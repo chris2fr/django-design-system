@@ -1,9 +1,9 @@
 <li>
-  <a class="fastoche-summary__link" href="{{ item.link }}">{{ item.label }}</a>
+  <a class="cfran-summary__link" href="{{ item.link }}">{{ item.label }}</a>
   {% if item.children %}
     <ol>
       {% for child in item.children %}
-        {% include "fastoche/summary_list.html" with item=child %}
+        {% include "cfran/summary_list.html" with item=child %}
       {% endfor %}
     </ol>
   {% endif %}

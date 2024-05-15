@@ -3,8 +3,8 @@
 {# to be extended in the templates where a form is displayed #}
 {# Check django comments for more information #}
 {# extends your base.html template #}
-{% extends "fastoche/base.html" %}
-{% load static fastoche_tags widget_tweaks %}
+{% extends "cfran/base.html" %}
+{% load static cfran_tags widget_tweaks %}
 {% comment %}
 Radio button and multiple checkboxes :
     -Help text under each button/checkbox :
@@ -14,7 +14,7 @@ Radio button and multiple checkboxes :
 
     -Horizontal list of buttons/checkboxes :
         In your forms.py, in the RadioSelect widget or the CheckboxSelectMultiple widget,
-        put attrs={"class":"fastoche-fieldset--inline"}
+        put attrs={"class":"cfran-fieldset--inline"}
 {% endcomment %}
 {% block extra_css %}
 {% endblock extra_css %}
@@ -36,7 +36,7 @@ Radio button and multiple checkboxes :
         {# Everything that needs to be in the for loop #}
         {% block inside_form %}
         {% endblock inside_form %}
-        {% include "fastoche/form_field_snippets/field_snippet.html" %}
+        {% include "cfran/form_field_snippets/field_snippet.html" %}
       {% endfor %}
       {# If you need to add formsets after the form #}
       {% block extra_formset_after %}

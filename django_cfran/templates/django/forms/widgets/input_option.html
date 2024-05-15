@@ -1,16 +1,16 @@
 {% if widget.type and widget.type == 'radio' %}
-  <div class="fastoche-radio-group">
+  <div class="cfran-radio-group">
   {% endif %}
   {% include "django/forms/widgets/input.html" %}
   {% if widget.wrap_label %}
-    <label class="fastoche-label"
+    <label class="cfran-label"
            {% if widget.attrs.id %}for="{{ widget.attrs.id }}"{% endif %}>
       {% if widget.label.label %}
         {{ widget.label.label }}
-        <span class="fastoche-hint-text">{{ widget.label.help_text }}</span>
+        <span class="cfran-hint-text">{{ widget.label.help_text }}</span>
       {% else %}
         {{ widget.label }}
-        <span class="fastoche-hint-text">{{ widget.label.help_text }}</span>
+        <span class="cfran-hint-text">{{ widget.label.help_text }}</span>
       {% endif %}
     </label>
   {% endif %}

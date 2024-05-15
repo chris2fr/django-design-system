@@ -1,13 +1,13 @@
 from django.contrib import admin
 
-from example_fastoche.models import FastocheAuthor, FastocheGenre, FastocheBook
+from example_cfran.models import CfranAuthor, CfranGenre, CfranBook
 
 
 # Register your models here.
-@admin.register(FastocheAuthor)
-class FastocheAuthorAdmin(admin.ModelAdmin):
+@admin.register(CfranAuthor)
+class CfranAuthorAdmin(admin.ModelAdmin):
     """
-    Admin model for FastocheAuthor
+    Admin model for CfranAuthor
     """
 
     list_display = (
@@ -17,10 +17,10 @@ class FastocheAuthorAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(FastocheGenre)
-class FastocheGenreAdmin(admin.ModelAdmin):
+@admin.register(CfranGenre)
+class CfranGenreAdmin(admin.ModelAdmin):
     """
-    Admin model for FastocheGenre
+    Admin model for CfranGenre
     """
 
     list_display = (
@@ -30,10 +30,10 @@ class FastocheGenreAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(FastocheBook)
-class FastocheBookAdmin(admin.ModelAdmin):
+@admin.register(CfranBook)
+class CfranBookAdmin(admin.ModelAdmin):
     """
-    Admin model for FastocheBook
+    Admin model for CfranBook
     """
 
     pass

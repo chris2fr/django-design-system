@@ -58,7 +58,7 @@ def parse_tag_args(args, kwargs, allowed_keys: list) -> dict:
 
 def find_active_menu_items(menu: list, active_path: str) -> tuple:
     """
-    Utility function for the fastoche_sidemenu tag: recusively locates the current
+    Utility function for the cfran_sidemenu tag: recusively locates the current
     active page and its parent menus and sets them to active
     """
     set_active = False
@@ -92,7 +92,7 @@ def generate_random_id(start: str = ""):
 def generate_summary_items(sections_names: list) -> list:
     """
     Takes a list of section names and returns them as a list of links
-    that can be used with fastoche_summary or fastoche_menu tags.
+    that can be used with cfran_summary or cfran_menu tags.
     """
     items = []
     for section_name in sections_names:
@@ -106,17 +106,17 @@ def generate_summary_items(sections_names: list) -> list:
     return items
 
 
-def fastoche_input_class_attr(bf: BoundField):
+def cfran_input_class_attr(bf: BoundField):
     if not bf.is_hidden and "class" not in bf.field.widget.attrs:
         bf.field.label_suffix = ""
         if isinstance(bf.field.widget, (widgets.Select, widgets.SelectMultiple)):
-            bf.field.widget.attrs["class"] = "fastoche-select"
-            bf.field.widget.group_class = "fastoche-select-group"
+            bf.field.widget.attrs["class"] = "cfran-select"
+            bf.field.widget.group_class = "cfran-select-group"
         elif isinstance(bf.field.widget, widgets.RadioSelect):
-            bf.field.widget.attrs["fastoche"] = "fastoche"
-            bf.field.widget.group_class = "fastoche-radio-group"
+            bf.field.widget.attrs["cfran"] = "cfran"
+            bf.field.widget.group_class = "cfran-radio-group"
         elif isinstance(bf.field.widget, widgets.CheckboxSelectMultiple):
-            bf.field.widget.attrs["fastoche"] = "fastoche"
+            bf.field.widget.attrs["cfran"] = "cfran"
         elif not isinstance(
             bf.field.widget,
             (
@@ -125,5 +125,5 @@ def fastoche_input_class_attr(bf: BoundField):
                 widgets.ClearableFileInput,
             ),
         ):
-            bf.field.widget.attrs["class"] = "fastoche-input"
+            bf.field.widget.attrs["class"] = "cfran-input"
     return bf

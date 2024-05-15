@@ -18,92 +18,92 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4\n"
 
-#: example_fastoche/apps.py:9
+#: example_cfran/apps.py:9
 msgid "Example app"
 msgstr "Application d’exemple"
 
-#: example_fastoche/models.py:10
+#: example_cfran/models.py:10
 msgid "First name"
 msgstr "Prénom"
 
-#: example_fastoche/models.py:13
+#: example_cfran/models.py:13
 msgid "Last name"
 msgstr "Nom"
 
-#: example_fastoche/models.py:15
+#: example_cfran/models.py:15
 msgid "Birth date"
 msgstr "Date de naissance"
 
-#: example_fastoche/models.py:18
-msgid "fastocheAuthor"
+#: example_cfran/models.py:18
+msgid "cfranAuthor"
 msgstr "Auteur"
 
-#: example_fastoche/models.py:22
+#: example_cfran/models.py:22
 msgid "Code"
 msgstr "Code"
 
-#: example_fastoche/models.py:24
+#: example_cfran/models.py:24
 msgid "Designation"
 msgstr "Désignation"
 
-#: example_fastoche/models.py:26
+#: example_cfran/models.py:26
 msgid "Help text"
 msgstr "Texte d’aide"
 
-#: example_fastoche/models.py:32
-msgid "fastocheGenre"
-msgstr "fastocheGenre"
+#: example_cfran/models.py:32
+msgid "cfranGenre"
+msgstr "cfranGenre"
 
-#: example_fastoche/models.py:36
+#: example_cfran/models.py:36
 msgid "Paper"
 msgstr "Papier"
 
-#: example_fastoche/models.py:37
+#: example_cfran/models.py:37
 msgid "Digital"
 msgstr "Numérique"
 
-#: example_fastoche/models.py:45
+#: example_cfran/models.py:45
 msgid "Title"
 msgstr "Titre"
 
-#: example_fastoche/models.py:46
+#: example_cfran/models.py:46
 msgid "Number of pages"
 msgstr "Nombre de pages"
 
-#: example_fastoche/models.py:48
+#: example_cfran/models.py:48
 msgid "Format"
 msgstr "Format"
 
-#: example_fastoche/models.py:53
-msgid "fastocheBook"
+#: example_cfran/models.py:53
+msgid "cfranBook"
 msgstr "Livre"
 
-#: example_fastoche/templates/fastoche/blocks/footer.html:12
-#: example_fastoche/templates/fastoche/blocks/header.html:31
+#: example_cfran/templates/cfran/blocks/footer.html:12
+#: example_cfran/templates/cfran/blocks/header.html:31
 msgid "Display settings"
 msgstr "Paramètres d’affichage"
 
-#: example_fastoche/templates/fastoche/blocks/footer.html:18
+#: example_cfran/templates/cfran/blocks/footer.html:18
 msgid "Back to home page"
 msgstr "Retour à l’accueil du site"
 
-#: example_fastoche/templates/fastoche/blocks/header.html:6
+#: example_cfran/templates/cfran/blocks/header.html:6
 msgid "Home page"
 msgstr "Accueil"
 
-#: example_fastoche/templates/fastoche/blocks/header.html:43
-#: example_fastoche/templates/fastoche/blocks/header.html:68
+#: example_cfran/templates/cfran/blocks/header.html:43
+#: example_cfran/templates/cfran/blocks/header.html:68
 msgid "Search"
 msgstr "Rechercher"
 
-#: example_fastoche/templates/fastoche/blocks/header.html:52
+#: example_cfran/templates/cfran/blocks/header.html:52
 msgid "Menu"
 msgstr "Menu"
 
-#: example_fastoche/templates/fastoche/blocks/header.html:71
+#: example_cfran/templates/cfran/blocks/header.html:71
 msgid "Close"
 msgstr "Fermer"
 
-#: example_fastoche/templates/fastoche/blocks/language_selector.html:10
+#: example_cfran/templates/cfran/blocks/language_selector.html:10
 msgid "Select language"
 msgstr "Sélectionner une langue"

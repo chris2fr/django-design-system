@@ -1,4 +1,4 @@
-{% extends "fastoche/header.html" %}
+{% extends "cfran/header.html" %}
 {% load i18n %}
 {% url 'index' as home_url %}
 
@@ -6,18 +6,18 @@
   {% translate "Home page" as home_page %}
   <a href="{{ home_url }}"
      title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
-    <p class="fastoche-logo">
-      {{ SITE_CONFIG.header_brand_html|default_if_none:"django<br />fastoche" | safe }}
+    <p class="cfran-logo">
+      {{ SITE_CONFIG.header_brand_html|default_if_none:"django<br />cfran" | safe }}
     </p>
   </a>
 {% endblock brand %}
 
 {% block service_title %}
   <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
-    <p class="fastoche-header__service-title">
+    <p class="cfran-header__service-title">
       {{ SITE_CONFIG.site_title }}
       {% if SITE_CONFIG.beta_tag %}
-        <span class="fastoche-badge fastoche-badge--sm fastoche-badge--green-emeraude">BETA</span>
+        <span class="cfran-badge cfran-badge--sm cfran-badge--green-emeraude">BETA</span>
       {% endif %}
     </p>
   </a>
@@ -25,15 +25,15 @@
 
 {% block header_tools %}
   <li>
-    <button class="fastoche-btn--display fastoche-btn"
-            aria-controls="fastoche-theme-modal"
-            data-fastoche-opened="false">
+    <button class="cfran-btn--display cfran-btn"
+            aria-controls="cfran-theme-modal"
+            data-cfran-opened="false">
       {% translate "Display settings" %}
     </button>
   </li>
   {% if "127.0.0.1" in request.get_host %}
     <li>
-      {% include "fastoche/blocks/language_selector.html" %}
+      {% include "cfran/blocks/language_selector.html" %}
     </li>
   {% endif %}
 {% endblock header_tools %}
@@ -41,19 +41,19 @@
 {# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
 {% block burger_menu %}
   {% translate "Search" as search_label %}
-  <div class="fastoche-header__navbar">
-    <button class="fastoche-btn--search fastoche-btn"
-            data-fastoche-opened="false"
+  <div class="cfran-header__navbar">
+    <button class="cfran-btn--search cfran-btn"
+            data-cfran-opened="false"
             aria-controls="modal-search"
-            id="fastoche-btn-search-mobile"
+            id="cfran-btn-search-mobile"
             title="{{ search_label }}">
       {{ search_label }}
     </button>
     {% translate "Menu" as menu_label %}
-    <button class="fastoche-btn--menu fastoche-btn"
-            data-fastoche-opened="false"
-            aria-controls="fastoche-menu-mobile"
-            id="fastoche-btn-menu-mobile"
+    <button class="cfran-btn--menu cfran-btn"
+            data-cfran-opened="false"
+            aria-controls="cfran-menu-mobile"
+            id="cfran-btn-menu-mobile"
             title="{{ menu_label }}">
       {{ menu_label }}
     </button>
@@ -61,30 +61,30 @@
 {% endblock burger_menu %}
 
 {% block main_menu %}
-  {% include "fastoche/blocks/main_menu.html" %}
+  {% include "cfran/blocks/main_menu.html" %}
 {% endblock main_menu %}
 
 {% block header_search %}
   {% translate "Search" as search_label %}
-  <div class="fastoche-header__search fastoche-modal" id="modal-search">
-    <div class="fastoche-container fastoche-container-lg--fluid">
+  <div class="cfran-header__search cfran-modal" id="modal-search">
+    <div class="cfran-container cfran-container-lg--fluid">
       {% translate "Close" as close_label %}
-      <button class="fastoche-btn--close fastoche-btn"
+      <button class="cfran-btn--close cfran-btn"
               aria-controls="modal-search"
               title="{{ close_label }}">
         {{ close_label }}
       </button>
       <form action="{% url 'page_search' %}" method="get">
-        <div class="fastoche-search-bar" id="search-bar" role="search">
-          <label class="fastoche-label" for="search-bar-input">
+        <div class="cfran-search-bar" id="search-bar" role="search">
+          <label class="cfran-label" for="search-bar-input">
             {{ search_label }}
           </label>
-          <input class="fastoche-input"
+          <input class="cfran-input"
                  placeholder="{{ search_label }}"
                  type="search"
                  id="query"
                  name="q">
-          <button class="fastoche-btn" title="{{ search_label }}">
+          <button class="cfran-btn" title="{{ search_label }}">
             {{ search_label }}
           </button>
         </div>

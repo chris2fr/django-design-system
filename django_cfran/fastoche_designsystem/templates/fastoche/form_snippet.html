@@ -1,5 +1,5 @@
 {% if form.non_field_errors %}
-  <section class="fastoche-my-4v fastoche-input-group fastoche-input-group--error">
+  <section class="cfran-my-4v cfran-input-group cfran-input-group--error">
     {{ form.non_field_errors }}
   </section>
 {% endif %}
@@ -7,5 +7,5 @@
   {{ hidden }}
 {% endfor %}
 {% for field in form.visible_fields %}
-  {% include "fastoche/form_field_snippets/field_snippet.html" %}
+  {% include "cfran/form_field_snippets/field_snippet.html" %}
 {% endfor %}

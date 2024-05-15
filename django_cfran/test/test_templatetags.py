@@ -2,7 +2,7 @@ from django.test import SimpleTestCase
 from django.template import Context, Template
 from unittest.mock import MagicMock
 
-from django_fastoche.checksums import (
+from django_cfran.checksums import (
     INTEGRITY_CSS,
     INTEGRITY_FAVICON_APPLE,
     INTEGRITY_FAVICON_ICO,
@@ -11,78 +11,78 @@ from django_fastoche.checksums import (
     INTEGRITY_JS_MODULE,
     INTEGRITY_JS_NOMODULE,
 )
-from django_fastoche.templatetags.fastoche_tags import concatenate, hyphenate
+from django_cfran.templatetags.cfran_tags import concatenate, hyphenate
 
 
-class FastocheCssTagTest(SimpleTestCase):
+class CfranCssTagTest(SimpleTestCase):
     def test_css_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load fastoche_tags %} {% fastoche_css %}")
+        template_to_render = Template("{% load cfran_tags %} {% cfran_css %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            f'<link rel="stylesheet" href="/static/fastoche/dist/fastoche/fastoche.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
+            f'<link rel="stylesheet" href="/static/cfran/dist/cfran/cfran.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
             rendered_template,
         )
 
 
-class FastocheJsTagTest(SimpleTestCase):
+class CfranJsTagTest(SimpleTestCase):
     def test_js_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load fastoche_tags %} {% fastoche_js %}")
+        template_to_render = Template("{% load cfran_tags %} {% cfran_js %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/static/fastoche/dist/fastoche/fastoche.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
-            <script nomodule src="/static/fastoche/dist/fastoche/fastoche.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
+            <script type="module" src="/static/cfran/dist/cfran/cfran.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
+            <script nomodule src="/static/cfran/dist/cfran/cfran.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
             """,  # noqa
             rendered_template,
         )
 
 
-class FastocheJsTagWithNonceTest(SimpleTestCase):
+class CfranJsTagWithNonceTest(SimpleTestCase):
     def test_js_tag_rendered(self):
         context = Context()
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_js nonce='random-nonce' %}"
+            "{% load cfran_tags %} {% cfran_js nonce='random-nonce' %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/static/fastoche/dist/fastoche/fastoche.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
-            <script nomodule src="/static/fastoche/dist/fastoche/fastoche.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
+            <script type="module" src="/static/cfran/dist/cfran/cfran.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
+            <script nomodule src="/static/cfran/dist/cfran/cfran.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
             """,  # noqa
             rendered_template,
         )
 
 
-class FastocheFaviconTagTest(SimpleTestCase):
+class CfranFaviconTagTest(SimpleTestCase):
     def test_favicon_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load fastoche_tags %} {% fastoche_favicon %}")
+        template_to_render = Template("{% load cfran_tags %} {% cfran_favicon %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <link rel="apple-touch-icon" href="/static/fastoche/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
-            <link rel="icon" href="/static/fastoche/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
-            <link rel="shortcut icon" href="/static/fastoche/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
+            <link rel="apple-touch-icon" href="/static/cfran/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
+            <link rel="icon" href="/static/cfran/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
+            <link rel="shortcut icon" href="/static/cfran/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
             <!-- 32×32 -->
-            <link rel="manifest" href="/static/fastoche/dist/favicon/manifest.webmanifest"
+            <link rel="manifest" href="/static/cfran/dist/favicon/manifest.webmanifest"
             crossorigin="use-credentials" integrity="{ INTEGRITY_FAVICON_MANIFEST }" />
             """,  # noqa
             rendered_template,
         )
 
 
-class FastocheThemeModaleTagTest(SimpleTestCase):
+class CfranThemeModaleTagTest(SimpleTestCase):
     def test_theme_modale_tag_rendered(self):
         context = Context()
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_theme_modale %}"
+            "{% load cfran_tags %} {% cfran_theme_modale %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <h1 id="fastoche-theme-modal-title" class="modal__title">
+            <h1 id="cfran-theme-modal-title" class="modal__title">
                 Paramètres d’affichage
             </h1>
             """,
@@ -90,7 +90,7 @@ class FastocheThemeModaleTagTest(SimpleTestCase):
         )
 
 
-class FastocheAccordionTagTest(SimpleTestCase):
+class CfranAccordionTagTest(SimpleTestCase):
     test_data = {
         "id": "sample-accordion",
         "title": "Title of the accordion item",
@@ -99,18 +99,18 @@ class FastocheAccordionTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_accordion test_data %}"
+        "{% load cfran_tags %} {% cfran_accordion test_data %}"
     )
 
     def test_accordion_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <section class="fastoche-accordion">
-                <h3 class="fastoche-accordion__title">
-                    <button type="button" class="fastoche-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
+            <section class="cfran-accordion">
+                <h3 class="cfran-accordion__title">
+                    <button type="button" class="cfran-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
                 </h3>
-                <div class="fastoche-collapse" id="sample-accordion">
+                <div class="cfran-collapse" id="sample-accordion">
                     <p><b>Bold</b> and <em>emphatic</em> Example content</p>
                 </div>
             </section>
@@ -119,7 +119,7 @@ class FastocheAccordionTagTest(SimpleTestCase):
         )
 
 
-class FastocheAccordionGroupTagTest(SimpleTestCase):
+class CfranAccordionGroupTagTest(SimpleTestCase):
     test_data = [
         {
             "id": "sample-accordion",
@@ -140,7 +140,7 @@ class FastocheAccordionGroupTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_accordion_group test_data %}"
+        "{% load cfran_tags %} {% cfran_accordion_group test_data %}"
     )
 
     def test_accordion_group_count(self):
@@ -152,7 +152,7 @@ class FastocheAccordionGroupTagTest(SimpleTestCase):
         )
 
 
-class FastocheAlertTagTest(SimpleTestCase):
+class CfranAlertTagTest(SimpleTestCase):
     test_data = {
         "title": "Sample title",
         "type": "info",
@@ -164,7 +164,7 @@ class FastocheAlertTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_alert test_data %}"
+        "{% load cfran_tags %} {% cfran_alert test_data %}"
     )
 
     def test_alert_tag_rendered(self):
@@ -174,14 +174,14 @@ class FastocheAlertTagTest(SimpleTestCase):
     def test_alert_tag_heading_can_be_set(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h3 class="fastoche-alert__title">Sample title</h3>""", rendered_template
+            """<h3 class="cfran-alert__title">Sample title</h3>""", rendered_template
         )
 
     def test_alert_tag_has_collapse_button(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <button class="fastoche-btn--close fastoche-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
+            <button class="cfran-btn--close cfran-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
               Masquer le message
             </button>
             """,  # noqa
@@ -189,28 +189,28 @@ class FastocheAlertTagTest(SimpleTestCase):
         )
 
 
-class FastocheBadgeTagTest(SimpleTestCase):
+class CfranBadgeTagTest(SimpleTestCase):
     test_data = {
         "label": "badge label",
-        "extra_classes": "fastoche-badge--success",
+        "extra_classes": "cfran-badge--success",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_badge test_data %}"
+        "{% load cfran_tags %} {% cfran_badge test_data %}"
     )
 
     def test_badge_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <p class="fastoche-badge fastoche-badge--success">badge label</p>
+            <p class="cfran-badge cfran-badge--success">badge label</p>
             """,
             rendered_template,
         )
 
 
-class FastocheBreadcrumbTagTest(SimpleTestCase):
+class CfranBreadcrumbTagTest(SimpleTestCase):
     breadcrumb_data = {
         "links": [{"url": "test-url", "title": "Test title"}],
         "current": "Test page",
@@ -218,36 +218,36 @@ class FastocheBreadcrumbTagTest(SimpleTestCase):
 
     context = Context({"breadcrumb_data": breadcrumb_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_breadcrumb breadcrumb_data %}"
+        "{% load cfran_tags %} {% cfran_breadcrumb breadcrumb_data %}"
     )
 
     def test_breadcrumb_tag_current_page(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="fastoche-breadcrumb__link" aria-current="page">Test page</a>""",
+            """<a class="cfran-breadcrumb__link" aria-current="page">Test page</a>""",
             rendered_template,
         )
 
     def test_breadcrumb_tag_middle_link(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="fastoche-breadcrumb__link" href="test-url">Test title</a>""",
+            """<a class="cfran-breadcrumb__link" href="test-url">Test title</a>""",
             rendered_template,
         )
 
 
-class FastocheButtonTagTest(SimpleTestCase):
+class CfranButtonTagTest(SimpleTestCase):
     test_data = {
         "onclick": "alert('test button action')",
         "label": "button label",
         "type": "button",
         "name": "test-button",
-        "extra_classes": "fastoche-btn--secondary",
+        "extra_classes": "cfran-btn--secondary",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_button test_data %}"
+        "{% load cfran_tags %} {% cfran_button test_data %}"
     )
 
     def test_button_tag_rendered(self):
@@ -255,7 +255,7 @@ class FastocheButtonTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <button
-            class="fastoche-btn fastoche-btn--secondary"
+            class="cfran-btn cfran-btn--secondary"
             onclick="alert(&#x27;test button action&#x27;)"
             type="button"
             name="test-button"
@@ -267,7 +267,7 @@ class FastocheButtonTagTest(SimpleTestCase):
         )
 
 
-class FastocheButtonGroupTagTest(SimpleTestCase):
+class CfranButtonGroupTagTest(SimpleTestCase):
     test_data = {
         "extra_classes": "btns-group--equisized",
         "items": [
@@ -283,14 +283,14 @@ class FastocheButtonGroupTagTest(SimpleTestCase):
                 "label": "Button 2 label",
                 "type": "button",
                 "name": "test-button-2",
-                "extra_classes": "fastoche-btn--secondary",
+                "extra_classes": "cfran-btn--secondary",
             },
         ],
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_button_group test_data %}"
+        "{% load cfran_tags %} {% cfran_button_group test_data %}"
     )
 
     def test_button_group_tag_rendered(self):
@@ -299,7 +299,7 @@ class FastocheButtonGroupTagTest(SimpleTestCase):
             """
             <ul class="btns-group btns-group--equisized">
                 <li>
-                    <button class="fastoche-btn"
+                    <button class="cfran-btn"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button">
@@ -308,7 +308,7 @@ class FastocheButtonGroupTagTest(SimpleTestCase):
                 </li>
 
                 <li>
-                    <button class="fastoche-btn fastoche-btn--secondary"
+                    <button class="cfran-btn cfran-btn--secondary"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button-2">
@@ -321,25 +321,25 @@ class FastocheButtonGroupTagTest(SimpleTestCase):
         )
 
 
-class FastocheCalloutTagTest(SimpleTestCase):
+class CfranCalloutTagTest(SimpleTestCase):
     test_data = {
         "text": "Text of the callout item",
         "title": "Title of the callout item",
-        "icon_class": "fastoche-icon-information-line",
+        "icon_class": "cfran-icon-information-line",
         "heading_tag": "h4",
         "button": {"onclick": "close()", "label": "button label", "type": "button"},
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_callout test_data %}"
+        "{% load cfran_tags %} {% cfran_callout test_data %}"
     )
 
     def test_callout_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-    <p class="fastoche-callout__text">
+    <p class="cfran-callout__text">
         Text of the callout item
     </p>""",
             rendered_template,
@@ -348,13 +348,13 @@ class FastocheCalloutTagTest(SimpleTestCase):
     def test_callout_optional_title_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h4 class="fastoche-callout__title">Title of the callout item</h4>""",
+            """<h4 class="cfran-callout__title">Title of the callout item</h4>""",
             rendered_template,
         )
 
     def test_callout_optional_icon_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("fastoche-icon-information-line" in rendered_template)
+        self.assertTrue("cfran-icon-information-line" in rendered_template)
 
     def test_callout_optional_button_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -362,7 +362,7 @@ class FastocheCalloutTagTest(SimpleTestCase):
             """
             <button
                 type="button"
-                class="fastoche-btn"
+                class="cfran-btn"
                 onclick="close()"
             >
                 button label
@@ -372,7 +372,7 @@ class FastocheCalloutTagTest(SimpleTestCase):
         )
 
 
-class FastocheCardTagTest(SimpleTestCase):
+class CfranCardTagTest(SimpleTestCase):
     card_data = {
         "top_detail": {"detail": {"text": "Appears before the title of the card item"}},
         "title": "Title of the card item",
@@ -388,17 +388,17 @@ class FastocheCardTagTest(SimpleTestCase):
         {"card_data": card_data, "extra_classes": extra_classes, "new_tab": new_tab}
     )
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_card card_data extra_classes=extra_classes new_tab=newtab %}"  # noqa
+        "{% load cfran_tags %} {% cfran_card card_data extra_classes=extra_classes new_tab=newtab %}"  # noqa
     )
 
     def test_card_is_created(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("fastoche-card" in rendered_template)
+        self.assertTrue("cfran-card" in rendered_template)
 
     def test_card_has_detail(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="fastoche-card__detail">Appears before the title of the card item</p>',
+            '<p class="cfran-card__detail">Appears before the title of the card item</p>',
             rendered_template,
         )
 
@@ -406,7 +406,7 @@ class FastocheCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-                <p class="fastoche-card__title">
+                <p class="cfran-card__title">
                 <a href="https://test.gouv.fr" target="_self">
                     Title of the card item
                 </a>
@@ -417,7 +417,7 @@ class FastocheCardTagTest(SimpleTestCase):
     def test_card_has_description(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="fastoche-card__desc">Text of the card item</p>',
+            '<p class="cfran-card__desc">Text of the card item</p>',
             rendered_template,
         )
 
@@ -425,17 +425,17 @@ class FastocheCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-card__img">
-                <img src="https://test.gouv.fr/test.png" class="fastoche-responsive-img" alt="">
+            <div class="cfran-card__img">
+                <img src="https://test.gouv.fr/test.png" class="cfran-responsive-img" alt="">
             </div>
             """,  # noqa
             rendered_template,
         )
 
 
-class FastocheConsentTagTest(SimpleTestCase):
+class CfranConsentTagTest(SimpleTestCase):
     test_data = {
-        "title": "À propos des cookies sur Django-fastoche",
+        "title": "À propos des cookies sur Django-cfran",
         "content": """
                 Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                 services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
@@ -446,45 +446,45 @@ class FastocheConsentTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_consent test_data %}"
+        "{% load cfran_tags %} {% cfran_consent test_data %}"
     )
 
     def test_consent_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-consent-banner">
-            <h2 class="fastoche-h6">
-                À propos des cookies sur Django-fastoche
+            <div class="cfran-consent-banner">
+            <h2 class="cfran-h6">
+                À propos des cookies sur Django-cfran
             </h2>
-            <div class="fastoche-consent-banner__content">
-                <p class="fastoche-text--sm">
+            <div class="cfran-consent-banner__content">
+                <p class="cfran-text--sm">
                     Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                     services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
                     Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle
                     sur les cookies que vous souhaitez activer.
                 </p>
             </div>
-            <ul class="fastoche-consent-banner__buttons btns-group btns-group--right btns-group--inline-reverse btns-group--inline-sm">
+            <ul class="cfran-consent-banner__buttons btns-group btns-group--right btns-group--inline-reverse btns-group--inline-sm">
                 <li>
-                <button class="fastoche-btn"
+                <button class="cfran-btn"
                         id="consent-accept-all"
                         title="Autoriser tous les cookies">
                     Tout accepter
                 </button>
                 </li>
                 <li>
-                <button class="fastoche-btn"
+                <button class="cfran-btn"
                         id="consent-reject-all"
                         title="Refuser tous les cookies">
                     Tout refuser
                 </button>
                 </li>
                 <li>
-                <button class="fastoche-btn fastoche-btn--secondary"
+                <button class="cfran-btn cfran-btn--secondary"
                         id="consent-customize"
-                        data-fastoche-opened="false"
-                        aria-controls="fastoche-consent-modal"
+                        data-cfran-opened="false"
+                        aria-controls="cfran-consent-modal"
                         title="Personnaliser les cookies">
                     Personnaliser
                 </button>
@@ -496,30 +496,30 @@ class FastocheConsentTagTest(SimpleTestCase):
         )
 
 
-class FastocheContentTagTest(SimpleTestCase):
+class CfranContentTagTest(SimpleTestCase):
     test_data = {
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
         "image_url": "/static/img/placeholder.16x9.svg",
-        "ratio_class": "fastoche-ratio-4x3",
+        "ratio_class": "cfran-ratio-4x3",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_content test_data %}"
+        "{% load cfran_tags %} {% cfran_content test_data %}"
     )
 
     def test_content_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="fastoche-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
-            <div class="fastoche-content-media__img">
-                <img class="fastoche-responsive-img fastoche-ratio-4x3"
+            <figure class="cfran-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
+            <div class="cfran-content-media__img">
+                <img class="cfran-responsive-img cfran-ratio-4x3"
                     src="/static/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
-                <figcaption class="fastoche-content-media__caption">
+                <figcaption class="cfran-content-media__caption">
                 Image en largeur normale et en 4x3
                 </figcaption>
             </figure>""",
@@ -527,23 +527,23 @@ class FastocheContentTagTest(SimpleTestCase):
         )
 
 
-class FastocheFranceConnectTagTest(SimpleTestCase):
+class CfranFranceConnectTagTest(SimpleTestCase):
     test_data = {"id": "france-connect"}
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_france_connect test_data %}"
+        "{% load cfran_tags %} {% cfran_france_connect test_data %}"
     )
 
     def test_franceconnect_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-connect-group">
-                <button class="fastoche-connect"
+            <div class="cfran-connect-group">
+                <button class="cfran-connect"
                         id="france-connect">
-                    <span class="fastoche-connect__login">S’identifier avec</span>
-                    <span class="fastoche-connect__brand">FranceConnect</span>
+                    <span class="cfran-connect__login">S’identifier avec</span>
+                    <span class="cfran-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/"
@@ -557,23 +557,23 @@ class FastocheFranceConnectTagTest(SimpleTestCase):
         )
 
 
-class FastocheFranceConnectPlusTagTest(SimpleTestCase):
+class CfranFranceConnectPlusTagTest(SimpleTestCase):
     test_data = {"id": "france-connect-plus", "plus": True}
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_france_connect test_data %}"
+        "{% load cfran_tags %} {% cfran_france_connect test_data %}"
     )
 
     def test_franceconnectplus_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-connect-group">
-                <button class="fastoche-connect fastoche-connect--plus"
+            <div class="cfran-connect-group">
+                <button class="cfran-connect cfran-connect--plus"
                         id="france-connect-plus">
-                    <span class="fastoche-connect__login">S’identifier avec</span>
-                    <span class="fastoche-connect__brand">FranceConnect</span>
+                    <span class="cfran-connect__login">S’identifier avec</span>
+                    <span class="cfran-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/france-connect-plus"
@@ -587,25 +587,25 @@ class FastocheFranceConnectPlusTagTest(SimpleTestCase):
         )
 
 
-class FastocheHighlightTagTest(SimpleTestCase):
+class CfranHighlightTagTest(SimpleTestCase):
     test_data = {
         "content": "Content of the highlight item (can include html)",
         "title": "(Optional) Title of the highlight item",
         "heading_tag": "h4",
-        "size_class": "fastoche-text--sm",
+        "size_class": "cfran-text--sm",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_highlight test_data %}"
+        "{% load cfran_tags %} {% cfran_highlight test_data %}"
     )
 
     def test_highlight_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-highlight">
-                <p class="fastoche-text--sm">
+            <div class="cfran-highlight">
+                <p class="cfran-text--sm">
                     Content of the highlight item (can include html)
                 </p>
             </div>
@@ -614,7 +614,7 @@ class FastocheHighlightTagTest(SimpleTestCase):
         )
 
 
-class FastocheInputTagTest(SimpleTestCase):
+class CfranInputTagTest(SimpleTestCase):
     test_data_text = {
         "id": "sample-id",
         "label": "Label of the input item",
@@ -636,17 +636,17 @@ class FastocheInputTagTest(SimpleTestCase):
     def test_text_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_text})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_input test_data %}"
+            "{% load cfran_tags %} {% cfran_input test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fastoche-input-group ">
-                <label class="fastoche-label" for="sample-id">
+            <div class="cfran-input-group ">
+                <label class="cfran-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="fastoche-input"
+                    class="cfran-input"
                     type="text"
                     id="sample-id"
                     name="sample-id"
@@ -661,17 +661,17 @@ class FastocheInputTagTest(SimpleTestCase):
     def test_date_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_date})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_input test_data %}"
+            "{% load cfran_tags %} {% cfran_input test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fastoche-input-group ">
-                <label class="fastoche-label" for="sample-id">
+            <div class="cfran-input-group ">
+                <label class="cfran-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="fastoche-input"
+                    class="cfran-input"
                     type="date"
                     id="sample-id"
                     name="sample-id"
@@ -686,17 +686,17 @@ class FastocheInputTagTest(SimpleTestCase):
         )
 
 
-class FastocheLinkTagTest(SimpleTestCase):
+class CfranLinkTagTest(SimpleTestCase):
     test_data = {
         "url": "http://example.com",
         "label": "Label of the link item",
         "is_external": True,
-        "extra_classes": "fastoche-link--lg",
+        "extra_classes": "cfran-link--lg",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_link test_data %}"
+        "{% load cfran_tags %} {% cfran_link test_data %}"
     )
 
     def test_link_tag_rendered(self):
@@ -704,18 +704,18 @@ class FastocheLinkTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <a
-            class="fastoche-link fastoche-icon-external-link-line fastoche-link--icon-right fastoche-link--lg"
+            class="cfran-link cfran-icon-external-link-line cfran-link--icon-right cfran-link--lg"
             href="http://example.com"
             target="_blank" rel="noopener noreferrer"
             >
-              Label of the link item <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span>
+              Label of the link item <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span>
             </a>
             """,  # noqa
             rendered_template,
         )
 
 
-class FastocheNoticeTagTest(SimpleTestCase):
+class CfranNoticeTagTest(SimpleTestCase):
     test_data = {
         "title": """Bandeau d’information importante avec <a href='#'
                             rel='noopener external'
@@ -726,21 +726,21 @@ class FastocheNoticeTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_notice test_data %}"
+        "{% load cfran_tags %} {% cfran_notice test_data %}"
     )
 
     def test_notice_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-notice__body">
-                <p class="fastoche-notice__title">
+            <div class="cfran-notice__body">
+                <p class="cfran-notice__title">
                     Bandeau d’information importante avec <a href='#'
                         rel='noopener external'
                         title="intitulé - Ouvre une nouvelle fenêtre" target='_blank'>
                         lien</a>.
                 </p>
-                    <button class="fastoche-btn--close fastoche-btn"
+                    <button class="cfran-btn--close cfran-btn"
                         title="Masquer le message"
                         onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
                     Masquer le message
@@ -751,7 +751,7 @@ class FastocheNoticeTagTest(SimpleTestCase):
         )
 
 
-class FastocheQuoteTagTest(SimpleTestCase):
+class CfranQuoteTagTest(SimpleTestCase):
     test_data = {
         "text": "Développer vos sites et applications en utilisant des composants prêts à l'emploi, accessibles et ergonomiques",  # noqa
         "source_url": "https://www.systeme-de-design.gouv.fr/",
@@ -768,28 +768,28 @@ class FastocheQuoteTagTest(SimpleTestCase):
     }
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_quote test_data %}"
+        "{% load cfran_tags %} {% cfran_quote test_data %}"
     )
 
     def test_quote_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="fastoche-quote fastoche-quote--column">
+            <figure class="cfran-quote cfran-quote--column">
                 <blockquote cite="https://www.systeme-de-design.gouv.fr/">
                     <p>Développer vos sites et applications en utilisant des composants prêts à l&#x27;emploi, accessibles et ergonomiques</p>
                 </blockquote>
                 <figcaption>
-                    <p class="fastoche-quote__author">Auteur</p>
-                    <ul class="fastoche-quote__source">
+                    <p class="cfran-quote__author">Auteur</p>
+                    <ul class="cfran-quote__source">
                     <li>
                         <cite>Système de Design de l&#x27;État</cite>
                     </li>
                     <li>Détail sans lien</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="fastoche-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
                     </ul>
-                    <div class="fastoche-quote__image">
-                    <img src="https://via.placeholder.com/150x150" class="fastoche-responsive-img" alt="" />
+                    <div class="cfran-quote__image">
+                    <img src="https://via.placeholder.com/150x150" class="cfran-responsive-img" alt="" />
                     </div>
                 </figcaption>
             </figure>
@@ -798,7 +798,7 @@ class FastocheQuoteTagTest(SimpleTestCase):
         )
 
 
-class FastocheSidemenuTagTest(SimpleTestCase):
+class CfranSidemenuTagTest(SimpleTestCase):
     test_data = {
         "title": "Menu",
         "heading_tag": "h2",
@@ -831,7 +831,7 @@ class FastocheSidemenuTagTest(SimpleTestCase):
                             {"label": "Page non active", "link": "#"},
                             {
                                 "label": "Page active",
-                                "link": "/django-fastoche/components/sidemenu/",
+                                "link": "/django-cfran/components/sidemenu/",
                             },
                         ],
                     },
@@ -841,18 +841,18 @@ class FastocheSidemenuTagTest(SimpleTestCase):
     }
 
     request_mock = MagicMock()
-    request_mock.path = "/django-fastoche/components/sidemenu/"
+    request_mock.path = "/django-cfran/components/sidemenu/"
     context = Context({"request": request_mock, "test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_sidemenu test_data %}"
+        "{% load cfran_tags %} {% cfran_sidemenu test_data %}"
     )
     rendered_template = template_to_render.render(context)
 
     def test_sidemenu_tag_rendered(self):
         self.assertInHTML(
             """
-            <li class="fastoche-sidemenu__item">
-                <a class="fastoche-sidemenu__link" href="#" target="_self" >Une page</a>
+            <li class="cfran-sidemenu__item">
+                <a class="cfran-sidemenu__link" href="#" target="_self" >Une page</a>
             </li>
 
             """,
@@ -862,7 +862,7 @@ class FastocheSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_heading_can_be_set(self):
         self.assertInHTML(
             """
-            <h2 class="fastoche-sidemenu__title">Menu</h2>
+            <h2 class="cfran-sidemenu__title">Menu</h2>
             """,
             self.rendered_template,
         )
@@ -870,25 +870,25 @@ class FastocheSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_current_page_and_parents_are_active(self):
         self.assertInHTML(
             """
-            <li class="fastoche-sidemenu__item fastoche-sidemenu__item--active">
+            <li class="cfran-sidemenu__item cfran-sidemenu__item--active">
                 <button
                     type="button"
-                    class="fastoche-sidemenu__btn"
+                    class="cfran-sidemenu__btn"
                     aria-expanded="true"
-                    aria-controls="fastoche-sidemenu-item-2-2"
+                    aria-controls="cfran-sidemenu-item-2-2"
                 >
                     Sous-menu ouvert
                 </button>
-                <div class="fastoche-collapse" id="fastoche-sidemenu-item-2-2">
-                    <ul class="fastoche-sidemenu__list">
-                        <li class="fastoche-sidemenu__item">
-                        <a class="fastoche-sidemenu__link" href="#" target="_self" >
+                <div class="cfran-collapse" id="cfran-sidemenu-item-2-2">
+                    <ul class="cfran-sidemenu__list">
+                        <li class="cfran-sidemenu__item">
+                        <a class="cfran-sidemenu__link" href="#" target="_self" >
                             Page non active
                         </a>
                         </li>
 
-                        <li class="fastoche-sidemenu__item fastoche-sidemenu__item--active">
-                        <a class="fastoche-sidemenu__link" href="/django-fastoche/components/sidemenu/" target="_self"  aria-current="page">
+                        <li class="cfran-sidemenu__item cfran-sidemenu__item--active">
+                        <a class="cfran-sidemenu__link" href="/django-cfran/components/sidemenu/" target="_self"  aria-current="page">
                             Page active
                         </a>
                         </li>
@@ -900,7 +900,7 @@ class FastocheSidemenuTagTest(SimpleTestCase):
         )
 
 
-class FastocheSummaryTagTest(SimpleTestCase):
+class CfranSummaryTagTest(SimpleTestCase):
     test_data = [
         {"link": "link 1", "label": "First item title"},
         {"link": "link 2", "label": "Second item title"},
@@ -908,23 +908,23 @@ class FastocheSummaryTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_summary test_data %}"
+        "{% load cfran_tags %} {% cfran_summary test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <nav role="navigation" class="fastoche-summary" aria-labelledby="fastoche-summary-title">
-                <p class="fastoche-summary__title" id="fastoche-summary-title">Sommaire</p>
-                <ol class="fastoche-summary__list">
+            <nav role="navigation" class="cfran-summary" aria-labelledby="cfran-summary-title">
+                <p class="cfran-summary__title" id="cfran-summary-title">Sommaire</p>
+                <ol class="cfran-summary__list">
 
                     <li>
-                        <a class="fastoche-summary__link" href="link 1">First item title</a>
+                        <a class="cfran-summary__link" href="link 1">First item title</a>
                     </li>
 
                     <li>
-                        <a class="fastoche-summary__link" href="link 2">Second item title</a>
+                        <a class="cfran-summary__link" href="link 2">Second item title</a>
                     </li>
                 </ol>
             </nav>
@@ -933,7 +933,7 @@ class FastocheSummaryTagTest(SimpleTestCase):
         )
 
 
-class FastocheSkiplinksTagTest(SimpleTestCase):
+class CfranSkiplinksTagTest(SimpleTestCase):
     test_data = [
         {"link": "#contenu", "label": "Contenu"},
         {"link": "#header-navigation", "label": "Menu"},
@@ -941,21 +941,21 @@ class FastocheSkiplinksTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_skiplinks test_data %}"
+        "{% load cfran_tags %} {% cfran_skiplinks test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-skiplinks">
-                <nav role="navigation" class="fastoche-container" aria-label="Accès rapide">
-                    <ul class="fastoche-skiplinks__list">
+            <div class="cfran-skiplinks">
+                <nav role="navigation" class="cfran-container" aria-label="Accès rapide">
+                    <ul class="cfran-skiplinks__list">
                     <li>
-                        <a class="fastoche-link" href="#contenu">Contenu</a>
+                        <a class="cfran-link" href="#contenu">Contenu</a>
                     </li>
                     <li>
-                        <a class="fastoche-link" href="#header-navigation">Menu</a>
+                        <a class="cfran-link" href="#header-navigation">Menu</a>
                     </li>
                     </ul>
                 </nav>
@@ -965,7 +965,7 @@ class FastocheSkiplinksTagTest(SimpleTestCase):
         )
 
 
-class FastocheTagTagTest(SimpleTestCase):
+class CfranTagTagTest(SimpleTestCase):
     def test_basic_tag_rendered(self):
         test_data = {
             "label": "Label of the tag item",
@@ -973,11 +973,11 @@ class FastocheTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_tag test_data %}"
+            "{% load cfran_tags %} {% cfran_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="fastoche-tag">Label of the tag item</p>""", rendered_template
+            """<p class="cfran-tag">Label of the tag item</p>""", rendered_template
         )
 
     def test_tag_with_link_rendered(self):
@@ -985,11 +985,11 @@ class FastocheTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_tag test_data %}"
+            "{% load cfran_tags %} {% cfran_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="/components" class="fastoche-tag">Label of the tag item</a>""",
+            """<a href="/components" class="cfran-tag">Label of the tag item</a>""",
             rendered_template,
         )
 
@@ -998,11 +998,11 @@ class FastocheTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_tag test_data extra_classes='fastoche-icon-arrow-right-line fastoche-tag--icon-left' %}"  # noqa
+            "{% load cfran_tags %} {% cfran_tag test_data extra_classes='cfran-icon-arrow-right-line cfran-tag--icon-left' %}"  # noqa
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="fastoche-tag fastoche-icon-arrow-right-line fastoche-tag--icon-left">Label of the tag item</p>""",  # noqa
+            """<p class="cfran-tag cfran-icon-arrow-right-line cfran-tag--icon-left">Label of the tag item</p>""",  # noqa
             rendered_template,
         )
 
@@ -1015,44 +1015,44 @@ class FastocheTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_tag test_data %}"
+            "{% load cfran_tags %} {% cfran_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="#" class="fastoche-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
+            """<a href="#" class="cfran-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
             rendered_template,
         )
 
 
-class FastocheToggleTagTest(SimpleTestCase):
+class CfranToggleTagTest(SimpleTestCase):
     def test_toggle_rendered(self):
         test_data = {
             "label": "Interrupteur complet aligné à gauche",
             "help_text": "Cet interrupteur présente toutes les options disponibles",
             "is_disabled": False,
-            "extra_classes": "fastoche-toggle--label-left fastoche-toggle--border-bottom",
+            "extra_classes": "cfran-toggle--label-left cfran-toggle--border-bottom",
             "id": "toggle-full",
         }
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_toggle test_data %}"
+            "{% load cfran_tags %} {% cfran_toggle test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="fastoche-toggle fastoche-toggle--label-left fastoche-toggle--border-bottom">
+            <div class="cfran-toggle cfran-toggle--label-left cfran-toggle--border-bottom">
                 <input type="checkbox"
-                        class="fastoche-toggle__input"
+                        class="cfran-toggle__input"
                         aria-describedby="toggle-full-hint-text"
                         id="toggle-full">
-                <label class="fastoche-toggle__label"
+                <label class="cfran-toggle__label"
                         for="toggle-full"
-                        data-fastoche-checked-label="Activé"
-                        data-fastoche-unchecked-label="Désactivé">
+                        data-cfran-checked-label="Activé"
+                        data-cfran-unchecked-label="Désactivé">
                     Interrupteur complet aligné à gauche
                 </label>
-                    <p class="fastoche-hint-text" id="toggle-full-hint-text">
+                    <p class="cfran-hint-text" id="toggle-full-hint-text">
                     Cet interrupteur présente toutes les options disponibles
                     </p>
                 </div>
@@ -1061,7 +1061,7 @@ class FastocheToggleTagTest(SimpleTestCase):
         )
 
 
-class FastocheTooltipTagTest(SimpleTestCase):
+class CfranTooltipTagTest(SimpleTestCase):
     def test_tooltip_rendered(self):
         test_data = {
             "content": "Contenu d’une infobule activée au survol",
@@ -1071,19 +1071,19 @@ class FastocheTooltipTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load fastoche_tags %} {% fastoche_tooltip test_data %}"
+            "{% load cfran_tags %} {% cfran_tooltip test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <a class="fastoche-link"
+            <a class="cfran-link"
                 aria-describedby="tooltip-test"
                 id="link-tooltip-test"
                 href="#">
                 Libellé du lien
             </a>
 
-            <span class="fastoche-tooltip fastoche-placement"
+            <span class="cfran-tooltip cfran-placement"
                 id="tooltip-test"
                 role="tooltip"
                 aria-hidden="true">Contenu d’une infobule activée au survol</span>
@@ -1092,7 +1092,7 @@ class FastocheTooltipTagTest(SimpleTestCase):
         )
 
 
-class FastocheTranscriptionTagTest(SimpleTestCase):
+class CfranTranscriptionTagTest(SimpleTestCase):
     test_data = {
         "content": "<div><p>Courte transcription basique</p></div>",
         "id": "transcription-test",
@@ -1100,49 +1100,49 @@ class FastocheTranscriptionTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load fastoche_tags %} {% fastoche_transcription test_data %}"
+        "{% load cfran_tags %} {% cfran_transcription test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="fastoche-transcription">
-                <button class="fastoche-transcription__btn"
+            <div class="cfran-transcription">
+                <button class="cfran-transcription__btn"
                         aria-expanded="false"
-                        aria-controls="fastoche-transcription__collapse-transcription-test">
+                        aria-controls="cfran-transcription__collapse-transcription-test">
                     Transcription
                 </button>
-                <div class="fastoche-collapse" id="fastoche-transcription__collapse-transcription-test">
-                    <div class="fastoche-transcription__footer">
-                        <div class="fastoche-transcription__actions-group">
+                <div class="cfran-collapse" id="cfran-transcription__collapse-transcription-test">
+                    <div class="cfran-transcription__footer">
+                        <div class="cfran-transcription__actions-group">
 
-                            <button class="fastoche-btn fastoche-btn--fullscreen"
-                                    aria-controls="fastoche-transcription-modal-transcription-test"
-                                    data-fastoche-opened="false"
+                            <button class="cfran-btn cfran-btn--fullscreen"
+                                    aria-controls="cfran-transcription-modal-transcription-test"
+                                    data-cfran-opened="false"
                                     title="Agrandir">
                                 Agrandir
                             </button>
                         </div>
                     </div>
-                    <dialog id="fastoche-transcription-modal-transcription-test"
+                    <dialog id="cfran-transcription-modal-transcription-test"
                             class="modal"
                             role="dialog"
-                            aria-labelledby="fastoche-transcription-modal-transcription-test-title">
-                        <div class="fastoche-container fastoche-container--fluid facile-container-md">
-                            <div class="fastoche-grid-row fastoche-grid-row--center">
-                                <div class="fastoche-col-12 fastoche-col-md-10 fastoche-col-lg-8">
+                            aria-labelledby="cfran-transcription-modal-transcription-test-title">
+                        <div class="cfran-container cfran-container--fluid facile-container-md">
+                            <div class="cfran-grid-row cfran-grid-row--center">
+                                <div class="cfran-col-12 cfran-col-md-10 cfran-col-lg-8">
                                     <div class="modal__body">
                                         <div class="modal__header">
 
-                                            <button class="fastoche-btn--close fastoche-btn"
-                                                    aria-controls="fastoche-transcription-modal-transcription-test"
+                                            <button class="cfran-btn--close cfran-btn"
+                                                    aria-controls="cfran-transcription-modal-transcription-test"
                                                     title="Fermer">
                                                 Fermer
                                             </button>
                                         </div>
                                         <div class="modal__content">
-                                            <h1 id="fastoche-transcription-modal-transcription-test-title"
+                                            <h1 id="cfran-transcription-modal-transcription-test-title"
                                                 class="modal__title">
                                                 Transcription
                                             </h1>

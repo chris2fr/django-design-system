@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from django_fastoche.constants import DJANGO_FASTOCHE_LANGUAGES
+from django_cfran.constants import DJANGO_CFRAN_LANGUAGES
 
 
 def validate_image_extension(value):
@@ -15,11 +15,11 @@ def validate_image_extension(value):
         raise ValidationError("Unsupported file extension.")
 
 
-class FastocheConfig(models.Model):
+class CfranConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
-        choices=DJANGO_FASTOCHE_LANGUAGES,
+        choices=DJANGO_CFRAN_LANGUAGES,
         help_text=_("Only one configuration is allowed per language"),
         default="fr",
         unique=True,
@@ -52,13 +52,13 @@ class FastocheConfig(models.Model):
     header_brand = models.CharField(
         _("Institution (header)"),
         max_length=200,
-        default="Web Fastoche",
+        default="Web Cfran",
         blank=True,
     )
     header_brand_html = models.CharField(
         _("Institution with line break (header)"),
         max_length=200,
-        default="Web<br />Fastoche",
+        default="Web<br />Cfran",
         blank=True,
     )
     beta_tag = models.BooleanField(_("Show the BETA tag next to the title"), default=False)  # type: ignore
@@ -67,13 +67,13 @@ class FastocheConfig(models.Model):
     footer_brand = models.CharField(
         _("Institution (footer)"),
         max_length=200,
-        default="Web Fastoche",
+        default="Web Cfran",
         blank=True,
     )
     footer_brand_html = models.CharField(
         _("Institution with line break (footer)"),
         max_length=200,
-        default="Web<br />Fastoche",
+        default="Web<br />Cfran",
         blank=True,
     )
     footer_description = models.TextField(_("Description"), default="", blank=True)
@@ -131,11 +131,11 @@ class FastocheConfig(models.Model):
         return _("Site config:") + f" {self.site_title} ({self.language})"
 
     def social_media(self):
-        return self.fastochesocialmedia_set.all()
+        return self.cfransocialmedia_set.all()
 
 
-class FastocheSocialMedia(models.Model):
-    site_config = models.ForeignKey(FastocheConfig, on_delete=models.CASCADE, null=True)
+class CfranSocialMedia(models.Model):
+    site_config = models.ForeignKey(CfranConfig, on_delete=models.CASCADE, null=True)
     title = models.CharField(_("Title"), max_length=200, default="", blank=True)
 
     url = models.URLField(

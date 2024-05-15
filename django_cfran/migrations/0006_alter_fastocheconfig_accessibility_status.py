@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_fastoche", "0005_fastocheconfig_notice"),
+        ("django_cfran", "0005_cfranconfig_notice"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="accessibility_status",
             field=models.CharField(
                 choices=[("FULL", "fully"), ("PART", "partially"), ("NOT", "not")],

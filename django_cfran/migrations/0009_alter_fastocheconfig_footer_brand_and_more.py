@@ -7,14 +7,14 @@ class Migration(migrations.Migration):
 
     dependencies = [
         (
-            "django_fastoche",
-            "0008_alter_fastochesocialmedia_options_fastocheconfig_language_and_more",
+            "django_cfran",
+            "0008_alter_cfransocialmedia_options_cfranconfig_language_and_more",
         ),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="footer_brand",
             field=models.CharField(
                 blank=True,
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="footer_brand_html",
             field=models.CharField(
                 blank=True,
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="header_brand",
             field=models.CharField(
                 blank=True,
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterField(
-            model_name="fastocheconfig",
+            model_name="cfranconfig",
             name="header_brand_html",
             field=models.CharField(
                 blank=True,

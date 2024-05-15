@@ -5,9 +5,9 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Removes extra files from the fastoche/dist folder in order to save space."
+    help = "Removes extra files from the cfran/dist folder in order to save space."
 
-    BASE_PATH = "fastoche/static/fastoche/dist"
+    BASE_PATH = "cfran/static/cfran/dist"
 
     def handle(self, *args, **options):
         print("Delete CSS map files and non-minified CSS files")

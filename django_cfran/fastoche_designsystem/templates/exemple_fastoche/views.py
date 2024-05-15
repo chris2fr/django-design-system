@@ -13,11 +13,11 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
-from fastoche.utils import generate_summary_items
+from cfran.utils import generate_summary_items
 
 from example_app.forms import ColorForm, ExampleForm
 
-from example_app.fastoche_components import (
+from example_app.cfran_components import (
     ALL_IMPLEMENTED_COMPONENTS,
     IMPLEMENTED_COMPONENTS,
     EXTRA_COMPONENTS,
@@ -25,8 +25,8 @@ from example_app.fastoche_components import (
     WONT_BE_IMPLEMENTED,
 )
 
-# Used by the module = getattr(globals()["fastoche_tags"], f"fastoche_{tag_name}") line
-from fastoche.templatetags import fastoche_tags  # noqa
+# Used by the module = getattr(globals()["cfran_tags"], f"cfran_{tag_name}") line
+from cfran.templatetags import cfran_tags  # noqa
 
 # /!\ In order to test formset
 from django.views.generic import CreateView
@@ -51,12 +51,12 @@ def init_payload(page_title: str, links: list = []):
     breadcrumb_data = {
         "current": page_title,
         "links": links,
-        "root_dir": "/django-fastoche",
+        "root_dir": "/django-cfran",
     }
 
     skiplinks = [
         {"link": "#content", "label": "Contenu"},
-        {"link": "#fastoche-navigation", "label": "Menu"},
+        {"link": "#cfran-navigation", "label": "Menu"},
     ]
 
     implemented_component_tags_unsorted = ALL_IMPLEMENTED_COMPONENTS
@@ -69,7 +69,7 @@ def init_payload(page_title: str, links: list = []):
                 "see_all",
                 {
                     "title": "Voir tous les composants",
-                    "url": "/django-fastoche/components/",
+                    "url": "/django-cfran/components/",
                 },
             )
         ]
@@ -120,7 +120,7 @@ def components_index(request):
     md = markdown.Markdown(
         extensions=[
             "markdown.extensions.fenced_code",
-            CodeHiliteExtension(css_class="fastoche-code"),
+            CodeHiliteExtension(css_class="cfran-code"),
         ],
     )
 
@@ -167,14 +167,14 @@ def page_component(request, tag_name):  # NOSONAR
             messages.warning(request, "Ceci est un avertissement")
             messages.error(request, "Ceci est une erreur")
 
-        module = getattr(globals()["fastoche_tags"], f"fastoche_{tag_name}")
+        module = getattr(globals()["cfran_tags"], f"cfran_{tag_name}")
         payload["tag_comment"] = markdown.markdown(
             dedent(module.__doc__),
             extensions=[
                 "markdown.extensions.tables",
                 "md_in_html",
                 "markdown.extensions.fenced_code",
-                CodeHiliteExtension(css_class="fastoche-code"),
+                CodeHiliteExtension(css_class="cfran-code"),
             ],
         )
 
@@ -363,7 +363,7 @@ class AuthorCreateView(CreateView):
 
         context["object_name"] = "book"
 
-        # /!\ Don't forget your fastoche button
+        # /!\ Don't forget your cfran button
         context["btn_submit"] = {
             "label": "Soumettre",
             "onclick": "",
@@ -415,7 +415,7 @@ class AuthorCreateView(CreateView):
 
 @require_safe
 def doc_contributing(request):
-    payload = init_payload("Contribuer à Django-FASTOCHE")
+    payload = init_payload("Contribuer à Django-CFRAN")
     md = format_markdown_from_file("CONTRIBUTING.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
@@ -425,7 +425,7 @@ def doc_contributing(request):
 
 @require_safe
 def doc_install(request):
-    payload = init_payload("Installation de Django-FASTOCHE")
+    payload = init_payload("Installation de Django-CFRAN")
 
     md = format_markdown_from_file("INSTALL.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
@@ -436,7 +436,7 @@ def doc_install(request):
 
 @require_safe
 def doc_usage(request):
-    payload = init_payload("Utiliser Django-FASTOCHE")
+    payload = init_payload("Utiliser Django-CFRAN")
 
     md = format_markdown_from_file("doc/usage.md")
     payload["documentation"] = md["text"]
@@ -459,14 +459,14 @@ def doc_form(request):
 def resource_icons(request):
     payload = init_payload("Icônes")
 
-    icons_root = "fastoche/static/fastoche/dist/icons/"
+    icons_root = "cfran/static/cfran/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
     summary = []
     for folder in icons_folders:
         files = os.listdir(os.path.join(icons_root, folder))
-        files_without_extensions = [f.split(".")[0].replace("fastoche--", "") for f in files]
+        files_without_extensions = [f.split(".")[0].replace("cfran--", "") for f in files]
         files_without_extensions.sort()
         all_icons[folder] = files_without_extensions
         summary.append({"link": f"#{slugify(folder)}", "label": folder.capitalize()})
@@ -481,7 +481,7 @@ def resource_icons(request):
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes")
 
-    picto_root = "fastoche/static/fastoche/dist/artwork/pictograms/"
+    picto_root = "cfran/static/cfran/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}

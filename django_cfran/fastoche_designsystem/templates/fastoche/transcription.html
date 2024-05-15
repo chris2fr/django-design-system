@@ -1,43 +1,43 @@
 {% load i18n %}
 {% translate "Transcript" as transcript_label %}
-<div class="fastoche-transcription">
-  <button class="fastoche-transcription__btn"
+<div class="cfran-transcription">
+  <button class="cfran-transcription__btn"
           aria-expanded="false"
-          aria-controls="fastoche-transcription__collapse-{{ self.id }}">
+          aria-controls="cfran-transcription__collapse-{{ self.id }}">
     {{ transcript_label }}
   </button>
-  <div class="fastoche-collapse"
-       id="fastoche-transcription__collapse-{{ self.id }}">
-    <div class="fastoche-transcription__footer">
-      <div class="fastoche-transcription__actions-group">
+  <div class="cfran-collapse"
+       id="cfran-transcription__collapse-{{ self.id }}">
+    <div class="cfran-transcription__footer">
+      <div class="cfran-transcription__actions-group">
         {% translate "Enlarge" as enlarge_label %}
-        <button class="fastoche-btn fastoche-btn--fullscreen"
-                aria-controls="fastoche-transcription-modal-{{ self.id }}"
-                data-fastoche-opened="false"
+        <button class="cfran-btn cfran-btn--fullscreen"
+                aria-controls="cfran-transcription-modal-{{ self.id }}"
+                data-cfran-opened="false"
                 title="{{ enlarge_label }}">
           {{ enlarge_label }}
         </button>
       </div>
     </div>
-    <dialog id="fastoche-transcription-modal-{{ self.id }}"
-            class="fastoche-modal"
+    <dialog id="cfran-transcription-modal-{{ self.id }}"
+            class="cfran-modal"
             role="dialog"
-            aria-labelledby="fastoche-transcription-modal-{{ self.id }}-title">
-      <div class="fastoche-container fastoche-container--fluid facile-container-md">
-        <div class="fastoche-grid-row fastoche-grid-row--center">
-          <div class="fastoche-col-12 fastoche-col-md-10 fastoche-col-lg-8">
-            <div class="fastoche-modal__body">
-              <div class="fastoche-modal__header">
+            aria-labelledby="cfran-transcription-modal-{{ self.id }}-title">
+      <div class="cfran-container cfran-container--fluid facile-container-md">
+        <div class="cfran-grid-row cfran-grid-row--center">
+          <div class="cfran-col-12 cfran-col-md-10 cfran-col-lg-8">
+            <div class="cfran-modal__body">
+              <div class="cfran-modal__header">
                 {% translate "Close" as close_label %}
-                <button class="fastoche-btn--close fastoche-btn"
-                        aria-controls="fastoche-transcription-modal-{{ self.id }}"
+                <button class="cfran-btn--close cfran-btn"
+                        aria-controls="cfran-transcription-modal-{{ self.id }}"
                         title="{{ close_label }}">
                   {{ close_label }}
                 </button>
               </div>
-              <div class="fastoche-modal__content">
-                <h1 id="fastoche-transcription-modal-{{ self.id }}-title"
-                    class="fastoche-modal__title">
+              <div class="cfran-modal__content">
+                <h1 id="cfran-transcription-modal-{{ self.id }}-title"
+                    class="cfran-modal__title">
                   {{ self.title|default:transcript_label }}
                 </h1>
                 {{ self.content|safe }}

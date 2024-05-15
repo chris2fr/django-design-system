@@ -1,9 +1,9 @@
 from django.templatetags.static import static
 
-from example_fastoche.utils import lorem_ipsum
+from example_cfran.utils import lorem_ipsum
 
 # Sample SVG file
-with open("example_fastoche/static/img/gouvernement.svg") as svg_file:
+with open("example_cfran/static/img/gouvernement.svg") as svg_file:
     gov_svg = svg_file.read()
 
 IMPLEMENTED_COMPONENTS = {
@@ -51,7 +51,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "type": "warning",
                 "content": "Petite alerte sans titre.",
-                "extra_classes": "fastoche-alert--sm",
+                "extra_classes": "cfran-alert--sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte",
@@ -66,15 +66,15 @@ IMPLEMENTED_COMPONENTS = {
             },
             {
                 "label": "Petit badge",
-                "extra_classes": "fastoche-badge--sm",
+                "extra_classes": "cfran-badge--sm",
             },
             {
                 "label": "Badge coloré",
-                "extra_classes": "fastoche-badge--green-menthe",
+                "extra_classes": "cfran-badge--green-menthe",
             },
             {
                 "label": "Badge système",
-                "extra_classes": "fastoche-badge--success",
+                "extra_classes": "cfran-badge--success",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge",
@@ -96,18 +96,18 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Bouton secondaire",
                 "name": "secundary-button",
                 "type": "button",
-                "extra_classes": "fastoche-btn--secondary",
+                "extra_classes": "cfran-btn--secondary",
                 "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
             },
             {
                 "label": "Bouton tertiaire",
-                "extra_classes": "fastoche-btn--tertiary",
+                "extra_classes": "cfran-btn--tertiary",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
             },
             {
                 "label": "Bouton tertiaire sans bordure",
                 "type": "button",
-                "extra_classes": "fastoche-btn--tertiary-no-outline",
+                "extra_classes": "cfran-btn--tertiary-no-outline",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
             },
         ],
@@ -122,13 +122,13 @@ IMPLEMENTED_COMPONENTS = {
                     {
                         "label": "Bouton principal",
                         "onclick": "alert('Vous avez cliqué sur le bouton principal')",
-                        "extra_classes": "fastoche-icon-checkbox-circle-line fastoche-btn--icon-left",
+                        "extra_classes": "cfran-icon-checkbox-circle-line cfran-btn--icon-left",
                     },
                     {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fastoche-icon-checkbox-circle-line fastoche-btn--icon-left fastoche-btn--secondary",
+                        "extra_classes": "cfran-icon-checkbox-circle-line cfran-btn--icon-left cfran-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                 ],
@@ -144,18 +144,18 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fastoche-btn--secondary",
+                        "extra_classes": "cfran-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "fastoche-btn--tertiary",
+                        "extra_classes": "cfran-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "fastoche-btn--tertiary-no-outline",
+                        "extra_classes": "cfran-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
@@ -171,18 +171,18 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "fastoche-btn--secondary",
+                        "extra_classes": "cfran-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "fastoche-btn--tertiary",
+                        "extra_classes": "cfran-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "fastoche-btn--tertiary-no-outline",
+                        "extra_classes": "cfran-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
@@ -198,28 +198,28 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "title": "Mise en avant avec bouton normal",
                 "text": "Cette mise en avant a un bouton normal",
-                "icon_class": "fastoche-icon-alert-line",
+                "icon_class": "cfran-icon-alert-line",
                 "button": {
                     "onclick": "alert('Ce bouton est bien un bouton')",
                     "label": "Bouton normal",
-                    "extra_classes": "fastoche-btn--secondary",
+                    "extra_classes": "cfran-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant avec lien",
                 "text": "Cette mise en avant a un lien d’appel à action",
-                "icon_class": "fastoche-icon-external-link-line",
+                "icon_class": "cfran-icon-external-link-line",
                 "button": {
                     "label": "Bouton qui est un lien",
                     "url": "https://www.systeme-de-design.gouv.fr/",
-                    "extra_classes": "fastoche-btn--secondary",
+                    "extra_classes": "cfran-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant en couleur",
                 "text": "Cette mise en avant a une classe de couleur",
-                "icon_class": "fastoche-icon-palette-line",
-                "extra_classes": "fastoche-callout--green-emeraude",
+                "icon_class": "cfran-icon-palette-line",
+                "extra_classes": "cfran-callout--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant",
@@ -247,7 +247,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fastoche-card--horizontal",
+                "extra_classes": "cfran-card--horizontal",
             },
             {
                 "title": "Carte horizontale, largeur tiers",
@@ -258,7 +258,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fastoche-card--horizontal fastoche-card--horizontal-tier",
+                "extra_classes": "cfran-card--horizontal cfran-card--horizontal-tier",
             },
             {
                 "title": "Carte horizontale, largeur moitié",
@@ -269,7 +269,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "fastoche-card--horizontal fastoche-card--horizontal-half",
+                "extra_classes": "cfran-card--horizontal cfran-card--horizontal-half",
             },
             {
                 "title": "Carte avec badge",
@@ -282,7 +282,7 @@ IMPLEMENTED_COMPONENTS = {
                 "media_badges": [
                     {
                         "label": "Nouveau",
-                        "extra_classes": "fastoche-badge--new",
+                        "extra_classes": "cfran-badge--new",
                     }
                 ],
             },
@@ -295,7 +295,7 @@ IMPLEMENTED_COMPONENTS = {
                 "new_tab": True,
                 "top_detail": {
                     "detail": {
-                        "icon_class": "fastoche-icon-warning-fill",
+                        "icon_class": "cfran-icon-warning-fill",
                         "text": "Détail (optionnel) avec icône (optionnelle)",
                     },
                     "tags": [{"label": "tag 1"}, {"label": "tag 2"}],
@@ -311,12 +311,12 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
-                        "icon_class": "fastoche-icon-warning-fill",
+                        "icon_class": "cfran-icon-warning-fill",
                         "text": "Détail (optionnel)",
                     },
                     "badges": [
                         {"label": "Badge 1"},
-                        {"extra_classes": "fastoche-badge--warning", "label": "Badge 2"},
+                        {"extra_classes": "cfran-badge--warning", "label": "Badge 2"},
                     ],
                 },
             },
@@ -328,7 +328,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
                 "bottom_detail": {
-                    "icon": "fastoche-icon-warning-fill",
+                    "icon": "cfran-icon-warning-fill",
                     "text": "Détail (optionnel)",
                 },
             },
@@ -341,10 +341,10 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "fastoche-card--horizontal",
+                "extra_classes": "cfran-card--horizontal",
                 "call_to_action": {
                     "buttons": [
-                        {"label": "Bouton 1", "extra_classes": "fastoche-btn--secondary"},
+                        {"label": "Bouton 1", "extra_classes": "cfran-btn--secondary"},
                         {"label": "Bouton 2"},
                     ]
                 },
@@ -358,7 +358,7 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "fastoche-card--horizontal",
+                "extra_classes": "cfran-card--horizontal",
                 "call_to_action": {
                     "links": [
                         {
@@ -382,14 +382,14 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
-                "extra_classes": "fastoche-card--grey fastoche-card--shadow",
+                "extra_classes": "cfran-card--grey cfran-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "enlarge_link": False,
-                "extra_classes": "fastoche-card--horizontal",
+                "extra_classes": "cfran-card--horizontal",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/carte",
@@ -401,7 +401,7 @@ IMPLEMENTED_COMPONENTS = {
         "example_url": "https://main--ds-gouv.netlify.app/example/component/consent/",
         "sample_data": [
             {
-                "title": "À propos des cookies sur Django-fastoche",
+                "title": "À propos des cookies sur Django-cfran",
                 "content": """
                 Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                 services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
@@ -420,24 +420,24 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "fastoche-ratio-16x9",
+                "ratio_class": "cfran-ratio-16x9",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "fastoche-ratio-4x3",
+                "ratio_class": "cfran-ratio-4x3",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "extra_classes": "fastoche-content-media--lg",
+                "extra_classes": "cfran-content-media--lg",
             },
             {
                 "svg": gov_svg,
                 "caption": """Image SVG avec un lien dans la légende.
-                                <a class="fastoche-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
+                                <a class="cfran-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
                                     rel=noopener external'
                                     title="Source - Ouvre une nouvelle fenêtre" target='_blank'>Source</a>.""",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
@@ -450,7 +450,7 @@ IMPLEMENTED_COMPONENTS = {
                     "url": "https://tube-numerique-educatif.apps.education.fr/videos/embed/9d0b132d-f836-459a-9b9b-97b1a647232d",
                     "sandbox": "allow-same-origin allow-scripts allow-popups",
                 },
-                "ratio_class": "fastoche-ratio-4x3",
+                "ratio_class": "cfran-ratio-4x3",
                 "caption": "Vidéo avec transcription",
                 "alt_text": "",
                 "transcription": {"content": f"<div>{lorem_ipsum}</div>"},
@@ -487,11 +487,11 @@ IMPLEMENTED_COMPONENTS = {
         "sample_data": [
             {
                 "content": "Contenu de la mise en exergue",
-                "size_class": "fastoche-text--sm",
+                "size_class": "cfran-text--sm",
             },
             {
                 "content": "Mise en exergue avec bordure colorée",
-                "extra_classes": "fastoche-highlight--green-emeraude",
+                "extra_classes": "cfran-highlight--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue",
@@ -523,25 +523,25 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Lien",
         "sample_data": [
             {
-                "url": "/django-fastoche/components/link/",
+                "url": "/django-cfran/components/link/",
                 "label": "Lien interne",
             },
             {
                 "url": "https://www.systeme-de-design.gouv.fr/",
                 "label": "Lien externe, large",
                 "is_external": True,
-                "extra_classes": "fastoche-link--lg",
+                "extra_classes": "cfran-link--lg",
             },
             {
-                "url": "/django-fastoche/components/link/",
+                "url": "/django-cfran/components/link/",
                 "label": "Petit lien interne avec flèche",
                 "is_external": False,
-                "extra_classes": "fastoche-icon-arrow-right-line fastoche-link--icon-right fastoche-link--sm",
+                "extra_classes": "cfran-icon-arrow-right-line cfran-link--icon-right cfran-link--sm",
             },
             {
-                "url": "/django-fastoche/components/link/",
+                "url": "/django-cfran/components/link/",
                 "label": "Lien de téléchargement",
-                "extra_classes": "fastoche-link--download",
+                "extra_classes": "cfran-link--download",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/liens",
@@ -583,7 +583,7 @@ IMPLEMENTED_COMPONENTS = {
                     },
                 ],
                 "image_url": "/static/img/placeholder.1x1.svg",
-                "extra_classes": "fastoche-quote--green-emeraude",
+                "extra_classes": "cfran-quote--green-emeraude",
             },
             {
                 "text": "Citation très basique, sans aucun des champs optionnels.",
@@ -647,7 +647,7 @@ IMPLEMENTED_COMPONENTS = {
                                     {"label": "Page non active", "link": "#"},
                                     {
                                         "label": "Page active",
-                                        "link": "/django-fastoche/components/sidemenu/",
+                                        "link": "/django-cfran/components/sidemenu/",
                                     },
                                 ],
                             },
@@ -762,7 +762,7 @@ IMPLEMENTED_COMPONENTS = {
                         2,
                     ],
                 ],
-                "extra_classes": "fastoche-table--green-emeraude fastoche-table--bordered",
+                "extra_classes": "cfran-table--green-emeraude cfran-table--bordered",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tableau",
@@ -772,15 +772,15 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Tag",
         "sample_data": [
             {"label": "Tag simple"},
-            {"label": "Tag avec lien", "link": "/django-fastoche/components"},
+            {"label": "Tag avec lien", "link": "/django-cfran/components"},
             {
                 "label": "Petit tag avec icône",
-                "extra_classes": "fastoche-tag--sm fastoche-icon-arrow-right-line fastoche-tag--icon-left",  # noqa
+                "extra_classes": "cfran-tag--sm cfran-icon-arrow-right-line cfran-tag--icon-left",  # noqa
             },
             {
                 "label": "Tag avec action",
                 "link": "#",
-                "extra_classes": "fastoche-icon-cursor-line fastoche-tag--icon-right",
+                "extra_classes": "cfran-icon-cursor-line cfran-tag--icon-right",
                 "onclick": "alert('clicked'); return false;",
             },
             {
@@ -794,7 +794,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "label": "Tag vert",
                 "link": "#",
-                "extra_classes": "fastoche-tag--green-emeraude",
+                "extra_classes": "cfran-tag--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag",
@@ -819,51 +819,51 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "Avec un pictogramme SVG",
                 "url": "/",
                 "id": "tile-cityhall",
-                "extra_classes": "fastoche-tile--horizontal",
+                "extra_classes": "cfran-tile--horizontal",
                 "svg_path": static(
-                    "fastoche/dist/artwork/pictograms/buildings/city-hall.svg"
+                    "cfran/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
             },
             {
                 "title": "Tuile verticale (SM)",
                 "url": "/",
                 "id": "tile-nuclear-plant",
-                "extra_classes": "fastoche-tile--sm",
+                "extra_classes": "cfran-tile--sm",
                 "svg_path": static(
-                    "fastoche/dist/artwork/pictograms/buildings/nuclear-plant.svg"
+                    "cfran/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
             },
             {
                 "title": "Tuile horizontale (SM)",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "fastoche-tile--horizontal fastoche-tile--sm",
+                "extra_classes": "cfran-tile--horizontal cfran-tile--sm",
                 "top_detail": {
                     "badges": [
                         {
                             "label": "Badge coloré",
-                            "extra_classes": "fastoche-badge--sm fastoche-badge--purple-glycine",
+                            "extra_classes": "cfran-badge--sm cfran-badge--purple-glycine",
                         },
                     ]
                 },
-                "svg_path": static("fastoche/dist/artwork/pictograms/map/map.svg"),
+                "svg_path": static("cfran/dist/artwork/pictograms/map/map.svg"),
             },
             {
                 "title": "Tuile à fond gris et ombre sans bordure",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "fastoche-tile--horizontal fastoche-tile--grey fastoche-tile--shadow fastoche-tile--no-border",
+                "extra_classes": "cfran-tile--horizontal cfran-tile--grey cfran-tile--shadow cfran-tile--no-border",
                 "svg_path": static(
-                    "fastoche/dist/artwork/pictograms/leisure/paint.svg"
+                    "cfran/dist/artwork/pictograms/leisure/paint.svg"
                 ),
             },
             {
                 "title": "Tuile de téléchargement",
-                "extra_classes": "fastoche-tile--horizontal fastoche-tile--download",
+                "extra_classes": "cfran-tile--horizontal cfran-tile--download",
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
-                    "fastoche/dist/artwork/pictograms/document/document-signature.svg"
+                    "cfran/dist/artwork/pictograms/document/document-signature.svg"
                 ),
             },
         ],
@@ -887,7 +887,7 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Interrupteur complet aligné à gauche",
                 "help_text": "Cet interrupteur présente toutes les options disponibles",
                 "is_disabled": False,
-                "extra_classes": "fastoche-toggle--label-left fastoche-toggle--border-bottom",
+                "extra_classes": "cfran-toggle--label-left cfran-toggle--border-bottom",
                 "id": "toggle-full",
             },
         ],
@@ -953,23 +953,23 @@ EXTRA_COMPONENTS = {
             [
                 {
                     "label": "Succès",
-                    "extra_classes": "fastoche-badge--success",
+                    "extra_classes": "cfran-badge--success",
                 },
                 {
                     "label": "Info",
-                    "extra_classes": "fastoche-badge--info",
+                    "extra_classes": "cfran-badge--info",
                 },
                 {
                     "label": "Avertissement",
-                    "extra_classes": "fastoche-badge--warning",
+                    "extra_classes": "cfran-badge--warning",
                 },
                 {
                     "label": "Erreur",
-                    "extra_classes": "fastoche-badge--error",
+                    "extra_classes": "cfran-badge--error",
                 },
                 {
                     "label": "Nouveau",
-                    "extra_classes": "fastoche-badge--new",
+                    "extra_classes": "cfran-badge--new",
                 },
             ]
         ],
@@ -995,7 +995,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-radio-riche",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/radio/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#126](https://github.com/numerique-gouv/django-fastoche/issues/126)
+        cf. [#126](https://github.com/numerique-gouv/django-cfran/issues/126)
         """,
     },
     "segmented_control": {
@@ -1003,7 +1003,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/controle-segmente",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/segmented/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#128](https://github.com/numerique-gouv/django-fastoche/issues/128)
+        cf. [#128](https://github.com/numerique-gouv/django-cfran/issues/128)
         """,
     },
     "range": {
@@ -1011,20 +1011,20 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/curseur-range",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/range/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#129](https://github.com/numerique-gouv/django-fastoche/issues/129)
+        cf. [#129](https://github.com/numerique-gouv/django-cfran/issues/129)
         """,
     },
 }
 
 # There is no need for specific tags for these
-# (either because the fastoche is implemented globally or because they are
+# (either because the cfran is implemented globally or because they are
 # broken down into more specific tags)
 WONT_BE_IMPLEMENTED = {
     "back_to_top": {
         "title": "Retour en haut de page",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/retour-en-haut-de-page",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/link/back-to-top/",
-        "reason": "Utilisez une balise Lien (`fastoche_link`)",
+        "reason": "Utilisez une balise Lien (`cfran_link`)",
     },
     "checkbox": {
         "title": "Case à cocher",
@@ -1036,7 +1036,7 @@ WONT_BE_IMPLEMENTED = {
         "title": "Téléchargement de fichier",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/download/",
-        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django-fastoche/components/link/), [carte](/django-fastoche/components/card/), [tuile](/django-fastoche/components/tile/). Voir la documentation de ceux-ci.",
+        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django-cfran/components/link/), [carte](/django-cfran/components/card/), [tuile](/django-cfran/components/tile/). Voir la documentation de ceux-ci.",
     },
     "file_upload": {
         "title": "Ajout de fichier",

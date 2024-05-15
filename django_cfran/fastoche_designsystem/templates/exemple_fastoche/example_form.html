@@ -1,5 +1,5 @@
-{% extends "fastoche/form_base.html" %}
-{% load static fastoche_tags %}
+{% extends "cfran/form_base.html" %}
+{% load static cfran_tags %}
 {% block header %}
   {% include "example_app/blocks/header.html" %}
 {% endblock header %}
@@ -13,7 +13,7 @@
 {% block extra_formset_after %}
   {% include "example_app/example_formset.html" %}
 {% endblock extra_formset_after %}
-{# Don't forget you fastoche button to submit the form #}
+{# Don't forget you cfran button to submit the form #}
 {% block foot_form %}
-  {% fastoche_button btn_submit %}
+  {% cfran_button btn_submit %}
 {% endblock foot_form %}
