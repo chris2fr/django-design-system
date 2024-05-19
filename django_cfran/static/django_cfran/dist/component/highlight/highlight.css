@@ -1,0 +1,261 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  HIGHLIGHT
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-highlight {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-size: 0.25rem 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-cfran-primary), var(--border-default-cfran-primary));
+}
+
+.cfran-highlight--cfran-color3 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color3), var(--border-default-cfran-color3));
+}
+
+.cfran-highlight--cfran-color4 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color4), var(--border-default-cfran-color4));
+}
+
+.cfran-highlight--cfran-color5 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color5), var(--border-default-cfran-color5));
+}
+
+.cfran-highlight--cfran-color6 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color6), var(--border-default-cfran-color6));
+}
+
+.cfran-highlight--cfran-color7 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color7), var(--border-default-cfran-color7));
+}
+
+.cfran-highlight--cfran-color8 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color8), var(--border-default-cfran-color8));
+}
+
+.cfran-highlight--cfran-color9 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color9), var(--border-default-cfran-color9));
+}
+
+.cfran-highlight--cfran-color10 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color10), var(--border-default-cfran-color10));
+}
+
+.cfran-highlight--cfran-color11 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color11), var(--border-default-cfran-color11));
+}
+
+.cfran-highlight--cfran-color12 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color12), var(--border-default-cfran-color12));
+}
+
+.cfran-highlight--cfran-color13 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color13), var(--border-default-cfran-color13));
+}
+
+.cfran-highlight--cfran-color14 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color14), var(--border-default-cfran-color14));
+}
+
+.cfran-highlight--cfran-color15 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color15), var(--border-default-cfran-color15));
+}
+
+.cfran-highlight--cfran-color16 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color16), var(--border-default-cfran-color16));
+}
+
+.cfran-highlight--cfran-color17 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color17), var(--border-default-cfran-color17));
+}
+
+.cfran-highlight--cfran-color18 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color18), var(--border-default-cfran-color18));
+}
+
+.cfran-highlight--cfran-color19 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color19), var(--border-default-cfran-color19));
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .cfran-highlight {
+    padding-left: 2.25rem;
+    margin-left: 2rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-highlight--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+}
+
+@media print {
+  .cfran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-highlight--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+}

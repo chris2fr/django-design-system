@@ -1,0 +1,121 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur de la légende d'un fieldset
+  */
+  .cfran-pagination [href] {
+    text-decoration: none;
+  }
+
+  .cfran-pagination ul {
+    list-style-type: none;
+  }
+
+  .cfran-pagination ol {
+    list-style-type: none;
+  }
+
+  .cfran-pagination ul,
+  .cfran-pagination ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-pagination .cfran-pagination__link--first::before,
+  .cfran-pagination .cfran-pagination__link--first::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cfran--arrow-left-s-first-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--prev::before,
+  .cfran-pagination .cfran-pagination__link--prev::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-left-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--next::before,
+  .cfran-pagination .cfran-pagination__link--next::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--last::before,
+  .cfran-pagination .cfran-pagination__link--last::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cfran--arrow-right-s-last-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination {
+    color: #161616;
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-pagination__link:not([aria-current]):disabled,
+  a.cfran-pagination__link:not([aria-current]):not([href]),
+  a.cfran-pagination__link[aria-current=false]:not([href]),
+  .cfran-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cfran-pagination__link {
+    background-color: transparent;
+  }
+
+  .cfran-pagination__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-pagination__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (forced-colors: active) and (-ms-high-contrast: none), (forced-colors: active) and (-ms-high-contrast: active), (prefers-contrast: more) and (-ms-high-contrast: none), (prefers-contrast: more) and (-ms-high-contrast: active) {
+  .cfran-pagination__link[aria-current]:not([aria-current=false]) {
+    border: 1px solid hsl(180, 75%, 25%);
+  }
+}

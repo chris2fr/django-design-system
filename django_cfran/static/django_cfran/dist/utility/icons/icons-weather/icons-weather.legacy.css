@@ -1,0 +1,64 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-icon-cloudy-2-fill::before,
+  .cfran-icon-cloudy-2-fill::after {
+    background-image: url("../../../icons/weather/cloudy-2-fill.svg");
+  }
+
+  .cfran-icon-cloudy-2-line::before,
+  .cfran-icon-cloudy-2-line::after {
+    background-image: url("../../../icons/weather/cloudy-2-line.svg");
+  }
+
+  .cfran-icon-flashlight-fill::before,
+  .cfran-icon-flashlight-fill::after {
+    background-image: url("../../../icons/weather/flashlight-fill.svg");
+  }
+
+  .cfran-icon-flashlight-line::before,
+  .cfran-icon-flashlight-line::after {
+    background-image: url("../../../icons/weather/flashlight-line.svg");
+  }
+
+  .cfran-icon-moon-fill::before,
+  .cfran-icon-moon-fill::after {
+    background-image: url("../../../icons/weather/moon-fill.svg");
+  }
+
+  .cfran-icon-moon-line::before,
+  .cfran-icon-moon-line::after {
+    background-image: url("../../../icons/weather/moon-line.svg");
+  }
+
+  .cfran-icon-sun-fill::before,
+  .cfran-icon-sun-fill::after {
+    background-image: url("../../../icons/weather/sun-fill.svg");
+  }
+
+  .cfran-icon-sun-line::before,
+  .cfran-icon-sun-line::after {
+    background-image: url("../../../icons/weather/sun-line.svg");
+  }
+
+  .cfran-fi-flashlight-fill::before {
+    background-image: url("../../../icons/weather/flashlight-fill.svg");
+  }
+
+  .cfran-fi-flashlight-line::before {
+    background-image: url("../../../icons/weather/flashlight-line.svg");
+  }
+}

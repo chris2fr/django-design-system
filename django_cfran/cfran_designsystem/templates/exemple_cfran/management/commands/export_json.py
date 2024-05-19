@@ -28,7 +28,7 @@ class Command(BaseCommand):
         with open(self.STATIC_ROOT / "static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
-        with open("example_app/static/json/search_data.json", "w") as data_file:
+        with open("django_cfran/static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
     def get_page_content(self, file: str):

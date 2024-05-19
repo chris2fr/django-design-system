@@ -12,7 +12,9 @@
     <nav role="navigation"
          class="cfran-nav"
          id="cfran-navigation"
-         aria-label="Menu principal">
+         aria-label="Menu principal"
+         id="cfran-navigation"
+     data-cfran-js-navigation="true">
       <ul class="cfran-nav__list">
         <li class="cfran-nav__item">
           {% url 'index' as home_url %}
@@ -114,7 +116,7 @@
           <button class="cfran-nav__btn"
                   aria-expanded="false"
                   aria-controls="menu-forms"
-                  {% if 'django-cfran/form' in request.path %}aria-current="true"{% endif %}>
+                  {% if 'django_cfran/form' in request.path %}aria-current="true"{% endif %}>
             Formulaires
           </button>
           <div class="cfran-collapse cfran-menu" id="menu-forms">

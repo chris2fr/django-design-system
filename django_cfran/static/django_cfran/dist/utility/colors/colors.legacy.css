@@ -1,0 +1,1828 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .cfran-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .cfran-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .cfran-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .cfran-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .cfran-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .cfran-background-alt--cfran-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-background-alt--cfran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-alt--cfran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .cfran-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .cfran-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .cfran-background-contrast--cfran-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--cfran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .cfran-background-flat--cfran-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--cfran-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cfran-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cfran-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cfran-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cfran-background-action-high--cfran-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cfran-background-action-high--cfran-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cfran-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cfran-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .cfran-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .cfran-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cfran-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .cfran-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .cfran-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cfran-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .cfran-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .cfran-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cfran-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .cfran-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .cfran-background-action-low--cfran-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cfran-background-action-low--cfran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cfran-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .cfran-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cfran-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cfran-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cfran-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cfran-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .cfran-text-title--cfran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-title--cfran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .cfran-text-label--cfran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-label--cfran-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .cfran-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .cfran-text-inverted--cfran-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-text-inverted--cfran-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .cfran-text-action-high--cfran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-text-action-high--cfran-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-major--cfran-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-minor--cfran-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cfran-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .cfran-artwork-decorative--cfran-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-decorative--cfran-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cfran-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .cfran-artwork-background--cfran-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-background--cfran-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cfran-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .cfran-artwork-motif--cfran-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cfran-artwork-motif--cfran-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+}

@@ -1,0 +1,96 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cfran-alert::before,
+  .cfran-alert::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-alert__title,
+  .cfran-alert p {
+    margin: 0 0 0.25rem;
+  }
+
+  .cfran-alert--info::before {
+    background-image: url("../../icons/system/cfran--info-fill.svg");
+  }
+
+  .cfran-alert--success::before {
+    background-image: url("../../icons/system/cfran--success-fill.svg");
+  }
+
+  .cfran-alert--error::before {
+    background-image: url("../../icons/system/cfran--error-fill.svg");
+  }
+
+  .cfran-alert--warning::before {
+    background-image: url("../../icons/system/cfran--warning-fill.svg");
+  }
+
+  .cfran-alert .cfran-btn--close::before,
+  .cfran-alert .cfran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cfran-alert .cfran-link--close::before,
+  .cfran-alert .cfran-link--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-alert {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cfran-alert::before {
+    color: #fff;
+  }
+
+  .cfran-alert--info {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-alert--error {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-alert--success {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-alert--warning {
+    background-image: linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%));
+  }
+}

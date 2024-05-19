@@ -1,0 +1,70 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-card {
+    background-color: #fff;
+  }
+
+  .cfran-card:not(.cfran-card--no-border):not(.cfran-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--shadow {
+    background-color: #fff;
+  }
+
+  .cfran-card--shadow.cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--download:not(.cfran-card--no-background) .cfran-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-card__detail {
+    color: #666;
+    line-height: 1rem !important;
+  }
+
+  .cfran-card__title {
+    color: #161616;
+  }
+
+  .cfran-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-card__title:disabled,
+  a.cfran-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-card__detail,
+  .cfran-card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-card--shadow {
+    z-index: 500;
+  }
+
+  .cfran-card--no-background {
+    background-color: transparent;
+  }
+
+  .cfran-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

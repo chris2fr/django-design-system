@@ -9,3 +9,16 @@
 .errorlist.nonfield {
   padding: 1rem;
 }
+
+.cfran-header .cfran-header__menu .cfran-container {
+  grid-template-areas: "l m t" "h h s";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto
+}
+
+div.cfran-header__service {
+  grid-area: h;
+}
+div.cfran-header__search {
+  grid-area: s;
+}

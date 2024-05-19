@@ -831,7 +831,7 @@ class CfranSidemenuTagTest(SimpleTestCase):
                             {"label": "Page non active", "link": "#"},
                             {
                                 "label": "Page active",
-                                "link": "/django-cfran/components/sidemenu/",
+                                "link": "/django_cfran/components/sidemenu/",
                             },
                         ],
                     },
@@ -841,7 +841,7 @@ class CfranSidemenuTagTest(SimpleTestCase):
     }
 
     request_mock = MagicMock()
-    request_mock.path = "/django-cfran/components/sidemenu/"
+    request_mock.path = "/django_cfran/components/sidemenu/"
     context = Context({"request": request_mock, "test_data": test_data})
     template_to_render = Template(
         "{% load cfran_tags %} {% cfran_sidemenu test_data %}"
@@ -888,7 +888,7 @@ class CfranSidemenuTagTest(SimpleTestCase):
                         </li>
 
                         <li class="cfran-sidemenu__item cfran-sidemenu__item--active">
-                        <a class="cfran-sidemenu__link" href="/django-cfran/components/sidemenu/" target="_self"  aria-current="page">
+                        <a class="cfran-sidemenu__link" href="/django_cfran/components/sidemenu/" target="_self"  aria-current="page">
                             Page active
                         </a>
                         </li>

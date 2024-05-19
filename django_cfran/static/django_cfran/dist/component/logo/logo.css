@@ -1,0 +1,57 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  LOGO
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-logo {
+  max-height: 90px;
+  width: auto;
+  color: var(--text-black-white-grey);
+}
+
+:root[data-cfran-mourning] .cfran-logo::before {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-logo {
+    color: #000;
+  }
+}
+
+@media print {
+  .cfran-logo {
+    color: #000;
+  }
+
+  .cfran-logo::after {
+    background-position: 0 calc(100% + 1.875rem) !important;
+  }
+}

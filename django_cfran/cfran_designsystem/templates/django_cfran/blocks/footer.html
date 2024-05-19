@@ -1,0 +1,49 @@
+{% extends "django_cfran/footer.html" %}
+{% load i18n %}
+
+{% block footer_links %}
+  {{ block.super }}
+  <li class="cfran-footer__bottom-item">
+    <button id="footer__bottom-link__parametres-affichage"
+            aria-controls="cfran-theme-modal"
+            data-cfran-opened="false"
+            class="cfran-icon-theme-fill cfran-link--icon-left cfran-footer__bottom-link"
+            data-cfran-js-modal-button="true">
+      {% translate "Display settings" %}
+    </button>
+  </li>
+{% endblock footer_links %}
+
+{% block footer_brand %}
+  {% translate "Back to home page" as back_to_home_label %}
+  {% url 'index' as home_url %}
+  {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
+    <div class="cfran-footer__brand cfran-enlarge-link">
+      <p class="cfran-logo"
+         title="{{ SITE_CONFIG.footer_brand|default:'cfran' }}">
+        {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
+      </p>
+      <a class="cfran-footer__brand-link"
+         href="{{ home_url }}"
+         title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'cfran' }}">
+        <img class="cfran-footer__logo"
+             src="{{ SITE_CONFIG.operator_logo_file.url }}"
+             alt="{{ SITE_CONFIG.operator_logo_alt }}"
+             {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width }}rem;"{% endif %} />
+        {# L’alternative de l’image (attribut alt) doit impérativement être renseignée et reprendre le texte visible dans l’image #}
+      </a>
+    </div>
+  {% else %}
+    <div class="cfran-footer__brand cfran-enlarge-link">
+      <a id="footer-operator"
+         href="{{ home_url }}"
+         title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'CFRAN' }}">
+        {% block brand %}
+          <p class="cfran-logo">
+            {{ SITE_CONFIG.footer_brand_html| default_if_none:'CFRAN.org' | safe }}
+          </p>
+        {% endblock brand %}
+      </a>
+    </div>
+  {% endif %}
+{% endblock footer_brand %}

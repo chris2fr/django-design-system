@@ -1,0 +1,74 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media print {
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+  .cfran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-follow .cfran-input {
+    background-color: #fff;
+  }
+
+  .cfran-follow__title {
+    color: #161616;
+  }
+
+  .cfran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cfran-follow__social .cfran-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-follow__social .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:hover,
+  .cfran-follow__social a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:active,
+  .cfran-follow__social a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 48em) {
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

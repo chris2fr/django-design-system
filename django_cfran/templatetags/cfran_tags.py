@@ -31,7 +31,7 @@ Tags used in the "cfran" templates.
 # Global tags
 
 
-@register.inclusion_tag("cfran/global_css.html")
+@register.inclusion_tag("django_cfran/global_css.html")
 def cfran_css() -> dict:
     """
     Returns the HTML for the CSS header tags for cfran
@@ -49,7 +49,7 @@ def cfran_css() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/global_js.html", takes_context=True)
+@register.inclusion_tag("django_cfran/global_js.html", takes_context=True)
 def cfran_js(context, *args, **kwargs) -> dict:
     """
     Returns the HTML for the JS body tags for cfran
@@ -72,7 +72,7 @@ def cfran_js(context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/favicon.html")
+@register.inclusion_tag("django_cfran/favicon.html")
 def cfran_favicon() -> dict:
     """
     Returns the HTML for the CSS header tags for the cfran "Marianne" Favicon
@@ -93,7 +93,7 @@ def cfran_favicon() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/theme_modale.html")
+@register.inclusion_tag("django_cfran/theme_modale.html")
 def cfran_theme_modale() -> None:
     """
     Returns the HTML for the theme selection modale for cfran
@@ -110,7 +110,7 @@ def cfran_theme_modale() -> None:
 # cfran components
 
 
-@register.inclusion_tag("cfran/accordion.html")
+@register.inclusion_tag("django_cfran/accordion.html")
 def cfran_accordion(*args, **kwargs) -> dict:
     """
     Returns an accordion item. Takes a dict as parameter, with the following structure:
@@ -143,7 +143,7 @@ def cfran_accordion(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/accordion_group.html")
+@register.inclusion_tag("django_cfran/accordion_group.html")
 def cfran_accordion_group(items: list) -> dict:
     """
     Returns a group of accordion items. Takes a list of dicts as parameters (see the
@@ -158,7 +158,7 @@ def cfran_accordion_group(items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("cfran/alert.html")
+@register.inclusion_tag("django_cfran/alert.html")
 def cfran_alert(*args, **kwargs) -> dict:
     """
     Returns an alert item. Takes a dict as parameter, with the following structure:
@@ -209,7 +209,7 @@ def cfran_alert(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/badge.html")
+@register.inclusion_tag("django_cfran/badge.html")
 def cfran_badge(*args, **kwargs) -> dict:
     """
     Returns a badge item. Takes a dict as parameter, with the following structure:
@@ -246,7 +246,7 @@ def cfran_badge(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/badge_group.html")
+@register.inclusion_tag("django_cfran/badge_group.html")
 def cfran_badge_group(items: list) -> dict:
     """
     Returns a group of badge items. Takes a list of dicts as parameters (see the badge
@@ -262,7 +262,7 @@ def cfran_badge_group(items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("cfran/breadcrumb.html", takes_context=True)
+@register.inclusion_tag("django_cfran/breadcrumb.html", takes_context=True)
 def cfran_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     """
     Returns a breadcrumb item. Takes a dict as parameter, with the following structure:
@@ -291,7 +291,7 @@ def cfran_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/button.html")
+@register.inclusion_tag("django_cfran/button.html")
 def cfran_button(*args, **kwargs) -> dict:
     """
     Returns a button item. Takes a dict as parameter, with the following structure:
@@ -340,7 +340,7 @@ def cfran_button(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/button_group.html")
+@register.inclusion_tag("django_cfran/button_group.html")
 def cfran_button_group(*args, **kwargs) -> dict:
     """
     Returns a group of button items. Takes a dict as parameter, with the following structure:
@@ -377,7 +377,7 @@ def cfran_button_group(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/callout.html")
+@register.inclusion_tag("django_cfran/callout.html")
 def cfran_callout(*args, **kwargs) -> dict:
     """
     Returns a callout item. Takes a dict as parameter, with the following structure:
@@ -400,7 +400,7 @@ def cfran_callout(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-callout--green-emeraude`
+    - Color classes ([See the list](/django_cfran/resources/colors)), for example `cfran-callout--green-emeraude`
 
     **Tag name**:
         cfran_callout
@@ -421,7 +421,7 @@ def cfran_callout(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/card.html")
+@register.inclusion_tag("django_cfran/card.html")
 def cfran_card(*args, **kwargs) -> dict:
     """
     Returns a card item. Takes a dict as parameter, with the following structure:
@@ -515,7 +515,7 @@ def cfran_card(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/consent.html")
+@register.inclusion_tag("django_cfran/consent.html")
 def cfran_consent(*args, **kwargs) -> dict:
     """
     Returns a consent banner item. Takes a dict as parameter, with the following structure:
@@ -547,7 +547,7 @@ def cfran_consent(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/content.html")
+@register.inclusion_tag("django_cfran/content.html")
 def cfran_content(*args, **kwargs) -> dict:
     """
     Returns a media content item. Takes a dict as parameter, with the following structure:
@@ -561,7 +561,7 @@ def cfran_content(*args, **kwargs) -> dict:
         "alt_text": "(optional) Alternative text of the media"
         "extra_classes": "(Optional) string with names of extra classes for the whole component",
         "ratio_class": "(Optional) string with the name of a ratio class",
-        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django-cfran/components/transcription/)",
+        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django_cfran/components/transcription/)",
     }
     ```
 
@@ -624,7 +624,7 @@ def cfran_content(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/france_connect.html")
+@register.inclusion_tag("django_cfran/france_connect.html")
 def cfran_france_connect(*args, **kwargs) -> dict:
     """
     Returns a FranceConnect button item. Takes a dict as parameter, with the following structure:
@@ -660,7 +660,7 @@ def cfran_france_connect(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/highlight.html")
+@register.inclusion_tag("django_cfran/highlight.html")
 def cfran_highlight(*args, **kwargs) -> dict:
     """
     Returns a highlight item. Takes a dict as parameter, with the following structure:
@@ -680,7 +680,7 @@ def cfran_highlight(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-highlight--green-emeraude`
+    - Color classes ([See the list](/django_cfran/resources/colors)), for example `cfran-highlight--green-emeraude`
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
@@ -701,7 +701,7 @@ def cfran_highlight(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/input.html")
+@register.inclusion_tag("django_cfran/input.html")
 def cfran_input(*args, **kwargs) -> dict:
     """
     Returns a input item. Prefer the use of an actual form (see documentation)
@@ -749,7 +749,7 @@ def cfran_input(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/link.html")
+@register.inclusion_tag("django_cfran/link.html")
 def cfran_link(*args, **kwargs) -> dict:
     """
     Returns a link item. Takes a dict as parameter, with the following structure:
@@ -790,7 +790,7 @@ def cfran_link(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/notice.html")
+@register.inclusion_tag("django_cfran/notice.html")
 def cfran_notice(*args, **kwargs) -> dict:
     """
     Returns a notice item. Takes a dict as parameter, with the following structure:
@@ -820,7 +820,7 @@ def cfran_notice(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/pagination.html", takes_context=True)
+@register.inclusion_tag("django_cfran/pagination.html", takes_context=True)
 def cfran_pagination(context: Context, page_obj: Page) -> dict:
     """
     Returns a pagination item. Takes a Django paginator object as parameter
@@ -835,7 +835,7 @@ def cfran_pagination(context: Context, page_obj: Page) -> dict:
     return {"request": context["request"], "page_obj": page_obj}
 
 
-@register.inclusion_tag("cfran/quote.html")
+@register.inclusion_tag("django_cfran/quote.html")
 def cfran_quote(*args, **kwargs) -> dict:
     """
     Returns a quote item. Takes a dict as parameter, with the following structure:
@@ -858,7 +858,7 @@ def cfran_quote(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-quote--green-emeraude`
+    - Color classes ([See the list](/django_cfran/resources/colors)), for example `cfran-quote--green-emeraude`
 
     **Tag name**:
         cfran_quote
@@ -881,7 +881,7 @@ def cfran_quote(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/select.html")
+@register.inclusion_tag("django_cfran/select.html")
 def cfran_select(*args, **kwargs) -> dict:
     """
     Returns a select item. Prefer the use of an actual form (see documentation)
@@ -937,7 +937,7 @@ def cfran_select(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/sidemenu.html", takes_context=True)
+@register.inclusion_tag("django_cfran/sidemenu.html", takes_context=True)
 def cfran_sidemenu(context: Context, *args, **kwargs) -> dict:
     """
     Returns a side menu item. Takes a dict as parameter, with the following structure:
@@ -980,7 +980,7 @@ def cfran_sidemenu(context: Context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/skiplinks.html", takes_context=True)
+@register.inclusion_tag("django_cfran/skiplinks.html", takes_context=True)
 def cfran_skiplinks(context: Context, items: list) -> dict:
     """
     Returns a skiplinks item. Takes a list as parameter, with the following structure:
@@ -1005,7 +1005,7 @@ def cfran_skiplinks(context: Context, items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("cfran/stepper.html")
+@register.inclusion_tag("django_cfran/stepper.html")
 def cfran_stepper(*args, **kwargs) -> dict:
     """
     Returns a stepper item. Takes a dict as parameter, with the following structure:
@@ -1040,7 +1040,7 @@ def cfran_stepper(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/summary.html")
+@register.inclusion_tag("django_cfran/summary.html")
 def cfran_summary(items: list, heading_tag: str = "p") -> dict:
     """
     Returns a summary item. Takes a list as parameter, with the following structure:
@@ -1067,7 +1067,7 @@ def cfran_summary(items: list, heading_tag: str = "p") -> dict:
     return {"self": {"items": items, "heading_tag": heading_tag}}
 
 
-@register.inclusion_tag("cfran/table.html")
+@register.inclusion_tag("django_cfran/table.html")
 def cfran_table(*args, **kwargs) -> dict:
     """
     Returns a table item. Takes a dict as parameter, with the following structure:
@@ -1086,7 +1086,7 @@ def cfran_table(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django-cfran/resources/colors)), for example `cfran-table--green-emeraude`
+    - Color classes ([See the list](/django_cfran/resources/colors)), for example `cfran-table--green-emeraude`
     - `cfran-table--bordered`: adds a border under each line
     - `cfran-table--no-scroll` prevents horizontal scrolling on mobile
     - `cfran-table--layout-fixed`: forces the table at 100% and equal size columns
@@ -1110,7 +1110,7 @@ def cfran_table(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/tag.html")
+@register.inclusion_tag("django_cfran/tag.html")
 def cfran_tag(*args, **kwargs) -> dict:
     """
     Returns a tag item. Takes a dict as parameter, with the following structure:
@@ -1154,7 +1154,7 @@ def cfran_tag(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/tile.html")
+@register.inclusion_tag("django_cfran/tile.html")
 def cfran_tile(*args, **kwargs) -> dict:
     """
     Returns a tile item. Takes a dict as parameter, with the following structure:
@@ -1227,7 +1227,7 @@ def cfran_tile(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/toggle.html")
+@register.inclusion_tag("django_cfran/toggle.html")
 def cfran_toggle(*args, **kwargs) -> dict:
     """
     Returns a toggle item. Takes a dict as parameter, with the following structure:
@@ -1276,7 +1276,7 @@ def cfran_toggle(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/tooltip.html")
+@register.inclusion_tag("django_cfran/tooltip.html")
 def cfran_tooltip(*args, **kwargs) -> dict:
     """
     Returns a tooltip item. Takes a dict as parameter, with the following structure:
@@ -1313,7 +1313,7 @@ def cfran_tooltip(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("cfran/transcription.html")
+@register.inclusion_tag("django_cfran/transcription.html")
 def cfran_transcription(*args, **kwargs) -> dict:
     """
     Returns a transcription item. Takes a dict as parameter, with the following structure:
@@ -1473,7 +1473,7 @@ def cfran_django_messages(
     )
 
 
-@register.inclusion_tag("cfran/form_snippet.html", takes_context=True)
+@register.inclusion_tag("django_cfran/form_snippet.html", takes_context=True)
 def cfran_form(context) -> dict:
     """
     Returns the HTML for a form snippet
@@ -1487,7 +1487,7 @@ def cfran_form(context) -> dict:
     return context
 
 
-@register.inclusion_tag("cfran/form_field_snippets/field_snippet.html")
+@register.inclusion_tag("django_cfran/form_field_snippets/field_snippet.html")
 def cfran_form_field(field) -> dict:
     """
     Returns the HTML for a form field snippet

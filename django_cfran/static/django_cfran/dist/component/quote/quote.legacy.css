@@ -1,0 +1,128 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correction largeur max du texte
+  */
+  .cfran-quote::before,
+  .cfran-quote::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/editor/cfran--quote-line.svg");
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul.cfran-quote__source {
+    list-style-type: none;
+  }
+
+  ol.cfran-quote__source {
+    list-style-type: none;
+  }
+
+  ul.cfran-quote__source,
+  ol.cfran-quote__source {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-quote blockquote {
+    max-width: 100%;
+  }
+
+  .cfran-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .cfran-quote--cfran-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-quote__source {
+    color: #666;
+  }
+}

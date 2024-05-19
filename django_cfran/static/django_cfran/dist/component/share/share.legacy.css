@@ -1,0 +1,137 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-share__group > li {
+    list-style: none;
+  }
+
+  .cfran-share .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-share .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .cfran-share .cfran-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .cfran-share .cfran-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-line.svg");
+  }
+
+  .cfran-share .cfran-btn--threads::before {
+    background-image: url("../../icons/logo/threads-line.svg");
+  }
+
+  .cfran-share .cfran-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-line.svg");
+  }
+
+  .cfran-share .cfran-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-line.svg");
+  }
+
+  .cfran-share .cfran-btn--mail::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/mail-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn--copy::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/links-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-share .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share .cfran-btn:disabled,
+  .cfran-share a.cfran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-share .cfran-btn:disabled:hover,
+  .cfran-share a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:disabled:active,
+  .cfran-share a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share__text {
+    color: #666;
+  }
+
+  .cfran-share__link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-share__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share__link:disabled,
+  a.cfran-share__link:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-share__link:disabled:hover,
+  a.cfran-share__link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share__link:disabled:active,
+  a.cfran-share__link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

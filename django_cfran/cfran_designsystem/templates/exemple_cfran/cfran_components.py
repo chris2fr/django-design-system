@@ -3,7 +3,7 @@ from django.templatetags.static import static
 from example_app.utils import lorem_ipsum
 
 # Sample SVG file
-with open("example_app/static/img/gouvernement.svg") as svg_file:
+with open("django_cfran/static/img/gouvernement.svg") as svg_file:
     gov_svg = svg_file.read()
 
 IMPLEMENTED_COMPONENTS = {
@@ -523,7 +523,7 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Lien",
         "sample_data": [
             {
-                "url": "/django-cfran/components/link/",
+                "url": "/django_cfran/components/link/",
                 "label": "Lien interne",
             },
             {
@@ -533,13 +533,13 @@ IMPLEMENTED_COMPONENTS = {
                 "extra_classes": "cfran-link--lg",
             },
             {
-                "url": "/django-cfran/components/link/",
+                "url": "/django_cfran/components/link/",
                 "label": "Petit lien interne avec flèche",
                 "is_external": False,
                 "extra_classes": "cfran-icon-arrow-right-line cfran-link--icon-right cfran-link--sm",
             },
             {
-                "url": "/django-cfran/components/link/",
+                "url": "/django_cfran/components/link/",
                 "label": "Lien de téléchargement",
                 "extra_classes": "cfran-link--download",
             },
@@ -647,7 +647,7 @@ IMPLEMENTED_COMPONENTS = {
                                     {"label": "Page non active", "link": "#"},
                                     {
                                         "label": "Page active",
-                                        "link": "/django-cfran/components/sidemenu/",
+                                        "link": "/django_cfran/components/sidemenu/",
                                     },
                                 ],
                             },
@@ -772,7 +772,7 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Tag",
         "sample_data": [
             {"label": "Tag simple"},
-            {"label": "Tag avec lien", "link": "/django-cfran/components"},
+            {"label": "Tag avec lien", "link": "/django_cfran/components"},
             {
                 "label": "Petit tag avec icône",
                 "extra_classes": "cfran-tag--sm cfran-icon-arrow-right-line cfran-tag--icon-left",  # noqa
@@ -821,7 +821,7 @@ IMPLEMENTED_COMPONENTS = {
                 "id": "tile-cityhall",
                 "extra_classes": "cfran-tile--horizontal",
                 "svg_path": static(
-                    "cfran/dist/artwork/pictograms/buildings/city-hall.svg"
+                    "django_cfran/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
             },
             {
@@ -830,7 +830,7 @@ IMPLEMENTED_COMPONENTS = {
                 "id": "tile-nuclear-plant",
                 "extra_classes": "cfran-tile--sm",
                 "svg_path": static(
-                    "cfran/dist/artwork/pictograms/buildings/nuclear-plant.svg"
+                    "django_cfran/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
             },
             {
@@ -846,14 +846,14 @@ IMPLEMENTED_COMPONENTS = {
                         },
                     ]
                 },
-                "svg_path": static("cfran/dist/artwork/pictograms/map/map.svg"),
+                "svg_path": static("django_cfran/dist/artwork/pictograms/map/map.svg"),
             },
             {
                 "title": "Tuile à fond gris et ombre sans bordure",
                 "url": "/",
                 "id": "tile-map",
                 "extra_classes": "cfran-tile--horizontal cfran-tile--grey cfran-tile--shadow cfran-tile--no-border",
-                "svg_path": static("cfran/dist/artwork/pictograms/leisure/paint.svg"),
+                "svg_path": static("django_cfran/dist/artwork/pictograms/leisure/paint.svg"),
             },
             {
                 "title": "Tuile de téléchargement",
@@ -861,7 +861,7 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
-                    "cfran/dist/artwork/pictograms/document/document-signature.svg"
+                    "django_cfran/dist/artwork/pictograms/document/document-signature.svg"
                 ),
             },
         ],
@@ -993,7 +993,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-radio-riche",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/radio/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#126](https://github.com/numerique-gouv/django-cfran/issues/126)
+        cf. [#126](https://github.com/numerique-gouv/django_cfran/issues/126)
         """,
     },
     "segmented_control": {
@@ -1001,7 +1001,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/controle-segmente",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/segmented/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#128](https://github.com/numerique-gouv/django-cfran/issues/128)
+        cf. [#128](https://github.com/numerique-gouv/django_cfran/issues/128)
         """,
     },
     "range": {
@@ -1009,7 +1009,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/curseur-range",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/range/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#129](https://github.com/numerique-gouv/django-cfran/issues/129)
+        cf. [#129](https://github.com/numerique-gouv/django_cfran/issues/129)
         """,
     },
 }
@@ -1034,7 +1034,7 @@ WONT_BE_IMPLEMENTED = {
         "title": "Téléchargement de fichier",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/download/",
-        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django-cfran/components/link/), [carte](/django-cfran/components/card/), [tuile](/django-cfran/components/tile/). Voir la documentation de ceux-ci.",
+        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django_cfran/components/link/), [carte](/django_cfran/components/card/), [tuile](/django_cfran/components/tile/). Voir la documentation de ceux-ci.",
     },
     "file_upload": {
         "title": "Ajout de fichier",

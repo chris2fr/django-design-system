@@ -9,12 +9,12 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # Note: the command should be able to be run several times without creating
         # duplicate objects.
-        icons_root = "cfran/static/cfran/dist/icons/"
+        icons_root = "django_django_cfran/static/cfran/dist/icons/"
         icons_folders = os.listdir(icons_root)
         icons_folders.sort()
 
         json_root = (
-            "cfran/static/django-cfran/icon-picker/assets/icons-libraries/"
+            "django_cfran/static/django_cfran/icon-picker/assets/icons-libraries/"
         )
 
         all_folders = []

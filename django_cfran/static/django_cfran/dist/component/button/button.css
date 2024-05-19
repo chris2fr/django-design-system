@@ -1,0 +1,1707 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  BUTTON
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-btn {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-action-high-cfran-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-cfran-primary-hover);
+  --active: var(--background-action-high-cfran-primary-active);
+  color: var(--text-inverted-cfran-primary);
+}
+
+.cfran-btn::before,
+.cfran-btn::after {
+  display: block;
+}
+
+.cfran-btn[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--align-on-content {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.cfran-btn[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cfran-btn[class^=cfran-icon-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn[class^=cfran-fi-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-])::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--align-on-content[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--align-on-content[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn--align-on-content[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--align-on-content[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--icon-left[class^=cfran-icon-]::before,
+.cfran-btn--icon-left[class*=" cfran-icon-"]::before,
+.cfran-btn--icon-left[class^=cfran-fi-]::before,
+.cfran-btn--icon-left[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  margin-left: -0.875rem;
+  margin-right: -1rem;
+}
+
+.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--icon-right[class^=cfran-icon-]::after,
+.cfran-btn--icon-right[class*=" cfran-icon-"]::after,
+.cfran-btn--icon-right[class^=cfran-fi-]::after,
+.cfran-btn--icon-right[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--icon-right[class^=cfran-icon-]::before,
+.cfran-btn--icon-right[class*=" cfran-icon-"]::before,
+.cfran-btn--icon-right[class^=cfran-fi-]::before,
+.cfran-btn--icon-right[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  margin-left: -1rem;
+  margin-right: -0.875rem;
+}
+
+.cfran-btn--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.cfran-btn--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--sm.cfran-btn--align-on-content {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.cfran-btn--sm[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cfran-btn--sm[class^=cfran-icon-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--sm[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--sm[class^=cfran-fi-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--sm[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-])::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--sm.cfran-btn--align-on-content[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm.cfran-btn--align-on-content[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm.cfran-btn--align-on-content[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--sm.cfran-btn--align-on-content[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cfran-btn--sm.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--sm.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--sm.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--sm.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--sm.cfran-btn--icon-left[class^=cfran-icon-]::before,
+.cfran-btn--sm.cfran-btn--icon-left[class*=" cfran-icon-"]::before,
+.cfran-btn--sm.cfran-btn--icon-left[class^=cfran-fi-]::before,
+.cfran-btn--sm.cfran-btn--icon-left[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  margin-left: -0.625rem;
+  margin-right: -0.75rem;
+}
+
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-icon-]::after,
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-icon-"]::after,
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-fi-]::after,
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-icon-]::before,
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-icon-"]::before,
+.cfran-btn--sm.cfran-btn--icon-right[class^=cfran-fi-]::before,
+.cfran-btn--sm.cfran-btn--icon-right[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--sm.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  margin-left: -0.75rem;
+  margin-right: -0.625rem;
+}
+
+.cfran-btn--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.cfran-btn--lg[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--lg[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--align-on-content {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.cfran-btn--lg[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cfran-btn--lg[class^=cfran-icon-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--lg[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--lg[class^=cfran-fi-]:not([class*=cfran-btn--icon-])::before,
+.cfran-btn--lg[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-])::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--align-on-content[class^=cfran-icon-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg.cfran-btn--align-on-content[class*=" cfran-icon-"]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg.cfran-btn--align-on-content[class^=cfran-fi-]:not([class*=cfran-btn--icon-]),
+.cfran-btn--lg.cfran-btn--align-on-content[class*=" cfran-fi-"]:not([class*=cfran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--lg.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--lg.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--lg.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--lg.cfran-btn--icon-left[class^=cfran-icon-]::before,
+.cfran-btn--lg.cfran-btn--icon-left[class*=" cfran-icon-"]::before,
+.cfran-btn--lg.cfran-btn--icon-left[class^=cfran-fi-]::before,
+.cfran-btn--lg.cfran-btn--icon-left[class*=" cfran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-icon-],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-icon-"],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-left[class^=cfran-fi-],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-left[class*=" cfran-fi-"] {
+  margin-left: -1.3125rem;
+  margin-right: -1.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-icon-]::after,
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-icon-"]::after,
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-fi-]::after,
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-icon-]::before,
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-icon-"]::before,
+.cfran-btn--lg.cfran-btn--icon-right[class^=cfran-fi-]::before,
+.cfran-btn--lg.cfran-btn--icon-right[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-icon-],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-icon-"],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-right[class^=cfran-fi-],
+.cfran-btn--lg.cfran-btn--align-on-content.cfran-btn--icon-right[class*=" cfran-fi-"] {
+  margin-left: -1.5rem;
+  margin-right: -1.3125rem;
+}
+
+.cfran-btns-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  /**
+  * cfran-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * cfran-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  */
+
+  /**
+  * cfran-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  */
+
+  /**
+  * cfran-btns-group--right : aligne les boutons sur la droite
+  */
+
+  /**
+  * cfran-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * cfran-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * cfran-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  */
+
+  /**
+  * cfran-btns-group--sm : Fixe les boutons à la taille SM
+  */
+
+  /**
+  * cfran-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  */
+
+  /**
+  * cfran-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  */
+}
+
+.cfran-btns-group > li,
+.cfran-btns-group > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cfran-btns-group .cfran-btn {
+  width: calc(100% - 1rem);
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
+}
+
+.cfran-btns-group--inline .cfran-btn {
+  width: auto;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group--inline > li {
+  display: inline-flex;
+  max-width: 100%;
+  width: auto;
+}
+
+.cfran-btns-group--inline.cfran-btns-group--right.cfran-btns-group--inline-reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.cfran-btns-group--left,
+.cfran-btns-group--left li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.cfran-btns-group--right,
+.cfran-btns-group--right li {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.cfran-btns-group--center,
+.cfran-btns-group--center li {
+  justify-content: center;
+  text-align: center;
+}
+
+.cfran-btns-group--between,
+.cfran-btns-group--between li {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cfran-btns-group--equisized {
+  --equisized-width: auto;
+}
+
+.cfran-btns-group--equisized .cfran-btn {
+  justify-content: center;
+  width: var(--equisized-width);
+}
+
+.cfran-btns-group--sm .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"]) {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::after,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::after,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::after,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--sm.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"]) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::after,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::after,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::after,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg).cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-btns-group--lg .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"]) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-left .cfran-btn[class*=" cfran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-],
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"],
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-],
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::after,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::after,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::after,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-icon-]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-icon-"]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class^=cfran-fi-]::before,
+.cfran-btns-group--lg.cfran-btns-group--icon-right .cfran-btn[class*=" cfran-fi-"]::before {
+  content: none;
+}
+
+.cfran-fieldset__element > .cfran-btns-group {
+  margin-bottom: -1rem;
+}
+
+.cfran-btn--close {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.cfran-btn--close::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  content: "";
+}
+
+.cfran-btn--close::before {
+  content: none;
+}
+
+.cfran-btn--tooltip {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cfran-btn--tooltip::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/question-line.svg");
+  mask-image: url("../../icons/system/question-line.svg");
+  content: "";
+}
+
+.cfran-btn--fullscreen {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--fullscreen::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/media/fullscreen-line.svg");
+  mask-image: url("../../icons/media/fullscreen-line.svg");
+  content: "";
+}
+
+.cfran-btn--fullscreen::before {
+  content: none;
+}
+
+.cfran-btn--display {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--display::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/cfran--theme-fill.svg");
+  mask-image: url("../../icons/system/cfran--theme-fill.svg");
+  content: "";
+}
+
+.cfran-btn--account {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--account::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../icons/user/account-circle-fill.svg");
+  content: "";
+}
+
+.cfran-btn--team {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--team::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/team-line.svg");
+  mask-image: url("../../icons/user/team-line.svg");
+  content: "";
+}
+
+.cfran-btn--briefcase {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cfran-btn--briefcase::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/business/briefcase-fill.svg");
+  mask-image: url("../../icons/business/briefcase-fill.svg");
+  content: "";
+}
+
+.cfran-btn:disabled,
+a.cfran-btn:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.cfran-btn--secondary {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cfran-primary);
+  box-shadow: inset 0 0 0 1px var(--border-action-high-cfran-primary);
+}
+
+.cfran-btn--secondary:disabled,
+a.cfran-btn--secondary:not([href]) {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.cfran-btn--tertiary,
+.cfran-btn--account {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cfran-primary);
+  box-shadow: inset 0 0 0 1px var(--border-default-grey);
+}
+
+.cfran-btn--tertiary:disabled,
+a.cfran-btn--tertiary:not([href]),
+a.cfran-btn--account:not([href]),
+.cfran-btn--account:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.cfran-btn--tertiary-no-outline,
+.cfran-btn--close,
+.cfran-btn--display,
+.cfran-btn--fullscreen,
+.cfran-btn--tooltip,
+.cfran-btn--briefcase,
+.cfran-btn--team {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cfran-primary);
+}
+
+.cfran-btn--tertiary-no-outline:disabled,
+a.cfran-btn--tertiary-no-outline:not([href]),
+a.cfran-btn--close:not([href]),
+a.cfran-btn--display:not([href]),
+a.cfran-btn--fullscreen:not([href]),
+a.cfran-btn--tooltip:not([href]),
+a.cfran-btn--briefcase:not([href]),
+a.cfran-btn--team:not([href]),
+.cfran-btn--close:disabled,
+.cfran-btn--display:disabled,
+.cfran-btn--fullscreen:disabled,
+.cfran-btn--tooltip:disabled,
+.cfran-btn--briefcase:disabled,
+.cfran-btn--team:disabled {
+  color: var(--text-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+  .cfran-btns-group--inline-sm .cfran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cfran-btns-group--inline-sm > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cfran-btns-group--inline-sm.cfran-btns-group--right.cfran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cfran-btns-group--inline-md .cfran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cfran-btns-group--inline-md > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cfran-btns-group--inline-md.cfran-btns-group--right.cfran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .cfran-btns-group--inline-lg .cfran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cfran-btns-group--inline-lg > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cfran-btns-group--inline-lg.cfran-btns-group--right.cfran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-btn::before,
+  .cfran-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn[href] {
+    text-decoration: none;
+  }
+
+  .cfran-btn[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-btn--sm::before,
+  .cfran-btn--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-btn--sm[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--lg::before,
+  .cfran-btn--lg::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-btn--lg[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-btn--close::before,
+  .cfran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--tooltip::before,
+  .cfran-btn--tooltip::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/question-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--fullscreen::before,
+  .cfran-btn--fullscreen::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/fullscreen-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--display::before,
+  .cfran-btn--display::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cfran--theme-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--briefcase::before,
+  .cfran-btn--briefcase::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/briefcase-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--account::before,
+  .cfran-btn--account::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/account-circle-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--team::before,
+  .cfran-btn--team::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/team-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  ul.cfran-btns-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-btns-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-btns-group,
+  ol.cfran-btns-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-btn:disabled,
+  a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-btn--secondary {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:disabled:hover,
+  a.cfran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:disabled:active,
+  a.cfran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-btn--tertiary:hover,
+  .cfran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:active,
+  .cfran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:disabled:hover,
+  a.cfran-btn--tertiary:not([href]):hover,
+  a.cfran-btn--account:not([href]):hover,
+  .cfran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:disabled:active,
+  a.cfran-btn--tertiary:not([href]):active,
+  a.cfran-btn--account:not([href]):active,
+  .cfran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--tertiary-no-outline:hover,
+  .cfran-btn--close:hover,
+  .cfran-btn--display:hover,
+  .cfran-btn--fullscreen:hover,
+  .cfran-btn--tooltip:hover,
+  .cfran-btn--briefcase:hover,
+  .cfran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:active,
+  .cfran-btn--close:active,
+  .cfran-btn--display:active,
+  .cfran-btn--fullscreen:active,
+  .cfran-btn--tooltip:active,
+  .cfran-btn--briefcase:active,
+  .cfran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:hover,
+  a.cfran-btn--tertiary-no-outline:not([href]):hover,
+  a.cfran-btn--close:not([href]):hover,
+  a.cfran-btn--display:not([href]):hover,
+  a.cfran-btn--fullscreen:not([href]):hover,
+  a.cfran-btn--tooltip:not([href]):hover,
+  a.cfran-btn--briefcase:not([href]):hover,
+  a.cfran-btn--team:not([href]):hover,
+  .cfran-btn--close:disabled:hover,
+  .cfran-btn--display:disabled:hover,
+  .cfran-btn--fullscreen:disabled:hover,
+  .cfran-btn--tooltip:disabled:hover,
+  .cfran-btn--briefcase:disabled:hover,
+  .cfran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:active,
+  a.cfran-btn--tertiary-no-outline:not([href]):active,
+  a.cfran-btn--close:not([href]):active,
+  a.cfran-btn--display:not([href]):active,
+  a.cfran-btn--fullscreen:not([href]):active,
+  a.cfran-btn--tooltip:not([href]):active,
+  a.cfran-btn--briefcase:not([href]):active,
+  a.cfran-btn--team:not([href]):active,
+  .cfran-btn--close:disabled:active,
+  .cfran-btn--display:disabled:active,
+  .cfran-btn--fullscreen:disabled:active,
+  .cfran-btn--tooltip:disabled:active,
+  .cfran-btn--briefcase:disabled:active,
+  .cfran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print {
+  .cfran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-btn:disabled,
+  a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    color: #929292;
+  }
+
+  .cfran-btn--secondary,
+  .cfran-btn--tertiary,
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-btn--secondary {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:disabled:hover,
+  a.cfran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:disabled:active,
+  a.cfran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:hover,
+  .cfran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:active,
+  .cfran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:disabled:hover,
+  a.cfran-btn--tertiary:not([href]):hover,
+  a.cfran-btn--account:not([href]):hover,
+  .cfran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:disabled:active,
+  a.cfran-btn--tertiary:not([href]):active,
+  a.cfran-btn--account:not([href]):active,
+  .cfran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:hover,
+  .cfran-btn--close:hover,
+  .cfran-btn--display:hover,
+  .cfran-btn--fullscreen:hover,
+  .cfran-btn--tooltip:hover,
+  .cfran-btn--briefcase:hover,
+  .cfran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:active,
+  .cfran-btn--close:active,
+  .cfran-btn--display:active,
+  .cfran-btn--fullscreen:active,
+  .cfran-btn--tooltip:active,
+  .cfran-btn--briefcase:active,
+  .cfran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:hover,
+  a.cfran-btn--tertiary-no-outline:not([href]):hover,
+  a.cfran-btn--close:not([href]):hover,
+  a.cfran-btn--display:not([href]):hover,
+  a.cfran-btn--fullscreen:not([href]):hover,
+  a.cfran-btn--tooltip:not([href]):hover,
+  a.cfran-btn--briefcase:not([href]):hover,
+  a.cfran-btn--team:not([href]):hover,
+  .cfran-btn--close:disabled:hover,
+  .cfran-btn--display:disabled:hover,
+  .cfran-btn--fullscreen:disabled:hover,
+  .cfran-btn--tooltip:disabled:hover,
+  .cfran-btn--briefcase:disabled:hover,
+  .cfran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:active,
+  a.cfran-btn--tertiary-no-outline:not([href]):active,
+  a.cfran-btn--close:not([href]):active,
+  a.cfran-btn--display:not([href]):active,
+  a.cfran-btn--fullscreen:not([href]):active,
+  a.cfran-btn--tooltip:not([href]):active,
+  a.cfran-btn--briefcase:not([href]):active,
+  a.cfran-btn--team:not([href]):active,
+  .cfran-btn--close:disabled:active,
+  .cfran-btn--display:disabled:active,
+  .cfran-btn--fullscreen:disabled:active,
+  .cfran-btn--tooltip:disabled:active,
+  .cfran-btn--briefcase:disabled:active,
+  .cfran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

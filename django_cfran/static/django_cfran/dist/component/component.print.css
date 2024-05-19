@@ -1,0 +1,3145 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media print {
+  .cfran-upload {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .cfran-accordion__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-accordion__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .cfran-accordion .cfran-collapse:not(.cfran-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+
+  .cfran-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .cfran-badge--info {
+    color: hsl(180, 45%, 43%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--error {
+    color: hsl(0, 45%, 43%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--success {
+    color: hsl(90, 45%, 43%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--warning {
+    color: hsl(270, 45%, 43%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--new {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-logo {
+    color: #000;
+  }
+
+  .cfran-logo::after {
+    background-position: 0 calc(100% + 1.875rem) !important;
+  }
+
+  .cfran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-btn:disabled,
+  a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    color: #929292;
+  }
+
+  .cfran-btn--secondary,
+  .cfran-btn--tertiary,
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip {
+    background-color: transparent;
+  }
+
+  .cfran-connect {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-connect:disabled,
+  a.cfran-connect:not([href]) {
+    background-color: #e5e5e5;
+    color: #929292;
+  }
+
+  .cfran-connect-group .cfran-connect + p a {
+    color: hsl(180, 75%, 25%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-connect-group p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .cfran-quote--cfran-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote__source {
+    color: #666;
+  }
+
+  .cfran-quote__author,
+  .cfran-quote cite,
+  .cfran-quote figcaption li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-breadcrumb {
+    color: #666;
+    display: none;
+  }
+
+  .cfran-breadcrumb__link[aria-current]:not([aria-current=false]) {
+    color: #3a3a3a;
+  }
+
+  .cfran-select-group--valid label,
+  .cfran-input-group--valid label,
+  .cfran-range-group--valid label,
+  .cfran-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-select-group--error label,
+  .cfran-input-group--error label,
+  .cfran-range-group--error label,
+  .cfran-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-select-group--info label,
+  .cfran-input-group--info label,
+  .cfran-range-group--info label,
+  .cfran-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-select-group--disabled label,
+  .cfran-select-group--disabled .cfran-hint-text,
+  .cfran-input-group--disabled label,
+  .cfran-input-group--disabled .cfran-hint-text,
+  .cfran-range-group--disabled label,
+  .cfran-range-group--disabled .cfran-hint-text,
+  .cfran-upload-group--disabled label,
+  .cfran-upload-group--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-label {
+    color: #161616;
+  }
+
+  .cfran-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-label--disabled,
+  .cfran-label--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-hint-text,
+  .cfran-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-fieldset:disabled .cfran-label,
+  .cfran-fieldset:disabled .cfran-hint-text,
+  .cfran-fieldset:disabled .cfran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cfran-fieldset input:disabled + label,
+  .cfran-fieldset input:disabled + label .cfran-hint-text,
+  .cfran-fieldset input:disabled + label + .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-fieldset__legend {
+    color: #161616;
+  }
+
+  .cfran-fieldset--error,
+  .cfran-fieldset--error .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-fieldset--error .cfran-fieldset__legend,
+  .cfran-fieldset--error .cfran-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-fieldset--valid,
+  .cfran-fieldset--valid .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-fieldset--valid .cfran-fieldset__legend,
+  .cfran-fieldset--valid .cfran-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--info,
+  .cfran-fieldset--info .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-fieldset--info .cfran-fieldset__legend,
+  .cfran-fieldset--info .cfran-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-stepper__title {
+    color: #161616;
+  }
+
+  .cfran-stepper__state {
+    color: #666;
+  }
+
+  .cfran-stepper__details {
+    color: #666;
+  }
+
+  .cfran-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cfran-stepper__state,
+  .cfran-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-tooltip {
+    color: #3a3a3a;
+    display: none;
+  }
+
+  .cfran-tooltip.cfran-placement {
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+
+  .cfran-link {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-link__detail {
+    color: #666;
+  }
+
+  .cfran-links-group li::marker {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-sidemenu {
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+
+    /*
+    @include elevation.elevate(raised, (legacy:$legacy));
+    @include respond-from(md) {
+      @include elevation.drop((legacy:$legacy));
+    }
+     */
+    display: none;
+  }
+
+  .cfran-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item .cfran-sidemenu__link,
+  .cfran-sidemenu__item .cfran-sidemenu__btn {
+    color: #161616;
+  }
+
+  .cfran-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__link,
+  .cfran-sidemenu__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false]),
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-highlight--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-tabs {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+
+    /**
+    * Tab button
+    */
+  }
+
+  .cfran-tabs::before {
+    box-shadow: inset 0 1px 0 0 #ddd, inset 1px 0 0 0 #ddd, inset -1px 0 0 0 #ddd;
+  }
+
+  .cfran-tabs__tab {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    box-shadow: 0 2px 0 0 #fff;
+  }
+
+  .cfran-tabs__tab:not([aria-selected=true]) {
+    background-color: hsl(180, 80%, 93%);
+    color: #161616;
+  }
+
+  .cfran-tabs__tab[aria-selected=true]:not(:disabled) {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tabs__tab:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-pagination {
+    color: #161616;
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-pagination__link:not([aria-current]):disabled,
+  a.cfran-pagination__link:not([aria-current]):not([href]),
+  a.cfran-pagination__link[aria-current=false]:not([href]),
+  .cfran-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+
+  .cfran-summary {
+    background-color: #eee;
+    display: none;
+  }
+
+  .cfran-summary__title {
+    color: #161616;
+  }
+
+  .cfran-summary li > a {
+    color: #161616;
+  }
+
+  .cfran-table {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table caption {
+    color: #161616;
+  }
+
+  .cfran-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cfran-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .cfran-table--cfran-color3 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color4 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color5 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color6 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color7 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color8 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color9 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color10 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color11 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color12 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color13 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color14 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color15 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color16 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color17 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color18 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color19 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+
+    /* Style bordered, enleve le style even/odd  */
+  }
+
+  .cfran-table td,
+  .cfran-table th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-tag {
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .cfran-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .cfran-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.cfran-tag,
+  button.cfran-tag,
+  input[type=button].cfran-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag:hover,
+  button.cfran-tag:hover,
+  input[type=button].cfran-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag:active,
+  button.cfran-tag:active,
+  input[type=button].cfran-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color3,
+  button.cfran-tag--cfran-color3,
+  input[type=button].cfran-tag--cfran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color3:hover,
+  button.cfran-tag--cfran-color3:hover,
+  input[type=button].cfran-tag--cfran-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color3:active,
+  button.cfran-tag--cfran-color3:active,
+  input[type=button].cfran-tag--cfran-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color4,
+  button.cfran-tag--cfran-color4,
+  input[type=button].cfran-tag--cfran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color4:hover,
+  button.cfran-tag--cfran-color4:hover,
+  input[type=button].cfran-tag--cfran-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color4:active,
+  button.cfran-tag--cfran-color4:active,
+  input[type=button].cfran-tag--cfran-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color5,
+  button.cfran-tag--cfran-color5,
+  input[type=button].cfran-tag--cfran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color5:hover,
+  button.cfran-tag--cfran-color5:hover,
+  input[type=button].cfran-tag--cfran-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color5:active,
+  button.cfran-tag--cfran-color5:active,
+  input[type=button].cfran-tag--cfran-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color6,
+  button.cfran-tag--cfran-color6,
+  input[type=button].cfran-tag--cfran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color6:hover,
+  button.cfran-tag--cfran-color6:hover,
+  input[type=button].cfran-tag--cfran-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color6:active,
+  button.cfran-tag--cfran-color6:active,
+  input[type=button].cfran-tag--cfran-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color7,
+  button.cfran-tag--cfran-color7,
+  input[type=button].cfran-tag--cfran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color7:hover,
+  button.cfran-tag--cfran-color7:hover,
+  input[type=button].cfran-tag--cfran-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color7:active,
+  button.cfran-tag--cfran-color7:active,
+  input[type=button].cfran-tag--cfran-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color8,
+  button.cfran-tag--cfran-color8,
+  input[type=button].cfran-tag--cfran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color8:hover,
+  button.cfran-tag--cfran-color8:hover,
+  input[type=button].cfran-tag--cfran-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color8:active,
+  button.cfran-tag--cfran-color8:active,
+  input[type=button].cfran-tag--cfran-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color9,
+  button.cfran-tag--cfran-color9,
+  input[type=button].cfran-tag--cfran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color9:hover,
+  button.cfran-tag--cfran-color9:hover,
+  input[type=button].cfran-tag--cfran-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color9:active,
+  button.cfran-tag--cfran-color9:active,
+  input[type=button].cfran-tag--cfran-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color10,
+  button.cfran-tag--cfran-color10,
+  input[type=button].cfran-tag--cfran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color10:hover,
+  button.cfran-tag--cfran-color10:hover,
+  input[type=button].cfran-tag--cfran-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color10:active,
+  button.cfran-tag--cfran-color10:active,
+  input[type=button].cfran-tag--cfran-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color11,
+  button.cfran-tag--cfran-color11,
+  input[type=button].cfran-tag--cfran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color11:hover,
+  button.cfran-tag--cfran-color11:hover,
+  input[type=button].cfran-tag--cfran-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color11:active,
+  button.cfran-tag--cfran-color11:active,
+  input[type=button].cfran-tag--cfran-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color12,
+  button.cfran-tag--cfran-color12,
+  input[type=button].cfran-tag--cfran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color12:hover,
+  button.cfran-tag--cfran-color12:hover,
+  input[type=button].cfran-tag--cfran-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color12:active,
+  button.cfran-tag--cfran-color12:active,
+  input[type=button].cfran-tag--cfran-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color13,
+  button.cfran-tag--cfran-color13,
+  input[type=button].cfran-tag--cfran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color13:hover,
+  button.cfran-tag--cfran-color13:hover,
+  input[type=button].cfran-tag--cfran-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color13:active,
+  button.cfran-tag--cfran-color13:active,
+  input[type=button].cfran-tag--cfran-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color14,
+  button.cfran-tag--cfran-color14,
+  input[type=button].cfran-tag--cfran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color14:hover,
+  button.cfran-tag--cfran-color14:hover,
+  input[type=button].cfran-tag--cfran-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color14:active,
+  button.cfran-tag--cfran-color14:active,
+  input[type=button].cfran-tag--cfran-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color15,
+  button.cfran-tag--cfran-color15,
+  input[type=button].cfran-tag--cfran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color15:hover,
+  button.cfran-tag--cfran-color15:hover,
+  input[type=button].cfran-tag--cfran-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color15:active,
+  button.cfran-tag--cfran-color15:active,
+  input[type=button].cfran-tag--cfran-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color16,
+  button.cfran-tag--cfran-color16,
+  input[type=button].cfran-tag--cfran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color16:hover,
+  button.cfran-tag--cfran-color16:hover,
+  input[type=button].cfran-tag--cfran-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color16:active,
+  button.cfran-tag--cfran-color16:active,
+  input[type=button].cfran-tag--cfran-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color17,
+  button.cfran-tag--cfran-color17,
+  input[type=button].cfran-tag--cfran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color17:hover,
+  button.cfran-tag--cfran-color17:hover,
+  input[type=button].cfran-tag--cfran-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color17:active,
+  button.cfran-tag--cfran-color17:active,
+  input[type=button].cfran-tag--cfran-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color18,
+  button.cfran-tag--cfran-color18,
+  input[type=button].cfran-tag--cfran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color18:hover,
+  button.cfran-tag--cfran-color18:hover,
+  input[type=button].cfran-tag--cfran-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color18:active,
+  button.cfran-tag--cfran-color18:active,
+  input[type=button].cfran-tag--cfran-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color19,
+  button.cfran-tag--cfran-color19,
+  input[type=button].cfran-tag--cfran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color19:hover,
+  button.cfran-tag--cfran-color19:hover,
+  input[type=button].cfran-tag--cfran-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color19:active,
+  button.cfran-tag--cfran-color19:active,
+  input[type=button].cfran-tag--cfran-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled) {
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]::after,
+  input[type=button].cfran-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.cfran-tag[aria-pressed=true]:disabled,
+  input[type=button].cfran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:disabled::after,
+  input[type=button].cfran-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:hover,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:active,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:disabled,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.cfran-tag:disabled,
+  input[type=button].cfran-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).cfran-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true],
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:hover,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:active,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:disabled,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  .cfran-alert {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cfran-alert::before {
+    color: #fff;
+  }
+
+  .cfran-alert--info {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-alert--error {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-alert--success {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-alert--warning {
+    background-image: linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%));
+  }
+
+  .cfran-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cfran-notice--info {
+    background-color: hsl(180, 80%, 96%);
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px);
+  }
+
+  .cfran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-radio-group input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset .cfran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cfran-fieldset .cfran-radio-group input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset .cfran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-fieldset .cfran-radio-group--sm input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+    background-color: #fff;
+  }
+
+  .cfran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-radio-rich input[type=radio]:disabled ~ .cfran-radio-rich__pictogram svg * {
+    fill: #929292;
+  }
+
+  .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked ~ .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked:disabled + label {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked:disabled ~ .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-fieldset--error .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset .cfran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-fieldset .cfran-radio-rich input[type=radio]:disabled:checked + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-card {
+    background-color: #fff;
+  }
+
+  .cfran-card:not(.cfran-card--no-border):not(.cfran-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--shadow {
+    background-color: #fff;
+  }
+
+  .cfran-card--shadow.cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--download:not(.cfran-card--no-background) .cfran-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-card__detail {
+    color: #666;
+    line-height: 1rem !important;
+  }
+
+  .cfran-card__title {
+    color: #161616;
+  }
+
+  .cfran-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-card__title:disabled,
+  a.cfran-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-card__detail,
+  .cfran-card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), var(--data-uri-svg);
+  }
+
+  .cfran-checkbox-group input[type=checkbox]:checked + label::before {
+    background-color: var(--background-active-cfran-primary);
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), var(--data-uri-svg);
+
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  :root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:checked + label::before {
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  .cfran-checkbox-group input[type=checkbox]:disabled + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), var(--data-uri-svg);
+  }
+
+  .cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+    background-color: var(--background-disabled-grey);
+
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  :root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+    --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  }
+
+  .cfran-checkbox-group--error input[type=checkbox] + label,
+  .cfran-checkbox-group--error input[type=checkbox]:checked + label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--error input[type=checkbox] + label::before,
+  .cfran-checkbox-group--error input[type=checkbox]:checked + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+  }
+
+  .cfran-checkbox-group--error::before {
+    background-color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid input[type=checkbox] + label,
+  .cfran-checkbox-group--valid input[type=checkbox]:checked + label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid input[type=checkbox] + label::before,
+  .cfran-checkbox-group--valid input[type=checkbox]:checked + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+  }
+
+  .cfran-checkbox-group--valid::before {
+    background-color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+  }
+
+  .cfran-fieldset--valid .cfran-checkbox-group input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+  }
+
+  .cfran-toggle label {
+    color: #161616;
+  }
+
+  .cfran-toggle label::before {
+    color: hsl(180, 75%, 25%);
+    content: "";
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-toggle label::after {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    background-color: #fff;
+  }
+
+  .cfran-toggle input[type=checkbox] {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-toggle input[type=checkbox]:checked {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked {
+    background-color: #e5e5e5;
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled ~ .cfran-toggle__label::before {
+    color: #929292;
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled ~ .cfran-toggle__label::after {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-toggle .cfran-hint-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-toggle--border-bottom {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-toggle--error label,
+  .cfran-fieldset--error .cfran-toggle label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-toggle--error label::before,
+  .cfran-fieldset--error .cfran-toggle label::before {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-toggle--error label::after,
+  .cfran-fieldset--error .cfran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(0, 45%, 43%);
+  }
+
+  .cfran-toggle--valid label,
+  .cfran-fieldset--valid .cfran-toggle label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-toggle--valid label::before,
+  .cfran-fieldset--valid .cfran-toggle label::before {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-toggle--valid label::after,
+  .cfran-fieldset--valid .cfran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(90, 45%, 43%);
+  }
+
+  .cfran-skiplinks {
+    background-color: #eee;
+  }
+
+  .cfran-skiplink {
+    display: none;
+  }
+
+  .cfran-select {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+
+    /**
+    * Mixin pour gérer l'état disabled
+    */
+
+    /**
+    * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+    * sur les navigateurs webkit.
+    */
+  }
+
+  .cfran-fieldset--valid .cfran-select,
+  .cfran-select-group--valid .cfran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-select,
+  .cfran-select-group--error .cfran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-select-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-select-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-select-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-select:disabled {
+    color: #929292;
+    box-shadow: inset 0 -2px 0 0 #e5e5e5;
+  }
+
+  .cfran-select:-webkit-autofill,
+  .cfran-select:-webkit-autofill:hover,
+  .cfran-select:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout__title {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-modal__body {
+    background-color: #fff;
+  }
+
+  .cfran-modal__title {
+    color: #161616;
+  }
+
+  .cfran-modal__footer {
+    background-color: #fff;
+  }
+
+  .cfran-modal__body.cfran-scroll-divider .cfran-modal__footer {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-modal {
+    display: none;
+  }
+
+  .cfran-navigation {
+    display: none;
+  }
+
+  .cfran-share .cfran-btn {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-share .cfran-btn:disabled,
+  .cfran-share a.cfran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-share__text {
+    color: #666;
+  }
+
+  .cfran-share {
+    display: none;
+  }
+
+  .cfran-footer {
+    box-shadow: inset 0 2px 0 0 hsl(180, 75%, 25%), inset 0 -1px 0 0 #ddd;
+    display: none;
+  }
+
+  .cfran-footer__content-link {
+    color: #3a3a3a;
+  }
+
+  .cfran-footer__top-cat {
+    color: #161616;
+  }
+
+  .cfran-footer__top {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-footer__bottom {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-footer__bottom .cfran-btn {
+    color: #666;
+  }
+
+  .cfran-footer__bottom-item::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-footer__bottom-link {
+    color: #666;
+  }
+
+  .cfran-footer__bottom-copy {
+    color: #666;
+  }
+
+  .cfran-footer__partners {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-footer__partners-title {
+    color: #3a3a3a;
+  }
+
+  .cfran-footer__partners .cfran-footer__logo {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-tile {
+    background-color: #fff;
+  }
+
+  .cfran-tile:not(.cfran-tile--no-border):not(.cfran-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cfran-tile--shadow {
+    background-color: #fff;
+  }
+
+  .cfran-tile--shadow.cfran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cfran-tile__title {
+    color: #161616;
+  }
+
+  .cfran-tile__title:disabled,
+  a.cfran-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cfran-tile__title a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+
+  .cfran-tile .cfran-tile__desc,
+  .cfran-tile .cfran-tile__detail,
+  .cfran-tile__desc,
+  .cfran-tile__detail,
+  .cfran-tile--sm .cfran-tile__desc,
+  .cfran-tile--sm .cfran-tile__detail,
+  .cfran-tile--sm__desc,
+  .cfran-tile--sm__detail {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-translate .cfran-translate__btn[aria-expanded=true] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-translate .cfran-translate__btn[aria-expanded=true]:hover {
+    background-color: var(--hover-tint);
+  }
+
+  .cfran-translate .cfran-translate__btn[aria-expanded=true]:active {
+    background-color: var(--active-tint);
+  }
+
+  .cfran-translate .cfran-translate__btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-transcription__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-transcription__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-transcription .cfran-modal:not(.cfran-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-transcription {
+    display: none;
+  }
+
+  .cfran-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .cfran-input::placeholder {
+    color: #666;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .cfran-input:disabled {
+    color: var(--text-disabled-grey);
+    box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+  }
+
+  .cfran-input:autofill,
+  .cfran-input:autofill:hover,
+  .cfran-input:autofill:focus,
+  .cfran-input:-webkit-autofill,
+  .cfran-input:-webkit-autofill:hover,
+  .cfran-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-fieldset--valid .cfran-input,
+  .cfran-fieldset--valid .cfran-input-wrap--addon > .cfran-input:not(:last-child),
+  .cfran-input-group--valid .cfran-input,
+  .cfran-input-group--valid .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-input,
+  .cfran-fieldset--error .cfran-input-wrap--addon > .cfran-input:not(:last-child),
+  .cfran-input-group--error .cfran-input,
+  .cfran-input-group--error .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-search-bar .cfran-input {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-search-bar .cfran-input--valid {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-search-bar .cfran-input--error {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-content-media__caption,
+  .cfran-content-media .cfran-link {
+    color: #666;
+  }
+
+  .cfran-content-media__caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-content-media__caption .cfran-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0;
+  }
+
+  .cfran-content-media__caption .cfran-link::before,
+  .cfran-content-media__caption .cfran-link::after {
+    --icon-size: 1rem;
+  }
+
+  .cfran-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .cfran-consent-banner {
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+    display: none;
+  }
+
+  .cfran-consent-manager__header,
+  .cfran-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .cfran-consent-manager__header .cfran-radio-group + .cfran-radio-group::before,
+  .cfran-consent-service .cfran-radio-group + .cfran-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-consent-service__title {
+    color: #161616;
+  }
+
+  .cfran-consent-service .cfran-consent-service__collapse-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+  .cfran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-follow .cfran-input {
+    background-color: #fff;
+  }
+
+  .cfran-follow__title {
+    color: #161616;
+  }
+
+  .cfran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cfran-follow__social .cfran-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .cfran-password__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-password__btn:disabled,
+  a.cfran-password__btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-password .cfran-password__checkbox input[type=checkbox] + label {
+    color: #161616;
+  }
+
+  .cfran-password .cfran-password__checkbox input[type=checkbox] + label::before {
+    background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), var(--data-uri-svg);
+  }
+
+  .cfran-header__brand {
+    background-color: #fff;
+    flex-wrap: nowrap;
+  }
+
+  .cfran-header__service {
+    text-align: left; /* chris2fr */
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+    box-shadow: none;
+  }
+
+  .cfran-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-header__menu-links .cfran-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled,
+  .cfran-header__menu-links a.cfran-btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-header__tools-links .cfran-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled,
+  .cfran-header__tools-links a.cfran-btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-header__navbar .cfran-service__title {
+    color: #161616;
+  }
+
+  .cfran-header__navbar .cfran-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled,
+  .cfran-header__navbar a.cfran-btn:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-header .cfran-header__menu .cfran-container {
+    display: grid; /* chris2fr */
+    grid-template-columns: 1fr;
+    grid-template-areas: "l" "h" "m" "t";
+  }
+
+  .cfran-header__menu-logo {
+    grid-area: l;
+  }
+
+  .cfran-header .cfran-modal {
+    background-color: #fff;
+  }
+
+  .cfran-header__menu {
+    display: none;
+  }
+
+  .cfran-header__body-row {
+    padding: 0;
+  }
+
+  .cfran-header__body .cfran-header__tools,
+  .cfran-header__body .cfran-header__navbar {
+    display: none;
+  }
+
+  .cfran-header__brand-top {
+    width: auto;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-btn--secondary {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:disabled:hover,
+  a.cfran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:disabled:active,
+  a.cfran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:hover,
+  .cfran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:active,
+  .cfran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:disabled:hover,
+  a.cfran-btn--tertiary:not([href]):hover,
+  a.cfran-btn--account:not([href]):hover,
+  .cfran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:disabled:active,
+  a.cfran-btn--tertiary:not([href]):active,
+  a.cfran-btn--account:not([href]):active,
+  .cfran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:hover,
+  .cfran-btn--close:hover,
+  .cfran-btn--display:hover,
+  .cfran-btn--fullscreen:hover,
+  .cfran-btn--tooltip:hover,
+  .cfran-btn--briefcase:hover,
+  .cfran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:active,
+  .cfran-btn--close:active,
+  .cfran-btn--display:active,
+  .cfran-btn--fullscreen:active,
+  .cfran-btn--tooltip:active,
+  .cfran-btn--briefcase:active,
+  .cfran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:hover,
+  a.cfran-btn--tertiary-no-outline:not([href]):hover,
+  a.cfran-btn--close:not([href]):hover,
+  a.cfran-btn--display:not([href]):hover,
+  a.cfran-btn--fullscreen:not([href]):hover,
+  a.cfran-btn--tooltip:not([href]):hover,
+  a.cfran-btn--briefcase:not([href]):hover,
+  a.cfran-btn--team:not([href]):hover,
+  .cfran-btn--close:disabled:hover,
+  .cfran-btn--display:disabled:hover,
+  .cfran-btn--fullscreen:disabled:hover,
+  .cfran-btn--tooltip:disabled:hover,
+  .cfran-btn--briefcase:disabled:hover,
+  .cfran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:active,
+  a.cfran-btn--tertiary-no-outline:not([href]):active,
+  a.cfran-btn--close:not([href]):active,
+  a.cfran-btn--display:not([href]):active,
+  a.cfran-btn--fullscreen:not([href]):active,
+  a.cfran-btn--tooltip:not([href]):active,
+  a.cfran-btn--briefcase:not([href]):active,
+  a.cfran-btn--team:not([href]):active,
+  .cfran-btn--close:disabled:active,
+  .cfran-btn--display:disabled:active,
+  .cfran-btn--fullscreen:disabled:active,
+  .cfran-btn--tooltip:disabled:active,
+  .cfran-btn--briefcase:disabled:active,
+  .cfran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-tooltip.cfran-placement {
+    z-index: 1000;
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+  }
+
+  button.cfran-tag[aria-pressed=true]:disabled,
+  input[type=button].cfran-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-card--shadow {
+    z-index: 500;
+  }
+
+  .cfran-card--no-background {
+    background-color: transparent;
+  }
+
+  .cfran-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='%23e5e5e5' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked ~ .cfran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--error label::before,
+  .cfran-fieldset--error .cfran-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--error input[type=checkbox]:checked ~ .cfran-toggle__label::before,
+  .cfran-fieldset--error .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--valid label::before,
+  .cfran-fieldset--valid .cfran-toggle label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--valid input[type=checkbox]:checked ~ .cfran-toggle__label::before,
+  .cfran-fieldset--valid .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-select {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23161616' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-select:disabled {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23929292' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-modal__body {
+    z-index: 2000;
+  }
+
+  .cfran-share .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-share .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share .cfran-btn:disabled,
+  .cfran-share a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-share .cfran-btn:disabled:hover,
+  .cfran-share a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:disabled:active,
+  .cfran-share a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-tile--shadow {
+    z-index: 500;
+  }
+
+  .cfran-tile--no-background {
+    background-color: transparent;
+  }
+
+  .cfran-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-translate__menu .cfran-translate__language {
+    box-shadow: none;
+  }
+
+  .cfran-search-bar .cfran-input::-webkit-search-cancel-button {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='%23161616' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-11.414L9.172 7.757 7.757 9.172 10.586 12l-2.829 2.828 1.415 1.415L12 13.414l2.828 2.829 1.415-1.415L13.414 12l2.829-2.828-1.415-1.415L12 10.586z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-consent-banner {
+    z-index: 1500;
+  }
+
+  .cfran-consent-service:last-of-type,
+  .cfran-consent-service .cfran-consent-service {
+    box-shadow: none;
+  }
+
+  .cfran-follow__social .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:hover,
+  .cfran-follow__social a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:active,
+  .cfran-follow__social a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password__btn {
+    background-color: transparent;
+  }
+
+  .cfran-password__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-password__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password__btn:disabled,
+  a.cfran-password__btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-password__btn:disabled:hover,
+  a.cfran-password__btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-password__btn:disabled:active,
+  a.cfran-password__btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password [data-cfran-capslock]::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23161616' d='M22.668 0C23.4023 0 24 .5977 24 1.332v21.336c0 .7343-.5977 1.332-1.332 1.332H1.332C.5977 24 0 23.4023 0 22.668V1.332C0 .5977.5977 0 1.332 0Zm-1.336 2.668H2.668v18.664h18.664Zm-4.664 12.664V18H7.332v-2.668ZM12 5.332 16.668 10H14v3.332h-4V10H7.332Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  .cfran-header__brand {
+    z-index: 750;
+  }
+
+  .cfran-header__menu-links .cfran-btn {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .cfran-header__menu-links .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled,
+  .cfran-header__menu-links a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled:hover,
+  .cfran-header__menu-links a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled:active,
+  .cfran-header__menu-links a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled,
+  .cfran-header__tools-links a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled:hover,
+  .cfran-header__tools-links a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled:active,
+  .cfran-header__tools-links a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled:hover,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled:active,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn {
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled,
+  .cfran-header__navbar a.cfran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled:hover,
+  .cfran-header__navbar a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled:active,
+  .cfran-header__navbar a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu {
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled:hover,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled:active,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 48em) and (-ms-high-contrast: none), print and (min-width: 48em) and (-ms-high-contrast: active) {
+  .cfran-sidemenu {
+    box-shadow: none;
+  }
+
+  .cfran-sidemenu__title {
+    box-shadow: none;
+  }
+}
+@media print and (min-width: 48em) {
+  .cfran-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .cfran-sidemenu--right .cfran-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media print and (min-width: 62em) {
+  .cfran-header {
+    background-color: #fff;
+  }
+
+  .cfran-header .cfran-header__menu .cfran-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "l m" "h h";
+  }
+
+  .cfran-header .cfran-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
+@media print and (min-width: 62em) and (-ms-high-contrast: none), print and (min-width: 62em) and (-ms-high-contrast: active) {
+  .cfran-header {
+    z-index: 750;
+  }
+
+  .cfran-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .cfran-header__service {
+    box-shadow: none;
+  }
+}

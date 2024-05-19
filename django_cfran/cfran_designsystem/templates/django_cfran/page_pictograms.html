@@ -1,0 +1,62 @@
+{% extends "example_app/base.html" %}
+{% load static dsfr_tags %}
+{% block content %}
+  <h1>
+    Pictogrammes
+  </h1>
+  <div class="cfran-mb-4w">
+    {% dsfr_summary summary %}
+  </div>
+  <ul>
+    <li>
+      <a class="cfran-link cfran-icon-external-link-line cfran-link--icon-right cfran-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/pictogramme"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+    <li>
+      <a class="cfran-link cfran-icon-external-link-line cfran-link--icon-right cfran-link--lg"
+         href="https://main--ds-gouv.netlify.app/example/utility/pictograms/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+  </ul>
+  {% for folder, files in pictograms.items %}
+    <h2 id="{{ folder|slugify }}" tabindex="-1">
+      {{ folder|title }}
+    </h2>
+    <div class="cfran-grid-row cfran-grid-row--gutters">
+      {% for file in files %}
+        <div class="cfran-col-12 cfran-col-md-3 cfran-mb-4w">
+          <div class="cfran-tile cfran-enlarge-link">
+            <div class="cfran-tile__body">
+              <div class="cfran-tile__content">
+                <h3 class="cfran-tile__title">
+                  <a class="cfran-tile__link"
+                     href="/django-django_cfran/static/cfran/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
+                </h3>
+              </div>
+            </div>
+            <div class="cfran-tile__header">
+              <div class="cfran-tile__pictogram">
+                <svg aria-hidden="true"
+                     class="cfran-artwork"
+                     viewBox="0 0 80 80"
+                     width="80px"
+                     height="80px">
+                  <use class="cfran-artwork-decorative" href="/django-django_cfran/static/cfran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
+                  <use class="cfran-artwork-minor" href="/django-django_cfran/static/cfran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
+                  <use class="cfran-artwork-major" href="/django-django_cfran/static/cfran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock content %}

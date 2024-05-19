@@ -1,0 +1,210 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-icon-bluetooth-fill::before,
+  .cfran-icon-bluetooth-fill::after {
+    background-image: url("../../../icons/device/bluetooth-fill.svg");
+  }
+
+  .cfran-icon-bluetooth-line::before,
+  .cfran-icon-bluetooth-line::after {
+    background-image: url("../../../icons/device/bluetooth-line.svg");
+  }
+
+  .cfran-icon-computer-fill::before,
+  .cfran-icon-computer-fill::after {
+    background-image: url("../../../icons/device/computer-fill.svg");
+  }
+
+  .cfran-icon-computer-line::before,
+  .cfran-icon-computer-line::after {
+    background-image: url("../../../icons/device/computer-line.svg");
+  }
+
+  .cfran-icon-dashboard-3-fill::before,
+  .cfran-icon-dashboard-3-fill::after {
+    background-image: url("../../../icons/device/dashboard-3-fill.svg");
+  }
+
+  .cfran-icon-dashboard-3-line::before,
+  .cfran-icon-dashboard-3-line::after {
+    background-image: url("../../../icons/device/dashboard-3-line.svg");
+  }
+
+  .cfran-icon-database-fill::before,
+  .cfran-icon-database-fill::after {
+    background-image: url("../../../icons/device/database-fill.svg");
+  }
+
+  .cfran-icon-database-line::before,
+  .cfran-icon-database-line::after {
+    background-image: url("../../../icons/device/database-line.svg");
+  }
+
+  .cfran-icon-device-fill::before,
+  .cfran-icon-device-fill::after {
+    background-image: url("../../../icons/device/device-fill.svg");
+  }
+
+  .cfran-icon-device-line::before,
+  .cfran-icon-device-line::after {
+    background-image: url("../../../icons/device/device-line.svg");
+  }
+
+  .cfran-icon-hard-drive-2-fill::before,
+  .cfran-icon-hard-drive-2-fill::after {
+    background-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .cfran-icon-hard-drive-2-line::before,
+  .cfran-icon-hard-drive-2-line::after {
+    background-image: url("../../../icons/device/hard-drive-2-line.svg");
+  }
+
+  .cfran-icon-mac-fill::before,
+  .cfran-icon-mac-fill::after {
+    background-image: url("../../../icons/device/mac-fill.svg");
+  }
+
+  .cfran-icon-mac-line::before,
+  .cfran-icon-mac-line::after {
+    background-image: url("../../../icons/device/mac-line.svg");
+  }
+
+  .cfran-icon-phone-fill::before,
+  .cfran-icon-phone-fill::after {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .cfran-icon-phone-line::before,
+  .cfran-icon-phone-line::after {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .cfran-icon-qr-code-fill::before,
+  .cfran-icon-qr-code-fill::after {
+    background-image: url("../../../icons/device/qr-code-fill.svg");
+  }
+
+  .cfran-icon-qr-code-line::before,
+  .cfran-icon-qr-code-line::after {
+    background-image: url("../../../icons/device/qr-code-line.svg");
+  }
+
+  .cfran-icon-rss-fill::before,
+  .cfran-icon-rss-fill::after {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .cfran-icon-rss-line::before,
+  .cfran-icon-rss-line::after {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .cfran-icon-save-3-fill::before,
+  .cfran-icon-save-3-fill::after {
+    background-image: url("../../../icons/device/save-3-fill.svg");
+  }
+
+  .cfran-icon-save-3-line::before,
+  .cfran-icon-save-3-line::after {
+    background-image: url("../../../icons/device/save-3-line.svg");
+  }
+
+  .cfran-icon-save-fill::before,
+  .cfran-icon-save-fill::after {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .cfran-icon-save-line::before,
+  .cfran-icon-save-line::after {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+
+  .cfran-icon-server-fill::before,
+  .cfran-icon-server-fill::after {
+    background-image: url("../../../icons/device/server-fill.svg");
+  }
+
+  .cfran-icon-server-line::before,
+  .cfran-icon-server-line::after {
+    background-image: url("../../../icons/device/server-line.svg");
+  }
+
+  .cfran-icon-smartphone-fill::before,
+  .cfran-icon-smartphone-fill::after {
+    background-image: url("../../../icons/device/smartphone-fill.svg");
+  }
+
+  .cfran-icon-smartphone-line::before,
+  .cfran-icon-smartphone-line::after {
+    background-image: url("../../../icons/device/smartphone-line.svg");
+  }
+
+  .cfran-icon-tablet-fill::before,
+  .cfran-icon-tablet-fill::after {
+    background-image: url("../../../icons/device/tablet-fill.svg");
+  }
+
+  .cfran-icon-tablet-line::before,
+  .cfran-icon-tablet-line::after {
+    background-image: url("../../../icons/device/tablet-line.svg");
+  }
+
+  .cfran-icon-tv-fill::before,
+  .cfran-icon-tv-fill::after {
+    background-image: url("../../../icons/device/tv-fill.svg");
+  }
+
+  .cfran-icon-tv-line::before,
+  .cfran-icon-tv-line::after {
+    background-image: url("../../../icons/device/tv-line.svg");
+  }
+
+  .cfran-icon-wifi-fill::before,
+  .cfran-icon-wifi-fill::after {
+    background-image: url("../../../icons/device/wifi-fill.svg");
+  }
+
+  .cfran-icon-wifi-line::before,
+  .cfran-icon-wifi-line::after {
+    background-image: url("../../../icons/device/wifi-line.svg");
+  }
+
+  .cfran-fi-phone-fill::before {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .cfran-fi-phone-line::before {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .cfran-fi-rss-fill::before {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .cfran-fi-rss-line::before {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .cfran-fi-save-fill::before {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .cfran-fi-save-line::before {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+}

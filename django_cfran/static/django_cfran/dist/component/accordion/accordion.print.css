@@ -1,0 +1,27 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .cfran-accordion__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-accordion__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .cfran-accordion .cfran-collapse:not(.cfran-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+}

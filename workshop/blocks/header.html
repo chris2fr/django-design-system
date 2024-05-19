@@ -1,4 +1,4 @@
-{% extends "cfran/header.html" %}
+{% extends "django_cfran/header.html" %}
 {% load i18n %}
 {% url 'index' as home_url %}
 
@@ -33,7 +33,7 @@
   </li>
   {% if "127.0.0.1" in request.get_host %}
     <li>
-      {% include "cfran/blocks/language_selector.html" %}
+      {% include "django_cfran/blocks/language_selector.html" %}
     </li>
   {% endif %}
 {% endblock header_tools %}
@@ -46,7 +46,8 @@
             data-cfran-opened="false"
             aria-controls="modal-search"
             id="cfran-btn-search-mobile"
-            title="{{ search_label }}">
+            title="{{ search_label }}"
+            data-cfran-js-modal-button="true">
       {{ search_label }}
     </button>
     {% translate "Menu" as menu_label %}
@@ -54,14 +55,15 @@
             data-cfran-opened="false"
             aria-controls="cfran-menu-mobile"
             id="cfran-btn-menu-mobile"
-            title="{{ menu_label }}">
+            title="{{ menu_label }}"
+            data-cfran-js-modal-button="true">
       {{ menu_label }}
     </button>
   </div>
 {% endblock burger_menu %}
 
 {% block main_menu %}
-  {% include "cfran/blocks/main_menu.html" %}
+  {% include "django_cfran/blocks/main_menu.html" %}
 {% endblock main_menu %}
 
 {% block header_search %}

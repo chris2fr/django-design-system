@@ -1,0 +1,169 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-icon-bold::before,
+  .cfran-icon-bold::after {
+    background-image: url("../../../icons/editor/cfran--bold.svg");
+  }
+
+  .cfran-icon-highlight::before,
+  .cfran-icon-highlight::after {
+    background-image: url("../../../icons/editor/cfran--highlight.svg");
+  }
+
+  .cfran-icon-quote-fill::before,
+  .cfran-icon-quote-fill::after {
+    background-image: url("../../../icons/editor/cfran--quote-fill.svg");
+  }
+
+  .cfran-icon-quote-line::before,
+  .cfran-icon-quote-line::after {
+    background-image: url("../../../icons/editor/cfran--quote-line.svg");
+  }
+
+  .cfran-icon-code-view::before,
+  .cfran-icon-code-view::after {
+    background-image: url("../../../icons/editor/code-view.svg");
+  }
+
+  .cfran-icon-font-size::before,
+  .cfran-icon-font-size::after {
+    background-image: url("../../../icons/editor/font-size.svg");
+  }
+
+  .cfran-icon-h-1::before,
+  .cfran-icon-h-1::after {
+    background-image: url("../../../icons/editor/h-1.svg");
+  }
+
+  .cfran-icon-h-2::before,
+  .cfran-icon-h-2::after {
+    background-image: url("../../../icons/editor/h-2.svg");
+  }
+
+  .cfran-icon-h-3::before,
+  .cfran-icon-h-3::after {
+    background-image: url("../../../icons/editor/h-3.svg");
+  }
+
+  .cfran-icon-h-4::before,
+  .cfran-icon-h-4::after {
+    background-image: url("../../../icons/editor/h-4.svg");
+  }
+
+  .cfran-icon-h-5::before,
+  .cfran-icon-h-5::after {
+    background-image: url("../../../icons/editor/h-5.svg");
+  }
+
+  .cfran-icon-h-6::before,
+  .cfran-icon-h-6::after {
+    background-image: url("../../../icons/editor/h-6.svg");
+  }
+
+  .cfran-icon-hashtag::before,
+  .cfran-icon-hashtag::after {
+    background-image: url("../../../icons/editor/hashtag.svg");
+  }
+
+  .cfran-icon-italic::before,
+  .cfran-icon-italic::after {
+    background-image: url("../../../icons/editor/italic.svg");
+  }
+
+  .cfran-icon-link-unlink::before,
+  .cfran-icon-link-unlink::after {
+    background-image: url("../../../icons/editor/link-unlink.svg");
+  }
+
+  .cfran-icon-link::before,
+  .cfran-icon-link::after {
+    background-image: url("../../../icons/editor/link.svg");
+  }
+
+  .cfran-icon-list-ordered::before,
+  .cfran-icon-list-ordered::after {
+    background-image: url("../../../icons/editor/list-ordered.svg");
+  }
+
+  .cfran-icon-list-unordered::before,
+  .cfran-icon-list-unordered::after {
+    background-image: url("../../../icons/editor/list-unordered.svg");
+  }
+
+  .cfran-icon-question-mark::before,
+  .cfran-icon-question-mark::after {
+    background-image: url("../../../icons/editor/question-mark.svg");
+  }
+
+  .cfran-icon-separator::before,
+  .cfran-icon-separator::after {
+    background-image: url("../../../icons/editor/separator.svg");
+  }
+
+  .cfran-icon-space::before,
+  .cfran-icon-space::after {
+    background-image: url("../../../icons/editor/space.svg");
+  }
+
+  .cfran-icon-subscript::before,
+  .cfran-icon-subscript::after {
+    background-image: url("../../../icons/editor/subscript.svg");
+  }
+
+  .cfran-icon-superscript::before,
+  .cfran-icon-superscript::after {
+    background-image: url("../../../icons/editor/superscript.svg");
+  }
+
+  .cfran-icon-table-2::before,
+  .cfran-icon-table-2::after {
+    background-image: url("../../../icons/editor/table-2.svg");
+  }
+
+  .cfran-icon-translate-2::before,
+  .cfran-icon-translate-2::after {
+    background-image: url("../../../icons/editor/translate-2.svg");
+  }
+
+  .cfran-fi-bold::before {
+    background-image: url("../../../icons/editor/cfran--bold.svg");
+  }
+
+  .cfran-fi-highlight::before {
+    background-image: url("../../../icons/editor/cfran--highlight.svg");
+  }
+
+  .cfran-fi-font-size::before {
+    background-image: url("../../../icons/editor/font-size.svg");
+  }
+
+  .cfran-fi-italic::before {
+    background-image: url("../../../icons/editor/italic.svg");
+  }
+
+  .cfran-fi-link-unlink::before {
+    background-image: url("../../../icons/editor/link-unlink.svg");
+  }
+
+  .cfran-fi-list-ordered::before {
+    background-image: url("../../../icons/editor/list-ordered.svg");
+  }
+
+  .cfran-fi-list-unordered::before {
+    background-image: url("../../../icons/editor/list-unordered.svg");
+  }
+}

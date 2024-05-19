@@ -1,0 +1,122 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Marge des titres et textes
+  */
+  .cfran-callout__title {
+    margin: 0 0 0.5rem;
+    color: #161616;
+  }
+
+  .cfran-callout__text {
+    margin: 0;
+  }
+
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+}

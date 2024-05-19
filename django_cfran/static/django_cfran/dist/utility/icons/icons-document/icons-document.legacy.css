@@ -1,0 +1,180 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-icon-article-fill::before,
+  .cfran-icon-article-fill::after {
+    background-image: url("../../../icons/document/article-fill.svg");
+  }
+
+  .cfran-icon-article-line::before,
+  .cfran-icon-article-line::after {
+    background-image: url("../../../icons/document/article-line.svg");
+  }
+
+  .cfran-icon-book-2-fill::before,
+  .cfran-icon-book-2-fill::after {
+    background-image: url("../../../icons/document/book-2-fill.svg");
+  }
+
+  .cfran-icon-book-2-line::before,
+  .cfran-icon-book-2-line::after {
+    background-image: url("../../../icons/document/book-2-line.svg");
+  }
+
+  .cfran-icon-booklet-fill::before,
+  .cfran-icon-booklet-fill::after {
+    background-image: url("../../../icons/document/booklet-fill.svg");
+  }
+
+  .cfran-icon-booklet-line::before,
+  .cfran-icon-booklet-line::after {
+    background-image: url("../../../icons/document/booklet-line.svg");
+  }
+
+  .cfran-icon-clipboard-fill::before,
+  .cfran-icon-clipboard-fill::after {
+    background-image: url("../../../icons/document/clipboard-fill.svg");
+  }
+
+  .cfran-icon-clipboard-line::before,
+  .cfran-icon-clipboard-line::after {
+    background-image: url("../../../icons/document/clipboard-line.svg");
+  }
+
+  .cfran-icon-draft-fill::before,
+  .cfran-icon-draft-fill::after {
+    background-image: url("../../../icons/document/draft-fill.svg");
+  }
+
+  .cfran-icon-draft-line::before,
+  .cfran-icon-draft-line::after {
+    background-image: url("../../../icons/document/draft-line.svg");
+  }
+
+  .cfran-icon-file-add-fill::before,
+  .cfran-icon-file-add-fill::after {
+    background-image: url("../../../icons/document/file-add-fill.svg");
+  }
+
+  .cfran-icon-file-add-line::before,
+  .cfran-icon-file-add-line::after {
+    background-image: url("../../../icons/document/file-add-line.svg");
+  }
+
+  .cfran-icon-file-download-fill::before,
+  .cfran-icon-file-download-fill::after {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .cfran-icon-file-download-line::before,
+  .cfran-icon-file-download-line::after {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .cfran-icon-file-fill::before,
+  .cfran-icon-file-fill::after {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .cfran-icon-file-line::before,
+  .cfran-icon-file-line::after {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .cfran-icon-file-pdf-fill::before,
+  .cfran-icon-file-pdf-fill::after {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .cfran-icon-file-pdf-line::before,
+  .cfran-icon-file-pdf-line::after {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+
+  .cfran-icon-file-text-fill::before,
+  .cfran-icon-file-text-fill::after {
+    background-image: url("../../../icons/document/file-text-fill.svg");
+  }
+
+  .cfran-icon-file-text-line::before,
+  .cfran-icon-file-text-line::after {
+    background-image: url("../../../icons/document/file-text-line.svg");
+  }
+
+  .cfran-icon-folder-2-fill::before,
+  .cfran-icon-folder-2-fill::after {
+    background-image: url("../../../icons/document/folder-2-fill.svg");
+  }
+
+  .cfran-icon-folder-2-line::before,
+  .cfran-icon-folder-2-line::after {
+    background-image: url("../../../icons/document/folder-2-line.svg");
+  }
+
+  .cfran-icon-newspaper-fill::before,
+  .cfran-icon-newspaper-fill::after {
+    background-image: url("../../../icons/document/newspaper-fill.svg");
+  }
+
+  .cfran-icon-newspaper-line::before,
+  .cfran-icon-newspaper-line::after {
+    background-image: url("../../../icons/document/newspaper-line.svg");
+  }
+
+  .cfran-icon-survey-fill::before,
+  .cfran-icon-survey-fill::after {
+    background-image: url("../../../icons/document/survey-fill.svg");
+  }
+
+  .cfran-icon-survey-line::before,
+  .cfran-icon-survey-line::after {
+    background-image: url("../../../icons/document/survey-line.svg");
+  }
+
+  .cfran-icon-todo-fill::before,
+  .cfran-icon-todo-fill::after {
+    background-image: url("../../../icons/document/todo-fill.svg");
+  }
+
+  .cfran-icon-todo-line::before,
+  .cfran-icon-todo-line::after {
+    background-image: url("../../../icons/document/todo-line.svg");
+  }
+
+  .cfran-fi-file-download-fill::before {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .cfran-fi-file-download-line::before {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .cfran-fi-file-fill::before {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .cfran-fi-file-line::before {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .cfran-fi-file-pdf-fill::before {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .cfran-fi-file-pdf-line::before {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+}

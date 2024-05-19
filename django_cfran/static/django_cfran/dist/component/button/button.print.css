@@ -1,0 +1,230 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-btn:disabled,
+  a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    color: #929292;
+  }
+
+  .cfran-btn--secondary,
+  .cfran-btn--tertiary,
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-btn--secondary {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:disabled:hover,
+  a.cfran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:disabled:active,
+  a.cfran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:hover,
+  .cfran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:active,
+  .cfran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:disabled:hover,
+  a.cfran-btn--tertiary:not([href]):hover,
+  a.cfran-btn--account:not([href]):hover,
+  .cfran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:disabled:active,
+  a.cfran-btn--tertiary:not([href]):active,
+  a.cfran-btn--account:not([href]):active,
+  .cfran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:hover,
+  .cfran-btn--close:hover,
+  .cfran-btn--display:hover,
+  .cfran-btn--fullscreen:hover,
+  .cfran-btn--tooltip:hover,
+  .cfran-btn--briefcase:hover,
+  .cfran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:active,
+  .cfran-btn--close:active,
+  .cfran-btn--display:active,
+  .cfran-btn--fullscreen:active,
+  .cfran-btn--tooltip:active,
+  .cfran-btn--briefcase:active,
+  .cfran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:hover,
+  a.cfran-btn--tertiary-no-outline:not([href]):hover,
+  a.cfran-btn--close:not([href]):hover,
+  a.cfran-btn--display:not([href]):hover,
+  a.cfran-btn--fullscreen:not([href]):hover,
+  a.cfran-btn--tooltip:not([href]):hover,
+  a.cfran-btn--briefcase:not([href]):hover,
+  a.cfran-btn--team:not([href]):hover,
+  .cfran-btn--close:disabled:hover,
+  .cfran-btn--display:disabled:hover,
+  .cfran-btn--fullscreen:disabled:hover,
+  .cfran-btn--tooltip:disabled:hover,
+  .cfran-btn--briefcase:disabled:hover,
+  .cfran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:active,
+  a.cfran-btn--tertiary-no-outline:not([href]):active,
+  a.cfran-btn--close:not([href]):active,
+  a.cfran-btn--display:not([href]):active,
+  a.cfran-btn--fullscreen:not([href]):active,
+  a.cfran-btn--tooltip:not([href]):active,
+  a.cfran-btn--briefcase:not([href]):active,
+  a.cfran-btn--team:not([href]):active,
+  .cfran-btn--close:disabled:active,
+  .cfran-btn--display:disabled:active,
+  .cfran-btn--fullscreen:disabled:active,
+  .cfran-btn--tooltip:disabled:active,
+  .cfran-btn--briefcase:disabled:active,
+  .cfran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

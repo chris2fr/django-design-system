@@ -1,7 +1,7 @@
-{% extends "cfran/form_base.html" %}
+{% extends "django_cfran/form_base.html" %}
 {% load static cfran_tags %}
 {% block header %}
-  {% include "example_app/blocks/header.html" %}
+  {% include "django_cfran/blocks/header.html" %}
 {% endblock header %}
 {# You can add some information to the form inside the blocks of form_base.html #}
 {% block head_form %}
@@ -11,7 +11,7 @@
 {% endblock head_form %}
 {# If you use formset, you need to include a template which extends formset-base.html, and put it in a block of form_base.html #}
 {% block extra_formset_after %}
-  {% include "example_app/example_formset.html" %}
+  {% include "django_cfran/example_formset.html" %}
 {% endblock extra_formset_after %}
 {# Don't forget you cfran button to submit the form #}
 {% block foot_form %}

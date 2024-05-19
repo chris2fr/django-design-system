@@ -1,4 +1,4 @@
-exclude: (cfran/static/cfran/dist)|(cfran/static/cfran/dist)|(cfran/static/fonts)
+exclude: (django_cfran/static/cfran/dist)|(django_cfran/static/cfran/dist)|(cfran/static/fonts)
 repos:
 - repo: https://github.com/Riverside-Healthcare/djLint
   rev: v1.34.1

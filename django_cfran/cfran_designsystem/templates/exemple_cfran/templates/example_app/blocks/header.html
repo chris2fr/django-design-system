@@ -1,4 +1,4 @@
-{% extends "cfran/header.html" %}
+{% extends "django_cfran/header.html" %}
 {% load i18n static %}
 {% url 'index' as home_url %}
 
@@ -6,7 +6,7 @@
   {% translate "Home page" as home_page %}
   <a href="{{ home_url }}"
      title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
-     <img src="{% static 'cfran/dist/artwork/logo/logo.svg' %}" class="cfran-logo" alt="logo" />
+     <img src="{% static 'django_cfran/dist/artwork/logo/logo.svg' %}" class="cfran-logo" alt="logo" />
     </a>
 {% endblock brand %}
 
@@ -31,7 +31,7 @@
   </li>
   {% if "127.0.0.1" in request.get_host %}
     <li>
-      {% include "example_app/blocks/language_selector.html" %}
+      {% include "django_cfran/blocks/language_selector.html" %}
     </li>
   {% endif %}
 {% endblock header_tools %}
@@ -44,7 +44,8 @@
             data-cfran-opened="false"
             aria-controls="modal-search"
             id="cfran-btn-search-mobile"
-            title="{{ search_label }}">
+            title="{{ search_label }}"
+            data-cfran-js-modal-button="true">
       {{ search_label }}
     </button>
     {% translate "Menu" as menu_label %}
@@ -52,14 +53,15 @@
             data-cfran-opened="false"
             aria-controls="cfran-menu-mobile"
             id="cfran-btn-menu-mobile"
-            title="{{ menu_label }}">
+            title="{{ menu_label }}"
+            data-cfran-js-modal-button="true">
       {{ menu_label }}
     </button>
   </div>
 {% endblock burger_menu %}
 
 {% block main_menu %}
-  {% include "example_app/blocks/main_menu.html" %}
+  {% include "django_cfran/blocks/main_menu.html" %}
 {% endblock main_menu %}
 
 {% block header_search %}

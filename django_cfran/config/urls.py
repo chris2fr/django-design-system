@@ -10,12 +10,12 @@ urlpatterns = [
     path(
         "favicon.ico",
         RedirectView.as_view(
-            url=staticfiles_storage.url("cfran/dist/favicon/favicon.ico")
+            url=staticfiles_storage.url("django_cfran/dist/favicon/favicon.ico")
         ),
     ),
-    # The "django-cfran/" prefix is here because this site is deployed as doc on
-    # https://numerique-gouv.github.io/django-cfran/
+    # The "django_cfran/" prefix is here because this site is deployed as doc on
+    # https://numerique-gouv.github.io/django_cfran/
     path("admin/", admin.site.urls),
-    path("django-cfran/", include("example_cfran.urls")),
+    path("django_cfran/", include("example_cfran.urls")),
     path("", RedirectView.as_view(pattern_name="index", permanent=False)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

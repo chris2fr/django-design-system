@@ -1,0 +1,13 @@
+{% load i18n %}
+<nav role="navigation"
+     class="cfran-summary"
+     aria-labelledby="cfran-summary-title">
+  <{{ self.heading_tag | default:"p" }} class="cfran-summary__title" id="cfran-summary-title">
+  {% translate "Summary" %}
+  </{{ self.heading_tag | default:"p" }}>
+  <ol class="cfran-summary__list">
+    {% for item in self.items %}
+      {% include "django_cfran/summary_list.html" with item=item %}
+    {% endfor %}
+  </ol>
+</nav>

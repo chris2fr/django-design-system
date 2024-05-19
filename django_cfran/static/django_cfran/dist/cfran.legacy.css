@@ -1,0 +1,5544 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+.cfran-sidemenu {
+  /*
+  @include elevation.elevate(raised, (legacy:$legacy));
+  @include respond-from(md) {
+    @include elevation.drop((legacy:$legacy));
+  }
+   */
+}
+
+.cfran-tabs {
+  /**
+  * Tab button
+  */
+}
+
+.cfran-table {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--bordered tbody tr {
+  /* Style bordered, enleve le style even/odd  */
+}
+
+.cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group input[type=checkbox]:checked + label::before {
+  background-color: var(--background-active-cfran-primary);
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), var(--data-uri-svg);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cfran-checkbox-group input[type=checkbox]:disabled + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  background-color: var(--background-disabled-grey);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cfran-checkbox-group--error input[type=checkbox] + label::before,
+.cfran-checkbox-group--error input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group--valid input[type=checkbox] + label::before,
+.cfran-checkbox-group--valid input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+
+.cfran-fieldset--error .cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cfran-fieldset--valid .cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+
+.cfran-select {
+  /**
+  * Mixin pour gérer l'état disabled
+  */
+
+  /**
+  * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+  * sur les navigateurs webkit.
+  */
+}
+
+.cfran-translate .cfran-translate__btn[aria-expanded=true]:hover {
+  background-color: var(--hover-tint);
+}
+
+.cfran-translate .cfran-translate__btn[aria-expanded=true]:active {
+  background-color: var(--active-tint);
+}
+
+.cfran-input:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+}
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+.cfran-password .cfran-password__checkbox input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), var(--data-uri-svg);
+}
+
+.cfran-header__service {
+  text-align: left; /* chris2fr */
+}
+
+.cfran-header .cfran-header__menu .cfran-container {
+  display: grid; /* chris2fr */
+  grid-template-columns: 1fr;
+  grid-template-areas: "l" "h" "m" "t";
+}
+
+.cfran-header__menu-logo {
+  grid-area: l;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+  .cfran-header .cfran-header__menu .cfran-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "l m" "h h";
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cfran-enlarge-link {
+    background-color: transparent;
+  }
+
+  .cfran-enlarge-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-enlarge-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]::-ms-fill-lower {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]:disabled::-ms-fill-lower {
+    background-color: #e5e5e5;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double {
+    background-image: linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 100%);
+  }
+
+  .cfran-pagination__link {
+    background-color: transparent;
+  }
+
+  .cfran-pagination__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-pagination__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-nav__link,
+  .cfran-nav__btn {
+    background-color: transparent;
+  }
+
+  .cfran-nav__link:hover,
+  .cfran-nav__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-nav__link:active,
+  .cfran-nav__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-enlarge-link [href] {
+    text-decoration: none;
+  }
+
+  .cfran-raw-link[href]::after,
+  .cfran-raw-link [href]::after {
+    content: none;
+  }
+
+  [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    vertical-align: sub;
+  }
+
+  .cfran-responsive-vid::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.5rem;
+    color: #161616;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  [class^=cfran-icon-]::before,
+  [class*=" cfran-icon-"]::before,
+  [class^=cfran-fi-]::before,
+  [class*=" cfran-fi-"]::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-icon--xs::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-icon--sm::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-icon--md::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-icon--lg::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-artwork-decorative {
+    fill: hsl(180, 80%, 96%);
+  }
+
+  .cfran-artwork-minor {
+    fill: hsl(270, 85%, 25%);
+  }
+
+  .cfran-artwork-major {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .cfran-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .cfran-artwork--cfran-color3 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color4 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color5 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color6 .cfran-artwork-minor {
+    fill: hsl(290, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color7 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color8 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color9 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color10 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color11 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color12 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color13 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color14 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color15 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color16 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color17 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color18 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color19 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  [disabled] .cfran-artwork * {
+    fill: #929292;
+  }
+
+  .cfran-h6,
+  .cfran-h5,
+  .cfran-h4,
+  .cfran-h3,
+  .cfran-h2,
+  .cfran-h1,
+  .cfran-display-xs,
+  .cfran-display-sm,
+  .cfran-display-md,
+  .cfran-display-lg,
+  .cfran-display-xl {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-hr-or::before,
+  .cfran-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .cfran-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-range__output,
+  .cfran-range__min,
+  .cfran-range__max {
+    min-width: 1.5rem;
+  }
+
+  .cfran-range input[type=range] {
+    padding: 0;
+  }
+
+  .cfran-range[data-cfran-js-range] {
+    justify-content: flex-start;
+  }
+
+  .cfran-range[data-cfran-js-range]::after {
+    content: none;
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-range[data-cfran-js-range] .cfran-range__max {
+    margin-left: auto;
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range] {
+    margin-top: -0.25rem;
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]::-ms-track {
+    height: 0.75rem;
+    background: transparent;
+    border-color: transparent;
+    border-width: 0.625rem 0;
+    color: transparent;
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]::-ms-fill-lower {
+    height: 0.75rem;
+    border-radius: 0.375rem;
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]::-ms-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    z-index: 500;
+    background-color: #fff;
+    border: 1px solid hsl(180, 75%, 25%);
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]:not(:only-of-type) {
+    pointer-events: auto;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double {
+    background-position-y: 1.625rem;
+    background-repeat: no-repeat;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double .cfran-range__output {
+    min-width: 3rem;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double input[type=range] {
+    width: calc(100% - 1.5rem);
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double input[type=range]::-ms-fill-lower {
+    background-color: transparent;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double input[type=range]:nth-of-type(1) {
+    margin-right: 1.5rem;
+    z-index: 2;
+  }
+
+  .cfran-range[data-cfran-js-range].cfran-range--double input[type=range]:nth-of-type(2) {
+    left: 1.5rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range] .cfran-range__output,
+  .cfran-range--sm[data-cfran-js-range] .cfran-range__min,
+  .cfran-range--sm[data-cfran-js-range] .cfran-range__max {
+    min-width: 1rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range] input[type=range]::-ms-track {
+    height: 0.5rem;
+    border-width: 0.5rem 0;
+  }
+
+  .cfran-range--sm[data-cfran-js-range] input[type=range]::-ms-fill-lower {
+    height: 0.5rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range] input[type=range]::-ms-thumb {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range].cfran-range--double {
+    background-position-y: 1.5rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range].cfran-range--double .cfran-range__output {
+    min-width: 2rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range].cfran-range--double input[type=range] {
+    width: calc(100% - 1rem);
+  }
+
+  .cfran-range--sm[data-cfran-js-range].cfran-range--double input[type=range]:nth-of-type(1) {
+    margin-right: 1rem;
+  }
+
+  .cfran-range--sm[data-cfran-js-range].cfran-range--double input[type=range]:nth-of-type(2) {
+    left: 1rem;
+  }
+
+  .cfran-range[data-cfran-js-range]::before {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-range[data-cfran-js-range] input[type=range]:disabled::-ms-thumb {
+    border: 1px solid #e5e5e5;
+  }
+
+  .cfran-range__output {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-range__min,
+  .cfran-range__max {
+    color: #666;
+  }
+
+  .cfran-range--step[data-cfran-js-range]::before {
+    background-image: radial-gradient(circle at 2px 50%, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 1px, transparent 1px);
+  }
+
+  .cfran-range--step[data-cfran-js-range]::after {
+    background-image: radial-gradient(circle at 2px 50%, hsl(180, 80%, 93%) 0, hsl(180, 80%, 93%) 2px, transparent 2px);
+    box-shadow: inset 10px 0 0 0 hsl(180, 75%, 25%), inset -10px 0 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-range--step.cfran-range--sm[data-cfran-js-range]::after {
+    box-shadow: inset 6px 0 0 0 hsl(180, 75%, 25%), inset -6px 0 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-range-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-range-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-range-group--disabled .cfran-range[data-cfran-js-range]::before {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-range-group--disabled .cfran-range[data-cfran-js-range]::after {
+    background-color: #e5e5e5;
+  }
+
+  .cfran-range-group--disabled .cfran-range--step[data-cfran-js-range]::before {
+    background-image: radial-gradient(circle at 2px 50%, #e5e5e5 0, #e5e5e5 1px, transparent 1px);
+  }
+
+  .cfran-range-group--disabled .cfran-range--step[data-cfran-js-range]::after {
+    background-image: radial-gradient(circle at 2px 50%, #fff 0, #fff 2px, transparent 2px);
+  }
+
+  .cfran-range-group--disabled .cfran-range__output,
+  .cfran-range-group--disabled .cfran-range__min,
+  .cfran-range-group--disabled .cfran-range__max {
+    color: #929292;
+  }
+
+  /**
+  * Reset liste à puce
+  */
+  .cfran-accordions-group ul {
+    list-style-type: none;
+  }
+
+  .cfran-accordions-group ol {
+    list-style-type: none;
+  }
+
+  .cfran-accordions-group ul,
+  .cfran-accordions-group ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-accordion__btn::before,
+  .cfran-accordion__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-accordion__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  .cfran-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .cfran-accordion__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-accordion__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-badge::before,
+  .cfran-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-badge.cfran-badge--info::before,
+  .cfran-badge.cfran-badge--info::after,
+  .cfran-badge--sm.cfran-badge--info::before,
+  .cfran-badge--sm.cfran-badge--info::after {
+    background-image: url("icons/system/cfran--info-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--success::before,
+  .cfran-badge.cfran-badge--success::after,
+  .cfran-badge--sm.cfran-badge--success::before,
+  .cfran-badge--sm.cfran-badge--success::after {
+    background-image: url("icons/system/cfran--success-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--error::before,
+  .cfran-badge.cfran-badge--error::after,
+  .cfran-badge--sm.cfran-badge--error::before,
+  .cfran-badge--sm.cfran-badge--error::after {
+    background-image: url("icons/system/cfran--error-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--warning::before,
+  .cfran-badge.cfran-badge--warning::after,
+  .cfran-badge--sm.cfran-badge--warning::before,
+  .cfran-badge--sm.cfran-badge--warning::after {
+    background-image: url("icons/system/cfran--warning-fill.svg");
+  }
+
+  .cfran-badge.cfran-badge--new::before,
+  .cfran-badge.cfran-badge--new::after,
+  .cfran-badge--sm.cfran-badge--new::before,
+  .cfran-badge--sm.cfran-badge--new::after {
+    background-image: url("icons/weather/flashlight-fill.svg");
+  }
+
+  ul.cfran-badges-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-badges-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-badges-group,
+  ol.cfran-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .cfran-badge--info {
+    color: hsl(180, 45%, 43%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--error {
+    color: hsl(0, 45%, 43%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--success {
+    color: hsl(90, 45%, 43%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--warning {
+    color: hsl(270, 45%, 43%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--new {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-badge--cfran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-logo {
+    color: #000;
+  }
+
+  .cfran-btn::before,
+  .cfran-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn[href] {
+    text-decoration: none;
+  }
+
+  .cfran-btn[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-btn--sm::before,
+  .cfran-btn--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-btn--sm[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--sm[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--sm[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--lg::before,
+  .cfran-btn--lg::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-btn--lg[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class^=cfran-icon-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class*=" cfran-icon-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class^=cfran-fi-]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after,
+  .cfran-btn--lg[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::before,
+  .cfran-btn--lg[class*=" cfran-fi-"]:not([class^=cfran-btn--icon-]):not([class*=" cfran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-btn--close::before,
+  .cfran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--tooltip::before,
+  .cfran-btn--tooltip::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/question-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--fullscreen::before,
+  .cfran-btn--fullscreen::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/media/fullscreen-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--display::before,
+  .cfran-btn--display::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--theme-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--briefcase::before,
+  .cfran-btn--briefcase::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/business/briefcase-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--account::before,
+  .cfran-btn--account::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/user/account-circle-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btn--team::before,
+  .cfran-btn--team::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/user/team-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  ul.cfran-btns-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-btns-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-btns-group,
+  ol.cfran-btns-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::after,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before,
+  .cfran-btns-group--sm:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::after,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before,
+  .cfran-btns-group--lg:not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-btn:disabled,
+  a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-btn--secondary {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--secondary:disabled,
+  a.cfran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-btn--secondary:disabled:hover,
+  a.cfran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--secondary:disabled:active,
+  a.cfran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary,
+  .cfran-btn--account {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-btn--tertiary:hover,
+  .cfran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:active,
+  .cfran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary:disabled,
+  a.cfran-btn--tertiary:not([href]),
+  a.cfran-btn--account:not([href]),
+  .cfran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary:disabled:hover,
+  a.cfran-btn--tertiary:not([href]):hover,
+  a.cfran-btn--account:not([href]):hover,
+  .cfran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary:disabled:active,
+  a.cfran-btn--tertiary:not([href]):active,
+  a.cfran-btn--account:not([href]):active,
+  .cfran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline,
+  .cfran-btn--close,
+  .cfran-btn--display,
+  .cfran-btn--fullscreen,
+  .cfran-btn--tooltip,
+  .cfran-btn--briefcase,
+  .cfran-btn--team {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-btn--tertiary-no-outline:hover,
+  .cfran-btn--close:hover,
+  .cfran-btn--display:hover,
+  .cfran-btn--fullscreen:hover,
+  .cfran-btn--tooltip:hover,
+  .cfran-btn--briefcase:hover,
+  .cfran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:active,
+  .cfran-btn--close:active,
+  .cfran-btn--display:active,
+  .cfran-btn--fullscreen:active,
+  .cfran-btn--tooltip:active,
+  .cfran-btn--briefcase:active,
+  .cfran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled,
+  a.cfran-btn--tertiary-no-outline:not([href]),
+  a.cfran-btn--close:not([href]),
+  a.cfran-btn--display:not([href]),
+  a.cfran-btn--fullscreen:not([href]),
+  a.cfran-btn--tooltip:not([href]),
+  a.cfran-btn--briefcase:not([href]),
+  a.cfran-btn--team:not([href]),
+  .cfran-btn--close:disabled,
+  .cfran-btn--display:disabled,
+  .cfran-btn--fullscreen:disabled,
+  .cfran-btn--tooltip:disabled,
+  .cfran-btn--briefcase:disabled,
+  .cfran-btn--team:disabled {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:hover,
+  a.cfran-btn--tertiary-no-outline:not([href]):hover,
+  a.cfran-btn--close:not([href]):hover,
+  a.cfran-btn--display:not([href]):hover,
+  a.cfran-btn--fullscreen:not([href]):hover,
+  a.cfran-btn--tooltip:not([href]):hover,
+  a.cfran-btn--briefcase:not([href]):hover,
+  a.cfran-btn--team:not([href]):hover,
+  .cfran-btn--close:disabled:hover,
+  .cfran-btn--display:disabled:hover,
+  .cfran-btn--fullscreen:disabled:hover,
+  .cfran-btn--tooltip:disabled:hover,
+  .cfran-btn--briefcase:disabled:hover,
+  .cfran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-btn--tertiary-no-outline:disabled:active,
+  a.cfran-btn--tertiary-no-outline:not([href]):active,
+  a.cfran-btn--close:not([href]):active,
+  a.cfran-btn--display:not([href]):active,
+  a.cfran-btn--fullscreen:not([href]):active,
+  a.cfran-btn--tooltip:not([href]):active,
+  a.cfran-btn--briefcase:not([href]):active,
+  a.cfran-btn--team:not([href]):active,
+  .cfran-btn--close:disabled:active,
+  .cfran-btn--display:disabled:active,
+  .cfran-btn--fullscreen:disabled:active,
+  .cfran-btn--tooltip:disabled:active,
+  .cfran-btn--briefcase:disabled:active,
+  .cfran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-connect {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-connect:disabled,
+  a.cfran-connect:not([href]) {
+    background-color: #e5e5e5;
+    color: #929292;
+  }
+
+  .cfran-connect-group .cfran-connect + p a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-connect-group p {
+    color: #666;
+  }
+
+  /**
+  * Correction largeur max du texte
+  */
+  .cfran-quote::before,
+  .cfran-quote::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/editor/cfran--quote-line.svg");
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul.cfran-quote__source {
+    list-style-type: none;
+  }
+
+  ol.cfran-quote__source {
+    list-style-type: none;
+  }
+
+  ul.cfran-quote__source,
+  ol.cfran-quote__source {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-quote blockquote {
+    max-width: 100%;
+  }
+
+  .cfran-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .cfran-quote--cfran-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-quote__source {
+    color: #666;
+  }
+
+  /**
+  * reset liste à puce
+  */
+  .cfran-breadcrumb ul {
+    list-style-type: none;
+  }
+
+  .cfran-breadcrumb ol {
+    list-style-type: none;
+  }
+
+  .cfran-breadcrumb ul,
+  .cfran-breadcrumb ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-breadcrumb__link:not([aria-current])::after,
+  .cfran-breadcrumb__link[aria-current=false]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-right-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-breadcrumb {
+    color: #666;
+  }
+
+  .cfran-breadcrumb__link[aria-current]:not([aria-current=false]) {
+    color: #3a3a3a;
+  }
+
+  .cfran-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cfran-message--error::before,
+  .cfran-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-message--valid::before,
+  .cfran-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-message--info::before,
+  .cfran-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-select-group--valid label,
+  .cfran-input-group--valid label,
+  .cfran-range-group--valid label,
+  .cfran-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-select-group--error label,
+  .cfran-input-group--error label,
+  .cfran-range-group--error label,
+  .cfran-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-select-group--info label,
+  .cfran-input-group--info label,
+  .cfran-range-group--info label,
+  .cfran-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-select-group--disabled label,
+  .cfran-select-group--disabled .cfran-hint-text,
+  .cfran-input-group--disabled label,
+  .cfran-input-group--disabled .cfran-hint-text,
+  .cfran-range-group--disabled label,
+  .cfran-range-group--disabled .cfran-hint-text,
+  .cfran-upload-group--disabled label,
+  .cfran-upload-group--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-label {
+    color: #161616;
+  }
+
+  .cfran-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-label--disabled,
+  .cfran-label--disabled .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-hint-text,
+  .cfran-message {
+    color: #666;
+  }
+
+  .cfran-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-fieldset:disabled .cfran-label,
+  .cfran-fieldset:disabled .cfran-hint-text,
+  .cfran-fieldset:disabled .cfran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cfran-fieldset input:disabled + label,
+  .cfran-fieldset input:disabled + label .cfran-hint-text,
+  .cfran-fieldset input:disabled + label + .cfran-hint-text {
+    color: #929292;
+  }
+
+  .cfran-fieldset--error,
+  .cfran-fieldset--error .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-fieldset--error .cfran-fieldset__legend,
+  .cfran-fieldset--error .cfran-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-fieldset--valid,
+  .cfran-fieldset--valid .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-fieldset--valid .cfran-fieldset__legend,
+  .cfran-fieldset--valid .cfran-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--info,
+  .cfran-fieldset--info .cfran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-fieldset--info .cfran-fieldset__legend,
+  .cfran-fieldset--info .cfran-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-error-text::before,
+  .cfran-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-valid-text::before,
+  .cfran-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-fieldset--valid .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-fieldset--info .cfran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+
+  .cfran-stepper__title {
+    margin-bottom: 0.75rem;
+    color: #161616;
+  }
+
+  .cfran-stepper__steps {
+    display: none;
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cfran-stepper__state {
+    color: #666;
+  }
+
+  .cfran-stepper__details {
+    color: #666;
+  }
+
+  .cfran-tooltip {
+    position: relative;
+    color: #3a3a3a;
+  }
+
+  .cfran-tooltip__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tooltip__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/add-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tooltip__btn[aria-expanded=true]::before,
+  .cfran-tooltip__btn[aria-expanded=true]::after {
+    background-image: url("icons/system/subtract-line.svg");
+  }
+
+  ul.cfran-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-tooltip__actions-group,
+  ol.cfran-tooltip__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-tooltip .cfran-modal:not(.cfran-modal--opened) .cfran-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .cfran-tooltip.cfran-placement {
+    z-index: 1000;
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+
+  .cfran-link {
+    background-image: none;
+    text-decoration: underline;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-link::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-link--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-link--lg::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  ul.cfran-links-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-links-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-links-group,
+  ol.cfran-links-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-link__detail {
+    color: #666;
+  }
+
+  .cfran-links-group li::marker {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-link--close {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-link--close:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-link--close:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-link--close:disabled,
+  a.cfran-link--close:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-link--close:disabled:hover,
+  a.cfran-link--close:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-link--close:disabled:active,
+  a.cfran-link--close:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /**
+  * Correctif de la hauteur de la navigation latérale
+  */
+  .cfran-sidemenu {
+    height: auto;
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu ul {
+    list-style-type: none;
+  }
+
+  .cfran-sidemenu ol {
+    list-style-type: none;
+  }
+
+  .cfran-sidemenu ul,
+  .cfran-sidemenu ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-sidemenu [href] {
+    text-decoration: none;
+  }
+
+  .cfran-sidemenu__btn[aria-expanded]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item .cfran-sidemenu__link,
+  .cfran-sidemenu__item .cfran-sidemenu__btn {
+    color: #161616;
+  }
+
+  .cfran-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__link,
+  .cfran-sidemenu__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false]),
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-highlight--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-highlight--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-tabs ul {
+    list-style-type: none;
+  }
+
+  .cfran-tabs ol {
+    list-style-type: none;
+  }
+
+  .cfran-tabs ul,
+  .cfran-tabs ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-tabs::before {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 1px 0 0 #ddd, inset 1px 0 0 0 #ddd, inset -1px 0 0 0 #ddd;
+  }
+
+  .cfran-tabs .cfran-tabs__list {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .cfran-tabs__tab::before,
+  .cfran-tabs__tab::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tabs__panel {
+    padding: 0 0.1px;
+    left: 0;
+  }
+
+  .cfran-tabs__panel [href] {
+    text-decoration: underline;
+  }
+
+  .cfran-tabs__panel > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cfran-tabs__panel > *:first-child {
+    margin-top: 0.75rem;
+  }
+
+  .cfran-tabs__panel > *:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .cfran-tabs {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-tabs__tab {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    box-shadow: 0 2px 0 0 #fff;
+  }
+
+  .cfran-tabs__tab:not([aria-selected=true]) {
+    background-color: hsl(180, 80%, 93%);
+    color: #161616;
+  }
+
+  .cfran-tabs__tab[aria-selected=true]:not(:disabled) {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tabs__tab:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  /**
+  * Correctif de la largeur de la légende d'un fieldset
+  */
+  .cfran-pagination [href] {
+    text-decoration: none;
+  }
+
+  .cfran-pagination ul {
+    list-style-type: none;
+  }
+
+  .cfran-pagination ol {
+    list-style-type: none;
+  }
+
+  .cfran-pagination ul,
+  .cfran-pagination ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-pagination .cfran-pagination__link--first::before,
+  .cfran-pagination .cfran-pagination__link--first::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--arrow-left-s-first-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--prev::before,
+  .cfran-pagination .cfran-pagination__link--prev::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-left-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--next::before,
+  .cfran-pagination .cfran-pagination__link--next::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-right-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination .cfran-pagination__link--last::before,
+  .cfran-pagination .cfran-pagination__link--last::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/cfran--arrow-right-s-last-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-pagination {
+    color: #161616;
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cfran-pagination__link:not([aria-current]):disabled,
+  a.cfran-pagination__link:not([aria-current]):not([href]),
+  a.cfran-pagination__link[aria-current=false]:not([href]),
+  .cfran-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+
+  .cfran-summary {
+    background-color: #eee;
+  }
+
+  .cfran-summary__title {
+    color: #161616;
+  }
+
+  .cfran-summary li > a {
+    color: #161616;
+  }
+
+  /**
+  * Correctif placement caption
+  */
+  .cfran-table[data-cfran-js-table=true] caption {
+    position: relative;
+  }
+
+  .cfran-table caption {
+    color: #161616;
+  }
+
+  .cfran-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cfran-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .cfran-table--cfran-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-tag {
+    text-decoration: none;
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .cfran-tag::before,
+  .cfran-tag::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tag .cfran-tag--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cfran-tag[aria-pressed=true],
+  input[type=button] .cfran-tag[aria-pressed=true] {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  button .cfran-tag[aria-pressed=true]::after,
+  input[type=button] .cfran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/checkbox-circle-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cfran-tag[aria-pressed=true] .cfran-tag--sm::after,
+  input[type=button] .cfran-tag[aria-pressed=true] .cfran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cfran-tag .cfran-tag--dismiss::after,
+  input[type=button] .cfran-tag .cfran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cfran-tag .cfran-tag--dismiss .cfran-tag--sm::after,
+  input[type=button] .cfran-tag .cfran-tag--dismiss .cfran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ul.cfran-tags-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-tags-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-tags-group,
+  ol.cfran-tags-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-tags-group--sm::before,
+  .cfran-tags-group--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tags-group--sm a .cfran-tag .cfran-tag--dismiss::after,
+  .cfran-tags-group--sm button .cfran-tag .cfran-tag--dismiss::after,
+  .cfran-tags-group--sm input[type=button] .cfran-tag .cfran-tag--dismiss::after,
+  .cfran-tags-group--sm input[type=image] .cfran-tag .cfran-tag--dismiss::after,
+  .cfran-tags-group--sm input[type=reset] .cfran-tag .cfran-tag--dismiss::after,
+  .cfran-tags-group--sm input[type=submit] .cfran-tag .cfran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-tags-group--sm a .cfran-tag[aria-pressed=true]::after,
+  .cfran-tags-group--sm button .cfran-tag[aria-pressed=true]::after,
+  .cfran-tags-group--sm input[type=button] .cfran-tag[aria-pressed=true]::after,
+  .cfran-tags-group--sm input[type=image] .cfran-tag[aria-pressed=true]::after,
+  .cfran-tags-group--sm input[type=reset] .cfran-tag[aria-pressed=true]::after,
+  .cfran-tags-group--sm input[type=submit] .cfran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent !important;
+  }
+
+  .cfran-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .cfran-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cfran-tag.cfran-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.cfran-tag,
+  button.cfran-tag,
+  input[type=button].cfran-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag:hover,
+  button.cfran-tag:hover,
+  input[type=button].cfran-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag:active,
+  button.cfran-tag:active,
+  input[type=button].cfran-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color3,
+  button.cfran-tag--cfran-color3,
+  input[type=button].cfran-tag--cfran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color3:hover,
+  button.cfran-tag--cfran-color3:hover,
+  input[type=button].cfran-tag--cfran-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color3:active,
+  button.cfran-tag--cfran-color3:active,
+  input[type=button].cfran-tag--cfran-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color4,
+  button.cfran-tag--cfran-color4,
+  input[type=button].cfran-tag--cfran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color4:hover,
+  button.cfran-tag--cfran-color4:hover,
+  input[type=button].cfran-tag--cfran-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color4:active,
+  button.cfran-tag--cfran-color4:active,
+  input[type=button].cfran-tag--cfran-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color5,
+  button.cfran-tag--cfran-color5,
+  input[type=button].cfran-tag--cfran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color5:hover,
+  button.cfran-tag--cfran-color5:hover,
+  input[type=button].cfran-tag--cfran-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color5:active,
+  button.cfran-tag--cfran-color5:active,
+  input[type=button].cfran-tag--cfran-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color6,
+  button.cfran-tag--cfran-color6,
+  input[type=button].cfran-tag--cfran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color6:hover,
+  button.cfran-tag--cfran-color6:hover,
+  input[type=button].cfran-tag--cfran-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color6:active,
+  button.cfran-tag--cfran-color6:active,
+  input[type=button].cfran-tag--cfran-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color7,
+  button.cfran-tag--cfran-color7,
+  input[type=button].cfran-tag--cfran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color7:hover,
+  button.cfran-tag--cfran-color7:hover,
+  input[type=button].cfran-tag--cfran-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color7:active,
+  button.cfran-tag--cfran-color7:active,
+  input[type=button].cfran-tag--cfran-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color8,
+  button.cfran-tag--cfran-color8,
+  input[type=button].cfran-tag--cfran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color8:hover,
+  button.cfran-tag--cfran-color8:hover,
+  input[type=button].cfran-tag--cfran-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color8:active,
+  button.cfran-tag--cfran-color8:active,
+  input[type=button].cfran-tag--cfran-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color9,
+  button.cfran-tag--cfran-color9,
+  input[type=button].cfran-tag--cfran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color9:hover,
+  button.cfran-tag--cfran-color9:hover,
+  input[type=button].cfran-tag--cfran-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color9:active,
+  button.cfran-tag--cfran-color9:active,
+  input[type=button].cfran-tag--cfran-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color10,
+  button.cfran-tag--cfran-color10,
+  input[type=button].cfran-tag--cfran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color10:hover,
+  button.cfran-tag--cfran-color10:hover,
+  input[type=button].cfran-tag--cfran-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color10:active,
+  button.cfran-tag--cfran-color10:active,
+  input[type=button].cfran-tag--cfran-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color11,
+  button.cfran-tag--cfran-color11,
+  input[type=button].cfran-tag--cfran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color11:hover,
+  button.cfran-tag--cfran-color11:hover,
+  input[type=button].cfran-tag--cfran-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color11:active,
+  button.cfran-tag--cfran-color11:active,
+  input[type=button].cfran-tag--cfran-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color12,
+  button.cfran-tag--cfran-color12,
+  input[type=button].cfran-tag--cfran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color12:hover,
+  button.cfran-tag--cfran-color12:hover,
+  input[type=button].cfran-tag--cfran-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color12:active,
+  button.cfran-tag--cfran-color12:active,
+  input[type=button].cfran-tag--cfran-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color13,
+  button.cfran-tag--cfran-color13,
+  input[type=button].cfran-tag--cfran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color13:hover,
+  button.cfran-tag--cfran-color13:hover,
+  input[type=button].cfran-tag--cfran-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color13:active,
+  button.cfran-tag--cfran-color13:active,
+  input[type=button].cfran-tag--cfran-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color14,
+  button.cfran-tag--cfran-color14,
+  input[type=button].cfran-tag--cfran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color14:hover,
+  button.cfran-tag--cfran-color14:hover,
+  input[type=button].cfran-tag--cfran-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color14:active,
+  button.cfran-tag--cfran-color14:active,
+  input[type=button].cfran-tag--cfran-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color15,
+  button.cfran-tag--cfran-color15,
+  input[type=button].cfran-tag--cfran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color15:hover,
+  button.cfran-tag--cfran-color15:hover,
+  input[type=button].cfran-tag--cfran-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color15:active,
+  button.cfran-tag--cfran-color15:active,
+  input[type=button].cfran-tag--cfran-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color16,
+  button.cfran-tag--cfran-color16,
+  input[type=button].cfran-tag--cfran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color16:hover,
+  button.cfran-tag--cfran-color16:hover,
+  input[type=button].cfran-tag--cfran-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color16:active,
+  button.cfran-tag--cfran-color16:active,
+  input[type=button].cfran-tag--cfran-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color17,
+  button.cfran-tag--cfran-color17,
+  input[type=button].cfran-tag--cfran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color17:hover,
+  button.cfran-tag--cfran-color17:hover,
+  input[type=button].cfran-tag--cfran-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color17:active,
+  button.cfran-tag--cfran-color17:active,
+  input[type=button].cfran-tag--cfran-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color18,
+  button.cfran-tag--cfran-color18,
+  input[type=button].cfran-tag--cfran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color18:hover,
+  button.cfran-tag--cfran-color18:hover,
+  input[type=button].cfran-tag--cfran-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color18:active,
+  button.cfran-tag--cfran-color18:active,
+  input[type=button].cfran-tag--cfran-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cfran-tag--cfran-color19,
+  button.cfran-tag--cfran-color19,
+  input[type=button].cfran-tag--cfran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cfran-tag--cfran-color19:hover,
+  button.cfran-tag--cfran-color19:hover,
+  input[type=button].cfran-tag--cfran-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cfran-tag--cfran-color19:active,
+  button.cfran-tag--cfran-color19:active,
+  input[type=button].cfran-tag--cfran-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].cfran-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]::after,
+  input[type=button].cfran-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.cfran-tag[aria-pressed=true]:disabled,
+  input[type=button].cfran-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.cfran-tag[aria-pressed=true]:disabled::after,
+  input[type=button].cfran-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:hover,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:active,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.cfran-tag[aria-pressed=true].cfran-tag--sm:disabled,
+  input[type=button].cfran-tag[aria-pressed=true].cfran-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.cfran-tag:disabled,
+  input[type=button].cfran-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).cfran-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true],
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:hover,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:active,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .cfran-tags-group.cfran-tags-group--sm button.cfran-tag[aria-pressed=true]:disabled,
+  .cfran-tags-group.cfran-tags-group--sm input[type=button].cfran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cfran-alert::before,
+  .cfran-alert::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-alert__title,
+  .cfran-alert p {
+    margin: 0 0 0.25rem;
+  }
+
+  .cfran-alert--info::before {
+    background-image: url("icons/system/cfran--info-fill.svg");
+  }
+
+  .cfran-alert--success::before {
+    background-image: url("icons/system/cfran--success-fill.svg");
+  }
+
+  .cfran-alert--error::before {
+    background-image: url("icons/system/cfran--error-fill.svg");
+  }
+
+  .cfran-alert--warning::before {
+    background-image: url("icons/system/cfran--warning-fill.svg");
+  }
+
+  .cfran-alert .cfran-btn--close::before,
+  .cfran-alert .cfran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cfran-alert .cfran-link--close::before,
+  .cfran-alert .cfran-link--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-alert {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cfran-alert::before {
+    color: #fff;
+  }
+
+  .cfran-alert--info {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-alert--error {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-alert--success {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-alert--warning {
+    background-image: linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%));
+  }
+
+  /**
+  * reset des marges dans le bandeau
+  */
+  .cfran-notice__title,
+  .cfran-notice p {
+    margin: 0;
+  }
+
+  .cfran-notice--info .cfran-notice__body::before {
+    background-image: url("icons/system/cfran--info-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    color: transparent;
+  }
+
+  .cfran-notice .cfran-btn--close::before,
+  .cfran-notice .cfran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cfran-notice--info {
+    background-color: hsl(180, 80%, 96%);
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px);
+  }
+
+  .cfran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-radio-group input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cfran-fieldset .cfran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cfran-fieldset .cfran-radio-group input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-radio-group--sm input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset .cfran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-fieldset .cfran-radio-group--sm input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+    background-color: #fff;
+  }
+
+  .cfran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-radio-rich input[type=radio]:disabled ~ .cfran-radio-rich__pictogram svg * {
+    fill: #929292;
+  }
+
+  .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked ~ .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked:disabled + label {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked:disabled ~ .cfran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-fieldset--error .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--error .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--valid .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cfran-fieldset--info .cfran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cfran-fieldset .cfran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cfran-fieldset .cfran-radio-rich input[type=radio]:disabled:checked + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cfran-radio-rich__img {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .cfran-radio-rich input[type=radio]:disabled ~ .cfran-radio-rich__img svg * {
+    fill: #929292;
+  }
+
+  .cfran-radio-rich input[type=radio]:checked ~ .cfran-radio-rich__img {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-radio-rich input[type=radio]:checked:disabled ~ .cfran-radio-rich__img {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-card--no-icon::after {
+    content: none;
+  }
+
+  .cfran-card__title,
+  .cfran-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .cfran-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .cfran-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-card--download .cfran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/download-line.svg");
+  }
+
+  .cfran-card--download .cfran-card__header {
+    padding-top: 56.25%;
+  }
+
+  .cfran-card--download .cfran-card__header .cfran-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .cfran-card.cfran-enlarge-link .cfran-card__title a {
+    text-decoration: none;
+  }
+
+  .cfran-card.cfran-enlarge-link .cfran-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .cfran-card--sm.cfran-enlarge-link .cfran-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-card--sm .cfran-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-card--lg.cfran-enlarge-link .cfran-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-card--lg .cfran-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-card > .cfran-card__img {
+    flex-shrink: 0;
+  }
+
+  .cfran-card {
+    background-color: #fff;
+  }
+
+  .cfran-card:not(.cfran-card--no-border):not(.cfran-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .cfran-card--shadow.cfran-card--grey {
+    background-color: #eee;
+  }
+
+  .cfran-card--no-background {
+    background-color: transparent;
+  }
+
+  .cfran-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-card--download:not(.cfran-card--no-background) .cfran-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-card__detail {
+    color: #666;
+  }
+
+  .cfran-card__title {
+    color: #161616;
+  }
+
+  .cfran-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-card__title:disabled,
+  a.cfran-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-checkbox-group input[type=checkbox] {
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  .cfran-fieldset__content .cfran-checkbox-group input[type=checkbox] {
+    margin-top: 1.5rem;
+  }
+
+  .cfran-fieldset__content + .cfran-valid-text,
+  .cfran-fieldset__content + .cfran-error-text {
+    margin-top: 1rem;
+  }
+
+  .cfran-checkbox-group--error input[type=checkbox] + label,
+  .cfran-checkbox-group--error input[type=checkbox]:checked + label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--error::before {
+    background-color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid input[type=checkbox] + label,
+  .cfran-checkbox-group--valid input[type=checkbox]:checked + label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid::before {
+    background-color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-segmented {
+    display: block;
+  }
+
+  .cfran-segmented--sm .cfran-segmented__legend--inline {
+    margin: 0.25rem 0 0;
+  }
+
+  .cfran-segmented__legend--inline {
+    margin: 0.5rem 0 0;
+  }
+
+  .cfran-segmented__elements {
+    display: inline-flex;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-segmented input + label::before {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -2px;
+  }
+
+  .cfran-segmented input:focus + label::before {
+    outline: none;
+  }
+
+  .cfran-segmented__element label {
+    color: #161616;
+  }
+
+  .cfran-segmented__element input:checked + label {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-segmented__element input:checked:disabled + label {
+    box-shadow: inset 0 0 0 1px #929292;
+    color: #929292;
+  }
+
+  .cfran-toggle input[type=checkbox]::-ms-check {
+    display: none;
+  }
+
+  .cfran-toggle input[type=checkbox]:checked::before,
+  .cfran-toggle input[type=checkbox]:checked::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/check-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-toggle__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cfran-toggle label {
+    color: #161616;
+  }
+
+  .cfran-toggle label::before {
+    color: hsl(180, 75%, 25%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle label::after {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    background-color: #fff;
+  }
+
+  .cfran-toggle input[type=checkbox] {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cfran-toggle input[type=checkbox]:checked {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked {
+    background-color: #e5e5e5;
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='%23e5e5e5' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled:checked ~ .cfran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled ~ .cfran-toggle__label::before {
+    color: #929292;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle input[type=checkbox]:disabled ~ .cfran-toggle__label::after {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cfran-toggle .cfran-hint-text {
+    color: #666;
+  }
+
+  .cfran-toggle--border-bottom {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-toggle--error label,
+  .cfran-fieldset--error .cfran-toggle label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-toggle--error label::before,
+  .cfran-fieldset--error .cfran-toggle label::before {
+    color: hsl(0, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--error label::after,
+  .cfran-fieldset--error .cfran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(0, 45%, 43%);
+  }
+
+  .cfran-toggle--error input[type=checkbox]:checked ~ .cfran-toggle__label::before,
+  .cfran-fieldset--error .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--valid label,
+  .cfran-fieldset--valid .cfran-toggle label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-toggle--valid label::before,
+  .cfran-fieldset--valid .cfran-toggle label::before {
+    color: hsl(90, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cfran-toggle--valid label::after,
+  .cfran-fieldset--valid .cfran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(90, 45%, 43%);
+  }
+
+  .cfran-toggle--valid input[type=checkbox]:checked ~ .cfran-toggle__label::before,
+  .cfran-fieldset--valid .cfran-toggle input[type=checkbox]:checked ~ .cfran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  /**
+  * Correctif
+  */
+  .cfran-skiplinks.focus-within {
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .cfran-skiplinks {
+    background-color: #eee;
+  }
+
+  /**
+  * Cache l'icone native du select sur IE
+  */
+  .cfran-select::-ms-expand {
+    display: none;
+  }
+
+  .cfran-select {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23161616' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-fieldset--valid .cfran-select,
+  .cfran-select-group--valid .cfran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-select,
+  .cfran-select-group--error .cfran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-select-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-select-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-select-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-select:disabled {
+    color: #929292;
+    box-shadow: inset 0 -2px 0 0 #e5e5e5;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23929292' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-select:-webkit-autofill,
+  .cfran-select:-webkit-autofill:hover,
+  .cfran-select:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  /**
+  * Marge des titres et textes
+  */
+  .cfran-callout__title {
+    margin: 0 0 0.5rem;
+    color: #161616;
+  }
+
+  .cfran-callout__text {
+    margin: 0;
+  }
+
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-modal__body {
+    z-index: 2000;
+    background-color: #fff;
+  }
+
+  .cfran-modal__title {
+    color: #161616;
+  }
+
+  .cfran-modal__footer {
+    background-color: #fff;
+  }
+
+  .cfran-modal__body.cfran-scroll-divider .cfran-modal__footer {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  /**
+  * reset liste à puce
+  */
+  .cfran-nav [href] {
+    text-decoration: none;
+  }
+
+  .cfran-nav ul {
+    list-style-type: none;
+  }
+
+  .cfran-nav ol {
+    list-style-type: none;
+  }
+
+  .cfran-nav ul,
+  .cfran-nav ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /**
+  * reset margin
+  */
+  .cfran-nav__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-mega-menu__category {
+    margin: 0;
+  }
+
+  .cfran-nav__list {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-nav__link,
+  .cfran-nav__btn {
+    color: #161616;
+  }
+
+  .cfran-nav__link[aria-current]:not([aria-current=false]),
+  .cfran-nav__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-nav__link[aria-current]:not([aria-current=false])::before,
+  .cfran-nav__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-nav__btn[aria-expanded=true]:not(:disabled) {
+    background-color: hsl(180, 80%, 93%);
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-nav__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-nav__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-nav__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-mega-menu__list::before {
+    box-shadow: 0 1px 0 0 #ddd;
+  }
+
+  .cfran-share__group > li {
+    list-style: none;
+  }
+
+  .cfran-share .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-share .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn--facebook::before {
+    background-image: url("icons/logo/facebook-circle-line.svg");
+  }
+
+  .cfran-share .cfran-btn--linkedin::before {
+    background-image: url("icons/logo/linkedin-box-line.svg");
+  }
+
+  .cfran-share .cfran-btn--mastodon::before {
+    background-image: url("icons/logo/mastodon-line.svg");
+  }
+
+  .cfran-share .cfran-btn--threads::before {
+    background-image: url("icons/logo/threads-line.svg");
+  }
+
+  .cfran-share .cfran-btn--twitter::before {
+    background-image: url("icons/logo/twitter-line.svg");
+  }
+
+  .cfran-share .cfran-btn--twitter-x::before {
+    background-image: url("icons/logo/twitter-x-line.svg");
+  }
+
+  .cfran-share .cfran-btn--mail::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/business/mail-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn--copy::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/business/links-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-share .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-share .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share .cfran-btn:disabled,
+  .cfran-share a.cfran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-share .cfran-btn:disabled:hover,
+  .cfran-share a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share .cfran-btn:disabled:active,
+  .cfran-share a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share__text {
+    color: #666;
+  }
+
+  .cfran-share__link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-share__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-share__link:disabled,
+  a.cfran-share__link:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-share__link:disabled:hover,
+  a.cfran-share__link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-share__link:disabled:active,
+  a.cfran-share__link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /**
+  * Reset liste à puce
+  */
+  .cfran-footer ul {
+    list-style-type: none;
+  }
+
+  .cfran-footer ol {
+    list-style-type: none;
+  }
+
+  .cfran-footer ul,
+  .cfran-footer ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-footer__content-desc [href] {
+    text-decoration: underline;
+  }
+
+  .cfran-footer {
+    box-shadow: inset 0 2px 0 0 hsl(180, 75%, 25%), inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-footer__content-link {
+    color: #3a3a3a;
+  }
+
+  .cfran-footer__top-cat {
+    color: #161616;
+  }
+
+  .cfran-footer__top {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-footer__bottom {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-footer__bottom .cfran-btn {
+    color: #666;
+  }
+
+  .cfran-footer__bottom-item::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-footer__bottom-link {
+    color: #666;
+  }
+
+  .cfran-footer__bottom-copy {
+    color: #666;
+  }
+
+  .cfran-footer__partners {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-footer__partners-title {
+    color: #3a3a3a;
+  }
+
+  .cfran-footer__partners .cfran-footer__logo {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  /**
+  * Correctif de la largeur du texte dans la tuile
+  */
+  .cfran-tile--download .cfran-tile__body,
+  .cfran-tile--horizontal .cfran-tile__body {
+    flex-basis: 100%;
+  }
+
+  .cfran-tile__body,
+  .cfran-tile__body > * {
+    max-width: 100%;
+  }
+
+  .cfran-tile__title {
+    margin: 0 0 0.5rem;
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cfran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tile__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tile__desc {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .cfran-tile__start,
+  .cfran-tile__detail {
+    max-width: 100%;
+  }
+
+  .cfran-tile--download .cfran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/download-line.svg");
+  }
+
+  .cfran-tile.cfran-enlarge-link .cfran-tile__title a {
+    text-decoration: none;
+  }
+
+  .cfran-tile.cfran-enlarge-link .cfran-tile__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .cfran-tile--sm .cfran-tile__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-tile {
+    background-color: #fff;
+  }
+
+  .cfran-tile:not(.cfran-tile--no-border):not(.cfran-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cfran-tile--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .cfran-tile--shadow.cfran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cfran-tile--no-background {
+    background-color: transparent;
+  }
+
+  .cfran-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-tile__title:disabled,
+  a.cfran-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cfran-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cfran-tile__title a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+
+  .cfran-translate .cfran-translate__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/editor/translate-2.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-translate .cfran-translate__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-translate .cfran-translate__btn[aria-expanded=true] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-translate__menu .cfran-translate__language {
+    box-shadow: none;
+  }
+
+  .cfran-transcription {
+    position: relative;
+  }
+
+  .cfran-transcription__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-transcription__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-transcription__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  ul.cfran-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ol.cfran-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ul.cfran-transcription__actions-group,
+  ol.cfran-transcription__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-transcription .cfran-modal:not(.cfran-modal--opened) .cfran-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .cfran-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-transcription__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-transcription__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cfran-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-transcription .cfran-modal:not(.cfran-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-input-wrap--addon .cfran-btn {
+    flex-shrink: 0;
+  }
+
+  .cfran-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .cfran-input::placeholder {
+    color: #666;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .cfran-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .cfran-input:autofill,
+  .cfran-input:autofill:hover,
+  .cfran-input:autofill:focus,
+  .cfran-input:-webkit-autofill,
+  .cfran-input:-webkit-autofill:hover,
+  .cfran-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-fieldset--valid .cfran-input,
+  .cfran-fieldset--valid .cfran-input-wrap--addon > .cfran-input:not(:last-child),
+  .cfran-input-group--valid .cfran-input,
+  .cfran-input-group--valid .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-fieldset--error .cfran-input,
+  .cfran-fieldset--error .cfran-input-wrap--addon > .cfran-input:not(:last-child),
+  .cfran-input-group--error .cfran-input,
+  .cfran-input-group--error .cfran-input-wrap--addon > .cfran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cfran-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cfran-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cfran-search-bar .cfran-btn::before,
+  .cfran-search-bar .cfran-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/search-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-search-bar .cfran-input {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cfran-search-bar .cfran-input--valid {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cfran-search-bar .cfran-input--error {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cfran-search-bar .cfran-input::-webkit-search-cancel-button {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='%23161616' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-11.414L9.172 7.757 7.757 9.172 10.586 12l-2.829 2.828 1.415 1.415L12 13.414l2.828 2.829 1.415-1.415L13.414 12l2.829-2.828-1.415-1.415L12 10.586z'/%3E%3C/svg%3E");
+  }
+
+  .cfran-content-media__caption,
+  .cfran-content-media .cfran-link {
+    color: #666;
+  }
+
+  .cfran-content-media__transcription .cfran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-content-media__transcription .cfran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-content-media__transcription .cfran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-content-media__transcription .cfran-link:disabled,
+  .cfran-content-media__transcription a.cfran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-content-media__transcription .cfran-link:disabled:hover,
+  .cfran-content-media__transcription a.cfran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-content-media__transcription .cfran-link:disabled:active,
+  .cfran-content-media__transcription a.cfran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-consent-service__collapse .cfran-consent-service__collapse-btn {
+    text-decoration: underline;
+  }
+
+  .cfran-consent-service__collapse .cfran-consent-service__collapse-btn::before,
+  .cfran-consent-service__collapse .cfran-consent-service__collapse-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-consent-service__collapse .cfran-consent-service__collapse-btn[aria-expanded=true]::before,
+  .cfran-consent-service__collapse .cfran-consent-service__collapse-btn[aria-expanded=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/system/arrow-up-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .cfran-consent-banner {
+    z-index: 1500;
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-consent-manager__header,
+  .cfran-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .cfran-consent-manager__header .cfran-radio-group + .cfran-radio-group::before,
+  .cfran-consent-service .cfran-radio-group + .cfran-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-consent-service__title {
+    color: #161616;
+  }
+
+  .cfran-consent-service:last-of-type,
+  .cfran-consent-service .cfran-consent-service {
+    box-shadow: none;
+  }
+
+  .cfran-consent-service .cfran-consent-service__collapse-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .cfran-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .cfran-follow .cfran-btn--dailymotion::before {
+    background-image: url("icons/logo/cfran--dailymotion-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--facebook::before {
+    background-image: url("icons/logo/facebook-circle-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--github::before {
+    background-image: url("icons/logo/github-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--instagram::before {
+    background-image: url("icons/logo/instagram-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--linkedin::before {
+    background-image: url("icons/logo/linkedin-box-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--mastodon::before {
+    background-image: url("icons/logo/mastodon-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--snapchat::before {
+    background-image: url("icons/logo/snapchat-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--telegram::before {
+    background-image: url("icons/logo/telegram-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--threads::before {
+    background-image: url("icons/logo/threads-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--tiktok::before {
+    background-image: url("icons/logo/cfran--tiktok-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitch::before {
+    background-image: url("icons/logo/twitch-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitter::before {
+    background-image: url("icons/logo/twitter-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitter-x::before {
+    background-image: url("icons/logo/twitter-x-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--vimeo::before {
+    background-image: url("icons/logo/vimeo-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--youtube::before {
+    background-image: url("icons/logo/youtube-fill.svg");
+  }
+
+  .cfran-follow .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-btns-group--lg .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-btns-group--lg .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-follow .cfran-link--facebook::before,
+  .cfran-follow .cfran-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--twitter::before,
+  .cfran-follow .cfran-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--instagram::before,
+  .cfran-follow .cfran-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--linkedin::before,
+  .cfran-follow .cfran-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--youtube::before,
+  .cfran-follow .cfran-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-links-group:not(.cfran-links-group--sm):not(.cfran-links-group--lg) .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-links-group:not(.cfran-links-group--sm):not(.cfran-links-group--lg) .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-links-group--lg .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-links-group--lg .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-follow .cfran-input {
+    background-color: #fff;
+  }
+
+  .cfran-follow__title {
+    color: #161616;
+  }
+
+  .cfran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cfran-follow__social .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:hover,
+  .cfran-follow__social a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:active,
+  .cfran-follow__social a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .cfran-follow__social .cfran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-link:disabled,
+  .cfran-follow__social a.cfran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-link:disabled:hover,
+  .cfran-follow__social a.cfran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-link:disabled:active,
+  .cfran-follow__social a.cfran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password__checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .cfran-password__checkbox input[type=checkbox] {
+    top: -0.5rem;
+  }
+
+  .cfran-password__btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-password__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-password__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password__btn:disabled,
+  a.cfran-password__btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-password__btn:disabled:hover,
+  a.cfran-password__btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-password__btn:disabled:active,
+  a.cfran-password__btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-password [data-cfran-capslock]::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23161616' d='M22.668 0C23.4023 0 24 .5977 24 1.332v21.336c0 .7343-.5977 1.332-1.332 1.332H1.332C.5977 24 0 23.4023 0 22.668V1.332C0 .5977.5977 0 1.332 0Zm-1.336 2.668H2.668v18.664h18.664Zm-4.664 12.664V18H7.332v-2.668ZM12 5.332 16.668 10H14v3.332h-4V10H7.332Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  .cfran-password .cfran-password__checkbox input[type=checkbox] + label {
+    color: #161616;
+  }
+
+  .cfran-header ul {
+    list-style-type: none;
+  }
+
+  .cfran-header ol {
+    list-style-type: none;
+  }
+
+  .cfran-header ul,
+  .cfran-header ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cfran-header [href] {
+    text-decoration: none;
+  }
+
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"]):not(.cfran-btn--display)::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-icon-]::before,
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-icon-"]::before,
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class^=cfran-fi-]::before,
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn[class*=" cfran-fi-"]::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-header .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg):not([class^=cfran-btns-group--icon-]):not([class*=" cfran-btns-group--icon-"]) .cfran-btn.cfran-btn--display::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-header__tools-links .cfran-link {
+    overflow: visible;
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__operator img {
+    height: auto !important;
+  }
+
+  .cfran-header__brand {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cfran-header__service {
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cfran-header__menu-links .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: none;
+  }
+
+  .cfran-header__menu-links .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled,
+  .cfran-header__menu-links a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled:hover,
+  .cfran-header__menu-links a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-btn:disabled:active,
+  .cfran-header__menu-links a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__tools-links .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled,
+  .cfran-header__tools-links a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled:hover,
+  .cfran-header__tools-links a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-btn:disabled:active,
+  .cfran-header__tools-links a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled:hover,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child .cfran-btn:disabled:active,
+  .cfran-header__tools-links > .cfran-translate:first-child:last-child a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-service__title {
+    color: #161616;
+  }
+
+  .cfran-header__navbar .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-header__navbar .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled,
+  .cfran-header__navbar a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled:hover,
+  .cfran-header__navbar a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn:disabled:active,
+  .cfran-header__navbar a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled:hover,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__navbar .cfran-btn--menu:disabled:active,
+  .cfran-header__navbar a.cfran-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header .cfran-modal {
+    background-color: #fff;
+  }
+
+  .cfran-header__menu-links .cfran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-header__menu-links .cfran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__menu-links .cfran-link:disabled,
+  .cfran-header__menu-links a.cfran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-header__menu-links .cfran-link:disabled:hover,
+  .cfran-header__menu-links a.cfran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__menu-links .cfran-link:disabled:active,
+  .cfran-header__menu-links a.cfran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-header__tools-links .cfran-link:disabled,
+  .cfran-header__tools-links a.cfran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-header__tools-links .cfran-link:disabled:hover,
+  .cfran-header__tools-links a.cfran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-header__tools-links .cfran-link:disabled:active,
+  .cfran-header__tools-links a.cfran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .cfran-sidemenu {
+    box-shadow: none;
+  }
+
+  .cfran-sidemenu__title {
+    box-shadow: none;
+  }
+
+  .cfran-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .cfran-sidemenu--right .cfran-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .cfran-tabs__panel > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .cfran-tabs__panel > *:first-child {
+    margin-top: 1.75rem;
+  }
+
+  .cfran-tabs__panel > *:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .cfran-card--download .cfran-card__header {
+    padding-top: 0;
+  }
+
+  .cfran-card--download .cfran-card__body,
+  .cfran-card--horizontal .cfran-card__body,
+  .cfran-card--horizontal-half .cfran-card__body,
+  .cfran-card--horizontal-tier .cfran-card__body {
+    flex-basis: 100%;
+  }
+
+  .cfran-tile--download.cfran-tile--vertical\@md .cfran-tile__body,
+  .cfran-tile--horizontal.cfran-tile--vertical\@md .cfran-tile__body {
+    flex-basis: auto;
+  }
+}
+@media (forced-colors: active) and (-ms-high-contrast: none), (forced-colors: active) and (-ms-high-contrast: active), (prefers-contrast: more) and (-ms-high-contrast: none), (prefers-contrast: more) and (-ms-high-contrast: active) {
+  .cfran-pagination__link[aria-current]:not([aria-current=false]) {
+    border: 1px solid hsl(180, 75%, 25%);
+  }
+}
+@media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
+  /**
+  * Correctif de l'alignement des menus sur la droite
+  */
+  .cfran-nav__item {
+    position: static;
+  }
+
+  .cfran-nav__item--align-right .cfran-collapse {
+    transform: translateX(-100%);
+  }
+
+  /**
+  * Override du reset des marges des ul
+  **/
+  .cfran-menu .cfran-menu__list {
+    margin-bottom: 2rem;
+  }
+
+  .cfran-menu {
+    z-index: 1000;
+  }
+
+  .cfran-menu__list {
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cfran-menu__list > *:first-child,
+  .cfran-menu__list > *:first-child > .cfran-nav__link,
+  .cfran-menu__list > *:hover,
+  .cfran-menu__list > *:hover > .cfran-nav__link,
+  .cfran-menu__list > *:hover + *,
+  .cfran-menu__list > *:hover + * > .cfran-nav__link {
+    box-shadow: none;
+  }
+
+  .cfran-menu .cfran-nav__link {
+    box-shadow: 0 calc(-1rem - 1px) 0 -1rem #ddd;
+  }
+
+  .cfran-mega-menu {
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cfran-mega-menu__category {
+    box-shadow: 0 calc(1rem + 1px) 0 -1rem #ddd;
+  }
+
+  .cfran-header {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cfran-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .cfran-header__service {
+    box-shadow: none;
+  }
+
+  .cfran-header .cfran-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .cfran-tile--download.cfran-tile--vertical\@lg .cfran-tile__body,
+  .cfran-tile--horizontal.cfran-tile--vertical\@lg .cfran-tile__body {
+    flex-basis: auto;
+  }
+
+  .cfran-header .cfran-modal {
+    position: static;
+    overflow: visible;
+  }
+}

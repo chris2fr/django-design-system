@@ -1,0 +1,91 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .cfran-quote--cfran-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cfran-quote--cfran-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cfran-quote__source {
+    color: #666;
+  }
+
+  .cfran-quote__author,
+  .cfran-quote cite,
+  .cfran-quote figcaption li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

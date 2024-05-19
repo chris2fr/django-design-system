@@ -2,11 +2,11 @@ Le bandeau de Lettre d’information et Réseaux Sociaux est géré grâce à un
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "cfran/base.html" %}
+{% extends "django_cfran/base.html" %}
 
 <!-- [...] -->
 {% block follow_newsletter_social_media %}
-  {% include "cfran/follow.html" %}
+  {% include "django_cfran/follow.html" %}
 {% endblock follow_newsletter_social_media %}
 
 ```
@@ -45,7 +45,7 @@ Il est possible de le remplacer par votre propre bloc pour étendre ses capacit�
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "cfran/base.html" %}
+{% extends "django_cfran/base.html" %}
 
 <!-- [...] -->
 {% block follow_newsletter_social_media %}
@@ -56,7 +56,7 @@ Il est possible de le remplacer par votre propre bloc pour étendre ses capacit�
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/blocks/follow.html -->
-{% extends "cfran/follow.html" %}
+{% extends "django_cfran/follow.html" %}
 {% block follow_newsletter %}
   <div class="cfran-col-12">
       <div class="cfran-follow__newsletter">

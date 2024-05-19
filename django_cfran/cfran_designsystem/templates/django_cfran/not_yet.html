@@ -1,0 +1,9 @@
+{% extends "django_cfran/base.html" %}
+{% load static dsfr_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  {% dsfr_callout not_yet %}
+  <br />
+{% endblock content %}

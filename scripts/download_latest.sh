@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # clean the dist directory
-cd cfran/static/cfran/
+cd django_cfran/static/cfran/
 rm dist/* -rf
 
 # Get the latest release

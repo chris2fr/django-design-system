@@ -1,0 +1,117 @@
+{% load i18n static l10n %}
+<header role="banner" class="cfran-header">
+  <div class="cfran-header__menu cfran-modal" id="cfran-menu-mobile" aria-labelledby="cfran-btn-menu-mobile">
+    <div class="cfran-container">
+      <button class="cfran-btn--close cfran-btn" aria-controls="cfran-menu-mobile" title='{% translate "Close" %}'>
+        {% translate "Close" %}
+      </button>
+      <div class="cfran-header__menu-logo">
+        {% block brand %}
+        {% translate "Home page" as home_page %}
+        <a href="{{ home_url }}" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+          {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
+          <div class='cfran-header__operator'>
+            <img class='cfran-responsive-img' src='{{ SITE_CONFIG.operator_logo_file.url }}'
+              alt='{{ SITE_CONFIG.operator_logo_alt }}' {% if SITE_CONFIG.operator_logo_width >= 1 %}
+            style='max-width:{{ SITE_CONFIG.operator_logo_width }}rem;'
+            {% endif %} />
+          </div>
+          {% else %}
+          <p>{{ SITE_CONFIG.site_title }}</p>
+          {% endif %}
+        </a>
+        {% endblock brand %}
+      </div>
+      <div class="cfran-header__menu-links">
+      </div>
+      {% block main_menu %}
+      {% include "django_cfran/blocks/main_menu.html" %}
+      {% endblock main_menu %}
+      <div class="cfran-header__tools-links">
+
+        <ul class="cfran-btns-group">
+          {% block header_tools %}
+          <li>
+            <button class="cfran-btn--display cfran-btn" aria-controls="cfran-theme-modal" data-cfran-opened="false">
+              {% translate "Display settings" %}
+            </button>
+          </li>
+          <li>
+            {% include "django_cfran/blocks/language_selector.html" %}
+          </li>
+
+          {% endblock header_tools %}
+        </ul>
+
+      </div>
+      <div class="cfran-header__service">
+        {% block service_title %}
+        <a href="{{ home_url }}" title="{% translate 'Accueil' %} — {{ SITE_CONFIG.site_title }}">
+          <p class="cfran-header__service-title">
+            {{ SITE_CONFIG.site_title }}
+            {% if SITE_CONFIG.beta_tag %}
+            <span class="cfran-badge cfran-badge--sm cfran-badge--green-emeraude">BETA</span>
+            {% endif %}
+          </p>
+        </a>
+        {% endblock service_title %}
+        <p class="cfran-header__service-tagline">
+          {% block service_tagline %}
+          {{ SITE_CONFIG.site_tagline }}
+          {% endblock service_tagline %}
+        </p>
+      </div>
+
+      {% block header_search %}
+      <div class="cfran-header__search cfran-modal" id="modal-search">
+        <div class="cfran-container cfran-container-lg--fluid">
+          {% translate "Search" as search_label %}
+          {% translate "Close" as close_label %}
+          <button class="cfran-btn--close cfran-btn" aria-controls="modal-search" title="{{ close_label }}">
+            {{ close_label }}
+          </button>
+          <form action="{% url 'page_search' %}" method="get">
+            <div class="cfran-search-bar" id="search-bar" role="search">
+              <label class="cfran-label" for="search-bar-input">
+                {{ search_label }}
+              </label>
+              <input class="cfran-input" placeholder="{{ search_label }}" type="search" id="query" name="q">
+              <button class="cfran-btn" title="{{ search_label }}">
+                {{ search_label }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      {% endblock header_search %}
+
+
+    </div>
+  </div>
+  <div class="cfran-header__body">
+    <div class="cfran-container">
+      <div class="cfran-header__body-row">
+        <div class="cfran-header__brand cfran-enlarge-link">
+          <div class="cfran-header__brand-top">
+            <div class="cfran-header__navbar">
+              {% block burger_menu %}
+              {% translate "Search" as search_label %}
+              <button class="cfran-btn--search cfran-btn" data-cfran-opened="false" aria-controls="modal-search"
+                id="cfran-btn-search-mobile" title="{{ search_label }}">
+                {{ search_label }}
+              </button>
+              {% translate "Menu" as menu_label %}
+              <button class="cfran-btn--menu cfran-btn" data-cfran-opened="false" aria-controls="cfran-menu-mobile"
+                id="cfran-btn-menu-mobile" title="{{ menu_label }}">
+                {{ menu_label }}
+              </button>
+              {% endblock burger_menu %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>

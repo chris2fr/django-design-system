@@ -1,0 +1,252 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cfran-enlarge-link {
+    background-color: transparent;
+  }
+
+  .cfran-enlarge-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-enlarge-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-enlarge-link [href] {
+    text-decoration: none;
+  }
+
+  .cfran-raw-link[href]::after,
+  .cfran-raw-link [href]::after {
+    content: none;
+  }
+
+  [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    vertical-align: sub;
+  }
+
+  .cfran-responsive-vid::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.5rem;
+    color: #161616;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  [class^=cfran-icon-]::before,
+  [class*=" cfran-icon-"]::before,
+  [class^=cfran-fi-]::before,
+  [class*=" cfran-fi-"]::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-icon--xs::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cfran-icon--sm::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cfran-icon--md::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-icon--lg::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-artwork-decorative {
+    fill: hsl(180, 80%, 96%);
+  }
+
+  .cfran-artwork-minor {
+    fill: hsl(270, 85%, 25%);
+  }
+
+  .cfran-artwork-major {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .cfran-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .cfran-artwork--cfran-color3 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color4 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color5 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color6 .cfran-artwork-minor {
+    fill: hsl(290, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color7 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color8 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color9 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color10 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color11 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color12 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color13 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color14 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color15 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color16 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color17 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color18 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color19 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  [disabled] .cfran-artwork * {
+    fill: #929292;
+  }
+
+  .cfran-h6,
+  .cfran-h5,
+  .cfran-h4,
+  .cfran-h3,
+  .cfran-h2,
+  .cfran-h1,
+  .cfran-display-xs,
+  .cfran-display-sm,
+  .cfran-display-md,
+  .cfran-display-lg,
+  .cfran-display-xl {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-hr-or::before,
+  .cfran-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .cfran-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+}

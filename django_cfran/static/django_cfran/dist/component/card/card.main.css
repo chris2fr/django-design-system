@@ -1,0 +1,575 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  CARD
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--background-default-grey);
+
+  --idle: transparent;
+  --hover: var(--background-default-grey-hover);
+  --active: var(--background-default-grey-active);
+}
+
+.cfran-card.cfran-enlarge-link .cfran-card__title a::after {
+  --icon-size: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.cfran-card:not(.cfran-card--no-border):not(.cfran-card--shadow) {
+  background-size: 100% 1px, 1px 100%, 1px 100%, 100% 1px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 100% 100%, 0 0, 100% 0, 100% 0;
+  padding: 1px;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey)), linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey)), linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey)), linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+}
+
+.cfran-card--no-icon .cfran-card__title a:not([target=_blank])::after,
+.cfran-card:not(.cfran-enlarge-link):not(.cfran-card--download) .cfran-card__title a:not([target=_blank])::after {
+  content: none;
+}
+
+.cfran-card__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 1 auto;
+  order: 2;
+  padding: 0 2rem;
+}
+
+.cfran-grid-row .cfran-card {
+  height: 100%;
+}
+
+.cfran-card__header {
+  order: 1;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.cfran-card__header .cfran-badges-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem;
+}
+
+.cfran-card.cfran-enlarge-link:hover .cfran-card__img,
+.cfran-card.cfran-enlarge-link:hover .cfran-card__vid {
+  --brightness: calc(100% + var(--brighten) * 10%);
+}
+
+.cfran-card.cfran-enlarge-link:active .cfran-card__img,
+.cfran-card.cfran-enlarge-link:active .cfran-card__vid {
+  --brightness: calc(100% + var(--brighten) * 20%);
+}
+
+.cfran-card__img,
+.cfran-card__vid {
+  filter: brightness(var(--brightness));
+}
+
+.cfran-card__img img,
+.cfran-card__img svg,
+.cfran-card__vid iframe,
+.cfran-card__vid video {
+  aspect-ratio: 1.7777777778;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.cfran-card__img img {
+  display: block;
+}
+
+.cfran-card__content {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+  margin: 0 -2rem;
+}
+
+.cfran-card__title {
+  order: 2;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--text-title-grey);
+}
+
+.cfran-card__title a::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/arrow-right-line.svg");
+  mask-image: url("../../icons/system/arrow-right-line.svg");
+  --icon-size: 1rem;
+  content: "";
+  margin-left: 0.5rem;
+}
+
+.cfran-card__title [target=_blank]::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/external-link-line.svg");
+  mask-image: url("../../icons/system/external-link-line.svg");
+  --icon-size: 1rem;
+  content: "";
+}
+
+.cfran-card__desc {
+  order: 3;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.cfran-card__start {
+  order: 1;
+  margin-bottom: 0.25rem;
+}
+
+.cfran-card__start .cfran-badges-group,
+.cfran-card__start .cfran-tags-group {
+  margin-bottom: 0.25rem;
+}
+
+.cfran-card__start .cfran-card__detail {
+  margin-bottom: 0.75rem;
+}
+
+.cfran-card__end {
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  height: 100%;
+}
+
+.cfran-card__detail {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 0;
+  color: var(--text-mention-grey);
+}
+
+.cfran-card__detail[class^=cfran-icon-]::before,
+.cfran-card__detail[class*=" cfran-icon-"]::before,
+.cfran-card__detail[class^=cfran-fi-]::before,
+.cfran-card__detail[class*=" cfran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.cfran-card.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__end {
+  margin-bottom: -3rem;
+  min-height: 2rem;
+  padding-right: 2rem;
+  justify-content: flex-end;
+}
+
+.cfran-card.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__content {
+  padding-bottom: 5rem;
+}
+
+.cfran-card__footer {
+  order: 2;
+  padding: 0.5rem 2rem 2rem;
+  margin: 0 -2rem;
+}
+
+.cfran-card__footer .cfran-btns-group,
+.cfran-card__footer .cfran-links-group {
+  margin-bottom: -1rem;
+}
+
+.cfran-card--sm .cfran-card__header .cfran-badge {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+}
+
+.cfran-card--sm .cfran-card__header .cfran-badge::before,
+.cfran-card--sm .cfran-card__header .cfran-badge::after {
+  --icon-size: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__header .cfran-tag {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__header .cfran-tag::before,
+.cfran-card--sm .cfran-card__header .cfran-tag::after {
+  --icon-size: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__content {
+  padding: 1.5rem;
+}
+
+.cfran-card--sm .cfran-card__content .cfran-badge {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+}
+
+.cfran-card--sm .cfran-card__content .cfran-badge::before,
+.cfran-card--sm .cfran-card__content .cfran-badge::after {
+  --icon-size: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__content .cfran-tag {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__content .cfran-tag::before,
+.cfran-card--sm .cfran-card__content .cfran-tag::after {
+  --icon-size: 0.75rem;
+}
+
+.cfran-card--sm .cfran-card__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.cfran-card--sm .cfran-card__title a::after {
+  --icon-size: 1rem;
+}
+
+.cfran-card--sm .cfran-card__desc {
+  margin-top: 0.5rem;
+}
+
+.cfran-card--sm .cfran-card__start .cfran-badges-group,
+.cfran-card--sm .cfran-card__start .cfran-tags-group {
+  margin-bottom: 0;
+}
+
+.cfran-card--sm .cfran-card__start .cfran-card__detail {
+  margin-bottom: 0.5rem;
+}
+
+.cfran-card--sm .cfran-card__end {
+  margin-top: 0.75rem;
+  padding-top: 0.25rem;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.cfran-card--sm.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__end {
+  margin-bottom: -2rem;
+  min-height: 1.25rem;
+  padding-right: 1.5rem;
+}
+
+.cfran-card--sm.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__content {
+  padding-bottom: 3.5rem;
+}
+
+.cfran-card--sm.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__title a::after {
+  --icon-size: 1rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.cfran-card--sm .cfran-card__footer {
+  padding: 0.5rem 1.5rem 1.5rem;
+}
+
+.cfran-card--lg .cfran-card__content {
+  padding: 2.5rem;
+}
+
+.cfran-card--lg .cfran-card__title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.cfran-card--lg .cfran-card__title a::after {
+  --icon-size: 1.5rem;
+}
+
+.cfran-card--lg .cfran-card__desc {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cfran-card--lg .cfran-card__start {
+  margin-bottom: 0.5rem;
+}
+
+.cfran-card--lg .cfran-card__start .cfran-badges-group,
+.cfran-card--lg .cfran-card__start .cfran-tags-group {
+  margin-bottom: 0.5rem;
+}
+
+.cfran-card--lg .cfran-card__start .cfran-card__detail {
+  margin-bottom: 1rem;
+}
+
+.cfran-card--lg.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__end {
+  margin-bottom: -4rem;
+  min-height: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.cfran-card--lg.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__content {
+  padding-bottom: 6.5rem;
+}
+
+.cfran-card--lg.cfran-enlarge-link:not(.cfran-card--no-icon) .cfran-card__title a::after {
+  --icon-size: 2rem;
+  right: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.cfran-card--lg .cfran-card__footer {
+  padding: 0.5rem 2.5rem 2.5rem;
+}
+
+.cfran-card--download .cfran-card__header {
+  aspect-ratio: 16/9;
+}
+
+.cfran-card--download .cfran-card__header .cfran-card__img {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: calc(100% - 1rem);
+  height: calc(100% - 1rem);
+}
+
+.cfran-card--download .cfran-card__header .cfran-card__img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cfran-card--download .cfran-card__title a::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/download-line.svg");
+  mask-image: url("../../icons/system/download-line.svg");
+  content: "";
+}
+
+.cfran-card__body > .cfran-card__detail,
+.cfran-card__body > .cfran-card__title {
+  margin-top: 2rem;
+}
+
+.cfran-card__body > .cfran-card__detail {
+  margin-bottom: -1rem;
+}
+
+.cfran-card__body > .cfran-card__desc,
+.cfran-card__body > .cfran-card__title {
+  margin-bottom: 2rem;
+}
+
+.cfran-card__body > .cfran-card__desc {
+  margin-top: -1rem;
+}
+
+.cfran-card.cfran-enlarge-link:not(.cfran-card--no-arrow) .cfran-card__body > .cfran-card__desc,
+.cfran-card.cfran-enlarge-link:not(.cfran-card--no-arrow) .cfran-card__body > .cfran-card__title {
+  margin-bottom: 4.5rem;
+}
+
+.cfran-card.cfran-enlarge-link:not(.cfran-card--no-arrow) .cfran-card__body > .cfran-card__desc {
+  margin-top: -3.5rem;
+}
+
+.cfran-card--grey {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.cfran-card--shadow {
+  z-index: calc(var(--ground) + 500);
+  background-color: var(--background-raised-grey);
+
+  --idle: transparent;
+  --hover: var(--background-raised-grey-hover);
+  --active: var(--background-raised-grey-active);
+  filter: drop-shadow(var(--raised-shadow));
+}
+
+.cfran-card--shadow.cfran-card--grey {
+  background-color: var(--background-contrast-raised-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-raised-grey-hover);
+  --active: var(--background-contrast-raised-grey-active);
+}
+
+.cfran-card--no-background {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.cfran-card--download:not(.cfran-card--no-background) .cfran-card__header {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.cfran-card__title a[href] {
+  color: var(--text-action-high-cfran-primary);
+}
+
+.cfran-card__title:disabled,
+a.cfran-card__title:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cfran-card__title {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+
+  .cfran-card--sm .cfran-card__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .cfran-card--lg .cfran-card__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .cfran-card--horizontal,
+  .cfran-card--horizontal-half,
+  .cfran-card--horizontal-tier {
+    flex-direction: row;
+  }
+
+  .cfran-card--horizontal .cfran-card__img,
+  .cfran-card--horizontal-half .cfran-card__img,
+  .cfran-card--horizontal-tier .cfran-card__img {
+    height: 100%;
+  }
+
+  .cfran-card--horizontal .cfran-card__img img,
+  .cfran-card--horizontal-half .cfran-card__img img,
+  .cfran-card--horizontal-tier .cfran-card__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cfran-card--horizontal .cfran-card__header {
+    width: 40%;
+    flex: 0 0 40%;
+  }
+
+  .cfran-card--horizontal-half .cfran-card__header {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .cfran-card--horizontal-tier .cfran-card__header {
+    width: 33.3333333333%;
+    flex: 0 0 33.3333333333%;
+  }
+
+  .cfran-card--download {
+    flex-direction: row;
+  }
+
+  .cfran-card--download .cfran-card__header {
+    width: 40%;
+    flex: 0 0 40%;
+    aspect-ratio: auto;
+  }
+
+  .cfran-card--download .cfran-card__header .cfran-card__img img {
+    object-position: 50% 0;
+  }
+
+  .cfran-card--download .cfran-card__img {
+    height: 100%;
+  }
+
+  .cfran-card--download .cfran-card__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media (hover: hover) and (pointer: fine) {
+  .cfran-card--download.cfran-enlarge-link:hover .cfran-card__header {
+    background-color: var(--hover);
+  }
+
+  .cfran-card--download.cfran-enlarge-link:active .cfran-card__header {
+    background-color: var(--active);
+  }
+}

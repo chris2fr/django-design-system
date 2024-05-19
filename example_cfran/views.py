@@ -73,7 +73,7 @@ def init_payload(page_title: str, links: list = []):
                 "see_all",
                 {
                     "title": "Voir tous les composants",
-                    "url": "/django-cfran/components/",
+                    "url": "/django_cfran/components/",
                 },
             )
         ]
@@ -463,7 +463,7 @@ def doc_form(request):
 def resource_icons(request):
     payload = init_payload("Icônes")
 
-    icons_root = "cfran/static/cfran/dist/icons/"
+    icons_root = "django_django_cfran/static/cfran/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
@@ -485,7 +485,7 @@ def resource_icons(request):
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes")
 
-    picto_root = "cfran/static/cfran/dist/artwork/pictograms/"
+    picto_root = "django_django_cfran/static/cfran/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}

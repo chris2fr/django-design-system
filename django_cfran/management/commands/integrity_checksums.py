@@ -9,19 +9,19 @@ from black import format_str, FileMode
 class Command(BaseCommand):
     help = "Updates the integrity checksums for the css/js/favicon files."
 
-    BASE_PATH = Path("cfran/static/cfran/dist")
+    BASE_PATH = Path("django_django_cfran/static/cfran/dist")
 
     def handle(self, *args, **options):
         files = [
             {
-                "path": "cfran/cfran.module.min.js",
+                "path": "django_cfran/cfran.module.min.js",
                 "constant": "INTEGRITY_JS_MODULE",
             },
             {
-                "path": "cfran/cfran.nomodule.min.js",
+                "path": "django_cfran/cfran.nomodule.min.js",
                 "constant": "INTEGRITY_JS_NOMODULE",
             },
-            {"path": "cfran/cfran.min.css", "constant": "INTEGRITY_CSS"},
+            {"path": "django_cfran/cfran.min.css", "constant": "INTEGRITY_CSS"},
             {"path": "utility/utility.min.css", "constant": "INTEGRITY_UTILITY_CSS"},
             {"path": "utility/icons/icons.min.css", "constant": "INTEGRITY_CSS_ICONS"},
             {
@@ -53,7 +53,7 @@ class Command(BaseCommand):
             output_text += f'{constant} = ("{checksum}")\n\n'
 
         output_text = format_str(output_text, mode=FileMode())
-        with open("cfran/checksums.py", "w") as output_file:
+        with open("django_cfran/checksums.py", "w") as output_file:
             output_file.write(output_text)
 
     def calculate_checksum(self, input_content: bytes):

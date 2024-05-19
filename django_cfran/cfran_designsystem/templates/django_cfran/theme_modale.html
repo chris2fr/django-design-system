@@ -1,0 +1,76 @@
+{% load static i18n static %}
+<dialog id="cfran-theme-modal"
+        class="cfran-modal"
+        aria-labelledby="cfran-theme-modal-title">
+  <div class="cfran-container cfran-container--fluid facile-container-md">
+    <div class="cfran-grid-row cfran-grid-row--center">
+      <div class="cfran-col-12 cfran-col-md-6 cfran-col-lg-4">
+        <div class="cfran-modal__body">
+          <div class="cfran-modal__header">
+            <button class="cfran-btn--close cfran-btn"
+                    aria-describedby="cfran-theme-modal-title"
+                    aria-controls="cfran-theme-modal">
+              {% translate "Close" %}
+            </button>
+          </div>
+          <div class="cfran-modal__content">
+            <h1 id="cfran-theme-modal-title" class="cfran-modal__title">
+              {% translate "Display settings" %}
+            </h1>
+            <div id="cfran-display" class="cfran-form-group cfran-display">
+              <div class="cfran-form-group">
+                <fieldset class="cfran-fieldset">
+                  <legend class="cfran-fieldset__legend facile-text--regular" id="-legend">
+                    {% translate "Choose a theme to customize the appearance of the site." %}
+                  </legend>
+                  <div class="cfran-fieldset__content">
+                    <div class="cfran-radio-group cfran-radio-rich">
+                      <input value="light"
+                             type="radio"
+                             id="cfran-radios-theme-light"
+                             name="cfran-radios-theme" />
+                      <label class="cfran-label" for="cfran-radios-theme-light">
+                        {% translate "Light theme" %}
+                      </label>
+                      <div class="cfran-radio-rich__img" data-cfran-inject-svg>
+                        <img src="{% static 'django_cfran/dist/artwork/light.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="cfran-radio-group cfran-radio-rich">
+                      <input value="dark"
+                             type="radio"
+                             id="cfran-radios-theme-dark"
+                             name="cfran-radios-theme" />
+                      <label class="cfran-label" for="cfran-radios-theme-dark">
+                        {% translate "Dark theme" %}
+                      </label>
+                      <div class="cfran-radio-rich__img" data-cfran-inject-svg>
+                        <img src="{% static 'django_cfran/dist/artwork/dark.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="cfran-radio-group cfran-radio-rich">
+                      <input value="system"
+                             type="radio"
+                             id="cfran-radios-theme-system"
+                             name="cfran-radios-theme" />
+                      <label class="cfran-label" for="cfran-radios-theme-system">
+                        {% translate "System" %}
+                        <span class="cfran-hint-text">{% translate "Uses system settings." %}</span>
+                      </label>
+                      <div class="cfran-radio-rich__img" data-cfran-inject-svg>
+                        <img src="{% static 'django_cfran/dist/artwork/system.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

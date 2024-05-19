@@ -1,0 +1,461 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  CALLOUT
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-callout {
+  position: relative;
+  padding: 1.5rem;
+
+  --title-spacing: 0 0 0.5rem;
+  --text-spacing: 0;
+  margin: 0 0 1.5rem;
+  background-size: 0.25rem 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  /**
+   * Inclusion de l'icône (optionnel)
+   */
+
+  /**
+   * Ajout de marge quand on inclut un bouton (optionnel)
+   */
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  background-image: linear-gradient(0deg, var(--border-default-cfran-primary), var(--border-default-cfran-primary));
+}
+
+.cfran-callout[class^=cfran-icon-]::before,
+.cfran-callout[class*=" cfran-icon-"]::before,
+.cfran-callout[class^=cfran-fi-]::before,
+.cfran-callout[class*=" cfran-fi-"]::before {
+  display: block;
+  margin: -0.5rem 0 0.5rem;
+}
+
+.cfran-callout__title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  color: var(--text-title-grey);
+}
+
+.cfran-callout__text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.cfran-callout .cfran-btn {
+  margin-top: 1rem;
+}
+
+.cfran-callout::before {
+  color: var(--text-title-grey);
+}
+
+.cfran-callout--cfran-color3 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color3), var(--border-default-cfran-color3));
+  background-color: var(--background-contrast-cfran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color3-hover);
+  --active: var(--background-contrast-cfran-color3-active);
+}
+
+.cfran-callout--cfran-color4 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color4), var(--border-default-cfran-color4));
+  background-color: var(--background-contrast-cfran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color4-hover);
+  --active: var(--background-contrast-cfran-color4-active);
+}
+
+.cfran-callout--cfran-color5 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color5), var(--border-default-cfran-color5));
+  background-color: var(--background-contrast-cfran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color5-hover);
+  --active: var(--background-contrast-cfran-color5-active);
+}
+
+.cfran-callout--cfran-color6 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color6), var(--border-default-cfran-color6));
+  background-color: var(--background-contrast-cfran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color6-hover);
+  --active: var(--background-contrast-cfran-color6-active);
+}
+
+.cfran-callout--cfran-color7 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color7), var(--border-default-cfran-color7));
+  background-color: var(--background-contrast-cfran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color7-hover);
+  --active: var(--background-contrast-cfran-color7-active);
+}
+
+.cfran-callout--cfran-color8 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color8), var(--border-default-cfran-color8));
+  background-color: var(--background-contrast-cfran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color8-hover);
+  --active: var(--background-contrast-cfran-color8-active);
+}
+
+.cfran-callout--cfran-color9 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color9), var(--border-default-cfran-color9));
+  background-color: var(--background-contrast-cfran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color9-hover);
+  --active: var(--background-contrast-cfran-color9-active);
+}
+
+.cfran-callout--cfran-color10 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color10), var(--border-default-cfran-color10));
+  background-color: var(--background-contrast-cfran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color10-hover);
+  --active: var(--background-contrast-cfran-color10-active);
+}
+
+.cfran-callout--cfran-color11 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color11), var(--border-default-cfran-color11));
+  background-color: var(--background-contrast-cfran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color11-hover);
+  --active: var(--background-contrast-cfran-color11-active);
+}
+
+.cfran-callout--cfran-color12 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color12), var(--border-default-cfran-color12));
+  background-color: var(--background-contrast-cfran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color12-hover);
+  --active: var(--background-contrast-cfran-color12-active);
+}
+
+.cfran-callout--cfran-color13 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color13), var(--border-default-cfran-color13));
+  background-color: var(--background-contrast-cfran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color13-hover);
+  --active: var(--background-contrast-cfran-color13-active);
+}
+
+.cfran-callout--cfran-color14 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color14), var(--border-default-cfran-color14));
+  background-color: var(--background-contrast-cfran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color14-hover);
+  --active: var(--background-contrast-cfran-color14-active);
+}
+
+.cfran-callout--cfran-color15 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color15), var(--border-default-cfran-color15));
+  background-color: var(--background-contrast-cfran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color15-hover);
+  --active: var(--background-contrast-cfran-color15-active);
+}
+
+.cfran-callout--cfran-color16 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color16), var(--border-default-cfran-color16));
+  background-color: var(--background-contrast-cfran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color16-hover);
+  --active: var(--background-contrast-cfran-color16-active);
+}
+
+.cfran-callout--cfran-color17 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color17), var(--border-default-cfran-color17));
+  background-color: var(--background-contrast-cfran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color17-hover);
+  --active: var(--background-contrast-cfran-color17-active);
+}
+
+.cfran-callout--cfran-color18 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color18), var(--border-default-cfran-color18));
+  background-color: var(--background-contrast-cfran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color18-hover);
+  --active: var(--background-contrast-cfran-color18-active);
+}
+
+.cfran-callout--cfran-color19 {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color19), var(--border-default-cfran-color19));
+  background-color: var(--background-contrast-cfran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color19-hover);
+  --active: var(--background-contrast-cfran-color19-active);
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .cfran-callout {
+    padding: 2rem 3rem;
+  }
+
+  .cfran-callout[class^=cfran-icon-]::before,
+  .cfran-callout[class*=" cfran-icon-"]::before,
+  .cfran-callout[class^=cfran-fi-]::before,
+  .cfran-callout[class*=" cfran-fi-"]::before {
+    margin: -1rem 0 1rem -2rem;
+  }
+
+  .cfran-callout__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Marge des titres et textes
+  */
+  .cfran-callout__title {
+    margin: 0 0 0.5rem;
+    color: #161616;
+  }
+
+  .cfran-callout__text {
+    margin: 0;
+  }
+
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+}
+
+@media print {
+  .cfran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cfran-callout::before {
+    color: #161616;
+  }
+
+  .cfran-callout__title {
+    color: #161616;
+  }
+
+  .cfran-callout--cfran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-callout--cfran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+}

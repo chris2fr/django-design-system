@@ -1,0 +1,852 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TABLE
+\* ˍˍˍˍˍˍˍˍˍ */
+.cfran-table {
+  --table-offset: 1rem;
+  --text-spacing: 0;
+  --title-spacing: 0;
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-top: var(--table-offset);
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.cfran-table:not(.cfran-table--no-scroll) table {
+  width: 100%;
+}
+
+.cfran-table table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-spacing: 0;
+}
+
+.cfran-table[data-cfran-js-table=true] caption {
+  position: absolute;
+  top: 0;
+}
+
+.cfran-table caption {
+  position: initial;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-title-grey);
+}
+
+.cfran-table td,
+.cfran-table th {
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+  border: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.cfran-table th {
+  font-weight: 700;
+}
+
+.cfran-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
+}
+
+.cfran-table thead td,
+.cfran-table thead th {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+/*
+* Cache la caption
+*/
+.cfran-table--no-caption {
+  padding-top: 0;
+}
+
+.cfran-table--no-caption caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+  height: 0;
+}
+
+/*
+* Fixe le caption en bas du tableau
+*/
+.cfran-table--caption-bottom {
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.cfran-table--caption-bottom table {
+  margin-bottom: calc(var(--table-offset) + 2.75rem);
+}
+
+.cfran-table--caption-bottom[data-cfran-js-table=true] caption {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.cfran-table--caption-bottom caption {
+  margin-top: 1rem;
+  height: min-content;
+  caption-side: bottom;
+}
+
+/*
+* pas de scroll ni de shadow
+*/
+.cfran-table--no-scroll {
+  min-width: auto;
+}
+
+.cfran-table--no-scroll table {
+  overflow-x: hidden;
+}
+
+.cfran-table--no-scroll caption {
+  max-width: calc(100vw - 2rem);
+}
+
+/*
+* Fixe la taille des colonnes du tableau
+*/
+.cfran-table--layout-fixed table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.cfran-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+}
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+.cfran-table__shadow {
+  /**
+  * Modifier ombre à gauche
+  **/
+
+  /**
+  * Modifier ombre à droite
+  **/
+
+  /**
+  * Modifier combinaison ombre à gauche et ombre à droite
+  **/
+}
+
+.cfran-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: var(--table-offset);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 0 0 #161616, inset 0 0 0 0 #161616;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: box-shadow 0.3s;
+}
+
+.cfran-table__shadow--left::before {
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset 0 0 0 0 #161616;
+}
+
+.cfran-table__shadow--right::before {
+  box-shadow: inset 0 0 0 0 #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+.cfran-table__shadow--left.cfran-table__shadow--right::before {
+  content: "";
+  display: block;
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+/*
+* Positionnement ombres sur le tableau sans caption
+*/
+.cfran-table--no-caption .cfran-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Positionnement ombres sur le tableau avec caption en bas
+*/
+.cfran-table--caption-bottom .cfran-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:root[data-cfran-theme=dark] .cfran-table__shadow::before {
+  opacity: 1;
+}
+
+.cfran-table tbody {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.cfran-table tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.cfran-table--cfran-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color3 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color3), var(--border-plain-cfran-color3));
+  background-color: var(--background-contrast-cfran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color3-hover);
+  --active: var(--background-contrast-cfran-color3-active);
+}
+
+.cfran-table--cfran-color3 tbody {
+  background-color: var(--background-alt-cfran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color3-hover);
+  --active: var(--background-alt-cfran-color3-active);
+}
+
+.cfran-table--cfran-color3 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color3-hover);
+  --active: var(--background-contrast-cfran-color3-active);
+}
+
+.cfran-table--cfran-color3.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color3), var(--border-default-cfran-color3));
+}
+
+.cfran-table--cfran-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color4 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color4), var(--border-plain-cfran-color4));
+  background-color: var(--background-contrast-cfran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color4-hover);
+  --active: var(--background-contrast-cfran-color4-active);
+}
+
+.cfran-table--cfran-color4 tbody {
+  background-color: var(--background-alt-cfran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color4-hover);
+  --active: var(--background-alt-cfran-color4-active);
+}
+
+.cfran-table--cfran-color4 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color4-hover);
+  --active: var(--background-contrast-cfran-color4-active);
+}
+
+.cfran-table--cfran-color4.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color4), var(--border-default-cfran-color4));
+}
+
+.cfran-table--cfran-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color5 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color5), var(--border-plain-cfran-color5));
+  background-color: var(--background-contrast-cfran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color5-hover);
+  --active: var(--background-contrast-cfran-color5-active);
+}
+
+.cfran-table--cfran-color5 tbody {
+  background-color: var(--background-alt-cfran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color5-hover);
+  --active: var(--background-alt-cfran-color5-active);
+}
+
+.cfran-table--cfran-color5 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color5-hover);
+  --active: var(--background-contrast-cfran-color5-active);
+}
+
+.cfran-table--cfran-color5.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color5), var(--border-default-cfran-color5));
+}
+
+.cfran-table--cfran-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color6 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color6), var(--border-plain-cfran-color6));
+  background-color: var(--background-contrast-cfran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color6-hover);
+  --active: var(--background-contrast-cfran-color6-active);
+}
+
+.cfran-table--cfran-color6 tbody {
+  background-color: var(--background-alt-cfran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color6-hover);
+  --active: var(--background-alt-cfran-color6-active);
+}
+
+.cfran-table--cfran-color6 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color6-hover);
+  --active: var(--background-contrast-cfran-color6-active);
+}
+
+.cfran-table--cfran-color6.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color6), var(--border-default-cfran-color6));
+}
+
+.cfran-table--cfran-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color7 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color7), var(--border-plain-cfran-color7));
+  background-color: var(--background-contrast-cfran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color7-hover);
+  --active: var(--background-contrast-cfran-color7-active);
+}
+
+.cfran-table--cfran-color7 tbody {
+  background-color: var(--background-alt-cfran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color7-hover);
+  --active: var(--background-alt-cfran-color7-active);
+}
+
+.cfran-table--cfran-color7 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color7-hover);
+  --active: var(--background-contrast-cfran-color7-active);
+}
+
+.cfran-table--cfran-color7.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color7), var(--border-default-cfran-color7));
+}
+
+.cfran-table--cfran-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color8 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color8), var(--border-plain-cfran-color8));
+  background-color: var(--background-contrast-cfran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color8-hover);
+  --active: var(--background-contrast-cfran-color8-active);
+}
+
+.cfran-table--cfran-color8 tbody {
+  background-color: var(--background-alt-cfran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color8-hover);
+  --active: var(--background-alt-cfran-color8-active);
+}
+
+.cfran-table--cfran-color8 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color8-hover);
+  --active: var(--background-contrast-cfran-color8-active);
+}
+
+.cfran-table--cfran-color8.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color8), var(--border-default-cfran-color8));
+}
+
+.cfran-table--cfran-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color9 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color9), var(--border-plain-cfran-color9));
+  background-color: var(--background-contrast-cfran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color9-hover);
+  --active: var(--background-contrast-cfran-color9-active);
+}
+
+.cfran-table--cfran-color9 tbody {
+  background-color: var(--background-alt-cfran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color9-hover);
+  --active: var(--background-alt-cfran-color9-active);
+}
+
+.cfran-table--cfran-color9 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color9-hover);
+  --active: var(--background-contrast-cfran-color9-active);
+}
+
+.cfran-table--cfran-color9.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color9), var(--border-default-cfran-color9));
+}
+
+.cfran-table--cfran-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color10 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color10), var(--border-plain-cfran-color10));
+  background-color: var(--background-contrast-cfran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color10-hover);
+  --active: var(--background-contrast-cfran-color10-active);
+}
+
+.cfran-table--cfran-color10 tbody {
+  background-color: var(--background-alt-cfran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color10-hover);
+  --active: var(--background-alt-cfran-color10-active);
+}
+
+.cfran-table--cfran-color10 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color10-hover);
+  --active: var(--background-contrast-cfran-color10-active);
+}
+
+.cfran-table--cfran-color10.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color10), var(--border-default-cfran-color10));
+}
+
+.cfran-table--cfran-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color11 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color11), var(--border-plain-cfran-color11));
+  background-color: var(--background-contrast-cfran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color11-hover);
+  --active: var(--background-contrast-cfran-color11-active);
+}
+
+.cfran-table--cfran-color11 tbody {
+  background-color: var(--background-alt-cfran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color11-hover);
+  --active: var(--background-alt-cfran-color11-active);
+}
+
+.cfran-table--cfran-color11 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color11-hover);
+  --active: var(--background-contrast-cfran-color11-active);
+}
+
+.cfran-table--cfran-color11.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color11), var(--border-default-cfran-color11));
+}
+
+.cfran-table--cfran-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color12 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color12), var(--border-plain-cfran-color12));
+  background-color: var(--background-contrast-cfran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color12-hover);
+  --active: var(--background-contrast-cfran-color12-active);
+}
+
+.cfran-table--cfran-color12 tbody {
+  background-color: var(--background-alt-cfran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color12-hover);
+  --active: var(--background-alt-cfran-color12-active);
+}
+
+.cfran-table--cfran-color12 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color12-hover);
+  --active: var(--background-contrast-cfran-color12-active);
+}
+
+.cfran-table--cfran-color12.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color12), var(--border-default-cfran-color12));
+}
+
+.cfran-table--cfran-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color13 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color13), var(--border-plain-cfran-color13));
+  background-color: var(--background-contrast-cfran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color13-hover);
+  --active: var(--background-contrast-cfran-color13-active);
+}
+
+.cfran-table--cfran-color13 tbody {
+  background-color: var(--background-alt-cfran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color13-hover);
+  --active: var(--background-alt-cfran-color13-active);
+}
+
+.cfran-table--cfran-color13 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color13-hover);
+  --active: var(--background-contrast-cfran-color13-active);
+}
+
+.cfran-table--cfran-color13.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color13), var(--border-default-cfran-color13));
+}
+
+.cfran-table--cfran-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color14 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color14), var(--border-plain-cfran-color14));
+  background-color: var(--background-contrast-cfran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color14-hover);
+  --active: var(--background-contrast-cfran-color14-active);
+}
+
+.cfran-table--cfran-color14 tbody {
+  background-color: var(--background-alt-cfran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color14-hover);
+  --active: var(--background-alt-cfran-color14-active);
+}
+
+.cfran-table--cfran-color14 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color14-hover);
+  --active: var(--background-contrast-cfran-color14-active);
+}
+
+.cfran-table--cfran-color14.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color14), var(--border-default-cfran-color14));
+}
+
+.cfran-table--cfran-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color15 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color15), var(--border-plain-cfran-color15));
+  background-color: var(--background-contrast-cfran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color15-hover);
+  --active: var(--background-contrast-cfran-color15-active);
+}
+
+.cfran-table--cfran-color15 tbody {
+  background-color: var(--background-alt-cfran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color15-hover);
+  --active: var(--background-alt-cfran-color15-active);
+}
+
+.cfran-table--cfran-color15 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color15-hover);
+  --active: var(--background-contrast-cfran-color15-active);
+}
+
+.cfran-table--cfran-color15.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color15), var(--border-default-cfran-color15));
+}
+
+.cfran-table--cfran-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color16 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color16), var(--border-plain-cfran-color16));
+  background-color: var(--background-contrast-cfran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color16-hover);
+  --active: var(--background-contrast-cfran-color16-active);
+}
+
+.cfran-table--cfran-color16 tbody {
+  background-color: var(--background-alt-cfran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color16-hover);
+  --active: var(--background-alt-cfran-color16-active);
+}
+
+.cfran-table--cfran-color16 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color16-hover);
+  --active: var(--background-contrast-cfran-color16-active);
+}
+
+.cfran-table--cfran-color16.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color16), var(--border-default-cfran-color16));
+}
+
+.cfran-table--cfran-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color17 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color17), var(--border-plain-cfran-color17));
+  background-color: var(--background-contrast-cfran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color17-hover);
+  --active: var(--background-contrast-cfran-color17-active);
+}
+
+.cfran-table--cfran-color17 tbody {
+  background-color: var(--background-alt-cfran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color17-hover);
+  --active: var(--background-alt-cfran-color17-active);
+}
+
+.cfran-table--cfran-color17 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color17-hover);
+  --active: var(--background-contrast-cfran-color17-active);
+}
+
+.cfran-table--cfran-color17.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color17), var(--border-default-cfran-color17));
+}
+
+.cfran-table--cfran-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color18 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color18), var(--border-plain-cfran-color18));
+  background-color: var(--background-contrast-cfran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color18-hover);
+  --active: var(--background-contrast-cfran-color18-active);
+}
+
+.cfran-table--cfran-color18 tbody {
+  background-color: var(--background-alt-cfran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color18-hover);
+  --active: var(--background-alt-cfran-color18-active);
+}
+
+.cfran-table--cfran-color18 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color18-hover);
+  --active: var(--background-contrast-cfran-color18-active);
+}
+
+.cfran-table--cfran-color18.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color18), var(--border-default-cfran-color18));
+}
+
+.cfran-table--cfran-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cfran-table--cfran-color19 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-cfran-color19), var(--border-plain-cfran-color19));
+  background-color: var(--background-contrast-cfran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color19-hover);
+  --active: var(--background-contrast-cfran-color19-active);
+}
+
+.cfran-table--cfran-color19 tbody {
+  background-color: var(--background-alt-cfran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-alt-cfran-color19-hover);
+  --active: var(--background-alt-cfran-color19-active);
+}
+
+.cfran-table--cfran-color19 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-cfran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cfran-color19-hover);
+  --active: var(--background-contrast-cfran-color19-active);
+}
+
+.cfran-table--cfran-color19.cfran-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-cfran-color19), var(--border-default-cfran-color19));
+}
+
+.cfran-table--bordered tbody tr:nth-child(even) {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cfran-table caption {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .cfran-table td,
+  .cfran-table th {
+    padding: 1rem;
+  }
+
+  .cfran-table thead td,
+  .cfran-table thead th {
+    padding-bottom: 1.125rem;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

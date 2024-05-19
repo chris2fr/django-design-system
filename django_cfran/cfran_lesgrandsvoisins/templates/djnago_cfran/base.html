@@ -1,0 +1,67 @@
+{% load static cfran_tags %}
+<!DOCTYPE html>
+<html lang="{% block lang %}fr{% endblock lang %}"
+      data-cfran-scheme="system"
+      {% if SITE_CONFIG.mourning %}data-cfran-mourning{% endif %}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {% cfran_css %}
+    {% cfran_favicon %}
+
+    {% block extra_css %}
+    {% endblock extra_css %}
+
+    {% block title %}
+      <title>
+        {% if title %}
+          {{ title }} — {{ SITE_CONFIG.site_title }}
+        {% else %}
+          {{ SITE_CONFIG.site_title }}
+        {% endif %}
+      </title>
+    {% endblock title %}
+    <meta name="format-detection"
+          content="telephone=no,date=no,address=no,email=no,url=no">
+
+    {% block opengraph %}
+    {% endblock opengraph %}
+  </head>
+  <body>
+    {% block skiplinks %}
+      {% cfran_skiplinks skiplinks %}
+    {% endblock skiplinks %}
+
+    {% block header %}
+    {% endblock header %}
+
+    {% cfran_theme_modale %}
+
+    {% if SITE_CONFIG.notice %}
+      {% cfran_notice title=SITE_CONFIG.notice %}
+    {% endif %}
+
+    <div class="cfran-container cfran-mt-4w cfran-mb-6w">
+      {% block breadcrumb %}
+        {% cfran_breadcrumb %}
+      {% endblock breadcrumb %}
+      <main id="content" role="main">
+        {% block content %}
+        {% endblock content %}
+      </main>
+    </div>
+
+    {% block follow_newsletter_social_media %}
+    {% endblock follow_newsletter_social_media %}
+
+    {% block footer %}
+      {% include "django_cfran/footer.html" %}
+    {% endblock footer %}
+
+    {% cfran_js nonce=request.csp_nonce %}
+
+    {% block extra_js %}
+    {% endblock extra_js %}
+  </body>
+</html>

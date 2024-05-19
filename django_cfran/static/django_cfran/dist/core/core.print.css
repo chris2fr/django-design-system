@@ -1,0 +1,174 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .cfran-artwork-decorative {
+    fill: hsl(180, 80%, 96%);
+  }
+
+  .cfran-artwork-minor {
+    fill: hsl(270, 85%, 25%);
+  }
+
+  .cfran-artwork-major {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .cfran-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .cfran-artwork--cfran-color3 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color4 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color5 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color6 .cfran-artwork-minor {
+    fill: hsl(290, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color7 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color8 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color9 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color10 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color11 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color12 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color13 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color14 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color15 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color16 .cfran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color17 .cfran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color18 .cfran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cfran-artwork--cfran-color19 .cfran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  [disabled] .cfran-artwork * {
+    fill: #929292;
+  }
+
+  .cfran-h6,
+  .cfran-h5,
+  .cfran-h4,
+  .cfran-h3,
+  .cfran-h2,
+  .cfran-h1,
+  .cfran-display-xs,
+  .cfran-display-sm,
+  .cfran-display-md,
+  .cfran-display-lg,
+  .cfran-display-xl {
+    color: #161616;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1 {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-hr-or::before,
+  .cfran-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .cfran-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cfran-no-print {
+    display: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .cfran-text--sm,
+  .cfran-text--xs {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    margin: var(--text-spacing);
+  }
+}

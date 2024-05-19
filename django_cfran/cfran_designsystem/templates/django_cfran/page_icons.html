@@ -1,0 +1,99 @@
+{% extends "example_app/base.html" %}
+{% load static dsfr_tags %}
+{% block content %}
+  <h1>
+    Icônes
+  </h1>
+  <ul>
+    <li>
+      <a class="cfran-link cfran-icon-external-link-line cfran-link--icon-right cfran-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+    <li>
+      <a class="cfran-link cfran-icon-external-link-line cfran-link--icon-right cfran-link--lg"
+         href="https://main--ds-gouv.netlify.app/example/utility/icons/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="cfran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="cfran-mt-4w">
+    <h2 id="search-icon-by-name">
+      Chercher une icône par son nom
+    </h2>
+
+    <div class="cfran-search-bar" id="icon-filter" role="search">
+      <label class="cfran-label" for="uip-select-input">
+        Chercher une icône
+      </label>
+      <input class="cfran-input"
+             type="text"
+             name="uip-select-input"
+             id="uip-select-input"
+             value=""
+             placeholder="Chercher une icône" />
+    </div>
+
+    <div id="output-icon">
+    </div>
+  </div>
+
+  <div class="cfran-mt-4w">
+    <h2 id="full-icon-list">
+      Liste complète
+    </h2>
+    {% dsfr_summary summary %}
+
+    <p>
+      Cliquer sur une icône ci-dessous pour copier le nom de sa classe.
+    </p>
+    {% for folder, items in icons.items %}
+      <h3 id="{{ folder|slugify }}" tabindex="-1">
+        {{ folder|title }}
+      </h3>
+      <div class="cfran-mb-4w">
+        {% for item in items %}
+          <span class="cfran-icon-{{ item }} click-to-copy"
+                title="cfran-icon-{{ item }}"
+                aria-hidden="true"></span>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock content %}
+{% block extra_js %}
+  <script src="{% static 'django_cfran/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
+
+  <script>
+    const options = {
+      iconLibraries: ['cfran-buildings.json', 'cfran-business.json', 'cfran-communication.json', 'cfran-design.json', 'cfran-development.json', 'cfran-device.json', 'cfran-document.json', 'cfran-editor.json', 'cfran-finance.json', 'cfran-health.json', 'cfran-logo.json', 'cfran-map.json', 'cfran-media.json', 'cfran-others.json', 'cfran-system.json', 'cfran-user.json', 'cfran-weather.json'],
+      allowEmpty: true,
+      onSelect: function (jsonIconData) {
+        document.getElementById('output-icon').innerHTML = "Copié dans le presse-papier : '" +jsonIconData.iconClass + "'";
+        document.getElementById('uip-select-input').value = jsonIconData.iconClass;
+        navigator.clipboard.writeText(jsonIconData.iconClass);
+        },
+        onReset: function () {
+          document.getElementById('output-icon').innerHTML = '';
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function (event) {
+        let _uip = new UniversalIconPicker('#uip-select-input', options);
+    });
+  </script>
+  <script type="text/javascript">
+    let iconSpans = document.getElementsByClassName("click-to-copy");
+    for (let iconSpan of iconSpans) {
+      iconSpan.addEventListener("click", function(){
+        navigator.clipboard.writeText(this.title);
+        alert("Copié dans le presse-papier : '" + this.title + "'")
+      })
+    }
+  </script>
+{% endblock extra_js %}

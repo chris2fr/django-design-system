@@ -23,7 +23,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "cfran/base.html" %}
+{% extends "django_cfran/base.html" %}
 
 <!-- [...] -->
 {% block header %}
@@ -34,7 +34,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```
 <!-- <votre_app>/templates/<votre_app>/blocks/header.html -->
-{% extends "cfran/header.html" %}
+{% extends "django_cfran/header.html" %}
 
 {% block header_search %}
   <div class="cfran-header__search cfran-modal" id="modal-search">
@@ -71,7 +71,7 @@ Un bloc `opengraph`, vide par défaut, est fourni pour permettre d’entrer des 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "cfran/base.html" %}
+{% extends "django_cfran/base.html" %}
 
 <!-- [...] -->
 {% block opengraph }

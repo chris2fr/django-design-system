@@ -1,4 +1,4 @@
-{% extends "example_app/base.html" %}
+{% extends "django_cfran/base.html" %}
 {% load static cfran_tags %}
 {% block content %}
   <h1>
@@ -68,7 +68,7 @@
   </div>
 {% endblock content %}
 {% block extra_js %}
-  <script src="{% static 'django-cfran/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
+  <script src="{% static 'django_cfran/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
 
   <script>
     const options = {

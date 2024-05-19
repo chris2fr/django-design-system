@@ -1,0 +1,75 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-sidemenu {
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+
+    /*
+    @include elevation.elevate(raised, (legacy:$legacy));
+    @include respond-from(md) {
+      @include elevation.drop((legacy:$legacy));
+    }
+     */
+    display: none;
+  }
+
+  .cfran-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item .cfran-sidemenu__link,
+  .cfran-sidemenu__item .cfran-sidemenu__btn {
+    color: #161616;
+  }
+
+  .cfran-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cfran-sidemenu__link,
+  .cfran-sidemenu__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false]),
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .cfran-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+}
+@media print and (min-width: 48em) and (-ms-high-contrast: none), print and (min-width: 48em) and (-ms-high-contrast: active) {
+  .cfran-sidemenu {
+    box-shadow: none;
+  }
+
+  .cfran-sidemenu__title {
+    box-shadow: none;
+  }
+}
+@media print and (min-width: 48em) {
+  .cfran-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .cfran-sidemenu--right .cfran-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+}

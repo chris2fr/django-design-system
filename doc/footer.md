@@ -17,7 +17,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "cfran/base.html" %}
+{% extends "django_cfran/base.html" %}
 
 <!-- [...] -->
 {% block footer %}
@@ -28,7 +28,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```
 <!-- <votre_app>/templates/<votre_app>/blocks/footer.html -->
-{% extends "cfran/footer.html" %}
+{% extends "django_cfran/footer.html" %}
 {% block footer_links %}
   {{ block.super }}
   <li class="cfran-footer__bottom-item">

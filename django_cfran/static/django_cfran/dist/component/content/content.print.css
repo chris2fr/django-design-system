@@ -1,0 +1,25 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-content-media__caption,
+  .cfran-content-media .cfran-link {
+    color: #666;
+  }
+
+  .cfran-content-media__caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cfran-content-media__caption .cfran-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0;
+  }
+
+  .cfran-content-media__caption .cfran-link::before,
+  .cfran-content-media__caption .cfran-link::after {
+    --icon-size: 1rem;
+  }
+}

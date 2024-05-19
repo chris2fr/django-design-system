@@ -24,7 +24,7 @@ class Command(BaseCommand):
                 "accessibility_status": "NOT",
                 "newsletter_description": """Nous n’avons pas de lettre d’information mais vous pouvez trouver
                 les dernières publications sur cette page.""",
-                "newsletter_url": "https://github.com/numerique-gouv/django-cfran/releases",
+                "newsletter_url": "https://github.com/numerique-gouv/django_cfran/releases",
             },
         )
 

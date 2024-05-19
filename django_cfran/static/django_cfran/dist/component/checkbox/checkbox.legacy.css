@@ -1,0 +1,94 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cfran-primary) 4px, var(--border-action-high-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cfran-primary), var(--border-action-high-cfran-primary)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group input[type=checkbox]:checked + label::before {
+  background-color: var(--background-active-cfran-primary);
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-cfran-primary) 4px, var(--border-active-cfran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cfran-primary), var(--border-active-cfran-primary)), var(--data-uri-svg);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cfran-checkbox-group input[type=checkbox]:disabled + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  background-color: var(--background-disabled-grey);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cfran-theme=dark] .cfran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cfran-checkbox-group--error input[type=checkbox] + label::before,
+.cfran-checkbox-group--error input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cfran-checkbox-group--valid input[type=checkbox] + label::before,
+.cfran-checkbox-group--valid input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+
+.cfran-fieldset--error .cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cfran-fieldset--valid .cfran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cfran-checkbox-group input[type=checkbox] {
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  .cfran-fieldset__content .cfran-checkbox-group input[type=checkbox] {
+    margin-top: 1.5rem;
+  }
+
+  .cfran-fieldset__content + .cfran-valid-text,
+  .cfran-fieldset__content + .cfran-error-text {
+    margin-top: 1rem;
+  }
+
+  .cfran-checkbox-group--error input[type=checkbox] + label,
+  .cfran-checkbox-group--error input[type=checkbox]:checked + label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--error::before {
+    background-color: hsl(0, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid input[type=checkbox] + label,
+  .cfran-checkbox-group--valid input[type=checkbox]:checked + label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cfran-checkbox-group--valid::before {
+    background-color: hsl(90, 45%, 43%);
+  }
+}

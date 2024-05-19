@@ -1,0 +1,408 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cfran-table {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table caption {
+    color: #161616;
+  }
+
+  .cfran-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cfran-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .cfran-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .cfran-table--cfran-color3 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color3.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color4 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color4.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color5 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color5.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color6 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color6.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color7 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color7.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color8 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color8.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color9 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color9.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color10 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color10.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color11 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color11.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color12 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color12.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color13 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color13.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color14 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color14.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color15 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color15.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color16 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color16.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color17 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color17.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color18 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color18.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cfran-table--cfran-color19 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .cfran-table--cfran-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cfran-table--cfran-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cfran-table--cfran-color19.cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cfran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+
+    /* Style bordered, enleve le style even/odd  */
+  }
+
+  .cfran-table td,
+  .cfran-table th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cfran-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

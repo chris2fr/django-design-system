@@ -1,0 +1,261 @@
+/*!
+ * CFRAN v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .cfran-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .cfran-follow .cfran-btn--dailymotion::before {
+    background-image: url("../../icons/logo/cfran--dailymotion-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--github::before {
+    background-image: url("../../icons/logo/github-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--instagram::before {
+    background-image: url("../../icons/logo/instagram-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--snapchat::before {
+    background-image: url("../../icons/logo/snapchat-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--telegram::before {
+    background-image: url("../../icons/logo/telegram-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--threads::before {
+    background-image: url("../../icons/logo/threads-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--tiktok::before {
+    background-image: url("../../icons/logo/cfran--tiktok-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitch::before {
+    background-image: url("../../icons/logo/twitch-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--vimeo::before {
+    background-image: url("../../icons/logo/vimeo-fill.svg");
+  }
+
+  .cfran-follow .cfran-btn--youtube::before {
+    background-image: url("../../icons/logo/youtube-fill.svg");
+  }
+
+  .cfran-follow .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-btns-group:not(.cfran-btns-group--sm):not(.cfran-btns-group--lg) .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-btns-group--lg .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-btns-group--lg .cfran-btn:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-follow .cfran-link--facebook::before,
+  .cfran-follow .cfran-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--twitter::before,
+  .cfran-follow .cfran-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--instagram::before,
+  .cfran-follow .cfran-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--linkedin::before,
+  .cfran-follow .cfran-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-link--youtube::before,
+  .cfran-follow .cfran-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-links-group:not(.cfran-links-group--sm):not(.cfran-links-group--lg) .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-links-group:not(.cfran-links-group--sm):not(.cfran-links-group--lg) .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cfran-follow .cfran-links-group--lg .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::before,
+  .cfran-follow .cfran-links-group--lg .cfran-link:not([class^=cfran-icon-]):not([class*=" cfran-icon-"]):not([class^=cfran-fi-]):not([class*=" cfran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cfran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cfran-follow .cfran-input {
+    background-color: #fff;
+  }
+
+  .cfran-follow__title {
+    color: #161616;
+  }
+
+  .cfran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cfran-follow__social .cfran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled,
+  .cfran-follow__social a.cfran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:hover,
+  .cfran-follow__social a.cfran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-btn:disabled:active,
+  .cfran-follow__social a.cfran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .cfran-follow__social .cfran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cfran-follow__social .cfran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cfran-follow__social .cfran-link:disabled,
+  .cfran-follow__social a.cfran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cfran-follow__social .cfran-link:disabled:hover,
+  .cfran-follow__social a.cfran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cfran-follow__social .cfran-link:disabled:active,
+  .cfran-follow__social a.cfran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .cfran-follow .cfran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

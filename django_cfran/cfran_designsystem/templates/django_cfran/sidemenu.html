@@ -1,0 +1,83 @@
+{% load cfran_tags i18n %}
+{% translate "Side menu" as side_menu_label %}
+<nav role="navigation"
+     class="cfran-sidemenu{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+     aria-label="{{ side_menu_label }}"
+     id="cfran-sidemenu"
+     data-cfran-js-sidemenu="true">
+  <div class="cfran-sidemenu__inner">
+    <button type="button"
+            class="cfran-sidemenu__btn"
+            aria-controls="cfran-sidemenu-wrapper"
+            aria-expanded="false">
+      {% translate "In this section" %}
+    </button>
+    <div class="cfran-collapse" id="cfran-sidemenu-wrapper">
+      {% if self.title %}
+        <{{ self.heading_tag|default:"div" }} class="cfran-sidemenu__title">{{ self.title }}</{{ self.heading_tag|default:"div" }}>
+      {% endif %}
+      <ul class="cfran-sidemenu__list">
+        {% for item in self.items %}
+          {# Level 1 #}
+          <li class="cfran-sidemenu__item{% if item.is_active %} cfran-sidemenu__item--active{% endif %}">
+            {% if "items" in item %}
+              {% with "cfran-sidemenu-item"|hyphenate:forloop.counter as item_id %}
+                <button type="button"
+                        class="cfran-sidemenu__btn"
+                        aria-expanded="{% if item.is_active %}true{% else %}false{% endif %}"
+                        aria-controls="{{ item_id }}">
+                  {{ item.label }}
+                </button>
+                <div class="cfran-collapse" id="{{ item_id }}">
+                  <ul class="cfran-sidemenu__list">
+                    {% for sub_item in item.items %}
+                      <li class="cfran-sidemenu__item{% if sub_item.is_active %} cfran-sidemenu__item--active{% endif %}">
+                        {% if "items" in sub_item %}
+                          {# Level 2 #}
+                          {% with "cfran-sidemenu-item"|hyphenate:forloop.parentloop.counter|hyphenate:forloop.counter as sub_item_id %}
+                            <button type="button"
+                                    class="cfran-sidemenu__btn"
+                                    aria-expanded="{% if sub_item.is_active %}true{% else %}false{% endif %}"
+                                    aria-controls="{{ sub_item_id }}">
+                              {{ sub_item.label }}
+                            </button>
+                            <div class="cfran-collapse" id="{{ sub_item_id }}">
+                              <ul class="cfran-sidemenu__list">
+                                {% for lv3_item in sub_item.items %}
+                                  <li class="cfran-sidemenu__item{% if lv3_item.is_active %} cfran-sidemenu__item--active{% endif %}">
+                                    <a class="cfran-sidemenu__link"
+                                       href="{{ lv3_item.link }}"
+                                       target="_self"
+                                       {% if lv3_item.is_active %}aria-current="page"{% endif %}>
+                                      {{ lv3_item.label }}
+                                    </a>
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endwith %}
+                        {% else %}
+                          <a class="cfran-sidemenu__link"
+                             href="{{ sub_item.link }}"
+                             target="_self"
+                             {% if sub_item.is_active %}aria-current="page"{% endif %}>{{ sub_item.label }}</a>
+                        {% endif %}
+                        {# Level 2 #}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endwith %}
+            {% else %}
+              <a class="cfran-sidemenu__link"
+                 href="{{ item.link }}"
+                 target="_self"
+                 {% if item.is_active %}aria-current="page"{% endif %}>{{ item.label }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        {# Level 1 #}
+      </ul>
+    </div>
+  </div>
+</nav>
