@@ -2,16 +2,16 @@
 {% load i18n static %}
 {% url 'index' as home_url %}
 
-{% block brand %}
+{% block not_brand %}
   {% translate "Home page" as home_page %}
   <a href="{{ home_url }}"
      title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
      <img src="{% static 'django_cfran/dist/artwork/logo/logo.svg' %}" class="cfran-logo" alt="logo" />
 
   </a>
-{% endblock brand %}
+{% endblock not_brand %}
 
-{% block service_title %}
+{% block not_service_title %}
   <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
     <p class="cfran-header__service-title">
       {{ SITE_CONFIG.site_title }}
@@ -20,23 +20,24 @@
       {% endif %}
     </p>
   </a>
-{% endblock service_title %}
+{% endblock not_service_title %}
 
-{% block header_tools %}
-  <li>
-    <button class="cfran-btn--display cfran-btn"
-            aria-controls="cfran-theme-modal"
-            data-cfran-opened="false">
-      {% translate "Display settings" %}
-    </button>
-  </li>
-    <li>
-      {% include "django_cfran/blocks/language_selector.html" %}
-    </li>
-{% endblock header_tools %}
+{% block not_header_tools %}
+                <ul class="cfran-btns-group">
+                  <li>
+                    <button class="cfran-btn--display cfran-btn" aria-controls="cfran-theme-modal"
+                      data-cfran-opened="false">
+                      {% translate "Display settings" %}
+                    </button>
+                  </li>
+                  <li>
+                    {% include "django_cfran/blocks/language_selector.html" %}
+                  </li>
+                </ul>
+{% endblock not_header_tools %}
 
 {# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
-{% block burger_menu %}
+{% block not_burger_menu %}
   {% translate "Search" as search_label %}
   <div class="cfran-header__navbar">
     <button class="cfran-btn--search cfran-btn"
@@ -57,13 +58,13 @@
       {{ menu_label }}
     </button>
   </div>
-{% endblock burger_menu %}
+{% endblock not_burger_menu %}
 
-{% block main_menu %}
+{% block not_main_menu %}
   {% include "django_cfran/blocks/main_menu.html" %}
-{% endblock main_menu %}
+{% endblock not_main_menu %}
 
-{% block header_search %}
+{% block not_header_search %}
   {% translate "Search" as search_label %}
   <div class="cfran-header__search cfran-modal" id="modal-search">
     <div class="cfran-container cfran-container-lg--fluid">
@@ -90,4 +91,4 @@
       </form>
     </div>
   </div>
-{% endblock header_search %}
+{% endblock not_header_search %}
