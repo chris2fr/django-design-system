@@ -1,11 +1,11 @@
-{% extends "example_app/base.html" %}
-{% load static dsfr_tags %}
+{% extends "django_cfran/base.html" %}
+{% load static cfran_tags %}
 {% block content %}
   <h1>
     Pictogrammes
   </h1>
   <div class="cfran-mb-4w">
-    {% dsfr_summary summary %}
+    {% cfran_summary summary %}
   </div>
   <ul>
     <li>

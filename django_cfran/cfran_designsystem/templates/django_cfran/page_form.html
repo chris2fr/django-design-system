@@ -1,12 +1,12 @@
-{% extends "example_app/base.html" %}
-{% load static dsfr_tags %}
+{% extends "django_cfran/base.html" %}
+{% load static cfran_tags %}
 {% block content %}
   <h1>
     Exemple de formulaire
   </h1>
   <form action="{% url 'page_form' %}" method="post">
     {% csrf_token %}
-    {% dsfr_form %}
+    {% cfran_form %}
     <div class="cfran-input-group cfran-my-4w">
       <button type="submit" class="cfran-btn" title="Valider">
         Valider ce formulaire

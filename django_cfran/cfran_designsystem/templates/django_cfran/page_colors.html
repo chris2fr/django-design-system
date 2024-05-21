@@ -1,5 +1,5 @@
-{% extends "example_app/base.html" %}
-{% load static dsfr_tags %}
+{% extends "django_cfran/base.html" %}
+{% load static cfran_tags %}
 {% block content %}
   <h1>
     Couleurs
@@ -30,24 +30,24 @@
   </p>
   <div class="cfran-grid-row cfran-grid-row--gutters cfran-mb-4w">
     <div class="cfran-col-12 cfran-col-md-6">
-      {% dsfr_card components_data.card.sample_data.0 %}
+      {% cfran_card components_data.card.sample_data.0 %}
     </div>
     <div class="cfran-col-12 cfran-col-md-6">
-      {% dsfr_card components_data.card.sample_data.0 extra_classes="cfran-card--grey" %}
+      {% cfran_card components_data.card.sample_data.0 extra_classes="cfran-card--grey" %}
     </div>
   </div>
   <div class="cfran-grid-row cfran-grid-row--gutters cfran-mb-4w">
     <div class="cfran-col-12 cfran-col-md-3">
-      {% dsfr_tile components_data.tile.sample_data.0 %}
+      {% cfran_tile components_data.tile.sample_data.0 %}
     </div>
     <div class="cfran-col-12 cfran-col-md-3">
-      {% dsfr_tile components_data.tile.sample_data.0 extra_classes="cfran-tile--grey" %}
+      {% cfran_tile components_data.tile.sample_data.0 extra_classes="cfran-tile--grey" %}
     </div>
     <div class="cfran-col-12 cfran-col-md-3">
-      {% dsfr_tile components_data.tile.sample_data.0 %}
+      {% cfran_tile components_data.tile.sample_data.0 %}
     </div>
     <div class="cfran-col-12 cfran-col-md-3">
-      {% dsfr_tile components_data.tile.sample_data.0 extra_classes="cfran-tile--grey" %}
+      {% cfran_tile components_data.tile.sample_data.0 extra_classes="cfran-tile--grey" %}
     </div>
   </div>
   <h2>
@@ -57,7 +57,7 @@
     Certains composants prennent une couleur d’accentuation comme paramètre. Seules les couleurs illustratives sont prises en compte.
   </p>
   <form class="cfran-mb-4w">
-    {% dsfr_form %}
+    {% cfran_form %}
   </form>
   <div class="example-use">
     <h3>
@@ -66,28 +66,28 @@
     <p>
       Personnalise la couleur de l’icône.
     </p>
-    {% dsfr_quote components_data.quote.sample_data.0 %}
+    {% cfran_quote components_data.quote.sample_data.0 %}
     <h3>
       Mise en avant
     </h3>
     <p>
       Personnalise la couleur du fond et de la bordure.
     </p>
-    {% dsfr_callout components_data.callout.sample_data.0 %}
+    {% cfran_callout components_data.callout.sample_data.0 %}
     <h3>
       Mise en exergue
     </h3>
     <p>
       Personnalise la couleur de la bordure.
     </p>
-    {% dsfr_highlight components_data.highlight.sample_data.0 %}
+    {% cfran_highlight components_data.highlight.sample_data.0 %}
     <h3>
       Tableau
     </h3>
     <p>
       Personnalise la couleur de la bordure et du fond.
     </p>
-    {% dsfr_table components_data.table.sample_data.0 %}
+    {% cfran_table components_data.table.sample_data.0 %}
     <h3>
       Tag
     </h3>
@@ -96,10 +96,10 @@
     </p>
     <ul class="cfran-tags-group">
       <li>
-        {% dsfr_tag components_data.tag.sample_data.1 %}
+        {% cfran_tag components_data.tag.sample_data.1 %}
       </li>
       <li>
-        {% dsfr_tag components_data.tag.sample_data.3 %}
+        {% cfran_tag components_data.tag.sample_data.3 %}
       </li>
     </ul>
   </div>

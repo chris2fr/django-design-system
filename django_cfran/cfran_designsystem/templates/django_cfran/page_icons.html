@@ -1,5 +1,5 @@
-{% extends "example_app/base.html" %}
-{% load static dsfr_tags %}
+{% extends "django_cfran/base.html" %}
+{% load static cfran_tags %}
 {% block content %}
   <h1>
     Icônes
@@ -48,7 +48,7 @@
     <h2 id="full-icon-list">
       Liste complète
     </h2>
-    {% dsfr_summary summary %}
+    {% cfran_summary summary %}
 
     <p>
       Cliquer sur une icône ci-dessous pour copier le nom de sa classe.

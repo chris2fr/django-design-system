@@ -102,7 +102,7 @@ def index(request):
         ]
     )
 
-    return render(request, "example_cfran/index.html", payload)
+    return render(request, "django_cfran/index.html", payload)
 
 
 @require_safe
@@ -140,7 +140,7 @@ def components_index(request):
             md.convert(v["reason"]).replace("<p>", "").replace("</p>", "")
         )
     payload["wont_be"] = wont_be
-    return render(request, "example_cfran/components_index.html", payload)
+    return render(request, "django_cfran/components_index.html", payload)
 
 
 @require_safe
@@ -219,14 +219,14 @@ def page_component(request, tag_name):  # NOSONAR
                 },
             ]
         }
-        return render(request, "example_cfran/page_component.html", payload)
+        return render(request, "django_cfran/page_component.html", payload)
     else:
         payload = init_payload("Non implémenté")
         payload["not_yet"] = {
             "text": "Le contenu recherché n’est pas encore implémenté",
             "title": "Non implémenté",
         }
-        return render(request, "example_cfran/not_yet.html", payload)
+        return render(request, "django_cfran/not_yet.html", payload)
 
 
 @require_safe
@@ -240,7 +240,7 @@ def page_component_header(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -253,7 +253,7 @@ def page_component_footer(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -266,7 +266,7 @@ def page_component_follow(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_follow.html", payload)
+    return render(request, "django_cfran/doc_follow.html", payload)
 
 
 def page_form(request):
@@ -291,7 +291,7 @@ def page_form(request):
     )
     payload["form"] = form
 
-    return render(request, "example_cfran/page_form.html", payload)
+    return render(request, "django_cfran/page_form.html", payload)
 
 
 # /!\ Example view for form and formset
@@ -299,7 +299,7 @@ class CfranAuthorCreateView(CreateView):
     model = CfranAuthor
     form_class = CfranAuthorCreateForm
     formset = None
-    template_name = "example_cfran/example_form.html"
+    template_name = "django_cfran/example_form.html"
     # /!\ Your template needs to extends form_base.html. If you use formset,
     # your template needs to include another template which extends formset_base.html
 
@@ -424,7 +424,7 @@ def doc_contributing(request):
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -435,7 +435,7 @@ def doc_install(request):
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -446,7 +446,7 @@ def doc_usage(request):
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
@@ -456,14 +456,14 @@ def doc_form(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "example_cfran/doc_markdown.html", payload)
+    return render(request, "django_cfran/doc_markdown.html", payload)
 
 
 @require_safe
 def resource_icons(request):
     payload = init_payload("Icônes")
 
-    icons_root = "django_django_cfran/static/cfran/dist/icons/"
+    icons_root = "django_cfran/static/django_cfran/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
@@ -478,14 +478,14 @@ def resource_icons(request):
     payload["icons"] = all_icons
     payload["summary"] = summary
 
-    return render(request, "example_cfran/page_icons.html", payload)
+    return render(request, "django_cfran/page_icons.html", payload)
 
 
 @require_safe
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes")
 
-    picto_root = "django_django_cfran/static/cfran/dist/artwork/pictograms/"
+    picto_root = "django_cfran/static/django_cfran/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}
@@ -499,7 +499,7 @@ def resource_pictograms(request):
     payload["pictograms"] = all_pictos
     payload["summary"] = summary
 
-    return render(request, "example_cfran/page_pictograms.html", payload)
+    return render(request, "django_cfran/page_pictograms.html", payload)
 
 
 @require_safe
@@ -511,11 +511,11 @@ def resource_colors(request):
     payload["form"] = form
     payload["components_data"] = IMPLEMENTED_COMPONENTS
 
-    return render(request, "example_cfran/page_colors.html", payload)
+    return render(request, "django_cfran/page_colors.html", payload)
 
 
 @require_safe
 def search(request):
     payload = init_payload("Recherche")
 
-    return render(request, "example_cfran/search.html", payload)
+    return render(request, "django_cfran/search.html", payload)
