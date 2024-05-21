@@ -71,18 +71,18 @@ urlpatterns = [
         name="page_form",
         distill_file="django_cfran/form/example/index.html",
     ),
-    distill_path(
-        "form/example-formset/",
-        views.AuthorCreateView.as_view(),
-        name="form_formset",
-        distill_file="django_cfran/form/example-formset/index.html",
-    ),
-    distill_path(
-        "resources/colors",
-        views.resource_colors,
-        name="resource_colors",
-        distill_file="django_cfran/resources/colors/index.html",
-    ),
+    # distill_path(
+    #     "form/example-formset/",
+    #     views.AuthorCreateView.as_view(),
+    #     name="form_formset",
+    #     distill_file="django_cfran/form/example-formset/index.html",
+    # ),
+    # distill_path(
+    #     "resources/colors",
+    #     views.resource_colors,
+    #     name="resource_colors",
+    #     distill_file="django_cfran/resources/colors/index.html",
+    # ),
     distill_path(
         "resources/icons",
         views.resource_icons,

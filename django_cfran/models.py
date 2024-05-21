@@ -1,19 +1,14 @@
 import os
-
-
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-
 from django_cfran.constants import DJANGO_CFRAN_LANGUAGES
-
 
 def validate_image_extension(value):
     ext = os.path.splitext(value.name)[1]  # [0] returns path+filename
     valid_extensions = [".jpg", ".jpeg", ".png", ".svg"]
     if ext.lower() not in valid_extensions:
         raise ValidationError("Unsupported file extension.")
-
 
 class CfranConfig(models.Model):
     language = models.CharField(
@@ -33,7 +28,10 @@ class CfranConfig(models.Model):
 
     # Site
     site_title = models.CharField(
-        _("Site title"), max_length=200, default=_("Site title"), blank=True
+        _("Site title"), 
+        max_length=200, 
+        default=_("Site title"), 
+        blank=True
     )
     site_tagline = models.CharField(
         _("Site tagline"), max_length=200, default=_("Site tagline"), blank=True

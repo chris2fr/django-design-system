@@ -14,7 +14,7 @@
           <div class='cfran-header__operator'>
             <img class='cfran-responsive-img' src='{{ SITE_CONFIG.operator_logo_file.url }}'
               alt='{{ SITE_CONFIG.operator_logo_alt }}' {% if SITE_CONFIG.operator_logo_width >= 1 %}
-            style='max-width:{{ SITE_CONFIG.operator_logo_width }}rem;'
+            style='max-width:{{ SITE_CONFIG.operator_logo_width|unlocalize }}rem;'
             {% endif %} />
           </div>
           {% else %}

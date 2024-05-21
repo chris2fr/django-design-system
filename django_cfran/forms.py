@@ -53,3 +53,5 @@ class CfranBaseForm(Form):
         for field in self.errors.keys():
             self.fields[field].widget.attrs.update({"autofocus": ""})
             break
+
+
