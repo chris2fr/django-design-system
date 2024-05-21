@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "csp",
     "widget_tweaks",
-   # "django_cfran.cfran_lesgrandsvoisins",
+    "django_cfran.cfran_lesgrandsvoisins",
     "django_cfran.cfran_designsystem",
     "django_cfran",
     "example_cfran",
