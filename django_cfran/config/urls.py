@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
 from django.views.generic import RedirectView
-
+from django_cfran.urls import urlpatterns as cfran_urlpatterns
 
 urlpatterns = [
     path(
@@ -17,5 +17,8 @@ urlpatterns = [
     # https://numerique-gouv.github.io/django_cfran/
     path("admin/", admin.site.urls),
     path("django_cfran/", include("example_cfran.urls")),
+]
+urlpatterns += cfran_urlpatterns
+urlpatterns += [
     path("", RedirectView.as_view(pattern_name="index", permanent=False)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
