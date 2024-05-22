@@ -1,0 +1,51 @@
+{% load i18n %}
+{% translate "Transcript" as transcript_label %}
+<div class="fastoche-transcription">
+  <button class="fastoche-transcription__btn"
+          aria-expanded="false"
+          aria-controls="fastoche-transcription__collapse-{{ self.id }}">
+    {{ transcript_label }}
+  </button>
+  <div class="fastoche-collapse"
+       id="fastoche-transcription__collapse-{{ self.id }}">
+    <div class="fastoche-transcription__footer">
+      <div class="fastoche-transcription__actions-group">
+        {% translate "Enlarge" as enlarge_label %}
+        <button class="fastoche-btn fastoche-btn--fullscreen"
+                aria-controls="fastoche-transcription-modal-{{ self.id }}"
+                data-fastoche-opened="false"
+                title="{{ enlarge_label }}">
+          {{ enlarge_label }}
+        </button>
+      </div>
+    </div>
+    <dialog id="fastoche-transcription-modal-{{ self.id }}"
+            class="fastoche-modal"
+            role="dialog"
+            aria-labelledby="fastoche-transcription-modal-{{ self.id }}-title">
+      <div class="fastoche-container fastoche-container--fluid facile-container-md">
+        <div class="fastoche-grid-row fastoche-grid-row--center">
+          <div class="fastoche-col-12 fastoche-col-md-10 fastoche-col-lg-8">
+            <div class="fastoche-modal__body">
+              <div class="fastoche-modal__header">
+                {% translate "Close" as close_label %}
+                <button class="fastoche-btn--close fastoche-btn"
+                        aria-controls="fastoche-transcription-modal-{{ self.id }}"
+                        title="{{ close_label }}">
+                  {{ close_label }}
+                </button>
+              </div>
+              <div class="fastoche-modal__content">
+                <h1 id="fastoche-transcription-modal-{{ self.id }}-title"
+                    class="fastoche-modal__title">
+                  {{ self.title|default:transcript_label }}
+                </h1>
+                {{ self.content|safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</div>

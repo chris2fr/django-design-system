@@ -1,9 +1,0 @@
-{% load i18n %}
-<a class="cfran-link{% if self.is_external %} cfran-icon-external-link-line cfran-link--icon-right{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
-   href="{{ self.url }}"
-   {% if self.is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-  {{ self.label }}
-  {% if self.is_external %}
-    <span class="cfran-sr-only">{% translate "Opens a new window" %}</span>
-  {% endif %}
-</a>

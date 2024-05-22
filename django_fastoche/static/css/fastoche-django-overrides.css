@@ -1,0 +1,24 @@
+.errorlist {
+  margin-top: 1rem;
+}
+
+.errorlist .fastoche-error-text {
+  margin-top: 0;
+}
+
+.errorlist.nonfield {
+  padding: 1rem;
+}
+
+.fastoche-header .fastoche-header__menu .fastoche-container {
+  grid-template-areas: "l m t" "h h s";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto
+}
+
+div.fastoche-header__service {
+  grid-area: h;
+}
+div.fastoche-header__search {
+  grid-area: s;
+}

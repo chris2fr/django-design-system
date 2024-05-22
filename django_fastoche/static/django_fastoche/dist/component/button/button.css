@@ -1,0 +1,1707 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  BUTTON
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-btn {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-action-high-fastoche-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-fastoche-primary-hover);
+  --active: var(--background-action-high-fastoche-primary-active);
+  color: var(--text-inverted-fastoche-primary);
+}
+
+.fastoche-btn::before,
+.fastoche-btn::after {
+  display: block;
+}
+
+.fastoche-btn[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--align-on-content {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.fastoche-btn[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.fastoche-btn[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-])::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--align-on-content[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--align-on-content[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--align-on-content[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--align-on-content[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--icon-left[class^=fastoche-icon-]::before,
+.fastoche-btn--icon-left[class*=" fastoche-icon-"]::before,
+.fastoche-btn--icon-left[class^=fastoche-fi-]::before,
+.fastoche-btn--icon-left[class*=" fastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  margin-left: -0.875rem;
+  margin-right: -1rem;
+}
+
+.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--icon-right[class^=fastoche-icon-]::after,
+.fastoche-btn--icon-right[class*=" fastoche-icon-"]::after,
+.fastoche-btn--icon-right[class^=fastoche-fi-]::after,
+.fastoche-btn--icon-right[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--icon-right[class^=fastoche-icon-]::before,
+.fastoche-btn--icon-right[class*=" fastoche-icon-"]::before,
+.fastoche-btn--icon-right[class^=fastoche-fi-]::before,
+.fastoche-btn--icon-right[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  margin-left: -1rem;
+  margin-right: -0.875rem;
+}
+
+.fastoche-btn--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.fastoche-btn--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--align-on-content {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.fastoche-btn--sm[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.fastoche-btn--sm[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--sm[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--sm[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--sm[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-])::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--align-on-content[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm.fastoche-btn--align-on-content[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm.fastoche-btn--align-on-content[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--sm.fastoche-btn--align-on-content[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--sm.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--sm.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--sm.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--sm.fastoche-btn--icon-left[class^=fastoche-icon-]::before,
+.fastoche-btn--sm.fastoche-btn--icon-left[class*=" fastoche-icon-"]::before,
+.fastoche-btn--sm.fastoche-btn--icon-left[class^=fastoche-fi-]::before,
+.fastoche-btn--sm.fastoche-btn--icon-left[class*=" fastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  margin-left: -0.625rem;
+  margin-right: -0.75rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-icon-]::after,
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-icon-"]::after,
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-fi-]::after,
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-icon-]::before,
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-icon-"]::before,
+.fastoche-btn--sm.fastoche-btn--icon-right[class^=fastoche-fi-]::before,
+.fastoche-btn--sm.fastoche-btn--icon-right[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--sm.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  margin-left: -0.75rem;
+  margin-right: -0.625rem;
+}
+
+.fastoche-btn--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.fastoche-btn--lg[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--lg[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--align-on-content {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.fastoche-btn--lg[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.fastoche-btn--lg[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--lg[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--lg[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-])::before,
+.fastoche-btn--lg[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-])::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--align-on-content[class^=fastoche-icon-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg.fastoche-btn--align-on-content[class*=" fastoche-icon-"]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg.fastoche-btn--align-on-content[class^=fastoche-fi-]:not([class*=fastoche-btn--icon-]),
+.fastoche-btn--lg.fastoche-btn--align-on-content[class*=" fastoche-fi-"]:not([class*=fastoche-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--lg.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--lg.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--lg.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--lg.fastoche-btn--icon-left[class^=fastoche-icon-]::before,
+.fastoche-btn--lg.fastoche-btn--icon-left[class*=" fastoche-icon-"]::before,
+.fastoche-btn--lg.fastoche-btn--icon-left[class^=fastoche-fi-]::before,
+.fastoche-btn--lg.fastoche-btn--icon-left[class*=" fastoche-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-icon-],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-icon-"],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-left[class^=fastoche-fi-],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-left[class*=" fastoche-fi-"] {
+  margin-left: -1.3125rem;
+  margin-right: -1.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-icon-]::after,
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-icon-"]::after,
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-fi-]::after,
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-icon-]::before,
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-icon-"]::before,
+.fastoche-btn--lg.fastoche-btn--icon-right[class^=fastoche-fi-]::before,
+.fastoche-btn--lg.fastoche-btn--icon-right[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-icon-],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-icon-"],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-right[class^=fastoche-fi-],
+.fastoche-btn--lg.fastoche-btn--align-on-content.fastoche-btn--icon-right[class*=" fastoche-fi-"] {
+  margin-left: -1.5rem;
+  margin-right: -1.3125rem;
+}
+
+.fastoche-btns-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  /**
+  * fastoche-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * fastoche-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  */
+
+  /**
+  * fastoche-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  */
+
+  /**
+  * fastoche-btns-group--right : aligne les boutons sur la droite
+  */
+
+  /**
+  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * fastoche-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  */
+
+  /**
+  * fastoche-btns-group--sm : Fixe les boutons à la taille SM
+  */
+
+  /**
+  * fastoche-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  */
+
+  /**
+  * fastoche-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  */
+}
+
+.fastoche-btns-group > li,
+.fastoche-btns-group > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.fastoche-btns-group .fastoche-btn {
+  width: calc(100% - 1rem);
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
+}
+
+.fastoche-btns-group--inline .fastoche-btn {
+  width: auto;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group--inline > li {
+  display: inline-flex;
+  max-width: 100%;
+  width: auto;
+}
+
+.fastoche-btns-group--inline.fastoche-btns-group--right.fastoche-btns-group--inline-reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.fastoche-btns-group--left,
+.fastoche-btns-group--left li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.fastoche-btns-group--right,
+.fastoche-btns-group--right li {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.fastoche-btns-group--center,
+.fastoche-btns-group--center li {
+  justify-content: center;
+  text-align: center;
+}
+
+.fastoche-btns-group--between,
+.fastoche-btns-group--between li {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.fastoche-btns-group--equisized {
+  --equisized-width: auto;
+}
+
+.fastoche-btns-group--equisized .fastoche-btn {
+  justify-content: center;
+  width: var(--equisized-width);
+}
+
+.fastoche-btns-group--sm .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"]) {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::after,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::after,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::after,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--sm.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg) .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"]) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg):not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::after,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::after,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::after,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg).fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-btns-group--lg .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"]) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-left .fastoche-btn[class*=" fastoche-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-],
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::after,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::after,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::after,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-icon-]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-icon-"]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class^=fastoche-fi-]::before,
+.fastoche-btns-group--lg.fastoche-btns-group--icon-right .fastoche-btn[class*=" fastoche-fi-"]::before {
+  content: none;
+}
+
+.fastoche-fieldset__element > .fastoche-btns-group {
+  margin-bottom: -1rem;
+}
+
+.fastoche-btn--close {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.fastoche-btn--close::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  content: "";
+}
+
+.fastoche-btn--close::before {
+  content: none;
+}
+
+.fastoche-btn--tooltip {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.fastoche-btn--tooltip::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/question-line.svg");
+  mask-image: url("../../icons/system/question-line.svg");
+  content: "";
+}
+
+.fastoche-btn--fullscreen {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--fullscreen::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/media/fullscreen-line.svg");
+  mask-image: url("../../icons/media/fullscreen-line.svg");
+  content: "";
+}
+
+.fastoche-btn--fullscreen::before {
+  content: none;
+}
+
+.fastoche-btn--display {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--display::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/fastoche--theme-fill.svg");
+  mask-image: url("../../icons/system/fastoche--theme-fill.svg");
+  content: "";
+}
+
+.fastoche-btn--account {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--account::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../icons/user/account-circle-fill.svg");
+  content: "";
+}
+
+.fastoche-btn--team {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--team::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/team-line.svg");
+  mask-image: url("../../icons/user/team-line.svg");
+  content: "";
+}
+
+.fastoche-btn--briefcase {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.fastoche-btn--briefcase::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/business/briefcase-fill.svg");
+  mask-image: url("../../icons/business/briefcase-fill.svg");
+  content: "";
+}
+
+.fastoche-btn:disabled,
+a.fastoche-btn:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.fastoche-btn--secondary {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-fastoche-primary);
+  box-shadow: inset 0 0 0 1px var(--border-action-high-fastoche-primary);
+}
+
+.fastoche-btn--secondary:disabled,
+a.fastoche-btn--secondary:not([href]) {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.fastoche-btn--tertiary,
+.fastoche-btn--account {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-fastoche-primary);
+  box-shadow: inset 0 0 0 1px var(--border-default-grey);
+}
+
+.fastoche-btn--tertiary:disabled,
+a.fastoche-btn--tertiary:not([href]),
+a.fastoche-btn--account:not([href]),
+.fastoche-btn--account:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.fastoche-btn--tertiary-no-outline,
+.fastoche-btn--close,
+.fastoche-btn--display,
+.fastoche-btn--fullscreen,
+.fastoche-btn--tooltip,
+.fastoche-btn--briefcase,
+.fastoche-btn--team {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-fastoche-primary);
+}
+
+.fastoche-btn--tertiary-no-outline:disabled,
+a.fastoche-btn--tertiary-no-outline:not([href]),
+a.fastoche-btn--close:not([href]),
+a.fastoche-btn--display:not([href]),
+a.fastoche-btn--fullscreen:not([href]),
+a.fastoche-btn--tooltip:not([href]),
+a.fastoche-btn--briefcase:not([href]),
+a.fastoche-btn--team:not([href]),
+.fastoche-btn--close:disabled,
+.fastoche-btn--display:disabled,
+.fastoche-btn--fullscreen:disabled,
+.fastoche-btn--tooltip:disabled,
+.fastoche-btn--briefcase:disabled,
+.fastoche-btn--team:disabled {
+  color: var(--text-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+  .fastoche-btns-group--inline-sm .fastoche-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .fastoche-btns-group--inline-sm > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .fastoche-btns-group--inline-sm.fastoche-btns-group--right.fastoche-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .fastoche-btns-group--inline-md .fastoche-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .fastoche-btns-group--inline-md > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .fastoche-btns-group--inline-md.fastoche-btns-group--right.fastoche-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .fastoche-btns-group--inline-lg .fastoche-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .fastoche-btns-group--inline-lg > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .fastoche-btns-group--inline-lg.fastoche-btns-group--right.fastoche-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-btn::before,
+  .fastoche-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn[href] {
+    text-decoration: none;
+  }
+
+  .fastoche-btn[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-btn--sm::before,
+  .fastoche-btn--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .fastoche-btn--sm[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--sm[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--sm[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--sm[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--sm[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--sm[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--sm[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--sm[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--lg::before,
+  .fastoche-btn--lg::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-btn--lg[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--lg[class^=fastoche-icon-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--lg[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--lg[class*=" fastoche-icon-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--lg[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--lg[class^=fastoche-fi-]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after,
+  .fastoche-btn--lg[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::before,
+  .fastoche-btn--lg[class*=" fastoche-fi-"]:not([class^=fastoche-btn--icon-]):not([class*=" fastoche-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fastoche-btn--close::before,
+  .fastoche-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--tooltip::before,
+  .fastoche-btn--tooltip::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/question-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--fullscreen::before,
+  .fastoche-btn--fullscreen::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/fullscreen-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--display::before,
+  .fastoche-btn--display::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--theme-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--briefcase::before,
+  .fastoche-btn--briefcase::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/briefcase-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--account::before,
+  .fastoche-btn--account::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/account-circle-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btn--team::before,
+  .fastoche-btn--team::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/user/team-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  ul.fastoche-btns-group {
+    list-style-type: none;
+  }
+
+  ol.fastoche-btns-group {
+    list-style-type: none;
+  }
+
+  ul.fastoche-btns-group,
+  ol.fastoche-btns-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::before,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::after,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::before,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::after,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::before,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::after,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::before,
+  .fastoche-btns-group--sm:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::before,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-icon-]::after,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::before,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-icon-"]::after,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::before,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class^=fastoche-fi-]::after,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::before,
+  .fastoche-btns-group--lg:not([class^=fastoche-btns-group--icon-]):not([class*=" fastoche-btns-group--icon-"]) .fastoche-btn[class*=" fastoche-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fastoche-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .fastoche-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .fastoche-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .fastoche-btn:disabled,
+  a.fastoche-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-btn--secondary {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .fastoche-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:disabled:hover,
+  a.fastoche-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:disabled:active,
+  a.fastoche-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-btn--tertiary:hover,
+  .fastoche-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:active,
+  .fastoche-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:disabled:hover,
+  a.fastoche-btn--tertiary:not([href]):hover,
+  a.fastoche-btn--account:not([href]):hover,
+  .fastoche-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:disabled:active,
+  a.fastoche-btn--tertiary:not([href]):active,
+  a.fastoche-btn--account:not([href]):active,
+  .fastoche-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-btn--tertiary-no-outline:hover,
+  .fastoche-btn--close:hover,
+  .fastoche-btn--display:hover,
+  .fastoche-btn--fullscreen:hover,
+  .fastoche-btn--tooltip:hover,
+  .fastoche-btn--briefcase:hover,
+  .fastoche-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:active,
+  .fastoche-btn--close:active,
+  .fastoche-btn--display:active,
+  .fastoche-btn--fullscreen:active,
+  .fastoche-btn--tooltip:active,
+  .fastoche-btn--briefcase:active,
+  .fastoche-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:hover,
+  a.fastoche-btn--tertiary-no-outline:not([href]):hover,
+  a.fastoche-btn--close:not([href]):hover,
+  a.fastoche-btn--display:not([href]):hover,
+  a.fastoche-btn--fullscreen:not([href]):hover,
+  a.fastoche-btn--tooltip:not([href]):hover,
+  a.fastoche-btn--briefcase:not([href]):hover,
+  a.fastoche-btn--team:not([href]):hover,
+  .fastoche-btn--close:disabled:hover,
+  .fastoche-btn--display:disabled:hover,
+  .fastoche-btn--fullscreen:disabled:hover,
+  .fastoche-btn--tooltip:disabled:hover,
+  .fastoche-btn--briefcase:disabled:hover,
+  .fastoche-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:active,
+  a.fastoche-btn--tertiary-no-outline:not([href]):active,
+  a.fastoche-btn--close:not([href]):active,
+  a.fastoche-btn--display:not([href]):active,
+  a.fastoche-btn--fullscreen:not([href]):active,
+  a.fastoche-btn--tooltip:not([href]):active,
+  a.fastoche-btn--briefcase:not([href]):active,
+  a.fastoche-btn--team:not([href]):active,
+  .fastoche-btn--close:disabled:active,
+  .fastoche-btn--display:disabled:active,
+  .fastoche-btn--fullscreen:disabled:active,
+  .fastoche-btn--tooltip:disabled:active,
+  .fastoche-btn--briefcase:disabled:active,
+  .fastoche-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print {
+  .fastoche-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .fastoche-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .fastoche-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .fastoche-btn:disabled,
+  a.fastoche-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .fastoche-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    color: #929292;
+  }
+
+  .fastoche-btn--secondary,
+  .fastoche-btn--tertiary,
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .fastoche-btn--secondary {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--secondary:disabled,
+  a.fastoche-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--secondary:disabled:hover,
+  a.fastoche-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--secondary:disabled:active,
+  a.fastoche-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary,
+  .fastoche-btn--account {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:hover,
+  .fastoche-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:active,
+  .fastoche-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary:disabled,
+  a.fastoche-btn--tertiary:not([href]),
+  a.fastoche-btn--account:not([href]),
+  .fastoche-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary:disabled:hover,
+  a.fastoche-btn--tertiary:not([href]):hover,
+  a.fastoche-btn--account:not([href]):hover,
+  .fastoche-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary:disabled:active,
+  a.fastoche-btn--tertiary:not([href]):active,
+  a.fastoche-btn--account:not([href]):active,
+  .fastoche-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline,
+  .fastoche-btn--close,
+  .fastoche-btn--display,
+  .fastoche-btn--fullscreen,
+  .fastoche-btn--tooltip,
+  .fastoche-btn--briefcase,
+  .fastoche-btn--team {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:hover,
+  .fastoche-btn--close:hover,
+  .fastoche-btn--display:hover,
+  .fastoche-btn--fullscreen:hover,
+  .fastoche-btn--tooltip:hover,
+  .fastoche-btn--briefcase:hover,
+  .fastoche-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:active,
+  .fastoche-btn--close:active,
+  .fastoche-btn--display:active,
+  .fastoche-btn--fullscreen:active,
+  .fastoche-btn--tooltip:active,
+  .fastoche-btn--briefcase:active,
+  .fastoche-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled,
+  a.fastoche-btn--tertiary-no-outline:not([href]),
+  a.fastoche-btn--close:not([href]),
+  a.fastoche-btn--display:not([href]),
+  a.fastoche-btn--fullscreen:not([href]),
+  a.fastoche-btn--tooltip:not([href]),
+  a.fastoche-btn--briefcase:not([href]),
+  a.fastoche-btn--team:not([href]),
+  .fastoche-btn--close:disabled,
+  .fastoche-btn--display:disabled,
+  .fastoche-btn--fullscreen:disabled,
+  .fastoche-btn--tooltip:disabled,
+  .fastoche-btn--briefcase:disabled,
+  .fastoche-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:hover,
+  a.fastoche-btn--tertiary-no-outline:not([href]):hover,
+  a.fastoche-btn--close:not([href]):hover,
+  a.fastoche-btn--display:not([href]):hover,
+  a.fastoche-btn--fullscreen:not([href]):hover,
+  a.fastoche-btn--tooltip:not([href]):hover,
+  a.fastoche-btn--briefcase:not([href]):hover,
+  a.fastoche-btn--team:not([href]):hover,
+  .fastoche-btn--close:disabled:hover,
+  .fastoche-btn--display:disabled:hover,
+  .fastoche-btn--fullscreen:disabled:hover,
+  .fastoche-btn--tooltip:disabled:hover,
+  .fastoche-btn--briefcase:disabled:hover,
+  .fastoche-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-btn--tertiary-no-outline:disabled:active,
+  a.fastoche-btn--tertiary-no-outline:not([href]):active,
+  a.fastoche-btn--close:not([href]):active,
+  a.fastoche-btn--display:not([href]):active,
+  a.fastoche-btn--fullscreen:not([href]):active,
+  a.fastoche-btn--tooltip:not([href]):active,
+  a.fastoche-btn--briefcase:not([href]):active,
+  a.fastoche-btn--team:not([href]):active,
+  .fastoche-btn--close:disabled:active,
+  .fastoche-btn--display:disabled:active,
+  .fastoche-btn--fullscreen:disabled:active,
+  .fastoche-btn--tooltip:disabled:active,
+  .fastoche-btn--briefcase:disabled:active,
+  .fastoche-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

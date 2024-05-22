@@ -1,0 +1,18 @@
+{% load fastoche_tags %}
+<div class="fastoche-callout {% if self.icon_class %}{{ self.icon_class }}{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% if self.title %}
+    <{{ self.heading_tag | default:"p" }} class="fastoche-callout__title">
+    {{ self.title }}
+    </{{ self.heading_tag | default:"p" }}>
+  {% endif %}
+  <p class="fastoche-callout__text">
+    {{ self.text }}
+  </p>
+  {% if self.button %}
+    {% if self.button.onclick %}
+      {% fastoche_button self.button %}
+    {% elif self.button.url %}
+      <a href="{{ self.button.url }}" class="fastoche-btn">{{ self.button.label }}</a>
+    {% endif %}
+  {% endif %}
+</div>

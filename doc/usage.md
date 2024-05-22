@@ -1,8 +1,8 @@
 ## Bien commencer
 
-Pour utiliser Django-CFRAN dans votre application après l’installation, vous pouvez commencer à utiliser la balise `{% extends "django_cfran/base.html" %}` dans vos [gabarits Django](https://docs.djangoproject.com/fr/5.0/topics/templates/) et mettre votre contenu dans le bloc `{% block content %}{% endblock content %}`.
+Pour utiliser Django-FASTOCHE dans votre application après l’installation, vous pouvez commencer à utiliser la balise `{% extends "django_fastoche/base.html" %}` dans vos [gabarits Django](https://docs.djangoproject.com/fr/5.0/topics/templates/) et mettre votre contenu dans le bloc `{% block content %}{% endblock content %}`.
 
-Vous pouvez faire appel aux [composants du système de design implémentés](/django_cfran/components/) en appelant la balise `{% load cfran_tags %}` en haut de vos fichiers.
+Vous pouvez faire appel aux [composants du système de design implémentés](/django_fastoche/components/) en appelant la balise `{% load fastoche_tags %}` en haut de vos fichiers.
 
 
 ## Étendre les gabarits de base
@@ -13,7 +13,7 @@ Dans le répertoire de votre application, créez le ficher `<votre_app>/template
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_cfran/base.html" %}
+{% extends "django_fastoche/base.html" %}
 
 {% block header %}
   {% include "<votre_app>/blocks/header.html" %}
@@ -28,16 +28,16 @@ Dans le répertoire de votre application, créez le ficher `<votre_app>/template
 
 Voir la documentation de ces composants :
 
-- [En-tête (header)](/django_cfran/components/header/)
-- [Pied de page (footer)](/django_cfran/components/footer/)
+- [En-tête (header)](/django_fastoche/components/header/)
+- [Pied de page (footer)](/django_fastoche/components/footer/)
 
 ### Remplacer au lieu d’étendre
 
 Dans le cas où les gabarits fournis se révéleraient trop limités, n’hésitez pas à les remplacer complètement par les vôtres. En plus des composants du Système de design de l’État lui-même, vous pouvez alors utiliser certaines balises pour vous faciliter le travail, notamment :
 
-- [CSS global](/django_cfran/components/css/)
-- [JS global](/django_cfran/components/js/)
-- [Messages Django dans une alerte](/django_cfran/components/django_messages/)
+- [CSS global](/django_fastoche/components/css/)
+- [JS global](/django_fastoche/components/js/)
+- [Messages Django dans une alerte](/django_fastoche/components/django_messages/)
 
 
 ## Gestion de la configuration en admin
@@ -55,14 +55,14 @@ TEMPLATES = [
         "OPTIONS": {
             "context_processors": [
                 [...]
-                "cfran.context_processors.site_config",
+                "fastoche.context_processors.site_config",
             ],
         },
     },
 ]
 ```
 
-- Créez un objet "CfranConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
+- Créez un objet "FastocheConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
 
 ## Application d’exemple
-Vous pouvez prendre exemple sur cette application (cf. [code source](https://github.com/numerique-gouv/django_cfran/tree/main/example_cfran)). Elle consiste en un générateur pour la présente documentation. Dans la mesure où celle-ci est hébergée de manière statique, un export est fait automatiquement via <a href="https://github.com/meeb/django-distill">Django-distill</a>.
+Vous pouvez prendre exemple sur cette application (cf. [code source](https://github.com/numerique-gouv/django_fastoche/tree/main/example_fastoche)). Elle consiste en un générateur pour la présente documentation. Dans la mesure où celle-ci est hébergée de manière statique, un export est fait automatiquement via <a href="https://github.com/meeb/django-distill">Django-distill</a>.

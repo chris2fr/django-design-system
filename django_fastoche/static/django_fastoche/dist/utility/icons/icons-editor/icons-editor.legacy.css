@@ -1,0 +1,169 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-icon-code-view::before,
+  .fastoche-icon-code-view::after {
+    background-image: url("../../../icons/editor/code-view.svg");
+  }
+
+  .fastoche-icon-bold::before,
+  .fastoche-icon-bold::after {
+    background-image: url("../../../icons/editor/fastoche--bold.svg");
+  }
+
+  .fastoche-icon-highlight::before,
+  .fastoche-icon-highlight::after {
+    background-image: url("../../../icons/editor/fastoche--highlight.svg");
+  }
+
+  .fastoche-icon-quote-fill::before,
+  .fastoche-icon-quote-fill::after {
+    background-image: url("../../../icons/editor/fastoche--quote-fill.svg");
+  }
+
+  .fastoche-icon-quote-line::before,
+  .fastoche-icon-quote-line::after {
+    background-image: url("../../../icons/editor/fastoche--quote-line.svg");
+  }
+
+  .fastoche-icon-font-size::before,
+  .fastoche-icon-font-size::after {
+    background-image: url("../../../icons/editor/font-size.svg");
+  }
+
+  .fastoche-icon-h-1::before,
+  .fastoche-icon-h-1::after {
+    background-image: url("../../../icons/editor/h-1.svg");
+  }
+
+  .fastoche-icon-h-2::before,
+  .fastoche-icon-h-2::after {
+    background-image: url("../../../icons/editor/h-2.svg");
+  }
+
+  .fastoche-icon-h-3::before,
+  .fastoche-icon-h-3::after {
+    background-image: url("../../../icons/editor/h-3.svg");
+  }
+
+  .fastoche-icon-h-4::before,
+  .fastoche-icon-h-4::after {
+    background-image: url("../../../icons/editor/h-4.svg");
+  }
+
+  .fastoche-icon-h-5::before,
+  .fastoche-icon-h-5::after {
+    background-image: url("../../../icons/editor/h-5.svg");
+  }
+
+  .fastoche-icon-h-6::before,
+  .fastoche-icon-h-6::after {
+    background-image: url("../../../icons/editor/h-6.svg");
+  }
+
+  .fastoche-icon-hashtag::before,
+  .fastoche-icon-hashtag::after {
+    background-image: url("../../../icons/editor/hashtag.svg");
+  }
+
+  .fastoche-icon-italic::before,
+  .fastoche-icon-italic::after {
+    background-image: url("../../../icons/editor/italic.svg");
+  }
+
+  .fastoche-icon-link-unlink::before,
+  .fastoche-icon-link-unlink::after {
+    background-image: url("../../../icons/editor/link-unlink.svg");
+  }
+
+  .fastoche-icon-link::before,
+  .fastoche-icon-link::after {
+    background-image: url("../../../icons/editor/link.svg");
+  }
+
+  .fastoche-icon-list-ordered::before,
+  .fastoche-icon-list-ordered::after {
+    background-image: url("../../../icons/editor/list-ordered.svg");
+  }
+
+  .fastoche-icon-list-unordered::before,
+  .fastoche-icon-list-unordered::after {
+    background-image: url("../../../icons/editor/list-unordered.svg");
+  }
+
+  .fastoche-icon-question-mark::before,
+  .fastoche-icon-question-mark::after {
+    background-image: url("../../../icons/editor/question-mark.svg");
+  }
+
+  .fastoche-icon-separator::before,
+  .fastoche-icon-separator::after {
+    background-image: url("../../../icons/editor/separator.svg");
+  }
+
+  .fastoche-icon-space::before,
+  .fastoche-icon-space::after {
+    background-image: url("../../../icons/editor/space.svg");
+  }
+
+  .fastoche-icon-subscript::before,
+  .fastoche-icon-subscript::after {
+    background-image: url("../../../icons/editor/subscript.svg");
+  }
+
+  .fastoche-icon-superscript::before,
+  .fastoche-icon-superscript::after {
+    background-image: url("../../../icons/editor/superscript.svg");
+  }
+
+  .fastoche-icon-table-2::before,
+  .fastoche-icon-table-2::after {
+    background-image: url("../../../icons/editor/table-2.svg");
+  }
+
+  .fastoche-icon-translate-2::before,
+  .fastoche-icon-translate-2::after {
+    background-image: url("../../../icons/editor/translate-2.svg");
+  }
+
+  .fastoche-fi-bold::before {
+    background-image: url("../../../icons/editor/fastoche--bold.svg");
+  }
+
+  .fastoche-fi-highlight::before {
+    background-image: url("../../../icons/editor/fastoche--highlight.svg");
+  }
+
+  .fastoche-fi-font-size::before {
+    background-image: url("../../../icons/editor/font-size.svg");
+  }
+
+  .fastoche-fi-italic::before {
+    background-image: url("../../../icons/editor/italic.svg");
+  }
+
+  .fastoche-fi-link-unlink::before {
+    background-image: url("../../../icons/editor/link-unlink.svg");
+  }
+
+  .fastoche-fi-list-ordered::before {
+    background-image: url("../../../icons/editor/list-ordered.svg");
+  }
+
+  .fastoche-fi-list-unordered::before {
+    background-image: url("../../../icons/editor/list-unordered.svg");
+  }
+}

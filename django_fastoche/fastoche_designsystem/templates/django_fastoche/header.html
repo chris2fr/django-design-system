@@ -1,0 +1,114 @@
+{% load i18n static l10n %}
+<header role="banner" class="fastoche-header">
+  <div class="fastoche-header__menu fastoche-modal" id="fastoche-menu-mobile" aria-labelledby="fastoche-btn-menu-mobile">
+    <div class="fastoche-container">
+      <button class="fastoche-btn--close fastoche-btn" id="fastoche-menu-close-btn" aria-controls="fastoche-menu-mobile"
+        title='{% translate "Close" %}'>
+        {% translate "Close" %}
+      </button>
+      {% block brand %}
+      <div class="fastoche-header__menu-logo">
+        {% translate "Home page" as home_page %}
+        <a href="{{ home_url }}" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+          {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
+          <div class='fastoche-header__operator'>
+            <img class='fastoche-responsive-img' src='{{ SITE_CONFIG.operator_logo_file.url }}'
+              alt='{{ SITE_CONFIG.operator_logo_alt }}' {% if SITE_CONFIG.operator_logo_width >= 1 %}
+            style='max-width:{{ SITE_CONFIG.operator_logo_width|unlocalize }}rem;'
+            {% endif %} />
+          </div>
+          {% else %}
+          <p>{{ SITE_CONFIG.site_title }}</p>
+          {% endif %}
+        </a>
+      </div>
+      <div class="fastoche-header__menu-links">
+      </div>
+      {% endblock brand %}
+      {% block main_menu %}
+      {% include "django_fastoche/blocks/main_menu.html" %}
+    </div>
+  </div>
+      {% endblock main_menu %}
+      <div class="fastoche-header__body">
+        <div class="fastoche-container">
+          <div class="fastoche-header__body-row">
+            <div class="fastoche-header__brand fastoche-enlarge-link">
+              {% block burger_menu %}
+              <div class="fastoche-header__brand-top">
+                <div class="fastoche-header__navbar">
+                  {% translate "Search" as search_label %}
+                  <button class="fastoche-btn--search fastoche-btn" data-fastoche-opened="false" aria-controls="modal-search"
+                    id="fastoche-btn-search-mobile" title="{{ search_label }}">
+                    {{ search_label }}
+                  </button>
+                  {% translate "Menu" as menu_label %}
+                  <button class="fastoche-btn--menu fastoche-btn" data-fastoche-opened="false" aria-controls="fastoche-menu-mobile"
+                    id="fastoche-btn-menu-mobile" title="{{ menu_label }}">
+                    {{ menu_label }}
+                  </button>
+                </div>
+              </div>
+              {% endblock burger_menu %}
+              <div class="fastoche-header__service">
+                {% block service_title %}
+                <a href="{{ home_url }}" title="{% translate 'Accueil' %} — {{ SITE_CONFIG.site_title }}">
+                  <p class="fastoche-header__service-title">
+                    {{ SITE_CONFIG.site_title }}
+                    {% if SITE_CONFIG.beta_tag %}
+                    <span class="fastoche-badge fastoche-badge--sm fastoche-badge--green-emeraude">BETA</span>
+                    {% endif %}
+                  </p>
+                </a>
+                {% endblock service_title %}
+                <p class="fastoche-header__service-tagline">
+                  {% block service_tagline %}
+                  {{ SITE_CONFIG.site_tagline }}
+                  {% endblock service_tagline %}
+                </p>
+              </div>
+              <div class="fastoche-header__tools">
+                {% block header_search %}
+                <div class="fastoche-header__search fastoche-modal" id="modal-search"
+                  aria-labelledby="fastoche-btn-search-mobile">
+                  <div class="fastoche-container fastoche-container-lg--fluid">
+                    {% translate "Search" as search_label %}
+                    {% translate "Close" as close_label %}
+                    <button class="fastoche-btn--close fastoche-btn" aria-controls="modal-search" title="{{ close_label }}">
+                      {{ close_label }}
+                    </button>
+                    <form action="{% url 'page_search' %}" method="get">
+                      <div class="fastoche-search-bar" id="search-bar" role="search">
+                        <label class="fastoche-label" for="search-bar-input">
+                          {{ search_label }}
+                        </label>
+                        <input class="fastoche-input" placeholder="{{ search_label }}" type="search" id="query" name="q">
+                        <button class="fastoche-btn" title="{{ search_label }}">
+                          {{ search_label }}
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              {% endblock header_search %}
+              <div class="fastoche-header__tools-links">
+                {% block header_tools %}
+                <ul class="fastoche-btns-group">
+                  <li>
+                    <button class="fastoche-btn--display fastoche-btn" aria-controls="fastoche-theme-modal"
+                      data-fastoche-opened="false">
+                      {% translate "Display settings" %}
+                    </button>
+                  </li>
+                  <li>
+                    {% include "django_fastoche/blocks/language_selector.html" %}
+                  </li>
+                </ul>
+                {% endblock header_tools %}
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</header>

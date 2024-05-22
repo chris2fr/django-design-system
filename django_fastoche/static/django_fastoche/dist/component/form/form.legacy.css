@@ -1,0 +1,207 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .fastoche-message--error::before,
+  .fastoche-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-message--valid::before,
+  .fastoche-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-message--info::before,
+  .fastoche-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-select-group--valid label,
+  .fastoche-input-group--valid label,
+  .fastoche-range-group--valid label,
+  .fastoche-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .fastoche-select-group--error label,
+  .fastoche-input-group--error label,
+  .fastoche-range-group--error label,
+  .fastoche-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .fastoche-select-group--info label,
+  .fastoche-input-group--info label,
+  .fastoche-range-group--info label,
+  .fastoche-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .fastoche-select-group--disabled label,
+  .fastoche-select-group--disabled .fastoche-hint-text,
+  .fastoche-input-group--disabled label,
+  .fastoche-input-group--disabled .fastoche-hint-text,
+  .fastoche-range-group--disabled label,
+  .fastoche-range-group--disabled .fastoche-hint-text,
+  .fastoche-upload-group--disabled label,
+  .fastoche-upload-group--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-label {
+    color: #161616;
+  }
+
+  .fastoche-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .fastoche-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .fastoche-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .fastoche-label--disabled,
+  .fastoche-label--disabled .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-hint-text,
+  .fastoche-message {
+    color: #666;
+  }
+
+  .fastoche-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .fastoche-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .fastoche-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .fastoche-fieldset:disabled .fastoche-label,
+  .fastoche-fieldset:disabled .fastoche-hint-text,
+  .fastoche-fieldset:disabled .fastoche-fieldset__legend {
+    color: #929292;
+  }
+
+  .fastoche-fieldset input:disabled + label,
+  .fastoche-fieldset input:disabled + label .fastoche-hint-text,
+  .fastoche-fieldset input:disabled + label + .fastoche-hint-text {
+    color: #929292;
+  }
+
+  .fastoche-fieldset--error,
+  .fastoche-fieldset--error .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .fastoche-fieldset--error .fastoche-fieldset__legend,
+  .fastoche-fieldset--error .fastoche-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .fastoche-fieldset--valid,
+  .fastoche-fieldset--valid .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .fastoche-fieldset--valid .fastoche-fieldset__legend,
+  .fastoche-fieldset--valid .fastoche-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .fastoche-fieldset--info,
+  .fastoche-fieldset--info .fastoche-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .fastoche-fieldset--info .fastoche-fieldset__legend,
+  .fastoche-fieldset--info .fastoche-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .fastoche-error-text::before,
+  .fastoche-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-valid-text::before,
+  .fastoche-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/fastoche--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fastoche-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .fastoche-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .fastoche-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .fastoche-fieldset--valid .fastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .fastoche-fieldset--error .fastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .fastoche-fieldset--info .fastoche-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+}

@@ -1,0 +1,261 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .fastoche-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .fastoche-follow .fastoche-btn--dailymotion::before {
+    background-image: url("../../icons/logo/fastoche--dailymotion-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--github::before {
+    background-image: url("../../icons/logo/github-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--instagram::before {
+    background-image: url("../../icons/logo/instagram-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--snapchat::before {
+    background-image: url("../../icons/logo/snapchat-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--telegram::before {
+    background-image: url("../../icons/logo/telegram-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--threads::before {
+    background-image: url("../../icons/logo/threads-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--tiktok::before {
+    background-image: url("../../icons/logo/fastoche--tiktok-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--twitch::before {
+    background-image: url("../../icons/logo/twitch-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--vimeo::before {
+    background-image: url("../../icons/logo/vimeo-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btn--youtube::before {
+    background-image: url("../../icons/logo/youtube-fill.svg");
+  }
+
+  .fastoche-follow .fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg) .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::before,
+  .fastoche-follow .fastoche-btns-group:not(.fastoche-btns-group--sm):not(.fastoche-btns-group--lg) .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-btns-group--lg .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::before,
+  .fastoche-follow .fastoche-btns-group--lg .fastoche-btn:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fastoche-follow .fastoche-link--facebook::before,
+  .fastoche-follow .fastoche-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-link--twitter::before,
+  .fastoche-follow .fastoche-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-link--instagram::before,
+  .fastoche-follow .fastoche-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-link--linkedin::before,
+  .fastoche-follow .fastoche-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-link--youtube::before,
+  .fastoche-follow .fastoche-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-links-group:not(.fastoche-links-group--sm):not(.fastoche-links-group--lg) .fastoche-link:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::before,
+  .fastoche-follow .fastoche-links-group:not(.fastoche-links-group--sm):not(.fastoche-links-group--lg) .fastoche-link:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .fastoche-follow .fastoche-links-group--lg .fastoche-link:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::before,
+  .fastoche-follow .fastoche-links-group--lg .fastoche-link:not([class^=fastoche-icon-]):not([class*=" fastoche-icon-"]):not([class^=fastoche-fi-]):not([class*=" fastoche-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fastoche-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .fastoche-follow .fastoche-input {
+    background-color: #fff;
+  }
+
+  .fastoche-follow__title {
+    color: #161616;
+  }
+
+  .fastoche-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .fastoche-follow__social .fastoche-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-follow__social .fastoche-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled,
+  .fastoche-follow__social a.fastoche-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled:hover,
+  .fastoche-follow__social a.fastoche-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-btn:disabled:active,
+  .fastoche-follow__social a.fastoche-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-follow .fastoche-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .fastoche-follow__social .fastoche-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-follow__social .fastoche-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fastoche-follow__social .fastoche-link:disabled,
+  .fastoche-follow__social a.fastoche-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .fastoche-follow__social .fastoche-link:disabled:hover,
+  .fastoche-follow__social a.fastoche-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .fastoche-follow__social .fastoche-link:disabled:active,
+  .fastoche-follow__social a.fastoche-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .fastoche-follow .fastoche-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

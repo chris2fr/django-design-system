@@ -1,0 +1,18 @@
+{% if widget.attrs.fastoche == "fastoche" %}
+  <div class="fastoche-radio-group">
+  {% endif %}
+  {% include "django/forms/widgets/input.html" %}
+  {% if widget.wrap_label %}
+    <label class="fastoche-label"
+           {% if widget.attrs.id %}for="{{ widget.attrs.id }}"{% endif %}>
+      {% if widget.label.label %}
+        {{ widget.label.label }}
+        <span class="fastoche-hint-text">{{ widget.label.help_text }}</span>
+      {% else %}
+        {{ widget.label }}
+      {% endif %}
+    </label>
+  {% endif %}
+  {% if widget.attrs.fastoche == "fastoche" %}
+  </div>
+{% endif %}

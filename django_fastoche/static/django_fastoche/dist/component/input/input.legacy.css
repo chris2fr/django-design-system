@@ -1,0 +1,94 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.fastoche-input:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-input-wrap--addon .fastoche-btn {
+    flex-shrink: 0;
+  }
+
+  .fastoche-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .fastoche-input::placeholder {
+    color: #666;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .fastoche-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .fastoche-input:autofill,
+  .fastoche-input:autofill:hover,
+  .fastoche-input:autofill:focus,
+  .fastoche-input:-webkit-autofill,
+  .fastoche-input:-webkit-autofill:hover,
+  .fastoche-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .fastoche-fieldset--valid .fastoche-input,
+  .fastoche-fieldset--valid .fastoche-input-wrap--addon > .fastoche-input:not(:last-child),
+  .fastoche-input-group--valid .fastoche-input,
+  .fastoche-input-group--valid .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .fastoche-fieldset--error .fastoche-input,
+  .fastoche-fieldset--error .fastoche-input-wrap--addon > .fastoche-input:not(:last-child),
+  .fastoche-input-group--error .fastoche-input,
+  .fastoche-input-group--error .fastoche-input-wrap--addon > .fastoche-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .fastoche-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .fastoche-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .fastoche-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+}

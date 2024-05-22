@@ -1,0 +1,1828 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .fastoche-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .fastoche-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .fastoche-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .fastoche-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .fastoche-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .fastoche-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .fastoche-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .fastoche-background-flat--fastoche-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .fastoche-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-title--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-title--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-label--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .fastoche-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .fastoche-text-inverted--fastoche-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-action-high--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .fastoche-artwork-background--fastoche-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+}

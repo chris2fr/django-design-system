@@ -1,0 +1,76 @@
+{% load static i18n static %}
+<dialog id="fastoche-theme-modal"
+        class="fastoche-modal"
+        aria-labelledby="fastoche-theme-modal-title">
+  <div class="fastoche-container fastoche-container--fluid facile-container-md">
+    <div class="fastoche-grid-row fastoche-grid-row--center">
+      <div class="fastoche-col-12 fastoche-col-md-6 fastoche-col-lg-4">
+        <div class="fastoche-modal__body">
+          <div class="fastoche-modal__header">
+            <button class="fastoche-btn--close fastoche-btn"
+                    aria-describedby="fastoche-theme-modal-title"
+                    aria-controls="fastoche-theme-modal">
+              {% translate "Close" %}
+            </button>
+          </div>
+          <div class="fastoche-modal__content">
+            <h1 id="fastoche-theme-modal-title" class="fastoche-modal__title">
+              {% translate "Display settings" %}
+            </h1>
+            <div id="fastoche-display" class="fastoche-form-group fastoche-display">
+              <div class="fastoche-form-group">
+                <fieldset class="fastoche-fieldset">
+                  <legend class="fastoche-fieldset__legend facile-text--regular" id="-legend">
+                    {% translate "Choose a theme to customize the appearance of the site." %}
+                  </legend>
+                  <div class="fastoche-fieldset__content">
+                    <div class="fastoche-radio-group fastoche-radio-rich">
+                      <input value="light"
+                             type="radio"
+                             id="fastoche-radios-theme-light"
+                             name="fastoche-radios-theme" />
+                      <label class="fastoche-label" for="fastoche-radios-theme-light">
+                        {% translate "Light theme" %}
+                      </label>
+                      <div class="fastoche-radio-rich__img" data-fastoche-inject-svg>
+                        <img src="{% static 'django_fastoche/dist/artwork/light.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="fastoche-radio-group fastoche-radio-rich">
+                      <input value="dark"
+                             type="radio"
+                             id="fastoche-radios-theme-dark"
+                             name="fastoche-radios-theme" />
+                      <label class="fastoche-label" for="fastoche-radios-theme-dark">
+                        {% translate "Dark theme" %}
+                      </label>
+                      <div class="fastoche-radio-rich__img" data-fastoche-inject-svg>
+                        <img src="{% static 'django_fastoche/dist/artwork/dark.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="fastoche-radio-group fastoche-radio-rich">
+                      <input value="system"
+                             type="radio"
+                             id="fastoche-radios-theme-system"
+                             name="fastoche-radios-theme" />
+                      <label class="fastoche-label" for="fastoche-radios-theme-system">
+                        {% translate "System" %}
+                        <span class="fastoche-hint-text">{% translate "Uses system settings." %}</span>
+                      </label>
+                      <div class="fastoche-radio-rich__img" data-fastoche-inject-svg>
+                        <img src="{% static 'django_fastoche/dist/artwork/system.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

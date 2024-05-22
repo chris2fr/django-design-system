@@ -1,0 +1,461 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  QUOTE
+\* ˍˍˍˍˍˍˍˍˍ */
+.fastoche-quote {
+  position: relative;
+  margin: 0;
+  padding: 0 0.5rem 2rem 0.5rem;
+  background-size: 50% 1px;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 100%;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+}
+
+.fastoche-quote::before,
+.fastoche-quote::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/editor/fastoche--quote-line.svg");
+  mask-image: url("../../icons/editor/fastoche--quote-line.svg");
+  --icon-size: 2rem;
+}
+
+.fastoche-quote::before {
+  content: "";
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--artwork-minor-fastoche-primary);
+}
+
+.fastoche-quote--column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.fastoche-quote--column .fastoche-quote__author {
+  margin-left: 5.25rem;
+}
+
+.fastoche-quote--column .fastoche-quote__source {
+  margin-left: 5.25rem;
+}
+
+.fastoche-quote--column figcaption {
+  min-height: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.fastoche-quote blockquote {
+  margin: 0;
+
+  --text-spacing: 0 0 1rem;
+}
+
+.fastoche-quote blockquote p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.fastoche-quote__author {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  --text-spacing: 0 0 0.25rem;
+}
+
+.fastoche-quote__image {
+  width: 4.25rem;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.fastoche-quote__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.fastoche-quote cite {
+  font-style: italic;
+}
+
+.fastoche-quote figcaption {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+}
+
+.fastoche-quote figcaption .fastoche-quote__source {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.fastoche-quote figcaption .fastoche-quote__source li {
+  display: inline-block;
+}
+
+.fastoche-quote figcaption .fastoche-quote__source li:not(:last-child)::after {
+  content: "·";
+  display: inline-block;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.fastoche-quote--fastoche-color3::before {
+  color: var(--artwork-minor-fastoche-color3);
+}
+
+.fastoche-quote--fastoche-color4::before {
+  color: var(--artwork-minor-fastoche-color4);
+}
+
+.fastoche-quote--fastoche-color5::before {
+  color: var(--artwork-minor-fastoche-color5);
+}
+
+.fastoche-quote--fastoche-color6::before {
+  color: var(--artwork-minor-fastoche-color6);
+}
+
+.fastoche-quote--fastoche-color7::before {
+  color: var(--artwork-minor-fastoche-color7);
+}
+
+.fastoche-quote--fastoche-color8::before {
+  color: var(--artwork-minor-fastoche-color8);
+}
+
+.fastoche-quote--fastoche-color9::before {
+  color: var(--artwork-minor-fastoche-color9);
+}
+
+.fastoche-quote--fastoche-color10::before {
+  color: var(--artwork-minor-fastoche-color10);
+}
+
+.fastoche-quote--fastoche-color11::before {
+  color: var(--artwork-minor-fastoche-color11);
+}
+
+.fastoche-quote--fastoche-color12::before {
+  color: var(--artwork-minor-fastoche-color12);
+}
+
+.fastoche-quote--fastoche-color13::before {
+  color: var(--artwork-minor-fastoche-color13);
+}
+
+.fastoche-quote--fastoche-color14::before {
+  color: var(--artwork-minor-fastoche-color14);
+}
+
+.fastoche-quote--fastoche-color15::before {
+  color: var(--artwork-minor-fastoche-color15);
+}
+
+.fastoche-quote--fastoche-color16::before {
+  color: var(--artwork-minor-fastoche-color16);
+}
+
+.fastoche-quote--fastoche-color17::before {
+  color: var(--artwork-minor-fastoche-color17);
+}
+
+.fastoche-quote--fastoche-color18::before {
+  color: var(--artwork-minor-fastoche-color18);
+}
+
+.fastoche-quote--fastoche-color19::before {
+  color: var(--artwork-minor-fastoche-color19);
+}
+
+.fastoche-quote__source {
+  color: var(--text-mention-grey);
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .fastoche-quote {
+    padding: 0 0 0 2rem;
+    background-size: 1px 100%;
+    background-position: 0 0;
+  }
+
+  .fastoche-quote--column {
+    margin-left: 13.5rem;
+    min-height: 13rem;
+  }
+
+  .fastoche-quote--column .fastoche-quote__author {
+    margin-left: 0;
+  }
+
+  .fastoche-quote--column .fastoche-quote__source {
+    margin-left: 0;
+  }
+
+  .fastoche-quote--column figcaption {
+    min-height: auto;
+  }
+
+  .fastoche-quote__image {
+    position: absolute;
+    top: 50%;
+    left: -13.5rem;
+    width: 11.5rem;
+    height: 11.5rem;
+    margin-top: -5.75rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correction largeur max du texte
+  */
+  .fastoche-quote::before,
+  .fastoche-quote::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/editor/fastoche--quote-line.svg");
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul.fastoche-quote__source {
+    list-style-type: none;
+  }
+
+  ol.fastoche-quote__source {
+    list-style-type: none;
+  }
+
+  ul.fastoche-quote__source,
+  ol.fastoche-quote__source {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fastoche-quote blockquote {
+    max-width: 100%;
+  }
+
+  .fastoche-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-quote__source {
+    color: #666;
+  }
+}
+
+@media print {
+  .fastoche-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .fastoche-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .fastoche-quote--fastoche-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .fastoche-quote__source {
+    color: #666;
+  }
+
+  .fastoche-quote__author,
+  .fastoche-quote cite,
+  .fastoche-quote figcaption li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

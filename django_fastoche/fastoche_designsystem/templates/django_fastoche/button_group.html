@@ -1,0 +1,8 @@
+{% load fastoche_tags %}
+<ul class="fastoche-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% for item in self.items %}
+    <li>
+      {% fastoche_button item %}
+    </li>
+  {% endfor %}
+</ul>

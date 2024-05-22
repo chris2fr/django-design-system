@@ -1,8 +1,0 @@
-{% load cfran_tags %}
-<ul class="cfran-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
-  {% for item in self.items %}
-    <li>
-      {% cfran_button item %}
-    </li>
-  {% endfor %}
-</ul>

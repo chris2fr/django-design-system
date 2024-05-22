@@ -1,0 +1,6 @@
+{% load fastoche_tags %}
+<div class="fastoche-accordions-group">
+  {% for item in self.items %}
+    {% fastoche_accordion item %}
+  {% endfor %}
+</div>

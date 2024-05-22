@@ -1,0 +1,5643 @@
+/*!
+ * FASTOCHE v11.2.2 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fastoche-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .fastoche-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .fastoche-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .fastoche-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .fastoche-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .fastoche-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-alt--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .fastoche-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .fastoche-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .fastoche-background-flat--fastoche-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--fastoche-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .fastoche-background-action-high--fastoche-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .fastoche-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .fastoche-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .fastoche-background-action-low--fastoche-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .fastoche-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .fastoche-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .fastoche-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .fastoche-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-title--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-title--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-label--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-label--fastoche-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .fastoche-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .fastoche-text-inverted--fastoche-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-text-inverted--fastoche-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .fastoche-text-action-high--fastoche-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-text-action-high--fastoche-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-major--fastoche-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-minor--fastoche-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .fastoche-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-decorative--fastoche-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .fastoche-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .fastoche-artwork-background--fastoche-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-background--fastoche-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .fastoche-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .fastoche-artwork-motif--fastoche-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .fastoche-icon-ancient-gate-fill::before,
+  .fastoche-icon-ancient-gate-fill::after {
+    background-image: url("../icons/buildings/ancient-gate-fill.svg");
+  }
+
+  .fastoche-icon-ancient-gate-line::before,
+  .fastoche-icon-ancient-gate-line::after {
+    background-image: url("../icons/buildings/ancient-gate-line.svg");
+  }
+
+  .fastoche-icon-ancient-pavilion-fill::before,
+  .fastoche-icon-ancient-pavilion-fill::after {
+    background-image: url("../icons/buildings/ancient-pavilion-fill.svg");
+  }
+
+  .fastoche-icon-ancient-pavilion-line::before,
+  .fastoche-icon-ancient-pavilion-line::after {
+    background-image: url("../icons/buildings/ancient-pavilion-line.svg");
+  }
+
+  .fastoche-icon-bank-fill::before,
+  .fastoche-icon-bank-fill::after {
+    background-image: url("../icons/buildings/bank-fill.svg");
+  }
+
+  .fastoche-icon-bank-line::before,
+  .fastoche-icon-bank-line::after {
+    background-image: url("../icons/buildings/bank-line.svg");
+  }
+
+  .fastoche-icon-building-fill::before,
+  .fastoche-icon-building-fill::after {
+    background-image: url("../icons/buildings/building-fill.svg");
+  }
+
+  .fastoche-icon-building-line::before,
+  .fastoche-icon-building-line::after {
+    background-image: url("../icons/buildings/building-line.svg");
+  }
+
+  .fastoche-icon-community-fill::before,
+  .fastoche-icon-community-fill::after {
+    background-image: url("../icons/buildings/community-fill.svg");
+  }
+
+  .fastoche-icon-community-line::before,
+  .fastoche-icon-community-line::after {
+    background-image: url("../icons/buildings/community-line.svg");
+  }
+
+  .fastoche-icon-government-fill::before,
+  .fastoche-icon-government-fill::after {
+    background-image: url("../icons/buildings/government-fill.svg");
+  }
+
+  .fastoche-icon-government-line::before,
+  .fastoche-icon-government-line::after {
+    background-image: url("../icons/buildings/government-line.svg");
+  }
+
+  .fastoche-icon-home-4-fill::before,
+  .fastoche-icon-home-4-fill::after {
+    background-image: url("../icons/buildings/home-4-fill.svg");
+  }
+
+  .fastoche-icon-home-4-line::before,
+  .fastoche-icon-home-4-line::after {
+    background-image: url("../icons/buildings/home-4-line.svg");
+  }
+
+  .fastoche-icon-hospital-fill::before,
+  .fastoche-icon-hospital-fill::after {
+    background-image: url("../icons/buildings/hospital-fill.svg");
+  }
+
+  .fastoche-icon-hospital-line::before,
+  .fastoche-icon-hospital-line::after {
+    background-image: url("../icons/buildings/hospital-line.svg");
+  }
+
+  .fastoche-icon-hotel-fill::before,
+  .fastoche-icon-hotel-fill::after {
+    background-image: url("../icons/buildings/hotel-fill.svg");
+  }
+
+  .fastoche-icon-hotel-line::before,
+  .fastoche-icon-hotel-line::after {
+    background-image: url("../icons/buildings/hotel-line.svg");
+  }
+
+  .fastoche-icon-store-fill::before,
+  .fastoche-icon-store-fill::after {
+    background-image: url("../icons/buildings/store-fill.svg");
+  }
+
+  .fastoche-icon-store-line::before,
+  .fastoche-icon-store-line::after {
+    background-image: url("../icons/buildings/store-line.svg");
+  }
+
+  .fastoche-fi-home-4-fill::before {
+    background-image: url("../icons/buildings/home-4-fill.svg");
+  }
+
+  .fastoche-fi-home-4-line::before {
+    background-image: url("../icons/buildings/home-4-line.svg");
+  }
+
+  .fastoche-icon-archive-fill::before,
+  .fastoche-icon-archive-fill::after {
+    background-image: url("../icons/business/archive-fill.svg");
+  }
+
+  .fastoche-icon-archive-line::before,
+  .fastoche-icon-archive-line::after {
+    background-image: url("../icons/business/archive-line.svg");
+  }
+
+  .fastoche-icon-attachment-fill::before,
+  .fastoche-icon-attachment-fill::after {
+    background-image: url("../icons/business/attachment-fill.svg");
+  }
+
+  .fastoche-icon-attachment-line::before,
+  .fastoche-icon-attachment-line::after {
+    background-image: url("../icons/business/attachment-line.svg");
+  }
+
+  .fastoche-icon-award-fill::before,
+  .fastoche-icon-award-fill::after {
+    background-image: url("../icons/business/award-fill.svg");
+  }
+
+  .fastoche-icon-award-line::before,
+  .fastoche-icon-award-line::after {
+    background-image: url("../icons/business/award-line.svg");
+  }
+
+  .fastoche-icon-bar-chart-box-fill::before,
+  .fastoche-icon-bar-chart-box-fill::after {
+    background-image: url("../icons/business/bar-chart-box-fill.svg");
+  }
+
+  .fastoche-icon-bar-chart-box-line::before,
+  .fastoche-icon-bar-chart-box-line::after {
+    background-image: url("../icons/business/bar-chart-box-line.svg");
+  }
+
+  .fastoche-icon-bookmark-fill::before,
+  .fastoche-icon-bookmark-fill::after {
+    background-image: url("../icons/business/bookmark-fill.svg");
+  }
+
+  .fastoche-icon-bookmark-line::before,
+  .fastoche-icon-bookmark-line::after {
+    background-image: url("../icons/business/bookmark-line.svg");
+  }
+
+  .fastoche-icon-briefcase-fill::before,
+  .fastoche-icon-briefcase-fill::after {
+    background-image: url("../icons/business/briefcase-fill.svg");
+  }
+
+  .fastoche-icon-briefcase-line::before,
+  .fastoche-icon-briefcase-line::after {
+    background-image: url("../icons/business/briefcase-line.svg");
+  }
+
+  .fastoche-icon-calendar-2-fill::before,
+  .fastoche-icon-calendar-2-fill::after {
+    background-image: url("../icons/business/calendar-2-fill.svg");
+  }
+
+  .fastoche-icon-calendar-2-line::before,
+  .fastoche-icon-calendar-2-line::after {
+    background-image: url("../icons/business/calendar-2-line.svg");
+  }
+
+  .fastoche-icon-calendar-event-fill::before,
+  .fastoche-icon-calendar-event-fill::after {
+    background-image: url("../icons/business/calendar-event-fill.svg");
+  }
+
+  .fastoche-icon-calendar-event-line::before,
+  .fastoche-icon-calendar-event-line::after {
+    background-image: url("../icons/business/calendar-event-line.svg");
+  }
+
+  .fastoche-icon-calendar-fill::before,
+  .fastoche-icon-calendar-fill::after {
+    background-image: url("../icons/business/calendar-fill.svg");
+  }
+
+  .fastoche-icon-calendar-line::before,
+  .fastoche-icon-calendar-line::after {
+    background-image: url("../icons/business/calendar-line.svg");
+  }
+
+  .fastoche-icon-cloud-fill::before,
+  .fastoche-icon-cloud-fill::after {
+    background-image: url("../icons/business/cloud-fill.svg");
+  }
+
+  .fastoche-icon-cloud-line::before,
+  .fastoche-icon-cloud-line::after {
+    background-image: url("../icons/business/cloud-line.svg");
+  }
+
+  .fastoche-icon-copyright-fill::before,
+  .fastoche-icon-copyright-fill::after {
+    background-image: url("../icons/business/copyright-fill.svg");
+  }
+
+  .fastoche-icon-copyright-line::before,
+  .fastoche-icon-copyright-line::after {
+    background-image: url("../icons/business/copyright-line.svg");
+  }
+
+  .fastoche-icon-customer-service-fill::before,
+  .fastoche-icon-customer-service-fill::after {
+    background-image: url("../icons/business/customer-service-fill.svg");
+  }
+
+  .fastoche-icon-customer-service-line::before,
+  .fastoche-icon-customer-service-line::after {
+    background-image: url("../icons/business/customer-service-line.svg");
+  }
+
+  .fastoche-icon-flag-fill::before,
+  .fastoche-icon-flag-fill::after {
+    background-image: url("../icons/business/flag-fill.svg");
+  }
+
+  .fastoche-icon-flag-line::before,
+  .fastoche-icon-flag-line::after {
+    background-image: url("../icons/business/flag-line.svg");
+  }
+
+  .fastoche-icon-global-fill::before,
+  .fastoche-icon-global-fill::after {
+    background-image: url("../icons/business/global-fill.svg");
+  }
+
+  .fastoche-icon-global-line::before,
+  .fastoche-icon-global-line::after {
+    background-image: url("../icons/business/global-line.svg");
+  }
+
+  .fastoche-icon-line-chart-fill::before,
+  .fastoche-icon-line-chart-fill::after {
+    background-image: url("../icons/business/line-chart-fill.svg");
+  }
+
+  .fastoche-icon-line-chart-line::before,
+  .fastoche-icon-line-chart-line::after {
+    background-image: url("../icons/business/line-chart-line.svg");
+  }
+
+  .fastoche-icon-links-fill::before,
+  .fastoche-icon-links-fill::after {
+    background-image: url("../icons/business/links-fill.svg");
+  }
+
+  .fastoche-icon-links-line::before,
+  .fastoche-icon-links-line::after {
+    background-image: url("../icons/business/links-line.svg");
+  }
+
+  .fastoche-icon-mail-fill::before,
+  .fastoche-icon-mail-fill::after {
+    background-image: url("../icons/business/mail-fill.svg");
+  }
+
+  .fastoche-icon-mail-line::before,
+  .fastoche-icon-mail-line::after {
+    background-image: url("../icons/business/mail-line.svg");
+  }
+
+  .fastoche-icon-mail-open-fill::before,
+  .fastoche-icon-mail-open-fill::after {
+    background-image: url("../icons/business/mail-open-fill.svg");
+  }
+
+  .fastoche-icon-mail-open-line::before,
+  .fastoche-icon-mail-open-line::after {
+    background-image: url("../icons/business/mail-open-line.svg");
+  }
+
+  .fastoche-icon-medal-fill::before,
+  .fastoche-icon-medal-fill::after {
+    background-image: url("../icons/business/medal-fill.svg");
+  }
+
+  .fastoche-icon-medal-line::before,
+  .fastoche-icon-medal-line::after {
+    background-image: url("../icons/business/medal-line.svg");
+  }
+
+  .fastoche-icon-pie-chart-2-fill::before,
+  .fastoche-icon-pie-chart-2-fill::after {
+    background-image: url("../icons/business/pie-chart-2-fill.svg");
+  }
+
+  .fastoche-icon-pie-chart-2-line::before,
+  .fastoche-icon-pie-chart-2-line::after {
+    background-image: url("../icons/business/pie-chart-2-line.svg");
+  }
+
+  .fastoche-icon-pie-chart-box-fill::before,
+  .fastoche-icon-pie-chart-box-fill::after {
+    background-image: url("../icons/business/pie-chart-box-fill.svg");
+  }
+
+  .fastoche-icon-pie-chart-box-line::before,
+  .fastoche-icon-pie-chart-box-line::after {
+    background-image: url("../icons/business/pie-chart-box-line.svg");
+  }
+
+  .fastoche-icon-printer-fill::before,
+  .fastoche-icon-printer-fill::after {
+    background-image: url("../icons/business/printer-fill.svg");
+  }
+
+  .fastoche-icon-printer-line::before,
+  .fastoche-icon-printer-line::after {
+    background-image: url("../icons/business/printer-line.svg");
+  }
+
+  .fastoche-icon-profil-fill::before,
+  .fastoche-icon-profil-fill::after {
+    background-image: url("../icons/business/profil-fill.svg");
+  }
+
+  .fastoche-icon-profil-line::before,
+  .fastoche-icon-profil-line::after {
+    background-image: url("../icons/business/profil-line.svg");
+  }
+
+  .fastoche-icon-projector-2-fill::before,
+  .fastoche-icon-projector-2-fill::after {
+    background-image: url("../icons/business/projector-2-fill.svg");
+  }
+
+  .fastoche-icon-projector-2-line::before,
+  .fastoche-icon-projector-2-line::after {
+    background-image: url("../icons/business/projector-2-line.svg");
+  }
+
+  .fastoche-icon-send-plane-fill::before,
+  .fastoche-icon-send-plane-fill::after {
+    background-image: url("../icons/business/send-plane-fill.svg");
+  }
+
+  .fastoche-icon-send-plane-line::before,
+  .fastoche-icon-send-plane-line::after {
+    background-image: url("../icons/business/send-plane-line.svg");
+  }
+
+  .fastoche-icon-slideshow-fill::before,
+  .fastoche-icon-slideshow-fill::after {
+    background-image: url("../icons/business/slideshow-fill.svg");
+  }
+
+  .fastoche-icon-slideshow-line::before,
+  .fastoche-icon-slideshow-line::after {
+    background-image: url("../icons/business/slideshow-line.svg");
+  }
+
+  .fastoche-icon-window-fill::before,
+  .fastoche-icon-window-fill::after {
+    background-image: url("../icons/business/window-fill.svg");
+  }
+
+  .fastoche-icon-window-line::before,
+  .fastoche-icon-window-line::after {
+    background-image: url("../icons/business/window-line.svg");
+  }
+
+  .fastoche-fi-attachment-fill::before {
+    background-image: url("../icons/business/attachment-fill.svg");
+  }
+
+  .fastoche-fi-attachment-line::before {
+    background-image: url("../icons/business/attachment-line.svg");
+  }
+
+  .fastoche-fi-calendar-fill::before {
+    background-image: url("../icons/business/calendar-fill.svg");
+  }
+
+  .fastoche-fi-calendar-line::before {
+    background-image: url("../icons/business/calendar-line.svg");
+  }
+
+  .fastoche-fi-line-chart-fill::before {
+    background-image: url("../icons/business/line-chart-fill.svg");
+  }
+
+  .fastoche-fi-line-chart-line::before {
+    background-image: url("../icons/business/line-chart-line.svg");
+  }
+
+  .fastoche-fi-links-fill::before {
+    background-image: url("../icons/business/links-fill.svg");
+  }
+
+  .fastoche-fi-mail-fill::before {
+    background-image: url("../icons/business/mail-fill.svg");
+  }
+
+  .fastoche-fi-mail-line::before {
+    background-image: url("../icons/business/mail-line.svg");
+  }
+
+  .fastoche-fi-printer-fill::before {
+    background-image: url("../icons/business/printer-fill.svg");
+  }
+
+  .fastoche-fi-printer-line::before {
+    background-image: url("../icons/business/printer-line.svg");
+  }
+
+  .fastoche-icon-chat-2-fill::before,
+  .fastoche-icon-chat-2-fill::after {
+    background-image: url("../icons/communication/chat-2-fill.svg");
+  }
+
+  .fastoche-icon-chat-2-line::before,
+  .fastoche-icon-chat-2-line::after {
+    background-image: url("../icons/communication/chat-2-line.svg");
+  }
+
+  .fastoche-icon-chat-3-fill::before,
+  .fastoche-icon-chat-3-fill::after {
+    background-image: url("../icons/communication/chat-3-fill.svg");
+  }
+
+  .fastoche-icon-chat-3-line::before,
+  .fastoche-icon-chat-3-line::after {
+    background-image: url("../icons/communication/chat-3-line.svg");
+  }
+
+  .fastoche-icon-chat-check-fill::before,
+  .fastoche-icon-chat-check-fill::after {
+    background-image: url("../icons/communication/chat-check-fill.svg");
+  }
+
+  .fastoche-icon-chat-check-line::before,
+  .fastoche-icon-chat-check-line::after {
+    background-image: url("../icons/communication/chat-check-line.svg");
+  }
+
+  .fastoche-icon-chat-delete-fill::before,
+  .fastoche-icon-chat-delete-fill::after {
+    background-image: url("../icons/communication/chat-delete-fill.svg");
+  }
+
+  .fastoche-icon-chat-delete-line::before,
+  .fastoche-icon-chat-delete-line::after {
+    background-image: url("../icons/communication/chat-delete-line.svg");
+  }
+
+  .fastoche-icon-chat-poll-fill::before,
+  .fastoche-icon-chat-poll-fill::after {
+    background-image: url("../icons/communication/chat-poll-fill.svg");
+  }
+
+  .fastoche-icon-chat-poll-line::before,
+  .fastoche-icon-chat-poll-line::after {
+    background-image: url("../icons/communication/chat-poll-line.svg");
+  }
+
+  .fastoche-icon-discuss-fill::before,
+  .fastoche-icon-discuss-fill::after {
+    background-image: url("../icons/communication/discuss-fill.svg");
+  }
+
+  .fastoche-icon-discuss-line::before,
+  .fastoche-icon-discuss-line::after {
+    background-image: url("../icons/communication/discuss-line.svg");
+  }
+
+  .fastoche-icon-feedback-fill::before,
+  .fastoche-icon-feedback-fill::after {
+    background-image: url("../icons/communication/feedback-fill.svg");
+  }
+
+  .fastoche-icon-feedback-line::before,
+  .fastoche-icon-feedback-line::after {
+    background-image: url("../icons/communication/feedback-line.svg");
+  }
+
+  .fastoche-icon-message-2-fill::before,
+  .fastoche-icon-message-2-fill::after {
+    background-image: url("../icons/communication/message-2-fill.svg");
+  }
+
+  .fastoche-icon-message-2-line::before,
+  .fastoche-icon-message-2-line::after {
+    background-image: url("../icons/communication/message-2-line.svg");
+  }
+
+  .fastoche-icon-question-answer-fill::before,
+  .fastoche-icon-question-answer-fill::after {
+    background-image: url("../icons/communication/question-answer-fill.svg");
+  }
+
+  .fastoche-icon-question-answer-line::before,
+  .fastoche-icon-question-answer-line::after {
+    background-image: url("../icons/communication/question-answer-line.svg");
+  }
+
+  .fastoche-icon-questionnaire-fill::before,
+  .fastoche-icon-questionnaire-fill::after {
+    background-image: url("../icons/communication/questionnaire-fill.svg");
+  }
+
+  .fastoche-icon-questionnaire-line::before,
+  .fastoche-icon-questionnaire-line::after {
+    background-image: url("../icons/communication/questionnaire-line.svg");
+  }
+
+  .fastoche-icon-video-chat-fill::before,
+  .fastoche-icon-video-chat-fill::after {
+    background-image: url("../icons/communication/video-chat-fill.svg");
+  }
+
+  .fastoche-icon-video-chat-line::before,
+  .fastoche-icon-video-chat-line::after {
+    background-image: url("../icons/communication/video-chat-line.svg");
+  }
+
+  .fastoche-icon-ball-pen-fill::before,
+  .fastoche-icon-ball-pen-fill::after {
+    background-image: url("../icons/design/ball-pen-fill.svg");
+  }
+
+  .fastoche-icon-ball-pen-line::before,
+  .fastoche-icon-ball-pen-line::after {
+    background-image: url("../icons/design/ball-pen-line.svg");
+  }
+
+  .fastoche-icon-brush-3-fill::before,
+  .fastoche-icon-brush-3-fill::after {
+    background-image: url("../icons/design/brush-3-fill.svg");
+  }
+
+  .fastoche-icon-brush-3-line::before,
+  .fastoche-icon-brush-3-line::after {
+    background-image: url("../icons/design/brush-3-line.svg");
+  }
+
+  .fastoche-icon-brush-fill::before,
+  .fastoche-icon-brush-fill::after {
+    background-image: url("../icons/design/brush-fill.svg");
+  }
+
+  .fastoche-icon-brush-line::before,
+  .fastoche-icon-brush-line::after {
+    background-image: url("../icons/design/brush-line.svg");
+  }
+
+  .fastoche-icon-contrast-fill::before,
+  .fastoche-icon-contrast-fill::after {
+    background-image: url("../icons/design/contrast-fill.svg");
+  }
+
+  .fastoche-icon-contrast-line::before,
+  .fastoche-icon-contrast-line::after {
+    background-image: url("../icons/design/contrast-line.svg");
+  }
+
+  .fastoche-icon-crop-fill::before,
+  .fastoche-icon-crop-fill::after {
+    background-image: url("../icons/design/crop-fill.svg");
+  }
+
+  .fastoche-icon-crop-line::before,
+  .fastoche-icon-crop-line::after {
+    background-image: url("../icons/design/crop-line.svg");
+  }
+
+  .fastoche-icon-drag-move-2-fill::before,
+  .fastoche-icon-drag-move-2-fill::after {
+    background-image: url("../icons/design/drag-move-2-fill.svg");
+  }
+
+  .fastoche-icon-drag-move-2-line::before,
+  .fastoche-icon-drag-move-2-line::after {
+    background-image: url("../icons/design/drag-move-2-line.svg");
+  }
+
+  .fastoche-icon-drop-fill::before,
+  .fastoche-icon-drop-fill::after {
+    background-image: url("../icons/design/drop-fill.svg");
+  }
+
+  .fastoche-icon-drop-line::before,
+  .fastoche-icon-drop-line::after {
+    background-image: url("../icons/design/drop-line.svg");
+  }
+
+  .fastoche-icon-edit-box-fill::before,
+  .fastoche-icon-edit-box-fill::after {
+    background-image: url("../icons/design/edit-box-fill.svg");
+  }
+
+  .fastoche-icon-edit-box-line::before,
+  .fastoche-icon-edit-box-line::after {
+    background-image: url("../icons/design/edit-box-line.svg");
+  }
+
+  .fastoche-icon-edit-fill::before,
+  .fastoche-icon-edit-fill::after {
+    background-image: url("../icons/design/edit-fill.svg");
+  }
+
+  .fastoche-icon-edit-line::before,
+  .fastoche-icon-edit-line::after {
+    background-image: url("../icons/design/edit-line.svg");
+  }
+
+  .fastoche-icon-ink-bottle-fill::before,
+  .fastoche-icon-ink-bottle-fill::after {
+    background-image: url("../icons/design/ink-bottle-fill.svg");
+  }
+
+  .fastoche-icon-ink-bottle-line::before,
+  .fastoche-icon-ink-bottle-line::after {
+    background-image: url("../icons/design/ink-bottle-line.svg");
+  }
+
+  .fastoche-icon-layout-grid-fill::before,
+  .fastoche-icon-layout-grid-fill::after {
+    background-image: url("../icons/design/layout-grid-fill.svg");
+  }
+
+  .fastoche-icon-layout-grid-line::before,
+  .fastoche-icon-layout-grid-line::after {
+    background-image: url("../icons/design/layout-grid-line.svg");
+  }
+
+  .fastoche-icon-mark-pen-fill::before,
+  .fastoche-icon-mark-pen-fill::after {
+    background-image: url("../icons/design/mark-pen-fill.svg");
+  }
+
+  .fastoche-icon-mark-pen-line::before,
+  .fastoche-icon-mark-pen-line::after {
+    background-image: url("../icons/design/mark-pen-line.svg");
+  }
+
+  .fastoche-icon-paint-brush-fill::before,
+  .fastoche-icon-paint-brush-fill::after {
+    background-image: url("../icons/design/paint-brush-fill.svg");
+  }
+
+  .fastoche-icon-paint-brush-line::before,
+  .fastoche-icon-paint-brush-line::after {
+    background-image: url("../icons/design/paint-brush-line.svg");
+  }
+
+  .fastoche-icon-paint-fill::before,
+  .fastoche-icon-paint-fill::after {
+    background-image: url("../icons/design/paint-fill.svg");
+  }
+
+  .fastoche-icon-paint-line::before,
+  .fastoche-icon-paint-line::after {
+    background-image: url("../icons/design/paint-line.svg");
+  }
+
+  .fastoche-icon-palette-fill::before,
+  .fastoche-icon-palette-fill::after {
+    background-image: url("../icons/design/palette-fill.svg");
+  }
+
+  .fastoche-icon-palette-line::before,
+  .fastoche-icon-palette-line::after {
+    background-image: url("../icons/design/palette-line.svg");
+  }
+
+  .fastoche-icon-pantone-fill::before,
+  .fastoche-icon-pantone-fill::after {
+    background-image: url("../icons/design/pantone-fill.svg");
+  }
+
+  .fastoche-icon-pantone-line::before,
+  .fastoche-icon-pantone-line::after {
+    background-image: url("../icons/design/pantone-line.svg");
+  }
+
+  .fastoche-icon-pen-nib-fill::before,
+  .fastoche-icon-pen-nib-fill::after {
+    background-image: url("../icons/design/pen-nib-fill.svg");
+  }
+
+  .fastoche-icon-pen-nib-line::before,
+  .fastoche-icon-pen-nib-line::after {
+    background-image: url("../icons/design/pen-nib-line.svg");
+  }
+
+  .fastoche-icon-pencil-fill::before,
+  .fastoche-icon-pencil-fill::after {
+    background-image: url("../icons/design/pencil-fill.svg");
+  }
+
+  .fastoche-icon-pencil-line::before,
+  .fastoche-icon-pencil-line::after {
+    background-image: url("../icons/design/pencil-line.svg");
+  }
+
+  .fastoche-icon-pencil-ruler-fill::before,
+  .fastoche-icon-pencil-ruler-fill::after {
+    background-image: url("../icons/design/pencil-ruler-fill.svg");
+  }
+
+  .fastoche-icon-pencil-ruler-line::before,
+  .fastoche-icon-pencil-ruler-line::after {
+    background-image: url("../icons/design/pencil-ruler-line.svg");
+  }
+
+  .fastoche-icon-sip-fill::before,
+  .fastoche-icon-sip-fill::after {
+    background-image: url("../icons/design/sip-fill.svg");
+  }
+
+  .fastoche-icon-sip-line::before,
+  .fastoche-icon-sip-line::after {
+    background-image: url("../icons/design/sip-line.svg");
+  }
+
+  .fastoche-icon-table-fill::before,
+  .fastoche-icon-table-fill::after {
+    background-image: url("../icons/design/table-fill.svg");
+  }
+
+  .fastoche-icon-table-line::before,
+  .fastoche-icon-table-line::after {
+    background-image: url("../icons/design/table-line.svg");
+  }
+
+  .fastoche-fi-edit-fill::before {
+    background-image: url("../icons/design/edit-fill.svg");
+  }
+
+  .fastoche-fi-edit-line::before {
+    background-image: url("../icons/design/edit-line.svg");
+  }
+
+  .fastoche-icon-bug-fill::before,
+  .fastoche-icon-bug-fill::after {
+    background-image: url("../icons/development/bug-fill.svg");
+  }
+
+  .fastoche-icon-bug-line::before,
+  .fastoche-icon-bug-line::after {
+    background-image: url("../icons/development/bug-line.svg");
+  }
+
+  .fastoche-icon-code-box-fill::before,
+  .fastoche-icon-code-box-fill::after {
+    background-image: url("../icons/development/code-box-fill.svg");
+  }
+
+  .fastoche-icon-code-box-line::before,
+  .fastoche-icon-code-box-line::after {
+    background-image: url("../icons/development/code-box-line.svg");
+  }
+
+  .fastoche-icon-code-s-slash-line::before,
+  .fastoche-icon-code-s-slash-line::after {
+    background-image: url("../icons/development/code-s-slash-line.svg");
+  }
+
+  .fastoche-icon-cursor-fill::before,
+  .fastoche-icon-cursor-fill::after {
+    background-image: url("../icons/development/cursor-fill.svg");
+  }
+
+  .fastoche-icon-cursor-line::before,
+  .fastoche-icon-cursor-line::after {
+    background-image: url("../icons/development/cursor-line.svg");
+  }
+
+  .fastoche-icon-git-branch-fill::before,
+  .fastoche-icon-git-branch-fill::after {
+    background-image: url("../icons/development/git-branch-fill.svg");
+  }
+
+  .fastoche-icon-git-branch-line::before,
+  .fastoche-icon-git-branch-line::after {
+    background-image: url("../icons/development/git-branch-line.svg");
+  }
+
+  .fastoche-icon-git-commit-fill::before,
+  .fastoche-icon-git-commit-fill::after {
+    background-image: url("../icons/development/git-commit-fill.svg");
+  }
+
+  .fastoche-icon-git-commit-line::before,
+  .fastoche-icon-git-commit-line::after {
+    background-image: url("../icons/development/git-commit-line.svg");
+  }
+
+  .fastoche-icon-git-merge-fill::before,
+  .fastoche-icon-git-merge-fill::after {
+    background-image: url("../icons/development/git-merge-fill.svg");
+  }
+
+  .fastoche-icon-git-merge-line::before,
+  .fastoche-icon-git-merge-line::after {
+    background-image: url("../icons/development/git-merge-line.svg");
+  }
+
+  .fastoche-icon-git-pull-request-fill::before,
+  .fastoche-icon-git-pull-request-fill::after {
+    background-image: url("../icons/development/git-pull-request-fill.svg");
+  }
+
+  .fastoche-icon-git-pull-request-line::before,
+  .fastoche-icon-git-pull-request-line::after {
+    background-image: url("../icons/development/git-pull-request-line.svg");
+  }
+
+  .fastoche-icon-git-repository-commits-fill::before,
+  .fastoche-icon-git-repository-commits-fill::after {
+    background-image: url("../icons/development/git-repository-commits-fill.svg");
+  }
+
+  .fastoche-icon-git-repository-commits-line::before,
+  .fastoche-icon-git-repository-commits-line::after {
+    background-image: url("../icons/development/git-repository-commits-line.svg");
+  }
+
+  .fastoche-icon-git-repository-fill::before,
+  .fastoche-icon-git-repository-fill::after {
+    background-image: url("../icons/development/git-repository-fill.svg");
+  }
+
+  .fastoche-icon-git-repository-line::before,
+  .fastoche-icon-git-repository-line::after {
+    background-image: url("../icons/development/git-repository-line.svg");
+  }
+
+  .fastoche-icon-git-repository-private-fill::before,
+  .fastoche-icon-git-repository-private-fill::after {
+    background-image: url("../icons/development/git-repository-private-fill.svg");
+  }
+
+  .fastoche-icon-git-repository-private-line::before,
+  .fastoche-icon-git-repository-private-line::after {
+    background-image: url("../icons/development/git-repository-private-line.svg");
+  }
+
+  .fastoche-icon-terminal-box-fill::before,
+  .fastoche-icon-terminal-box-fill::after {
+    background-image: url("../icons/development/terminal-box-fill.svg");
+  }
+
+  .fastoche-icon-terminal-box-line::before,
+  .fastoche-icon-terminal-box-line::after {
+    background-image: url("../icons/development/terminal-box-line.svg");
+  }
+
+  .fastoche-icon-terminal-line::before,
+  .fastoche-icon-terminal-line::after {
+    background-image: url("../icons/development/terminal-line.svg");
+  }
+
+  .fastoche-icon-terminal-window-fill::before,
+  .fastoche-icon-terminal-window-fill::after {
+    background-image: url("../icons/development/terminal-window-fill.svg");
+  }
+
+  .fastoche-icon-terminal-window-line::before,
+  .fastoche-icon-terminal-window-line::after {
+    background-image: url("../icons/development/terminal-window-line.svg");
+  }
+
+  .fastoche-icon-bluetooth-fill::before,
+  .fastoche-icon-bluetooth-fill::after {
+    background-image: url("../icons/device/bluetooth-fill.svg");
+  }
+
+  .fastoche-icon-bluetooth-line::before,
+  .fastoche-icon-bluetooth-line::after {
+    background-image: url("../icons/device/bluetooth-line.svg");
+  }
+
+  .fastoche-icon-computer-fill::before,
+  .fastoche-icon-computer-fill::after {
+    background-image: url("../icons/device/computer-fill.svg");
+  }
+
+  .fastoche-icon-computer-line::before,
+  .fastoche-icon-computer-line::after {
+    background-image: url("../icons/device/computer-line.svg");
+  }
+
+  .fastoche-icon-dashboard-3-fill::before,
+  .fastoche-icon-dashboard-3-fill::after {
+    background-image: url("../icons/device/dashboard-3-fill.svg");
+  }
+
+  .fastoche-icon-dashboard-3-line::before,
+  .fastoche-icon-dashboard-3-line::after {
+    background-image: url("../icons/device/dashboard-3-line.svg");
+  }
+
+  .fastoche-icon-database-fill::before,
+  .fastoche-icon-database-fill::after {
+    background-image: url("../icons/device/database-fill.svg");
+  }
+
+  .fastoche-icon-database-line::before,
+  .fastoche-icon-database-line::after {
+    background-image: url("../icons/device/database-line.svg");
+  }
+
+  .fastoche-icon-device-fill::before,
+  .fastoche-icon-device-fill::after {
+    background-image: url("../icons/device/device-fill.svg");
+  }
+
+  .fastoche-icon-device-line::before,
+  .fastoche-icon-device-line::after {
+    background-image: url("../icons/device/device-line.svg");
+  }
+
+  .fastoche-icon-hard-drive-2-fill::before,
+  .fastoche-icon-hard-drive-2-fill::after {
+    background-image: url("../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .fastoche-icon-hard-drive-2-line::before,
+  .fastoche-icon-hard-drive-2-line::after {
+    background-image: url("../icons/device/hard-drive-2-line.svg");
+  }
+
+  .fastoche-icon-mac-fill::before,
+  .fastoche-icon-mac-fill::after {
+    background-image: url("../icons/device/mac-fill.svg");
+  }
+
+  .fastoche-icon-mac-line::before,
+  .fastoche-icon-mac-line::after {
+    background-image: url("../icons/device/mac-line.svg");
+  }
+
+  .fastoche-icon-phone-fill::before,
+  .fastoche-icon-phone-fill::after {
+    background-image: url("../icons/device/phone-fill.svg");
+  }
+
+  .fastoche-icon-phone-line::before,
+  .fastoche-icon-phone-line::after {
+    background-image: url("../icons/device/phone-line.svg");
+  }
+
+  .fastoche-icon-qr-code-fill::before,
+  .fastoche-icon-qr-code-fill::after {
+    background-image: url("../icons/device/qr-code-fill.svg");
+  }
+
+  .fastoche-icon-qr-code-line::before,
+  .fastoche-icon-qr-code-line::after {
+    background-image: url("../icons/device/qr-code-line.svg");
+  }
+
+  .fastoche-icon-rss-fill::before,
+  .fastoche-icon-rss-fill::after {
+    background-image: url("../icons/device/rss-fill.svg");
+  }
+
+  .fastoche-icon-rss-line::before,
+  .fastoche-icon-rss-line::after {
+    background-image: url("../icons/device/rss-line.svg");
+  }
+
+  .fastoche-icon-save-3-fill::before,
+  .fastoche-icon-save-3-fill::after {
+    background-image: url("../icons/device/save-3-fill.svg");
+  }
+
+  .fastoche-icon-save-3-line::before,
+  .fastoche-icon-save-3-line::after {
+    background-image: url("../icons/device/save-3-line.svg");
+  }
+
+  .fastoche-icon-save-fill::before,
+  .fastoche-icon-save-fill::after {
+    background-image: url("../icons/device/save-fill.svg");
+  }
+
+  .fastoche-icon-save-line::before,
+  .fastoche-icon-save-line::after {
+    background-image: url("../icons/device/save-line.svg");
+  }
+
+  .fastoche-icon-server-fill::before,
+  .fastoche-icon-server-fill::after {
+    background-image: url("../icons/device/server-fill.svg");
+  }
+
+  .fastoche-icon-server-line::before,
+  .fastoche-icon-server-line::after {
+    background-image: url("../icons/device/server-line.svg");
+  }
+
+  .fastoche-icon-smartphone-fill::before,
+  .fastoche-icon-smartphone-fill::after {
+    background-image: url("../icons/device/smartphone-fill.svg");
+  }
+
+  .fastoche-icon-smartphone-line::before,
+  .fastoche-icon-smartphone-line::after {
+    background-image: url("../icons/device/smartphone-line.svg");
+  }
+
+  .fastoche-icon-tablet-fill::before,
+  .fastoche-icon-tablet-fill::after {
+    background-image: url("../icons/device/tablet-fill.svg");
+  }
+
+  .fastoche-icon-tablet-line::before,
+  .fastoche-icon-tablet-line::after {
+    background-image: url("../icons/device/tablet-line.svg");
+  }
+
+  .fastoche-icon-tv-fill::before,
+  .fastoche-icon-tv-fill::after {
+    background-image: url("../icons/device/tv-fill.svg");
+  }
+
+  .fastoche-icon-tv-line::before,
+  .fastoche-icon-tv-line::after {
+    background-image: url("../icons/device/tv-line.svg");
+  }
+
+  .fastoche-icon-wifi-fill::before,
+  .fastoche-icon-wifi-fill::after {
+    background-image: url("../icons/device/wifi-fill.svg");
+  }
+
+  .fastoche-icon-wifi-line::before,
+  .fastoche-icon-wifi-line::after {
+    background-image: url("../icons/device/wifi-line.svg");
+  }
+
+  .fastoche-fi-phone-fill::before {
+    background-image: url("../icons/device/phone-fill.svg");
+  }
+
+  .fastoche-fi-phone-line::before {
+    background-image: url("../icons/device/phone-line.svg");
+  }
+
+  .fastoche-fi-rss-fill::before {
+    background-image: url("../icons/device/rss-fill.svg");
+  }
+
+  .fastoche-fi-rss-line::before {
+    background-image: url("../icons/device/rss-line.svg");
+  }
+
+  .fastoche-fi-save-fill::before {
+    background-image: url("../icons/device/save-fill.svg");
+  }
+
+  .fastoche-fi-save-line::before {
+    background-image: url("../icons/device/save-line.svg");
+  }
+
+  .fastoche-icon-article-fill::before,
+  .fastoche-icon-article-fill::after {
+    background-image: url("../icons/document/article-fill.svg");
+  }
+
+  .fastoche-icon-article-line::before,
+  .fastoche-icon-article-line::after {
+    background-image: url("../icons/document/article-line.svg");
+  }
+
+  .fastoche-icon-book-2-fill::before,
+  .fastoche-icon-book-2-fill::after {
+    background-image: url("../icons/document/book-2-fill.svg");
+  }
+
+  .fastoche-icon-book-2-line::before,
+  .fastoche-icon-book-2-line::after {
+    background-image: url("../icons/document/book-2-line.svg");
+  }
+
+  .fastoche-icon-booklet-fill::before,
+  .fastoche-icon-booklet-fill::after {
+    background-image: url("../icons/document/booklet-fill.svg");
+  }
+
+  .fastoche-icon-booklet-line::before,
+  .fastoche-icon-booklet-line::after {
+    background-image: url("../icons/document/booklet-line.svg");
+  }
+
+  .fastoche-icon-clipboard-fill::before,
+  .fastoche-icon-clipboard-fill::after {
+    background-image: url("../icons/document/clipboard-fill.svg");
+  }
+
+  .fastoche-icon-clipboard-line::before,
+  .fastoche-icon-clipboard-line::after {
+    background-image: url("../icons/document/clipboard-line.svg");
+  }
+
+  .fastoche-icon-draft-fill::before,
+  .fastoche-icon-draft-fill::after {
+    background-image: url("../icons/document/draft-fill.svg");
+  }
+
+  .fastoche-icon-draft-line::before,
+  .fastoche-icon-draft-line::after {
+    background-image: url("../icons/document/draft-line.svg");
+  }
+
+  .fastoche-icon-file-add-fill::before,
+  .fastoche-icon-file-add-fill::after {
+    background-image: url("../icons/document/file-add-fill.svg");
+  }
+
+  .fastoche-icon-file-add-line::before,
+  .fastoche-icon-file-add-line::after {
+    background-image: url("../icons/document/file-add-line.svg");
+  }
+
+  .fastoche-icon-file-download-fill::before,
+  .fastoche-icon-file-download-fill::after {
+    background-image: url("../icons/document/file-download-fill.svg");
+  }
+
+  .fastoche-icon-file-download-line::before,
+  .fastoche-icon-file-download-line::after {
+    background-image: url("../icons/document/file-download-line.svg");
+  }
+
+  .fastoche-icon-file-fill::before,
+  .fastoche-icon-file-fill::after {
+    background-image: url("../icons/document/file-fill.svg");
+  }
+
+  .fastoche-icon-file-line::before,
+  .fastoche-icon-file-line::after {
+    background-image: url("../icons/document/file-line.svg");
+  }
+
+  .fastoche-icon-file-pdf-fill::before,
+  .fastoche-icon-file-pdf-fill::after {
+    background-image: url("../icons/document/file-pdf-fill.svg");
+  }
+
+  .fastoche-icon-file-pdf-line::before,
+  .fastoche-icon-file-pdf-line::after {
+    background-image: url("../icons/document/file-pdf-line.svg");
+  }
+
+  .fastoche-icon-file-text-fill::before,
+  .fastoche-icon-file-text-fill::after {
+    background-image: url("../icons/document/file-text-fill.svg");
+  }
+
+  .fastoche-icon-file-text-line::before,
+  .fastoche-icon-file-text-line::after {
+    background-image: url("../icons/document/file-text-line.svg");
+  }
+
+  .fastoche-icon-folder-2-fill::before,
+  .fastoche-icon-folder-2-fill::after {
+    background-image: url("../icons/document/folder-2-fill.svg");
+  }
+
+  .fastoche-icon-folder-2-line::before,
+  .fastoche-icon-folder-2-line::after {
+    background-image: url("../icons/document/folder-2-line.svg");
+  }
+
+  .fastoche-icon-newspaper-fill::before,
+  .fastoche-icon-newspaper-fill::after {
+    background-image: url("../icons/document/newspaper-fill.svg");
+  }
+
+  .fastoche-icon-newspaper-line::before,
+  .fastoche-icon-newspaper-line::after {
+    background-image: url("../icons/document/newspaper-line.svg");
+  }
+
+  .fastoche-icon-survey-fill::before,
+  .fastoche-icon-survey-fill::after {
+    background-image: url("../icons/document/survey-fill.svg");
+  }
+
+  .fastoche-icon-survey-line::before,
+  .fastoche-icon-survey-line::after {
+    background-image: url("../icons/document/survey-line.svg");
+  }
+
+  .fastoche-icon-todo-fill::before,
+  .fastoche-icon-todo-fill::after {
+    background-image: url("../icons/document/todo-fill.svg");
+  }
+
+  .fastoche-icon-todo-line::before,
+  .fastoche-icon-todo-line::after {
+    background-image: url("../icons/document/todo-line.svg");
+  }
+
+  .fastoche-fi-file-download-fill::before {
+    background-image: url("../icons/document/file-download-fill.svg");
+  }
+
+  .fastoche-fi-file-download-line::before {
+    background-image: url("../icons/document/file-download-line.svg");
+  }
+
+  .fastoche-fi-file-fill::before {
+    background-image: url("../icons/document/file-fill.svg");
+  }
+
+  .fastoche-fi-file-line::before {
+    background-image: url("../icons/document/file-line.svg");
+  }
+
+  .fastoche-fi-file-pdf-fill::before {
+    background-image: url("../icons/document/file-pdf-fill.svg");
+  }
+
+  .fastoche-fi-file-pdf-line::before {
+    background-image: url("../icons/document/file-pdf-line.svg");
+  }
+
+  .fastoche-icon-code-view::before,
+  .fastoche-icon-code-view::after {
+    background-image: url("../icons/editor/code-view.svg");
+  }
+
+  .fastoche-icon-bold::before,
+  .fastoche-icon-bold::after {
+    background-image: url("../icons/editor/fastoche--bold.svg");
+  }
+
+  .fastoche-icon-highlight::before,
+  .fastoche-icon-highlight::after {
+    background-image: url("../icons/editor/fastoche--highlight.svg");
+  }
+
+  .fastoche-icon-quote-fill::before,
+  .fastoche-icon-quote-fill::after {
+    background-image: url("../icons/editor/fastoche--quote-fill.svg");
+  }
+
+  .fastoche-icon-quote-line::before,
+  .fastoche-icon-quote-line::after {
+    background-image: url("../icons/editor/fastoche--quote-line.svg");
+  }
+
+  .fastoche-icon-font-size::before,
+  .fastoche-icon-font-size::after {
+    background-image: url("../icons/editor/font-size.svg");
+  }
+
+  .fastoche-icon-h-1::before,
+  .fastoche-icon-h-1::after {
+    background-image: url("../icons/editor/h-1.svg");
+  }
+
+  .fastoche-icon-h-2::before,
+  .fastoche-icon-h-2::after {
+    background-image: url("../icons/editor/h-2.svg");
+  }
+
+  .fastoche-icon-h-3::before,
+  .fastoche-icon-h-3::after {
+    background-image: url("../icons/editor/h-3.svg");
+  }
+
+  .fastoche-icon-h-4::before,
+  .fastoche-icon-h-4::after {
+    background-image: url("../icons/editor/h-4.svg");
+  }
+
+  .fastoche-icon-h-5::before,
+  .fastoche-icon-h-5::after {
+    background-image: url("../icons/editor/h-5.svg");
+  }
+
+  .fastoche-icon-h-6::before,
+  .fastoche-icon-h-6::after {
+    background-image: url("../icons/editor/h-6.svg");
+  }
+
+  .fastoche-icon-hashtag::before,
+  .fastoche-icon-hashtag::after {
+    background-image: url("../icons/editor/hashtag.svg");
+  }
+
+  .fastoche-icon-italic::before,
+  .fastoche-icon-italic::after {
+    background-image: url("../icons/editor/italic.svg");
+  }
+
+  .fastoche-icon-link-unlink::before,
+  .fastoche-icon-link-unlink::after {
+    background-image: url("../icons/editor/link-unlink.svg");
+  }
+
+  .fastoche-icon-link::before,
+  .fastoche-icon-link::after {
+    background-image: url("../icons/editor/link.svg");
+  }
+
+  .fastoche-icon-list-ordered::before,
+  .fastoche-icon-list-ordered::after {
+    background-image: url("../icons/editor/list-ordered.svg");
+  }
+
+  .fastoche-icon-list-unordered::before,
+  .fastoche-icon-list-unordered::after {
+    background-image: url("../icons/editor/list-unordered.svg");
+  }
+
+  .fastoche-icon-question-mark::before,
+  .fastoche-icon-question-mark::after {
+    background-image: url("../icons/editor/question-mark.svg");
+  }
+
+  .fastoche-icon-separator::before,
+  .fastoche-icon-separator::after {
+    background-image: url("../icons/editor/separator.svg");
+  }
+
+  .fastoche-icon-space::before,
+  .fastoche-icon-space::after {
+    background-image: url("../icons/editor/space.svg");
+  }
+
+  .fastoche-icon-subscript::before,
+  .fastoche-icon-subscript::after {
+    background-image: url("../icons/editor/subscript.svg");
+  }
+
+  .fastoche-icon-superscript::before,
+  .fastoche-icon-superscript::after {
+    background-image: url("../icons/editor/superscript.svg");
+  }
+
+  .fastoche-icon-table-2::before,
+  .fastoche-icon-table-2::after {
+    background-image: url("../icons/editor/table-2.svg");
+  }
+
+  .fastoche-icon-translate-2::before,
+  .fastoche-icon-translate-2::after {
+    background-image: url("../icons/editor/translate-2.svg");
+  }
+
+  .fastoche-fi-bold::before {
+    background-image: url("../icons/editor/fastoche--bold.svg");
+  }
+
+  .fastoche-fi-highlight::before {
+    background-image: url("../icons/editor/fastoche--highlight.svg");
+  }
+
+  .fastoche-fi-font-size::before {
+    background-image: url("../icons/editor/font-size.svg");
+  }
+
+  .fastoche-fi-italic::before {
+    background-image: url("../icons/editor/italic.svg");
+  }
+
+  .fastoche-fi-link-unlink::before {
+    background-image: url("../icons/editor/link-unlink.svg");
+  }
+
+  .fastoche-fi-list-ordered::before {
+    background-image: url("../icons/editor/list-ordered.svg");
+  }
+
+  .fastoche-fi-list-unordered::before {
+    background-image: url("../icons/editor/list-unordered.svg");
+  }
+
+  .fastoche-icon-bank-card-fill::before,
+  .fastoche-icon-bank-card-fill::after {
+    background-image: url("../icons/finance/bank-card-fill.svg");
+  }
+
+  .fastoche-icon-bank-card-line::before,
+  .fastoche-icon-bank-card-line::after {
+    background-image: url("../icons/finance/bank-card-line.svg");
+  }
+
+  .fastoche-icon-coin-fill::before,
+  .fastoche-icon-coin-fill::after {
+    background-image: url("../icons/finance/coin-fill.svg");
+  }
+
+  .fastoche-icon-gift-fill::before,
+  .fastoche-icon-gift-fill::after {
+    background-image: url("../icons/finance/gift-fill.svg");
+  }
+
+  .fastoche-icon-gift-line::before,
+  .fastoche-icon-gift-line::after {
+    background-image: url("../icons/finance/gift-line.svg");
+  }
+
+  .fastoche-icon-money-euro-box-fill::before,
+  .fastoche-icon-money-euro-box-fill::after {
+    background-image: url("../icons/finance/money-euro-box-fill.svg");
+  }
+
+  .fastoche-icon-money-euro-box-line::before,
+  .fastoche-icon-money-euro-box-line::after {
+    background-image: url("../icons/finance/money-euro-box-line.svg");
+  }
+
+  .fastoche-icon-money-euro-circle-fill::before,
+  .fastoche-icon-money-euro-circle-fill::after {
+    background-image: url("../icons/finance/money-euro-circle-fill.svg");
+  }
+
+  .fastoche-icon-money-euro-circle-line::before,
+  .fastoche-icon-money-euro-circle-line::after {
+    background-image: url("../icons/finance/money-euro-circle-line.svg");
+  }
+
+  .fastoche-icon-secure-payment-fill::before,
+  .fastoche-icon-secure-payment-fill::after {
+    background-image: url("../icons/finance/secure-payment-fill.svg");
+  }
+
+  .fastoche-icon-secure-payment-line::before,
+  .fastoche-icon-secure-payment-line::after {
+    background-image: url("../icons/finance/secure-payment-line.svg");
+  }
+
+  .fastoche-icon-shopping-bag-fill::before,
+  .fastoche-icon-shopping-bag-fill::after {
+    background-image: url("../icons/finance/shopping-bag-fill.svg");
+  }
+
+  .fastoche-icon-shopping-bag-line::before,
+  .fastoche-icon-shopping-bag-line::after {
+    background-image: url("../icons/finance/shopping-bag-line.svg");
+  }
+
+  .fastoche-icon-shopping-cart-2-fill::before,
+  .fastoche-icon-shopping-cart-2-fill::after {
+    background-image: url("../icons/finance/shopping-cart-2-fill.svg");
+  }
+
+  .fastoche-icon-shopping-cart-2-line::before,
+  .fastoche-icon-shopping-cart-2-line::after {
+    background-image: url("../icons/finance/shopping-cart-2-line.svg");
+  }
+
+  .fastoche-icon-trophy-fill::before,
+  .fastoche-icon-trophy-fill::after {
+    background-image: url("../icons/finance/trophy-fill.svg");
+  }
+
+  .fastoche-icon-trophy-line::before,
+  .fastoche-icon-trophy-line::after {
+    background-image: url("../icons/finance/trophy-line.svg");
+  }
+
+  .fastoche-icon-capsule-fill::before,
+  .fastoche-icon-capsule-fill::after {
+    background-image: url("../icons/health/capsule-fill.svg");
+  }
+
+  .fastoche-icon-capsule-line::before,
+  .fastoche-icon-capsule-line::after {
+    background-image: url("../icons/health/capsule-line.svg");
+  }
+
+  .fastoche-icon-dislike-fill::before,
+  .fastoche-icon-dislike-fill::after {
+    background-image: url("../icons/health/dislike-fill.svg");
+  }
+
+  .fastoche-icon-dislike-line::before,
+  .fastoche-icon-dislike-line::after {
+    background-image: url("../icons/health/dislike-line.svg");
+  }
+
+  .fastoche-icon-dossier-fill::before,
+  .fastoche-icon-dossier-fill::after {
+    background-image: url("../icons/health/dossier-fill.svg");
+  }
+
+  .fastoche-icon-dossier-line::before,
+  .fastoche-icon-dossier-line::after {
+    background-image: url("../icons/health/dossier-line.svg");
+  }
+
+  .fastoche-icon-first-aid-kit-fill::before,
+  .fastoche-icon-first-aid-kit-fill::after {
+    background-image: url("../icons/health/first-aid-kit-fill.svg");
+  }
+
+  .fastoche-icon-first-aid-kit-line::before,
+  .fastoche-icon-first-aid-kit-line::after {
+    background-image: url("../icons/health/first-aid-kit-line.svg");
+  }
+
+  .fastoche-icon-hand-sanitizer-fill::before,
+  .fastoche-icon-hand-sanitizer-fill::after {
+    background-image: url("../icons/health/hand-sanitizer-fill.svg");
+  }
+
+  .fastoche-icon-hand-sanitizer-line::before,
+  .fastoche-icon-hand-sanitizer-line::after {
+    background-image: url("../icons/health/hand-sanitizer-line.svg");
+  }
+
+  .fastoche-icon-health-book-fill::before,
+  .fastoche-icon-health-book-fill::after {
+    background-image: url("../icons/health/health-book-fill.svg");
+  }
+
+  .fastoche-icon-health-book-line::before,
+  .fastoche-icon-health-book-line::after {
+    background-image: url("../icons/health/health-book-line.svg");
+  }
+
+  .fastoche-icon-heart-fill::before,
+  .fastoche-icon-heart-fill::after {
+    background-image: url("../icons/health/heart-fill.svg");
+  }
+
+  .fastoche-icon-heart-line::before,
+  .fastoche-icon-heart-line::after {
+    background-image: url("../icons/health/heart-line.svg");
+  }
+
+  .fastoche-icon-heart-pulse-fill::before,
+  .fastoche-icon-heart-pulse-fill::after {
+    background-image: url("../icons/health/heart-pulse-fill.svg");
+  }
+
+  .fastoche-icon-heart-pulse-line::before,
+  .fastoche-icon-heart-pulse-line::after {
+    background-image: url("../icons/health/heart-pulse-line.svg");
+  }
+
+  .fastoche-icon-lungs-fill::before,
+  .fastoche-icon-lungs-fill::after {
+    background-image: url("../icons/health/lungs-fill.svg");
+  }
+
+  .fastoche-icon-lungs-line::before,
+  .fastoche-icon-lungs-line::after {
+    background-image: url("../icons/health/lungs-line.svg");
+  }
+
+  .fastoche-icon-medicine-bottle-fill::before,
+  .fastoche-icon-medicine-bottle-fill::after {
+    background-image: url("../icons/health/medicine-bottle-fill.svg");
+  }
+
+  .fastoche-icon-medicine-bottle-line::before,
+  .fastoche-icon-medicine-bottle-line::after {
+    background-image: url("../icons/health/medicine-bottle-line.svg");
+  }
+
+  .fastoche-icon-mental-health-fill::before,
+  .fastoche-icon-mental-health-fill::after {
+    background-image: url("../icons/health/mental-health-fill.svg");
+  }
+
+  .fastoche-icon-mental-health-line::before,
+  .fastoche-icon-mental-health-line::after {
+    background-image: url("../icons/health/mental-health-line.svg");
+  }
+
+  .fastoche-icon-microscope-fill::before,
+  .fastoche-icon-microscope-fill::after {
+    background-image: url("../icons/health/microscope-fill.svg");
+  }
+
+  .fastoche-icon-microscope-line::before,
+  .fastoche-icon-microscope-line::after {
+    background-image: url("../icons/health/microscope-line.svg");
+  }
+
+  .fastoche-icon-psychotherapy-fill::before,
+  .fastoche-icon-psychotherapy-fill::after {
+    background-image: url("../icons/health/psychotherapy-fill.svg");
+  }
+
+  .fastoche-icon-psychotherapy-line::before,
+  .fastoche-icon-psychotherapy-line::after {
+    background-image: url("../icons/health/psychotherapy-line.svg");
+  }
+
+  .fastoche-icon-pulse-line::before,
+  .fastoche-icon-pulse-line::after {
+    background-image: url("../icons/health/pulse-line.svg");
+  }
+
+  .fastoche-icon-stethoscope-fill::before,
+  .fastoche-icon-stethoscope-fill::after {
+    background-image: url("../icons/health/stethoscope-fill.svg");
+  }
+
+  .fastoche-icon-stethoscope-line::before,
+  .fastoche-icon-stethoscope-line::after {
+    background-image: url("../icons/health/stethoscope-line.svg");
+  }
+
+  .fastoche-icon-surgical-mask-fill::before,
+  .fastoche-icon-surgical-mask-fill::after {
+    background-image: url("../icons/health/surgical-mask-fill.svg");
+  }
+
+  .fastoche-icon-surgical-mask-line::before,
+  .fastoche-icon-surgical-mask-line::after {
+    background-image: url("../icons/health/surgical-mask-line.svg");
+  }
+
+  .fastoche-icon-syringe-fill::before,
+  .fastoche-icon-syringe-fill::after {
+    background-image: url("../icons/health/syringe-fill.svg");
+  }
+
+  .fastoche-icon-syringe-line::before,
+  .fastoche-icon-syringe-line::after {
+    background-image: url("../icons/health/syringe-line.svg");
+  }
+
+  .fastoche-icon-test-tube-fill::before,
+  .fastoche-icon-test-tube-fill::after {
+    background-image: url("../icons/health/test-tube-fill.svg");
+  }
+
+  .fastoche-icon-test-tube-line::before,
+  .fastoche-icon-test-tube-line::after {
+    background-image: url("../icons/health/test-tube-line.svg");
+  }
+
+  .fastoche-icon-thermometer-fill::before,
+  .fastoche-icon-thermometer-fill::after {
+    background-image: url("../icons/health/thermometer-fill.svg");
+  }
+
+  .fastoche-icon-thermometer-line::before,
+  .fastoche-icon-thermometer-line::after {
+    background-image: url("../icons/health/thermometer-line.svg");
+  }
+
+  .fastoche-icon-virus-fill::before,
+  .fastoche-icon-virus-fill::after {
+    background-image: url("../icons/health/virus-fill.svg");
+  }
+
+  .fastoche-icon-virus-line::before,
+  .fastoche-icon-virus-line::after {
+    background-image: url("../icons/health/virus-line.svg");
+  }
+
+  .fastoche-icon-chrome-fill::before,
+  .fastoche-icon-chrome-fill::after {
+    background-image: url("../icons/logo/chrome-fill.svg");
+  }
+
+  .fastoche-icon-chrome-line::before,
+  .fastoche-icon-chrome-line::after {
+    background-image: url("../icons/logo/chrome-line.svg");
+  }
+
+  .fastoche-icon-edge-fill::before,
+  .fastoche-icon-edge-fill::after {
+    background-image: url("../icons/logo/edge-fill.svg");
+  }
+
+  .fastoche-icon-edge-line::before,
+  .fastoche-icon-edge-line::after {
+    background-image: url("../icons/logo/edge-line.svg");
+  }
+
+  .fastoche-icon-facebook-circle-fill::before,
+  .fastoche-icon-facebook-circle-fill::after {
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .fastoche-icon-facebook-circle-line::before,
+  .fastoche-icon-facebook-circle-line::after {
+    background-image: url("../icons/logo/facebook-circle-line.svg");
+  }
+
+  .fastoche-icon-dailymotion-fill::before,
+  .fastoche-icon-dailymotion-fill::after {
+    background-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
+  }
+
+  .fastoche-icon-dailymotion-line::before,
+  .fastoche-icon-dailymotion-line::after {
+    background-image: url("../icons/logo/fastoche--dailymotion-line.svg");
+  }
+
+  .fastoche-icon-tiktok-fill::before,
+  .fastoche-icon-tiktok-fill::after {
+    background-image: url("../icons/logo/fastoche--tiktok-fill.svg");
+  }
+
+  .fastoche-icon-tiktok-line::before,
+  .fastoche-icon-tiktok-line::after {
+    background-image: url("../icons/logo/fastoche--tiktok-line.svg");
+  }
+
+  .fastoche-icon-firefox-fill::before,
+  .fastoche-icon-firefox-fill::after {
+    background-image: url("../icons/logo/firefox-fill.svg");
+  }
+
+  .fastoche-icon-firefox-line::before,
+  .fastoche-icon-firefox-line::after {
+    background-image: url("../icons/logo/firefox-line.svg");
+  }
+
+  .fastoche-icon-github-fill::before,
+  .fastoche-icon-github-fill::after {
+    background-image: url("../icons/logo/github-fill.svg");
+  }
+
+  .fastoche-icon-github-line::before,
+  .fastoche-icon-github-line::after {
+    background-image: url("../icons/logo/github-line.svg");
+  }
+
+  .fastoche-icon-google-fill::before,
+  .fastoche-icon-google-fill::after {
+    background-image: url("../icons/logo/google-fill.svg");
+  }
+
+  .fastoche-icon-google-line::before,
+  .fastoche-icon-google-line::after {
+    background-image: url("../icons/logo/google-line.svg");
+  }
+
+  .fastoche-icon-ie-fill::before,
+  .fastoche-icon-ie-fill::after {
+    background-image: url("../icons/logo/ie-fill.svg");
+  }
+
+  .fastoche-icon-ie-line::before,
+  .fastoche-icon-ie-line::after {
+    background-image: url("../icons/logo/ie-line.svg");
+  }
+
+  .fastoche-icon-instagram-fill::before,
+  .fastoche-icon-instagram-fill::after {
+    background-image: url("../icons/logo/instagram-fill.svg");
+  }
+
+  .fastoche-icon-instagram-line::before,
+  .fastoche-icon-instagram-line::after {
+    background-image: url("../icons/logo/instagram-line.svg");
+  }
+
+  .fastoche-icon-linkedin-box-fill::before,
+  .fastoche-icon-linkedin-box-fill::after {
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .fastoche-icon-linkedin-box-line::before,
+  .fastoche-icon-linkedin-box-line::after {
+    background-image: url("../icons/logo/linkedin-box-line.svg");
+  }
+
+  .fastoche-icon-mastodon-fill::before,
+  .fastoche-icon-mastodon-fill::after {
+    background-image: url("../icons/logo/mastodon-fill.svg");
+  }
+
+  .fastoche-icon-mastodon-line::before,
+  .fastoche-icon-mastodon-line::after {
+    background-image: url("../icons/logo/mastodon-line.svg");
+  }
+
+  .fastoche-icon-npmjs-fill::before,
+  .fastoche-icon-npmjs-fill::after {
+    background-image: url("../icons/logo/npmjs-fill.svg");
+  }
+
+  .fastoche-icon-npmjs-line::before,
+  .fastoche-icon-npmjs-line::after {
+    background-image: url("../icons/logo/npmjs-line.svg");
+  }
+
+  .fastoche-icon-remixicon-fill::before,
+  .fastoche-icon-remixicon-fill::after {
+    background-image: url("../icons/logo/remixicon-fill.svg");
+  }
+
+  .fastoche-icon-remixicon-line::before,
+  .fastoche-icon-remixicon-line::after {
+    background-image: url("../icons/logo/remixicon-line.svg");
+  }
+
+  .fastoche-icon-safari-fill::before,
+  .fastoche-icon-safari-fill::after {
+    background-image: url("../icons/logo/safari-fill.svg");
+  }
+
+  .fastoche-icon-safari-line::before,
+  .fastoche-icon-safari-line::after {
+    background-image: url("../icons/logo/safari-line.svg");
+  }
+
+  .fastoche-icon-slack-fill::before,
+  .fastoche-icon-slack-fill::after {
+    background-image: url("../icons/logo/slack-fill.svg");
+  }
+
+  .fastoche-icon-slack-line::before,
+  .fastoche-icon-slack-line::after {
+    background-image: url("../icons/logo/slack-line.svg");
+  }
+
+  .fastoche-icon-snapchat-fill::before,
+  .fastoche-icon-snapchat-fill::after {
+    background-image: url("../icons/logo/snapchat-fill.svg");
+  }
+
+  .fastoche-icon-snapchat-line::before,
+  .fastoche-icon-snapchat-line::after {
+    background-image: url("../icons/logo/snapchat-line.svg");
+  }
+
+  .fastoche-icon-telegram-fill::before,
+  .fastoche-icon-telegram-fill::after {
+    background-image: url("../icons/logo/telegram-fill.svg");
+  }
+
+  .fastoche-icon-telegram-line::before,
+  .fastoche-icon-telegram-line::after {
+    background-image: url("../icons/logo/telegram-line.svg");
+  }
+
+  .fastoche-icon-threads-fill::before,
+  .fastoche-icon-threads-fill::after {
+    background-image: url("../icons/logo/threads-fill.svg");
+  }
+
+  .fastoche-icon-threads-line::before,
+  .fastoche-icon-threads-line::after {
+    background-image: url("../icons/logo/threads-line.svg");
+  }
+
+  .fastoche-icon-twitch-fill::before,
+  .fastoche-icon-twitch-fill::after {
+    background-image: url("../icons/logo/twitch-fill.svg");
+  }
+
+  .fastoche-icon-twitch-line::before,
+  .fastoche-icon-twitch-line::after {
+    background-image: url("../icons/logo/twitch-line.svg");
+  }
+
+  .fastoche-icon-twitter-fill::before,
+  .fastoche-icon-twitter-fill::after {
+    background-image: url("../icons/logo/twitter-fill.svg");
+  }
+
+  .fastoche-icon-twitter-line::before,
+  .fastoche-icon-twitter-line::after {
+    background-image: url("../icons/logo/twitter-line.svg");
+  }
+
+  .fastoche-icon-twitter-x-fill::before,
+  .fastoche-icon-twitter-x-fill::after {
+    background-image: url("../icons/logo/twitter-x-fill.svg");
+  }
+
+  .fastoche-icon-twitter-x-line::before,
+  .fastoche-icon-twitter-x-line::after {
+    background-image: url("../icons/logo/twitter-x-line.svg");
+  }
+
+  .fastoche-icon-vimeo-fill::before,
+  .fastoche-icon-vimeo-fill::after {
+    background-image: url("../icons/logo/vimeo-fill.svg");
+  }
+
+  .fastoche-icon-vimeo-line::before,
+  .fastoche-icon-vimeo-line::after {
+    background-image: url("../icons/logo/vimeo-line.svg");
+  }
+
+  .fastoche-icon-vuejs-fill::before,
+  .fastoche-icon-vuejs-fill::after {
+    background-image: url("../icons/logo/vuejs-fill.svg");
+  }
+
+  .fastoche-icon-vuejs-line::before,
+  .fastoche-icon-vuejs-line::after {
+    background-image: url("../icons/logo/vuejs-line.svg");
+  }
+
+  .fastoche-icon-youtube-fill::before,
+  .fastoche-icon-youtube-fill::after {
+    background-image: url("../icons/logo/youtube-fill.svg");
+  }
+
+  .fastoche-icon-youtube-line::before,
+  .fastoche-icon-youtube-line::after {
+    background-image: url("../icons/logo/youtube-line.svg");
+  }
+
+  .fastoche-fi-facebook-circle-fill::before {
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .fastoche-fi-facebook-circle-line::before {
+    background-image: url("../icons/logo/facebook-circle-line.svg");
+  }
+
+  .fastoche-fi-dailymotion-fill::before {
+    background-image: url("../icons/logo/fastoche--dailymotion-fill.svg");
+  }
+
+  .fastoche-fi-dailymotion-line::before {
+    background-image: url("../icons/logo/fastoche--dailymotion-line.svg");
+  }
+
+  .fastoche-fi-github-fill::before {
+    background-image: url("../icons/logo/github-fill.svg");
+  }
+
+  .fastoche-fi-github-line::before {
+    background-image: url("../icons/logo/github-line.svg");
+  }
+
+  .fastoche-fi-instagram-fill::before {
+    background-image: url("../icons/logo/instagram-fill.svg");
+  }
+
+  .fastoche-fi-instagram-line::before {
+    background-image: url("../icons/logo/instagram-line.svg");
+  }
+
+  .fastoche-fi-linkedin-box-fill::before {
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .fastoche-fi-linkedin-box-line::before {
+    background-image: url("../icons/logo/linkedin-box-line.svg");
+  }
+
+  .fastoche-fi-npmjs-fill::before {
+    background-image: url("../icons/logo/npmjs-fill.svg");
+  }
+
+  .fastoche-fi-npmjs-line::before {
+    background-image: url("../icons/logo/npmjs-line.svg");
+  }
+
+  .fastoche-fi-remixicon-fill::before {
+    background-image: url("../icons/logo/remixicon-fill.svg");
+  }
+
+  .fastoche-fi-remixicon-line::before {
+    background-image: url("../icons/logo/remixicon-line.svg");
+  }
+
+  .fastoche-fi-slack-fill::before {
+    background-image: url("../icons/logo/slack-fill.svg");
+  }
+
+  .fastoche-fi-slack-line::before {
+    background-image: url("../icons/logo/slack-line.svg");
+  }
+
+  .fastoche-fi-snapchat-fill::before {
+    background-image: url("../icons/logo/snapchat-fill.svg");
+  }
+
+  .fastoche-fi-snapchat-line::before {
+    background-image: url("../icons/logo/snapchat-line.svg");
+  }
+
+  .fastoche-fi-telegram-fill::before {
+    background-image: url("../icons/logo/telegram-fill.svg");
+  }
+
+  .fastoche-fi-telegram-line::before {
+    background-image: url("../icons/logo/telegram-line.svg");
+  }
+
+  .fastoche-fi-twitch-fill::before {
+    background-image: url("../icons/logo/twitch-fill.svg");
+  }
+
+  .fastoche-fi-twitch-line::before {
+    background-image: url("../icons/logo/twitch-line.svg");
+  }
+
+  .fastoche-fi-twitter-fill::before {
+    background-image: url("../icons/logo/twitter-fill.svg");
+  }
+
+  .fastoche-fi-twitter-line::before {
+    background-image: url("../icons/logo/twitter-line.svg");
+  }
+
+  .fastoche-fi-vimeo-fill::before {
+    background-image: url("../icons/logo/vimeo-fill.svg");
+  }
+
+  .fastoche-fi-vimeo-line::before {
+    background-image: url("../icons/logo/vimeo-line.svg");
+  }
+
+  .fastoche-fi-youtube-fill::before {
+    background-image: url("../icons/logo/youtube-fill.svg");
+  }
+
+  .fastoche-fi-youtube-line::before {
+    background-image: url("../icons/logo/youtube-line.svg");
+  }
+
+  .fastoche-icon-anchor-fill::before,
+  .fastoche-icon-anchor-fill::after {
+    background-image: url("../icons/map/anchor-fill.svg");
+  }
+
+  .fastoche-icon-anchor-line::before,
+  .fastoche-icon-anchor-line::after {
+    background-image: url("../icons/map/anchor-line.svg");
+  }
+
+  .fastoche-icon-bike-fill::before,
+  .fastoche-icon-bike-fill::after {
+    background-image: url("../icons/map/bike-fill.svg");
+  }
+
+  .fastoche-icon-bike-line::before,
+  .fastoche-icon-bike-line::after {
+    background-image: url("../icons/map/bike-line.svg");
+  }
+
+  .fastoche-icon-bus-fill::before,
+  .fastoche-icon-bus-fill::after {
+    background-image: url("../icons/map/bus-fill.svg");
+  }
+
+  .fastoche-icon-bus-line::before,
+  .fastoche-icon-bus-line::after {
+    background-image: url("../icons/map/bus-line.svg");
+  }
+
+  .fastoche-icon-car-fill::before,
+  .fastoche-icon-car-fill::after {
+    background-image: url("../icons/map/car-fill.svg");
+  }
+
+  .fastoche-icon-car-line::before,
+  .fastoche-icon-car-line::after {
+    background-image: url("../icons/map/car-line.svg");
+  }
+
+  .fastoche-icon-caravan-fill::before,
+  .fastoche-icon-caravan-fill::after {
+    background-image: url("../icons/map/caravan-fill.svg");
+  }
+
+  .fastoche-icon-caravan-line::before,
+  .fastoche-icon-caravan-line::after {
+    background-image: url("../icons/map/caravan-line.svg");
+  }
+
+  .fastoche-icon-charging-pile-2-fill::before,
+  .fastoche-icon-charging-pile-2-fill::after {
+    background-image: url("../icons/map/charging-pile-2-fill.svg");
+  }
+
+  .fastoche-icon-charging-pile-2-line::before,
+  .fastoche-icon-charging-pile-2-line::after {
+    background-image: url("../icons/map/charging-pile-2-line.svg");
+  }
+
+  .fastoche-icon-compass-3-fill::before,
+  .fastoche-icon-compass-3-fill::after {
+    background-image: url("../icons/map/compass-3-fill.svg");
+  }
+
+  .fastoche-icon-compass-3-line::before,
+  .fastoche-icon-compass-3-line::after {
+    background-image: url("../icons/map/compass-3-line.svg");
+  }
+
+  .fastoche-icon-cup-fill::before,
+  .fastoche-icon-cup-fill::after {
+    background-image: url("../icons/map/cup-fill.svg");
+  }
+
+  .fastoche-icon-cup-line::before,
+  .fastoche-icon-cup-line::after {
+    background-image: url("../icons/map/cup-line.svg");
+  }
+
+  .fastoche-icon-earth-fill::before,
+  .fastoche-icon-earth-fill::after {
+    background-image: url("../icons/map/earth-fill.svg");
+  }
+
+  .fastoche-icon-earth-line::before,
+  .fastoche-icon-earth-line::after {
+    background-image: url("../icons/map/earth-line.svg");
+  }
+
+  .fastoche-icon-france-fill::before,
+  .fastoche-icon-france-fill::after {
+    background-image: url("../icons/map/france-fill.svg");
+  }
+
+  .fastoche-icon-france-line::before,
+  .fastoche-icon-france-line::after {
+    background-image: url("../icons/map/france-line.svg");
+  }
+
+  .fastoche-icon-gas-station-fill::before,
+  .fastoche-icon-gas-station-fill::after {
+    background-image: url("../icons/map/gas-station-fill.svg");
+  }
+
+  .fastoche-icon-gas-station-line::before,
+  .fastoche-icon-gas-station-line::after {
+    background-image: url("../icons/map/gas-station-line.svg");
+  }
+
+  .fastoche-icon-goblet-fill::before,
+  .fastoche-icon-goblet-fill::after {
+    background-image: url("../icons/map/goblet-fill.svg");
+  }
+
+  .fastoche-icon-goblet-line::before,
+  .fastoche-icon-goblet-line::after {
+    background-image: url("../icons/map/goblet-line.svg");
+  }
+
+  .fastoche-icon-map-pin-2-fill::before,
+  .fastoche-icon-map-pin-2-fill::after {
+    background-image: url("../icons/map/map-pin-2-fill.svg");
+  }
+
+  .fastoche-icon-map-pin-2-line::before,
+  .fastoche-icon-map-pin-2-line::after {
+    background-image: url("../icons/map/map-pin-2-line.svg");
+  }
+
+  .fastoche-icon-map-pin-user-fill::before,
+  .fastoche-icon-map-pin-user-fill::after {
+    background-image: url("../icons/map/map-pin-user-fill.svg");
+  }
+
+  .fastoche-icon-map-pin-user-line::before,
+  .fastoche-icon-map-pin-user-line::after {
+    background-image: url("../icons/map/map-pin-user-line.svg");
+  }
+
+  .fastoche-icon-motorbike-fill::before,
+  .fastoche-icon-motorbike-fill::after {
+    background-image: url("../icons/map/motorbike-fill.svg");
+  }
+
+  .fastoche-icon-motorbike-line::before,
+  .fastoche-icon-motorbike-line::after {
+    background-image: url("../icons/map/motorbike-line.svg");
+  }
+
+  .fastoche-icon-passport-fill::before,
+  .fastoche-icon-passport-fill::after {
+    background-image: url("../icons/map/passport-fill.svg");
+  }
+
+  .fastoche-icon-passport-line::before,
+  .fastoche-icon-passport-line::after {
+    background-image: url("../icons/map/passport-line.svg");
+  }
+
+  .fastoche-icon-restaurant-fill::before,
+  .fastoche-icon-restaurant-fill::after {
+    background-image: url("../icons/map/restaurant-fill.svg");
+  }
+
+  .fastoche-icon-restaurant-line::before,
+  .fastoche-icon-restaurant-line::after {
+    background-image: url("../icons/map/restaurant-line.svg");
+  }
+
+  .fastoche-icon-road-map-fill::before,
+  .fastoche-icon-road-map-fill::after {
+    background-image: url("../icons/map/road-map-fill.svg");
+  }
+
+  .fastoche-icon-road-map-line::before,
+  .fastoche-icon-road-map-line::after {
+    background-image: url("../icons/map/road-map-line.svg");
+  }
+
+  .fastoche-icon-sailboat-fill::before,
+  .fastoche-icon-sailboat-fill::after {
+    background-image: url("../icons/map/sailboat-fill.svg");
+  }
+
+  .fastoche-icon-sailboat-line::before,
+  .fastoche-icon-sailboat-line::after {
+    background-image: url("../icons/map/sailboat-line.svg");
+  }
+
+  .fastoche-icon-ship-2-fill::before,
+  .fastoche-icon-ship-2-fill::after {
+    background-image: url("../icons/map/ship-2-fill.svg");
+  }
+
+  .fastoche-icon-ship-2-line::before,
+  .fastoche-icon-ship-2-line::after {
+    background-image: url("../icons/map/ship-2-line.svg");
+  }
+
+  .fastoche-icon-signal-tower-fill::before,
+  .fastoche-icon-signal-tower-fill::after {
+    background-image: url("../icons/map/signal-tower-fill.svg");
+  }
+
+  .fastoche-icon-signal-tower-line::before,
+  .fastoche-icon-signal-tower-line::after {
+    background-image: url("../icons/map/signal-tower-line.svg");
+  }
+
+  .fastoche-icon-suitcase-2-fill::before,
+  .fastoche-icon-suitcase-2-fill::after {
+    background-image: url("../icons/map/suitcase-2-fill.svg");
+  }
+
+  .fastoche-icon-suitcase-2-line::before,
+  .fastoche-icon-suitcase-2-line::after {
+    background-image: url("../icons/map/suitcase-2-line.svg");
+  }
+
+  .fastoche-icon-taxi-fill::before,
+  .fastoche-icon-taxi-fill::after {
+    background-image: url("../icons/map/taxi-fill.svg");
+  }
+
+  .fastoche-icon-taxi-line::before,
+  .fastoche-icon-taxi-line::after {
+    background-image: url("../icons/map/taxi-line.svg");
+  }
+
+  .fastoche-icon-train-fill::before,
+  .fastoche-icon-train-fill::after {
+    background-image: url("../icons/map/train-fill.svg");
+  }
+
+  .fastoche-icon-train-line::before,
+  .fastoche-icon-train-line::after {
+    background-image: url("../icons/map/train-line.svg");
+  }
+
+  .fastoche-fi-map-pin-2-fill::before {
+    background-image: url("../icons/map/map-pin-2-fill.svg");
+  }
+
+  .fastoche-fi-map-pin-2-line::before {
+    background-image: url("../icons/map/map-pin-2-line.svg");
+  }
+
+  .fastoche-fi-road-map-fill::before {
+    background-image: url("../icons/map/road-map-fill.svg");
+  }
+
+  .fastoche-fi-road-map-line::before {
+    background-image: url("../icons/map/road-map-line.svg");
+  }
+
+  .fastoche-icon-align-left::before,
+  .fastoche-icon-align-left::after {
+    background-image: url("../icons/media/align-left.svg");
+  }
+
+  .fastoche-icon-camera-fill::before,
+  .fastoche-icon-camera-fill::after {
+    background-image: url("../icons/media/camera-fill.svg");
+  }
+
+  .fastoche-icon-camera-line::before,
+  .fastoche-icon-camera-line::after {
+    background-image: url("../icons/media/camera-line.svg");
+  }
+
+  .fastoche-icon-clapperboard-fill::before,
+  .fastoche-icon-clapperboard-fill::after {
+    background-image: url("../icons/media/clapperboard-fill.svg");
+  }
+
+  .fastoche-icon-clapperboard-line::before,
+  .fastoche-icon-clapperboard-line::after {
+    background-image: url("../icons/media/clapperboard-line.svg");
+  }
+
+  .fastoche-icon-equalizer-fill::before,
+  .fastoche-icon-equalizer-fill::after {
+    background-image: url("../icons/media/equalizer-fill.svg");
+  }
+
+  .fastoche-icon-equalizer-line::before,
+  .fastoche-icon-equalizer-line::after {
+    background-image: url("../icons/media/equalizer-line.svg");
+  }
+
+  .fastoche-icon-film-fill::before,
+  .fastoche-icon-film-fill::after {
+    background-image: url("../icons/media/film-fill.svg");
+  }
+
+  .fastoche-icon-film-line::before,
+  .fastoche-icon-film-line::after {
+    background-image: url("../icons/media/film-line.svg");
+  }
+
+  .fastoche-icon-fullscreen-line::before,
+  .fastoche-icon-fullscreen-line::after {
+    background-image: url("../icons/media/fullscreen-line.svg");
+  }
+
+  .fastoche-icon-gallery-fill::before,
+  .fastoche-icon-gallery-fill::after {
+    background-image: url("../icons/media/gallery-fill.svg");
+  }
+
+  .fastoche-icon-gallery-line::before,
+  .fastoche-icon-gallery-line::after {
+    background-image: url("../icons/media/gallery-line.svg");
+  }
+
+  .fastoche-icon-headphone-fill::before,
+  .fastoche-icon-headphone-fill::after {
+    background-image: url("../icons/media/headphone-fill.svg");
+  }
+
+  .fastoche-icon-headphone-line::before,
+  .fastoche-icon-headphone-line::after {
+    background-image: url("../icons/media/headphone-line.svg");
+  }
+
+  .fastoche-icon-image-add-fill::before,
+  .fastoche-icon-image-add-fill::after {
+    background-image: url("../icons/media/image-add-fill.svg");
+  }
+
+  .fastoche-icon-image-add-line::before,
+  .fastoche-icon-image-add-line::after {
+    background-image: url("../icons/media/image-add-line.svg");
+  }
+
+  .fastoche-icon-image-edit-fill::before,
+  .fastoche-icon-image-edit-fill::after {
+    background-image: url("../icons/media/image-edit-fill.svg");
+  }
+
+  .fastoche-icon-image-edit-line::before,
+  .fastoche-icon-image-edit-line::after {
+    background-image: url("../icons/media/image-edit-line.svg");
+  }
+
+  .fastoche-icon-image-fill::before,
+  .fastoche-icon-image-fill::after {
+    background-image: url("../icons/media/image-fill.svg");
+  }
+
+  .fastoche-icon-image-line::before,
+  .fastoche-icon-image-line::after {
+    background-image: url("../icons/media/image-line.svg");
+  }
+
+  .fastoche-icon-live-fill::before,
+  .fastoche-icon-live-fill::after {
+    background-image: url("../icons/media/live-fill.svg");
+  }
+
+  .fastoche-icon-live-line::before,
+  .fastoche-icon-live-line::after {
+    background-image: url("../icons/media/live-line.svg");
+  }
+
+  .fastoche-icon-mic-fill::before,
+  .fastoche-icon-mic-fill::after {
+    background-image: url("../icons/media/mic-fill.svg");
+  }
+
+  .fastoche-icon-mic-line::before,
+  .fastoche-icon-mic-line::after {
+    background-image: url("../icons/media/mic-line.svg");
+  }
+
+  .fastoche-icon-music-2-fill::before,
+  .fastoche-icon-music-2-fill::after {
+    background-image: url("../icons/media/music-2-fill.svg");
+  }
+
+  .fastoche-icon-music-2-line::before,
+  .fastoche-icon-music-2-line::after {
+    background-image: url("../icons/media/music-2-line.svg");
+  }
+
+  .fastoche-icon-notification-3-fill::before,
+  .fastoche-icon-notification-3-fill::after {
+    background-image: url("../icons/media/notification-3-fill.svg");
+  }
+
+  .fastoche-icon-notification-3-line::before,
+  .fastoche-icon-notification-3-line::after {
+    background-image: url("../icons/media/notification-3-line.svg");
+  }
+
+  .fastoche-icon-pause-circle-fill::before,
+  .fastoche-icon-pause-circle-fill::after {
+    background-image: url("../icons/media/pause-circle-fill.svg");
+  }
+
+  .fastoche-icon-pause-circle-line::before,
+  .fastoche-icon-pause-circle-line::after {
+    background-image: url("../icons/media/pause-circle-line.svg");
+  }
+
+  .fastoche-icon-play-circle-fill::before,
+  .fastoche-icon-play-circle-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .fastoche-icon-play-circle-line::before,
+  .fastoche-icon-play-circle-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .fastoche-icon-stop-circle-fill::before,
+  .fastoche-icon-stop-circle-fill::after {
+    background-image: url("../icons/media/stop-circle-fill.svg");
+  }
+
+  .fastoche-icon-stop-circle-line::before,
+  .fastoche-icon-stop-circle-line::after {
+    background-image: url("../icons/media/stop-circle-line.svg");
+  }
+
+  .fastoche-icon-volume-down-fill::before,
+  .fastoche-icon-volume-down-fill::after {
+    background-image: url("../icons/media/volume-down-fill.svg");
+  }
+
+  .fastoche-icon-volume-down-line::before,
+  .fastoche-icon-volume-down-line::after {
+    background-image: url("../icons/media/volume-down-line.svg");
+  }
+
+  .fastoche-icon-volume-mute-fill::before,
+  .fastoche-icon-volume-mute-fill::after {
+    background-image: url("../icons/media/volume-mute-fill.svg");
+  }
+
+  .fastoche-icon-volume-mute-line::before,
+  .fastoche-icon-volume-mute-line::after {
+    background-image: url("../icons/media/volume-mute-line.svg");
+  }
+
+  .fastoche-icon-volume-up-fill::before,
+  .fastoche-icon-volume-up-fill::after {
+    background-image: url("../icons/media/volume-up-fill.svg");
+  }
+
+  .fastoche-icon-volume-up-line::before,
+  .fastoche-icon-volume-up-line::after {
+    background-image: url("../icons/media/volume-up-line.svg");
+  }
+
+  .fastoche-fi-equalizer-fill::before {
+    background-image: url("../icons/media/equalizer-fill.svg");
+  }
+
+  .fastoche-fi-equalizer-line::before {
+    background-image: url("../icons/media/equalizer-line.svg");
+  }
+
+  .fastoche-fi-image-fill::before {
+    background-image: url("../icons/media/image-fill.svg");
+  }
+
+  .fastoche-fi-image-line::before {
+    background-image: url("../icons/media/image-line.svg");
+  }
+
+  .fastoche-fi-pause-circle-fill::before {
+    background-image: url("../icons/media/pause-circle-fill.svg");
+  }
+
+  .fastoche-fi-pause-circle-line::before {
+    background-image: url("../icons/media/pause-circle-line.svg");
+  }
+
+  .fastoche-fi-volume-down-fill::before {
+    background-image: url("../icons/media/volume-down-fill.svg");
+  }
+
+  .fastoche-fi-volume-down-line::before {
+    background-image: url("../icons/media/volume-down-line.svg");
+  }
+
+  .fastoche-fi-volume-mute-fill::before {
+    background-image: url("../icons/media/volume-mute-fill.svg");
+  }
+
+  .fastoche-fi-volume-mute-line::before {
+    background-image: url("../icons/media/volume-mute-line.svg");
+  }
+
+  .fastoche-fi-volume-up-fill::before {
+    background-image: url("../icons/media/volume-up-fill.svg");
+  }
+
+  .fastoche-fi-volume-up-line::before {
+    background-image: url("../icons/media/volume-up-line.svg");
+  }
+
+  .fastoche-fi-play-line::before,
+  .fastoche-fi-play-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .fastoche-fi-play-fill::before,
+  .fastoche-fi-play-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .fastoche-icon-play-line::before,
+  .fastoche-icon-play-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .fastoche-icon-play-fill::before,
+  .fastoche-icon-play-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .fastoche-icon-leaf-fill::before,
+  .fastoche-icon-leaf-fill::after {
+    background-image: url("../icons/others/leaf-fill.svg");
+  }
+
+  .fastoche-icon-leaf-line::before,
+  .fastoche-icon-leaf-line::after {
+    background-image: url("../icons/others/leaf-line.svg");
+  }
+
+  .fastoche-icon-lightbulb-fill::before,
+  .fastoche-icon-lightbulb-fill::after {
+    background-image: url("../icons/others/lightbulb-fill.svg");
+  }
+
+  .fastoche-icon-lightbulb-line::before,
+  .fastoche-icon-lightbulb-line::after {
+    background-image: url("../icons/others/lightbulb-line.svg");
+  }
+
+  .fastoche-icon-plant-fill::before,
+  .fastoche-icon-plant-fill::after {
+    background-image: url("../icons/others/plant-fill.svg");
+  }
+
+  .fastoche-icon-plant-line::before,
+  .fastoche-icon-plant-line::after {
+    background-image: url("../icons/others/plant-line.svg");
+  }
+
+  .fastoche-icon-recycle-fill::before,
+  .fastoche-icon-recycle-fill::after {
+    background-image: url("../icons/others/recycle-fill.svg");
+  }
+
+  .fastoche-icon-recycle-line::before,
+  .fastoche-icon-recycle-line::after {
+    background-image: url("../icons/others/recycle-line.svg");
+  }
+
+  .fastoche-icon-scales-3-fill::before,
+  .fastoche-icon-scales-3-fill::after {
+    background-image: url("../icons/others/scales-3-fill.svg");
+  }
+
+  .fastoche-icon-scales-3-line::before,
+  .fastoche-icon-scales-3-line::after {
+    background-image: url("../icons/others/scales-3-line.svg");
+  }
+
+  .fastoche-icon-seedling-fill::before,
+  .fastoche-icon-seedling-fill::after {
+    background-image: url("../icons/others/seedling-fill.svg");
+  }
+
+  .fastoche-icon-seedling-line::before,
+  .fastoche-icon-seedling-line::after {
+    background-image: url("../icons/others/seedling-line.svg");
+  }
+
+  .fastoche-icon-umbrella-fill::before,
+  .fastoche-icon-umbrella-fill::after {
+    background-image: url("../icons/others/umbrella-fill.svg");
+  }
+
+  .fastoche-icon-umbrella-line::before,
+  .fastoche-icon-umbrella-line::after {
+    background-image: url("../icons/others/umbrella-line.svg");
+  }
+
+  .fastoche-icon-add-circle-fill::before,
+  .fastoche-icon-add-circle-fill::after {
+    background-image: url("../icons/system/add-circle-fill.svg");
+  }
+
+  .fastoche-icon-add-circle-line::before,
+  .fastoche-icon-add-circle-line::after {
+    background-image: url("../icons/system/add-circle-line.svg");
+  }
+
+  .fastoche-icon-add-line::before,
+  .fastoche-icon-add-line::after {
+    background-image: url("../icons/system/add-line.svg");
+  }
+
+  .fastoche-icon-alarm-warning-fill::before,
+  .fastoche-icon-alarm-warning-fill::after {
+    background-image: url("../icons/system/alarm-warning-fill.svg");
+  }
+
+  .fastoche-icon-alarm-warning-line::before,
+  .fastoche-icon-alarm-warning-line::after {
+    background-image: url("../icons/system/alarm-warning-line.svg");
+  }
+
+  .fastoche-icon-alert-fill::before,
+  .fastoche-icon-alert-fill::after {
+    background-image: url("../icons/system/alert-fill.svg");
+  }
+
+  .fastoche-icon-alert-line::before,
+  .fastoche-icon-alert-line::after {
+    background-image: url("../icons/system/alert-line.svg");
+  }
+
+  .fastoche-icon-arrow-down-fill::before,
+  .fastoche-icon-arrow-down-fill::after {
+    background-image: url("../icons/system/arrow-down-fill.svg");
+  }
+
+  .fastoche-icon-arrow-down-line::before,
+  .fastoche-icon-arrow-down-line::after {
+    background-image: url("../icons/system/arrow-down-line.svg");
+  }
+
+  .fastoche-icon-arrow-down-s-fill::before,
+  .fastoche-icon-arrow-down-s-fill::after {
+    background-image: url("../icons/system/arrow-down-s-fill.svg");
+  }
+
+  .fastoche-icon-arrow-down-s-line::before,
+  .fastoche-icon-arrow-down-s-line::after {
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+  }
+
+  .fastoche-icon-arrow-go-back-fill::before,
+  .fastoche-icon-arrow-go-back-fill::after {
+    background-image: url("../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .fastoche-icon-arrow-go-back-line::before,
+  .fastoche-icon-arrow-go-back-line::after {
+    background-image: url("../icons/system/arrow-go-back-line.svg");
+  }
+
+  .fastoche-icon-arrow-go-forward-fill::before,
+  .fastoche-icon-arrow-go-forward-fill::after {
+    background-image: url("../icons/system/arrow-go-forward-fill.svg");
+  }
+
+  .fastoche-icon-arrow-go-forward-line::before,
+  .fastoche-icon-arrow-go-forward-line::after {
+    background-image: url("../icons/system/arrow-go-forward-line.svg");
+  }
+
+  .fastoche-icon-arrow-left-fill::before,
+  .fastoche-icon-arrow-left-fill::after {
+    background-image: url("../icons/system/arrow-left-fill.svg");
+  }
+
+  .fastoche-icon-arrow-left-line::before,
+  .fastoche-icon-arrow-left-line::after {
+    background-image: url("../icons/system/arrow-left-line.svg");
+  }
+
+  .fastoche-icon-arrow-left-s-fill::before,
+  .fastoche-icon-arrow-left-s-fill::after {
+    background-image: url("../icons/system/arrow-left-s-fill.svg");
+  }
+
+  .fastoche-icon-arrow-left-s-line::before,
+  .fastoche-icon-arrow-left-s-line::after {
+    background-image: url("../icons/system/arrow-left-s-line.svg");
+  }
+
+  .fastoche-icon-arrow-right-fill::before,
+  .fastoche-icon-arrow-right-fill::after {
+    background-image: url("../icons/system/arrow-right-fill.svg");
+  }
+
+  .fastoche-icon-arrow-right-line::before,
+  .fastoche-icon-arrow-right-line::after {
+    background-image: url("../icons/system/arrow-right-line.svg");
+  }
+
+  .fastoche-icon-arrow-right-s-fill::before,
+  .fastoche-icon-arrow-right-s-fill::after {
+    background-image: url("../icons/system/arrow-right-s-fill.svg");
+  }
+
+  .fastoche-icon-arrow-right-s-line::before,
+  .fastoche-icon-arrow-right-s-line::after {
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+  }
+
+  .fastoche-icon-arrow-right-up-line::before,
+  .fastoche-icon-arrow-right-up-line::after {
+    background-image: url("../icons/system/arrow-right-up-line.svg");
+  }
+
+  .fastoche-icon-arrow-up-fill::before,
+  .fastoche-icon-arrow-up-fill::after {
+    background-image: url("../icons/system/arrow-up-fill.svg");
+  }
+
+  .fastoche-icon-arrow-up-line::before,
+  .fastoche-icon-arrow-up-line::after {
+    background-image: url("../icons/system/arrow-up-line.svg");
+  }
+
+  .fastoche-icon-arrow-up-s-fill::before,
+  .fastoche-icon-arrow-up-s-fill::after {
+    background-image: url("../icons/system/arrow-up-s-fill.svg");
+  }
+
+  .fastoche-icon-arrow-up-s-line::before,
+  .fastoche-icon-arrow-up-s-line::after {
+    background-image: url("../icons/system/arrow-up-s-line.svg");
+  }
+
+  .fastoche-icon-check-line::before,
+  .fastoche-icon-check-line::after {
+    background-image: url("../icons/system/check-line.svg");
+  }
+
+  .fastoche-icon-checkbox-circle-fill::before,
+  .fastoche-icon-checkbox-circle-fill::after {
+    background-image: url("../icons/system/checkbox-circle-fill.svg");
+  }
+
+  .fastoche-icon-checkbox-circle-line::before,
+  .fastoche-icon-checkbox-circle-line::after {
+    background-image: url("../icons/system/checkbox-circle-line.svg");
+  }
+
+  .fastoche-icon-checkbox-fill::before,
+  .fastoche-icon-checkbox-fill::after {
+    background-image: url("../icons/system/checkbox-fill.svg");
+  }
+
+  .fastoche-icon-checkbox-line::before,
+  .fastoche-icon-checkbox-line::after {
+    background-image: url("../icons/system/checkbox-line.svg");
+  }
+
+  .fastoche-icon-close-circle-fill::before,
+  .fastoche-icon-close-circle-fill::after {
+    background-image: url("../icons/system/close-circle-fill.svg");
+  }
+
+  .fastoche-icon-close-circle-line::before,
+  .fastoche-icon-close-circle-line::after {
+    background-image: url("../icons/system/close-circle-line.svg");
+  }
+
+  .fastoche-icon-close-line::before,
+  .fastoche-icon-close-line::after {
+    background-image: url("../icons/system/close-line.svg");
+  }
+
+  .fastoche-icon-delete-bin-fill::before,
+  .fastoche-icon-delete-bin-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .fastoche-icon-delete-bin-line::before,
+  .fastoche-icon-delete-bin-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .fastoche-icon-download-fill::before,
+  .fastoche-icon-download-fill::after {
+    background-image: url("../icons/system/download-fill.svg");
+  }
+
+  .fastoche-icon-download-line::before,
+  .fastoche-icon-download-line::after {
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .fastoche-icon-error-warning-fill::before,
+  .fastoche-icon-error-warning-fill::after {
+    background-image: url("../icons/system/error-warning-fill.svg");
+  }
+
+  .fastoche-icon-error-warning-line::before,
+  .fastoche-icon-error-warning-line::after {
+    background-image: url("../icons/system/error-warning-line.svg");
+  }
+
+  .fastoche-icon-external-link-fill::before,
+  .fastoche-icon-external-link-fill::after {
+    background-image: url("../icons/system/external-link-fill.svg");
+  }
+
+  .fastoche-icon-external-link-line::before,
+  .fastoche-icon-external-link-line::after {
+    background-image: url("../icons/system/external-link-line.svg");
+  }
+
+  .fastoche-icon-eye-fill::before,
+  .fastoche-icon-eye-fill::after {
+    background-image: url("../icons/system/eye-fill.svg");
+  }
+
+  .fastoche-icon-eye-line::before,
+  .fastoche-icon-eye-line::after {
+    background-image: url("../icons/system/eye-line.svg");
+  }
+
+  .fastoche-icon-eye-off-fill::before,
+  .fastoche-icon-eye-off-fill::after {
+    background-image: url("../icons/system/eye-off-fill.svg");
+  }
+
+  .fastoche-icon-eye-off-line::before,
+  .fastoche-icon-eye-off-line::after {
+    background-image: url("../icons/system/eye-off-line.svg");
+  }
+
+  .fastoche-icon-arrow-left-s-first-line::before,
+  .fastoche-icon-arrow-left-s-first-line::after {
+    background-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+  }
+
+  .fastoche-icon-arrow-left-s-line-double::before,
+  .fastoche-icon-arrow-left-s-line-double::after {
+    background-image: url("../icons/system/fastoche--arrow-left-s-line-double.svg");
+  }
+
+  .fastoche-icon-arrow-right-down-circle-fill::before,
+  .fastoche-icon-arrow-right-down-circle-fill::after {
+    background-image: url("../icons/system/fastoche--arrow-right-down-circle-fill.svg");
+  }
+
+  .fastoche-icon-arrow-right-s-last-line::before,
+  .fastoche-icon-arrow-right-s-last-line::after {
+    background-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+  }
+
+  .fastoche-icon-arrow-right-s-line-double::before,
+  .fastoche-icon-arrow-right-s-line-double::after {
+    background-image: url("../icons/system/fastoche--arrow-right-s-line-double.svg");
+  }
+
+  .fastoche-icon-arrow-right-up-circle-fill::before,
+  .fastoche-icon-arrow-right-up-circle-fill::after {
+    background-image: url("../icons/system/fastoche--arrow-right-up-circle-fill.svg");
+  }
+
+  .fastoche-icon-capslock-line::before,
+  .fastoche-icon-capslock-line::after {
+    background-image: url("../icons/system/fastoche--capslock-line.svg");
+  }
+
+  .fastoche-icon-equal-circle-fill::before,
+  .fastoche-icon-equal-circle-fill::after {
+    background-image: url("../icons/system/fastoche--equal-circle-fill.svg");
+  }
+
+  .fastoche-icon-error-fill::before,
+  .fastoche-icon-error-fill::after {
+    background-image: url("../icons/system/fastoche--error-fill.svg");
+  }
+
+  .fastoche-icon-error-line::before,
+  .fastoche-icon-error-line::after {
+    background-image: url("../icons/system/fastoche--error-line.svg");
+  }
+
+  .fastoche-icon-info-fill::before,
+  .fastoche-icon-info-fill::after {
+    background-image: url("../icons/system/fastoche--info-fill.svg");
+  }
+
+  .fastoche-icon-info-line::before,
+  .fastoche-icon-info-line::after {
+    background-image: url("../icons/system/fastoche--info-line.svg");
+  }
+
+  .fastoche-icon-success-fill::before,
+  .fastoche-icon-success-fill::after {
+    background-image: url("../icons/system/fastoche--success-fill.svg");
+  }
+
+  .fastoche-icon-success-line::before,
+  .fastoche-icon-success-line::after {
+    background-image: url("../icons/system/fastoche--success-line.svg");
+  }
+
+  .fastoche-icon-theme-fill::before,
+  .fastoche-icon-theme-fill::after {
+    background-image: url("../icons/system/fastoche--theme-fill.svg");
+  }
+
+  .fastoche-icon-warning-fill::before,
+  .fastoche-icon-warning-fill::after {
+    background-image: url("../icons/system/fastoche--warning-fill.svg");
+  }
+
+  .fastoche-icon-warning-line::before,
+  .fastoche-icon-warning-line::after {
+    background-image: url("../icons/system/fastoche--warning-line.svg");
+  }
+
+  .fastoche-icon-filter-fill::before,
+  .fastoche-icon-filter-fill::after {
+    background-image: url("../icons/system/filter-fill.svg");
+  }
+
+  .fastoche-icon-filter-line::before,
+  .fastoche-icon-filter-line::after {
+    background-image: url("../icons/system/filter-line.svg");
+  }
+
+  .fastoche-icon-information-fill::before,
+  .fastoche-icon-information-fill::after {
+    background-image: url("../icons/system/information-fill.svg");
+  }
+
+  .fastoche-icon-information-line::before,
+  .fastoche-icon-information-line::after {
+    background-image: url("../icons/system/information-line.svg");
+  }
+
+  .fastoche-icon-lock-fill::before,
+  .fastoche-icon-lock-fill::after {
+    background-image: url("../icons/system/lock-fill.svg");
+  }
+
+  .fastoche-icon-lock-line::before,
+  .fastoche-icon-lock-line::after {
+    background-image: url("../icons/system/lock-line.svg");
+  }
+
+  .fastoche-icon-lock-unlock-fill::before,
+  .fastoche-icon-lock-unlock-fill::after {
+    background-image: url("../icons/system/lock-unlock-fill.svg");
+  }
+
+  .fastoche-icon-lock-unlock-line::before,
+  .fastoche-icon-lock-unlock-line::after {
+    background-image: url("../icons/system/lock-unlock-line.svg");
+  }
+
+  .fastoche-icon-logout-box-r-fill::before,
+  .fastoche-icon-logout-box-r-fill::after {
+    background-image: url("../icons/system/logout-box-r-fill.svg");
+  }
+
+  .fastoche-icon-logout-box-r-line::before,
+  .fastoche-icon-logout-box-r-line::after {
+    background-image: url("../icons/system/logout-box-r-line.svg");
+  }
+
+  .fastoche-icon-menu-2-fill::before,
+  .fastoche-icon-menu-2-fill::after {
+    background-image: url("../icons/system/menu-2-fill.svg");
+  }
+
+  .fastoche-icon-menu-fill::before,
+  .fastoche-icon-menu-fill::after {
+    background-image: url("../icons/system/menu-fill.svg");
+  }
+
+  .fastoche-icon-more-fill::before,
+  .fastoche-icon-more-fill::after {
+    background-image: url("../icons/system/more-fill.svg");
+  }
+
+  .fastoche-icon-more-line::before,
+  .fastoche-icon-more-line::after {
+    background-image: url("../icons/system/more-line.svg");
+  }
+
+  .fastoche-icon-notification-badge-fill::before,
+  .fastoche-icon-notification-badge-fill::after {
+    background-image: url("../icons/system/notification-badge-fill.svg");
+  }
+
+  .fastoche-icon-notification-badge-line::before,
+  .fastoche-icon-notification-badge-line::after {
+    background-image: url("../icons/system/notification-badge-line.svg");
+  }
+
+  .fastoche-icon-question-fill::before,
+  .fastoche-icon-question-fill::after {
+    background-image: url("../icons/system/question-fill.svg");
+  }
+
+  .fastoche-icon-question-line::before,
+  .fastoche-icon-question-line::after {
+    background-image: url("../icons/system/question-line.svg");
+  }
+
+  .fastoche-icon-refresh-fill::before,
+  .fastoche-icon-refresh-fill::after {
+    background-image: url("../icons/system/refresh-fill.svg");
+  }
+
+  .fastoche-icon-refresh-line::before,
+  .fastoche-icon-refresh-line::after {
+    background-image: url("../icons/system/refresh-line.svg");
+  }
+
+  .fastoche-icon-search-fill::before,
+  .fastoche-icon-search-fill::after {
+    background-image: url("../icons/system/search-fill.svg");
+  }
+
+  .fastoche-icon-search-line::before,
+  .fastoche-icon-search-line::after {
+    background-image: url("../icons/system/search-line.svg");
+  }
+
+  .fastoche-icon-settings-5-fill::before,
+  .fastoche-icon-settings-5-fill::after {
+    background-image: url("../icons/system/settings-5-fill.svg");
+  }
+
+  .fastoche-icon-settings-5-line::before,
+  .fastoche-icon-settings-5-line::after {
+    background-image: url("../icons/system/settings-5-line.svg");
+  }
+
+  .fastoche-icon-shield-fill::before,
+  .fastoche-icon-shield-fill::after {
+    background-image: url("../icons/system/shield-fill.svg");
+  }
+
+  .fastoche-icon-shield-line::before,
+  .fastoche-icon-shield-line::after {
+    background-image: url("../icons/system/shield-line.svg");
+  }
+
+  .fastoche-icon-star-fill::before,
+  .fastoche-icon-star-fill::after {
+    background-image: url("../icons/system/star-fill.svg");
+  }
+
+  .fastoche-icon-star-line::before,
+  .fastoche-icon-star-line::after {
+    background-image: url("../icons/system/star-line.svg");
+  }
+
+  .fastoche-icon-star-s-fill::before,
+  .fastoche-icon-star-s-fill::after {
+    background-image: url("../icons/system/star-s-fill.svg");
+  }
+
+  .fastoche-icon-star-s-line::before,
+  .fastoche-icon-star-s-line::after {
+    background-image: url("../icons/system/star-s-line.svg");
+  }
+
+  .fastoche-icon-subtract-line::before,
+  .fastoche-icon-subtract-line::after {
+    background-image: url("../icons/system/subtract-line.svg");
+  }
+
+  .fastoche-icon-thumb-down-fill::before,
+  .fastoche-icon-thumb-down-fill::after {
+    background-image: url("../icons/system/thumb-down-fill.svg");
+  }
+
+  .fastoche-icon-thumb-down-line::before,
+  .fastoche-icon-thumb-down-line::after {
+    background-image: url("../icons/system/thumb-down-line.svg");
+  }
+
+  .fastoche-icon-thumb-up-fill::before,
+  .fastoche-icon-thumb-up-fill::after {
+    background-image: url("../icons/system/thumb-up-fill.svg");
+  }
+
+  .fastoche-icon-thumb-up-line::before,
+  .fastoche-icon-thumb-up-line::after {
+    background-image: url("../icons/system/thumb-up-line.svg");
+  }
+
+  .fastoche-icon-time-fill::before,
+  .fastoche-icon-time-fill::after {
+    background-image: url("../icons/system/time-fill.svg");
+  }
+
+  .fastoche-icon-time-line::before,
+  .fastoche-icon-time-line::after {
+    background-image: url("../icons/system/time-line.svg");
+  }
+
+  .fastoche-icon-timer-fill::before,
+  .fastoche-icon-timer-fill::after {
+    background-image: url("../icons/system/timer-fill.svg");
+  }
+
+  .fastoche-icon-timer-line::before,
+  .fastoche-icon-timer-line::after {
+    background-image: url("../icons/system/timer-line.svg");
+  }
+
+  .fastoche-icon-upload-2-fill::before,
+  .fastoche-icon-upload-2-fill::after {
+    background-image: url("../icons/system/upload-2-fill.svg");
+  }
+
+  .fastoche-icon-upload-2-line::before,
+  .fastoche-icon-upload-2-line::after {
+    background-image: url("../icons/system/upload-2-line.svg");
+  }
+
+  .fastoche-icon-upload-fill::before,
+  .fastoche-icon-upload-fill::after {
+    background-image: url("../icons/system/upload-fill.svg");
+  }
+
+  .fastoche-icon-upload-line::before,
+  .fastoche-icon-upload-line::after {
+    background-image: url("../icons/system/upload-line.svg");
+  }
+
+  .fastoche-icon-zoom-in-fill::before,
+  .fastoche-icon-zoom-in-fill::after {
+    background-image: url("../icons/system/zoom-in-fill.svg");
+  }
+
+  .fastoche-icon-zoom-in-line::before,
+  .fastoche-icon-zoom-in-line::after {
+    background-image: url("../icons/system/zoom-in-line.svg");
+  }
+
+  .fastoche-icon-zoom-out-fill::before,
+  .fastoche-icon-zoom-out-fill::after {
+    background-image: url("../icons/system/zoom-out-fill.svg");
+  }
+
+  .fastoche-icon-zoom-out-line::before,
+  .fastoche-icon-zoom-out-line::after {
+    background-image: url("../icons/system/zoom-out-line.svg");
+  }
+
+  .fastoche-fi-add-circle-fill::before {
+    background-image: url("../icons/system/add-circle-fill.svg");
+  }
+
+  .fastoche-fi-add-circle-line::before {
+    background-image: url("../icons/system/add-circle-line.svg");
+  }
+
+  .fastoche-fi-add-line::before {
+    background-image: url("../icons/system/add-line.svg");
+  }
+
+  .fastoche-fi-arrow-down-line::before {
+    background-image: url("../icons/system/arrow-down-line.svg");
+  }
+
+  .fastoche-fi-arrow-down-s-line::before {
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+  }
+
+  .fastoche-fi-arrow-go-back-fill::before {
+    background-image: url("../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .fastoche-fi-arrow-go-back-line::before {
+    background-image: url("../icons/system/arrow-go-back-line.svg");
+  }
+
+  .fastoche-fi-arrow-left-line::before {
+    background-image: url("../icons/system/arrow-left-line.svg");
+  }
+
+  .fastoche-fi-arrow-left-s-line::before {
+    background-image: url("../icons/system/arrow-left-s-line.svg");
+  }
+
+  .fastoche-fi-arrow-right-line::before {
+    background-image: url("../icons/system/arrow-right-line.svg");
+  }
+
+  .fastoche-fi-arrow-right-s-line::before {
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+  }
+
+  .fastoche-fi-arrow-right-up-line::before {
+    background-image: url("../icons/system/arrow-right-up-line.svg");
+  }
+
+  .fastoche-fi-arrow-up-fill::before {
+    background-image: url("../icons/system/arrow-up-fill.svg");
+  }
+
+  .fastoche-fi-arrow-up-line::before {
+    background-image: url("../icons/system/arrow-up-line.svg");
+  }
+
+  .fastoche-fi-arrow-up-s-line::before {
+    background-image: url("../icons/system/arrow-up-s-line.svg");
+  }
+
+  .fastoche-fi-check-line::before {
+    background-image: url("../icons/system/check-line.svg");
+  }
+
+  .fastoche-fi-checkbox-circle-line::before {
+    background-image: url("../icons/system/checkbox-circle-line.svg");
+  }
+
+  .fastoche-fi-close-line::before {
+    background-image: url("../icons/system/close-line.svg");
+  }
+
+  .fastoche-fi-download-line::before {
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .fastoche-fi-error-warning-fill::before {
+    background-image: url("../icons/system/error-warning-fill.svg");
+  }
+
+  .fastoche-fi-error-warning-line::before {
+    background-image: url("../icons/system/error-warning-line.svg");
+  }
+
+  .fastoche-fi-external-link-line::before {
+    background-image: url("../icons/system/external-link-line.svg");
+  }
+
+  .fastoche-fi-eye-fill::before {
+    background-image: url("../icons/system/eye-fill.svg");
+  }
+
+  .fastoche-fi-eye-line::before {
+    background-image: url("../icons/system/eye-line.svg");
+  }
+
+  .fastoche-fi-eye-off-fill::before {
+    background-image: url("../icons/system/eye-off-fill.svg");
+  }
+
+  .fastoche-fi-eye-off-line::before {
+    background-image: url("../icons/system/eye-off-line.svg");
+  }
+
+  .fastoche-fi-arrow-left-s-first-line::before {
+    background-image: url("../icons/system/fastoche--arrow-left-s-first-line.svg");
+  }
+
+  .fastoche-fi-arrow-left-s-line-double::before {
+    background-image: url("../icons/system/fastoche--arrow-left-s-line-double.svg");
+  }
+
+  .fastoche-fi-arrow-right-s-last-line::before {
+    background-image: url("../icons/system/fastoche--arrow-right-s-last-line.svg");
+  }
+
+  .fastoche-fi-arrow-right-s-line-double::before {
+    background-image: url("../icons/system/fastoche--arrow-right-s-line-double.svg");
+  }
+
+  .fastoche-fi-error-fill::before {
+    background-image: url("../icons/system/fastoche--error-fill.svg");
+  }
+
+  .fastoche-fi-error-line::before {
+    background-image: url("../icons/system/fastoche--error-line.svg");
+  }
+
+  .fastoche-fi-info-fill::before {
+    background-image: url("../icons/system/fastoche--info-fill.svg");
+  }
+
+  .fastoche-fi-info-line::before {
+    background-image: url("../icons/system/fastoche--info-line.svg");
+  }
+
+  .fastoche-fi-success-fill::before {
+    background-image: url("../icons/system/fastoche--success-fill.svg");
+  }
+
+  .fastoche-fi-success-line::before {
+    background-image: url("../icons/system/fastoche--success-line.svg");
+  }
+
+  .fastoche-fi-theme-fill::before {
+    background-image: url("../icons/system/fastoche--theme-fill.svg");
+  }
+
+  .fastoche-fi-warning-fill::before {
+    background-image: url("../icons/system/fastoche--warning-fill.svg");
+  }
+
+  .fastoche-fi-warning-line::before {
+    background-image: url("../icons/system/fastoche--warning-line.svg");
+  }
+
+  .fastoche-fi-filter-fill::before {
+    background-image: url("../icons/system/filter-fill.svg");
+  }
+
+  .fastoche-fi-filter-line::before {
+    background-image: url("../icons/system/filter-line.svg");
+  }
+
+  .fastoche-fi-information-fill::before {
+    background-image: url("../icons/system/information-fill.svg");
+  }
+
+  .fastoche-fi-information-line::before {
+    background-image: url("../icons/system/information-line.svg");
+  }
+
+  .fastoche-fi-lock-fill::before {
+    background-image: url("../icons/system/lock-fill.svg");
+  }
+
+  .fastoche-fi-lock-line::before {
+    background-image: url("../icons/system/lock-line.svg");
+  }
+
+  .fastoche-fi-logout-box-r-fill::before {
+    background-image: url("../icons/system/logout-box-r-fill.svg");
+  }
+
+  .fastoche-fi-logout-box-r-line::before {
+    background-image: url("../icons/system/logout-box-r-line.svg");
+  }
+
+  .fastoche-fi-menu-2-fill::before {
+    background-image: url("../icons/system/menu-2-fill.svg");
+  }
+
+  .fastoche-fi-menu-fill::before {
+    background-image: url("../icons/system/menu-fill.svg");
+  }
+
+  .fastoche-fi-question-fill::before {
+    background-image: url("../icons/system/question-fill.svg");
+  }
+
+  .fastoche-fi-question-line::before {
+    background-image: url("../icons/system/question-line.svg");
+  }
+
+  .fastoche-fi-refresh-fill::before {
+    background-image: url("../icons/system/refresh-fill.svg");
+  }
+
+  .fastoche-fi-refresh-line::before {
+    background-image: url("../icons/system/refresh-line.svg");
+  }
+
+  .fastoche-fi-search-fill::before {
+    background-image: url("../icons/system/search-fill.svg");
+  }
+
+  .fastoche-fi-search-line::before {
+    background-image: url("../icons/system/search-line.svg");
+  }
+
+  .fastoche-fi-subtract-line::before {
+    background-image: url("../icons/system/subtract-line.svg");
+  }
+
+  .fastoche-fi-timer-fill::before {
+    background-image: url("../icons/system/timer-fill.svg");
+  }
+
+  .fastoche-fi-timer-line::before {
+    background-image: url("../icons/system/timer-line.svg");
+  }
+
+  .fastoche-fi-upload-2-fill::before {
+    background-image: url("../icons/system/upload-2-fill.svg");
+  }
+
+  .fastoche-fi-upload-2-line::before {
+    background-image: url("../icons/system/upload-2-line.svg");
+  }
+
+  .fastoche-fi-zoom-in-fill::before {
+    background-image: url("../icons/system/zoom-in-fill.svg");
+  }
+
+  .fastoche-fi-zoom-in-line::before {
+    background-image: url("../icons/system/zoom-in-line.svg");
+  }
+
+  .fastoche-fi-zoom-out-fill::before {
+    background-image: url("../icons/system/zoom-out-fill.svg");
+  }
+
+  .fastoche-fi-zoom-out-line::before {
+    background-image: url("../icons/system/zoom-out-line.svg");
+  }
+
+  .fastoche-fi-delete-line::before,
+  .fastoche-fi-delete-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .fastoche-fi-delete-fill::before,
+  .fastoche-fi-delete-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .fastoche-icon-delete-line::before,
+  .fastoche-icon-delete-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .fastoche-icon-delete-fill::before,
+  .fastoche-icon-delete-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .fastoche-icon-account-circle-fill::before,
+  .fastoche-icon-account-circle-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .fastoche-icon-account-circle-line::before,
+  .fastoche-icon-account-circle-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .fastoche-icon-account-pin-circle-fill::before,
+  .fastoche-icon-account-pin-circle-fill::after {
+    background-image: url("../icons/user/account-pin-circle-fill.svg");
+  }
+
+  .fastoche-icon-account-pin-circle-line::before,
+  .fastoche-icon-account-pin-circle-line::after {
+    background-image: url("../icons/user/account-pin-circle-line.svg");
+  }
+
+  .fastoche-icon-admin-fill::before,
+  .fastoche-icon-admin-fill::after {
+    background-image: url("../icons/user/admin-fill.svg");
+  }
+
+  .fastoche-icon-admin-line::before,
+  .fastoche-icon-admin-line::after {
+    background-image: url("../icons/user/admin-line.svg");
+  }
+
+  .fastoche-icon-group-fill::before,
+  .fastoche-icon-group-fill::after {
+    background-image: url("../icons/user/group-fill.svg");
+  }
+
+  .fastoche-icon-group-line::before,
+  .fastoche-icon-group-line::after {
+    background-image: url("../icons/user/group-line.svg");
+  }
+
+  .fastoche-icon-parent-fill::before,
+  .fastoche-icon-parent-fill::after {
+    background-image: url("../icons/user/parent-fill.svg");
+  }
+
+  .fastoche-icon-parent-line::before,
+  .fastoche-icon-parent-line::after {
+    background-image: url("../icons/user/parent-line.svg");
+  }
+
+  .fastoche-icon-team-fill::before,
+  .fastoche-icon-team-fill::after {
+    background-image: url("../icons/user/team-fill.svg");
+  }
+
+  .fastoche-icon-team-line::before,
+  .fastoche-icon-team-line::after {
+    background-image: url("../icons/user/team-line.svg");
+  }
+
+  .fastoche-icon-user-add-fill::before,
+  .fastoche-icon-user-add-fill::after {
+    background-image: url("../icons/user/user-add-fill.svg");
+  }
+
+  .fastoche-icon-user-add-line::before,
+  .fastoche-icon-user-add-line::after {
+    background-image: url("../icons/user/user-add-line.svg");
+  }
+
+  .fastoche-icon-user-fill::before,
+  .fastoche-icon-user-fill::after {
+    background-image: url("../icons/user/user-fill.svg");
+  }
+
+  .fastoche-icon-user-heart-fill::before,
+  .fastoche-icon-user-heart-fill::after {
+    background-image: url("../icons/user/user-heart-fill.svg");
+  }
+
+  .fastoche-icon-user-heart-line::before,
+  .fastoche-icon-user-heart-line::after {
+    background-image: url("../icons/user/user-heart-line.svg");
+  }
+
+  .fastoche-icon-user-line::before,
+  .fastoche-icon-user-line::after {
+    background-image: url("../icons/user/user-line.svg");
+  }
+
+  .fastoche-icon-user-search-fill::before,
+  .fastoche-icon-user-search-fill::after {
+    background-image: url("../icons/user/user-search-fill.svg");
+  }
+
+  .fastoche-icon-user-search-line::before,
+  .fastoche-icon-user-search-line::after {
+    background-image: url("../icons/user/user-search-line.svg");
+  }
+
+  .fastoche-icon-user-setting-fill::before,
+  .fastoche-icon-user-setting-fill::after {
+    background-image: url("../icons/user/user-setting-fill.svg");
+  }
+
+  .fastoche-icon-user-setting-line::before,
+  .fastoche-icon-user-setting-line::after {
+    background-image: url("../icons/user/user-setting-line.svg");
+  }
+
+  .fastoche-icon-user-star-fill::before,
+  .fastoche-icon-user-star-fill::after {
+    background-image: url("../icons/user/user-star-fill.svg");
+  }
+
+  .fastoche-icon-user-star-line::before,
+  .fastoche-icon-user-star-line::after {
+    background-image: url("../icons/user/user-star-line.svg");
+  }
+
+  .fastoche-fi-user-fill::before {
+    background-image: url("../icons/user/user-fill.svg");
+  }
+
+  .fastoche-fi-user-line::before {
+    background-image: url("../icons/user/user-line.svg");
+  }
+
+  .fastoche-fi-account-line::before,
+  .fastoche-fi-account-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .fastoche-fi-account-fill::before,
+  .fastoche-fi-account-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .fastoche-icon-account-line::before,
+  .fastoche-icon-account-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .fastoche-icon-account-fill::before,
+  .fastoche-icon-account-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .fastoche-icon-cloudy-2-fill::before,
+  .fastoche-icon-cloudy-2-fill::after {
+    background-image: url("../icons/weather/cloudy-2-fill.svg");
+  }
+
+  .fastoche-icon-cloudy-2-line::before,
+  .fastoche-icon-cloudy-2-line::after {
+    background-image: url("../icons/weather/cloudy-2-line.svg");
+  }
+
+  .fastoche-icon-flashlight-fill::before,
+  .fastoche-icon-flashlight-fill::after {
+    background-image: url("../icons/weather/flashlight-fill.svg");
+  }
+
+  .fastoche-icon-flashlight-line::before,
+  .fastoche-icon-flashlight-line::after {
+    background-image: url("../icons/weather/flashlight-line.svg");
+  }
+
+  .fastoche-icon-moon-fill::before,
+  .fastoche-icon-moon-fill::after {
+    background-image: url("../icons/weather/moon-fill.svg");
+  }
+
+  .fastoche-icon-moon-line::before,
+  .fastoche-icon-moon-line::after {
+    background-image: url("../icons/weather/moon-line.svg");
+  }
+
+  .fastoche-icon-sun-fill::before,
+  .fastoche-icon-sun-fill::after {
+    background-image: url("../icons/weather/sun-fill.svg");
+  }
+
+  .fastoche-icon-sun-line::before,
+  .fastoche-icon-sun-line::after {
+    background-image: url("../icons/weather/sun-line.svg");
+  }
+
+  .fastoche-fi-flashlight-fill::before {
+    background-image: url("../icons/weather/flashlight-fill.svg");
+  }
+
+  .fastoche-fi-flashlight-line::before {
+    background-image: url("../icons/weather/flashlight-line.svg");
+  }
+}
