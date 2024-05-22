@@ -4,9 +4,10 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-    dependencies = [
-        ("django_fastoche", "0001_app_rename"),
-    ]
+
+    initial = True
+
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
