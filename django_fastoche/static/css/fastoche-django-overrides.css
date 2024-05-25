@@ -36,8 +36,12 @@ div.fastoche-header__menu-links {
   grid-area: m;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 62em) {
   .fastoche-header .fastoche-header__menu .fastoche-container  {
-    grid-template-areas: "m m" "t s" "l c" "h h";
+    grid-template-areas: "c c" "m m" "t t" "l l" "h h";
   }
+}
+
+.fastoche-menu {
+  top: 50%;
 }
