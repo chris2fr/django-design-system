@@ -4,7 +4,6 @@ from django.forms import (
     inlineformset_factory,
 )  # /!\ In order to use formsets
 
-from fastoche.constants import COLOR_CHOICES_ILLUSTRATION
 from fastoche.forms import FastocheBaseForm
 
 # /!\ In order to use formsets
@@ -214,9 +213,3 @@ BookCreateFormSet = inlineformset_factory(
 )
 
 
-class ColorForm(FastocheBaseForm):
-    color = forms.ChoiceField(
-        label="Choisissez une couleur",
-        required=False,
-        choices=[("", "----")] + COLOR_CHOICES_ILLUSTRATION,
-    )

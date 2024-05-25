@@ -7,6 +7,9 @@ from django.utils.functional import cached_property
 
 from django_fastoche.utils import fastoche_input_class_attr
 
+from django_fastoche.constants import COLOR_CHOICES_ILLUSTRATION
+
+
 
 class FastocheDjangoTemplates(DjangoTemplates):
     @cached_property
@@ -55,3 +58,9 @@ class FastocheBaseForm(Form):
             break
 
 
+class ColorForm(FastocheBaseForm):
+    color = forms.ChoiceField(
+        label="Choisissez une couleur",
+        required=False,
+        choices=[("", "----")] + COLOR_CHOICES_ILLUSTRATION,
+    )

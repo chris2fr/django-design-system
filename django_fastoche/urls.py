@@ -3,8 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from django_fastoche import views
 from django_fastoche.fastoche_components import ALL_TAGS
 from django_distill import distill_path
-# from wagtail import urls as wagtail_urls
-# from wagtail_fastoche.views import SearchResultsView, TagsListView, TagView
+from django_fastoche.config import settings
 
 def get_all_tags():
     for key in ALL_TAGS:
@@ -107,3 +106,7 @@ urlpatterns = [
         distill_file="django_fastoche/search/index.html",
     ),
 ]
+if settings.DEBUG:
+    urlpatterns += [
+        path("__debug__/", include("debug_toolbar.urls")),
+    ]

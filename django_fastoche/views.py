@@ -14,8 +14,9 @@ from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
 from django_fastoche.utils import generate_summary_items
+from django_fastoche.context_processors import site_config
 
-# from django_fastoche.forms import ColorForm, ExampleForm
+from django_fastoche.forms import ColorForm
 
 from django_fastoche.fastoche_components import (
     ALL_IMPLEMENTED_COMPONENTS,
@@ -46,7 +47,7 @@ def chunks(data, SIZE=10000):
         yield {k: data[k] for k in islice(it, SIZE)}
 
 
-def init_payload(page_title: str, links: list = []):
+def init_payload(page_title: str, request: object, links: list = []):
     # Returns the common payload passed to most pages:
     # title: the page title
     # breadcrumb_data: a dictionary used by the page's breadcrumb
@@ -81,17 +82,23 @@ def init_payload(page_title: str, links: list = []):
 
     mega_menu_categories = chunks(implemented_component_tags, 8)
 
+    mourning_data_attribute = ""
+    if site_config(request)["SITE_CONFIG"].mourning:
+        mourning_data_attribute = "data-fastoche-mourning"
+
     return {
         "title": page_title,
         "mega_menu_categories": mega_menu_categories,
         "breadcrumb_data": breadcrumb_data,
         "skiplinks": skiplinks,
+        "langcode": "fr",
+        "mourning_data_attribute": mourning_data_attribute,
     }
 
 
 @require_safe
 def index(request):
-    payload = init_payload("Accueil")
+    payload = init_payload("Accueil", request)
 
     payload["summary_data"] = generate_summary_items(
         [
@@ -102,12 +109,14 @@ def index(request):
         ]
     )
 
+    payload["langcode"] = "fr"
+
     return render(request, "django_fastoche/index.html", payload)
 
 
 @require_safe
 def components_index(request):
-    payload = init_payload("Composants")
+    payload = init_payload("Composants", request)
     md = format_markdown_from_file("doc/components.md")
     payload["documentation"] = md["text"]
     payload["implemented_components"] = dict(
@@ -156,6 +165,7 @@ def page_component(request, tag_name):  # NOSONAR
         current_tag = ALL_IMPLEMENTED_COMPONENTS[tag_name]
         payload = init_payload(
             current_tag["title"],
+            request,
             links=[{"url": reverse("components_index"), "title": "Composants"}],
         )
         payload["tag_name"] = tag_name
@@ -221,7 +231,7 @@ def page_component(request, tag_name):  # NOSONAR
         }
         return render(request, "django_fastoche/page_component.html", payload)
     else:
-        payload = init_payload("Non implémenté")
+        payload = init_payload("Non implémenté", request)
         payload["not_yet"] = {
             "text": "Le contenu recherché n’est pas encore implémenté",
             "title": "Non implémenté",
@@ -233,6 +243,7 @@ def page_component(request, tag_name):  # NOSONAR
 def page_component_header(request):
     payload = init_payload(
         page_title="En-tête",
+        request=request,
         links=[{"url": reverse("components_index"), "title": "Composants"}],
     )
 
@@ -247,6 +258,7 @@ def page_component_header(request):
 def page_component_footer(request):
     payload = init_payload(
         page_title="Pied de page",
+        request=request,
         links=[{"url": reverse("components_index"), "title": "Composants"}],
     )
     md = format_markdown_from_file("doc/footer.md")
@@ -260,6 +272,7 @@ def page_component_footer(request):
 def page_component_follow(request):
     payload = init_payload(
         page_title="Lettre d’information et Réseaux Sociaux",
+        request=request,
         links=[{"url": reverse("components_index"), "title": "Composants"}],
     )
     md = format_markdown_from_file("doc/follow.md")
@@ -268,158 +281,9 @@ def page_component_follow(request):
 
     return render(request, "django_fastoche/doc_follow.html", payload)
 
-
-# def page_form(request):
-#     if request.method == "POST":
-#         # create a form instance and populate it with data from the request:
-#         form = ExampleForm(request.POST)
-#         # check whether it's valid:
-#         if form.is_valid():
-#             # process the data in form.cleaned_data as required
-#             # ...
-#             # redirect to a new URL:
-#             # return HttpResponseRedirect("/thanks/")
-#             pass
-
-#     # if a GET (or any other method) we'll create a blank form
-#     else:
-#         form = ExampleForm()
-
-#     payload = init_payload(
-#         "Formulaire basique",
-#         links=[{"url": reverse("doc_form"), "title": "Formulaires"}],
-#     )
-#     payload["form"] = form
-
-#     return render(request, "django_fastoche/page_form.html", payload)
-
-
-# # /!\ Example view for form and formset
-# class FastocheAuthorCreateView(CreateView):
-#     model = FastocheAuthor
-#     form_class = FastocheAuthorCreateForm
-#     formset = None
-#     template_name = "django_fastoche/example_form.html"
-#     # /!\ Your template needs to extends form_base.html. If you use formset,
-#     # your template needs to include another template which extends formset_base.html
-
-#     def get(self, request, *args, **kwargs):
-#         instance = None  # noqa: F841
-#         try:
-#             if self.object:
-#                 instance = self.object  # noqa: F841
-#         except Exception:
-#             self.object = None
-
-#         form_class = self.get_form_class()
-#         form = self.get_form(form_class)
-#         self.formset = self.get_formset(request)
-#         formset = self.formset
-#         book_formhelper = FastocheBookCreateFormHelper()  # noqa: F841
-
-#         return self.render_to_response(
-#             self.get_context_data(form=form, formset=formset)
-#         )
-
-#     def get_formset(self, request, instance=None):
-#         if request.POST and instance:
-#             self.formset = FastocheBookCreateFormSet(
-#                 request.POST,
-#                 request.FILES,
-#                 instance=instance,
-#             )
-#         else:
-#             self.formset = FastocheBookCreateFormSet()
-#         return self.formset
-
-#     def get_context_data(self, **kwargs):
-#         context = super(FastocheAuthorCreateView, self).get_context_data(**kwargs)
-
-#         payload = init_payload(
-#             "Formulaire avec formset",
-#             links=[{"url": reverse("doc_form"), "title": "Formulaires"}],
-#         )
-
-#         for key, value in payload.items():
-#             context[key] = value
-
-#         book_formhelper = FastocheBookCreateFormHelper()
-
-#         instance = None
-#         try:
-#             if self.object:
-#                 instance = self.object
-#         except Exception:
-#             self.object = None
-
-#         # /!\ Pass your form, formset and helper to the context
-#         if self.request.POST:
-#             context["form"] = self.form_class(self.request.POST)
-#             context["formset"] = FastocheBookCreateFormSet(
-#                 self.request.POST, self.request.FILES, instance=instance
-#             )
-#             context["book_formhelper"] = book_formhelper
-#         else:
-#             context["form"] = self.form_class()
-#             self.formset = self.get_formset(self.request)
-#             context["formset"] = self.formset
-#             context["book_formhelper"] = book_formhelper
-
-#         context["object_name"] = "book"
-
-#         # /!\ Don't forget your fastoche button
-#         context["btn_submit"] = {
-#             "label": "Soumettre",
-#             "onclick": "",
-#             "type": "submit",
-#         }
-#         return context
-
-#     def post(self, request, *args, **kwargs):
-#         instance = None
-#         try:
-#             if self.object:
-#                 instance = self.object
-#         except Exception:
-#             self.object = None
-
-#         form_class = self.get_form_class()
-#         form = self.get_form(form_class)
-#         formset = FastocheBookCreateFormSet(
-#             self.request.POST, self.request.FILES, instance=instance
-#         )
-
-#         if form.is_valid() and formset.is_valid():
-#             return self.form_valid(form, formset)
-#         return self.form_invalid(form, formset)
-
-#     def form_valid(self, form, formset):  # type: ignore
-#         """
-#         Called if all forms are valid. Creates a FastocheAuthor instance along
-#         with associated books and then redirects to a success page.
-#         """
-
-#         self.object = form.save()
-#         formset.instance = (
-#             self.object
-#         )  # /!\ Before saving formset, link it to the object created with the main form
-#         formset.save()
-
-#         return HttpResponse(b"Success !")
-
-#     def form_invalid(self, form, formset):  # type: ignore
-#         """
-#         Called if whether a form is invalid. Re-renders the context
-#         data with the data-filled forms and errors.
-#         """
-#         return self.render_to_response(
-#             self.get_context_data(form=form, formset=formset)
-#         )
-
-
 @require_safe
 def doc_contributing(request):
-    payload = init_payload("Contribuer à Django-fastoche")
+    payload = init_payload("Contribuer à Django-fastoche", request)
     md = format_markdown_from_file("CONTRIBUTING.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
@@ -429,7 +293,7 @@ def doc_contributing(request):
 
 @require_safe
 def doc_install(request):
-    payload = init_payload("Installation de Django-fastoche")
+    payload = init_payload("Installation de Django-fastoche", request)
 
     md = format_markdown_from_file("INSTALL.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
@@ -440,7 +304,7 @@ def doc_install(request):
 
 @require_safe
 def doc_usage(request):
-    payload = init_payload("Utiliser Django-fastoche")
+    payload = init_payload("Utiliser Django-fastoche", request)
 
     md = format_markdown_from_file("doc/usage.md")
     payload["documentation"] = md["text"]
@@ -451,7 +315,7 @@ def doc_usage(request):
 
 @require_safe
 def doc_form(request):
-    payload = init_payload("Formulaires – Documentation")
+    payload = init_payload("Formulaires – Documentation", request)
     md = format_markdown_from_file("doc/forms.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
@@ -461,7 +325,7 @@ def doc_form(request):
 
 @require_safe
 def resource_icons(request):
-    payload = init_payload("Icônes")
+    payload = init_payload("Icônes", request)
 
     icons_root = "django_fastoche/static/django_fastoche/dist/icons/"
     icons_folders = os.listdir(icons_root)
@@ -483,7 +347,7 @@ def resource_icons(request):
 
 @require_safe
 def resource_pictograms(request):
-    payload = init_payload("Pictogrammes")
+    payload = init_payload("Pictogrammes", request)
 
     picto_root = "django_fastoche/static/django_fastoche/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
@@ -502,20 +366,20 @@ def resource_pictograms(request):
     return render(request, "django_fastoche/page_pictograms.html", payload)
 
 
-# @require_safe
-# def resource_colors(request):
-#     payload = init_payload("Couleurs")
+@require_safe
+def resource_colors(request):
+    payload = init_payload("Couleurs", request)
 
-#     form = ColorForm()
+    form = ColorForm()
 
-#     payload["form"] = form
-#     payload["components_data"] = IMPLEMENTED_COMPONENTS
+    payload["form"] = form
+    payload["components_data"] = IMPLEMENTED_COMPONENTS
 
-#     return render(request, "django_fastoche/page_colors.html", payload)
+    return render(request, "django_fastoche/page_colors.html", payload)
 
 
 @require_safe
 def search(request):
-    payload = init_payload("Recherche")
+    payload = init_payload("Recherche", request)
 
     return render(request, "django_fastoche/search.html", payload)

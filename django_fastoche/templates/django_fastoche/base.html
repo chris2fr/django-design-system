@@ -1,8 +1,8 @@
 {% load static fastoche_tags i18n %}
 <!DOCTYPE html>
-<html lang="{% block langcode %}fr{% endblock langcode %}"
+<html lang="{{ langcode }}"
       data-fastoche-scheme="system"
-      {% if SITE_CONFIG.mourning %}data-fastoche-mourning{% endif %}>
+      {{ mourning_data_attribute }}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport"
@@ -10,6 +10,10 @@
     {% fastoche_css %}
     {% fastoche_favicon %}
 
+
+    <link href="{% static 'django_fastoche/dist/utility/utility.min.css' %}"
+          rel="stylesheet"
+          type="text/css" />
     {% block extra_css %}
     {% endblock extra_css %}
 
@@ -27,6 +31,16 @@
 
     {% block opengraph %}
     {% endblock opengraph %}
+
+    {% block social_media %}
+    {% endblock social_media %}
+
+    {% block description %}
+    {% endblock description %}
+
+    {% block tracking %}
+    {% endblock tracking %}
+
   </head>
   <body>
     {% block skiplinks %}
@@ -36,6 +50,9 @@
     {% block header %}
     {% include "django_fastoche/blocks/header.html" %}
     {% endblock header %}
+
+    {% block header_after %}
+    {% endblock header_after %}
 
     {% fastoche_theme_modale %}
 
@@ -62,9 +79,10 @@
 
     {% fastoche_js nonce=request.csp_nonce %}
 
-    {% block extra_js %}
     <script src="{% static 'js/common.js' %}">
     </script>
+
+    {% block extra_js %}
     {% endblock extra_js %}
     {# djlint:off #}
     {% block lang %}{% get_current_language as LANGUAGE_CODE %}{{ LANGUAGE_CODE }}{% endblock lang %}

@@ -1,6 +1,7 @@
 from django_distill import distill_path
 
-from example_fastoche import views
+import django_fastoche.views
+import example_fastoche.views
 from example_fastoche.fastoche_components import ALL_TAGS
 
 
@@ -11,95 +12,95 @@ def get_all_tags():
 
 urlpatterns = [
     distill_path(
-        "", views.index, name="index", distill_file="django_fastoche/index.html"
+        "", django_fastoche.views.index, name="index", distill_file="django_fastoche/index.html"
     ),
     distill_path(
         "doc-contributing",
-        views.doc_contributing,
+        django_fastoche.views.doc_contributing,
         name="doc_contributing",
         distill_file="django_fastoche/doc-contributing/index.html",
     ),
     distill_path(
         "doc-install",
-        views.doc_install,
+        django_fastoche.views.doc_install,
         name="doc_install",
         distill_file="django_fastoche/doc-install/index.html",
     ),
     distill_path(
         "doc-usage",
-        views.doc_usage,
+        django_fastoche.views.doc_usage,
         name="doc_usage",
         distill_file="django_fastoche/doc-usage/index.html",
     ),
     distill_path(
         "components/",
-        views.components_index,
+        django_fastoche.views.components_index,
         name="components_index",
         distill_file="django_fastoche/components/index.html",
     ),
     distill_path(
         "components/header/",
-        views.page_component_header,
+        django_fastoche.views.page_component_header,
         name="page_component_header",
         distill_file="django_fastoche/components/header/index.html",
     ),
     distill_path(
         "components/footer/",
-        views.page_component_footer,
+        django_fastoche.views.page_component_footer,
         name="page_component_footer",
         distill_file="django_fastoche/components/footer/index.html",
     ),
     distill_path(
         "components/follow/",
-        views.page_component_follow,
+        django_fastoche.views.page_component_follow,
         name="page_component_follow",
         distill_file="django_fastoche/components/follow/index.html",
     ),
     distill_path(
         "components/<slug:tag_name>/",
-        views.page_component,
+        django_fastoche.views.page_component,
         name="page_component",
         distill_func=get_all_tags,
     ),
     distill_path(
         "form/",
-        views.doc_form,
+        django_fastoche.views.doc_form,
         name="doc_form",
         distill_file="django_fastoche/form/index.html",
     ),
     distill_path(
         "form/example/",
-        views.page_form,
+        example_fastoche.views.page_form,
         name="page_form",
         distill_file="django_fastoche/form/example/index.html",
     ),
     distill_path(
         "form/example-formset/",
-        views.FastocheAuthorCreateView.as_view(),
+        example_fastoche.views.FastocheAuthorCreateView.as_view(),
         name="form_formset",
         distill_file="django_fastoche/form/example-formset/index.html",
     ),
     distill_path(
         "resources/colors",
-        views.resource_colors,
+        django_fastoche.views.resource_colors,
         name="resource_colors",
         distill_file="django_fastoche/resources/colors/index.html",
     ),
     distill_path(
         "resources/icons",
-        views.resource_icons,
+        django_fastoche.views.resource_icons,
         name="resource_icons",
         distill_file="django_fastoche/resources/icons/index.html",
     ),
     distill_path(
         "resources/pictograms",
-        views.resource_pictograms,
+        django_fastoche.views.resource_pictograms,
         name="resource_pictograms",
         distill_file="django_fastoche/resources/pictograms/index.html",
     ),
     distill_path(
         "search/",
-        views.search,
+        django_fastoche.views.search,
         name="page_search",
         distill_file="django_fastoche/search/index.html",
     ),

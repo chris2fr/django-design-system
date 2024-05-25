@@ -47,6 +47,17 @@ INSTALLED_APPS = [
     "django_distill",
 ]
 
+if DEBUG:
+    INSTALLED_APPS += [
+        "debug_toolbar",
+    ]
+    INTERNAL_IPS = [
+        # ...
+        "0.0.0.0",
+        "127.0.0.1",
+        # ...
+    ]
+
 if DJANGO_VERSION < (5, 0):
     INSTALLED_APPS.append("django.forms")
 
@@ -61,6 +72,11 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+if DEBUG:
+    MIDDLEWARE += [
+        "debug_toolbar.middleware.DebugToolbarMiddleware",
+    ]
 
 ROOT_URLCONF = "django_fastoche.config.urls"
 
