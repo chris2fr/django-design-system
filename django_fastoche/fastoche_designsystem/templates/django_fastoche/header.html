@@ -6,8 +6,20 @@
         title='{% translate "Close" %}'>
         {% translate "Close" %}
       </button>
-{% block brand %}
+
+      <nav role="navigation"
+      class="fastoche-nav"
+      id="fastoche-navigation"
+      aria-label="Menu principal"
+      id="fastoche-navigation"
+      data-fastoche-js-navigation="true">
+        {% block main_menu %}
+            {% include "django_fastoche/main_menu.html" %}
+        {% endblock main_menu %}  
+      </nav>
+
       <div class="fastoche-header__menu-logo">
+{% block brand %}
         {% translate "Home page" as home_page %}
         <a href="{{ home_url }}" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
           {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
@@ -21,13 +33,8 @@
           <p>{{ SITE_CONFIG.site_title }}</p>
           {% endif %}
         </a>
-      </div>
-      <div class="fastoche-header__menu-links">
-      </div>
 {% endblock brand %}
-{% block main_menu %}
-      {% include "django_fastoche/main_menu.html" %}
-{% endblock main_menu %}
+      </div>
     </div>
   </div>
       <div class="fastoche-header__body">
