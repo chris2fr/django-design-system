@@ -1,0 +1,19 @@
+{% extends "django_cefran/base.html" %}
+{% load static cefran_tags %}
+{% block content %}
+  <h1>
+    Exemple de formulaire
+  </h1>
+  <form action="{% url 'page_form' %}" method="post">
+    {% csrf_token %}
+    {% cefran_form %}
+    <div class="cefran-input-group cefran-my-4w">
+      <button type="submit" class="cefran-btn" title="Valider">
+        Valider ce formulaire
+      </button>
+      <button type="" class="cefran-btn cefran-btn--secondary" title="Annuler">
+        Annuler
+      </button>
+    </div>
+  </form>
+{% endblock content %}

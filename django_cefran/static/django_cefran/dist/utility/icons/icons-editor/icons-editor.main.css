@@ -1,0 +1,215 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-bold::before,
+.cefran-icon-bold::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--bold.svg");
+  mask-image: url("../../../icons/editor/cefran--bold.svg");
+}
+
+.cefran-icon-highlight::before,
+.cefran-icon-highlight::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--highlight.svg");
+  mask-image: url("../../../icons/editor/cefran--highlight.svg");
+}
+
+.cefran-icon-quote-fill::before,
+.cefran-icon-quote-fill::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--quote-fill.svg");
+  mask-image: url("../../../icons/editor/cefran--quote-fill.svg");
+}
+
+.cefran-icon-quote-line::before,
+.cefran-icon-quote-line::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--quote-line.svg");
+  mask-image: url("../../../icons/editor/cefran--quote-line.svg");
+}
+
+.cefran-icon-code-view::before,
+.cefran-icon-code-view::after {
+  -webkit-mask-image: url("../../../icons/editor/code-view.svg");
+  mask-image: url("../../../icons/editor/code-view.svg");
+}
+
+.cefran-icon-font-size::before,
+.cefran-icon-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
+}
+
+.cefran-icon-h-1::before,
+.cefran-icon-h-1::after {
+  -webkit-mask-image: url("../../../icons/editor/h-1.svg");
+  mask-image: url("../../../icons/editor/h-1.svg");
+}
+
+.cefran-icon-h-2::before,
+.cefran-icon-h-2::after {
+  -webkit-mask-image: url("../../../icons/editor/h-2.svg");
+  mask-image: url("../../../icons/editor/h-2.svg");
+}
+
+.cefran-icon-h-3::before,
+.cefran-icon-h-3::after {
+  -webkit-mask-image: url("../../../icons/editor/h-3.svg");
+  mask-image: url("../../../icons/editor/h-3.svg");
+}
+
+.cefran-icon-h-4::before,
+.cefran-icon-h-4::after {
+  -webkit-mask-image: url("../../../icons/editor/h-4.svg");
+  mask-image: url("../../../icons/editor/h-4.svg");
+}
+
+.cefran-icon-h-5::before,
+.cefran-icon-h-5::after {
+  -webkit-mask-image: url("../../../icons/editor/h-5.svg");
+  mask-image: url("../../../icons/editor/h-5.svg");
+}
+
+.cefran-icon-h-6::before,
+.cefran-icon-h-6::after {
+  -webkit-mask-image: url("../../../icons/editor/h-6.svg");
+  mask-image: url("../../../icons/editor/h-6.svg");
+}
+
+.cefran-icon-hashtag::before,
+.cefran-icon-hashtag::after {
+  -webkit-mask-image: url("../../../icons/editor/hashtag.svg");
+  mask-image: url("../../../icons/editor/hashtag.svg");
+}
+
+.cefran-icon-italic::before,
+.cefran-icon-italic::after {
+  -webkit-mask-image: url("../../../icons/editor/italic.svg");
+  mask-image: url("../../../icons/editor/italic.svg");
+}
+
+.cefran-icon-link-unlink::before,
+.cefran-icon-link-unlink::after {
+  -webkit-mask-image: url("../../../icons/editor/link-unlink.svg");
+  mask-image: url("../../../icons/editor/link-unlink.svg");
+}
+
+.cefran-icon-link::before,
+.cefran-icon-link::after {
+  -webkit-mask-image: url("../../../icons/editor/link.svg");
+  mask-image: url("../../../icons/editor/link.svg");
+}
+
+.cefran-icon-list-ordered::before,
+.cefran-icon-list-ordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-ordered.svg");
+  mask-image: url("../../../icons/editor/list-ordered.svg");
+}
+
+.cefran-icon-list-unordered::before,
+.cefran-icon-list-unordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-unordered.svg");
+  mask-image: url("../../../icons/editor/list-unordered.svg");
+}
+
+.cefran-icon-question-mark::before,
+.cefran-icon-question-mark::after {
+  -webkit-mask-image: url("../../../icons/editor/question-mark.svg");
+  mask-image: url("../../../icons/editor/question-mark.svg");
+}
+
+.cefran-icon-separator::before,
+.cefran-icon-separator::after {
+  -webkit-mask-image: url("../../../icons/editor/separator.svg");
+  mask-image: url("../../../icons/editor/separator.svg");
+}
+
+.cefran-icon-space::before,
+.cefran-icon-space::after {
+  -webkit-mask-image: url("../../../icons/editor/space.svg");
+  mask-image: url("../../../icons/editor/space.svg");
+}
+
+.cefran-icon-subscript::before,
+.cefran-icon-subscript::after {
+  -webkit-mask-image: url("../../../icons/editor/subscript.svg");
+  mask-image: url("../../../icons/editor/subscript.svg");
+}
+
+.cefran-icon-superscript::before,
+.cefran-icon-superscript::after {
+  -webkit-mask-image: url("../../../icons/editor/superscript.svg");
+  mask-image: url("../../../icons/editor/superscript.svg");
+}
+
+.cefran-icon-table-2::before,
+.cefran-icon-table-2::after {
+  -webkit-mask-image: url("../../../icons/editor/table-2.svg");
+  mask-image: url("../../../icons/editor/table-2.svg");
+}
+
+.cefran-icon-translate-2::before,
+.cefran-icon-translate-2::after {
+  -webkit-mask-image: url("../../../icons/editor/translate-2.svg");
+  mask-image: url("../../../icons/editor/translate-2.svg");
+}
+
+.cefran-fi-bold::before,
+.cefran-fi-bold::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--bold.svg");
+  mask-image: url("../../../icons/editor/cefran--bold.svg");
+}
+
+.cefran-fi-highlight::before,
+.cefran-fi-highlight::after {
+  -webkit-mask-image: url("../../../icons/editor/cefran--highlight.svg");
+  mask-image: url("../../../icons/editor/cefran--highlight.svg");
+}
+
+.cefran-fi-font-size::before,
+.cefran-fi-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
+}
+
+.cefran-fi-italic::before,
+.cefran-fi-italic::after {
+  -webkit-mask-image: url("../../../icons/editor/italic.svg");
+  mask-image: url("../../../icons/editor/italic.svg");
+}
+
+.cefran-fi-link-unlink::before,
+.cefran-fi-link-unlink::after {
+  -webkit-mask-image: url("../../../icons/editor/link-unlink.svg");
+  mask-image: url("../../../icons/editor/link-unlink.svg");
+}
+
+.cefran-fi-list-ordered::before,
+.cefran-fi-list-ordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-ordered.svg");
+  mask-image: url("../../../icons/editor/list-ordered.svg");
+}
+
+.cefran-fi-list-unordered::before,
+.cefran-fi-list-unordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-unordered.svg");
+  mask-image: url("../../../icons/editor/list-unordered.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

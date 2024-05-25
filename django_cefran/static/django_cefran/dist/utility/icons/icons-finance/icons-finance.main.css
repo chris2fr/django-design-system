@@ -1,0 +1,125 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-bank-card-fill::before,
+.cefran-icon-bank-card-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/bank-card-fill.svg");
+  mask-image: url("../../../icons/finance/bank-card-fill.svg");
+}
+
+.cefran-icon-bank-card-line::before,
+.cefran-icon-bank-card-line::after {
+  -webkit-mask-image: url("../../../icons/finance/bank-card-line.svg");
+  mask-image: url("../../../icons/finance/bank-card-line.svg");
+}
+
+.cefran-icon-coin-fill::before,
+.cefran-icon-coin-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/coin-fill.svg");
+  mask-image: url("../../../icons/finance/coin-fill.svg");
+}
+
+.cefran-icon-gift-fill::before,
+.cefran-icon-gift-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/gift-fill.svg");
+  mask-image: url("../../../icons/finance/gift-fill.svg");
+}
+
+.cefran-icon-gift-line::before,
+.cefran-icon-gift-line::after {
+  -webkit-mask-image: url("../../../icons/finance/gift-line.svg");
+  mask-image: url("../../../icons/finance/gift-line.svg");
+}
+
+.cefran-icon-money-euro-box-fill::before,
+.cefran-icon-money-euro-box-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/money-euro-box-fill.svg");
+  mask-image: url("../../../icons/finance/money-euro-box-fill.svg");
+}
+
+.cefran-icon-money-euro-box-line::before,
+.cefran-icon-money-euro-box-line::after {
+  -webkit-mask-image: url("../../../icons/finance/money-euro-box-line.svg");
+  mask-image: url("../../../icons/finance/money-euro-box-line.svg");
+}
+
+.cefran-icon-money-euro-circle-fill::before,
+.cefran-icon-money-euro-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/money-euro-circle-fill.svg");
+  mask-image: url("../../../icons/finance/money-euro-circle-fill.svg");
+}
+
+.cefran-icon-money-euro-circle-line::before,
+.cefran-icon-money-euro-circle-line::after {
+  -webkit-mask-image: url("../../../icons/finance/money-euro-circle-line.svg");
+  mask-image: url("../../../icons/finance/money-euro-circle-line.svg");
+}
+
+.cefran-icon-secure-payment-fill::before,
+.cefran-icon-secure-payment-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/secure-payment-fill.svg");
+  mask-image: url("../../../icons/finance/secure-payment-fill.svg");
+}
+
+.cefran-icon-secure-payment-line::before,
+.cefran-icon-secure-payment-line::after {
+  -webkit-mask-image: url("../../../icons/finance/secure-payment-line.svg");
+  mask-image: url("../../../icons/finance/secure-payment-line.svg");
+}
+
+.cefran-icon-shopping-bag-fill::before,
+.cefran-icon-shopping-bag-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/shopping-bag-fill.svg");
+  mask-image: url("../../../icons/finance/shopping-bag-fill.svg");
+}
+
+.cefran-icon-shopping-bag-line::before,
+.cefran-icon-shopping-bag-line::after {
+  -webkit-mask-image: url("../../../icons/finance/shopping-bag-line.svg");
+  mask-image: url("../../../icons/finance/shopping-bag-line.svg");
+}
+
+.cefran-icon-shopping-cart-2-fill::before,
+.cefran-icon-shopping-cart-2-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/shopping-cart-2-fill.svg");
+  mask-image: url("../../../icons/finance/shopping-cart-2-fill.svg");
+}
+
+.cefran-icon-shopping-cart-2-line::before,
+.cefran-icon-shopping-cart-2-line::after {
+  -webkit-mask-image: url("../../../icons/finance/shopping-cart-2-line.svg");
+  mask-image: url("../../../icons/finance/shopping-cart-2-line.svg");
+}
+
+.cefran-icon-trophy-fill::before,
+.cefran-icon-trophy-fill::after {
+  -webkit-mask-image: url("../../../icons/finance/trophy-fill.svg");
+  mask-image: url("../../../icons/finance/trophy-fill.svg");
+}
+
+.cefran-icon-trophy-line::before,
+.cefran-icon-trophy-line::after {
+  -webkit-mask-image: url("../../../icons/finance/trophy-line.svg");
+  mask-image: url("../../../icons/finance/trophy-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

@@ -1,0 +1,1661 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TAG
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-tag {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  min-width: 2.25rem;
+  justify-content: center;
+  color: var(--text-label-grey);
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.cefran-tag::before,
+.cefran-tag::after {
+  display: block;
+}
+
+.cefran-tag[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-tag[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.25rem;
+}
+
+.cefran-tag--icon-left[class^=cefran-icon-],
+.cefran-tag--icon-left[class*=" cefran-icon-"],
+.cefran-tag--icon-left[class^=cefran-fi-],
+.cefran-tag--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-tag--icon-left[class^=cefran-icon-]::before,
+.cefran-tag--icon-left[class*=" cefran-icon-"]::before,
+.cefran-tag--icon-left[class^=cefran-fi-]::before,
+.cefran-tag--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+}
+
+.cefran-tag[class^=cefran-icon-]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag[class*=" cefran-icon-"]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag[class^=cefran-fi-]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag[class*=" cefran-fi-"]:not([class*=cefran-tag--icon-])::before {
+  content: none;
+}
+
+.cefran-tag--sm {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.cefran-tag--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-tag--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 0.75rem;
+  margin-right: -0.09375rem;
+  margin-left: 0.25rem;
+}
+
+.cefran-tag--sm.cefran-tag--icon-left[class^=cefran-icon-],
+.cefran-tag--sm.cefran-tag--icon-left[class*=" cefran-icon-"],
+.cefran-tag--sm.cefran-tag--icon-left[class^=cefran-fi-],
+.cefran-tag--sm.cefran-tag--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-tag--sm.cefran-tag--icon-left[class^=cefran-icon-]::before,
+.cefran-tag--sm.cefran-tag--icon-left[class*=" cefran-icon-"]::before,
+.cefran-tag--sm.cefran-tag--icon-left[class^=cefran-fi-]::before,
+.cefran-tag--sm.cefran-tag--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.cefran-tag--sm[class^=cefran-icon-]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag--sm[class*=" cefran-icon-"]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag--sm[class^=cefran-fi-]:not([class*=cefran-tag--icon-])::before,
+.cefran-tag--sm[class*=" cefran-fi-"]:not([class*=cefran-tag--icon-])::before {
+  content: none;
+}
+
+a.cefran-tag[aria-pressed=true],
+button.cefran-tag[aria-pressed=true],
+input[type=button].cefran-tag[aria-pressed=true],
+input[type=image].cefran-tag[aria-pressed=true],
+input[type=reset].cefran-tag[aria-pressed=true],
+input[type=submit].cefran-tag[aria-pressed=true] {
+  position: relative;
+  overflow: visible;
+  background-position: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a.cefran-tag[aria-pressed=true]::after,
+button.cefran-tag[aria-pressed=true]::after,
+input[type=button].cefran-tag[aria-pressed=true]::after,
+input[type=image].cefran-tag[aria-pressed=true]::after,
+input[type=reset].cefran-tag[aria-pressed=true]::after,
+input[type=submit].cefran-tag[aria-pressed=true]::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/checkbox-circle-line.svg");
+  mask-image: url("../../icons/system/checkbox-circle-line.svg");
+  --icon-size: 1rem;
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: -0.5rem;
+}
+
+a.cefran-tag[aria-pressed=true].cefran-tag--sm::after,
+button.cefran-tag[aria-pressed=true].cefran-tag--sm::after,
+input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm::after,
+input[type=image].cefran-tag[aria-pressed=true].cefran-tag--sm::after,
+input[type=reset].cefran-tag[aria-pressed=true].cefran-tag--sm::after,
+input[type=submit].cefran-tag[aria-pressed=true].cefran-tag--sm::after {
+  --icon-size: 0.75rem;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin: -0.375rem;
+}
+
+a.cefran-tag--dismiss::before,
+button.cefran-tag--dismiss::before,
+input[type=button].cefran-tag--dismiss::before,
+input[type=image].cefran-tag--dismiss::before,
+input[type=reset].cefran-tag--dismiss::before,
+input[type=submit].cefran-tag--dismiss::before {
+  content: none;
+}
+
+a.cefran-tag--dismiss::after,
+button.cefran-tag--dismiss::after,
+input[type=button].cefran-tag--dismiss::after,
+input[type=image].cefran-tag--dismiss::after,
+input[type=reset].cefran-tag--dismiss::after,
+input[type=submit].cefran-tag--dismiss::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  --icon-size: 1rem;
+  content: "";
+  margin-left: 0.25rem;
+  margin-right: -0.25rem;
+}
+
+a.cefran-tag--dismiss.cefran-tag--sm::after,
+button.cefran-tag--dismiss.cefran-tag--sm::after,
+input[type=button].cefran-tag--dismiss.cefran-tag--sm::after,
+input[type=image].cefran-tag--dismiss.cefran-tag--sm::after,
+input[type=reset].cefran-tag--dismiss.cefran-tag--sm::after,
+input[type=submit].cefran-tag--dismiss.cefran-tag--sm::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  margin-right: -0.1875rem;
+  margin-left: 0.125rem;
+}
+
+.cefran-tags-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  flex-wrap: wrap;
+}
+
+.cefran-tags-group > li {
+  line-height: 2.75rem;
+}
+
+.cefran-tags-group .cefran-tag {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+  vertical-align: top;
+}
+
+.cefran-tags-group.cefran-tags-group--sm .cefran-tag {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.cefran-tags-group.cefran-tags-group--sm .cefran-tag::before,
+.cefran-tags-group.cefran-tags-group--sm .cefran-tag::after {
+  --icon-size: 0.75rem;
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag.cefran-tag--dismiss::after,
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag.cefran-tag--dismiss::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  margin-right: -0.1875rem;
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]::after,
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin: -0.375rem;
+}
+
+.cefran-tag[aria-pressed=false] {
+  color: var(--text-action-high-cefran-primary);
+  background-color: var(--background-action-low-cefran-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-primary-hover);
+  --active: var(--background-action-low-cefran-primary-active);
+}
+
+.cefran-tag.cefran-tag--dismiss {
+  color: var(--text-inverted-cefran-primary);
+  background-color: var(--background-action-high-cefran-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-cefran-primary-hover);
+  --active: var(--background-action-high-cefran-primary-active);
+}
+
+a.cefran-tag,
+button.cefran-tag,
+input[type=button].cefran-tag {
+  color: var(--text-action-high-cefran-primary);
+  background-color: var(--background-action-low-cefran-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-primary-hover);
+  --active: var(--background-action-low-cefran-primary-active);
+}
+
+a.cefran-tag--cefran-color3,
+button.cefran-tag--cefran-color3,
+input[type=button].cefran-tag--cefran-color3 {
+  color: var(--text-action-high-cefran-color3);
+  background-color: var(--background-action-low-cefran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color3-hover);
+  --active: var(--background-action-low-cefran-color3-active);
+}
+
+a.cefran-tag--cefran-color4,
+button.cefran-tag--cefran-color4,
+input[type=button].cefran-tag--cefran-color4 {
+  color: var(--text-action-high-cefran-color4);
+  background-color: var(--background-action-low-cefran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color4-hover);
+  --active: var(--background-action-low-cefran-color4-active);
+}
+
+a.cefran-tag--cefran-color5,
+button.cefran-tag--cefran-color5,
+input[type=button].cefran-tag--cefran-color5 {
+  color: var(--text-action-high-cefran-color5);
+  background-color: var(--background-action-low-cefran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color5-hover);
+  --active: var(--background-action-low-cefran-color5-active);
+}
+
+a.cefran-tag--cefran-color6,
+button.cefran-tag--cefran-color6,
+input[type=button].cefran-tag--cefran-color6 {
+  color: var(--text-action-high-cefran-color6);
+  background-color: var(--background-action-low-cefran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color6-hover);
+  --active: var(--background-action-low-cefran-color6-active);
+}
+
+a.cefran-tag--cefran-color7,
+button.cefran-tag--cefran-color7,
+input[type=button].cefran-tag--cefran-color7 {
+  color: var(--text-action-high-cefran-color7);
+  background-color: var(--background-action-low-cefran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color7-hover);
+  --active: var(--background-action-low-cefran-color7-active);
+}
+
+a.cefran-tag--cefran-color8,
+button.cefran-tag--cefran-color8,
+input[type=button].cefran-tag--cefran-color8 {
+  color: var(--text-action-high-cefran-color8);
+  background-color: var(--background-action-low-cefran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color8-hover);
+  --active: var(--background-action-low-cefran-color8-active);
+}
+
+a.cefran-tag--cefran-color9,
+button.cefran-tag--cefran-color9,
+input[type=button].cefran-tag--cefran-color9 {
+  color: var(--text-action-high-cefran-color9);
+  background-color: var(--background-action-low-cefran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color9-hover);
+  --active: var(--background-action-low-cefran-color9-active);
+}
+
+a.cefran-tag--cefran-color10,
+button.cefran-tag--cefran-color10,
+input[type=button].cefran-tag--cefran-color10 {
+  color: var(--text-action-high-cefran-color10);
+  background-color: var(--background-action-low-cefran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color10-hover);
+  --active: var(--background-action-low-cefran-color10-active);
+}
+
+a.cefran-tag--cefran-color11,
+button.cefran-tag--cefran-color11,
+input[type=button].cefran-tag--cefran-color11 {
+  color: var(--text-action-high-cefran-color11);
+  background-color: var(--background-action-low-cefran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color11-hover);
+  --active: var(--background-action-low-cefran-color11-active);
+}
+
+a.cefran-tag--cefran-color12,
+button.cefran-tag--cefran-color12,
+input[type=button].cefran-tag--cefran-color12 {
+  color: var(--text-action-high-cefran-color12);
+  background-color: var(--background-action-low-cefran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color12-hover);
+  --active: var(--background-action-low-cefran-color12-active);
+}
+
+a.cefran-tag--cefran-color13,
+button.cefran-tag--cefran-color13,
+input[type=button].cefran-tag--cefran-color13 {
+  color: var(--text-action-high-cefran-color13);
+  background-color: var(--background-action-low-cefran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color13-hover);
+  --active: var(--background-action-low-cefran-color13-active);
+}
+
+a.cefran-tag--cefran-color14,
+button.cefran-tag--cefran-color14,
+input[type=button].cefran-tag--cefran-color14 {
+  color: var(--text-action-high-cefran-color14);
+  background-color: var(--background-action-low-cefran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color14-hover);
+  --active: var(--background-action-low-cefran-color14-active);
+}
+
+a.cefran-tag--cefran-color15,
+button.cefran-tag--cefran-color15,
+input[type=button].cefran-tag--cefran-color15 {
+  color: var(--text-action-high-cefran-color15);
+  background-color: var(--background-action-low-cefran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color15-hover);
+  --active: var(--background-action-low-cefran-color15-active);
+}
+
+a.cefran-tag--cefran-color16,
+button.cefran-tag--cefran-color16,
+input[type=button].cefran-tag--cefran-color16 {
+  color: var(--text-action-high-cefran-color16);
+  background-color: var(--background-action-low-cefran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color16-hover);
+  --active: var(--background-action-low-cefran-color16-active);
+}
+
+a.cefran-tag--cefran-color17,
+button.cefran-tag--cefran-color17,
+input[type=button].cefran-tag--cefran-color17 {
+  color: var(--text-action-high-cefran-color17);
+  background-color: var(--background-action-low-cefran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color17-hover);
+  --active: var(--background-action-low-cefran-color17-active);
+}
+
+a.cefran-tag--cefran-color18,
+button.cefran-tag--cefran-color18,
+input[type=button].cefran-tag--cefran-color18 {
+  color: var(--text-action-high-cefran-color18);
+  background-color: var(--background-action-low-cefran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color18-hover);
+  --active: var(--background-action-low-cefran-color18-active);
+}
+
+a.cefran-tag--cefran-color19,
+button.cefran-tag--cefran-color19,
+input[type=button].cefran-tag--cefran-color19 {
+  color: var(--text-action-high-cefran-color19);
+  background-color: var(--background-action-low-cefran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-cefran-color19-hover);
+  --active: var(--background-action-low-cefran-color19-active);
+}
+
+button.cefran-tag[aria-pressed=true]:not(:disabled),
+input[type=button].cefran-tag[aria-pressed=true]:not(:disabled) {
+  background-color: transparent;
+  color: var(--text-inverted-cefran-primary);
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-cefran-primary) 0.625rem);
+}
+
+button.cefran-tag[aria-pressed=true]:not(:disabled):hover,
+input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):hover {
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-cefran-primary-hover) 0.625rem);
+}
+
+button.cefran-tag[aria-pressed=true]:not(:disabled):active,
+input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):active {
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-cefran-primary-active) 0.625rem);
+}
+
+button.cefran-tag[aria-pressed=true]::after,
+input[type=button].cefran-tag[aria-pressed=true]::after {
+  color: var(--text-action-high-cefran-primary);
+}
+
+button.cefran-tag[aria-pressed=true]:disabled,
+input[type=button].cefran-tag[aria-pressed=true]:disabled {
+  background-color: transparent;
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-disabled-grey) 0.625rem);
+}
+
+button.cefran-tag[aria-pressed=true]:disabled::after,
+input[type=button].cefran-tag[aria-pressed=true]:disabled::after {
+  color: var(--text-disabled-grey);
+}
+
+button.cefran-tag[aria-pressed=true].cefran-tag--sm,
+input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary) 0.5rem);
+}
+
+button.cefran-tag[aria-pressed=true].cefran-tag--sm:hover,
+input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:hover {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary-hover) 0.5rem);
+}
+
+button.cefran-tag[aria-pressed=true].cefran-tag--sm:active,
+input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:active {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary-active) 0.5rem);
+}
+
+button.cefran-tag[aria-pressed=true].cefran-tag--sm:disabled,
+input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:disabled {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-disabled-grey) 0.5rem);
+}
+
+button.cefran-tag:disabled,
+input[type=button].cefran-tag:disabled {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+a:not([href]).cefran-tag {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true],
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true] {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary) 0.5rem);
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:hover,
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:hover {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary-hover) 0.5rem);
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:active,
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:active {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-cefran-primary-active) 0.5rem);
+}
+
+.cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:disabled,
+.cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:disabled {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-disabled-grey) 0.5rem);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-tag {
+    text-decoration: none;
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .cefran-tag::before,
+  .cefran-tag::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tag .cefran-tag--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cefran-tag[aria-pressed=true],
+  input[type=button] .cefran-tag[aria-pressed=true] {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  button .cefran-tag[aria-pressed=true]::after,
+  input[type=button] .cefran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/checkbox-circle-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cefran-tag[aria-pressed=true] .cefran-tag--sm::after,
+  input[type=button] .cefran-tag[aria-pressed=true] .cefran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cefran-tag .cefran-tag--dismiss::after,
+  input[type=button] .cefran-tag .cefran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cefran-tag .cefran-tag--dismiss .cefran-tag--sm::after,
+  input[type=button] .cefran-tag .cefran-tag--dismiss .cefran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ul.cefran-tags-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-tags-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-tags-group,
+  ol.cefran-tags-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-tags-group--sm::before,
+  .cefran-tags-group--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tags-group--sm a .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm button .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=button] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=image] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=reset] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=submit] .cefran-tag .cefran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-tags-group--sm a .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm button .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=button] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=image] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=reset] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=submit] .cefran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent !important;
+  }
+
+  .cefran-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .cefran-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.cefran-tag,
+  button.cefran-tag,
+  input[type=button].cefran-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag:hover,
+  button.cefran-tag:hover,
+  input[type=button].cefran-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag:active,
+  button.cefran-tag:active,
+  input[type=button].cefran-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3,
+  button.cefran-tag--cefran-color3,
+  input[type=button].cefran-tag--cefran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color3:hover,
+  button.cefran-tag--cefran-color3:hover,
+  input[type=button].cefran-tag--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3:active,
+  button.cefran-tag--cefran-color3:active,
+  input[type=button].cefran-tag--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4,
+  button.cefran-tag--cefran-color4,
+  input[type=button].cefran-tag--cefran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color4:hover,
+  button.cefran-tag--cefran-color4:hover,
+  input[type=button].cefran-tag--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4:active,
+  button.cefran-tag--cefran-color4:active,
+  input[type=button].cefran-tag--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5,
+  button.cefran-tag--cefran-color5,
+  input[type=button].cefran-tag--cefran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color5:hover,
+  button.cefran-tag--cefran-color5:hover,
+  input[type=button].cefran-tag--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5:active,
+  button.cefran-tag--cefran-color5:active,
+  input[type=button].cefran-tag--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6,
+  button.cefran-tag--cefran-color6,
+  input[type=button].cefran-tag--cefran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color6:hover,
+  button.cefran-tag--cefran-color6:hover,
+  input[type=button].cefran-tag--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6:active,
+  button.cefran-tag--cefran-color6:active,
+  input[type=button].cefran-tag--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7,
+  button.cefran-tag--cefran-color7,
+  input[type=button].cefran-tag--cefran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color7:hover,
+  button.cefran-tag--cefran-color7:hover,
+  input[type=button].cefran-tag--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7:active,
+  button.cefran-tag--cefran-color7:active,
+  input[type=button].cefran-tag--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8,
+  button.cefran-tag--cefran-color8,
+  input[type=button].cefran-tag--cefran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color8:hover,
+  button.cefran-tag--cefran-color8:hover,
+  input[type=button].cefran-tag--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8:active,
+  button.cefran-tag--cefran-color8:active,
+  input[type=button].cefran-tag--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9,
+  button.cefran-tag--cefran-color9,
+  input[type=button].cefran-tag--cefran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color9:hover,
+  button.cefran-tag--cefran-color9:hover,
+  input[type=button].cefran-tag--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9:active,
+  button.cefran-tag--cefran-color9:active,
+  input[type=button].cefran-tag--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10,
+  button.cefran-tag--cefran-color10,
+  input[type=button].cefran-tag--cefran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color10:hover,
+  button.cefran-tag--cefran-color10:hover,
+  input[type=button].cefran-tag--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10:active,
+  button.cefran-tag--cefran-color10:active,
+  input[type=button].cefran-tag--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11,
+  button.cefran-tag--cefran-color11,
+  input[type=button].cefran-tag--cefran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color11:hover,
+  button.cefran-tag--cefran-color11:hover,
+  input[type=button].cefran-tag--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11:active,
+  button.cefran-tag--cefran-color11:active,
+  input[type=button].cefran-tag--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12,
+  button.cefran-tag--cefran-color12,
+  input[type=button].cefran-tag--cefran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color12:hover,
+  button.cefran-tag--cefran-color12:hover,
+  input[type=button].cefran-tag--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12:active,
+  button.cefran-tag--cefran-color12:active,
+  input[type=button].cefran-tag--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13,
+  button.cefran-tag--cefran-color13,
+  input[type=button].cefran-tag--cefran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color13:hover,
+  button.cefran-tag--cefran-color13:hover,
+  input[type=button].cefran-tag--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13:active,
+  button.cefran-tag--cefran-color13:active,
+  input[type=button].cefran-tag--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14,
+  button.cefran-tag--cefran-color14,
+  input[type=button].cefran-tag--cefran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color14:hover,
+  button.cefran-tag--cefran-color14:hover,
+  input[type=button].cefran-tag--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14:active,
+  button.cefran-tag--cefran-color14:active,
+  input[type=button].cefran-tag--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15,
+  button.cefran-tag--cefran-color15,
+  input[type=button].cefran-tag--cefran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color15:hover,
+  button.cefran-tag--cefran-color15:hover,
+  input[type=button].cefran-tag--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15:active,
+  button.cefran-tag--cefran-color15:active,
+  input[type=button].cefran-tag--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16,
+  button.cefran-tag--cefran-color16,
+  input[type=button].cefran-tag--cefran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color16:hover,
+  button.cefran-tag--cefran-color16:hover,
+  input[type=button].cefran-tag--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16:active,
+  button.cefran-tag--cefran-color16:active,
+  input[type=button].cefran-tag--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17,
+  button.cefran-tag--cefran-color17,
+  input[type=button].cefran-tag--cefran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color17:hover,
+  button.cefran-tag--cefran-color17:hover,
+  input[type=button].cefran-tag--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17:active,
+  button.cefran-tag--cefran-color17:active,
+  input[type=button].cefran-tag--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18,
+  button.cefran-tag--cefran-color18,
+  input[type=button].cefran-tag--cefran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color18:hover,
+  button.cefran-tag--cefran-color18:hover,
+  input[type=button].cefran-tag--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18:active,
+  button.cefran-tag--cefran-color18:active,
+  input[type=button].cefran-tag--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19,
+  button.cefran-tag--cefran-color19,
+  input[type=button].cefran-tag--cefran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color19:hover,
+  button.cefran-tag--cefran-color19:hover,
+  input[type=button].cefran-tag--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19:active,
+  button.cefran-tag--cefran-color19:active,
+  input[type=button].cefran-tag--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]::after,
+  input[type=button].cefran-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled::after,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:hover,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:active,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:disabled,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.cefran-tag:disabled,
+  input[type=button].cefran-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).cefran-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true],
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:hover,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:active,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:disabled,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}
+@media print {
+  .cefran-tag {
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .cefran-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .cefran-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.cefran-tag,
+  button.cefran-tag,
+  input[type=button].cefran-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag:hover,
+  button.cefran-tag:hover,
+  input[type=button].cefran-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag:active,
+  button.cefran-tag:active,
+  input[type=button].cefran-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3,
+  button.cefran-tag--cefran-color3,
+  input[type=button].cefran-tag--cefran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color3:hover,
+  button.cefran-tag--cefran-color3:hover,
+  input[type=button].cefran-tag--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3:active,
+  button.cefran-tag--cefran-color3:active,
+  input[type=button].cefran-tag--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4,
+  button.cefran-tag--cefran-color4,
+  input[type=button].cefran-tag--cefran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color4:hover,
+  button.cefran-tag--cefran-color4:hover,
+  input[type=button].cefran-tag--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4:active,
+  button.cefran-tag--cefran-color4:active,
+  input[type=button].cefran-tag--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5,
+  button.cefran-tag--cefran-color5,
+  input[type=button].cefran-tag--cefran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color5:hover,
+  button.cefran-tag--cefran-color5:hover,
+  input[type=button].cefran-tag--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5:active,
+  button.cefran-tag--cefran-color5:active,
+  input[type=button].cefran-tag--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6,
+  button.cefran-tag--cefran-color6,
+  input[type=button].cefran-tag--cefran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color6:hover,
+  button.cefran-tag--cefran-color6:hover,
+  input[type=button].cefran-tag--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6:active,
+  button.cefran-tag--cefran-color6:active,
+  input[type=button].cefran-tag--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7,
+  button.cefran-tag--cefran-color7,
+  input[type=button].cefran-tag--cefran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color7:hover,
+  button.cefran-tag--cefran-color7:hover,
+  input[type=button].cefran-tag--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7:active,
+  button.cefran-tag--cefran-color7:active,
+  input[type=button].cefran-tag--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8,
+  button.cefran-tag--cefran-color8,
+  input[type=button].cefran-tag--cefran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color8:hover,
+  button.cefran-tag--cefran-color8:hover,
+  input[type=button].cefran-tag--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8:active,
+  button.cefran-tag--cefran-color8:active,
+  input[type=button].cefran-tag--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9,
+  button.cefran-tag--cefran-color9,
+  input[type=button].cefran-tag--cefran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color9:hover,
+  button.cefran-tag--cefran-color9:hover,
+  input[type=button].cefran-tag--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9:active,
+  button.cefran-tag--cefran-color9:active,
+  input[type=button].cefran-tag--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10,
+  button.cefran-tag--cefran-color10,
+  input[type=button].cefran-tag--cefran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color10:hover,
+  button.cefran-tag--cefran-color10:hover,
+  input[type=button].cefran-tag--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10:active,
+  button.cefran-tag--cefran-color10:active,
+  input[type=button].cefran-tag--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11,
+  button.cefran-tag--cefran-color11,
+  input[type=button].cefran-tag--cefran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color11:hover,
+  button.cefran-tag--cefran-color11:hover,
+  input[type=button].cefran-tag--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11:active,
+  button.cefran-tag--cefran-color11:active,
+  input[type=button].cefran-tag--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12,
+  button.cefran-tag--cefran-color12,
+  input[type=button].cefran-tag--cefran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color12:hover,
+  button.cefran-tag--cefran-color12:hover,
+  input[type=button].cefran-tag--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12:active,
+  button.cefran-tag--cefran-color12:active,
+  input[type=button].cefran-tag--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13,
+  button.cefran-tag--cefran-color13,
+  input[type=button].cefran-tag--cefran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color13:hover,
+  button.cefran-tag--cefran-color13:hover,
+  input[type=button].cefran-tag--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13:active,
+  button.cefran-tag--cefran-color13:active,
+  input[type=button].cefran-tag--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14,
+  button.cefran-tag--cefran-color14,
+  input[type=button].cefran-tag--cefran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color14:hover,
+  button.cefran-tag--cefran-color14:hover,
+  input[type=button].cefran-tag--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14:active,
+  button.cefran-tag--cefran-color14:active,
+  input[type=button].cefran-tag--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15,
+  button.cefran-tag--cefran-color15,
+  input[type=button].cefran-tag--cefran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color15:hover,
+  button.cefran-tag--cefran-color15:hover,
+  input[type=button].cefran-tag--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15:active,
+  button.cefran-tag--cefran-color15:active,
+  input[type=button].cefran-tag--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16,
+  button.cefran-tag--cefran-color16,
+  input[type=button].cefran-tag--cefran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color16:hover,
+  button.cefran-tag--cefran-color16:hover,
+  input[type=button].cefran-tag--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16:active,
+  button.cefran-tag--cefran-color16:active,
+  input[type=button].cefran-tag--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17,
+  button.cefran-tag--cefran-color17,
+  input[type=button].cefran-tag--cefran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color17:hover,
+  button.cefran-tag--cefran-color17:hover,
+  input[type=button].cefran-tag--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17:active,
+  button.cefran-tag--cefran-color17:active,
+  input[type=button].cefran-tag--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18,
+  button.cefran-tag--cefran-color18,
+  input[type=button].cefran-tag--cefran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color18:hover,
+  button.cefran-tag--cefran-color18:hover,
+  input[type=button].cefran-tag--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18:active,
+  button.cefran-tag--cefran-color18:active,
+  input[type=button].cefran-tag--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19,
+  button.cefran-tag--cefran-color19,
+  input[type=button].cefran-tag--cefran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color19:hover,
+  button.cefran-tag--cefran-color19:hover,
+  input[type=button].cefran-tag--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19:active,
+  button.cefran-tag--cefran-color19:active,
+  input[type=button].cefran-tag--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled) {
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]::after,
+  input[type=button].cefran-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled::after,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:hover,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:active,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:disabled,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.cefran-tag:disabled,
+  input[type=button].cefran-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).cefran-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true],
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:hover,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:active,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:disabled,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  button.cefran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+  }
+}

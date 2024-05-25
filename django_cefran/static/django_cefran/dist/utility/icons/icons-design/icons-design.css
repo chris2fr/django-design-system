@@ -1,0 +1,515 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON DESIGN
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-ball-pen-fill::before,
+.cefran-icon-ball-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-fill.svg");
+  mask-image: url("../../../icons/design/ball-pen-fill.svg");
+}
+
+.cefran-icon-ball-pen-line::before,
+.cefran-icon-ball-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-line.svg");
+  mask-image: url("../../../icons/design/ball-pen-line.svg");
+}
+
+.cefran-icon-brush-3-fill::before,
+.cefran-icon-brush-3-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-fill.svg");
+  mask-image: url("../../../icons/design/brush-3-fill.svg");
+}
+
+.cefran-icon-brush-3-line::before,
+.cefran-icon-brush-3-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-line.svg");
+  mask-image: url("../../../icons/design/brush-3-line.svg");
+}
+
+.cefran-icon-brush-fill::before,
+.cefran-icon-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-fill.svg");
+  mask-image: url("../../../icons/design/brush-fill.svg");
+}
+
+.cefran-icon-brush-line::before,
+.cefran-icon-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-line.svg");
+  mask-image: url("../../../icons/design/brush-line.svg");
+}
+
+.cefran-icon-contrast-fill::before,
+.cefran-icon-contrast-fill::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-fill.svg");
+  mask-image: url("../../../icons/design/contrast-fill.svg");
+}
+
+.cefran-icon-contrast-line::before,
+.cefran-icon-contrast-line::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-line.svg");
+  mask-image: url("../../../icons/design/contrast-line.svg");
+}
+
+.cefran-icon-crop-fill::before,
+.cefran-icon-crop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/crop-fill.svg");
+  mask-image: url("../../../icons/design/crop-fill.svg");
+}
+
+.cefran-icon-crop-line::before,
+.cefran-icon-crop-line::after {
+  -webkit-mask-image: url("../../../icons/design/crop-line.svg");
+  mask-image: url("../../../icons/design/crop-line.svg");
+}
+
+.cefran-icon-drag-move-2-fill::before,
+.cefran-icon-drag-move-2-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+  mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+}
+
+.cefran-icon-drag-move-2-line::before,
+.cefran-icon-drag-move-2-line::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-line.svg");
+  mask-image: url("../../../icons/design/drag-move-2-line.svg");
+}
+
+.cefran-icon-drop-fill::before,
+.cefran-icon-drop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drop-fill.svg");
+  mask-image: url("../../../icons/design/drop-fill.svg");
+}
+
+.cefran-icon-drop-line::before,
+.cefran-icon-drop-line::after {
+  -webkit-mask-image: url("../../../icons/design/drop-line.svg");
+  mask-image: url("../../../icons/design/drop-line.svg");
+}
+
+.cefran-icon-edit-box-fill::before,
+.cefran-icon-edit-box-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-fill.svg");
+  mask-image: url("../../../icons/design/edit-box-fill.svg");
+}
+
+.cefran-icon-edit-box-line::before,
+.cefran-icon-edit-box-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-line.svg");
+  mask-image: url("../../../icons/design/edit-box-line.svg");
+}
+
+.cefran-icon-edit-fill::before,
+.cefran-icon-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.cefran-icon-edit-line::before,
+.cefran-icon-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+.cefran-icon-ink-bottle-fill::before,
+.cefran-icon-ink-bottle-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+  mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+}
+
+.cefran-icon-ink-bottle-line::before,
+.cefran-icon-ink-bottle-line::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-line.svg");
+  mask-image: url("../../../icons/design/ink-bottle-line.svg");
+}
+
+.cefran-icon-layout-grid-fill::before,
+.cefran-icon-layout-grid-fill::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-fill.svg");
+  mask-image: url("../../../icons/design/layout-grid-fill.svg");
+}
+
+.cefran-icon-layout-grid-line::before,
+.cefran-icon-layout-grid-line::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-line.svg");
+  mask-image: url("../../../icons/design/layout-grid-line.svg");
+}
+
+.cefran-icon-mark-pen-fill::before,
+.cefran-icon-mark-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-fill.svg");
+  mask-image: url("../../../icons/design/mark-pen-fill.svg");
+}
+
+.cefran-icon-mark-pen-line::before,
+.cefran-icon-mark-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-line.svg");
+  mask-image: url("../../../icons/design/mark-pen-line.svg");
+}
+
+.cefran-icon-paint-brush-fill::before,
+.cefran-icon-paint-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-fill.svg");
+  mask-image: url("../../../icons/design/paint-brush-fill.svg");
+}
+
+.cefran-icon-paint-brush-line::before,
+.cefran-icon-paint-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-line.svg");
+  mask-image: url("../../../icons/design/paint-brush-line.svg");
+}
+
+.cefran-icon-paint-fill::before,
+.cefran-icon-paint-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-fill.svg");
+  mask-image: url("../../../icons/design/paint-fill.svg");
+}
+
+.cefran-icon-paint-line::before,
+.cefran-icon-paint-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-line.svg");
+  mask-image: url("../../../icons/design/paint-line.svg");
+}
+
+.cefran-icon-palette-fill::before,
+.cefran-icon-palette-fill::after {
+  -webkit-mask-image: url("../../../icons/design/palette-fill.svg");
+  mask-image: url("../../../icons/design/palette-fill.svg");
+}
+
+.cefran-icon-palette-line::before,
+.cefran-icon-palette-line::after {
+  -webkit-mask-image: url("../../../icons/design/palette-line.svg");
+  mask-image: url("../../../icons/design/palette-line.svg");
+}
+
+.cefran-icon-pantone-fill::before,
+.cefran-icon-pantone-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-fill.svg");
+  mask-image: url("../../../icons/design/pantone-fill.svg");
+}
+
+.cefran-icon-pantone-line::before,
+.cefran-icon-pantone-line::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-line.svg");
+  mask-image: url("../../../icons/design/pantone-line.svg");
+}
+
+.cefran-icon-pen-nib-fill::before,
+.cefran-icon-pen-nib-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-fill.svg");
+  mask-image: url("../../../icons/design/pen-nib-fill.svg");
+}
+
+.cefran-icon-pen-nib-line::before,
+.cefran-icon-pen-nib-line::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-line.svg");
+  mask-image: url("../../../icons/design/pen-nib-line.svg");
+}
+
+.cefran-icon-pencil-fill::before,
+.cefran-icon-pencil-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-fill.svg");
+  mask-image: url("../../../icons/design/pencil-fill.svg");
+}
+
+.cefran-icon-pencil-line::before,
+.cefran-icon-pencil-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-line.svg");
+  mask-image: url("../../../icons/design/pencil-line.svg");
+}
+
+.cefran-icon-pencil-ruler-fill::before,
+.cefran-icon-pencil-ruler-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+}
+
+.cefran-icon-pencil-ruler-line::before,
+.cefran-icon-pencil-ruler-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+}
+
+.cefran-icon-sip-fill::before,
+.cefran-icon-sip-fill::after {
+  -webkit-mask-image: url("../../../icons/design/sip-fill.svg");
+  mask-image: url("../../../icons/design/sip-fill.svg");
+}
+
+.cefran-icon-sip-line::before,
+.cefran-icon-sip-line::after {
+  -webkit-mask-image: url("../../../icons/design/sip-line.svg");
+  mask-image: url("../../../icons/design/sip-line.svg");
+}
+
+.cefran-icon-table-fill::before,
+.cefran-icon-table-fill::after {
+  -webkit-mask-image: url("../../../icons/design/table-fill.svg");
+  mask-image: url("../../../icons/design/table-fill.svg");
+}
+
+.cefran-icon-table-line::before,
+.cefran-icon-table-line::after {
+  -webkit-mask-image: url("../../../icons/design/table-line.svg");
+  mask-image: url("../../../icons/design/table-line.svg");
+}
+
+.cefran-fi-edit-fill::before,
+.cefran-fi-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.cefran-fi-edit-line::before,
+.cefran-fi-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-ball-pen-fill::before,
+  .cefran-icon-ball-pen-fill::after {
+    background-image: url("../../../icons/design/ball-pen-fill.svg");
+  }
+
+  .cefran-icon-ball-pen-line::before,
+  .cefran-icon-ball-pen-line::after {
+    background-image: url("../../../icons/design/ball-pen-line.svg");
+  }
+
+  .cefran-icon-brush-3-fill::before,
+  .cefran-icon-brush-3-fill::after {
+    background-image: url("../../../icons/design/brush-3-fill.svg");
+  }
+
+  .cefran-icon-brush-3-line::before,
+  .cefran-icon-brush-3-line::after {
+    background-image: url("../../../icons/design/brush-3-line.svg");
+  }
+
+  .cefran-icon-brush-fill::before,
+  .cefran-icon-brush-fill::after {
+    background-image: url("../../../icons/design/brush-fill.svg");
+  }
+
+  .cefran-icon-brush-line::before,
+  .cefran-icon-brush-line::after {
+    background-image: url("../../../icons/design/brush-line.svg");
+  }
+
+  .cefran-icon-contrast-fill::before,
+  .cefran-icon-contrast-fill::after {
+    background-image: url("../../../icons/design/contrast-fill.svg");
+  }
+
+  .cefran-icon-contrast-line::before,
+  .cefran-icon-contrast-line::after {
+    background-image: url("../../../icons/design/contrast-line.svg");
+  }
+
+  .cefran-icon-crop-fill::before,
+  .cefran-icon-crop-fill::after {
+    background-image: url("../../../icons/design/crop-fill.svg");
+  }
+
+  .cefran-icon-crop-line::before,
+  .cefran-icon-crop-line::after {
+    background-image: url("../../../icons/design/crop-line.svg");
+  }
+
+  .cefran-icon-drag-move-2-fill::before,
+  .cefran-icon-drag-move-2-fill::after {
+    background-image: url("../../../icons/design/drag-move-2-fill.svg");
+  }
+
+  .cefran-icon-drag-move-2-line::before,
+  .cefran-icon-drag-move-2-line::after {
+    background-image: url("../../../icons/design/drag-move-2-line.svg");
+  }
+
+  .cefran-icon-drop-fill::before,
+  .cefran-icon-drop-fill::after {
+    background-image: url("../../../icons/design/drop-fill.svg");
+  }
+
+  .cefran-icon-drop-line::before,
+  .cefran-icon-drop-line::after {
+    background-image: url("../../../icons/design/drop-line.svg");
+  }
+
+  .cefran-icon-edit-box-fill::before,
+  .cefran-icon-edit-box-fill::after {
+    background-image: url("../../../icons/design/edit-box-fill.svg");
+  }
+
+  .cefran-icon-edit-box-line::before,
+  .cefran-icon-edit-box-line::after {
+    background-image: url("../../../icons/design/edit-box-line.svg");
+  }
+
+  .cefran-icon-edit-fill::before,
+  .cefran-icon-edit-fill::after {
+    background-image: url("../../../icons/design/edit-fill.svg");
+  }
+
+  .cefran-icon-edit-line::before,
+  .cefran-icon-edit-line::after {
+    background-image: url("../../../icons/design/edit-line.svg");
+  }
+
+  .cefran-icon-ink-bottle-fill::before,
+  .cefran-icon-ink-bottle-fill::after {
+    background-image: url("../../../icons/design/ink-bottle-fill.svg");
+  }
+
+  .cefran-icon-ink-bottle-line::before,
+  .cefran-icon-ink-bottle-line::after {
+    background-image: url("../../../icons/design/ink-bottle-line.svg");
+  }
+
+  .cefran-icon-layout-grid-fill::before,
+  .cefran-icon-layout-grid-fill::after {
+    background-image: url("../../../icons/design/layout-grid-fill.svg");
+  }
+
+  .cefran-icon-layout-grid-line::before,
+  .cefran-icon-layout-grid-line::after {
+    background-image: url("../../../icons/design/layout-grid-line.svg");
+  }
+
+  .cefran-icon-mark-pen-fill::before,
+  .cefran-icon-mark-pen-fill::after {
+    background-image: url("../../../icons/design/mark-pen-fill.svg");
+  }
+
+  .cefran-icon-mark-pen-line::before,
+  .cefran-icon-mark-pen-line::after {
+    background-image: url("../../../icons/design/mark-pen-line.svg");
+  }
+
+  .cefran-icon-paint-brush-fill::before,
+  .cefran-icon-paint-brush-fill::after {
+    background-image: url("../../../icons/design/paint-brush-fill.svg");
+  }
+
+  .cefran-icon-paint-brush-line::before,
+  .cefran-icon-paint-brush-line::after {
+    background-image: url("../../../icons/design/paint-brush-line.svg");
+  }
+
+  .cefran-icon-paint-fill::before,
+  .cefran-icon-paint-fill::after {
+    background-image: url("../../../icons/design/paint-fill.svg");
+  }
+
+  .cefran-icon-paint-line::before,
+  .cefran-icon-paint-line::after {
+    background-image: url("../../../icons/design/paint-line.svg");
+  }
+
+  .cefran-icon-palette-fill::before,
+  .cefran-icon-palette-fill::after {
+    background-image: url("../../../icons/design/palette-fill.svg");
+  }
+
+  .cefran-icon-palette-line::before,
+  .cefran-icon-palette-line::after {
+    background-image: url("../../../icons/design/palette-line.svg");
+  }
+
+  .cefran-icon-pantone-fill::before,
+  .cefran-icon-pantone-fill::after {
+    background-image: url("../../../icons/design/pantone-fill.svg");
+  }
+
+  .cefran-icon-pantone-line::before,
+  .cefran-icon-pantone-line::after {
+    background-image: url("../../../icons/design/pantone-line.svg");
+  }
+
+  .cefran-icon-pen-nib-fill::before,
+  .cefran-icon-pen-nib-fill::after {
+    background-image: url("../../../icons/design/pen-nib-fill.svg");
+  }
+
+  .cefran-icon-pen-nib-line::before,
+  .cefran-icon-pen-nib-line::after {
+    background-image: url("../../../icons/design/pen-nib-line.svg");
+  }
+
+  .cefran-icon-pencil-fill::before,
+  .cefran-icon-pencil-fill::after {
+    background-image: url("../../../icons/design/pencil-fill.svg");
+  }
+
+  .cefran-icon-pencil-line::before,
+  .cefran-icon-pencil-line::after {
+    background-image: url("../../../icons/design/pencil-line.svg");
+  }
+
+  .cefran-icon-pencil-ruler-fill::before,
+  .cefran-icon-pencil-ruler-fill::after {
+    background-image: url("../../../icons/design/pencil-ruler-fill.svg");
+  }
+
+  .cefran-icon-pencil-ruler-line::before,
+  .cefran-icon-pencil-ruler-line::after {
+    background-image: url("../../../icons/design/pencil-ruler-line.svg");
+  }
+
+  .cefran-icon-sip-fill::before,
+  .cefran-icon-sip-fill::after {
+    background-image: url("../../../icons/design/sip-fill.svg");
+  }
+
+  .cefran-icon-sip-line::before,
+  .cefran-icon-sip-line::after {
+    background-image: url("../../../icons/design/sip-line.svg");
+  }
+
+  .cefran-icon-table-fill::before,
+  .cefran-icon-table-fill::after {
+    background-image: url("../../../icons/design/table-fill.svg");
+  }
+
+  .cefran-icon-table-line::before,
+  .cefran-icon-table-line::after {
+    background-image: url("../../../icons/design/table-line.svg");
+  }
+
+  .cefran-fi-edit-fill::before {
+    background-image: url("../../../icons/design/edit-fill.svg");
+  }
+
+  .cefran-fi-edit-line::before {
+    background-image: url("../../../icons/design/edit-line.svg");
+  }
+}

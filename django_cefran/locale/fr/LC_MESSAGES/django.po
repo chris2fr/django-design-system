@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-10 16:17+0200\n"
+"PO-Revision-Date: 2024-04-10 16:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4\n"
+
+#: cefran/admin.py:59
+msgid "Newsletter"
+msgstr "Lettre d’information"
+
+#: cefran/constants.py:5
+msgid "English"
+msgstr "Anglais"
+
+#: cefran/constants.py:6
+msgid "French"
+msgstr "Français"
+
+#: cefran/constants.py:12
+msgid "Blue France"
+msgstr "Bleu France"
+
+#: cefran/constants.py:13
+msgid "Red Marianne"
+msgstr "Rouge Marianne"
+
+#: cefran/constants.py:17
+msgid "Grey"
+msgstr "Gris"
+
+#: cefran/constants.py:21
+msgid "Info"
+msgstr "Info"
+
+#: cefran/constants.py:22
+msgid "Success"
+msgstr "Succès"
+
+#: cefran/constants.py:23
+msgid "Warning"
+msgstr "Avertissement"
+
+#: cefran/constants.py:24
+msgid "Error"
+msgstr "Erreur"
+
+#: cefran/constants.py:48 cefran/constants.py:54
+msgid "Primary colors"
+msgstr "Couleurs primaires"
+
+#: cefran/constants.py:49 cefran/constants.py:55
+msgid "Neutral colors"
+msgstr "Couleurs neutres"
+
+#: cefran/constants.py:50 cefran/constants.py:57
+msgid "Illustration colors"
+msgstr "Couleurs illustratives"
+
+#: cefran/constants.py:56
+msgid "System colors"
+msgstr "Couleurs système"
+
+#: cefran/models.py:20
+msgid "Language"
+msgstr "Langue"
+
+#: cefran/models.py:23
+msgid "Only one configuration is allowed per language"
+msgstr "Une seule configuration autorisée par langue"
+
+#: cefran/models.py:29
+msgid "fully"
+msgstr "totalement"
+
+#: cefran/models.py:30
+msgid "partially"
+msgstr "partiellement"
+
+#: cefran/models.py:31
+msgid "not"
+msgstr "non"
+
+#: cefran/models.py:36
+msgid "Site title"
+msgstr "Titre du site"
+
+#: cefran/models.py:39
+msgid "Site tagline"
+msgstr "Sous-titre du site"
+
+#: cefran/models.py:42
+msgid "Important notice"
+msgstr "Bandeau d’information importante"
+
+#: cefran/models.py:46
+msgid ""
+"The important notice banner should only be used for essential and temporary "
+"information.             (Excessive or continuous use risks “drowning” the "
+"message.)"
+msgstr ""
+"Le bandeau d’information importante doit être utilisé uniquement pour une "
+"information primordiale et temporaire.  (Une utilisation excessive ou "
+"continue risque de “noyer” le message)"
+
+#: cefran/models.py:53
+msgid "Institution (header)"
+msgstr "Institution (en-tête)"
+
+#: cefran/models.py:59
+msgid "Institution with line break (header)"
+msgstr "Institution avec césure (en-tête)"
+
+#: cefran/models.py:64
+msgid "Show the BETA tag next to the title"
+msgstr "Afficher la mention BETA à côté du titre"
+
+#: cefran/models.py:68
+msgid "Institution (footer)"
+msgstr "Institution (pied"
+
+#: cefran/models.py:74
+msgid "Institution with line break (footer)"
+msgstr "Institution avec césure (pied)"
+
+#: cefran/models.py:79
+msgid "Description"
+msgstr "Description"
+
+#: cefran/models.py:82
+msgid "Newsletter description"
+msgstr "Description de la lettre d’information"
+
+#: cefran/models.py:86
+msgid "Newsletter registration URL"
+msgstr "URL d‘inscription à la lettre d’information"
+
+#: cefran/models.py:93
+msgid "Operator logo"
+msgstr "Logo opérateur"
+
+#: cefran/models.py:100
+msgid "Logo alt text"
+msgstr "Alternative textuelle du logo"
+
+#: cefran/models.py:103
+msgid "Must contain the text present in the image."
+msgstr "Doit impérativement contenir le texte présent dans l’image."
+
+#: cefran/models.py:106
+msgid "Width (em)"
+msgstr "Largeur (em)"
+
+#: cefran/models.py:112
+msgid ""
+"To be adjusted according to the width of the logo.            Example for a "
+"vertical logo: 3.5, Example for a horizontal logo: 8."
+msgstr ""
+"À ajuster en fonction de la largeur du logo.  Exemple pour un logo vertical: "
+"3.5, Exemple pour un logo horizontal: 8."
+
+#: cefran/models.py:118
+msgid "Mourning"
+msgstr "Mise en berne"
+
+#: cefran/models.py:121
+msgid "Accessibility compliance status"
+msgstr "Statut de conformité de l’accessibilité"
+
+#: cefran/models.py:128
+msgid "Configuration"
+msgstr "Configuration"
+
+#: cefran/models.py:131
+msgid "Site config:"
+msgstr "Configuration du site :"
+
+#: cefran/models.py:139
+msgid "Title"
+msgstr "Titre"
+
+#: cefran/models.py:142
+msgid "URL"
+msgstr "URL"
+
+#: cefran/models.py:147
+msgid "Icon class"
+msgstr "Classe d’icône"
+
+#: cefran/models.py:154
+msgid "Social media"
+msgstr "Réseau social"
+
+#: cefran/models.py:155
+msgid "Social medias"
+msgstr "Réseaux sociaux"
+
+#: cefran/templates/cefran/alert.html:2 cefran/templates/cefran/notice.html:2
+msgid "Hide message"
+msgstr "Masquer le message"
+
+#: cefran/templates/cefran/breadcrumb.html:2
+msgid "you are here:"
+msgstr "vous êtes ici :"
+
+#: cefran/templates/cefran/breadcrumb.html:10
+msgid "See breadcrumb"
+msgstr "Voir le fil d’Ariane"
+
+#: cefran/templates/cefran/breadcrumb.html:15 cefran/templates/cefran/header.html:10
+msgid "Home page"
+msgstr "Accueil"
+
+#: cefran/templates/cefran/card.html:2 cefran/templates/cefran/follow.html:2
+#: cefran/templates/cefran/footer.html:2 cefran/templates/cefran/france_connect.html:9
+#: cefran/templates/cefran/link.html:7 cefran/templates/cefran/quote.html:2
+msgid "Opens a new window"
+msgstr "Ouvre une nouvelle fenêtre"
+
+#: cefran/templates/cefran/consent.html:13
+msgid "Allow all cookies"
+msgstr "Autoriser tous les cookies"
+
+#: cefran/templates/cefran/consent.html:17
+msgid "Accept all"
+msgstr "Tout accepter"
+
+#: cefran/templates/cefran/consent.html:21
+msgid "Reject all cookies"
+msgstr "Refuser tous les cookies"
+
+#: cefran/templates/cefran/consent.html:25
+msgid "Reject all"
+msgstr "Tout refuser"
+
+#: cefran/templates/cefran/consent.html:29
+msgid "Customize cookies"
+msgstr "Personnaliser les cookies"
+
+#: cefran/templates/cefran/consent.html:35
+msgid "Customize"
+msgstr "Personnaliser"
+
+#: cefran/templates/cefran/follow.html:11
+msgctxt "Section title"
+msgid "Subscribe to our newsletter"
+msgstr "Abonnez-vous à notre lettre d’information"
+
+#: cefran/templates/cefran/follow.html:18
+msgctxt "Button title"
+msgid "Subscribe to our newsletter"
+msgstr "S'abonner à notre lettre d’information"
+
+#: cefran/templates/cefran/follow.html:24
+msgid "Subscribe"
+msgstr "S’abonner"
+
+#: cefran/templates/cefran/follow.html:34
+msgid "Follow us <br /> on social media"
+msgstr "Suivez-nous <br /> sur les réseaux sociaux"
+
+#: cefran/templates/cefran/footer.html:9
+msgid "Back to home page"
+msgstr "Retour à l’accueil du site"
+
+#: cefran/templates/cefran/footer.html:93
+msgid "Sitemap"
+msgstr "Plan du site"
+
+#: cefran/templates/cefran/footer.html:98
+#, python-format
+msgid "Accessibility: %(accessibility_status)s compliant"
+msgstr "Accessibilité : %(accessibility_status)s conforme"
+
+#: cefran/templates/cefran/footer.html:103
+msgid "Legal notice"
+msgstr "Mentions légales"
+
+#: cefran/templates/cefran/footer.html:106
+msgid "Personal data"
+msgstr "Données personnelles"
+
+#: cefran/templates/cefran/footer.html:109
+msgid "Cookie management"
+msgstr "Gestion des cookies"
+
+#: cefran/templates/cefran/footer.html:115
+msgid "etalab-2.0 license"
+msgstr "licence etalab-2.0"
+
+#: cefran/templates/cefran/footer.html:116
+msgid ""
+"Unless explicit mention of intellectual property held by third parties, the "
+"contents of this site are offered under"
+msgstr ""
+"Sauf mention explicite de propriété intellectuelle détenue par des tiers, "
+"les contenus de ce site sont proposés sous"
+
+#: cefran/templates/cefran/formset_base.html:27
+msgid "Delete this item"
+msgstr "Supprimer cet élément"
+
+#: cefran/templates/cefran/formset_base.html:37
+msgid "Add an item"
+msgstr "Ajouter un élément"
+
+#: cefran/templates/cefran/france_connect.html:5
+msgid "Login with"
+msgstr "S’identifier avec"
+
+#: cefran/templates/cefran/france_connect.html:10
+msgid "What is FranceConnect+?"
+msgstr "Qu’est-ce que FranceConnect+ ?"
+
+#: cefran/templates/cefran/france_connect.html:11
+msgid "What is FranceConnect?"
+msgstr "Qu’est-ce que FranceConnect ?"
+
+#: cefran/templates/cefran/header.html:29
+msgid "Menu"
+msgstr "Menu"
+
+#: cefran/templates/cefran/header.html:87 cefran/templates/cefran/theme_modale.html:13
+#: cefran/templates/cefran/transcription.html:30
+msgid "Close"
+msgstr "Fermer"
+
+#: cefran/templates/cefran/header.html:91
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: cefran/templates/cefran/pagination.html:2
+msgid "Pagination"
+msgstr "Pagination"
+
+#: cefran/templates/cefran/pagination.html:9
+msgid "First page"
+msgstr "Première page"
+
+#: cefran/templates/cefran/pagination.html:14
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: cefran/templates/cefran/pagination.html:25
+msgid "Page"
+msgstr "Page"
+
+#: cefran/templates/cefran/pagination.html:46
+msgid "Next page"
+msgstr "Page suivante"
+
+#: cefran/templates/cefran/pagination.html:52
+msgid "Last page"
+msgstr "Dernière page"
+
+#: cefran/templates/cefran/sidemenu.html:2
+msgid "Side menu"
+msgstr "Menu latéral"
+
+#: cefran/templates/cefran/sidemenu.html:11
+msgid "In this section"
+msgstr "Dans cette rubrique"
+
+#: cefran/templates/cefran/skiplinks.html:2
+msgid "Skip links"
+msgstr "Accès rapide"
+
+#: cefran/templates/cefran/stepper.html:6
+#, python-format
+msgid "Step %(current_step_id)s of %(total_steps)s"
+msgstr "Étape %(current_step_id)s sur %(total_steps)s"
+
+#: cefran/templates/cefran/stepper.html:17
+msgid "Next step:"
+msgstr "Étape suivante :"
+
+#: cefran/templates/cefran/summary.html:6
+msgid "Summary"
+msgstr "Sommaire"
+
+#: cefran/templates/cefran/tag.html:3
+msgid "Remove filter"
+msgstr "Retirer le filtre"
+
+#: cefran/templates/cefran/theme_modale.html:18
+msgid "Display settings"
+msgstr "Paramètres d’affichage"
+
+#: cefran/templates/cefran/theme_modale.html:24
+msgid "Choose a theme to customize the appearance of the site."
+msgstr "Choisissez un thème pour personnaliser l’apparence du site."
+
+#: cefran/templates/cefran/theme_modale.html:33
+msgid "Light theme"
+msgstr "Thème clair"
+
+#: cefran/templates/cefran/theme_modale.html:46
+msgid "Dark theme"
+msgstr "Thème sombre"
+
+#: cefran/templates/cefran/theme_modale.html:59
+msgid "System"
+msgstr "Système"
+
+#: cefran/templates/cefran/theme_modale.html:60
+msgid "Uses system settings."
+msgstr "Utilise les paramètres système."
+
+#: cefran/templates/cefran/toggle.html:2
+msgid "Checked"
+msgstr "Activé"
+
+#: cefran/templates/cefran/toggle.html:3
+msgid "Unchecked"
+msgstr "Désactivé"
+
+#: cefran/templates/cefran/tooltip.html:6
+msgid "Contextual information"
+msgstr "Information contextuelle"
+
+#: cefran/templates/cefran/transcription.html:2
+msgid "Transcript"
+msgstr "Transcription"
+
+#: cefran/templates/cefran/transcription.html:12
+msgid "Enlarge"
+msgstr "Agrandir"

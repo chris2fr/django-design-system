@@ -1,0 +1,39 @@
+{% load i18n %}
+<div class="cefran-consent-banner">
+  <h2 class="cefran-h6">
+    {{ self.title }}
+  </h2>
+  <div class="cefran-consent-banner__content">
+    <p class="cefran-text--sm">
+      {{ self.content|safe }}
+    </p>
+  </div>
+  <ul class="cefran-consent-banner__buttons cefran-btns-group cefran-btns-group--right cefran-btns-group--inline-reverse cefran-btns-group--inline-sm">
+    <li>
+      {% translate "Allow all cookies" as allow_all_cookies %}
+      <button class="cefran-btn"
+              id="consent-accept-all"
+              title="{{ allow_all_cookies }}">
+        {% translate "Accept all" %}
+      </button>
+    </li>
+    <li>
+      {% translate "Reject all cookies" as reject_all_cookies %}
+      <button class="cefran-btn"
+              id="consent-reject-all"
+              title="{{ reject_all_cookies }}">
+        {% translate "Reject all" %}
+      </button>
+    </li>
+    <li>
+      {% translate "Customize cookies" as customize_cookies %}
+      <button class="cefran-btn cefran-btn--secondary"
+              id="consent-customize"
+              data-cefran-opened="false"
+              aria-controls="cefran-consent-modal"
+              title="{{ customize_cookies }}">
+        {% translate "Customize" %}
+      </button>
+    </li>
+  </ul>
+</div>

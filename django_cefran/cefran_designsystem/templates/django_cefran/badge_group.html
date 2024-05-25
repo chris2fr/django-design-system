@@ -1,0 +1,8 @@
+{% load cefran_tags %}
+<ul class="cefran-badge-group">
+  {% for item in self.items %}
+    <li>
+      {% cefran_badge item %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-summary {
+    background-color: #eee;
+    display: none;
+  }
+
+  .cefran-summary__title {
+    color: #161616;
+  }
+
+  .cefran-summary li > a {
+    color: #161616;
+  }
+}

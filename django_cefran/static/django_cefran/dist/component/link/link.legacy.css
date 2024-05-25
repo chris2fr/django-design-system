@@ -1,0 +1,102 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-link {
+    background-image: none;
+    text-decoration: underline;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-link::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-link--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-link--lg::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  ul.cefran-links-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-links-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-links-group,
+  ol.cefran-links-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-link__detail {
+    color: #666;
+  }
+
+  .cefran-links-group li::marker {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-link--close {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-link--close:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-link--close:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-link--close:disabled,
+  a.cefran-link--close:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-link--close:disabled:hover,
+  a.cefran-link--close:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-link--close:disabled:active,
+  a.cefran-link--close:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

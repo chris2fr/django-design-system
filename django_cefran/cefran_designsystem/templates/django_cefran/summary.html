@@ -1,0 +1,13 @@
+{% load i18n %}
+<nav role="navigation"
+     class="cefran-summary"
+     aria-labelledby="cefran-summary-title">
+  <{{ self.heading_tag | default:"p" }} class="cefran-summary__title" id="cefran-summary-title">
+  {% translate "Summary" %}
+  </{{ self.heading_tag | default:"p" }}>
+  <ol class="cefran-summary__list">
+    {% for item in self.items %}
+      {% include "django_cefran/summary_list.html" with item=item %}
+    {% endfor %}
+  </ol>
+</nav>

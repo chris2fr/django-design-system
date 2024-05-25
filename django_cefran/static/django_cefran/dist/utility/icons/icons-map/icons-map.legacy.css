@@ -1,0 +1,272 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-anchor-fill::before,
+  .cefran-icon-anchor-fill::after {
+    background-image: url("../../../icons/map/anchor-fill.svg");
+  }
+
+  .cefran-icon-anchor-line::before,
+  .cefran-icon-anchor-line::after {
+    background-image: url("../../../icons/map/anchor-line.svg");
+  }
+
+  .cefran-icon-bike-fill::before,
+  .cefran-icon-bike-fill::after {
+    background-image: url("../../../icons/map/bike-fill.svg");
+  }
+
+  .cefran-icon-bike-line::before,
+  .cefran-icon-bike-line::after {
+    background-image: url("../../../icons/map/bike-line.svg");
+  }
+
+  .cefran-icon-bus-fill::before,
+  .cefran-icon-bus-fill::after {
+    background-image: url("../../../icons/map/bus-fill.svg");
+  }
+
+  .cefran-icon-bus-line::before,
+  .cefran-icon-bus-line::after {
+    background-image: url("../../../icons/map/bus-line.svg");
+  }
+
+  .cefran-icon-car-fill::before,
+  .cefran-icon-car-fill::after {
+    background-image: url("../../../icons/map/car-fill.svg");
+  }
+
+  .cefran-icon-car-line::before,
+  .cefran-icon-car-line::after {
+    background-image: url("../../../icons/map/car-line.svg");
+  }
+
+  .cefran-icon-caravan-fill::before,
+  .cefran-icon-caravan-fill::after {
+    background-image: url("../../../icons/map/caravan-fill.svg");
+  }
+
+  .cefran-icon-caravan-line::before,
+  .cefran-icon-caravan-line::after {
+    background-image: url("../../../icons/map/caravan-line.svg");
+  }
+
+  .cefran-icon-charging-pile-2-fill::before,
+  .cefran-icon-charging-pile-2-fill::after {
+    background-image: url("../../../icons/map/charging-pile-2-fill.svg");
+  }
+
+  .cefran-icon-charging-pile-2-line::before,
+  .cefran-icon-charging-pile-2-line::after {
+    background-image: url("../../../icons/map/charging-pile-2-line.svg");
+  }
+
+  .cefran-icon-compass-3-fill::before,
+  .cefran-icon-compass-3-fill::after {
+    background-image: url("../../../icons/map/compass-3-fill.svg");
+  }
+
+  .cefran-icon-compass-3-line::before,
+  .cefran-icon-compass-3-line::after {
+    background-image: url("../../../icons/map/compass-3-line.svg");
+  }
+
+  .cefran-icon-cup-fill::before,
+  .cefran-icon-cup-fill::after {
+    background-image: url("../../../icons/map/cup-fill.svg");
+  }
+
+  .cefran-icon-cup-line::before,
+  .cefran-icon-cup-line::after {
+    background-image: url("../../../icons/map/cup-line.svg");
+  }
+
+  .cefran-icon-earth-fill::before,
+  .cefran-icon-earth-fill::after {
+    background-image: url("../../../icons/map/earth-fill.svg");
+  }
+
+  .cefran-icon-earth-line::before,
+  .cefran-icon-earth-line::after {
+    background-image: url("../../../icons/map/earth-line.svg");
+  }
+
+  .cefran-icon-france-fill::before,
+  .cefran-icon-france-fill::after {
+    background-image: url("../../../icons/map/france-fill.svg");
+  }
+
+  .cefran-icon-france-line::before,
+  .cefran-icon-france-line::after {
+    background-image: url("../../../icons/map/france-line.svg");
+  }
+
+  .cefran-icon-gas-station-fill::before,
+  .cefran-icon-gas-station-fill::after {
+    background-image: url("../../../icons/map/gas-station-fill.svg");
+  }
+
+  .cefran-icon-gas-station-line::before,
+  .cefran-icon-gas-station-line::after {
+    background-image: url("../../../icons/map/gas-station-line.svg");
+  }
+
+  .cefran-icon-goblet-fill::before,
+  .cefran-icon-goblet-fill::after {
+    background-image: url("../../../icons/map/goblet-fill.svg");
+  }
+
+  .cefran-icon-goblet-line::before,
+  .cefran-icon-goblet-line::after {
+    background-image: url("../../../icons/map/goblet-line.svg");
+  }
+
+  .cefran-icon-map-pin-2-fill::before,
+  .cefran-icon-map-pin-2-fill::after {
+    background-image: url("../../../icons/map/map-pin-2-fill.svg");
+  }
+
+  .cefran-icon-map-pin-2-line::before,
+  .cefran-icon-map-pin-2-line::after {
+    background-image: url("../../../icons/map/map-pin-2-line.svg");
+  }
+
+  .cefran-icon-map-pin-user-fill::before,
+  .cefran-icon-map-pin-user-fill::after {
+    background-image: url("../../../icons/map/map-pin-user-fill.svg");
+  }
+
+  .cefran-icon-map-pin-user-line::before,
+  .cefran-icon-map-pin-user-line::after {
+    background-image: url("../../../icons/map/map-pin-user-line.svg");
+  }
+
+  .cefran-icon-motorbike-fill::before,
+  .cefran-icon-motorbike-fill::after {
+    background-image: url("../../../icons/map/motorbike-fill.svg");
+  }
+
+  .cefran-icon-motorbike-line::before,
+  .cefran-icon-motorbike-line::after {
+    background-image: url("../../../icons/map/motorbike-line.svg");
+  }
+
+  .cefran-icon-passport-fill::before,
+  .cefran-icon-passport-fill::after {
+    background-image: url("../../../icons/map/passport-fill.svg");
+  }
+
+  .cefran-icon-passport-line::before,
+  .cefran-icon-passport-line::after {
+    background-image: url("../../../icons/map/passport-line.svg");
+  }
+
+  .cefran-icon-restaurant-fill::before,
+  .cefran-icon-restaurant-fill::after {
+    background-image: url("../../../icons/map/restaurant-fill.svg");
+  }
+
+  .cefran-icon-restaurant-line::before,
+  .cefran-icon-restaurant-line::after {
+    background-image: url("../../../icons/map/restaurant-line.svg");
+  }
+
+  .cefran-icon-road-map-fill::before,
+  .cefran-icon-road-map-fill::after {
+    background-image: url("../../../icons/map/road-map-fill.svg");
+  }
+
+  .cefran-icon-road-map-line::before,
+  .cefran-icon-road-map-line::after {
+    background-image: url("../../../icons/map/road-map-line.svg");
+  }
+
+  .cefran-icon-sailboat-fill::before,
+  .cefran-icon-sailboat-fill::after {
+    background-image: url("../../../icons/map/sailboat-fill.svg");
+  }
+
+  .cefran-icon-sailboat-line::before,
+  .cefran-icon-sailboat-line::after {
+    background-image: url("../../../icons/map/sailboat-line.svg");
+  }
+
+  .cefran-icon-ship-2-fill::before,
+  .cefran-icon-ship-2-fill::after {
+    background-image: url("../../../icons/map/ship-2-fill.svg");
+  }
+
+  .cefran-icon-ship-2-line::before,
+  .cefran-icon-ship-2-line::after {
+    background-image: url("../../../icons/map/ship-2-line.svg");
+  }
+
+  .cefran-icon-signal-tower-fill::before,
+  .cefran-icon-signal-tower-fill::after {
+    background-image: url("../../../icons/map/signal-tower-fill.svg");
+  }
+
+  .cefran-icon-signal-tower-line::before,
+  .cefran-icon-signal-tower-line::after {
+    background-image: url("../../../icons/map/signal-tower-line.svg");
+  }
+
+  .cefran-icon-suitcase-2-fill::before,
+  .cefran-icon-suitcase-2-fill::after {
+    background-image: url("../../../icons/map/suitcase-2-fill.svg");
+  }
+
+  .cefran-icon-suitcase-2-line::before,
+  .cefran-icon-suitcase-2-line::after {
+    background-image: url("../../../icons/map/suitcase-2-line.svg");
+  }
+
+  .cefran-icon-taxi-fill::before,
+  .cefran-icon-taxi-fill::after {
+    background-image: url("../../../icons/map/taxi-fill.svg");
+  }
+
+  .cefran-icon-taxi-line::before,
+  .cefran-icon-taxi-line::after {
+    background-image: url("../../../icons/map/taxi-line.svg");
+  }
+
+  .cefran-icon-train-fill::before,
+  .cefran-icon-train-fill::after {
+    background-image: url("../../../icons/map/train-fill.svg");
+  }
+
+  .cefran-icon-train-line::before,
+  .cefran-icon-train-line::after {
+    background-image: url("../../../icons/map/train-line.svg");
+  }
+
+  .cefran-fi-map-pin-2-fill::before {
+    background-image: url("../../../icons/map/map-pin-2-fill.svg");
+  }
+
+  .cefran-fi-map-pin-2-line::before {
+    background-image: url("../../../icons/map/map-pin-2-line.svg");
+  }
+
+  .cefran-fi-road-map-fill::before {
+    background-image: url("../../../icons/map/road-map-fill.svg");
+  }
+
+  .cefran-fi-road-map-line::before {
+    background-image: url("../../../icons/map/road-map-line.svg");
+  }
+}

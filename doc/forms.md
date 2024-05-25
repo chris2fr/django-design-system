@@ -1,15 +1,15 @@
 # Formulaires – Documentation
 
 ## Initialisation des formulaires
-Les formulaires sont construits en se basant sur la classe `FastocheBaseForm`, par exemple :
+Les formulaires sont construits en se basant sur la classe `CefranBaseForm`, par exemple :
 
 ```{ .python }
 # votre_app/forms.py
 
-from fastoche.forms import FastocheBaseForm
+from cefran.forms import CefranBaseForm
 
 
-class ExampleForm(FastocheBaseForm):
+class ExampleForm(CefranBaseForm):
     # basic fields
     user_name = forms.CharField(label="Nom d’utilisateur", max_length=100)
 
@@ -23,11 +23,11 @@ class ExampleForm(FastocheBaseForm):
 Il est possible de multi-classer :
 
 ```{ .python }
-class AuthorCreateForm(ModelForm, FastocheBaseForm):
+class AuthorCreateForm(ModelForm, CefranBaseForm):
 ```
 
 ## Classes CSS
-Le formulaire ajoute la ou les classes appropriées (`fastoche-input`, `fastoche-select`, etc.) en fonction du type de champ, mais uniquement si une classe n’a pas déjà été ajoutée.
+Le formulaire ajoute la ou les classes appropriées (`cefran-input`, `cefran-select`, etc.) en fonction du type de champ, mais uniquement si une classe n’a pas déjà été ajoutée.
 
 Si c’est le cas, il faut soit forcer manuellement les classes à utiliser :
 
@@ -36,7 +36,7 @@ Si c’est le cas, il faut soit forcer manuellement les classes à utiliser :
         label="Mot de passe", widget=forms.PasswordInput(
             "autocomplete": "current-password",
             "required": True,
-            "class": "fastoche-input my-custom-class"
+            "class": "cefran-input my-custom-class"
         )
     )
 ```
@@ -44,7 +44,7 @@ Si c’est le cas, il faut soit forcer manuellement les classes à utiliser :
 soit les ajouter dans la méthode `init` du formulaire (en faisant attention à laisser une espace au début) :
 
 ```{ .python }
-class AuthorCreateForm(ModelForm, FastocheBaseForm):
+class AuthorCreateForm(ModelForm, CefranBaseForm):
 
 # [...]
 

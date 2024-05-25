@@ -1,0 +1,210 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-bluetooth-fill::before,
+  .cefran-icon-bluetooth-fill::after {
+    background-image: url("../../../icons/device/bluetooth-fill.svg");
+  }
+
+  .cefran-icon-bluetooth-line::before,
+  .cefran-icon-bluetooth-line::after {
+    background-image: url("../../../icons/device/bluetooth-line.svg");
+  }
+
+  .cefran-icon-computer-fill::before,
+  .cefran-icon-computer-fill::after {
+    background-image: url("../../../icons/device/computer-fill.svg");
+  }
+
+  .cefran-icon-computer-line::before,
+  .cefran-icon-computer-line::after {
+    background-image: url("../../../icons/device/computer-line.svg");
+  }
+
+  .cefran-icon-dashboard-3-fill::before,
+  .cefran-icon-dashboard-3-fill::after {
+    background-image: url("../../../icons/device/dashboard-3-fill.svg");
+  }
+
+  .cefran-icon-dashboard-3-line::before,
+  .cefran-icon-dashboard-3-line::after {
+    background-image: url("../../../icons/device/dashboard-3-line.svg");
+  }
+
+  .cefran-icon-database-fill::before,
+  .cefran-icon-database-fill::after {
+    background-image: url("../../../icons/device/database-fill.svg");
+  }
+
+  .cefran-icon-database-line::before,
+  .cefran-icon-database-line::after {
+    background-image: url("../../../icons/device/database-line.svg");
+  }
+
+  .cefran-icon-device-fill::before,
+  .cefran-icon-device-fill::after {
+    background-image: url("../../../icons/device/device-fill.svg");
+  }
+
+  .cefran-icon-device-line::before,
+  .cefran-icon-device-line::after {
+    background-image: url("../../../icons/device/device-line.svg");
+  }
+
+  .cefran-icon-hard-drive-2-fill::before,
+  .cefran-icon-hard-drive-2-fill::after {
+    background-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .cefran-icon-hard-drive-2-line::before,
+  .cefran-icon-hard-drive-2-line::after {
+    background-image: url("../../../icons/device/hard-drive-2-line.svg");
+  }
+
+  .cefran-icon-mac-fill::before,
+  .cefran-icon-mac-fill::after {
+    background-image: url("../../../icons/device/mac-fill.svg");
+  }
+
+  .cefran-icon-mac-line::before,
+  .cefran-icon-mac-line::after {
+    background-image: url("../../../icons/device/mac-line.svg");
+  }
+
+  .cefran-icon-phone-fill::before,
+  .cefran-icon-phone-fill::after {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .cefran-icon-phone-line::before,
+  .cefran-icon-phone-line::after {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .cefran-icon-qr-code-fill::before,
+  .cefran-icon-qr-code-fill::after {
+    background-image: url("../../../icons/device/qr-code-fill.svg");
+  }
+
+  .cefran-icon-qr-code-line::before,
+  .cefran-icon-qr-code-line::after {
+    background-image: url("../../../icons/device/qr-code-line.svg");
+  }
+
+  .cefran-icon-rss-fill::before,
+  .cefran-icon-rss-fill::after {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .cefran-icon-rss-line::before,
+  .cefran-icon-rss-line::after {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .cefran-icon-save-3-fill::before,
+  .cefran-icon-save-3-fill::after {
+    background-image: url("../../../icons/device/save-3-fill.svg");
+  }
+
+  .cefran-icon-save-3-line::before,
+  .cefran-icon-save-3-line::after {
+    background-image: url("../../../icons/device/save-3-line.svg");
+  }
+
+  .cefran-icon-save-fill::before,
+  .cefran-icon-save-fill::after {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .cefran-icon-save-line::before,
+  .cefran-icon-save-line::after {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+
+  .cefran-icon-server-fill::before,
+  .cefran-icon-server-fill::after {
+    background-image: url("../../../icons/device/server-fill.svg");
+  }
+
+  .cefran-icon-server-line::before,
+  .cefran-icon-server-line::after {
+    background-image: url("../../../icons/device/server-line.svg");
+  }
+
+  .cefran-icon-smartphone-fill::before,
+  .cefran-icon-smartphone-fill::after {
+    background-image: url("../../../icons/device/smartphone-fill.svg");
+  }
+
+  .cefran-icon-smartphone-line::before,
+  .cefran-icon-smartphone-line::after {
+    background-image: url("../../../icons/device/smartphone-line.svg");
+  }
+
+  .cefran-icon-tablet-fill::before,
+  .cefran-icon-tablet-fill::after {
+    background-image: url("../../../icons/device/tablet-fill.svg");
+  }
+
+  .cefran-icon-tablet-line::before,
+  .cefran-icon-tablet-line::after {
+    background-image: url("../../../icons/device/tablet-line.svg");
+  }
+
+  .cefran-icon-tv-fill::before,
+  .cefran-icon-tv-fill::after {
+    background-image: url("../../../icons/device/tv-fill.svg");
+  }
+
+  .cefran-icon-tv-line::before,
+  .cefran-icon-tv-line::after {
+    background-image: url("../../../icons/device/tv-line.svg");
+  }
+
+  .cefran-icon-wifi-fill::before,
+  .cefran-icon-wifi-fill::after {
+    background-image: url("../../../icons/device/wifi-fill.svg");
+  }
+
+  .cefran-icon-wifi-line::before,
+  .cefran-icon-wifi-line::after {
+    background-image: url("../../../icons/device/wifi-line.svg");
+  }
+
+  .cefran-fi-phone-fill::before {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .cefran-fi-phone-line::before {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .cefran-fi-rss-fill::before {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .cefran-fi-rss-line::before {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .cefran-fi-save-fill::before {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .cefran-fi-save-line::before {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+}

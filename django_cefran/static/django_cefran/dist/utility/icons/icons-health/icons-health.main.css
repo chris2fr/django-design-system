@@ -1,0 +1,257 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-capsule-fill::before,
+.cefran-icon-capsule-fill::after {
+  -webkit-mask-image: url("../../../icons/health/capsule-fill.svg");
+  mask-image: url("../../../icons/health/capsule-fill.svg");
+}
+
+.cefran-icon-capsule-line::before,
+.cefran-icon-capsule-line::after {
+  -webkit-mask-image: url("../../../icons/health/capsule-line.svg");
+  mask-image: url("../../../icons/health/capsule-line.svg");
+}
+
+.cefran-icon-dislike-fill::before,
+.cefran-icon-dislike-fill::after {
+  -webkit-mask-image: url("../../../icons/health/dislike-fill.svg");
+  mask-image: url("../../../icons/health/dislike-fill.svg");
+}
+
+.cefran-icon-dislike-line::before,
+.cefran-icon-dislike-line::after {
+  -webkit-mask-image: url("../../../icons/health/dislike-line.svg");
+  mask-image: url("../../../icons/health/dislike-line.svg");
+}
+
+.cefran-icon-dossier-fill::before,
+.cefran-icon-dossier-fill::after {
+  -webkit-mask-image: url("../../../icons/health/dossier-fill.svg");
+  mask-image: url("../../../icons/health/dossier-fill.svg");
+}
+
+.cefran-icon-dossier-line::before,
+.cefran-icon-dossier-line::after {
+  -webkit-mask-image: url("../../../icons/health/dossier-line.svg");
+  mask-image: url("../../../icons/health/dossier-line.svg");
+}
+
+.cefran-icon-first-aid-kit-fill::before,
+.cefran-icon-first-aid-kit-fill::after {
+  -webkit-mask-image: url("../../../icons/health/first-aid-kit-fill.svg");
+  mask-image: url("../../../icons/health/first-aid-kit-fill.svg");
+}
+
+.cefran-icon-first-aid-kit-line::before,
+.cefran-icon-first-aid-kit-line::after {
+  -webkit-mask-image: url("../../../icons/health/first-aid-kit-line.svg");
+  mask-image: url("../../../icons/health/first-aid-kit-line.svg");
+}
+
+.cefran-icon-hand-sanitizer-fill::before,
+.cefran-icon-hand-sanitizer-fill::after {
+  -webkit-mask-image: url("../../../icons/health/hand-sanitizer-fill.svg");
+  mask-image: url("../../../icons/health/hand-sanitizer-fill.svg");
+}
+
+.cefran-icon-hand-sanitizer-line::before,
+.cefran-icon-hand-sanitizer-line::after {
+  -webkit-mask-image: url("../../../icons/health/hand-sanitizer-line.svg");
+  mask-image: url("../../../icons/health/hand-sanitizer-line.svg");
+}
+
+.cefran-icon-health-book-fill::before,
+.cefran-icon-health-book-fill::after {
+  -webkit-mask-image: url("../../../icons/health/health-book-fill.svg");
+  mask-image: url("../../../icons/health/health-book-fill.svg");
+}
+
+.cefran-icon-health-book-line::before,
+.cefran-icon-health-book-line::after {
+  -webkit-mask-image: url("../../../icons/health/health-book-line.svg");
+  mask-image: url("../../../icons/health/health-book-line.svg");
+}
+
+.cefran-icon-heart-fill::before,
+.cefran-icon-heart-fill::after {
+  -webkit-mask-image: url("../../../icons/health/heart-fill.svg");
+  mask-image: url("../../../icons/health/heart-fill.svg");
+}
+
+.cefran-icon-heart-line::before,
+.cefran-icon-heart-line::after {
+  -webkit-mask-image: url("../../../icons/health/heart-line.svg");
+  mask-image: url("../../../icons/health/heart-line.svg");
+}
+
+.cefran-icon-heart-pulse-fill::before,
+.cefran-icon-heart-pulse-fill::after {
+  -webkit-mask-image: url("../../../icons/health/heart-pulse-fill.svg");
+  mask-image: url("../../../icons/health/heart-pulse-fill.svg");
+}
+
+.cefran-icon-heart-pulse-line::before,
+.cefran-icon-heart-pulse-line::after {
+  -webkit-mask-image: url("../../../icons/health/heart-pulse-line.svg");
+  mask-image: url("../../../icons/health/heart-pulse-line.svg");
+}
+
+.cefran-icon-lungs-fill::before,
+.cefran-icon-lungs-fill::after {
+  -webkit-mask-image: url("../../../icons/health/lungs-fill.svg");
+  mask-image: url("../../../icons/health/lungs-fill.svg");
+}
+
+.cefran-icon-lungs-line::before,
+.cefran-icon-lungs-line::after {
+  -webkit-mask-image: url("../../../icons/health/lungs-line.svg");
+  mask-image: url("../../../icons/health/lungs-line.svg");
+}
+
+.cefran-icon-medicine-bottle-fill::before,
+.cefran-icon-medicine-bottle-fill::after {
+  -webkit-mask-image: url("../../../icons/health/medicine-bottle-fill.svg");
+  mask-image: url("../../../icons/health/medicine-bottle-fill.svg");
+}
+
+.cefran-icon-medicine-bottle-line::before,
+.cefran-icon-medicine-bottle-line::after {
+  -webkit-mask-image: url("../../../icons/health/medicine-bottle-line.svg");
+  mask-image: url("../../../icons/health/medicine-bottle-line.svg");
+}
+
+.cefran-icon-mental-health-fill::before,
+.cefran-icon-mental-health-fill::after {
+  -webkit-mask-image: url("../../../icons/health/mental-health-fill.svg");
+  mask-image: url("../../../icons/health/mental-health-fill.svg");
+}
+
+.cefran-icon-mental-health-line::before,
+.cefran-icon-mental-health-line::after {
+  -webkit-mask-image: url("../../../icons/health/mental-health-line.svg");
+  mask-image: url("../../../icons/health/mental-health-line.svg");
+}
+
+.cefran-icon-microscope-fill::before,
+.cefran-icon-microscope-fill::after {
+  -webkit-mask-image: url("../../../icons/health/microscope-fill.svg");
+  mask-image: url("../../../icons/health/microscope-fill.svg");
+}
+
+.cefran-icon-microscope-line::before,
+.cefran-icon-microscope-line::after {
+  -webkit-mask-image: url("../../../icons/health/microscope-line.svg");
+  mask-image: url("../../../icons/health/microscope-line.svg");
+}
+
+.cefran-icon-psychotherapy-fill::before,
+.cefran-icon-psychotherapy-fill::after {
+  -webkit-mask-image: url("../../../icons/health/psychotherapy-fill.svg");
+  mask-image: url("../../../icons/health/psychotherapy-fill.svg");
+}
+
+.cefran-icon-psychotherapy-line::before,
+.cefran-icon-psychotherapy-line::after {
+  -webkit-mask-image: url("../../../icons/health/psychotherapy-line.svg");
+  mask-image: url("../../../icons/health/psychotherapy-line.svg");
+}
+
+.cefran-icon-pulse-line::before,
+.cefran-icon-pulse-line::after {
+  -webkit-mask-image: url("../../../icons/health/pulse-line.svg");
+  mask-image: url("../../../icons/health/pulse-line.svg");
+}
+
+.cefran-icon-stethoscope-fill::before,
+.cefran-icon-stethoscope-fill::after {
+  -webkit-mask-image: url("../../../icons/health/stethoscope-fill.svg");
+  mask-image: url("../../../icons/health/stethoscope-fill.svg");
+}
+
+.cefran-icon-stethoscope-line::before,
+.cefran-icon-stethoscope-line::after {
+  -webkit-mask-image: url("../../../icons/health/stethoscope-line.svg");
+  mask-image: url("../../../icons/health/stethoscope-line.svg");
+}
+
+.cefran-icon-surgical-mask-fill::before,
+.cefran-icon-surgical-mask-fill::after {
+  -webkit-mask-image: url("../../../icons/health/surgical-mask-fill.svg");
+  mask-image: url("../../../icons/health/surgical-mask-fill.svg");
+}
+
+.cefran-icon-surgical-mask-line::before,
+.cefran-icon-surgical-mask-line::after {
+  -webkit-mask-image: url("../../../icons/health/surgical-mask-line.svg");
+  mask-image: url("../../../icons/health/surgical-mask-line.svg");
+}
+
+.cefran-icon-syringe-fill::before,
+.cefran-icon-syringe-fill::after {
+  -webkit-mask-image: url("../../../icons/health/syringe-fill.svg");
+  mask-image: url("../../../icons/health/syringe-fill.svg");
+}
+
+.cefran-icon-syringe-line::before,
+.cefran-icon-syringe-line::after {
+  -webkit-mask-image: url("../../../icons/health/syringe-line.svg");
+  mask-image: url("../../../icons/health/syringe-line.svg");
+}
+
+.cefran-icon-test-tube-fill::before,
+.cefran-icon-test-tube-fill::after {
+  -webkit-mask-image: url("../../../icons/health/test-tube-fill.svg");
+  mask-image: url("../../../icons/health/test-tube-fill.svg");
+}
+
+.cefran-icon-test-tube-line::before,
+.cefran-icon-test-tube-line::after {
+  -webkit-mask-image: url("../../../icons/health/test-tube-line.svg");
+  mask-image: url("../../../icons/health/test-tube-line.svg");
+}
+
+.cefran-icon-thermometer-fill::before,
+.cefran-icon-thermometer-fill::after {
+  -webkit-mask-image: url("../../../icons/health/thermometer-fill.svg");
+  mask-image: url("../../../icons/health/thermometer-fill.svg");
+}
+
+.cefran-icon-thermometer-line::before,
+.cefran-icon-thermometer-line::after {
+  -webkit-mask-image: url("../../../icons/health/thermometer-line.svg");
+  mask-image: url("../../../icons/health/thermometer-line.svg");
+}
+
+.cefran-icon-virus-fill::before,
+.cefran-icon-virus-fill::after {
+  -webkit-mask-image: url("../../../icons/health/virus-fill.svg");
+  mask-image: url("../../../icons/health/virus-fill.svg");
+}
+
+.cefran-icon-virus-line::before,
+.cefran-icon-virus-line::after {
+  -webkit-mask-image: url("../../../icons/health/virus-line.svg");
+  mask-image: url("../../../icons/health/virus-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

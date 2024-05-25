@@ -1,0 +1,22 @@
+{% extends "django_cefran/base.html" %}
+{% load static cefran_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="cefran-grid-row cefran-grid-row--gutters cefran-mb-3w">
+    <div class="cefran-col-12 cefran-col-md-4">
+      {% if summary_data %}
+        {% cefran_summary summary_data %}
+      {% endif %}
+    </div>
+  </div>
+  {{ documentation|safe }}
+{% endblock content %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/cefran-code.css' %}">
+{% endblock extra_css %}
+
+{% block follow_newsletter_social_media %}
+  {% include "django_cefran/follow.html" %}
+{% endblock follow_newsletter_social_media %}

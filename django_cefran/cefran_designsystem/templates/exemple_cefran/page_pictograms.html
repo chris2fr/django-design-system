@@ -1,0 +1,62 @@
+{% extends "django_cefran/base.html" %}
+{% load static cefran_tags %}
+{% block content %}
+  <h1>
+    Pictogrammes
+  </h1>
+  <div class="cefran-mb-4w">
+    {% cefran_summary summary %}
+  </div>
+  <ul>
+    <li>
+      <a class="cefran-link cefran-icon-external-link-line cefran-link--icon-right cefran-link--lg"
+         href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/pictogramme"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="cefran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+    <li>
+      <a class="cefran-link cefran-icon-external-link-line cefran-link--icon-right cefran-link--lg"
+         href="https://main--ds-gouv.netlify.app/example/utility/pictograms/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="cefran-sr-only">Ouvre une nouvelle fenêtre</span>
+      </a>
+    </li>
+  </ul>
+  {% for folder, files in pictograms.items %}
+    <h2 id="{{ folder|slugify }}" tabindex="-1">
+      {{ folder|title }}
+    </h2>
+    <div class="cefran-grid-row cefran-grid-row--gutters">
+      {% for file in files %}
+        <div class="cefran-col-12 cefran-col-md-3 cefran-mb-4w">
+          <div class="cefran-tile cefran-enlarge-link">
+            <div class="cefran-tile__body">
+              <div class="cefran-tile__content">
+                <h3 class="cefran-tile__title">
+                  <a class="cefran-tile__link"
+                     href="/static/cefran/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
+                </h3>
+              </div>
+            </div>
+            <div class="cefran-tile__header">
+              <div class="cefran-tile__pictogram">
+                <svg aria-hidden="true"
+                     class="cefran-artwork"
+                     viewBox="0 0 80 80"
+                     width="80px"
+                     height="80px">
+                  <use class="cefran-artwork-decorative" href="/static/cefran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
+                  <use class="cefran-artwork-minor" href="/static/cefran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
+                  <use class="cefran-artwork-major" href="/static/cefran/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock content %}

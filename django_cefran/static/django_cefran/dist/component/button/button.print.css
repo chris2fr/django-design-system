@@ -1,0 +1,230 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cefran-btn:disabled,
+  a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cefran-btn--secondary:disabled,
+  a.cefran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-btn--tertiary,
+  .cefran-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-btn--tertiary:disabled,
+  a.cefran-btn--tertiary:not([href]),
+  a.cefran-btn--account:not([href]),
+  .cefran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-btn--tertiary-no-outline,
+  .cefran-btn--close,
+  .cefran-btn--display,
+  .cefran-btn--fullscreen,
+  .cefran-btn--tooltip,
+  .cefran-btn--briefcase,
+  .cefran-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled,
+  a.cefran-btn--tertiary-no-outline:not([href]),
+  a.cefran-btn--close:not([href]),
+  a.cefran-btn--display:not([href]),
+  a.cefran-btn--fullscreen:not([href]),
+  a.cefran-btn--tooltip:not([href]),
+  a.cefran-btn--briefcase:not([href]),
+  a.cefran-btn--team:not([href]),
+  .cefran-btn--close:disabled,
+  .cefran-btn--display:disabled,
+  .cefran-btn--fullscreen:disabled,
+  .cefran-btn--tooltip:disabled,
+  .cefran-btn--briefcase:disabled,
+  .cefran-btn--team:disabled {
+    color: #929292;
+  }
+
+  .cefran-btn--secondary,
+  .cefran-btn--tertiary,
+  .cefran-btn--tertiary-no-outline,
+  .cefran-btn--close,
+  .cefran-btn--display,
+  .cefran-btn--fullscreen,
+  .cefran-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cefran-btn--secondary {
+    background-color: transparent;
+  }
+
+  .cefran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--secondary:disabled,
+  a.cefran-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .cefran-btn--secondary:disabled:hover,
+  a.cefran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--secondary:disabled:active,
+  a.cefran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary,
+  .cefran-btn--account {
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary:hover,
+  .cefran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary:active,
+  .cefran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary:disabled,
+  a.cefran-btn--tertiary:not([href]),
+  a.cefran-btn--account:not([href]),
+  .cefran-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary:disabled:hover,
+  a.cefran-btn--tertiary:not([href]):hover,
+  a.cefran-btn--account:not([href]):hover,
+  .cefran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary:disabled:active,
+  a.cefran-btn--tertiary:not([href]):active,
+  a.cefran-btn--account:not([href]):active,
+  .cefran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary-no-outline,
+  .cefran-btn--close,
+  .cefran-btn--display,
+  .cefran-btn--fullscreen,
+  .cefran-btn--tooltip,
+  .cefran-btn--briefcase,
+  .cefran-btn--team {
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary-no-outline:hover,
+  .cefran-btn--close:hover,
+  .cefran-btn--display:hover,
+  .cefran-btn--fullscreen:hover,
+  .cefran-btn--tooltip:hover,
+  .cefran-btn--briefcase:hover,
+  .cefran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary-no-outline:active,
+  .cefran-btn--close:active,
+  .cefran-btn--display:active,
+  .cefran-btn--fullscreen:active,
+  .cefran-btn--tooltip:active,
+  .cefran-btn--briefcase:active,
+  .cefran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled,
+  a.cefran-btn--tertiary-no-outline:not([href]),
+  a.cefran-btn--close:not([href]),
+  a.cefran-btn--display:not([href]),
+  a.cefran-btn--fullscreen:not([href]),
+  a.cefran-btn--tooltip:not([href]),
+  a.cefran-btn--briefcase:not([href]),
+  a.cefran-btn--team:not([href]),
+  .cefran-btn--close:disabled,
+  .cefran-btn--display:disabled,
+  .cefran-btn--fullscreen:disabled,
+  .cefran-btn--tooltip:disabled,
+  .cefran-btn--briefcase:disabled,
+  .cefran-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled:hover,
+  a.cefran-btn--tertiary-no-outline:not([href]):hover,
+  a.cefran-btn--close:not([href]):hover,
+  a.cefran-btn--display:not([href]):hover,
+  a.cefran-btn--fullscreen:not([href]):hover,
+  a.cefran-btn--tooltip:not([href]):hover,
+  a.cefran-btn--briefcase:not([href]):hover,
+  a.cefran-btn--team:not([href]):hover,
+  .cefran-btn--close:disabled:hover,
+  .cefran-btn--display:disabled:hover,
+  .cefran-btn--fullscreen:disabled:hover,
+  .cefran-btn--tooltip:disabled:hover,
+  .cefran-btn--briefcase:disabled:hover,
+  .cefran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled:active,
+  a.cefran-btn--tertiary-no-outline:not([href]):active,
+  a.cefran-btn--close:not([href]):active,
+  a.cefran-btn--display:not([href]):active,
+  a.cefran-btn--fullscreen:not([href]):active,
+  a.cefran-btn--tooltip:not([href]):active,
+  a.cefran-btn--briefcase:not([href]):active,
+  a.cefran-btn--team:not([href]):active,
+  .cefran-btn--close:disabled:active,
+  .cefran-btn--display:disabled:active,
+  .cefran-btn--fullscreen:disabled:active,
+  .cefran-btn--tooltip:disabled:active,
+  .cefran-btn--briefcase:disabled:active,
+  .cefran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,284 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-align-left::before,
+  .cefran-icon-align-left::after {
+    background-image: url("../../../icons/media/align-left.svg");
+  }
+
+  .cefran-icon-camera-fill::before,
+  .cefran-icon-camera-fill::after {
+    background-image: url("../../../icons/media/camera-fill.svg");
+  }
+
+  .cefran-icon-camera-line::before,
+  .cefran-icon-camera-line::after {
+    background-image: url("../../../icons/media/camera-line.svg");
+  }
+
+  .cefran-icon-clapperboard-fill::before,
+  .cefran-icon-clapperboard-fill::after {
+    background-image: url("../../../icons/media/clapperboard-fill.svg");
+  }
+
+  .cefran-icon-clapperboard-line::before,
+  .cefran-icon-clapperboard-line::after {
+    background-image: url("../../../icons/media/clapperboard-line.svg");
+  }
+
+  .cefran-icon-equalizer-fill::before,
+  .cefran-icon-equalizer-fill::after {
+    background-image: url("../../../icons/media/equalizer-fill.svg");
+  }
+
+  .cefran-icon-equalizer-line::before,
+  .cefran-icon-equalizer-line::after {
+    background-image: url("../../../icons/media/equalizer-line.svg");
+  }
+
+  .cefran-icon-film-fill::before,
+  .cefran-icon-film-fill::after {
+    background-image: url("../../../icons/media/film-fill.svg");
+  }
+
+  .cefran-icon-film-line::before,
+  .cefran-icon-film-line::after {
+    background-image: url("../../../icons/media/film-line.svg");
+  }
+
+  .cefran-icon-fullscreen-line::before,
+  .cefran-icon-fullscreen-line::after {
+    background-image: url("../../../icons/media/fullscreen-line.svg");
+  }
+
+  .cefran-icon-gallery-fill::before,
+  .cefran-icon-gallery-fill::after {
+    background-image: url("../../../icons/media/gallery-fill.svg");
+  }
+
+  .cefran-icon-gallery-line::before,
+  .cefran-icon-gallery-line::after {
+    background-image: url("../../../icons/media/gallery-line.svg");
+  }
+
+  .cefran-icon-headphone-fill::before,
+  .cefran-icon-headphone-fill::after {
+    background-image: url("../../../icons/media/headphone-fill.svg");
+  }
+
+  .cefran-icon-headphone-line::before,
+  .cefran-icon-headphone-line::after {
+    background-image: url("../../../icons/media/headphone-line.svg");
+  }
+
+  .cefran-icon-image-add-fill::before,
+  .cefran-icon-image-add-fill::after {
+    background-image: url("../../../icons/media/image-add-fill.svg");
+  }
+
+  .cefran-icon-image-add-line::before,
+  .cefran-icon-image-add-line::after {
+    background-image: url("../../../icons/media/image-add-line.svg");
+  }
+
+  .cefran-icon-image-edit-fill::before,
+  .cefran-icon-image-edit-fill::after {
+    background-image: url("../../../icons/media/image-edit-fill.svg");
+  }
+
+  .cefran-icon-image-edit-line::before,
+  .cefran-icon-image-edit-line::after {
+    background-image: url("../../../icons/media/image-edit-line.svg");
+  }
+
+  .cefran-icon-image-fill::before,
+  .cefran-icon-image-fill::after {
+    background-image: url("../../../icons/media/image-fill.svg");
+  }
+
+  .cefran-icon-image-line::before,
+  .cefran-icon-image-line::after {
+    background-image: url("../../../icons/media/image-line.svg");
+  }
+
+  .cefran-icon-live-fill::before,
+  .cefran-icon-live-fill::after {
+    background-image: url("../../../icons/media/live-fill.svg");
+  }
+
+  .cefran-icon-live-line::before,
+  .cefran-icon-live-line::after {
+    background-image: url("../../../icons/media/live-line.svg");
+  }
+
+  .cefran-icon-mic-fill::before,
+  .cefran-icon-mic-fill::after {
+    background-image: url("../../../icons/media/mic-fill.svg");
+  }
+
+  .cefran-icon-mic-line::before,
+  .cefran-icon-mic-line::after {
+    background-image: url("../../../icons/media/mic-line.svg");
+  }
+
+  .cefran-icon-music-2-fill::before,
+  .cefran-icon-music-2-fill::after {
+    background-image: url("../../../icons/media/music-2-fill.svg");
+  }
+
+  .cefran-icon-music-2-line::before,
+  .cefran-icon-music-2-line::after {
+    background-image: url("../../../icons/media/music-2-line.svg");
+  }
+
+  .cefran-icon-notification-3-fill::before,
+  .cefran-icon-notification-3-fill::after {
+    background-image: url("../../../icons/media/notification-3-fill.svg");
+  }
+
+  .cefran-icon-notification-3-line::before,
+  .cefran-icon-notification-3-line::after {
+    background-image: url("../../../icons/media/notification-3-line.svg");
+  }
+
+  .cefran-icon-pause-circle-fill::before,
+  .cefran-icon-pause-circle-fill::after {
+    background-image: url("../../../icons/media/pause-circle-fill.svg");
+  }
+
+  .cefran-icon-pause-circle-line::before,
+  .cefran-icon-pause-circle-line::after {
+    background-image: url("../../../icons/media/pause-circle-line.svg");
+  }
+
+  .cefran-icon-play-circle-fill::before,
+  .cefran-icon-play-circle-fill::after {
+    background-image: url("../../../icons/media/play-circle-fill.svg");
+  }
+
+  .cefran-icon-play-circle-line::before,
+  .cefran-icon-play-circle-line::after {
+    background-image: url("../../../icons/media/play-circle-line.svg");
+  }
+
+  .cefran-icon-stop-circle-fill::before,
+  .cefran-icon-stop-circle-fill::after {
+    background-image: url("../../../icons/media/stop-circle-fill.svg");
+  }
+
+  .cefran-icon-stop-circle-line::before,
+  .cefran-icon-stop-circle-line::after {
+    background-image: url("../../../icons/media/stop-circle-line.svg");
+  }
+
+  .cefran-icon-volume-down-fill::before,
+  .cefran-icon-volume-down-fill::after {
+    background-image: url("../../../icons/media/volume-down-fill.svg");
+  }
+
+  .cefran-icon-volume-down-line::before,
+  .cefran-icon-volume-down-line::after {
+    background-image: url("../../../icons/media/volume-down-line.svg");
+  }
+
+  .cefran-icon-volume-mute-fill::before,
+  .cefran-icon-volume-mute-fill::after {
+    background-image: url("../../../icons/media/volume-mute-fill.svg");
+  }
+
+  .cefran-icon-volume-mute-line::before,
+  .cefran-icon-volume-mute-line::after {
+    background-image: url("../../../icons/media/volume-mute-line.svg");
+  }
+
+  .cefran-icon-volume-up-fill::before,
+  .cefran-icon-volume-up-fill::after {
+    background-image: url("../../../icons/media/volume-up-fill.svg");
+  }
+
+  .cefran-icon-volume-up-line::before,
+  .cefran-icon-volume-up-line::after {
+    background-image: url("../../../icons/media/volume-up-line.svg");
+  }
+
+  .cefran-fi-equalizer-fill::before {
+    background-image: url("../../../icons/media/equalizer-fill.svg");
+  }
+
+  .cefran-fi-equalizer-line::before {
+    background-image: url("../../../icons/media/equalizer-line.svg");
+  }
+
+  .cefran-fi-image-fill::before {
+    background-image: url("../../../icons/media/image-fill.svg");
+  }
+
+  .cefran-fi-image-line::before {
+    background-image: url("../../../icons/media/image-line.svg");
+  }
+
+  .cefran-fi-pause-circle-fill::before {
+    background-image: url("../../../icons/media/pause-circle-fill.svg");
+  }
+
+  .cefran-fi-pause-circle-line::before {
+    background-image: url("../../../icons/media/pause-circle-line.svg");
+  }
+
+  .cefran-fi-volume-down-fill::before {
+    background-image: url("../../../icons/media/volume-down-fill.svg");
+  }
+
+  .cefran-fi-volume-down-line::before {
+    background-image: url("../../../icons/media/volume-down-line.svg");
+  }
+
+  .cefran-fi-volume-mute-fill::before {
+    background-image: url("../../../icons/media/volume-mute-fill.svg");
+  }
+
+  .cefran-fi-volume-mute-line::before {
+    background-image: url("../../../icons/media/volume-mute-line.svg");
+  }
+
+  .cefran-fi-volume-up-fill::before {
+    background-image: url("../../../icons/media/volume-up-fill.svg");
+  }
+
+  .cefran-fi-volume-up-line::before {
+    background-image: url("../../../icons/media/volume-up-line.svg");
+  }
+
+  .cefran-fi-play-line::before,
+  .cefran-fi-play-line::after {
+    background-image: url("../../../icons/media/play-circle-line.svg");
+  }
+
+  .cefran-fi-play-fill::before,
+  .cefran-fi-play-fill::after {
+    background-image: url("../../../icons/media/play-circle-fill.svg");
+  }
+
+  .cefran-icon-play-line::before,
+  .cefran-icon-play-line::after {
+    background-image: url("../../../icons/media/play-circle-line.svg");
+  }
+
+  .cefran-icon-play-fill::before,
+  .cefran-icon-play-fill::after {
+    background-image: url("../../../icons/media/play-circle-fill.svg");
+  }
+}

@@ -1,0 +1,209 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  STEPPER
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-stepper {
+  --title-spacing: 0;
+  --text-spacing: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cefran-stepper__title {
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  --title-spacing: 0 0 0.75rem 0;
+  --text-spacing: 0 0 0.75rem 0;
+  color: var(--text-title-grey);
+}
+
+.cefran-stepper__state {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+
+  --title-spacing: 0 0 0.25rem 0;
+  --text-spacing: 0 0 0.25rem 0;
+  font-weight: 400;
+  color: var(--text-mention-grey);
+}
+
+.cefran-stepper__state::after {
+  content: "\a";
+  white-space: pre;
+  line-height: 2rem;
+}
+
+.cefran-stepper__details {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-top: 0.75rem;
+  color: var(--text-mention-grey);
+}
+
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="2"][data-cefran-current-step="2"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="3"][data-cefran-current-step="3"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="4"][data-cefran-current-step="4"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="5"][data-cefran-current-step="5"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="6"][data-cefran-current-step="6"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="7"][data-cefran-current-step="7"] + .cefran-stepper__details,
+.cefran-stepper .cefran-stepper__steps[data-cefran-steps="8"][data-cefran-current-step="8"] + .cefran-stepper__details {
+  display: none;
+}
+
+.cefran-stepper__steps {
+  --stepper-size: 0.5rem;
+  --default-outer: calc((100% + var(--stepper-size)) / var(--steps));
+  --default-inner: calc(var(--default-outer) - var(--stepper-size));
+  --active-outer: calc((100% + var(--stepper-size)) / var(--current-step));
+  --active-inner: calc(var(--active-outer) - var(--stepper-size));
+  width: 100%;
+  height: var(--stepper-size);
+  background-repeat: no-repeat;
+  background-size: calc((100% + var(--stepper-size)) * var(--current-step) / var(--steps) - var(--stepper-size)) 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+
+  --current-step: 0;
+  background-image: repeating-linear-gradient(to right, var(--background-active-cefran-primary) 0, var(--background-active-cefran-primary) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, var(--background-contrast-grey) 0, var(--background-contrast-grey) var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+}
+
+.cefran-stepper__steps[data-cefran-steps="2"] {
+  --steps: 2;
+  --step-width: calc(100% / 2);
+}
+
+.cefran-stepper__steps[data-cefran-steps="3"] {
+  --steps: 3;
+  --step-width: calc(100% / 3);
+}
+
+.cefran-stepper__steps[data-cefran-steps="4"] {
+  --steps: 4;
+  --step-width: calc(100% / 4);
+}
+
+.cefran-stepper__steps[data-cefran-steps="5"] {
+  --steps: 5;
+  --step-width: calc(100% / 5);
+}
+
+.cefran-stepper__steps[data-cefran-steps="6"] {
+  --steps: 6;
+  --step-width: calc(100% / 6);
+}
+
+.cefran-stepper__steps[data-cefran-steps="7"] {
+  --steps: 7;
+  --step-width: calc(100% / 7);
+}
+
+.cefran-stepper__steps[data-cefran-steps="8"] {
+  --steps: 8;
+  --step-width: calc(100% / 8);
+}
+
+.cefran-stepper__steps[data-cefran-current-step="1"] {
+  --current-step: 1;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="2"] {
+  --current-step: 2;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="3"] {
+  --current-step: 3;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="4"] {
+  --current-step: 4;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="5"] {
+  --current-step: 5;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="6"] {
+  --current-step: 6;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="7"] {
+  --current-step: 7;
+}
+
+.cefran-stepper__steps[data-cefran-current-step="8"] {
+  --current-step: 8;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-stepper__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-stepper__title {
+    margin-bottom: 0.75rem;
+    color: #161616;
+  }
+
+  .cefran-stepper__steps {
+    display: none;
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cefran-stepper__state {
+    color: #666;
+  }
+
+  .cefran-stepper__details {
+    color: #666;
+  }
+}
+@media print {
+  .cefran-stepper__title {
+    color: #161616;
+  }
+
+  .cefran-stepper__state {
+    color: #666;
+  }
+
+  .cefran-stepper__details {
+    color: #666;
+  }
+
+  .cefran-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cefran-stepper__state,
+  .cefran-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

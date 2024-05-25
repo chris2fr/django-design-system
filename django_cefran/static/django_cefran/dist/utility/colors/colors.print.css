@@ -1,0 +1,1828 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .cefran-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .cefran-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .cefran-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .cefran-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .cefran-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .cefran-background-alt--cefran-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-background-alt--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-alt--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .cefran-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .cefran-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .cefran-background-contrast--cefran-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .cefran-background-flat--cefran-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--cefran-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cefran-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cefran-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cefran-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cefran-background-action-high--cefran-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .cefran-background-action-high--cefran-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .cefran-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cefran-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .cefran-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .cefran-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cefran-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .cefran-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .cefran-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cefran-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .cefran-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .cefran-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cefran-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .cefran-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .cefran-background-action-low--cefran-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .cefran-background-action-low--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .cefran-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .cefran-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .cefran-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .cefran-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .cefran-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .cefran-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .cefran-text-title--cefran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-title--cefran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .cefran-text-label--cefran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-label--cefran-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .cefran-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .cefran-text-inverted--cefran-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-text-inverted--cefran-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .cefran-text-action-high--cefran-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-text-action-high--cefran-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-major--cefran-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-minor--cefran-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .cefran-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .cefran-artwork-decorative--cefran-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-decorative--cefran-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .cefran-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .cefran-artwork-background--cefran-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-background--cefran-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .cefran-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .cefran-artwork-motif--cefran-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .cefran-artwork-motif--cefran-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+}

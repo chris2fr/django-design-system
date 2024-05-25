@@ -1,0 +1,252 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cefran-enlarge-link {
+    background-color: transparent;
+  }
+
+  .cefran-enlarge-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-enlarge-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-enlarge-link [href] {
+    text-decoration: none;
+  }
+
+  .cefran-raw-link[href]::after,
+  .cefran-raw-link [href]::after {
+    content: none;
+  }
+
+  [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    vertical-align: sub;
+  }
+
+  .cefran-responsive-vid::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.5rem;
+    color: #161616;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  [class^=cefran-icon-]::before,
+  [class*=" cefran-icon-"]::before,
+  [class^=cefran-fi-]::before,
+  [class*=" cefran-fi-"]::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-icon--xs::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-icon--sm::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-icon--md::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-icon--lg::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .cefran-artwork-decorative {
+    fill: hsl(180, 80%, 96%);
+  }
+
+  .cefran-artwork-minor {
+    fill: hsl(270, 85%, 25%);
+  }
+
+  .cefran-artwork-major {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .cefran-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .cefran-artwork--cefran-color3 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color4 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color5 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color6 .cefran-artwork-minor {
+    fill: hsl(290, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color7 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color8 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color9 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color10 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color11 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color12 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color13 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color14 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color15 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color16 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color17 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color18 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color19 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  [disabled] .cefran-artwork * {
+    fill: #929292;
+  }
+
+  .cefran-h6,
+  .cefran-h5,
+  .cefran-h4,
+  .cefran-h3,
+  .cefran-h2,
+  .cefran-h1,
+  .cefran-display-xs,
+  .cefran-display-sm,
+  .cefran-display-md,
+  .cefran-display-lg,
+  .cefran-display-xl {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-hr-or::before,
+  .cefran-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .cefran-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+}

@@ -1,0 +1,535 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  LINK
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-link {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0 0;
+  color: var(--text-action-high-cefran-primary);
+}
+
+.cefran-link[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--icon-left[class^=cefran-icon-],
+.cefran-link--icon-left[class*=" cefran-icon-"],
+.cefran-link--icon-left[class^=cefran-fi-],
+.cefran-link--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--icon-left[class^=cefran-icon-]::before,
+.cefran-link--icon-left[class*=" cefran-icon-"]::before,
+.cefran-link--icon-left[class^=cefran-fi-]::before,
+.cefran-link--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-link--icon-right[class^=cefran-icon-],
+.cefran-link--icon-right[class*=" cefran-icon-"],
+.cefran-link--icon-right[class^=cefran-fi-],
+.cefran-link--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--icon-right[class^=cefran-icon-]::after,
+.cefran-link--icon-right[class*=" cefran-icon-"]::after,
+.cefran-link--icon-right[class^=cefran-fi-]::after,
+.cefran-link--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--icon-right[class^=cefran-icon-]::before,
+.cefran-link--icon-right[class*=" cefran-icon-"]::before,
+.cefran-link--icon-right[class^=cefran-fi-]::before,
+.cefran-link--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-link[class^=cefran-icon-]:not([class*=cefran-link--icon-])::before,
+.cefran-link[class*=" cefran-icon-"]:not([class*=cefran-link--icon-])::before,
+.cefran-link[class^=cefran-fi-]:not([class*=cefran-link--icon-])::before,
+.cefran-link[class*=" cefran-fi-"]:not([class*=cefran-link--icon-])::before {
+  content: none;
+}
+
+.cefran-link--xs {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding: 0 0;
+}
+
+.cefran-link--xs[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--xs[target=_blank]::after {
+  content: "";
+
+  --icon-size: 0.75rem;
+  margin-right: -0.09375rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--xs.cefran-link--icon-left[class^=cefran-icon-],
+.cefran-link--xs.cefran-link--icon-left[class*=" cefran-icon-"],
+.cefran-link--xs.cefran-link--icon-left[class^=cefran-fi-],
+.cefran-link--xs.cefran-link--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--xs.cefran-link--icon-left[class^=cefran-icon-]::before,
+.cefran-link--xs.cefran-link--icon-left[class*=" cefran-icon-"]::before,
+.cefran-link--xs.cefran-link--icon-left[class^=cefran-fi-]::before,
+.cefran-link--xs.cefran-link--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-icon-],
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-icon-"],
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-fi-],
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-icon-]::after,
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-icon-"]::after,
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-fi-]::after,
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 0.75rem;
+  margin-right: -0.09375rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-icon-]::before,
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-icon-"]::before,
+.cefran-link--xs.cefran-link--icon-right[class^=cefran-fi-]::before,
+.cefran-link--xs.cefran-link--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-link--xs[class^=cefran-icon-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--xs[class*=" cefran-icon-"]:not([class*=cefran-link--icon-])::before,
+.cefran-link--xs[class^=cefran-fi-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--xs[class*=" cefran-fi-"]:not([class*=cefran-link--icon-])::before {
+  content: none;
+}
+
+.cefran-link--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0 0;
+}
+
+.cefran-link--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--sm.cefran-link--icon-left[class^=cefran-icon-],
+.cefran-link--sm.cefran-link--icon-left[class*=" cefran-icon-"],
+.cefran-link--sm.cefran-link--icon-left[class^=cefran-fi-],
+.cefran-link--sm.cefran-link--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--sm.cefran-link--icon-left[class^=cefran-icon-]::before,
+.cefran-link--sm.cefran-link--icon-left[class*=" cefran-icon-"]::before,
+.cefran-link--sm.cefran-link--icon-left[class^=cefran-fi-]::before,
+.cefran-link--sm.cefran-link--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-icon-],
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-icon-"],
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-fi-],
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-icon-]::after,
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-icon-"]::after,
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-fi-]::after,
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-icon-]::before,
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-icon-"]::before,
+.cefran-link--sm.cefran-link--icon-right[class^=cefran-fi-]::before,
+.cefran-link--sm.cefran-link--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-link--sm[class^=cefran-icon-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--sm[class*=" cefran-icon-"]:not([class*=cefran-link--icon-])::before,
+.cefran-link--sm[class^=cefran-fi-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--sm[class*=" cefran-fi-"]:not([class*=cefran-link--icon-])::before {
+  content: none;
+}
+
+.cefran-link--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0 0;
+}
+
+.cefran-link--lg[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--lg[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--lg.cefran-link--icon-left[class^=cefran-icon-],
+.cefran-link--lg.cefran-link--icon-left[class*=" cefran-icon-"],
+.cefran-link--lg.cefran-link--icon-left[class^=cefran-fi-],
+.cefran-link--lg.cefran-link--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--lg.cefran-link--icon-left[class^=cefran-icon-]::before,
+.cefran-link--lg.cefran-link--icon-left[class*=" cefran-icon-"]::before,
+.cefran-link--lg.cefran-link--icon-left[class^=cefran-fi-]::before,
+.cefran-link--lg.cefran-link--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-icon-],
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-icon-"],
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-fi-],
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-icon-]::after,
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-icon-"]::after,
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-fi-]::after,
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-icon-]::before,
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-icon-"]::before,
+.cefran-link--lg.cefran-link--icon-right[class^=cefran-fi-]::before,
+.cefran-link--lg.cefran-link--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-link--lg[class^=cefran-icon-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--lg[class*=" cefran-icon-"]:not([class*=cefran-link--icon-])::before,
+.cefran-link--lg[class^=cefran-fi-]:not([class*=cefran-link--icon-])::before,
+.cefran-link--lg[class*=" cefran-fi-"]:not([class*=cefran-link--icon-])::before {
+  content: none;
+}
+
+.cefran-links-group--download .cefran-link,
+.cefran-link--download {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0 0;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-links-group--download .cefran-link::after,
+.cefran-link--download::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/download-line.svg");
+  mask-image: url("../../icons/system/download-line.svg");
+  content: "";
+  margin-bottom: 1.75rem;
+  vertical-align: calc((0.75rem - var(--icon-size)) * 0.5 - 1.75rem);
+}
+
+.cefran-links-group--download .cefran-link::before,
+.cefran-link--download::before {
+  content: none;
+}
+
+.cefran-links-group--download .cefran-link .cefran-link__detail,
+.cefran-link--download .cefran-link__detail {
+  position: absolute;
+  left: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin-top: 1.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  cursor: text;
+}
+
+.cefran-links-group--download .cefran-link .cefran-link__detail abbr,
+.cefran-link--download .cefran-link__detail abbr {
+  text-decoration: none;
+}
+
+.cefran-links-group--download {
+  --ul-type: disc;
+  --ol-type: decimal;
+  --ul-start: 1rem;
+  --ol-start: 1.5rem;
+  --xl-block: 0.5rem;
+  --li-bottom: 0.25rem;
+  --xl-base: 1em;
+  --ol-content: counters(li-counter, ".") ".  ";
+}
+
+.cefran-links-group--download > li {
+  display: block;
+}
+
+.cefran-links-group--download .cefran-link,
+.cefran-links-group .cefran-link--download {
+  margin-bottom: 2.5rem;
+}
+
+.cefran-links-group {
+  --li-bottom: 0.5rem;
+}
+
+.cefran-links-group--inline {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: inline;
+  margin: 0 -0.5rem;
+}
+
+.cefran-links-group--inline > li {
+  display: inline;
+  line-height: 2.75rem;
+}
+
+.cefran-links-group--inline .cefran-link {
+  margin: 0 0.5rem 1rem;
+}
+
+.cefran-links-group--sm .cefran-link {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0 0;
+}
+
+.cefran-links-group--sm .cefran-link::before,
+.cefran-links-group--sm .cefran-link::after {
+  --icon-size: 1rem;
+}
+
+.cefran-links-group--sm .cefran-link:not(.cefran-link--download) {
+  vertical-align: top;
+}
+
+.cefran-links-group--lg .cefran-link {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0 0;
+}
+
+.cefran-links-group--lg .cefran-link::before,
+.cefran-links-group--lg .cefran-link::after {
+  --icon-size: 1.5rem;
+}
+
+.cefran-links-group__title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+}
+
+.cefran-links-group--bordered {
+  padding: 1.5rem 1.5rem 0.5rem;
+  box-shadow: inset 0 0 0 1px var(--border-default-grey);
+}
+
+.cefran-link--close {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cefran-primary);
+}
+
+.cefran-link--close::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  content: "";
+}
+
+.cefran-link--close::before {
+  content: none;
+}
+
+.cefran-link.cefran-link--icon-left.cefran-fi-theme-fill {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-link.cefran-link--icon-left.cefran-fi-theme-fill::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-link__detail {
+  color: var(--text-mention-grey);
+}
+
+.cefran-links-group li::marker {
+  color: var(--text-action-high-cefran-primary);
+}
+
+.cefran-link--close:disabled,
+a.cefran-link--close:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-links-group--download .cefran-link,
+  .cefran-links-group .cefran-link--download {
+    margin-bottom: 3rem;
+  }
+
+  .cefran-links-group__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .cefran-links-group--bordered {
+    padding: 2rem 2rem 0.5rem;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

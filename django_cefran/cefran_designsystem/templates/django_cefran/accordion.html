@@ -1,0 +1,13 @@
+<section class="cefran-accordion">
+  <{{ self.heading_tag | default:"h3" }} class="cefran-accordion__title">
+  <button type="button"
+          class="cefran-accordion__btn"
+          aria-expanded="false"
+          aria-controls="{{ self.id }}">
+    {{ self.title }}
+  </button>
+  </{{ self.heading_tag | default:"h3" }}>
+  <div class="cefran-collapse" id="{{ self.id }}">
+    {{ self.content | safe }}
+  </div>
+</section>

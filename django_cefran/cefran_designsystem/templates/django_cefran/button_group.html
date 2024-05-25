@@ -1,0 +1,8 @@
+{% load cefran_tags %}
+<ul class="cefran-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% for item in self.items %}
+    <li>
+      {% cefran_button item %}
+    </li>
+  {% endfor %}
+</ul>

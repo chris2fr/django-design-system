@@ -1,0 +1,491 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-dailymotion-fill::before,
+.cefran-icon-dailymotion-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--dailymotion-fill.svg");
+  mask-image: url("../../../icons/logo/cefran--dailymotion-fill.svg");
+}
+
+.cefran-icon-dailymotion-line::before,
+.cefran-icon-dailymotion-line::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--dailymotion-line.svg");
+  mask-image: url("../../../icons/logo/cefran--dailymotion-line.svg");
+}
+
+.cefran-icon-tiktok-fill::before,
+.cefran-icon-tiktok-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--tiktok-fill.svg");
+  mask-image: url("../../../icons/logo/cefran--tiktok-fill.svg");
+}
+
+.cefran-icon-tiktok-line::before,
+.cefran-icon-tiktok-line::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--tiktok-line.svg");
+  mask-image: url("../../../icons/logo/cefran--tiktok-line.svg");
+}
+
+.cefran-icon-chrome-fill::before,
+.cefran-icon-chrome-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/chrome-fill.svg");
+  mask-image: url("../../../icons/logo/chrome-fill.svg");
+}
+
+.cefran-icon-chrome-line::before,
+.cefran-icon-chrome-line::after {
+  -webkit-mask-image: url("../../../icons/logo/chrome-line.svg");
+  mask-image: url("../../../icons/logo/chrome-line.svg");
+}
+
+.cefran-icon-edge-fill::before,
+.cefran-icon-edge-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/edge-fill.svg");
+  mask-image: url("../../../icons/logo/edge-fill.svg");
+}
+
+.cefran-icon-edge-line::before,
+.cefran-icon-edge-line::after {
+  -webkit-mask-image: url("../../../icons/logo/edge-line.svg");
+  mask-image: url("../../../icons/logo/edge-line.svg");
+}
+
+.cefran-icon-facebook-circle-fill::before,
+.cefran-icon-facebook-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+}
+
+.cefran-icon-facebook-circle-line::before,
+.cefran-icon-facebook-circle-line::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+}
+
+.cefran-icon-firefox-fill::before,
+.cefran-icon-firefox-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/firefox-fill.svg");
+  mask-image: url("../../../icons/logo/firefox-fill.svg");
+}
+
+.cefran-icon-firefox-line::before,
+.cefran-icon-firefox-line::after {
+  -webkit-mask-image: url("../../../icons/logo/firefox-line.svg");
+  mask-image: url("../../../icons/logo/firefox-line.svg");
+}
+
+.cefran-icon-github-fill::before,
+.cefran-icon-github-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/github-fill.svg");
+  mask-image: url("../../../icons/logo/github-fill.svg");
+}
+
+.cefran-icon-github-line::before,
+.cefran-icon-github-line::after {
+  -webkit-mask-image: url("../../../icons/logo/github-line.svg");
+  mask-image: url("../../../icons/logo/github-line.svg");
+}
+
+.cefran-icon-google-fill::before,
+.cefran-icon-google-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/google-fill.svg");
+  mask-image: url("../../../icons/logo/google-fill.svg");
+}
+
+.cefran-icon-google-line::before,
+.cefran-icon-google-line::after {
+  -webkit-mask-image: url("../../../icons/logo/google-line.svg");
+  mask-image: url("../../../icons/logo/google-line.svg");
+}
+
+.cefran-icon-ie-fill::before,
+.cefran-icon-ie-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/ie-fill.svg");
+  mask-image: url("../../../icons/logo/ie-fill.svg");
+}
+
+.cefran-icon-ie-line::before,
+.cefran-icon-ie-line::after {
+  -webkit-mask-image: url("../../../icons/logo/ie-line.svg");
+  mask-image: url("../../../icons/logo/ie-line.svg");
+}
+
+.cefran-icon-instagram-fill::before,
+.cefran-icon-instagram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-fill.svg");
+  mask-image: url("../../../icons/logo/instagram-fill.svg");
+}
+
+.cefran-icon-instagram-line::before,
+.cefran-icon-instagram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-line.svg");
+  mask-image: url("../../../icons/logo/instagram-line.svg");
+}
+
+.cefran-icon-linkedin-box-fill::before,
+.cefran-icon-linkedin-box-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+}
+
+.cefran-icon-linkedin-box-line::before,
+.cefran-icon-linkedin-box-line::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+}
+
+.cefran-icon-mastodon-fill::before,
+.cefran-icon-mastodon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/mastodon-fill.svg");
+  mask-image: url("../../../icons/logo/mastodon-fill.svg");
+}
+
+.cefran-icon-mastodon-line::before,
+.cefran-icon-mastodon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/mastodon-line.svg");
+  mask-image: url("../../../icons/logo/mastodon-line.svg");
+}
+
+.cefran-icon-npmjs-fill::before,
+.cefran-icon-npmjs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-fill.svg");
+  mask-image: url("../../../icons/logo/npmjs-fill.svg");
+}
+
+.cefran-icon-npmjs-line::before,
+.cefran-icon-npmjs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-line.svg");
+  mask-image: url("../../../icons/logo/npmjs-line.svg");
+}
+
+.cefran-icon-remixicon-fill::before,
+.cefran-icon-remixicon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-fill.svg");
+  mask-image: url("../../../icons/logo/remixicon-fill.svg");
+}
+
+.cefran-icon-remixicon-line::before,
+.cefran-icon-remixicon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-line.svg");
+  mask-image: url("../../../icons/logo/remixicon-line.svg");
+}
+
+.cefran-icon-safari-fill::before,
+.cefran-icon-safari-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/safari-fill.svg");
+  mask-image: url("../../../icons/logo/safari-fill.svg");
+}
+
+.cefran-icon-safari-line::before,
+.cefran-icon-safari-line::after {
+  -webkit-mask-image: url("../../../icons/logo/safari-line.svg");
+  mask-image: url("../../../icons/logo/safari-line.svg");
+}
+
+.cefran-icon-slack-fill::before,
+.cefran-icon-slack-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-fill.svg");
+  mask-image: url("../../../icons/logo/slack-fill.svg");
+}
+
+.cefran-icon-slack-line::before,
+.cefran-icon-slack-line::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-line.svg");
+  mask-image: url("../../../icons/logo/slack-line.svg");
+}
+
+.cefran-icon-snapchat-fill::before,
+.cefran-icon-snapchat-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-fill.svg");
+  mask-image: url("../../../icons/logo/snapchat-fill.svg");
+}
+
+.cefran-icon-snapchat-line::before,
+.cefran-icon-snapchat-line::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-line.svg");
+  mask-image: url("../../../icons/logo/snapchat-line.svg");
+}
+
+.cefran-icon-telegram-fill::before,
+.cefran-icon-telegram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-fill.svg");
+  mask-image: url("../../../icons/logo/telegram-fill.svg");
+}
+
+.cefran-icon-telegram-line::before,
+.cefran-icon-telegram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-line.svg");
+  mask-image: url("../../../icons/logo/telegram-line.svg");
+}
+
+.cefran-icon-threads-fill::before,
+.cefran-icon-threads-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/threads-fill.svg");
+  mask-image: url("../../../icons/logo/threads-fill.svg");
+}
+
+.cefran-icon-threads-line::before,
+.cefran-icon-threads-line::after {
+  -webkit-mask-image: url("../../../icons/logo/threads-line.svg");
+  mask-image: url("../../../icons/logo/threads-line.svg");
+}
+
+.cefran-icon-twitch-fill::before,
+.cefran-icon-twitch-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-fill.svg");
+  mask-image: url("../../../icons/logo/twitch-fill.svg");
+}
+
+.cefran-icon-twitch-line::before,
+.cefran-icon-twitch-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-line.svg");
+  mask-image: url("../../../icons/logo/twitch-line.svg");
+}
+
+.cefran-icon-twitter-fill::before,
+.cefran-icon-twitter-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-fill.svg");
+}
+
+.cefran-icon-twitter-line::before,
+.cefran-icon-twitter-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-line.svg");
+  mask-image: url("../../../icons/logo/twitter-line.svg");
+}
+
+.cefran-icon-twitter-x-fill::before,
+.cefran-icon-twitter-x-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-x-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-x-fill.svg");
+}
+
+.cefran-icon-twitter-x-line::before,
+.cefran-icon-twitter-x-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-x-line.svg");
+  mask-image: url("../../../icons/logo/twitter-x-line.svg");
+}
+
+.cefran-icon-vimeo-fill::before,
+.cefran-icon-vimeo-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-fill.svg");
+  mask-image: url("../../../icons/logo/vimeo-fill.svg");
+}
+
+.cefran-icon-vimeo-line::before,
+.cefran-icon-vimeo-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-line.svg");
+  mask-image: url("../../../icons/logo/vimeo-line.svg");
+}
+
+.cefran-icon-vuejs-fill::before,
+.cefran-icon-vuejs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vuejs-fill.svg");
+  mask-image: url("../../../icons/logo/vuejs-fill.svg");
+}
+
+.cefran-icon-vuejs-line::before,
+.cefran-icon-vuejs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vuejs-line.svg");
+  mask-image: url("../../../icons/logo/vuejs-line.svg");
+}
+
+.cefran-icon-youtube-fill::before,
+.cefran-icon-youtube-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-fill.svg");
+  mask-image: url("../../../icons/logo/youtube-fill.svg");
+}
+
+.cefran-icon-youtube-line::before,
+.cefran-icon-youtube-line::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-line.svg");
+  mask-image: url("../../../icons/logo/youtube-line.svg");
+}
+
+.cefran-fi-dailymotion-fill::before,
+.cefran-fi-dailymotion-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--dailymotion-fill.svg");
+  mask-image: url("../../../icons/logo/cefran--dailymotion-fill.svg");
+}
+
+.cefran-fi-dailymotion-line::before,
+.cefran-fi-dailymotion-line::after {
+  -webkit-mask-image: url("../../../icons/logo/cefran--dailymotion-line.svg");
+  mask-image: url("../../../icons/logo/cefran--dailymotion-line.svg");
+}
+
+.cefran-fi-facebook-circle-fill::before,
+.cefran-fi-facebook-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+}
+
+.cefran-fi-facebook-circle-line::before,
+.cefran-fi-facebook-circle-line::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+}
+
+.cefran-fi-github-fill::before,
+.cefran-fi-github-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/github-fill.svg");
+  mask-image: url("../../../icons/logo/github-fill.svg");
+}
+
+.cefran-fi-github-line::before,
+.cefran-fi-github-line::after {
+  -webkit-mask-image: url("../../../icons/logo/github-line.svg");
+  mask-image: url("../../../icons/logo/github-line.svg");
+}
+
+.cefran-fi-instagram-fill::before,
+.cefran-fi-instagram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-fill.svg");
+  mask-image: url("../../../icons/logo/instagram-fill.svg");
+}
+
+.cefran-fi-instagram-line::before,
+.cefran-fi-instagram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/instagram-line.svg");
+  mask-image: url("../../../icons/logo/instagram-line.svg");
+}
+
+.cefran-fi-linkedin-box-fill::before,
+.cefran-fi-linkedin-box-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-fill.svg");
+}
+
+.cefran-fi-linkedin-box-line::before,
+.cefran-fi-linkedin-box-line::after {
+  -webkit-mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+  mask-image: url("../../../icons/logo/linkedin-box-line.svg");
+}
+
+.cefran-fi-npmjs-fill::before,
+.cefran-fi-npmjs-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-fill.svg");
+  mask-image: url("../../../icons/logo/npmjs-fill.svg");
+}
+
+.cefran-fi-npmjs-line::before,
+.cefran-fi-npmjs-line::after {
+  -webkit-mask-image: url("../../../icons/logo/npmjs-line.svg");
+  mask-image: url("../../../icons/logo/npmjs-line.svg");
+}
+
+.cefran-fi-remixicon-fill::before,
+.cefran-fi-remixicon-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-fill.svg");
+  mask-image: url("../../../icons/logo/remixicon-fill.svg");
+}
+
+.cefran-fi-remixicon-line::before,
+.cefran-fi-remixicon-line::after {
+  -webkit-mask-image: url("../../../icons/logo/remixicon-line.svg");
+  mask-image: url("../../../icons/logo/remixicon-line.svg");
+}
+
+.cefran-fi-slack-fill::before,
+.cefran-fi-slack-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-fill.svg");
+  mask-image: url("../../../icons/logo/slack-fill.svg");
+}
+
+.cefran-fi-slack-line::before,
+.cefran-fi-slack-line::after {
+  -webkit-mask-image: url("../../../icons/logo/slack-line.svg");
+  mask-image: url("../../../icons/logo/slack-line.svg");
+}
+
+.cefran-fi-snapchat-fill::before,
+.cefran-fi-snapchat-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-fill.svg");
+  mask-image: url("../../../icons/logo/snapchat-fill.svg");
+}
+
+.cefran-fi-snapchat-line::before,
+.cefran-fi-snapchat-line::after {
+  -webkit-mask-image: url("../../../icons/logo/snapchat-line.svg");
+  mask-image: url("../../../icons/logo/snapchat-line.svg");
+}
+
+.cefran-fi-telegram-fill::before,
+.cefran-fi-telegram-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-fill.svg");
+  mask-image: url("../../../icons/logo/telegram-fill.svg");
+}
+
+.cefran-fi-telegram-line::before,
+.cefran-fi-telegram-line::after {
+  -webkit-mask-image: url("../../../icons/logo/telegram-line.svg");
+  mask-image: url("../../../icons/logo/telegram-line.svg");
+}
+
+.cefran-fi-twitch-fill::before,
+.cefran-fi-twitch-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-fill.svg");
+  mask-image: url("../../../icons/logo/twitch-fill.svg");
+}
+
+.cefran-fi-twitch-line::before,
+.cefran-fi-twitch-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitch-line.svg");
+  mask-image: url("../../../icons/logo/twitch-line.svg");
+}
+
+.cefran-fi-twitter-fill::before,
+.cefran-fi-twitter-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-fill.svg");
+  mask-image: url("../../../icons/logo/twitter-fill.svg");
+}
+
+.cefran-fi-twitter-line::before,
+.cefran-fi-twitter-line::after {
+  -webkit-mask-image: url("../../../icons/logo/twitter-line.svg");
+  mask-image: url("../../../icons/logo/twitter-line.svg");
+}
+
+.cefran-fi-vimeo-fill::before,
+.cefran-fi-vimeo-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-fill.svg");
+  mask-image: url("../../../icons/logo/vimeo-fill.svg");
+}
+
+.cefran-fi-vimeo-line::before,
+.cefran-fi-vimeo-line::after {
+  -webkit-mask-image: url("../../../icons/logo/vimeo-line.svg");
+  mask-image: url("../../../icons/logo/vimeo-line.svg");
+}
+
+.cefran-fi-youtube-fill::before,
+.cefran-fi-youtube-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-fill.svg");
+  mask-image: url("../../../icons/logo/youtube-fill.svg");
+}
+
+.cefran-fi-youtube-line::before,
+.cefran-fi-youtube-line::after {
+  -webkit-mask-image: url("../../../icons/logo/youtube-line.svg");
+  mask-image: url("../../../icons/logo/youtube-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

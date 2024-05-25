@@ -1,0 +1,187 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-leaf-fill::before,
+.cefran-icon-leaf-fill::after {
+  -webkit-mask-image: url("../../../icons/others/leaf-fill.svg");
+  mask-image: url("../../../icons/others/leaf-fill.svg");
+}
+
+.cefran-icon-leaf-line::before,
+.cefran-icon-leaf-line::after {
+  -webkit-mask-image: url("../../../icons/others/leaf-line.svg");
+  mask-image: url("../../../icons/others/leaf-line.svg");
+}
+
+.cefran-icon-lightbulb-fill::before,
+.cefran-icon-lightbulb-fill::after {
+  -webkit-mask-image: url("../../../icons/others/lightbulb-fill.svg");
+  mask-image: url("../../../icons/others/lightbulb-fill.svg");
+}
+
+.cefran-icon-lightbulb-line::before,
+.cefran-icon-lightbulb-line::after {
+  -webkit-mask-image: url("../../../icons/others/lightbulb-line.svg");
+  mask-image: url("../../../icons/others/lightbulb-line.svg");
+}
+
+.cefran-icon-plant-fill::before,
+.cefran-icon-plant-fill::after {
+  -webkit-mask-image: url("../../../icons/others/plant-fill.svg");
+  mask-image: url("../../../icons/others/plant-fill.svg");
+}
+
+.cefran-icon-plant-line::before,
+.cefran-icon-plant-line::after {
+  -webkit-mask-image: url("../../../icons/others/plant-line.svg");
+  mask-image: url("../../../icons/others/plant-line.svg");
+}
+
+.cefran-icon-recycle-fill::before,
+.cefran-icon-recycle-fill::after {
+  -webkit-mask-image: url("../../../icons/others/recycle-fill.svg");
+  mask-image: url("../../../icons/others/recycle-fill.svg");
+}
+
+.cefran-icon-recycle-line::before,
+.cefran-icon-recycle-line::after {
+  -webkit-mask-image: url("../../../icons/others/recycle-line.svg");
+  mask-image: url("../../../icons/others/recycle-line.svg");
+}
+
+.cefran-icon-scales-3-fill::before,
+.cefran-icon-scales-3-fill::after {
+  -webkit-mask-image: url("../../../icons/others/scales-3-fill.svg");
+  mask-image: url("../../../icons/others/scales-3-fill.svg");
+}
+
+.cefran-icon-scales-3-line::before,
+.cefran-icon-scales-3-line::after {
+  -webkit-mask-image: url("../../../icons/others/scales-3-line.svg");
+  mask-image: url("../../../icons/others/scales-3-line.svg");
+}
+
+.cefran-icon-seedling-fill::before,
+.cefran-icon-seedling-fill::after {
+  -webkit-mask-image: url("../../../icons/others/seedling-fill.svg");
+  mask-image: url("../../../icons/others/seedling-fill.svg");
+}
+
+.cefran-icon-seedling-line::before,
+.cefran-icon-seedling-line::after {
+  -webkit-mask-image: url("../../../icons/others/seedling-line.svg");
+  mask-image: url("../../../icons/others/seedling-line.svg");
+}
+
+.cefran-icon-umbrella-fill::before,
+.cefran-icon-umbrella-fill::after {
+  -webkit-mask-image: url("../../../icons/others/umbrella-fill.svg");
+  mask-image: url("../../../icons/others/umbrella-fill.svg");
+}
+
+.cefran-icon-umbrella-line::before,
+.cefran-icon-umbrella-line::after {
+  -webkit-mask-image: url("../../../icons/others/umbrella-line.svg");
+  mask-image: url("../../../icons/others/umbrella-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-leaf-fill::before,
+  .cefran-icon-leaf-fill::after {
+    background-image: url("../../../icons/others/leaf-fill.svg");
+  }
+
+  .cefran-icon-leaf-line::before,
+  .cefran-icon-leaf-line::after {
+    background-image: url("../../../icons/others/leaf-line.svg");
+  }
+
+  .cefran-icon-lightbulb-fill::before,
+  .cefran-icon-lightbulb-fill::after {
+    background-image: url("../../../icons/others/lightbulb-fill.svg");
+  }
+
+  .cefran-icon-lightbulb-line::before,
+  .cefran-icon-lightbulb-line::after {
+    background-image: url("../../../icons/others/lightbulb-line.svg");
+  }
+
+  .cefran-icon-plant-fill::before,
+  .cefran-icon-plant-fill::after {
+    background-image: url("../../../icons/others/plant-fill.svg");
+  }
+
+  .cefran-icon-plant-line::before,
+  .cefran-icon-plant-line::after {
+    background-image: url("../../../icons/others/plant-line.svg");
+  }
+
+  .cefran-icon-recycle-fill::before,
+  .cefran-icon-recycle-fill::after {
+    background-image: url("../../../icons/others/recycle-fill.svg");
+  }
+
+  .cefran-icon-recycle-line::before,
+  .cefran-icon-recycle-line::after {
+    background-image: url("../../../icons/others/recycle-line.svg");
+  }
+
+  .cefran-icon-scales-3-fill::before,
+  .cefran-icon-scales-3-fill::after {
+    background-image: url("../../../icons/others/scales-3-fill.svg");
+  }
+
+  .cefran-icon-scales-3-line::before,
+  .cefran-icon-scales-3-line::after {
+    background-image: url("../../../icons/others/scales-3-line.svg");
+  }
+
+  .cefran-icon-seedling-fill::before,
+  .cefran-icon-seedling-fill::after {
+    background-image: url("../../../icons/others/seedling-fill.svg");
+  }
+
+  .cefran-icon-seedling-line::before,
+  .cefran-icon-seedling-line::after {
+    background-image: url("../../../icons/others/seedling-line.svg");
+  }
+
+  .cefran-icon-umbrella-fill::before,
+  .cefran-icon-umbrella-fill::after {
+    background-image: url("../../../icons/others/umbrella-fill.svg");
+  }
+
+  .cefran-icon-umbrella-line::before,
+  .cefran-icon-umbrella-line::after {
+    background-image: url("../../../icons/others/umbrella-line.svg");
+  }
+}

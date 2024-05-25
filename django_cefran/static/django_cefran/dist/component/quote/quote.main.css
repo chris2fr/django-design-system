@@ -1,0 +1,250 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  QUOTE
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-quote {
+  position: relative;
+  margin: 0;
+  padding: 0 0.5rem 2rem 0.5rem;
+  background-size: 50% 1px;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 100%;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+}
+
+.cefran-quote::before,
+.cefran-quote::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/editor/cefran--quote-line.svg");
+  mask-image: url("../../icons/editor/cefran--quote-line.svg");
+  --icon-size: 2rem;
+}
+
+.cefran-quote::before {
+  content: "";
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--artwork-minor-cefran-primary);
+}
+
+.cefran-quote--column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cefran-quote--column .cefran-quote__author {
+  margin-left: 5.25rem;
+}
+
+.cefran-quote--column .cefran-quote__source {
+  margin-left: 5.25rem;
+}
+
+.cefran-quote--column figcaption {
+  min-height: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cefran-quote blockquote {
+  margin: 0;
+
+  --text-spacing: 0 0 1rem;
+}
+
+.cefran-quote blockquote p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.cefran-quote__author {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  --text-spacing: 0 0 0.25rem;
+}
+
+.cefran-quote__image {
+  width: 4.25rem;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.cefran-quote__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.cefran-quote cite {
+  font-style: italic;
+}
+
+.cefran-quote figcaption {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+}
+
+.cefran-quote figcaption .cefran-quote__source {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.cefran-quote figcaption .cefran-quote__source li {
+  display: inline-block;
+}
+
+.cefran-quote figcaption .cefran-quote__source li:not(:last-child)::after {
+  content: "·";
+  display: inline-block;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.cefran-quote--cefran-color3::before {
+  color: var(--artwork-minor-cefran-color3);
+}
+
+.cefran-quote--cefran-color4::before {
+  color: var(--artwork-minor-cefran-color4);
+}
+
+.cefran-quote--cefran-color5::before {
+  color: var(--artwork-minor-cefran-color5);
+}
+
+.cefran-quote--cefran-color6::before {
+  color: var(--artwork-minor-cefran-color6);
+}
+
+.cefran-quote--cefran-color7::before {
+  color: var(--artwork-minor-cefran-color7);
+}
+
+.cefran-quote--cefran-color8::before {
+  color: var(--artwork-minor-cefran-color8);
+}
+
+.cefran-quote--cefran-color9::before {
+  color: var(--artwork-minor-cefran-color9);
+}
+
+.cefran-quote--cefran-color10::before {
+  color: var(--artwork-minor-cefran-color10);
+}
+
+.cefran-quote--cefran-color11::before {
+  color: var(--artwork-minor-cefran-color11);
+}
+
+.cefran-quote--cefran-color12::before {
+  color: var(--artwork-minor-cefran-color12);
+}
+
+.cefran-quote--cefran-color13::before {
+  color: var(--artwork-minor-cefran-color13);
+}
+
+.cefran-quote--cefran-color14::before {
+  color: var(--artwork-minor-cefran-color14);
+}
+
+.cefran-quote--cefran-color15::before {
+  color: var(--artwork-minor-cefran-color15);
+}
+
+.cefran-quote--cefran-color16::before {
+  color: var(--artwork-minor-cefran-color16);
+}
+
+.cefran-quote--cefran-color17::before {
+  color: var(--artwork-minor-cefran-color17);
+}
+
+.cefran-quote--cefran-color18::before {
+  color: var(--artwork-minor-cefran-color18);
+}
+
+.cefran-quote--cefran-color19::before {
+  color: var(--artwork-minor-cefran-color19);
+}
+
+.cefran-quote__source {
+  color: var(--text-mention-grey);
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-quote {
+    padding: 0 0 0 2rem;
+    background-size: 1px 100%;
+    background-position: 0 0;
+  }
+
+  .cefran-quote--column {
+    margin-left: 13.5rem;
+    min-height: 13rem;
+  }
+
+  .cefran-quote--column .cefran-quote__author {
+    margin-left: 0;
+  }
+
+  .cefran-quote--column .cefran-quote__source {
+    margin-left: 0;
+  }
+
+  .cefran-quote--column figcaption {
+    min-height: auto;
+  }
+
+  .cefran-quote__image {
+    position: absolute;
+    top: 50%;
+    left: -13.5rem;
+    width: 11.5rem;
+    height: 11.5rem;
+    margin-top: -5.75rem;
+  }
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

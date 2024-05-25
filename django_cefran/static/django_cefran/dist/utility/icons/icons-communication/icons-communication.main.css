@@ -1,0 +1,155 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-chat-2-fill::before,
+.cefran-icon-chat-2-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-2-fill.svg");
+  mask-image: url("../../../icons/communication/chat-2-fill.svg");
+}
+
+.cefran-icon-chat-2-line::before,
+.cefran-icon-chat-2-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-2-line.svg");
+  mask-image: url("../../../icons/communication/chat-2-line.svg");
+}
+
+.cefran-icon-chat-3-fill::before,
+.cefran-icon-chat-3-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-3-fill.svg");
+  mask-image: url("../../../icons/communication/chat-3-fill.svg");
+}
+
+.cefran-icon-chat-3-line::before,
+.cefran-icon-chat-3-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-3-line.svg");
+  mask-image: url("../../../icons/communication/chat-3-line.svg");
+}
+
+.cefran-icon-chat-check-fill::before,
+.cefran-icon-chat-check-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-check-fill.svg");
+  mask-image: url("../../../icons/communication/chat-check-fill.svg");
+}
+
+.cefran-icon-chat-check-line::before,
+.cefran-icon-chat-check-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-check-line.svg");
+  mask-image: url("../../../icons/communication/chat-check-line.svg");
+}
+
+.cefran-icon-chat-delete-fill::before,
+.cefran-icon-chat-delete-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-delete-fill.svg");
+  mask-image: url("../../../icons/communication/chat-delete-fill.svg");
+}
+
+.cefran-icon-chat-delete-line::before,
+.cefran-icon-chat-delete-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-delete-line.svg");
+  mask-image: url("../../../icons/communication/chat-delete-line.svg");
+}
+
+.cefran-icon-chat-poll-fill::before,
+.cefran-icon-chat-poll-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-poll-fill.svg");
+  mask-image: url("../../../icons/communication/chat-poll-fill.svg");
+}
+
+.cefran-icon-chat-poll-line::before,
+.cefran-icon-chat-poll-line::after {
+  -webkit-mask-image: url("../../../icons/communication/chat-poll-line.svg");
+  mask-image: url("../../../icons/communication/chat-poll-line.svg");
+}
+
+.cefran-icon-discuss-fill::before,
+.cefran-icon-discuss-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/discuss-fill.svg");
+  mask-image: url("../../../icons/communication/discuss-fill.svg");
+}
+
+.cefran-icon-discuss-line::before,
+.cefran-icon-discuss-line::after {
+  -webkit-mask-image: url("../../../icons/communication/discuss-line.svg");
+  mask-image: url("../../../icons/communication/discuss-line.svg");
+}
+
+.cefran-icon-feedback-fill::before,
+.cefran-icon-feedback-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/feedback-fill.svg");
+  mask-image: url("../../../icons/communication/feedback-fill.svg");
+}
+
+.cefran-icon-feedback-line::before,
+.cefran-icon-feedback-line::after {
+  -webkit-mask-image: url("../../../icons/communication/feedback-line.svg");
+  mask-image: url("../../../icons/communication/feedback-line.svg");
+}
+
+.cefran-icon-message-2-fill::before,
+.cefran-icon-message-2-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/message-2-fill.svg");
+  mask-image: url("../../../icons/communication/message-2-fill.svg");
+}
+
+.cefran-icon-message-2-line::before,
+.cefran-icon-message-2-line::after {
+  -webkit-mask-image: url("../../../icons/communication/message-2-line.svg");
+  mask-image: url("../../../icons/communication/message-2-line.svg");
+}
+
+.cefran-icon-question-answer-fill::before,
+.cefran-icon-question-answer-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/question-answer-fill.svg");
+  mask-image: url("../../../icons/communication/question-answer-fill.svg");
+}
+
+.cefran-icon-question-answer-line::before,
+.cefran-icon-question-answer-line::after {
+  -webkit-mask-image: url("../../../icons/communication/question-answer-line.svg");
+  mask-image: url("../../../icons/communication/question-answer-line.svg");
+}
+
+.cefran-icon-questionnaire-fill::before,
+.cefran-icon-questionnaire-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/questionnaire-fill.svg");
+  mask-image: url("../../../icons/communication/questionnaire-fill.svg");
+}
+
+.cefran-icon-questionnaire-line::before,
+.cefran-icon-questionnaire-line::after {
+  -webkit-mask-image: url("../../../icons/communication/questionnaire-line.svg");
+  mask-image: url("../../../icons/communication/questionnaire-line.svg");
+}
+
+.cefran-icon-video-chat-fill::before,
+.cefran-icon-video-chat-fill::after {
+  -webkit-mask-image: url("../../../icons/communication/video-chat-fill.svg");
+  mask-image: url("../../../icons/communication/video-chat-fill.svg");
+}
+
+.cefran-icon-video-chat-line::before,
+.cefran-icon-video-chat-line::after {
+  -webkit-mask-image: url("../../../icons/communication/video-chat-line.svg");
+  mask-image: url("../../../icons/communication/video-chat-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

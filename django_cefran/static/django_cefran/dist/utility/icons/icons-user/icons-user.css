@@ -1,0 +1,361 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-icon-account-circle-fill::before,
+.cefran-icon-account-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-circle-fill.svg");
+}
+
+.cefran-icon-account-circle-line::before,
+.cefran-icon-account-circle-line::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg");
+  mask-image: url("../../../icons/user/account-circle-line.svg");
+}
+
+.cefran-icon-account-pin-circle-fill::before,
+.cefran-icon-account-pin-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/user/account-pin-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-pin-circle-fill.svg");
+}
+
+.cefran-icon-account-pin-circle-line::before,
+.cefran-icon-account-pin-circle-line::after {
+  -webkit-mask-image: url("../../../icons/user/account-pin-circle-line.svg");
+  mask-image: url("../../../icons/user/account-pin-circle-line.svg");
+}
+
+.cefran-icon-admin-fill::before,
+.cefran-icon-admin-fill::after {
+  -webkit-mask-image: url("../../../icons/user/admin-fill.svg");
+  mask-image: url("../../../icons/user/admin-fill.svg");
+}
+
+.cefran-icon-admin-line::before,
+.cefran-icon-admin-line::after {
+  -webkit-mask-image: url("../../../icons/user/admin-line.svg");
+  mask-image: url("../../../icons/user/admin-line.svg");
+}
+
+.cefran-icon-group-fill::before,
+.cefran-icon-group-fill::after {
+  -webkit-mask-image: url("../../../icons/user/group-fill.svg");
+  mask-image: url("../../../icons/user/group-fill.svg");
+}
+
+.cefran-icon-group-line::before,
+.cefran-icon-group-line::after {
+  -webkit-mask-image: url("../../../icons/user/group-line.svg");
+  mask-image: url("../../../icons/user/group-line.svg");
+}
+
+.cefran-icon-parent-fill::before,
+.cefran-icon-parent-fill::after {
+  -webkit-mask-image: url("../../../icons/user/parent-fill.svg");
+  mask-image: url("../../../icons/user/parent-fill.svg");
+}
+
+.cefran-icon-parent-line::before,
+.cefran-icon-parent-line::after {
+  -webkit-mask-image: url("../../../icons/user/parent-line.svg");
+  mask-image: url("../../../icons/user/parent-line.svg");
+}
+
+.cefran-icon-team-fill::before,
+.cefran-icon-team-fill::after {
+  -webkit-mask-image: url("../../../icons/user/team-fill.svg");
+  mask-image: url("../../../icons/user/team-fill.svg");
+}
+
+.cefran-icon-team-line::before,
+.cefran-icon-team-line::after {
+  -webkit-mask-image: url("../../../icons/user/team-line.svg");
+  mask-image: url("../../../icons/user/team-line.svg");
+}
+
+.cefran-icon-user-add-fill::before,
+.cefran-icon-user-add-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-add-fill.svg");
+  mask-image: url("../../../icons/user/user-add-fill.svg");
+}
+
+.cefran-icon-user-add-line::before,
+.cefran-icon-user-add-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-add-line.svg");
+  mask-image: url("../../../icons/user/user-add-line.svg");
+}
+
+.cefran-icon-user-fill::before,
+.cefran-icon-user-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-fill.svg");
+  mask-image: url("../../../icons/user/user-fill.svg");
+}
+
+.cefran-icon-user-heart-fill::before,
+.cefran-icon-user-heart-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-heart-fill.svg");
+  mask-image: url("../../../icons/user/user-heart-fill.svg");
+}
+
+.cefran-icon-user-heart-line::before,
+.cefran-icon-user-heart-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-heart-line.svg");
+  mask-image: url("../../../icons/user/user-heart-line.svg");
+}
+
+.cefran-icon-user-line::before,
+.cefran-icon-user-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-line.svg");
+  mask-image: url("../../../icons/user/user-line.svg");
+}
+
+.cefran-icon-user-search-fill::before,
+.cefran-icon-user-search-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-search-fill.svg");
+  mask-image: url("../../../icons/user/user-search-fill.svg");
+}
+
+.cefran-icon-user-search-line::before,
+.cefran-icon-user-search-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-search-line.svg");
+  mask-image: url("../../../icons/user/user-search-line.svg");
+}
+
+.cefran-icon-user-setting-fill::before,
+.cefran-icon-user-setting-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-setting-fill.svg");
+  mask-image: url("../../../icons/user/user-setting-fill.svg");
+}
+
+.cefran-icon-user-setting-line::before,
+.cefran-icon-user-setting-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-setting-line.svg");
+  mask-image: url("../../../icons/user/user-setting-line.svg");
+}
+
+.cefran-icon-user-star-fill::before,
+.cefran-icon-user-star-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-star-fill.svg");
+  mask-image: url("../../../icons/user/user-star-fill.svg");
+}
+
+.cefran-icon-user-star-line::before,
+.cefran-icon-user-star-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-star-line.svg");
+  mask-image: url("../../../icons/user/user-star-line.svg");
+}
+
+.cefran-fi-user-fill::before,
+.cefran-fi-user-fill::after {
+  -webkit-mask-image: url("../../../icons/user/user-fill.svg");
+  mask-image: url("../../../icons/user/user-fill.svg");
+}
+
+.cefran-fi-user-line::before,
+.cefran-fi-user-line::after {
+  -webkit-mask-image: url("../../../icons/user/user-line.svg");
+  mask-image: url("../../../icons/user/user-line.svg");
+}
+
+.cefran-fi-account-line::before,
+.cefran-fi-account-line::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg");
+  mask-image: url("../../../icons/user/account-circle-line.svg");
+}
+
+.cefran-fi-account-fill::before,
+.cefran-fi-account-fill::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-circle-fill.svg");
+}
+
+.cefran-icon-account-line::before,
+.cefran-icon-account-line::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg");
+  mask-image: url("../../../icons/user/account-circle-line.svg");
+}
+
+.cefran-icon-account-fill::before,
+.cefran-icon-account-fill::after {
+  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-circle-fill.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-icon-account-circle-fill::before,
+  .cefran-icon-account-circle-fill::after {
+    background-image: url("../../../icons/user/account-circle-fill.svg");
+  }
+
+  .cefran-icon-account-circle-line::before,
+  .cefran-icon-account-circle-line::after {
+    background-image: url("../../../icons/user/account-circle-line.svg");
+  }
+
+  .cefran-icon-account-pin-circle-fill::before,
+  .cefran-icon-account-pin-circle-fill::after {
+    background-image: url("../../../icons/user/account-pin-circle-fill.svg");
+  }
+
+  .cefran-icon-account-pin-circle-line::before,
+  .cefran-icon-account-pin-circle-line::after {
+    background-image: url("../../../icons/user/account-pin-circle-line.svg");
+  }
+
+  .cefran-icon-admin-fill::before,
+  .cefran-icon-admin-fill::after {
+    background-image: url("../../../icons/user/admin-fill.svg");
+  }
+
+  .cefran-icon-admin-line::before,
+  .cefran-icon-admin-line::after {
+    background-image: url("../../../icons/user/admin-line.svg");
+  }
+
+  .cefran-icon-group-fill::before,
+  .cefran-icon-group-fill::after {
+    background-image: url("../../../icons/user/group-fill.svg");
+  }
+
+  .cefran-icon-group-line::before,
+  .cefran-icon-group-line::after {
+    background-image: url("../../../icons/user/group-line.svg");
+  }
+
+  .cefran-icon-parent-fill::before,
+  .cefran-icon-parent-fill::after {
+    background-image: url("../../../icons/user/parent-fill.svg");
+  }
+
+  .cefran-icon-parent-line::before,
+  .cefran-icon-parent-line::after {
+    background-image: url("../../../icons/user/parent-line.svg");
+  }
+
+  .cefran-icon-team-fill::before,
+  .cefran-icon-team-fill::after {
+    background-image: url("../../../icons/user/team-fill.svg");
+  }
+
+  .cefran-icon-team-line::before,
+  .cefran-icon-team-line::after {
+    background-image: url("../../../icons/user/team-line.svg");
+  }
+
+  .cefran-icon-user-add-fill::before,
+  .cefran-icon-user-add-fill::after {
+    background-image: url("../../../icons/user/user-add-fill.svg");
+  }
+
+  .cefran-icon-user-add-line::before,
+  .cefran-icon-user-add-line::after {
+    background-image: url("../../../icons/user/user-add-line.svg");
+  }
+
+  .cefran-icon-user-fill::before,
+  .cefran-icon-user-fill::after {
+    background-image: url("../../../icons/user/user-fill.svg");
+  }
+
+  .cefran-icon-user-heart-fill::before,
+  .cefran-icon-user-heart-fill::after {
+    background-image: url("../../../icons/user/user-heart-fill.svg");
+  }
+
+  .cefran-icon-user-heart-line::before,
+  .cefran-icon-user-heart-line::after {
+    background-image: url("../../../icons/user/user-heart-line.svg");
+  }
+
+  .cefran-icon-user-line::before,
+  .cefran-icon-user-line::after {
+    background-image: url("../../../icons/user/user-line.svg");
+  }
+
+  .cefran-icon-user-search-fill::before,
+  .cefran-icon-user-search-fill::after {
+    background-image: url("../../../icons/user/user-search-fill.svg");
+  }
+
+  .cefran-icon-user-search-line::before,
+  .cefran-icon-user-search-line::after {
+    background-image: url("../../../icons/user/user-search-line.svg");
+  }
+
+  .cefran-icon-user-setting-fill::before,
+  .cefran-icon-user-setting-fill::after {
+    background-image: url("../../../icons/user/user-setting-fill.svg");
+  }
+
+  .cefran-icon-user-setting-line::before,
+  .cefran-icon-user-setting-line::after {
+    background-image: url("../../../icons/user/user-setting-line.svg");
+  }
+
+  .cefran-icon-user-star-fill::before,
+  .cefran-icon-user-star-fill::after {
+    background-image: url("../../../icons/user/user-star-fill.svg");
+  }
+
+  .cefran-icon-user-star-line::before,
+  .cefran-icon-user-star-line::after {
+    background-image: url("../../../icons/user/user-star-line.svg");
+  }
+
+  .cefran-fi-user-fill::before {
+    background-image: url("../../../icons/user/user-fill.svg");
+  }
+
+  .cefran-fi-user-line::before {
+    background-image: url("../../../icons/user/user-line.svg");
+  }
+
+  .cefran-fi-account-line::before,
+  .cefran-fi-account-line::after {
+    background-image: url("../../../icons/user/account-circle-line.svg");
+  }
+
+  .cefran-fi-account-fill::before,
+  .cefran-fi-account-fill::after {
+    background-image: url("../../../icons/user/account-circle-fill.svg");
+  }
+
+  .cefran-icon-account-line::before,
+  .cefran-icon-account-line::after {
+    background-image: url("../../../icons/user/account-circle-line.svg");
+  }
+
+  .cefran-icon-account-fill::before,
+  .cefran-icon-account-fill::after {
+    background-image: url("../../../icons/user/account-circle-fill.svg");
+  }
+}

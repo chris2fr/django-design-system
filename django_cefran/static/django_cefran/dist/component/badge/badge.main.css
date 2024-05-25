@@ -1,0 +1,436 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+/* ------------------------------------ *\
+  Badge
+\* ------------------------------------ */
+.cefran-badge {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  padding: 0 0.5rem;
+  overflow: initial;
+  max-height: none;
+  font-weight: 700;
+  max-width: 100%;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  color: var(--text-default-grey);
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.cefran-badge::before,
+.cefran-badge::after {
+  display: block;
+}
+
+.cefran-badge--icon-left[class^=cefran-icon-],
+.cefran-badge--icon-left[class*=" cefran-icon-"],
+.cefran-badge--icon-left[class^=cefran-fi-],
+.cefran-badge--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-badge--icon-left[class^=cefran-icon-]::before,
+.cefran-badge--icon-left[class*=" cefran-icon-"]::before,
+.cefran-badge--icon-left[class^=cefran-fi-]::before,
+.cefran-badge--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+}
+
+.cefran-badge[class^=cefran-icon-]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge[class*=" cefran-icon-"]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge[class^=cefran-fi-]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge[class*=" cefran-fi-"]:not([class*=cefran-badge--icon-])::before {
+  content: none;
+}
+
+.cefran-badge--sm {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-badge--sm.cefran-badge--icon-left[class^=cefran-icon-],
+.cefran-badge--sm.cefran-badge--icon-left[class*=" cefran-icon-"],
+.cefran-badge--sm.cefran-badge--icon-left[class^=cefran-fi-],
+.cefran-badge--sm.cefran-badge--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-badge--sm.cefran-badge--icon-left[class^=cefran-icon-]::before,
+.cefran-badge--sm.cefran-badge--icon-left[class*=" cefran-icon-"]::before,
+.cefran-badge--sm.cefran-badge--icon-left[class^=cefran-fi-]::before,
+.cefran-badge--sm.cefran-badge--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.cefran-badge--sm[class^=cefran-icon-]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge--sm[class*=" cefran-icon-"]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge--sm[class^=cefran-fi-]:not([class*=cefran-badge--icon-])::before,
+.cefran-badge--sm[class*=" cefran-fi-"]:not([class*=cefran-badge--icon-])::before {
+  content: none;
+}
+
+.cefran-badge::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.cefran-badge--sm::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.cefran-badge.cefran-badge--info::before,
+.cefran-badge--sm.cefran-badge--info::before {
+  -webkit-mask-image: url("../../icons/system/cefran--info-fill.svg");
+  mask-image: url("../../icons/system/cefran--info-fill.svg");
+}
+
+.cefran-badge.cefran-badge--success::before,
+.cefran-badge--sm.cefran-badge--success::before {
+  -webkit-mask-image: url("../../icons/system/cefran--success-fill.svg");
+  mask-image: url("../../icons/system/cefran--success-fill.svg");
+}
+
+.cefran-badge.cefran-badge--error::before,
+.cefran-badge--sm.cefran-badge--error::before {
+  -webkit-mask-image: url("../../icons/system/cefran--error-fill.svg");
+  mask-image: url("../../icons/system/cefran--error-fill.svg");
+}
+
+.cefran-badge.cefran-badge--warning::before,
+.cefran-badge--sm.cefran-badge--warning::before {
+  -webkit-mask-image: url("../../icons/system/cefran--warning-fill.svg");
+  mask-image: url("../../icons/system/cefran--warning-fill.svg");
+}
+
+.cefran-badge.cefran-badge--new::before,
+.cefran-badge--sm.cefran-badge--new::before {
+  -webkit-mask-image: url("../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../icons/weather/flashlight-fill.svg");
+}
+
+.cefran-badge--info::before,
+.cefran-badge--success::before,
+.cefran-badge--error::before,
+.cefran-badge--warning::before,
+.cefran-badge--new::before,
+.cefran-badge--sm--info::before,
+.cefran-badge--sm--success::before,
+.cefran-badge--sm--error::before,
+.cefran-badge--sm--warning::before,
+.cefran-badge--sm--new::before {
+  content: "";
+}
+
+.cefran-badge.cefran-badge--no-icon::before,
+.cefran-badge--sm.cefran-badge--no-icon::before {
+  content: none;
+}
+
+.cefran-badges-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  margin-bottom: 0;
+}
+
+.cefran-badges-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.cefran-badges-group .cefran-badge {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.cefran-badges-group--sm .cefran-badge {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+}
+
+.cefran-badges-group--sm .cefran-badge::before,
+.cefran-badges-group--sm .cefran-badge::after {
+  --icon-size: 0.75rem;
+}
+
+.cefran-badge--info {
+  color: var(--text-default-info);
+  background-color: var(--background-contrast-info);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-info-hover);
+  --active: var(--background-contrast-info-active);
+}
+
+.cefran-badge--error {
+  color: var(--text-default-error);
+  background-color: var(--background-contrast-error);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-error-hover);
+  --active: var(--background-contrast-error-active);
+}
+
+.cefran-badge--success {
+  color: var(--text-default-success);
+  background-color: var(--background-contrast-success);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-success-hover);
+  --active: var(--background-contrast-success-active);
+}
+
+.cefran-badge--warning {
+  color: var(--text-default-warning);
+  background-color: var(--background-contrast-warning);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-warning-hover);
+  --active: var(--background-contrast-warning-active);
+}
+
+.cefran-badge--new {
+  color: var(--text-action-high-cefran-color14);
+  background-color: var(--background-contrast-cefran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color14-hover);
+  --active: var(--background-contrast-cefran-color14-active);
+}
+
+.cefran-badge--cefran-color3 {
+  color: var(--text-label-cefran-color3);
+  background-color: var(--background-contrast-cefran-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color3-hover);
+  --active: var(--background-contrast-cefran-color3-active);
+}
+
+.cefran-badge--cefran-color4 {
+  color: var(--text-label-cefran-color4);
+  background-color: var(--background-contrast-cefran-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color4-hover);
+  --active: var(--background-contrast-cefran-color4-active);
+}
+
+.cefran-badge--cefran-color5 {
+  color: var(--text-label-cefran-color5);
+  background-color: var(--background-contrast-cefran-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color5-hover);
+  --active: var(--background-contrast-cefran-color5-active);
+}
+
+.cefran-badge--cefran-color6 {
+  color: var(--text-label-cefran-color6);
+  background-color: var(--background-contrast-cefran-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color6-hover);
+  --active: var(--background-contrast-cefran-color6-active);
+}
+
+.cefran-badge--cefran-color7 {
+  color: var(--text-label-cefran-color7);
+  background-color: var(--background-contrast-cefran-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color7-hover);
+  --active: var(--background-contrast-cefran-color7-active);
+}
+
+.cefran-badge--cefran-color8 {
+  color: var(--text-label-cefran-color8);
+  background-color: var(--background-contrast-cefran-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color8-hover);
+  --active: var(--background-contrast-cefran-color8-active);
+}
+
+.cefran-badge--cefran-color9 {
+  color: var(--text-label-cefran-color9);
+  background-color: var(--background-contrast-cefran-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color9-hover);
+  --active: var(--background-contrast-cefran-color9-active);
+}
+
+.cefran-badge--cefran-color10 {
+  color: var(--text-label-cefran-color10);
+  background-color: var(--background-contrast-cefran-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color10-hover);
+  --active: var(--background-contrast-cefran-color10-active);
+}
+
+.cefran-badge--cefran-color11 {
+  color: var(--text-label-cefran-color11);
+  background-color: var(--background-contrast-cefran-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color11-hover);
+  --active: var(--background-contrast-cefran-color11-active);
+}
+
+.cefran-badge--cefran-color12 {
+  color: var(--text-label-cefran-color12);
+  background-color: var(--background-contrast-cefran-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color12-hover);
+  --active: var(--background-contrast-cefran-color12-active);
+}
+
+.cefran-badge--cefran-color13 {
+  color: var(--text-label-cefran-color13);
+  background-color: var(--background-contrast-cefran-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color13-hover);
+  --active: var(--background-contrast-cefran-color13-active);
+}
+
+.cefran-badge--cefran-color14 {
+  color: var(--text-label-cefran-color14);
+  background-color: var(--background-contrast-cefran-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color14-hover);
+  --active: var(--background-contrast-cefran-color14-active);
+}
+
+.cefran-badge--cefran-color15 {
+  color: var(--text-label-cefran-color15);
+  background-color: var(--background-contrast-cefran-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color15-hover);
+  --active: var(--background-contrast-cefran-color15-active);
+}
+
+.cefran-badge--cefran-color16 {
+  color: var(--text-label-cefran-color16);
+  background-color: var(--background-contrast-cefran-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color16-hover);
+  --active: var(--background-contrast-cefran-color16-active);
+}
+
+.cefran-badge--cefran-color17 {
+  color: var(--text-label-cefran-color17);
+  background-color: var(--background-contrast-cefran-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color17-hover);
+  --active: var(--background-contrast-cefran-color17-active);
+}
+
+.cefran-badge--cefran-color18 {
+  color: var(--text-label-cefran-color18);
+  background-color: var(--background-contrast-cefran-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color18-hover);
+  --active: var(--background-contrast-cefran-color18-active);
+}
+
+.cefran-badge--cefran-color19 {
+  color: var(--text-label-cefran-color19);
+  background-color: var(--background-contrast-cefran-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-cefran-color19-hover);
+  --active: var(--background-contrast-cefran-color19-active);
+}
+
+.cefran-badge-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.cefran-badge-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.cefran-badge-group .cefran-badge {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

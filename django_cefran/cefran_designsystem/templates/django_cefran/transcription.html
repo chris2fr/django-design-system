@@ -1,0 +1,51 @@
+{% load i18n %}
+{% translate "Transcript" as transcript_label %}
+<div class="cefran-transcription">
+  <button class="cefran-transcription__btn"
+          aria-expanded="false"
+          aria-controls="cefran-transcription__collapse-{{ self.id }}">
+    {{ transcript_label }}
+  </button>
+  <div class="cefran-collapse"
+       id="cefran-transcription__collapse-{{ self.id }}">
+    <div class="cefran-transcription__footer">
+      <div class="cefran-transcription__actions-group">
+        {% translate "Enlarge" as enlarge_label %}
+        <button class="cefran-btn cefran-btn--fullscreen"
+                aria-controls="cefran-transcription-modal-{{ self.id }}"
+                data-cefran-opened="false"
+                title="{{ enlarge_label }}">
+          {{ enlarge_label }}
+        </button>
+      </div>
+    </div>
+    <dialog id="cefran-transcription-modal-{{ self.id }}"
+            class="cefran-modal"
+            role="dialog"
+            aria-labelledby="cefran-transcription-modal-{{ self.id }}-title">
+      <div class="cefran-container cefran-container--fluid facile-container-md">
+        <div class="cefran-grid-row cefran-grid-row--center">
+          <div class="cefran-col-12 cefran-col-md-10 cefran-col-lg-8">
+            <div class="cefran-modal__body">
+              <div class="cefran-modal__header">
+                {% translate "Close" as close_label %}
+                <button class="cefran-btn--close cefran-btn"
+                        aria-controls="cefran-transcription-modal-{{ self.id }}"
+                        title="{{ close_label }}">
+                  {{ close_label }}
+                </button>
+              </div>
+              <div class="cefran-modal__content">
+                <h1 id="cefran-transcription-modal-{{ self.id }}-title"
+                    class="cefran-modal__title">
+                  {{ self.title|default:transcript_label }}
+                </h1>
+                {{ self.content|safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</div>

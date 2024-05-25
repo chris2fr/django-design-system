@@ -1,0 +1,816 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  FORM
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-label-grey);
+}
+
+.cefran-label + .cefran-input,
+.cefran-label + .cefran-input-wrap,
+.cefran-label + .cefran-select {
+  margin-top: 0.5rem;
+}
+
+.cefran-hint-text {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+
+  --text-spacing: 0 0 1rem;
+}
+
+.cefran-hint-text + .cefran-hint-text {
+  margin-top: 0.25rem;
+}
+
+.cefran-fieldset {
+  position: relative;
+  margin: 0 -0.75rem 1rem;
+  padding: 0 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border: 0;
+}
+
+.cefran-fieldset__legend {
+  padding-bottom: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--text-label-grey);
+}
+
+.cefran-fieldset__legend--regular {
+  font-weight: 400;
+}
+
+.cefran-fieldset__legend .cefran-hint-text {
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.cefran-fieldset--valid,
+.cefran-fieldset--error,
+.cefran-fieldset--info {
+  background-repeat: no-repeat;
+  background-position: 0 -2.25rem;
+  background-size: 2px calc(100% + 1.25rem);
+}
+
+.cefran-fieldset--valid .cefran-fieldset__legend,
+.cefran-fieldset--error .cefran-fieldset__legend,
+.cefran-fieldset--info .cefran-fieldset__legend {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 2px 100%;
+}
+
+.cefran-fieldset__element {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cefran-fieldset__element--inline {
+  flex: 0 0 auto;
+}
+
+.cefran-fieldset__element--inline-grow,
+.cefran-fieldset__element--inline\@md.cefran-fieldset__element--inline-grow {
+  flex-grow: 1;
+}
+
+.cefran-fieldset__element--year {
+  flex: 0 0 8rem;
+}
+
+.cefran-fieldset__element--year:not(.cefran-fieldset__element--inline) {
+  margin-right: calc(100% - 8rem);
+}
+
+.cefran-fieldset__element--postal {
+  flex: 0 0 16rem;
+}
+
+.cefran-fieldset__element--postal:not(.cefran-fieldset__element--inline) {
+  margin-right: calc(100% - 16rem);
+}
+
+.cefran-fieldset__element--number {
+  flex: 0 0 6rem;
+}
+
+.cefran-fieldset__element--number:not(.cefran-fieldset__element--inline) {
+  margin-right: calc(100% - 6rem);
+}
+
+.cefran-fieldset__legend > h1:last-child::after,
+.cefran-fieldset__legend > h2:last-child::after,
+.cefran-fieldset__legend > h3:last-child::after,
+.cefran-fieldset__legend > h4:last-child::after,
+.cefran-fieldset__legend > h5:last-child::after,
+.cefran-fieldset__legend > h6:last-child::after,
+.cefran-fieldset__legend > p:last-child::after,
+.cefran-fieldset__legend > .cefran-fieldset:last-child::after,
+.cefran-fieldset__element > h1:last-child::after,
+.cefran-fieldset__element > h2:last-child::after,
+.cefran-fieldset__element > h3:last-child::after,
+.cefran-fieldset__element > h4:last-child::after,
+.cefran-fieldset__element > h5:last-child::after,
+.cefran-fieldset__element > h6:last-child::after,
+.cefran-fieldset__element > p:last-child::after,
+.cefran-fieldset__element > .cefran-fieldset:last-child::after {
+  content: "";
+  display: block;
+  margin-bottom: -1rem;
+}
+
+.cefran-fieldset > .cefran-messages-group {
+  flex: 1 1 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cefran-fieldset > .cefran-messages-group > .cefran-message:last-child {
+  margin-bottom: 1rem;
+}
+
+.cefran-message {
+  --comma: ", ";
+  --content: var(--comma);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.cefran-message::after {
+  content: var(--content);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+}
+
+.cefran-message:last-child {
+  --comma: ". ";
+  margin-bottom: 0;
+}
+
+.cefran-message--error::before,
+.cefran-message--valid::before,
+.cefran-message--info::before {
+  flex: 0 0 auto;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 1rem;
+  content: "";
+  display: inline-block;
+  margin-right: 0.25rem;
+  margin-top: 0.125rem;
+}
+
+.cefran-message--error::before {
+  -webkit-mask-image: url("../../icons/system/cefran--error-fill.svg");
+  mask-image: url("../../icons/system/cefran--error-fill.svg");
+}
+
+.cefran-message--valid::before {
+  -webkit-mask-image: url("../../icons/system/cefran--success-fill.svg");
+  mask-image: url("../../icons/system/cefran--success-fill.svg");
+}
+
+.cefran-message--info::before {
+  -webkit-mask-image: url("../../icons/system/cefran--info-fill.svg");
+  mask-image: url("../../icons/system/cefran--info-fill.svg");
+}
+
+.cefran-select-group--valid label,
+.cefran-input-group--valid label,
+.cefran-range-group--valid label,
+.cefran-upload-group--valid label {
+  color: var(--text-default-success);
+}
+
+.cefran-select-group--error label,
+.cefran-input-group--error label,
+.cefran-range-group--error label,
+.cefran-upload-group--error label {
+  color: var(--text-default-error);
+}
+
+.cefran-select-group--info label,
+.cefran-input-group--info label,
+.cefran-range-group--info label,
+.cefran-upload-group--info label {
+  color: var(--text-default-info);
+}
+
+.cefran-select-group--disabled label,
+.cefran-select-group--disabled .cefran-hint-text,
+.cefran-input-group--disabled label,
+.cefran-input-group--disabled .cefran-hint-text,
+.cefran-range-group--disabled label,
+.cefran-range-group--disabled .cefran-hint-text,
+.cefran-upload-group--disabled label,
+.cefran-upload-group--disabled .cefran-hint-text {
+  color: var(--text-disabled-grey);
+}
+
+.cefran-label--error {
+  color: var(--text-default-error);
+}
+
+.cefran-label--success {
+  color: var(--text-default-success);
+}
+
+.cefran-label--info {
+  color: var(--text-default-info);
+}
+
+.cefran-label--disabled,
+.cefran-label--disabled .cefran-hint-text {
+  color: var(--text-disabled-grey);
+}
+
+.cefran-hint-text,
+.cefran-message {
+  color: var(--text-mention-grey);
+}
+
+.cefran-message--error {
+  color: var(--text-default-error);
+}
+
+.cefran-message--valid {
+  color: var(--text-default-success);
+}
+
+.cefran-message--info {
+  color: var(--text-default-info);
+}
+
+.cefran-fieldset:disabled .cefran-label,
+.cefran-fieldset:disabled .cefran-hint-text,
+.cefran-fieldset:disabled .cefran-fieldset__legend {
+  color: var(--text-disabled-grey);
+}
+
+.cefran-fieldset input:disabled + label,
+.cefran-fieldset input:disabled + label .cefran-hint-text,
+.cefran-fieldset input:disabled + label + .cefran-hint-text {
+  color: var(--text-disabled-grey);
+}
+
+.cefran-fieldset--error,
+.cefran-fieldset--error .cefran-fieldset__legend {
+  background-image: linear-gradient(0deg, var(--border-plain-error), var(--border-plain-error));
+}
+
+.cefran-fieldset--error .cefran-fieldset__legend,
+.cefran-fieldset--error .cefran-label {
+  color: var(--text-default-error);
+}
+
+.cefran-fieldset--valid,
+.cefran-fieldset--valid .cefran-fieldset__legend {
+  background-image: linear-gradient(0deg, var(--border-plain-success), var(--border-plain-success));
+}
+
+.cefran-fieldset--valid .cefran-fieldset__legend,
+.cefran-fieldset--valid .cefran-label {
+  color: var(--text-default-success);
+}
+
+.cefran-fieldset--info,
+.cefran-fieldset--info .cefran-fieldset__legend {
+  background-image: linear-gradient(0deg, var(--border-plain-info), var(--border-plain-info));
+}
+
+.cefran-fieldset--info .cefran-fieldset__legend,
+.cefran-fieldset--info .cefran-label {
+  color: var(--text-default-info);
+}
+
+.cefran-select-group:not(:last-child),
+.cefran-input-group:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.cefran-select-group .cefran-label .cefran-hint-text,
+.cefran-input-group .cefran-label .cefran-hint-text {
+  margin-top: 0.25rem;
+}
+
+.cefran-fieldset--inline .cefran-fieldset__content {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -0.75rem 0.5rem 0 0.5rem;
+}
+
+.cefran-fieldset--inline .cefran-checkbox-group {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+.cefran-fieldset--inline .cefran-checkbox-group:first-child {
+  margin-top: 0;
+}
+
+.cefran-fieldset--inline .cefran-checkbox-group:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.cefran-fieldset--inline .cefran-checkbox-group:last-child {
+  margin-bottom: 0;
+}
+
+.cefran-fieldset--inline .cefran-radio-group {
+  display: inline-flex;
+}
+
+.cefran-fieldset--inline .cefran-radio-group:not(:last-child) {
+  margin-right: 1.75rem;
+}
+
+.cefran-fieldset--inline .cefran-radio-group:first-child {
+  margin-top: 0;
+}
+
+.cefran-fieldset--inline .cefran-radio-group:last-child {
+  margin-bottom: 0;
+}
+
+.cefran-fieldset__content {
+  position: relative;
+  margin: 0 0.5rem;
+  width: 100%;
+}
+
+.cefran-fieldset__content .cefran-radio-group:first-child,
+.cefran-fieldset__content .cefran-checkbox-group:first-child {
+  margin-top: -0.75rem;
+}
+
+.cefran-fieldset__content .cefran-radio-group label,
+.cefran-fieldset__content .cefran-checkbox-group label {
+  padding: 0.75rem 0;
+}
+
+.cefran-fieldset__content .cefran-radio-group:not(.cefran-radio-rich) input[type=radio] + label::before,
+.cefran-fieldset__content .cefran-checkbox-group input[type=checkbox] + label::before {
+  top: 0.75rem;
+}
+
+.cefran-fieldset__content + .cefran-error-text,
+.cefran-fieldset__content + .cefran-valid-text,
+.cefran-fieldset__content + .cefran-info-text {
+  margin-top: 0;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cefran-error-text,
+.cefran-valid-text,
+.cefran-info-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.cefran-error-text::before,
+.cefran-valid-text::before,
+.cefran-info-text::before {
+  flex: 0 0 auto;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 1rem;
+  content: "";
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+.cefran-error-text + .cefran-error-text,
+.cefran-error-text + .cefran-valid-text,
+.cefran-error-text + .cefran-info-text,
+.cefran-valid-text + .cefran-error-text,
+.cefran-valid-text + .cefran-valid-text,
+.cefran-valid-text + .cefran-info-text,
+.cefran-info-text + .cefran-error-text,
+.cefran-info-text + .cefran-valid-text,
+.cefran-info-text + .cefran-info-text {
+  margin-top: 0.25rem;
+}
+
+.cefran-error-text::before {
+  -webkit-mask-image: url("../../icons/system/cefran--error-fill.svg");
+  mask-image: url("../../icons/system/cefran--error-fill.svg");
+}
+
+.cefran-valid-text::before {
+  -webkit-mask-image: url("../../icons/system/cefran--success-fill.svg");
+  mask-image: url("../../icons/system/cefran--success-fill.svg");
+}
+
+.cefran-info-text::before {
+  -webkit-mask-image: url("../../icons/system/cefran--info-fill.svg");
+  mask-image: url("../../icons/system/cefran--info-fill.svg");
+}
+
+.cefran-error-text {
+  color: var(--text-default-error);
+}
+
+.cefran-valid-text {
+  color: var(--text-default-success);
+}
+
+.cefran-info-text {
+  color: var(--text-default-info);
+}
+
+.cefran-fieldset--valid .cefran-fieldset__content::before {
+  box-shadow: inset 2px 0 0 0 var(--border-plain-success);
+}
+
+.cefran-fieldset--error .cefran-fieldset__content::before {
+  box-shadow: inset 2px 0 0 0 var(--border-plain-error);
+}
+
+.cefran-fieldset--info .cefran-fieldset__content::before {
+  box-shadow: inset 2px 0 0 0 var(--border-plain-info);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-fieldset__element--inline\@md {
+    flex: 0 0 auto;
+  }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cefran-message--error::before,
+  .cefran-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cefran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-message--valid::before,
+  .cefran-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cefran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-message--info::before,
+  .cefran-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cefran--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-select-group--valid label,
+  .cefran-input-group--valid label,
+  .cefran-range-group--valid label,
+  .cefran-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-select-group--error label,
+  .cefran-input-group--error label,
+  .cefran-range-group--error label,
+  .cefran-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-select-group--info label,
+  .cefran-input-group--info label,
+  .cefran-range-group--info label,
+  .cefran-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-select-group--disabled label,
+  .cefran-select-group--disabled .cefran-hint-text,
+  .cefran-input-group--disabled label,
+  .cefran-input-group--disabled .cefran-hint-text,
+  .cefran-range-group--disabled label,
+  .cefran-range-group--disabled .cefran-hint-text,
+  .cefran-upload-group--disabled label,
+  .cefran-upload-group--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-label {
+    color: #161616;
+  }
+
+  .cefran-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-label--disabled,
+  .cefran-label--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-hint-text,
+  .cefran-message {
+    color: #666;
+  }
+
+  .cefran-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-fieldset:disabled .cefran-label,
+  .cefran-fieldset:disabled .cefran-hint-text,
+  .cefran-fieldset:disabled .cefran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cefran-fieldset input:disabled + label,
+  .cefran-fieldset input:disabled + label .cefran-hint-text,
+  .cefran-fieldset input:disabled + label + .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-fieldset--error,
+  .cefran-fieldset--error .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-fieldset--error .cefran-fieldset__legend,
+  .cefran-fieldset--error .cefran-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-fieldset--valid,
+  .cefran-fieldset--valid .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-fieldset--valid .cefran-fieldset__legend,
+  .cefran-fieldset--valid .cefran-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--info,
+  .cefran-fieldset--info .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-fieldset--info .cefran-fieldset__legend,
+  .cefran-fieldset--info .cefran-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-error-text::before,
+  .cefran-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cefran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-valid-text::before,
+  .cefran-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/cefran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-fieldset--valid .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--error .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cefran-fieldset--info .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+}
+@media print {
+  .cefran-select-group--valid label,
+  .cefran-input-group--valid label,
+  .cefran-range-group--valid label,
+  .cefran-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-select-group--error label,
+  .cefran-input-group--error label,
+  .cefran-range-group--error label,
+  .cefran-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-select-group--info label,
+  .cefran-input-group--info label,
+  .cefran-range-group--info label,
+  .cefran-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-select-group--disabled label,
+  .cefran-select-group--disabled .cefran-hint-text,
+  .cefran-input-group--disabled label,
+  .cefran-input-group--disabled .cefran-hint-text,
+  .cefran-range-group--disabled label,
+  .cefran-range-group--disabled .cefran-hint-text,
+  .cefran-upload-group--disabled label,
+  .cefran-upload-group--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-label {
+    color: #161616;
+  }
+
+  .cefran-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-label--disabled,
+  .cefran-label--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-hint-text,
+  .cefran-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cefran-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-fieldset:disabled .cefran-label,
+  .cefran-fieldset:disabled .cefran-hint-text,
+  .cefran-fieldset:disabled .cefran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cefran-fieldset input:disabled + label,
+  .cefran-fieldset input:disabled + label .cefran-hint-text,
+  .cefran-fieldset input:disabled + label + .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-fieldset__legend {
+    color: #161616;
+  }
+
+  .cefran-fieldset--error,
+  .cefran-fieldset--error .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-fieldset--error .cefran-fieldset__legend,
+  .cefran-fieldset--error .cefran-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-fieldset--valid,
+  .cefran-fieldset--valid .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-fieldset--valid .cefran-fieldset__legend,
+  .cefran-fieldset--valid .cefran-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--info,
+  .cefran-fieldset--info .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-fieldset--info .cefran-fieldset__legend,
+  .cefran-fieldset--info .cefran-label {
+    color: hsl(180, 45%, 43%);
+  }
+}

@@ -1,0 +1,162 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * reset liste à puce
+  */
+  .cefran-nav [href] {
+    text-decoration: none;
+  }
+
+  .cefran-nav ul {
+    list-style-type: none;
+  }
+
+  .cefran-nav ol {
+    list-style-type: none;
+  }
+
+  .cefran-nav ul,
+  .cefran-nav ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /**
+  * reset margin
+  */
+  .cefran-nav__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-mega-menu__category {
+    margin: 0;
+  }
+
+  .cefran-nav__list {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-nav__link,
+  .cefran-nav__btn {
+    color: #161616;
+  }
+
+  .cefran-nav__link[aria-current]:not([aria-current=false]),
+  .cefran-nav__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__link[aria-current]:not([aria-current=false])::before,
+  .cefran-nav__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__btn[aria-expanded=true]:not(:disabled) {
+    background-color: hsl(180, 80%, 93%);
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-nav__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-nav__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-mega-menu__list::before {
+    box-shadow: 0 1px 0 0 #ddd;
+  }
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cefran-nav__link,
+  .cefran-nav__btn {
+    background-color: transparent;
+  }
+
+  .cefran-nav__link:hover,
+  .cefran-nav__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-nav__link:active,
+  .cefran-nav__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
+  /**
+  * Correctif de l'alignement des menus sur la droite
+  */
+  .cefran-nav__item {
+    position: static;
+  }
+
+  .cefran-nav__item--align-right .cefran-collapse {
+    transform: translateX(-100%);
+  }
+
+  /**
+  * Override du reset des marges des ul
+  **/
+  .cefran-menu .cefran-menu__list {
+    margin-bottom: 2rem;
+  }
+
+  .cefran-menu {
+    z-index: 1000;
+  }
+
+  .cefran-menu__list {
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cefran-menu__list > *:first-child,
+  .cefran-menu__list > *:first-child > .cefran-nav__link,
+  .cefran-menu__list > *:hover,
+  .cefran-menu__list > *:hover > .cefran-nav__link,
+  .cefran-menu__list > *:hover + *,
+  .cefran-menu__list > *:hover + * > .cefran-nav__link {
+    box-shadow: none;
+  }
+
+  .cefran-menu .cefran-nav__link {
+    box-shadow: 0 calc(-1rem - 1px) 0 -1rem #ddd;
+  }
+
+  .cefran-mega-menu {
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cefran-mega-menu__category {
+    box-shadow: 0 calc(1rem + 1px) 0 -1rem #ddd;
+  }
+}

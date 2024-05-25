@@ -1,0 +1,1107 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  BUTTON
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-btn {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-action-high-cefran-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-cefran-primary-hover);
+  --active: var(--background-action-high-cefran-primary-active);
+  color: var(--text-inverted-cefran-primary);
+}
+
+.cefran-btn::before,
+.cefran-btn::after {
+  display: block;
+}
+
+.cefran-btn[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--align-on-content {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.cefran-btn[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cefran-btn[class^=cefran-icon-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn[class^=cefran-fi-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-])::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--align-on-content[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--align-on-content[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn--align-on-content[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--align-on-content[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--icon-left[class^=cefran-icon-]::before,
+.cefran-btn--icon-left[class*=" cefran-icon-"]::before,
+.cefran-btn--icon-left[class^=cefran-fi-]::before,
+.cefran-btn--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  margin-left: -0.875rem;
+  margin-right: -1rem;
+}
+
+.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--icon-right[class^=cefran-icon-]::after,
+.cefran-btn--icon-right[class*=" cefran-icon-"]::after,
+.cefran-btn--icon-right[class^=cefran-fi-]::after,
+.cefran-btn--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--icon-right[class^=cefran-icon-]::before,
+.cefran-btn--icon-right[class*=" cefran-icon-"]::before,
+.cefran-btn--icon-right[class^=cefran-fi-]::before,
+.cefran-btn--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  margin-left: -1rem;
+  margin-right: -0.875rem;
+}
+
+.cefran-btn--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.cefran-btn--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--sm.cefran-btn--align-on-content {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.cefran-btn--sm[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cefran-btn--sm[class^=cefran-icon-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--sm[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--sm[class^=cefran-fi-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--sm[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-])::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--sm.cefran-btn--align-on-content[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm.cefran-btn--align-on-content[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm.cefran-btn--align-on-content[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--sm.cefran-btn--align-on-content[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cefran-btn--sm.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--sm.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--sm.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--sm.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--sm.cefran-btn--icon-left[class^=cefran-icon-]::before,
+.cefran-btn--sm.cefran-btn--icon-left[class*=" cefran-icon-"]::before,
+.cefran-btn--sm.cefran-btn--icon-left[class^=cefran-fi-]::before,
+.cefran-btn--sm.cefran-btn--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  margin-left: -0.625rem;
+  margin-right: -0.75rem;
+}
+
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-icon-]::after,
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-icon-"]::after,
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-fi-]::after,
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-icon-]::before,
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-icon-"]::before,
+.cefran-btn--sm.cefran-btn--icon-right[class^=cefran-fi-]::before,
+.cefran-btn--sm.cefran-btn--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--sm.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  margin-left: -0.75rem;
+  margin-right: -0.625rem;
+}
+
+.cefran-btn--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.cefran-btn--lg[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--lg[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--align-on-content {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.cefran-btn--lg[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cefran-btn--lg[class^=cefran-icon-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--lg[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--lg[class^=cefran-fi-]:not([class*=cefran-btn--icon-])::before,
+.cefran-btn--lg[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-])::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--align-on-content[class^=cefran-icon-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg.cefran-btn--align-on-content[class*=" cefran-icon-"]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg.cefran-btn--align-on-content[class^=cefran-fi-]:not([class*=cefran-btn--icon-]),
+.cefran-btn--lg.cefran-btn--align-on-content[class*=" cefran-fi-"]:not([class*=cefran-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--lg.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--lg.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--lg.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--lg.cefran-btn--icon-left[class^=cefran-icon-]::before,
+.cefran-btn--lg.cefran-btn--icon-left[class*=" cefran-icon-"]::before,
+.cefran-btn--lg.cefran-btn--icon-left[class^=cefran-fi-]::before,
+.cefran-btn--lg.cefran-btn--icon-left[class*=" cefran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-icon-],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-icon-"],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-left[class^=cefran-fi-],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-left[class*=" cefran-fi-"] {
+  margin-left: -1.3125rem;
+  margin-right: -1.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-icon-]::after,
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-icon-"]::after,
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-fi-]::after,
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-icon-]::before,
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-icon-"]::before,
+.cefran-btn--lg.cefran-btn--icon-right[class^=cefran-fi-]::before,
+.cefran-btn--lg.cefran-btn--icon-right[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-icon-],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-icon-"],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-right[class^=cefran-fi-],
+.cefran-btn--lg.cefran-btn--align-on-content.cefran-btn--icon-right[class*=" cefran-fi-"] {
+  margin-left: -1.5rem;
+  margin-right: -1.3125rem;
+}
+
+.cefran-btns-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  /**
+  * cefran-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * cefran-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  */
+
+  /**
+  * cefran-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  */
+
+  /**
+  * cefran-btns-group--right : aligne les boutons sur la droite
+  */
+
+  /**
+  * cefran-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * cefran-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * cefran-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  */
+
+  /**
+  * cefran-btns-group--sm : Fixe les boutons à la taille SM
+  */
+
+  /**
+  * cefran-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  */
+
+  /**
+  * cefran-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  */
+}
+
+.cefran-btns-group > li,
+.cefran-btns-group > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cefran-btns-group .cefran-btn {
+  width: calc(100% - 1rem);
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
+}
+
+.cefran-btns-group--inline .cefran-btn {
+  width: auto;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group--inline > li {
+  display: inline-flex;
+  max-width: 100%;
+  width: auto;
+}
+
+.cefran-btns-group--inline.cefran-btns-group--right.cefran-btns-group--inline-reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.cefran-btns-group--left,
+.cefran-btns-group--left li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.cefran-btns-group--right,
+.cefran-btns-group--right li {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.cefran-btns-group--center,
+.cefran-btns-group--center li {
+  justify-content: center;
+  text-align: center;
+}
+
+.cefran-btns-group--between,
+.cefran-btns-group--between li {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cefran-btns-group--equisized {
+  --equisized-width: auto;
+}
+
+.cefran-btns-group--equisized .cefran-btn {
+  justify-content: center;
+  width: var(--equisized-width);
+}
+
+.cefran-btns-group--sm .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"]) {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::after,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::after,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::after,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--sm.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"]) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::after,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::after,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::after,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg).cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-btns-group--lg .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"]) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-left .cefran-btn[class*=" cefran-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-],
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"],
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-],
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::after,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::after,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::after,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-icon-]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-icon-"]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class^=cefran-fi-]::before,
+.cefran-btns-group--lg.cefran-btns-group--icon-right .cefran-btn[class*=" cefran-fi-"]::before {
+  content: none;
+}
+
+.cefran-fieldset__element > .cefran-btns-group {
+  margin-bottom: -1rem;
+}
+
+.cefran-btn--close {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.cefran-btn--close::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  content: "";
+}
+
+.cefran-btn--close::before {
+  content: none;
+}
+
+.cefran-btn--tooltip {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cefran-btn--tooltip::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/question-line.svg");
+  mask-image: url("../../icons/system/question-line.svg");
+  content: "";
+}
+
+.cefran-btn--fullscreen {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--fullscreen::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/media/fullscreen-line.svg");
+  mask-image: url("../../icons/media/fullscreen-line.svg");
+  content: "";
+}
+
+.cefran-btn--fullscreen::before {
+  content: none;
+}
+
+.cefran-btn--display {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--display::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/cefran--theme-fill.svg");
+  mask-image: url("../../icons/system/cefran--theme-fill.svg");
+  content: "";
+}
+
+.cefran-btn--account {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--account::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../icons/user/account-circle-fill.svg");
+  content: "";
+}
+
+.cefran-btn--team {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--team::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/team-line.svg");
+  mask-image: url("../../icons/user/team-line.svg");
+  content: "";
+}
+
+.cefran-btn--briefcase {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.cefran-btn--briefcase::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/business/briefcase-fill.svg");
+  mask-image: url("../../icons/business/briefcase-fill.svg");
+  content: "";
+}
+
+.cefran-btn:disabled,
+a.cefran-btn:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.cefran-btn--secondary {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cefran-primary);
+  box-shadow: inset 0 0 0 1px var(--border-action-high-cefran-primary);
+}
+
+.cefran-btn--secondary:disabled,
+a.cefran-btn--secondary:not([href]) {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.cefran-btn--tertiary,
+.cefran-btn--account {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cefran-primary);
+  box-shadow: inset 0 0 0 1px var(--border-default-grey);
+}
+
+.cefran-btn--tertiary:disabled,
+a.cefran-btn--tertiary:not([href]),
+a.cefran-btn--account:not([href]),
+.cefran-btn--account:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.cefran-btn--tertiary-no-outline,
+.cefran-btn--close,
+.cefran-btn--display,
+.cefran-btn--fullscreen,
+.cefran-btn--tooltip,
+.cefran-btn--briefcase,
+.cefran-btn--team {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-cefran-primary);
+}
+
+.cefran-btn--tertiary-no-outline:disabled,
+a.cefran-btn--tertiary-no-outline:not([href]),
+a.cefran-btn--close:not([href]),
+a.cefran-btn--display:not([href]),
+a.cefran-btn--fullscreen:not([href]),
+a.cefran-btn--tooltip:not([href]),
+a.cefran-btn--briefcase:not([href]),
+a.cefran-btn--team:not([href]),
+.cefran-btn--close:disabled,
+.cefran-btn--display:disabled,
+.cefran-btn--fullscreen:disabled,
+.cefran-btn--tooltip:disabled,
+.cefran-btn--briefcase:disabled,
+.cefran-btn--team:disabled {
+  color: var(--text-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+  .cefran-btns-group--inline-sm .cefran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cefran-btns-group--inline-sm > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cefran-btns-group--inline-sm.cefran-btns-group--right.cefran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-btns-group--inline-md .cefran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cefran-btns-group--inline-md > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cefran-btns-group--inline-md.cefran-btns-group--right.cefran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .cefran-btns-group--inline-lg .cefran-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .cefran-btns-group--inline-lg > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .cefran-btns-group--inline-lg.cefran-btns-group--right.cefran-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

@@ -1,0 +1,18 @@
+{% load cefran_tags %}
+<div class="cefran-callout {% if self.icon_class %}{{ self.icon_class }}{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+  {% if self.title %}
+    <{{ self.heading_tag | default:"p" }} class="cefran-callout__title">
+    {{ self.title }}
+    </{{ self.heading_tag | default:"p" }}>
+  {% endif %}
+  <p class="cefran-callout__text">
+    {{ self.text }}
+  </p>
+  {% if self.button %}
+    {% if self.button.onclick %}
+      {% cefran_button self.button %}
+    {% elif self.button.url %}
+      <a href="{{ self.button.url }}" class="cefran-btn">{{ self.button.label }}</a>
+    {% endif %}
+  {% endif %}
+</div>

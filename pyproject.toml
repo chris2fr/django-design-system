@@ -1,9 +1,9 @@
 [tool.poetry]
 authors = ["Chris Mann <chris@mann.fr>"]
-description = "Render Fabrique FASTOCHE into a generic Django app"
+description = "Render Fabrique CEFRAN into a generic Django app"
 license = "MIT"
-name = "django-fastoche"
-version = "0.1.5"
+name = "django-cefran"
+version = "0.0.1"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Web Environment",
@@ -26,16 +26,16 @@ classifiers = [
   "Topic :: Utilities",
 ]
 documentation = "https://"
-homepage = "https://github.com/chris2fr/django-fastoche"
+homepage = "https://github.com/chris2fr/django-cefran"
 keywords = ["django"]
 readme = "README.rst"
-repository = "https://github.com/chris2fr/django-fastoche"
+repository = "https://github.com/chris2fr/django-cefran"
 
 packages = [
-  {include = "django_fastoche"},
+  {include = "django_cefran"},
 ]
 
-include = ["LICENSE", "README.rst", "django_django_fastoche/static/django_fastoche/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "django_django_cefran/static/django_cefran/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

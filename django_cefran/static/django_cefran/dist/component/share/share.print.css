@@ -1,0 +1,51 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-share .cefran-btn {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-share .cefran-btn:disabled,
+  .cefran-share a.cefran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-share__text {
+    color: #666;
+  }
+
+  .cefran-share {
+    display: none;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .cefran-share .cefran-btn {
+    background-color: transparent;
+  }
+
+  .cefran-share .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-share .cefran-btn:disabled,
+  .cefran-share a.cefran-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .cefran-share .cefran-btn:disabled:hover,
+  .cefran-share a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share .cefran-btn:disabled:active,
+  .cefran-share a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

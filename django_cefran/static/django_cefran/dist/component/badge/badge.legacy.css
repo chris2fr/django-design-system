@@ -1,0 +1,195 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-badge::before,
+  .cefran-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-badge.cefran-badge--info::before,
+  .cefran-badge.cefran-badge--info::after,
+  .cefran-badge--sm.cefran-badge--info::before,
+  .cefran-badge--sm.cefran-badge--info::after {
+    background-image: url("../../icons/system/cefran--info-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--success::before,
+  .cefran-badge.cefran-badge--success::after,
+  .cefran-badge--sm.cefran-badge--success::before,
+  .cefran-badge--sm.cefran-badge--success::after {
+    background-image: url("../../icons/system/cefran--success-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--error::before,
+  .cefran-badge.cefran-badge--error::after,
+  .cefran-badge--sm.cefran-badge--error::before,
+  .cefran-badge--sm.cefran-badge--error::after {
+    background-image: url("../../icons/system/cefran--error-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--warning::before,
+  .cefran-badge.cefran-badge--warning::after,
+  .cefran-badge--sm.cefran-badge--warning::before,
+  .cefran-badge--sm.cefran-badge--warning::after {
+    background-image: url("../../icons/system/cefran--warning-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--new::before,
+  .cefran-badge.cefran-badge--new::after,
+  .cefran-badge--sm.cefran-badge--new::before,
+  .cefran-badge--sm.cefran-badge--new::after {
+    background-image: url("../../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.cefran-badges-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-badges-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-badges-group,
+  ol.cefran-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .cefran-badge--info {
+    color: hsl(180, 45%, 43%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--error {
+    color: hsl(0, 45%, 43%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--success {
+    color: hsl(90, 45%, 43%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--warning {
+    color: hsl(270, 45%, 43%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--new {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+}

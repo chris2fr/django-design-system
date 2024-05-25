@@ -1,0 +1,21 @@
+{% load widget_tweaks cefran_tags %}
+<div class="cefran-checkbox-group{% if field.errors %} cefran-checkbox-group--error{% endif %}{% if field.field.disabled %} cefran-input-group--disabled{% endif %} cefran-mb-2w">
+  {% if field.errors %}
+    {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
+      {{ field|cefran_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+    {% endwith %}
+  {% else %}
+    {{ field|cefran_input_class_attr|attr:"type:checkbox" }}
+  {% endif %}
+  <label for="{{ field.id_for_label }}" class="cefran-label">
+    {{ field.label_tag }}
+    {% if field.help_text %}
+      <span class="cefran-hint-text">{{ field.help_text }}</span>
+    {% endif %}
+  </label>
+  {% if field.errors %}
+    <div id="{{ field.auto_id }}-desc-error">
+      {{ field.errors }}
+    </div>
+  {% endif %}
+</div>

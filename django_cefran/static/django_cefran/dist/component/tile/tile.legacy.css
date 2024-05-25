@@ -1,0 +1,156 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur du texte dans la tuile
+  */
+  .cefran-tile--download .cefran-tile__body,
+  .cefran-tile--horizontal .cefran-tile__body {
+    flex-basis: 100%;
+  }
+
+  .cefran-tile__body,
+  .cefran-tile__body > * {
+    max-width: 100%;
+  }
+
+  .cefran-tile__title {
+    margin: 0 0 0.5rem;
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cefran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile__desc {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .cefran-tile__start,
+  .cefran-tile__detail {
+    max-width: 100%;
+  }
+
+  .cefran-tile--download .cefran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .cefran-tile.cefran-enlarge-link .cefran-tile__title a {
+    text-decoration: none;
+  }
+
+  .cefran-tile.cefran-enlarge-link .cefran-tile__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .cefran-tile--sm .cefran-tile__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile {
+    background-color: #fff;
+  }
+
+  .cefran-tile:not(.cefran-tile--no-border):not(.cefran-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cefran-tile--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .cefran-tile--shadow.cefran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cefran-tile--no-background {
+    background-color: transparent;
+  }
+
+  .cefran-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-tile__title:disabled,
+  a.cefran-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cefran-tile__title a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .cefran-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .cefran-tile--download.cefran-tile--vertical\@md .cefran-tile__body,
+  .cefran-tile--horizontal.cefran-tile--vertical\@md .cefran-tile__body {
+    flex-basis: auto;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .cefran-tile--download.cefran-tile--vertical\@lg .cefran-tile__body,
+  .cefran-tile--horizontal.cefran-tile--vertical\@lg .cefran-tile__body {
+    flex-basis: auto;
+  }
+}

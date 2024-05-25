@@ -1,0 +1,261 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  HIGHLIGHT
+\* ˍˍˍˍˍˍˍˍˍ */
+.cefran-highlight {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-size: 0.25rem 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-cefran-primary), var(--border-default-cefran-primary));
+}
+
+.cefran-highlight--cefran-color3 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color3), var(--border-default-cefran-color3));
+}
+
+.cefran-highlight--cefran-color4 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color4), var(--border-default-cefran-color4));
+}
+
+.cefran-highlight--cefran-color5 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color5), var(--border-default-cefran-color5));
+}
+
+.cefran-highlight--cefran-color6 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color6), var(--border-default-cefran-color6));
+}
+
+.cefran-highlight--cefran-color7 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color7), var(--border-default-cefran-color7));
+}
+
+.cefran-highlight--cefran-color8 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color8), var(--border-default-cefran-color8));
+}
+
+.cefran-highlight--cefran-color9 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color9), var(--border-default-cefran-color9));
+}
+
+.cefran-highlight--cefran-color10 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color10), var(--border-default-cefran-color10));
+}
+
+.cefran-highlight--cefran-color11 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color11), var(--border-default-cefran-color11));
+}
+
+.cefran-highlight--cefran-color12 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color12), var(--border-default-cefran-color12));
+}
+
+.cefran-highlight--cefran-color13 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color13), var(--border-default-cefran-color13));
+}
+
+.cefran-highlight--cefran-color14 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color14), var(--border-default-cefran-color14));
+}
+
+.cefran-highlight--cefran-color15 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color15), var(--border-default-cefran-color15));
+}
+
+.cefran-highlight--cefran-color16 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color16), var(--border-default-cefran-color16));
+}
+
+.cefran-highlight--cefran-color17 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color17), var(--border-default-cefran-color17));
+}
+
+.cefran-highlight--cefran-color18 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color18), var(--border-default-cefran-color18));
+}
+
+.cefran-highlight--cefran-color19 {
+  background-image: linear-gradient(0deg, var(--border-default-cefran-color19), var(--border-default-cefran-color19));
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .cefran-highlight {
+    padding-left: 2.25rem;
+    margin-left: 2rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cefran-highlight--cefran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+}
+
+@media print {
+  .cefran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cefran-highlight--cefran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+}

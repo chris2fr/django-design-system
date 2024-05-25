@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # clean the dist directory
-cd django_fastoche/static/fastoche/
+cd django_cefran/static/cefran/
 rm dist/* -rf
 
 # Get the latest release
 latest_release="$(
-curl -s https://api.github.com/repos/GouvernementFR/fastoche/releases/latest \
+curl -s https://api.github.com/repos/GouvernementFR/cefran/releases/latest \
 | grep browser_download_url \
 | sed -re 's/.*: "([^"]+)".*/\1/' \
 )"

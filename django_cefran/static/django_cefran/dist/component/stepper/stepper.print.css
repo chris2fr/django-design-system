@@ -1,0 +1,26 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-stepper__title {
+    color: #161616;
+  }
+
+  .cefran-stepper__state {
+    color: #666;
+  }
+
+  .cefran-stepper__details {
+    color: #666;
+  }
+
+  .cefran-stepper__steps {
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cefran-stepper__state,
+  .cefran-stepper__details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

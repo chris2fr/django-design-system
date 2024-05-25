@@ -1,0 +1,76 @@
+{% load static i18n static %}
+<dialog id="cefran-theme-modal"
+        class="cefran-modal"
+        aria-labelledby="cefran-theme-modal-title">
+  <div class="cefran-container cefran-container--fluid facile-container-md">
+    <div class="cefran-grid-row cefran-grid-row--center">
+      <div class="cefran-col-12 cefran-col-md-6 cefran-col-lg-4">
+        <div class="cefran-modal__body">
+          <div class="cefran-modal__header">
+            <button class="cefran-btn--close cefran-btn"
+                    aria-describedby="cefran-theme-modal-title"
+                    aria-controls="cefran-theme-modal">
+              {% translate "Close" %}
+            </button>
+          </div>
+          <div class="cefran-modal__content">
+            <h1 id="cefran-theme-modal-title" class="cefran-modal__title">
+              {% translate "Display settings" %}
+            </h1>
+            <div id="cefran-display" class="cefran-form-group cefran-display">
+              <div class="cefran-form-group">
+                <fieldset class="cefran-fieldset">
+                  <legend class="cefran-fieldset__legend facile-text--regular" id="-legend">
+                    {% translate "Choose a theme to customize the appearance of the site." %}
+                  </legend>
+                  <div class="cefran-fieldset__content">
+                    <div class="cefran-radio-group cefran-radio-rich">
+                      <input value="light"
+                             type="radio"
+                             id="cefran-radios-theme-light"
+                             name="cefran-radios-theme" />
+                      <label class="cefran-label" for="cefran-radios-theme-light">
+                        {% translate "Light theme" %}
+                      </label>
+                      <div class="cefran-radio-rich__img" data-cefran-inject-svg>
+                        <img src="{% static 'django_cefran/dist/artwork/light.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="cefran-radio-group cefran-radio-rich">
+                      <input value="dark"
+                             type="radio"
+                             id="cefran-radios-theme-dark"
+                             name="cefran-radios-theme" />
+                      <label class="cefran-label" for="cefran-radios-theme-dark">
+                        {% translate "Dark theme" %}
+                      </label>
+                      <div class="cefran-radio-rich__img" data-cefran-inject-svg>
+                        <img src="{% static 'django_cefran/dist/artwork/dark.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="cefran-radio-group cefran-radio-rich">
+                      <input value="system"
+                             type="radio"
+                             id="cefran-radios-theme-system"
+                             name="cefran-radios-theme" />
+                      <label class="cefran-label" for="cefran-radios-theme-system">
+                        {% translate "System" %}
+                        <span class="cefran-hint-text">{% translate "Uses system settings." %}</span>
+                      </label>
+                      <div class="cefran-radio-rich__img" data-cefran-inject-svg>
+                        <img src="{% static 'django_cefran/dist/artwork/system.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

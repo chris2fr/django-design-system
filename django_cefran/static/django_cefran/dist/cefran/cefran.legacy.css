@@ -1,0 +1,5552 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+.cefran-sidemenu {
+  /*
+  @include elevation.elevate(raised, (legacy:$legacy));
+  @include respond-from(md) {
+    @include elevation.drop((legacy:$legacy));
+  }
+   */
+}
+
+.cefran-tabs {
+  /**
+  * Tab button
+  */
+}
+
+.cefran-table {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--cefran-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.cefran-table--bordered tbody tr {
+  /* Style bordered, enleve le style even/odd  */
+}
+
+.cefran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), var(--data-uri-svg);
+}
+
+.cefran-checkbox-group input[type=checkbox]:checked + label::before {
+  background-color: var(--background-active-cefran-primary);
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-cefran-primary) 4px, var(--border-active-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cefran-primary), var(--border-active-cefran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-cefran-primary) 4px, var(--border-active-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cefran-primary), var(--border-active-cefran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-cefran-primary) 4px, var(--border-active-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cefran-primary), var(--border-active-cefran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-cefran-primary) 4px, var(--border-active-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-active-cefran-primary), var(--border-active-cefran-primary)), var(--data-uri-svg);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cefran-theme=dark] .cefran-checkbox-group input[type=checkbox]:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cefran-checkbox-group input[type=checkbox]:disabled + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--background-disabled-grey) 4px, var(--background-disabled-grey) 5px, transparent 6px), linear-gradient(var(--background-disabled-grey), var(--background-disabled-grey)), var(--data-uri-svg);
+}
+
+.cefran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  background-color: var(--background-disabled-grey);
+
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+:root[data-cefran-theme=dark] .cefran-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+}
+
+.cefran-checkbox-group--error input[type=checkbox] + label::before,
+.cefran-checkbox-group--error input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cefran-checkbox-group--valid input[type=checkbox] + label::before,
+.cefran-checkbox-group--valid input[type=checkbox]:checked + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+
+.cefran-fieldset--error .cefran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-error) 4px, var(--border-plain-error) 5px, transparent 6px), linear-gradient(var(--border-plain-error), var(--border-plain-error)), var(--data-uri-svg);
+}
+
+.cefran-fieldset--valid .cefran-checkbox-group input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-plain-success) 4px, var(--border-plain-success) 5px, transparent 6px), linear-gradient(var(--border-plain-success), var(--border-plain-success)), var(--data-uri-svg);
+}
+
+.cefran-select {
+  /**
+  * Mixin pour gérer l'état disabled
+  */
+
+  /**
+  * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+  * sur les navigateurs webkit.
+  */
+}
+
+.cefran-translate .cefran-translate__btn[aria-expanded=true]:hover {
+  background-color: var(--hover-tint);
+}
+
+.cefran-translate .cefran-translate__btn[aria-expanded=true]:active {
+  background-color: var(--active-tint);
+}
+
+.cefran-input:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+}
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+.cefran-password .cefran-password__checkbox input[type=checkbox] + label::before {
+  background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-action-high-cefran-primary) 4px, var(--border-action-high-cefran-primary) 5px, transparent 6px), linear-gradient(var(--border-action-high-cefran-primary), var(--border-action-high-cefran-primary)), var(--data-uri-svg);
+}
+
+.cefran-header__service {
+  text-align: left; /* chris2fr */
+}
+
+.cefran-header .cefran-header__menu .cefran-container {
+  display: grid; /* chris2fr */
+  grid-template-columns: 1fr;
+  grid-template-areas: "l" "h" "m" "t";
+}
+
+.cefran-header__menu-logo {
+  grid-area: l;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+  .cefran-header .cefran-header__menu .cefran-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "l m" "h h";
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+  .cefran-enlarge-link {
+    background-color: transparent;
+  }
+
+  .cefran-enlarge-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-enlarge-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]::-ms-fill-lower {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]:disabled::-ms-fill-lower {
+    background-color: #e5e5e5;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double {
+    background-image: linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 100%);
+  }
+
+  .cefran-pagination__link {
+    background-color: transparent;
+  }
+
+  .cefran-pagination__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-pagination__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-nav__link,
+  .cefran-nav__btn {
+    background-color: transparent;
+  }
+
+  .cefran-nav__link:hover,
+  .cefran-nav__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-nav__link:active,
+  .cefran-nav__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-enlarge-link [href] {
+    text-decoration: none;
+  }
+
+  .cefran-raw-link[href]::after,
+  .cefran-raw-link [href]::after {
+    content: none;
+  }
+
+  [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    vertical-align: sub;
+  }
+
+  .cefran-responsive-vid::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.5rem;
+    color: #161616;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  [class^=cefran-icon-]::before,
+  [class*=" cefran-icon-"]::before,
+  [class^=cefran-fi-]::before,
+  [class*=" cefran-fi-"]::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-icon--xs::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-icon--sm::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-icon--md::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-icon--lg::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  body {
+    background-color: #fff;
+    color: #3a3a3a;
+  }
+
+  a:not([href]),
+  button:disabled,
+  input:disabled,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
+  textarea:disabled,
+  video:not([href]),
+  audio:not([href]) {
+    color: #929292;
+  }
+
+  .cefran-artwork-decorative {
+    fill: hsl(180, 80%, 96%);
+  }
+
+  .cefran-artwork-minor {
+    fill: hsl(270, 85%, 25%);
+  }
+
+  .cefran-artwork-major {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork-background {
+    fill: #f6f6f6;
+  }
+
+  .cefran-artwork-motif {
+    fill: #e5e5e5;
+  }
+
+  .cefran-artwork--cefran-color3 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color4 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color5 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color6 .cefran-artwork-minor {
+    fill: hsl(290, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color7 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color8 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color9 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color10 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color11 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color12 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color13 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color14 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color15 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color16 .cefran-artwork-minor {
+    fill: hsl(90, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color17 .cefran-artwork-minor {
+    fill: hsl(180, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color18 .cefran-artwork-minor {
+    fill: hsl(270, 75%, 25%);
+  }
+
+  .cefran-artwork--cefran-color19 .cefran-artwork-minor {
+    fill: hsl(0, 75%, 25%);
+  }
+
+  [disabled] .cefran-artwork * {
+    fill: #929292;
+  }
+
+  .cefran-h6,
+  .cefran-h5,
+  .cefran-h4,
+  .cefran-h3,
+  .cefran-h2,
+  .cefran-h1,
+  .cefran-display-xs,
+  .cefran-display-sm,
+  .cefran-display-md,
+  .cefran-display-lg,
+  .cefran-display-xl {
+    color: #161616;
+  }
+
+  hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-hr-or::before,
+  .cefran-hr-or::after {
+    background-color: #ddd;
+  }
+
+  .cefran-hr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-range__output,
+  .cefran-range__min,
+  .cefran-range__max {
+    min-width: 1.5rem;
+  }
+
+  .cefran-range input[type=range] {
+    padding: 0;
+  }
+
+  .cefran-range[data-cefran-js-range] {
+    justify-content: flex-start;
+  }
+
+  .cefran-range[data-cefran-js-range]::after {
+    content: none;
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-range[data-cefran-js-range] .cefran-range__max {
+    margin-left: auto;
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range] {
+    margin-top: -0.25rem;
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]::-ms-track {
+    height: 0.75rem;
+    background: transparent;
+    border-color: transparent;
+    border-width: 0.625rem 0;
+    color: transparent;
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]::-ms-fill-lower {
+    height: 0.75rem;
+    border-radius: 0.375rem;
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]::-ms-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    z-index: 500;
+    background-color: #fff;
+    border: 1px solid hsl(180, 75%, 25%);
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]:not(:only-of-type) {
+    pointer-events: auto;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double {
+    background-position-y: 1.625rem;
+    background-repeat: no-repeat;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double .cefran-range__output {
+    min-width: 3rem;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double input[type=range] {
+    width: calc(100% - 1.5rem);
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double input[type=range]::-ms-fill-lower {
+    background-color: transparent;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double input[type=range]:nth-of-type(1) {
+    margin-right: 1.5rem;
+    z-index: 2;
+  }
+
+  .cefran-range[data-cefran-js-range].cefran-range--double input[type=range]:nth-of-type(2) {
+    left: 1.5rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range] .cefran-range__output,
+  .cefran-range--sm[data-cefran-js-range] .cefran-range__min,
+  .cefran-range--sm[data-cefran-js-range] .cefran-range__max {
+    min-width: 1rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range] input[type=range]::-ms-track {
+    height: 0.5rem;
+    border-width: 0.5rem 0;
+  }
+
+  .cefran-range--sm[data-cefran-js-range] input[type=range]::-ms-fill-lower {
+    height: 0.5rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range] input[type=range]::-ms-thumb {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range].cefran-range--double {
+    background-position-y: 1.5rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range].cefran-range--double .cefran-range__output {
+    min-width: 2rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range].cefran-range--double input[type=range] {
+    width: calc(100% - 1rem);
+  }
+
+  .cefran-range--sm[data-cefran-js-range].cefran-range--double input[type=range]:nth-of-type(1) {
+    margin-right: 1rem;
+  }
+
+  .cefran-range--sm[data-cefran-js-range].cefran-range--double input[type=range]:nth-of-type(2) {
+    left: 1rem;
+  }
+
+  .cefran-range[data-cefran-js-range]::before {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cefran-range[data-cefran-js-range] input[type=range]:disabled::-ms-thumb {
+    border: 1px solid #e5e5e5;
+  }
+
+  .cefran-range__output {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-range__min,
+  .cefran-range__max {
+    color: #666;
+  }
+
+  .cefran-range--step[data-cefran-js-range]::before {
+    background-image: radial-gradient(circle at 2px 50%, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 1px, transparent 1px);
+  }
+
+  .cefran-range--step[data-cefran-js-range]::after {
+    background-image: radial-gradient(circle at 2px 50%, hsl(180, 80%, 93%) 0, hsl(180, 80%, 93%) 2px, transparent 2px);
+    box-shadow: inset 10px 0 0 0 hsl(180, 75%, 25%), inset -10px 0 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cefran-range--step.cefran-range--sm[data-cefran-js-range]::after {
+    box-shadow: inset 6px 0 0 0 hsl(180, 75%, 25%), inset -6px 0 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cefran-range-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-range-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-range-group--disabled .cefran-range[data-cefran-js-range]::before {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-range-group--disabled .cefran-range[data-cefran-js-range]::after {
+    background-color: #e5e5e5;
+  }
+
+  .cefran-range-group--disabled .cefran-range--step[data-cefran-js-range]::before {
+    background-image: radial-gradient(circle at 2px 50%, #e5e5e5 0, #e5e5e5 1px, transparent 1px);
+  }
+
+  .cefran-range-group--disabled .cefran-range--step[data-cefran-js-range]::after {
+    background-image: radial-gradient(circle at 2px 50%, #fff 0, #fff 2px, transparent 2px);
+  }
+
+  .cefran-range-group--disabled .cefran-range__output,
+  .cefran-range-group--disabled .cefran-range__min,
+  .cefran-range-group--disabled .cefran-range__max {
+    color: #929292;
+  }
+
+  /**
+  * Reset liste à puce
+  */
+  .cefran-accordions-group ul {
+    list-style-type: none;
+  }
+
+  .cefran-accordions-group ol {
+    list-style-type: none;
+  }
+
+  .cefran-accordions-group ul,
+  .cefran-accordions-group ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-accordion__btn::before,
+  .cefran-accordion__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-accordion__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  .cefran-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .cefran-accordion__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-accordion__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-badge::before,
+  .cefran-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-badge.cefran-badge--info::before,
+  .cefran-badge.cefran-badge--info::after,
+  .cefran-badge--sm.cefran-badge--info::before,
+  .cefran-badge--sm.cefran-badge--info::after {
+    background-image: url("../icons/system/cefran--info-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--success::before,
+  .cefran-badge.cefran-badge--success::after,
+  .cefran-badge--sm.cefran-badge--success::before,
+  .cefran-badge--sm.cefran-badge--success::after {
+    background-image: url("../icons/system/cefran--success-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--error::before,
+  .cefran-badge.cefran-badge--error::after,
+  .cefran-badge--sm.cefran-badge--error::before,
+  .cefran-badge--sm.cefran-badge--error::after {
+    background-image: url("../icons/system/cefran--error-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--warning::before,
+  .cefran-badge.cefran-badge--warning::after,
+  .cefran-badge--sm.cefran-badge--warning::before,
+  .cefran-badge--sm.cefran-badge--warning::after {
+    background-image: url("../icons/system/cefran--warning-fill.svg");
+  }
+
+  .cefran-badge.cefran-badge--new::before,
+  .cefran-badge.cefran-badge--new::after,
+  .cefran-badge--sm.cefran-badge--new::before,
+  .cefran-badge--sm.cefran-badge--new::after {
+    background-image: url("../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.cefran-badges-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-badges-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-badges-group,
+  ol.cefran-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .cefran-badge--info {
+    color: hsl(180, 45%, 43%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--error {
+    color: hsl(0, 45%, 43%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--success {
+    color: hsl(90, 45%, 43%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--warning {
+    color: hsl(270, 45%, 43%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--new {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-badge--cefran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-logo {
+    color: #000;
+  }
+
+  .cefran-btn::before,
+  .cefran-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn[href] {
+    text-decoration: none;
+  }
+
+  .cefran-btn[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-btn--sm::before,
+  .cefran-btn--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-btn--sm[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--sm[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--sm[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--sm[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--sm[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--sm[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--sm[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--sm[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--lg::before,
+  .cefran-btn--lg::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-btn--lg[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--lg[class^=cefran-icon-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--lg[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--lg[class*=" cefran-icon-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--lg[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--lg[class^=cefran-fi-]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after,
+  .cefran-btn--lg[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::before,
+  .cefran-btn--lg[class*=" cefran-fi-"]:not([class^=cefran-btn--icon-]):not([class*=" cefran-btn--icon-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-btn--close::before,
+  .cefran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--tooltip::before,
+  .cefran-btn--tooltip::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/question-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--fullscreen::before,
+  .cefran-btn--fullscreen::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/media/fullscreen-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--display::before,
+  .cefran-btn--display::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--theme-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--briefcase::before,
+  .cefran-btn--briefcase::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/business/briefcase-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--account::before,
+  .cefran-btn--account::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/user/account-circle-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btn--team::before,
+  .cefran-btn--team::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/user/team-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  ul.cefran-btns-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-btns-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-btns-group,
+  ol.cefran-btns-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::after,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::after,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::after,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before,
+  .cefran-btns-group--sm:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::after,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::after,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::after,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before,
+  .cefran-btns-group--lg:not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cefran-btn:disabled,
+  a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-btn--secondary {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cefran-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--secondary:disabled,
+  a.cefran-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-btn--secondary:disabled:hover,
+  a.cefran-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--secondary:disabled:active,
+  a.cefran-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary,
+  .cefran-btn--account {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-btn--tertiary:hover,
+  .cefran-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary:active,
+  .cefran-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary:disabled,
+  a.cefran-btn--tertiary:not([href]),
+  a.cefran-btn--account:not([href]),
+  .cefran-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary:disabled:hover,
+  a.cefran-btn--tertiary:not([href]):hover,
+  a.cefran-btn--account:not([href]):hover,
+  .cefran-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary:disabled:active,
+  a.cefran-btn--tertiary:not([href]):active,
+  a.cefran-btn--account:not([href]):active,
+  .cefran-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary-no-outline,
+  .cefran-btn--close,
+  .cefran-btn--display,
+  .cefran-btn--fullscreen,
+  .cefran-btn--tooltip,
+  .cefran-btn--briefcase,
+  .cefran-btn--team {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-btn--tertiary-no-outline:hover,
+  .cefran-btn--close:hover,
+  .cefran-btn--display:hover,
+  .cefran-btn--fullscreen:hover,
+  .cefran-btn--tooltip:hover,
+  .cefran-btn--briefcase:hover,
+  .cefran-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary-no-outline:active,
+  .cefran-btn--close:active,
+  .cefran-btn--display:active,
+  .cefran-btn--fullscreen:active,
+  .cefran-btn--tooltip:active,
+  .cefran-btn--briefcase:active,
+  .cefran-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled,
+  a.cefran-btn--tertiary-no-outline:not([href]),
+  a.cefran-btn--close:not([href]),
+  a.cefran-btn--display:not([href]),
+  a.cefran-btn--fullscreen:not([href]),
+  a.cefran-btn--tooltip:not([href]),
+  a.cefran-btn--briefcase:not([href]),
+  a.cefran-btn--team:not([href]),
+  .cefran-btn--close:disabled,
+  .cefran-btn--display:disabled,
+  .cefran-btn--fullscreen:disabled,
+  .cefran-btn--tooltip:disabled,
+  .cefran-btn--briefcase:disabled,
+  .cefran-btn--team:disabled {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled:hover,
+  a.cefran-btn--tertiary-no-outline:not([href]):hover,
+  a.cefran-btn--close:not([href]):hover,
+  a.cefran-btn--display:not([href]):hover,
+  a.cefran-btn--fullscreen:not([href]):hover,
+  a.cefran-btn--tooltip:not([href]):hover,
+  a.cefran-btn--briefcase:not([href]):hover,
+  a.cefran-btn--team:not([href]):hover,
+  .cefran-btn--close:disabled:hover,
+  .cefran-btn--display:disabled:hover,
+  .cefran-btn--fullscreen:disabled:hover,
+  .cefran-btn--tooltip:disabled:hover,
+  .cefran-btn--briefcase:disabled:hover,
+  .cefran-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-btn--tertiary-no-outline:disabled:active,
+  a.cefran-btn--tertiary-no-outline:not([href]):active,
+  a.cefran-btn--close:not([href]):active,
+  a.cefran-btn--display:not([href]):active,
+  a.cefran-btn--fullscreen:not([href]):active,
+  a.cefran-btn--tooltip:not([href]):active,
+  a.cefran-btn--briefcase:not([href]):active,
+  a.cefran-btn--team:not([href]):active,
+  .cefran-btn--close:disabled:active,
+  .cefran-btn--display:disabled:active,
+  .cefran-btn--fullscreen:disabled:active,
+  .cefran-btn--tooltip:disabled:active,
+  .cefran-btn--briefcase:disabled:active,
+  .cefran-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-connect {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-connect:disabled,
+  a.cefran-connect:not([href]) {
+    background-color: #e5e5e5;
+    color: #929292;
+  }
+
+  .cefran-connect-group .cefran-connect + p a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-connect-group p {
+    color: #666;
+  }
+
+  /**
+  * Correction largeur max du texte
+  */
+  .cefran-quote::before,
+  .cefran-quote::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/editor/cefran--quote-line.svg");
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul.cefran-quote__source {
+    list-style-type: none;
+  }
+
+  ol.cefran-quote__source {
+    list-style-type: none;
+  }
+
+  ul.cefran-quote__source,
+  ol.cefran-quote__source {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-quote blockquote {
+    max-width: 100%;
+  }
+
+  .cefran-quote::before {
+    color: hsl(180, 85%, 25%);
+  }
+
+  .cefran-quote--cefran-color3::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color4::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color5::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color6::before {
+    color: hsl(290, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color7::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color8::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color9::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color10::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color11::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color12::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color13::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color14::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color15::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color16::before {
+    color: hsl(90, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color17::before {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color18::before {
+    color: hsl(270, 75%, 25%);
+  }
+
+  .cefran-quote--cefran-color19::before {
+    color: hsl(0, 75%, 25%);
+  }
+
+  .cefran-quote {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-quote__source {
+    color: #666;
+  }
+
+  /**
+  * reset liste à puce
+  */
+  .cefran-breadcrumb ul {
+    list-style-type: none;
+  }
+
+  .cefran-breadcrumb ol {
+    list-style-type: none;
+  }
+
+  .cefran-breadcrumb ul,
+  .cefran-breadcrumb ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-breadcrumb__link:not([aria-current])::after,
+  .cefran-breadcrumb__link[aria-current=false]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-breadcrumb {
+    color: #666;
+  }
+
+  .cefran-breadcrumb__link[aria-current]:not([aria-current=false]) {
+    color: #3a3a3a;
+  }
+
+  .cefran-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cefran-message--error::before,
+  .cefran-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-message--valid::before,
+  .cefran-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-message--info::before,
+  .cefran-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-select-group--valid label,
+  .cefran-input-group--valid label,
+  .cefran-range-group--valid label,
+  .cefran-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-select-group--error label,
+  .cefran-input-group--error label,
+  .cefran-range-group--error label,
+  .cefran-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-select-group--info label,
+  .cefran-input-group--info label,
+  .cefran-range-group--info label,
+  .cefran-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-select-group--disabled label,
+  .cefran-select-group--disabled .cefran-hint-text,
+  .cefran-input-group--disabled label,
+  .cefran-input-group--disabled .cefran-hint-text,
+  .cefran-range-group--disabled label,
+  .cefran-range-group--disabled .cefran-hint-text,
+  .cefran-upload-group--disabled label,
+  .cefran-upload-group--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-label {
+    color: #161616;
+  }
+
+  .cefran-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-label--disabled,
+  .cefran-label--disabled .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-hint-text,
+  .cefran-message {
+    color: #666;
+  }
+
+  .cefran-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-fieldset:disabled .cefran-label,
+  .cefran-fieldset:disabled .cefran-hint-text,
+  .cefran-fieldset:disabled .cefran-fieldset__legend {
+    color: #929292;
+  }
+
+  .cefran-fieldset input:disabled + label,
+  .cefran-fieldset input:disabled + label .cefran-hint-text,
+  .cefran-fieldset input:disabled + label + .cefran-hint-text {
+    color: #929292;
+  }
+
+  .cefran-fieldset--error,
+  .cefran-fieldset--error .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-fieldset--error .cefran-fieldset__legend,
+  .cefran-fieldset--error .cefran-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-fieldset--valid,
+  .cefran-fieldset--valid .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-fieldset--valid .cefran-fieldset__legend,
+  .cefran-fieldset--valid .cefran-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--info,
+  .cefran-fieldset--info .cefran-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-fieldset--info .cefran-fieldset__legend,
+  .cefran-fieldset--info .cefran-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-error-text::before,
+  .cefran-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-valid-text::before,
+  .cefran-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-fieldset--valid .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--error .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cefran-fieldset--info .cefran-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+
+  .cefran-stepper__title {
+    margin-bottom: 0.75rem;
+    color: #161616;
+  }
+
+  .cefran-stepper__steps {
+    display: none;
+    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+  }
+
+  .cefran-stepper__state {
+    color: #666;
+  }
+
+  .cefran-stepper__details {
+    color: #666;
+  }
+
+  .cefran-tooltip {
+    position: relative;
+    color: #3a3a3a;
+  }
+
+  .cefran-tooltip__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tooltip__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/add-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tooltip__btn[aria-expanded=true]::before,
+  .cefran-tooltip__btn[aria-expanded=true]::after {
+    background-image: url("../icons/system/subtract-line.svg");
+  }
+
+  ul.cefran-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-tooltip__actions-group,
+  ol.cefran-tooltip__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-tooltip .cefran-modal:not(.cefran-modal--opened) .cefran-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .cefran-tooltip.cefran-placement {
+    z-index: 1000;
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+
+  .cefran-link {
+    background-image: none;
+    text-decoration: underline;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-link::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-link--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-link--lg::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  ul.cefran-links-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-links-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-links-group,
+  ol.cefran-links-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-link__detail {
+    color: #666;
+  }
+
+  .cefran-links-group li::marker {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-link--close {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-link--close:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-link--close:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-link--close:disabled,
+  a.cefran-link--close:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-link--close:disabled:hover,
+  a.cefran-link--close:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-link--close:disabled:active,
+  a.cefran-link--close:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /**
+  * Correctif de la hauteur de la navigation latérale
+  */
+  .cefran-sidemenu {
+    height: auto;
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-sidemenu ul {
+    list-style-type: none;
+  }
+
+  .cefran-sidemenu ol {
+    list-style-type: none;
+  }
+
+  .cefran-sidemenu ul,
+  .cefran-sidemenu ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-sidemenu [href] {
+    text-decoration: none;
+  }
+
+  .cefran-sidemenu__btn[aria-expanded]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-sidemenu__item .cefran-sidemenu__link,
+  .cefran-sidemenu__item .cefran-sidemenu__btn {
+    color: #161616;
+  }
+
+  .cefran-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-sidemenu__link,
+  .cefran-sidemenu__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-sidemenu__link[aria-current]:not([aria-current=false]),
+  .cefran-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .cefran-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-highlight {
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cefran-highlight--cefran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-highlight--cefran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-tabs ul {
+    list-style-type: none;
+  }
+
+  .cefran-tabs ol {
+    list-style-type: none;
+  }
+
+  .cefran-tabs ul,
+  .cefran-tabs ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-tabs::before {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 1px 0 0 #ddd, inset 1px 0 0 0 #ddd, inset -1px 0 0 0 #ddd;
+  }
+
+  .cefran-tabs .cefran-tabs__list {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .cefran-tabs__tab::before,
+  .cefran-tabs__tab::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tabs__panel {
+    padding: 0 0.1px;
+    left: 0;
+  }
+
+  .cefran-tabs__panel [href] {
+    text-decoration: underline;
+  }
+
+  .cefran-tabs__panel > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cefran-tabs__panel > *:first-child {
+    margin-top: 0.75rem;
+  }
+
+  .cefran-tabs__panel > *:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .cefran-tabs {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-tabs__tab {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    box-shadow: 0 2px 0 0 #fff;
+  }
+
+  .cefran-tabs__tab:not([aria-selected=true]) {
+    background-color: hsl(180, 80%, 93%);
+    color: #161616;
+  }
+
+  .cefran-tabs__tab[aria-selected=true]:not(:disabled) {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tabs__tab:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  /**
+  * Correctif de la largeur de la légende d'un fieldset
+  */
+  .cefran-pagination [href] {
+    text-decoration: none;
+  }
+
+  .cefran-pagination ul {
+    list-style-type: none;
+  }
+
+  .cefran-pagination ol {
+    list-style-type: none;
+  }
+
+  .cefran-pagination ul,
+  .cefran-pagination ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-pagination .cefran-pagination__link--first::before,
+  .cefran-pagination .cefran-pagination__link--first::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--arrow-left-s-first-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-pagination .cefran-pagination__link--prev::before,
+  .cefran-pagination .cefran-pagination__link--prev::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-left-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-pagination .cefran-pagination__link--next::before,
+  .cefran-pagination .cefran-pagination__link--next::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-pagination .cefran-pagination__link--last::before,
+  .cefran-pagination .cefran-pagination__link--last::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/cefran--arrow-right-s-last-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-pagination {
+    color: #161616;
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cefran-pagination__link:not([aria-current]):disabled,
+  a.cefran-pagination__link:not([aria-current]):not([href]),
+  a.cefran-pagination__link[aria-current=false]:not([href]),
+  .cefran-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+
+  .cefran-summary {
+    background-color: #eee;
+  }
+
+  .cefran-summary__title {
+    color: #161616;
+  }
+
+  .cefran-summary li > a {
+    color: #161616;
+  }
+
+  /**
+  * Correctif placement caption
+  */
+  .cefran-table[data-cefran-js-table=true] caption {
+    position: relative;
+  }
+
+  .cefran-table caption {
+    color: #161616;
+  }
+
+  .cefran-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cefran-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .cefran-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .cefran-table--cefran-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color3.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color4.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color5.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color6.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color7.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color8.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color9.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color10.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color11.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color12.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color13.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color14.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color15.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color16.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color17.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color18.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .cefran-table--cefran-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .cefran-table--cefran-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-table--cefran-color19.cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .cefran-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .cefran-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-tag {
+    text-decoration: none;
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .cefran-tag::before,
+  .cefran-tag::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tag .cefran-tag--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cefran-tag[aria-pressed=true],
+  input[type=button] .cefran-tag[aria-pressed=true] {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  button .cefran-tag[aria-pressed=true]::after,
+  input[type=button] .cefran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/checkbox-circle-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cefran-tag[aria-pressed=true] .cefran-tag--sm::after,
+  input[type=button] .cefran-tag[aria-pressed=true] .cefran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .cefran-tag .cefran-tag--dismiss::after,
+  input[type=button] .cefran-tag .cefran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .cefran-tag .cefran-tag--dismiss .cefran-tag--sm::after,
+  input[type=button] .cefran-tag .cefran-tag--dismiss .cefran-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ul.cefran-tags-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-tags-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-tags-group,
+  ol.cefran-tags-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-tags-group--sm::before,
+  .cefran-tags-group--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tags-group--sm a .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm button .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=button] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=image] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=reset] .cefran-tag .cefran-tag--dismiss::after,
+  .cefran-tags-group--sm input[type=submit] .cefran-tag .cefran-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .cefran-tags-group--sm a .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm button .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=button] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=image] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=reset] .cefran-tag[aria-pressed=true]::after,
+  .cefran-tags-group--sm input[type=submit] .cefran-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent !important;
+  }
+
+  .cefran-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .cefran-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-tag.cefran-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.cefran-tag,
+  button.cefran-tag,
+  input[type=button].cefran-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag:hover,
+  button.cefran-tag:hover,
+  input[type=button].cefran-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag:active,
+  button.cefran-tag:active,
+  input[type=button].cefran-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3,
+  button.cefran-tag--cefran-color3,
+  input[type=button].cefran-tag--cefran-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color3:hover,
+  button.cefran-tag--cefran-color3:hover,
+  input[type=button].cefran-tag--cefran-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color3:active,
+  button.cefran-tag--cefran-color3:active,
+  input[type=button].cefran-tag--cefran-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4,
+  button.cefran-tag--cefran-color4,
+  input[type=button].cefran-tag--cefran-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color4:hover,
+  button.cefran-tag--cefran-color4:hover,
+  input[type=button].cefran-tag--cefran-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color4:active,
+  button.cefran-tag--cefran-color4:active,
+  input[type=button].cefran-tag--cefran-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5,
+  button.cefran-tag--cefran-color5,
+  input[type=button].cefran-tag--cefran-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color5:hover,
+  button.cefran-tag--cefran-color5:hover,
+  input[type=button].cefran-tag--cefran-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color5:active,
+  button.cefran-tag--cefran-color5:active,
+  input[type=button].cefran-tag--cefran-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6,
+  button.cefran-tag--cefran-color6,
+  input[type=button].cefran-tag--cefran-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color6:hover,
+  button.cefran-tag--cefran-color6:hover,
+  input[type=button].cefran-tag--cefran-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color6:active,
+  button.cefran-tag--cefran-color6:active,
+  input[type=button].cefran-tag--cefran-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7,
+  button.cefran-tag--cefran-color7,
+  input[type=button].cefran-tag--cefran-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color7:hover,
+  button.cefran-tag--cefran-color7:hover,
+  input[type=button].cefran-tag--cefran-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color7:active,
+  button.cefran-tag--cefran-color7:active,
+  input[type=button].cefran-tag--cefran-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8,
+  button.cefran-tag--cefran-color8,
+  input[type=button].cefran-tag--cefran-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color8:hover,
+  button.cefran-tag--cefran-color8:hover,
+  input[type=button].cefran-tag--cefran-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color8:active,
+  button.cefran-tag--cefran-color8:active,
+  input[type=button].cefran-tag--cefran-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9,
+  button.cefran-tag--cefran-color9,
+  input[type=button].cefran-tag--cefran-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color9:hover,
+  button.cefran-tag--cefran-color9:hover,
+  input[type=button].cefran-tag--cefran-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color9:active,
+  button.cefran-tag--cefran-color9:active,
+  input[type=button].cefran-tag--cefran-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10,
+  button.cefran-tag--cefran-color10,
+  input[type=button].cefran-tag--cefran-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color10:hover,
+  button.cefran-tag--cefran-color10:hover,
+  input[type=button].cefran-tag--cefran-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color10:active,
+  button.cefran-tag--cefran-color10:active,
+  input[type=button].cefran-tag--cefran-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11,
+  button.cefran-tag--cefran-color11,
+  input[type=button].cefran-tag--cefran-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color11:hover,
+  button.cefran-tag--cefran-color11:hover,
+  input[type=button].cefran-tag--cefran-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color11:active,
+  button.cefran-tag--cefran-color11:active,
+  input[type=button].cefran-tag--cefran-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12,
+  button.cefran-tag--cefran-color12,
+  input[type=button].cefran-tag--cefran-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color12:hover,
+  button.cefran-tag--cefran-color12:hover,
+  input[type=button].cefran-tag--cefran-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color12:active,
+  button.cefran-tag--cefran-color12:active,
+  input[type=button].cefran-tag--cefran-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13,
+  button.cefran-tag--cefran-color13,
+  input[type=button].cefran-tag--cefran-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color13:hover,
+  button.cefran-tag--cefran-color13:hover,
+  input[type=button].cefran-tag--cefran-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color13:active,
+  button.cefran-tag--cefran-color13:active,
+  input[type=button].cefran-tag--cefran-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14,
+  button.cefran-tag--cefran-color14,
+  input[type=button].cefran-tag--cefran-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color14:hover,
+  button.cefran-tag--cefran-color14:hover,
+  input[type=button].cefran-tag--cefran-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color14:active,
+  button.cefran-tag--cefran-color14:active,
+  input[type=button].cefran-tag--cefran-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15,
+  button.cefran-tag--cefran-color15,
+  input[type=button].cefran-tag--cefran-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color15:hover,
+  button.cefran-tag--cefran-color15:hover,
+  input[type=button].cefran-tag--cefran-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color15:active,
+  button.cefran-tag--cefran-color15:active,
+  input[type=button].cefran-tag--cefran-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16,
+  button.cefran-tag--cefran-color16,
+  input[type=button].cefran-tag--cefran-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color16:hover,
+  button.cefran-tag--cefran-color16:hover,
+  input[type=button].cefran-tag--cefran-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color16:active,
+  button.cefran-tag--cefran-color16:active,
+  input[type=button].cefran-tag--cefran-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17,
+  button.cefran-tag--cefran-color17,
+  input[type=button].cefran-tag--cefran-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color17:hover,
+  button.cefran-tag--cefran-color17:hover,
+  input[type=button].cefran-tag--cefran-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color17:active,
+  button.cefran-tag--cefran-color17:active,
+  input[type=button].cefran-tag--cefran-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18,
+  button.cefran-tag--cefran-color18,
+  input[type=button].cefran-tag--cefran-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color18:hover,
+  button.cefran-tag--cefran-color18:hover,
+  input[type=button].cefran-tag--cefran-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color18:active,
+  button.cefran-tag--cefran-color18:active,
+  input[type=button].cefran-tag--cefran-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19,
+  button.cefran-tag--cefran-color19,
+  input[type=button].cefran-tag--cefran-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.cefran-tag--cefran-color19:hover,
+  button.cefran-tag--cefran-color19:hover,
+  input[type=button].cefran-tag--cefran-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.cefran-tag--cefran-color19:active,
+  button.cefran-tag--cefran-color19:active,
+  input[type=button].cefran-tag--cefran-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].cefran-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]::after,
+  input[type=button].cefran-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.cefran-tag[aria-pressed=true]:disabled::after,
+  input[type=button].cefran-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:hover,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:active,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.cefran-tag[aria-pressed=true].cefran-tag--sm:disabled,
+  input[type=button].cefran-tag[aria-pressed=true].cefran-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.cefran-tag:disabled,
+  input[type=button].cefran-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).cefran-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true],
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:hover,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:active,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .cefran-tags-group.cefran-tags-group--sm button.cefran-tag[aria-pressed=true]:disabled,
+  .cefran-tags-group.cefran-tags-group--sm input[type=button].cefran-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cefran-alert::before,
+  .cefran-alert::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-alert__title,
+  .cefran-alert p {
+    margin: 0 0 0.25rem;
+  }
+
+  .cefran-alert--info::before {
+    background-image: url("../icons/system/cefran--info-fill.svg");
+  }
+
+  .cefran-alert--success::before {
+    background-image: url("../icons/system/cefran--success-fill.svg");
+  }
+
+  .cefran-alert--error::before {
+    background-image: url("../icons/system/cefran--error-fill.svg");
+  }
+
+  .cefran-alert--warning::before {
+    background-image: url("../icons/system/cefran--warning-fill.svg");
+  }
+
+  .cefran-alert .cefran-btn--close::before,
+  .cefran-alert .cefran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /**
+  * reset des marges dans l'alerte
+  */
+  .cefran-alert .cefran-link--close::before,
+  .cefran-alert .cefran-link--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-alert {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a), linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cefran-alert::before {
+    color: #fff;
+  }
+
+  .cefran-alert--info {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%)), linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-alert--error {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%)), linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-alert--success {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%)), linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-alert--warning {
+    background-image: linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%)), linear-gradient(0deg, hsl(270, 45%, 43%), hsl(270, 45%, 43%));
+  }
+
+  /**
+  * reset des marges dans le bandeau
+  */
+  .cefran-notice__title,
+  .cefran-notice p {
+    margin: 0;
+  }
+
+  .cefran-notice--info .cefran-notice__body::before {
+    background-image: url("../icons/system/cefran--info-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    color: transparent;
+  }
+
+  .cefran-notice .cefran-btn--close::before,
+  .cefran-notice .cefran-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .cefran-notice--info {
+    background-color: hsl(180, 80%, 96%);
+    color: hsl(180, 45%, 43%);
+  }
+
+  .cefran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px);
+  }
+
+  .cefran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cefran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cefran-radio-group input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cefran-fieldset--error .cefran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cefran-fieldset--error .cefran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-group input[type=radio] + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-group input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+  }
+
+  .cefran-fieldset .cefran-radio-group input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px);
+  }
+
+  .cefran-fieldset .cefran-radio-group input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 10px, #e5e5e5 11px, transparent 12px), radial-gradient(#e5e5e5 5px, transparent 6px);
+  }
+
+  .cefran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+  }
+
+  .cefran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cefran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-radio-group--sm input[type=radio]:checked:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cefran-fieldset--error .cefran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--error .cefran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-group--sm input[type=radio] + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-group--sm input[type=radio]:checked + label {
+    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset .cefran-radio-group--sm input[type=radio]:disabled + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cefran-fieldset .cefran-radio-group--sm input[type=radio]:disabled:checked + label {
+    background-image: radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cefran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .cefran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+    background-color: #fff;
+  }
+
+  .cefran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cefran-radio-rich input[type=radio]:disabled ~ .cefran-radio-rich__pictogram svg * {
+    fill: #929292;
+  }
+
+  .cefran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-radio-rich input[type=radio]:checked ~ .cefran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-radio-rich input[type=radio]:checked:disabled + label {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cefran-radio-rich input[type=radio]:checked:disabled ~ .cefran-radio-rich__pictogram {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-fieldset--error .cefran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--error .cefran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--valid .cefran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-rich input[type=radio] + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+  }
+
+  .cefran-fieldset--info .cefran-radio-rich input[type=radio]:checked + label {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+  }
+
+  .cefran-fieldset .cefran-radio-rich input[type=radio]:disabled + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px);
+  }
+
+  .cefran-fieldset .cefran-radio-rich input[type=radio]:disabled:checked + label {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, #e5e5e5 7px, transparent 8px), radial-gradient(#e5e5e5 3px, transparent 4px);
+  }
+
+  .cefran-radio-rich__img {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-color: #fff;
+  }
+
+  .cefran-radio-rich input[type=radio]:disabled ~ .cefran-radio-rich__img svg * {
+    fill: #929292;
+  }
+
+  .cefran-radio-rich input[type=radio]:checked ~ .cefran-radio-rich__img {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-radio-rich input[type=radio]:checked:disabled ~ .cefran-radio-rich__img {
+    background-image: linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #929292, #929292), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-card--no-icon::after {
+    content: none;
+  }
+
+  .cefran-card__title,
+  .cefran-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .cefran-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .cefran-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-card--download .cefran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .cefran-card--download .cefran-card__header {
+    padding-top: 56.25%;
+  }
+
+  .cefran-card--download .cefran-card__header .cefran-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .cefran-card.cefran-enlarge-link .cefran-card__title a {
+    text-decoration: none;
+  }
+
+  .cefran-card.cefran-enlarge-link .cefran-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .cefran-card--sm.cefran-enlarge-link .cefran-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-card--sm .cefran-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-card--lg.cefran-enlarge-link .cefran-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-card--lg .cefran-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-card > .cefran-card__img {
+    flex-shrink: 0;
+  }
+
+  .cefran-card {
+    background-color: #fff;
+  }
+
+  .cefran-card:not(.cefran-card--no-border):not(.cefran-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-card--grey {
+    background-color: #eee;
+  }
+
+  .cefran-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .cefran-card--shadow.cefran-card--grey {
+    background-color: #eee;
+  }
+
+  .cefran-card--no-background {
+    background-color: transparent;
+  }
+
+  .cefran-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-card--download:not(.cefran-card--no-background) .cefran-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .cefran-card__detail {
+    color: #666;
+  }
+
+  .cefran-card__title {
+    color: #161616;
+  }
+
+  .cefran-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-card__title:disabled,
+  a.cefran-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-checkbox-group input[type=checkbox] {
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  .cefran-fieldset__content .cefran-checkbox-group input[type=checkbox] {
+    margin-top: 1.5rem;
+  }
+
+  .cefran-fieldset__content + .cefran-valid-text,
+  .cefran-fieldset__content + .cefran-error-text {
+    margin-top: 1rem;
+  }
+
+  .cefran-checkbox-group--error input[type=checkbox] + label,
+  .cefran-checkbox-group--error input[type=checkbox]:checked + label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-checkbox-group--error::before {
+    background-color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-checkbox-group--valid input[type=checkbox] + label,
+  .cefran-checkbox-group--valid input[type=checkbox]:checked + label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-checkbox-group--valid::before {
+    background-color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-segmented {
+    display: block;
+  }
+
+  .cefran-segmented--sm .cefran-segmented__legend--inline {
+    margin: 0.25rem 0 0;
+  }
+
+  .cefran-segmented__legend--inline {
+    margin: 0.5rem 0 0;
+  }
+
+  .cefran-segmented__elements {
+    display: inline-flex;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-segmented input + label::before {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -2px;
+  }
+
+  .cefran-segmented input:focus + label::before {
+    outline: none;
+  }
+
+  .cefran-segmented__element label {
+    color: #161616;
+  }
+
+  .cefran-segmented__element input:checked + label {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-segmented__element input:checked:disabled + label {
+    box-shadow: inset 0 0 0 1px #929292;
+    color: #929292;
+  }
+
+  .cefran-toggle input[type=checkbox]::-ms-check {
+    display: none;
+  }
+
+  .cefran-toggle input[type=checkbox]:checked::before,
+  .cefran-toggle input[type=checkbox]:checked::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/check-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-toggle__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cefran-toggle label {
+    color: #161616;
+  }
+
+  .cefran-toggle label::before {
+    color: hsl(180, 75%, 25%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle label::after {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    background-color: #fff;
+  }
+
+  .cefran-toggle input[type=checkbox] {
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .cefran-toggle input[type=checkbox]:checked {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-toggle input[type=checkbox]:checked ~ .cefran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle input[type=checkbox]:checked ~ .cefran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled {
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled:checked {
+    background-color: #e5e5e5;
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled:checked ~ .cefran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='%23e5e5e5' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled:checked ~ .cefran-toggle__label::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled ~ .cefran-toggle__label::before {
+    color: #929292;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='%23e5e5e5' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle input[type=checkbox]:disabled ~ .cefran-toggle__label::after {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .cefran-toggle .cefran-hint-text {
+    color: #666;
+  }
+
+  .cefran-toggle--border-bottom {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-toggle--error label,
+  .cefran-fieldset--error .cefran-toggle label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .cefran-toggle--error label::before,
+  .cefran-fieldset--error .cefran-toggle label::before {
+    color: hsl(0, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle--error label::after,
+  .cefran-fieldset--error .cefran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(0, 45%, 43%);
+  }
+
+  .cefran-toggle--error input[type=checkbox]:checked ~ .cefran-toggle__label::before,
+  .cefran-fieldset--error .cefran-toggle input[type=checkbox]:checked ~ .cefran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle--valid label,
+  .cefran-fieldset--valid .cefran-toggle label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .cefran-toggle--valid label::before,
+  .cefran-fieldset--valid .cefran-toggle label::before {
+    color: hsl(90, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  .cefran-toggle--valid label::after,
+  .cefran-fieldset--valid .cefran-toggle label::after {
+    box-shadow: inset 0 0 0 1px hsl(90, 45%, 43%);
+  }
+
+  .cefran-toggle--valid input[type=checkbox]:checked ~ .cefran-toggle__label::before,
+  .cefran-fieldset--valid .cefran-toggle input[type=checkbox]:checked ~ .cefran-toggle__label::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+  }
+
+  /**
+  * Correctif
+  */
+  .cefran-skiplinks.focus-within {
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .cefran-skiplinks {
+    background-color: #eee;
+  }
+
+  /**
+  * Cache l'icone native du select sur IE
+  */
+  .cefran-select::-ms-expand {
+    display: none;
+  }
+
+  .cefran-select {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23161616' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cefran-fieldset--valid .cefran-select,
+  .cefran-select-group--valid .cefran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--error .cefran-select,
+  .cefran-select-group--error .cefran-select {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cefran-select-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-select-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-select-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-select:disabled {
+    color: #929292;
+    box-shadow: inset 0 -2px 0 0 #e5e5e5;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 24' %3E%3Cpath fill='%23929292' d='M12,13.1l5-4.9l1.4,1.4L12,15.9L5.6,9.5l1.4-1.4L12,13.1z'/%3E%3C/svg%3E");
+  }
+
+  .cefran-select:-webkit-autofill,
+  .cefran-select:-webkit-autofill:hover,
+  .cefran-select:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  /**
+  * Marge des titres et textes
+  */
+  .cefran-callout__title {
+    margin: 0 0 0.5rem;
+    color: #161616;
+  }
+
+  .cefran-callout__text {
+    margin: 0;
+  }
+
+  .cefran-callout {
+    background-color: #eee;
+    background-image: linear-gradient(0deg, hsl(180, 85%, 25%), hsl(180, 85%, 25%));
+  }
+
+  .cefran-callout::before {
+    color: #161616;
+  }
+
+  .cefran-callout--cefran-color3 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color4 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color5 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color6 {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color7 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color8 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color9 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color10 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color11 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color12 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color13 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color14 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color15 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color16 {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color17 {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color18 {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-callout--cefran-color19 {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .cefran-modal__body {
+    z-index: 2000;
+    background-color: #fff;
+  }
+
+  .cefran-modal__title {
+    color: #161616;
+  }
+
+  .cefran-modal__footer {
+    background-color: #fff;
+  }
+
+  .cefran-modal__body.cefran-scroll-divider .cefran-modal__footer {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  /**
+  * reset liste à puce
+  */
+  .cefran-nav [href] {
+    text-decoration: none;
+  }
+
+  .cefran-nav ul {
+    list-style-type: none;
+  }
+
+  .cefran-nav ol {
+    list-style-type: none;
+  }
+
+  .cefran-nav ul,
+  .cefran-nav ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /**
+  * reset margin
+  */
+  .cefran-nav__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-mega-menu__category {
+    margin: 0;
+  }
+
+  .cefran-nav__list {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .cefran-nav__link,
+  .cefran-nav__btn {
+    color: #161616;
+  }
+
+  .cefran-nav__link[aria-current]:not([aria-current=false]),
+  .cefran-nav__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__link[aria-current]:not([aria-current=false])::before,
+  .cefran-nav__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__btn[aria-expanded=true]:not(:disabled) {
+    background-color: hsl(180, 80%, 93%);
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-nav__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-nav__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-nav__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-mega-menu__list::before {
+    box-shadow: 0 1px 0 0 #ddd;
+  }
+
+  .cefran-share__group > li {
+    list-style: none;
+  }
+
+  .cefran-share .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-share .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-share .cefran-btn--facebook::before {
+    background-image: url("../icons/logo/facebook-circle-line.svg");
+  }
+
+  .cefran-share .cefran-btn--linkedin::before {
+    background-image: url("../icons/logo/linkedin-box-line.svg");
+  }
+
+  .cefran-share .cefran-btn--mastodon::before {
+    background-image: url("../icons/logo/mastodon-line.svg");
+  }
+
+  .cefran-share .cefran-btn--threads::before {
+    background-image: url("../icons/logo/threads-line.svg");
+  }
+
+  .cefran-share .cefran-btn--twitter::before {
+    background-image: url("../icons/logo/twitter-line.svg");
+  }
+
+  .cefran-share .cefran-btn--twitter-x::before {
+    background-image: url("../icons/logo/twitter-x-line.svg");
+  }
+
+  .cefran-share .cefran-btn--mail::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/business/mail-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-share .cefran-btn--copy::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/business/links-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-share .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-share .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-share .cefran-btn:disabled,
+  .cefran-share a.cefran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-share .cefran-btn:disabled:hover,
+  .cefran-share a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share .cefran-btn:disabled:active,
+  .cefran-share a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-share__text {
+    color: #666;
+  }
+
+  .cefran-share__link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-share__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-share__link:disabled,
+  a.cefran-share__link:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-share__link:disabled:hover,
+  a.cefran-share__link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-share__link:disabled:active,
+  a.cefran-share__link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /**
+  * Reset liste à puce
+  */
+  .cefran-footer ul {
+    list-style-type: none;
+  }
+
+  .cefran-footer ol {
+    list-style-type: none;
+  }
+
+  .cefran-footer ul,
+  .cefran-footer ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-footer__content-desc [href] {
+    text-decoration: underline;
+  }
+
+  .cefran-footer {
+    box-shadow: inset 0 2px 0 0 hsl(180, 75%, 25%), inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-footer__content-link {
+    color: #3a3a3a;
+  }
+
+  .cefran-footer__top-cat {
+    color: #161616;
+  }
+
+  .cefran-footer__top {
+    background-color: #f6f6f6;
+  }
+
+  .cefran-footer__bottom {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-footer__bottom .cefran-btn {
+    color: #666;
+  }
+
+  .cefran-footer__bottom-item::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-footer__bottom-link {
+    color: #666;
+  }
+
+  .cefran-footer__bottom-copy {
+    color: #666;
+  }
+
+  .cefran-footer__partners {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-footer__partners-title {
+    color: #3a3a3a;
+  }
+
+  .cefran-footer__partners .cefran-footer__logo {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  /**
+  * Correctif de la largeur du texte dans la tuile
+  */
+  .cefran-tile--download .cefran-tile__body,
+  .cefran-tile--horizontal .cefran-tile__body {
+    flex-basis: 100%;
+  }
+
+  .cefran-tile__body,
+  .cefran-tile__body > * {
+    max-width: 100%;
+  }
+
+  .cefran-tile__title {
+    margin: 0 0 0.5rem;
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .cefran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile__desc {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .cefran-tile__start,
+  .cefran-tile__detail {
+    max-width: 100%;
+  }
+
+  .cefran-tile--download .cefran-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .cefran-tile.cefran-enlarge-link .cefran-tile__title a {
+    text-decoration: none;
+  }
+
+  .cefran-tile.cefran-enlarge-link .cefran-tile__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .cefran-tile--sm .cefran-tile__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-tile {
+    background-color: #fff;
+  }
+
+  .cefran-tile:not(.cefran-tile--no-border):not(.cefran-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .cefran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cefran-tile--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .cefran-tile--shadow.cefran-tile--grey {
+    background-color: #eee;
+  }
+
+  .cefran-tile--no-background {
+    background-color: transparent;
+  }
+
+  .cefran-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-tile__title:disabled,
+  a.cefran-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .cefran-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .cefran-tile__title a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .cefran-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .cefran-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+
+  .cefran-translate .cefran-translate__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/editor/translate-2.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-translate .cefran-translate__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-translate .cefran-translate__btn[aria-expanded=true] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-translate__menu .cefran-translate__language {
+    box-shadow: none;
+  }
+
+  .cefran-transcription {
+    position: relative;
+  }
+
+  .cefran-transcription__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-transcription__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-transcription__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  ul.cefran-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ol.cefran-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ul.cefran-transcription__actions-group,
+  ol.cefran-transcription__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-transcription .cefran-modal:not(.cefran-modal--opened) .cefran-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .cefran-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-transcription__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-transcription__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .cefran-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-transcription .cefran-modal:not(.cefran-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-input-wrap--addon .cefran-btn {
+    flex-shrink: 0;
+  }
+
+  .cefran-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .cefran-input::placeholder {
+    color: #666;
+  }
+
+  .cefran-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .cefran-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .cefran-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .cefran-input:autofill,
+  .cefran-input:autofill:hover,
+  .cefran-input:autofill:focus,
+  .cefran-input:-webkit-autofill,
+  .cefran-input:-webkit-autofill:hover,
+  .cefran-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .cefran-input-wrap--addon > .cefran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cefran-fieldset--valid .cefran-input,
+  .cefran-fieldset--valid .cefran-input-wrap--addon > .cefran-input:not(:last-child),
+  .cefran-input-group--valid .cefran-input,
+  .cefran-input-group--valid .cefran-input-wrap--addon > .cefran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cefran-fieldset--error .cefran-input,
+  .cefran-fieldset--error .cefran-input-wrap--addon > .cefran-input:not(:last-child),
+  .cefran-input-group--error .cefran-input,
+  .cefran-input-group--error .cefran-input-wrap--addon > .cefran-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cefran-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .cefran-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .cefran-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .cefran-search-bar .cefran-btn::before,
+  .cefran-search-bar .cefran-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/search-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-search-bar .cefran-input {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .cefran-search-bar .cefran-input--valid {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .cefran-search-bar .cefran-input--error {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .cefran-search-bar .cefran-input::-webkit-search-cancel-button {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='%23161616' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-11.414L9.172 7.757 7.757 9.172 10.586 12l-2.829 2.828 1.415 1.415L12 13.414l2.828 2.829 1.415-1.415L13.414 12l2.829-2.828-1.415-1.415L12 10.586z'/%3E%3C/svg%3E");
+  }
+
+  .cefran-content-media__caption,
+  .cefran-content-media .cefran-link {
+    color: #666;
+  }
+
+  .cefran-content-media__transcription .cefran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-content-media__transcription .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-content-media__transcription .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-content-media__transcription .cefran-link:disabled,
+  .cefran-content-media__transcription a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-content-media__transcription .cefran-link:disabled:hover,
+  .cefran-content-media__transcription a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-content-media__transcription .cefran-link:disabled:active,
+  .cefran-content-media__transcription a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-consent-service__collapse .cefran-consent-service__collapse-btn {
+    text-decoration: underline;
+  }
+
+  .cefran-consent-service__collapse .cefran-consent-service__collapse-btn::before,
+  .cefran-consent-service__collapse .cefran-consent-service__collapse-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-consent-service__collapse .cefran-consent-service__collapse-btn[aria-expanded=true]::before,
+  .cefran-consent-service__collapse .cefran-consent-service__collapse-btn[aria-expanded=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/system/arrow-up-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .cefran-consent-banner {
+    z-index: 1500;
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-consent-manager__header,
+  .cefran-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .cefran-consent-manager__header .cefran-radio-group + .cefran-radio-group::before,
+  .cefran-consent-service .cefran-radio-group + .cefran-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-consent-service__title {
+    color: #161616;
+  }
+
+  .cefran-consent-service:last-of-type,
+  .cefran-consent-service .cefran-consent-service {
+    box-shadow: none;
+  }
+
+  .cefran-consent-service .cefran-consent-service__collapse-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .cefran-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .cefran-follow .cefran-btn--dailymotion::before {
+    background-image: url("../icons/logo/cefran--dailymotion-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--facebook::before {
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--github::before {
+    background-image: url("../icons/logo/github-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--instagram::before {
+    background-image: url("../icons/logo/instagram-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--linkedin::before {
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--mastodon::before {
+    background-image: url("../icons/logo/mastodon-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--snapchat::before {
+    background-image: url("../icons/logo/snapchat-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--telegram::before {
+    background-image: url("../icons/logo/telegram-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--threads::before {
+    background-image: url("../icons/logo/threads-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--tiktok::before {
+    background-image: url("../icons/logo/cefran--tiktok-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitch::before {
+    background-image: url("../icons/logo/twitch-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitter::before {
+    background-image: url("../icons/logo/twitter-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitter-x::before {
+    background-image: url("../icons/logo/twitter-x-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--vimeo::before {
+    background-image: url("../icons/logo/vimeo-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--youtube::before {
+    background-image: url("../icons/logo/youtube-fill.svg");
+  }
+
+  .cefran-follow .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-btns-group--lg .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-btns-group--lg .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-follow .cefran-link--facebook::before,
+  .cefran-follow .cefran-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--twitter::before,
+  .cefran-follow .cefran-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--instagram::before,
+  .cefran-follow .cefran-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--linkedin::before,
+  .cefran-follow .cefran-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--youtube::before,
+  .cefran-follow .cefran-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-links-group:not(.cefran-links-group--sm):not(.cefran-links-group--lg) .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-links-group:not(.cefran-links-group--sm):not(.cefran-links-group--lg) .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-links-group--lg .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-links-group--lg .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-follow .cefran-input {
+    background-color: #fff;
+  }
+
+  .cefran-follow__title {
+    color: #161616;
+  }
+
+  .cefran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cefran-follow__social .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-follow__social .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow__social .cefran-btn:disabled,
+  .cefran-follow__social a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-follow__social .cefran-btn:disabled:hover,
+  .cefran-follow__social a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-btn:disabled:active,
+  .cefran-follow__social a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow .cefran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .cefran-follow__social .cefran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-follow__social .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow__social .cefran-link:disabled,
+  .cefran-follow__social a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-follow__social .cefran-link:disabled:hover,
+  .cefran-follow__social a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-link:disabled:active,
+  .cefran-follow__social a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-password__checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .cefran-password__checkbox input[type=checkbox] {
+    top: -0.5rem;
+  }
+
+  .cefran-password__btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-password__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-password__btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-password__btn:disabled,
+  a.cefran-password__btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-password__btn:disabled:hover,
+  a.cefran-password__btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-password__btn:disabled:active,
+  a.cefran-password__btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-password [data-cefran-capslock]::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23161616' d='M22.668 0C23.4023 0 24 .5977 24 1.332v21.336c0 .7343-.5977 1.332-1.332 1.332H1.332C.5977 24 0 23.4023 0 22.668V1.332C0 .5977.5977 0 1.332 0Zm-1.336 2.668H2.668v18.664h18.664Zm-4.664 12.664V18H7.332v-2.668ZM12 5.332 16.668 10H14v3.332h-4V10H7.332Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  .cefran-password .cefran-password__checkbox input[type=checkbox] + label {
+    color: #161616;
+  }
+
+  .cefran-header ul {
+    list-style-type: none;
+  }
+
+  .cefran-header ol {
+    list-style-type: none;
+  }
+
+  .cefran-header ul,
+  .cefran-header ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-header [href] {
+    text-decoration: none;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"]):not(.cefran-btn--display)::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn.cefran-btn--display::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header__tools-links .cefran-link {
+    overflow: visible;
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__operator img {
+    height: auto !important;
+  }
+
+  .cefran-header__brand {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cefran-header__service {
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: none;
+  }
+
+  .cefran-header__menu-links .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled,
+  .cefran-header__menu-links a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled:hover,
+  .cefran-header__menu-links a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled:active,
+  .cefran-header__menu-links a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__tools-links .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled,
+  .cefran-header__tools-links a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled:hover,
+  .cefran-header__tools-links a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled:active,
+  .cefran-header__tools-links a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled:hover,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled:active,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-service__title {
+    color: #161616;
+  }
+
+  .cefran-header__navbar .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__navbar .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled,
+  .cefran-header__navbar a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled:hover,
+  .cefran-header__navbar a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled:active,
+  .cefran-header__navbar a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled:hover,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled:active,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header .cefran-modal {
+    background-color: #fff;
+  }
+
+  .cefran-header__menu-links .cefran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled,
+  .cefran-header__menu-links a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled:hover,
+  .cefran-header__menu-links a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled:active,
+  .cefran-header__menu-links a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled,
+  .cefran-header__tools-links a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled:hover,
+  .cefran-header__tools-links a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled:active,
+  .cefran-header__tools-links a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .cefran-sidemenu {
+    box-shadow: none;
+  }
+
+  .cefran-sidemenu__title {
+    box-shadow: none;
+  }
+
+  .cefran-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .cefran-sidemenu--right .cefran-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+
+  .cefran-follow .cefran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .cefran-tabs__panel > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .cefran-tabs__panel > *:first-child {
+    margin-top: 1.75rem;
+  }
+
+  .cefran-tabs__panel > *:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .cefran-card--download .cefran-card__header {
+    padding-top: 0;
+  }
+
+  .cefran-card--download .cefran-card__body,
+  .cefran-card--horizontal .cefran-card__body,
+  .cefran-card--horizontal-half .cefran-card__body,
+  .cefran-card--horizontal-tier .cefran-card__body {
+    flex-basis: 100%;
+  }
+
+  .cefran-tile--download.cefran-tile--vertical\@md .cefran-tile__body,
+  .cefran-tile--horizontal.cefran-tile--vertical\@md .cefran-tile__body {
+    flex-basis: auto;
+  }
+}
+@media (forced-colors: active) and (-ms-high-contrast: none), (forced-colors: active) and (-ms-high-contrast: active), (prefers-contrast: more) and (-ms-high-contrast: none), (prefers-contrast: more) and (-ms-high-contrast: active) {
+  .cefran-pagination__link[aria-current]:not([aria-current=false]) {
+    border: 1px solid hsl(180, 75%, 25%);
+  }
+}
+@media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
+  /**
+  * Correctif de l'alignement des menus sur la droite
+  */
+  .cefran-nav__item {
+    position: static;
+  }
+
+  .cefran-nav__item--align-right .cefran-collapse {
+    transform: translateX(-100%);
+  }
+
+  /**
+  * Override du reset des marges des ul
+  **/
+  .cefran-menu .cefran-menu__list {
+    margin-bottom: 2rem;
+  }
+
+  .cefran-menu {
+    z-index: 1000;
+  }
+
+  .cefran-menu__list {
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cefran-menu__list > *:first-child,
+  .cefran-menu__list > *:first-child > .cefran-nav__link,
+  .cefran-menu__list > *:hover,
+  .cefran-menu__list > *:hover > .cefran-nav__link,
+  .cefran-menu__list > *:hover + *,
+  .cefran-menu__list > *:hover + * > .cefran-nav__link {
+    box-shadow: none;
+  }
+
+  .cefran-menu .cefran-nav__link {
+    box-shadow: 0 calc(-1rem - 1px) 0 -1rem #ddd;
+  }
+
+  .cefran-mega-menu {
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 hsl(180, 80%, 93%);
+  }
+
+  .cefran-mega-menu__category {
+    box-shadow: 0 calc(1rem + 1px) 0 -1rem #ddd;
+  }
+
+  .cefran-header {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cefran-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .cefran-header__service {
+    box-shadow: none;
+  }
+
+  .cefran-header .cefran-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .cefran-tile--download.cefran-tile--vertical\@lg .cefran-tile__body,
+  .cefran-tile--horizontal.cefran-tile--vertical\@lg .cefran-tile__body {
+    flex-basis: auto;
+  }
+
+  .cefran-header .cefran-modal {
+    position: static;
+    overflow: visible;
+  }
+}

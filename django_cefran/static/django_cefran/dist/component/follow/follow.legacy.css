@@ -1,0 +1,261 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .cefran-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .cefran-follow .cefran-btn--dailymotion::before {
+    background-image: url("../../icons/logo/cefran--dailymotion-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--github::before {
+    background-image: url("../../icons/logo/github-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--instagram::before {
+    background-image: url("../../icons/logo/instagram-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--snapchat::before {
+    background-image: url("../../icons/logo/snapchat-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--telegram::before {
+    background-image: url("../../icons/logo/telegram-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--threads::before {
+    background-image: url("../../icons/logo/threads-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--tiktok::before {
+    background-image: url("../../icons/logo/cefran--tiktok-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitch::before {
+    background-image: url("../../icons/logo/twitch-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--vimeo::before {
+    background-image: url("../../icons/logo/vimeo-fill.svg");
+  }
+
+  .cefran-follow .cefran-btn--youtube::before {
+    background-image: url("../../icons/logo/youtube-fill.svg");
+  }
+
+  .cefran-follow .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-btns-group--lg .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-btns-group--lg .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-follow .cefran-link--facebook::before,
+  .cefran-follow .cefran-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--twitter::before,
+  .cefran-follow .cefran-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--instagram::before,
+  .cefran-follow .cefran-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--linkedin::before,
+  .cefran-follow .cefran-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-link--youtube::before,
+  .cefran-follow .cefran-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-links-group:not(.cefran-links-group--sm):not(.cefran-links-group--lg) .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-links-group:not(.cefran-links-group--sm):not(.cefran-links-group--lg) .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .cefran-follow .cefran-links-group--lg .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::before,
+  .cefran-follow .cefran-links-group--lg .cefran-link:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cefran-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-follow .cefran-input {
+    background-color: #fff;
+  }
+
+  .cefran-follow__title {
+    color: #161616;
+  }
+
+  .cefran-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .cefran-follow__social .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-follow__social .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow__social .cefran-btn:disabled,
+  .cefran-follow__social a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-follow__social .cefran-btn:disabled:hover,
+  .cefran-follow__social a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-btn:disabled:active,
+  .cefran-follow__social a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow .cefran-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .cefran-follow__social .cefran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-follow__social .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-follow__social .cefran-link:disabled,
+  .cefran-follow__social a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-follow__social .cefran-link:disabled:hover,
+  .cefran-follow__social a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-follow__social .cefran-link:disabled:active,
+  .cefran-follow__social a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .cefran-follow .cefran-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

@@ -1,0 +1,28 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .cefran-pagination {
+    color: #161616;
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]) {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]):hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .cefran-pagination__link[aria-current]:not([aria-current=false]):active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .cefran-pagination__link:not([aria-current]):disabled,
+  a.cefran-pagination__link:not([aria-current]):not([href]),
+  a.cefran-pagination__link[aria-current=false]:not([href]),
+  .cefran-pagination__link[aria-current=false]:disabled {
+    color: #929292;
+  }
+}

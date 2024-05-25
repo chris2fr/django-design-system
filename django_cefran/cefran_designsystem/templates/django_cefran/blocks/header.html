@@ -1,0 +1,94 @@
+{% extends "django_cefran/header.html" %}
+{% load i18n static %}
+{% url 'index' as home_url %}
+
+{% block not_brand %}
+  {% translate "Home page" as home_page %}
+  <a href="{{ home_url }}"
+     title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+     <img src="{% static 'django_cefran/dist/artwork/logo/logo.svg' %}" class="cefran-logo" alt="logo" />
+
+  </a>
+{% endblock not_brand %}
+
+{% block not_service_title %}
+  <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
+    <p class="cefran-header__service-title">
+      {{ SITE_CONFIG.site_title }}
+      {% if SITE_CONFIG.beta_tag %}
+        <span class="cefran-badge cefran-badge--sm cefran-badge--green-emeraude">BETA</span>
+      {% endif %}
+    </p>
+  </a>
+{% endblock not_service_title %}
+
+{% block not_header_tools %}
+                <ul class="cefran-btns-group">
+                  <li>
+                    <button class="cefran-btn--display cefran-btn" aria-controls="cefran-theme-modal"
+                      data-cefran-opened="false">
+                      {% translate "Display settings" %}
+                    </button>
+                  </li>
+                  <li>
+                    {% include "django_cefran/blocks/language_selector.html" %}
+                  </li>
+                </ul>
+{% endblock not_header_tools %}
+
+{# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
+{% block not_burger_menu %}
+  {% translate "Search" as search_label %}
+  <div class="cefran-header__navbar">
+    <button class="cefran-btn--search cefran-btn"
+            data-cefran-opened="false"
+            aria-controls="modal-search"
+            id="cefran-btn-search-mobile"
+            title="{{ search_label }}"
+            data-cefran-js-modal-button="true">
+      {{ search_label }}
+    </button>
+    {% translate "Menu" as menu_label %}
+    <button class="cefran-btn--menu cefran-btn"
+            data-cefran-opened="false"
+            aria-controls="cefran-menu-mobile"
+            id="cefran-btn-menu-mobile"
+            title="{{ menu_label }}"
+            data-cefran-js-modal-button="true">
+      {{ menu_label }}
+    </button>
+  </div>
+{% endblock not_burger_menu %}
+
+{% block not_main_menu %}
+  {% include "django_cefran/main_menu.html" %}
+{% endblock not_main_menu %}
+
+{% block not_header_search %}
+  {% translate "Search" as search_label %}
+  <div class="cefran-header__search cefran-modal" id="modal-search">
+    <div class="cefran-container cefran-container-lg--fluid">
+      {% translate "Close" as close_label %}
+      <button class="cefran-btn--close cefran-btn"
+              aria-controls="modal-search"
+              title="{{ close_label }}">
+        {{ close_label }}
+      </button>
+      <form action="{% url 'page_search' %}" method="get">
+        <div class="cefran-search-bar" id="search-bar" role="search">
+          <label class="cefran-label" for="search-bar-input">
+            {{ search_label }}
+          </label>
+          <input class="cefran-input"
+                 placeholder="{{ search_label }}"
+                 type="search"
+                 id="query"
+                 name="q">
+          <button class="cefran-btn" title="{{ search_label }}">
+            {{ search_label }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock not_header_search %}

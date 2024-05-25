@@ -1,0 +1,9 @@
+{% extends "django_cefran/base.html" %}
+{% load static cefran_tags %}
+{% block content %}
+  <h1>
+    {{ title }}
+  </h1>
+  {% cefran_callout not_yet %}
+  <br />
+{% endblock content %}

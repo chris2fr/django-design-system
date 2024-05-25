@@ -1,0 +1,332 @@
+/*!
+ * CEFRAN v0.0.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.cefran-header__service {
+  text-align: left; /* chris2fr */
+}
+
+.cefran-header .cefran-header__menu .cefran-container {
+  display: grid; /* chris2fr */
+  grid-template-columns: 1fr;
+  grid-template-areas: "l" "h" "m" "t";
+}
+
+.cefran-header__menu-logo {
+  grid-area: l;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .cefran-header .cefran-header__menu .cefran-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "l m" "h h";
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cefran-header ul {
+    list-style-type: none;
+  }
+
+  .cefran-header ol {
+    list-style-type: none;
+  }
+
+  .cefran-header ul,
+  .cefran-header ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cefran-header [href] {
+    text-decoration: none;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn:not([class^=cefran-icon-]):not([class*=" cefran-icon-"]):not([class^=cefran-fi-]):not([class*=" cefran-fi-"]):not(.cefran-btn--display)::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-icon-]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-icon-"]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class^=cefran-fi-]::before,
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn[class*=" cefran-fi-"]::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header .cefran-btns-group:not(.cefran-btns-group--sm):not(.cefran-btns-group--lg):not([class^=cefran-btns-group--icon-]):not([class*=" cefran-btns-group--icon-"]) .cefran-btn.cefran-btn--display::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cefran-header__tools-links .cefran-link {
+    overflow: visible;
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__operator img {
+    height: auto !important;
+  }
+
+  .cefran-header__brand {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cefran-header__service {
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: none;
+  }
+
+  .cefran-header__menu-links .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled,
+  .cefran-header__menu-links a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled:hover,
+  .cefran-header__menu-links a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-btn:disabled:active,
+  .cefran-header__menu-links a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__tools-links .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled,
+  .cefran-header__tools-links a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled:hover,
+  .cefran-header__tools-links a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-btn:disabled:active,
+  .cefran-header__tools-links a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled:hover,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child .cefran-btn:disabled:active,
+  .cefran-header__tools-links > .cefran-translate:first-child:last-child a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-service__title {
+    color: #161616;
+  }
+
+  .cefran-header__navbar .cefran-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .cefran-header__navbar .cefran-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled,
+  .cefran-header__navbar a.cefran-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled:hover,
+  .cefran-header__navbar a.cefran-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn:disabled:active,
+  .cefran-header__navbar a.cefran-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled:hover,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__navbar .cefran-btn--menu:disabled:active,
+  .cefran-header__navbar a.cefran-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header .cefran-modal {
+    background-color: #fff;
+  }
+
+  .cefran-header__menu-links .cefran-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .cefran-header__menu-links .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled,
+  .cefran-header__menu-links a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled:hover,
+  .cefran-header__menu-links a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__menu-links .cefran-link:disabled:active,
+  .cefran-header__menu-links a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled,
+  .cefran-header__tools-links a.cefran-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled:hover,
+  .cefran-header__tools-links a.cefran-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .cefran-header__tools-links .cefran-link:disabled:active,
+  .cefran-header__tools-links a.cefran-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 62em), (-ms-high-contrast: active) and (min-width: 62em) {
+  .cefran-header .cefran-modal {
+    position: static;
+    overflow: visible;
+  }
+}
+@media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
+  .cefran-header {
+    z-index: 750;
+    background-color: #fff;
+  }
+
+  .cefran-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .cefran-header__service {
+    box-shadow: none;
+  }
+
+  .cefran-header .cefran-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
