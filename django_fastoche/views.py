@@ -82,17 +82,23 @@ def init_payload(page_title: str, request: object, links: list = []):
 
     mega_menu_categories = chunks(implemented_component_tags, 8)
 
-    mourning_data_attribute = ""
-    if site_config(request)["SITE_CONFIG"].mourning:
-        mourning_data_attribute = "data-fastoche-mourning"
+    data_fastoche_mourning = ""
+    current_site_config = site_config(request)["SITE_CONFIG"]
+    if current_site_config.mourning:
+        data_fastoche_mourning = "data-fastoche-mourning"
+
+    full_title = current_site_config.site_title
+    if page_title: 
+        full_title = page_title + " - " + full_title
 
     return {
         "title": page_title,
         "mega_menu_categories": mega_menu_categories,
         "breadcrumb_data": breadcrumb_data,
         "skiplinks": skiplinks,
-        "langcode": "fr",
-        "mourning_data_attribute": mourning_data_attribute,
+        "langcode": request.LANGUAGE_CODE,
+        "data_fastoche_mourning": data_fastoche_mourning,
+        "full_title": full_title,
     }
 
 

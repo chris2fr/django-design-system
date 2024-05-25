@@ -6,7 +6,7 @@
         title='{% translate "Close" %}'>
         {% translate "Close" %}
       </button>
-      {% block brand %}
+{% block brand %}
       <div class="fastoche-header__menu-logo">
         {% translate "Home page" as home_page %}
         <a href="{{ home_url }}" title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
@@ -24,19 +24,19 @@
       </div>
       <div class="fastoche-header__menu-links">
       </div>
-      {% endblock brand %}
-      {% block main_menu %}
-      {% include "django_fastoche/blocks/main_menu.html" %}
+{% endblock brand %}
+      {% include "django_fastoche/main_menu.html" %}
     </div>
   </div>
-      {% endblock main_menu %}
+{% block main_menu %}
+{% endblock main_menu %}
       <div class="fastoche-header__body">
         <div class="fastoche-container">
           <div class="fastoche-header__body-row">
             <div class="fastoche-header__brand fastoche-enlarge-link">
-              {% block burger_menu %}
               <div class="fastoche-header__brand-top">
                 <div class="fastoche-header__navbar">
+{% block burger_menu %}
                   {% translate "Search" as search_label %}
                   <button class="fastoche-btn--search fastoche-btn" data-fastoche-opened="false" aria-controls="modal-search"
                     id="fastoche-btn-search-mobile" title="{{ search_label }}">
@@ -47,11 +47,11 @@
                     id="fastoche-btn-menu-mobile" title="{{ menu_label }}">
                     {{ menu_label }}
                   </button>
+                  {% endblock burger_menu %}
                 </div>
               </div>
-              {% endblock burger_menu %}
               <div class="fastoche-header__service">
-                {% block service_title %}
+{% block service_title %}
                 <a href="{{ home_url }}" title="{% translate 'Accueil' %} — {{ SITE_CONFIG.site_title }}">
                   <p class="fastoche-header__service-title">
                     {{ SITE_CONFIG.site_title }}
@@ -60,15 +60,15 @@
                     {% endif %}
                   </p>
                 </a>
-                {% endblock service_title %}
+{% endblock service_title %}
                 <p class="fastoche-header__service-tagline">
-                  {% block service_tagline %}
+{% block service_tagline %}
                   {{ SITE_CONFIG.site_tagline }}
-                  {% endblock service_tagline %}
+{% endblock service_tagline %}
                 </p>
               </div>
               <div class="fastoche-header__tools">
-                {% block header_search %}
+{% block header_search %}
                 <div class="fastoche-header__search fastoche-modal" id="modal-search"
                   aria-labelledby="fastoche-btn-search-mobile">
                   <div class="fastoche-container fastoche-container-lg--fluid">
@@ -91,9 +91,8 @@
                   </div>
                 </div>
               </div>
-              {% endblock header_search %}
+{% endblock header_search %}
               <div class="fastoche-header__tools-links">
-                {% block header_tools %}
                 <ul class="fastoche-btns-group">
                   <li>
                     <button class="fastoche-btn--display fastoche-btn" aria-controls="fastoche-theme-modal"
@@ -101,11 +100,12 @@
                       {% translate "Display settings" %}
                     </button>
                   </li>
+{% block header_tools %}
                   <li>
-                    {% include "django_fastoche/blocks/language_selector.html" %}
+                    {% include "django_fastoche/language_selector.html" %}
                   </li>
+{% endblock header_tools %}
                 </ul>
-                {% endblock header_tools %}
               </div>
             </div>
           </div>

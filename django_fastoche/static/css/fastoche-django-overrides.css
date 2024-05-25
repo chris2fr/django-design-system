@@ -13,7 +13,7 @@
 .fastoche-header .fastoche-header__menu .fastoche-container {
   grid-template-areas: "l m t" "h h s";
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto
+  grid-template-rows: auto;
 }
 
 div.fastoche-header__service {
@@ -21,4 +21,16 @@ div.fastoche-header__service {
 }
 div.fastoche-header__search {
   grid-area: s;
+}
+
+button.fastoche-menu-close-btn {
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .fastoche-header .fastoche-header__menu .fastoche-container  {
+    grid-template-areas: "m m" "l t"  "h h" "s s";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+  }
 }
