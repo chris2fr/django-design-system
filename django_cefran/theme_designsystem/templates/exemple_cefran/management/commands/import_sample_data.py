@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from cefran.models import CefranConfig, CefranSocialMedia
+from cefran.models import DjangoCefranConfig, CefranSocialMedia
 from example_app.models import Genre
 
 
@@ -10,7 +10,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # Note: the command should be able to be run several times without creating
         # duplicate objects.
-        config, _created = CefranConfig.objects.get_or_create(
+        config, _created = DjangoCefranConfig.objects.get_or_create(
             language="fr",
             defaults={
                 "header_brand": "République française",

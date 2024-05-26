@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django_cefran.models import CefranConfig, CefranSocialMedia
+from django_cefran.models import DjangoCefranConfig, CefranSocialMedia
 
 from django.utils.translation import gettext_lazy as _
 
@@ -10,8 +10,8 @@ class CefranSocialMediaInline(admin.TabularInline):
     extra = 1
 
 
-@admin.register(CefranConfig)
-class CefranConfigAdmin(admin.ModelAdmin):
+@admin.register(DjangoCefranConfig)
+class DjangoCefranConfigAdmin(admin.ModelAdmin):
     fieldsets = (
         ("", {"fields": ("language",)}),
         (

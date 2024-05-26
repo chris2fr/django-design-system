@@ -62,7 +62,7 @@ TEMPLATES = [
 ]
 ```
 
-- Créez un objet "CefranConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
+- Créez un objet "DjangoCefranConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
 
 ## Application d’exemple
 Vous pouvez prendre exemple sur cette application (cf. [code source](https://github.com/numerique-gouv/django_cefran/tree/main/example_cefran)). Elle consiste en un générateur pour la présente documentation. Dans la mesure où celle-ci est hébergée de manière statique, un export est fait automatiquement via <a href="https://github.com/meeb/django-distill">Django-distill</a>.

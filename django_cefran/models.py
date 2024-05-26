@@ -10,7 +10,7 @@ def validate_image_extension(value):
     if ext.lower() not in valid_extensions:
         raise ValidationError("Unsupported file extension.")
 
-class CefranConfig(models.Model):
+class DjangoCefranConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
@@ -133,7 +133,7 @@ class CefranConfig(models.Model):
 
 
 class CefranSocialMedia(models.Model):
-    site_config = models.ForeignKey(CefranConfig, on_delete=models.CASCADE, null=True)
+    site_config = models.ForeignKey(DjangoCefranConfig, on_delete=models.CASCADE, null=True)
     title = models.CharField(_("Title"), max_length=200, default="", blank=True)
 
     url = models.URLField(
