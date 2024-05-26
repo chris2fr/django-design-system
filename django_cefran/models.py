@@ -17,7 +17,7 @@ class DjangoCefranConfig(models.Model):
         choices=DJANGO_CEFRAN_LANGUAGES,
         help_text=_("Only one configuration is allowed per language"),
         default="fr",
-        unique=True,
+        unique=False,
     )
 
     A11Y_CHOICES = [

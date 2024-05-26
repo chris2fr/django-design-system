@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1"]
 
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -92,6 +94,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django_cefran.context_processors.site_config",
+                "django_cefran.context_processors.urlangs",
                 # "cefran.context_processors.site_config",
             ],
         },

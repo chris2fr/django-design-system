@@ -1,5 +1,6 @@
 from django_cefran.models import DjangoCefranConfig
 from django.utils.translation import get_language
+import os
 
 
 def site_config(request):
@@ -11,3 +12,23 @@ def site_config(request):
         config = DjangoCefranConfig.objects.first()
 
     return {"SITE_CONFIG": config}
+
+def urlangs(request):
+    return{"URLANGS": [
+        {
+            'code': 'en',
+            'name_local': 'English',
+            'name': 'English',
+            'bidi': False,
+            'name_translated': 'English',
+            'url': '/en/' if not os.getenv("URLANG_EN") else os.getenv("URLANG_EN"),
+        },
+        {
+            'code': 'fr',
+            'name_local': 'French',
+            'name': 'Français',
+            'bidi': False,
+            'name_translated': 'Français',
+            'url': '/' if not os.getenv("URLANG_FR") else os.getenv("URLANG_FR"),
+        },
+    ]}

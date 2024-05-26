@@ -14,7 +14,7 @@ from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
 from django_cefran.utils import generate_summary_items
-from django_cefran.context_processors import site_config
+from django_cefran.context_processors import site_config, urlangs
 
 from django_cefran.forms import ColorForm
 
