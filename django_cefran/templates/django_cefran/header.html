@@ -101,13 +101,13 @@
 {% endblock header_search %}
               <div class="cefran-header__tools-links">
                 <ul class="cefran-btns-group">
+{% block header_tools %}
                   <li>
                     <button class="cefran-btn--display cefran-btn" aria-controls="cefran-theme-modal"
                       data-cefran-opened="false">
                       {% translate "Display settings" %}
                     </button>
                   </li>
-{% block header_tools %}
                   <li>
                     {% include "django_cefran/language_selector.html" %}
                   </li>
