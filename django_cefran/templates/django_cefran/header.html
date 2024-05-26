@@ -77,13 +77,13 @@
           <div class="cefran-header__tools">
             <div class="cefran-header__tools-links">
               <ul class="cefran-btns-group">
-{% block header_tools %}
                 <li>
                   <button class="cefran-btn--display cefran-btn" aria-controls="cefran-theme-modal"
                     data-cefran-opened="false">
                     {% translate "Display settings" %}
                   </button>
                 </li>
+{% block header_tools %}
                 <li>
                   {% include "django_cefran/language_selector.html" %}
                 </li>
@@ -99,7 +99,7 @@
                 <button class="cefran-btn--close cefran-btn" aria-controls="modal-search" title="{{ close_label }}">
                   {{ close_label }}
                 </button>
-                <form action="{% url 'page_search' %}" method="get">
+                <form action="{% url 'wagtail_cefran_search' %}" method="get">
                   <div class="cefran-search-bar" id="search-bar" role="search">
                     <label class="cefran-label" for="search-bar-input">
                       {{ search_label }}

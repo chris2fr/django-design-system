@@ -102,7 +102,7 @@ urlpatterns = [
     distill_path(
         "search/",
         views.search,
-        name="page_search",
+        name="wagtail_cefran_search",
         distill_file="django_cefran/search/index.html",
     ),
 ]

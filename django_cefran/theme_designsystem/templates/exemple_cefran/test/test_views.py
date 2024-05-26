@@ -14,7 +14,7 @@ class BasicPagesTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_page_search(self):
-        response = self.client.get(reverse("page_search"))
+        response = self.client.get(reverse("wagtail_cefran_search"))
         self.assertEqual(response.status_code, 200)
 
 

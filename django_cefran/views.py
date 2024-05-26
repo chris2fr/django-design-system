@@ -93,7 +93,7 @@ def init_payload(page_title: str, request: object, links: list = []):
 
     return {
         "title": page_title,
-        "mega_menu_categories": mega_menu_categories,
+        "menus/mega_menu_categories": mega_menu_categories,
         "breadcrumb_data": breadcrumb_data,
         "skiplinks": skiplinks,
         "langcode": request.LANGUAGE_CODE,

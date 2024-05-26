@@ -18,7 +18,7 @@
             <a class="cefran-translate__language cefran-nav__link"
                hreflang="{{ language.code|lower }}"
                lang="{{ language.code|lower }}"
-               href="#"
+               href="/{{ language.code|lower }}/"
                {% if language.code == LANGUAGE_CODE %}aria-current="true"{% endif %}>{{ language.code|upper }} - {{ language.name_local }}</a>
           </li>
         {% endfor %}
