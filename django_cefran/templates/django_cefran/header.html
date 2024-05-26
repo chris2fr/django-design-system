@@ -17,7 +17,6 @@
             {% include "django_cefran/main_menu.html" %}
         {% endblock main_menu %}  
       </nav>
-
       <div class="cefran-header__menu-logo">
 {% block brand %}
         {% translate "Home page" as home_page %}
@@ -37,85 +36,86 @@
       </div>
     </div>
   </div>
-      <div class="cefran-header__body">
-        <div class="cefran-container">
-          <div class="cefran-header__body-row">
-            <div class="cefran-header__brand cefran-enlarge-link">
-              <div class="cefran-header__brand-top">
-                <div class="cefran-header__navbar">
+  <div class="cefran-header__body">
+    <div class="cefran-container">
+      <div class="cefran-header__body-row">
+        <div class="cefran-header__brand cefran-enlarge-link">
+          <div class="cefran-header__brand-top">
+            <div class="cefran-header__navbar">
 {% block burger_menu %}
-                  {% translate "Search" as search_label %}
-                  <button class="cefran-btn--search cefran-btn" data-cefran-opened="false" aria-controls="modal-search"
-                    id="cefran-btn-search-mobile" title="{{ search_label }}">
-                    {{ search_label }}
-                  </button>
-                  {% translate "Menu" as menu_label %}
-                  <button class="cefran-btn--menu cefran-btn" data-cefran-opened="false" aria-controls="cefran-menu-mobile"
-                    id="cefran-btn-menu-mobile" title="{{ menu_label }}">
-                    {{ menu_label }}
-                  </button>
-                  {% endblock burger_menu %}
-                </div>
-              </div>
-              <div class="cefran-header__service">
-{% block service_title %}
-                <a href="{{ home_url }}" title="{% translate 'Accueil' %} — {{ SITE_CONFIG.site_title }}">
-                  <p class="cefran-header__service-title">
-                    {{ SITE_CONFIG.site_title }}
-                    {% if SITE_CONFIG.beta_tag %}
-                    <span class="cefran-badge cefran-badge--sm cefran-badge--green-emeraude">BETA</span>
-                    {% endif %}
-                  </p>
-                </a>
-{% endblock service_title %}
-                <p class="cefran-header__service-tagline">
-{% block service_tagline %}
-                  {{ SITE_CONFIG.site_tagline }}
-{% endblock service_tagline %}
-                </p>
-              </div>
-              <div class="cefran-header__tools">
-{% block header_search %}
-                <div class="cefran-header__search cefran-modal" id="modal-search"
-                  aria-labelledby="cefran-btn-search-mobile">
-                  <div class="cefran-container cefran-container-lg--fluid">
-                    {% translate "Search" as search_label %}
-                    {% translate "Close" as close_label %}
-                    <button class="cefran-btn--close cefran-btn" aria-controls="modal-search" title="{{ close_label }}">
-                      {{ close_label }}
-                    </button>
-                    <form action="{% url 'page_search' %}" method="get">
-                      <div class="cefran-search-bar" id="search-bar" role="search">
-                        <label class="cefran-label" for="search-bar-input">
-                          {{ search_label }}
-                        </label>
-                        <input class="cefran-input" placeholder="{{ search_label }}" type="search" id="search-bar-input" name="q">
-                        <button class="cefran-btn" title="{{ search_label }}">
-                          {{ search_label }}
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-{% endblock header_search %}
-              <div class="cefran-header__tools-links">
-                <ul class="cefran-btns-group">
-{% block header_tools %}
-                  <li>
-                    <button class="cefran-btn--display cefran-btn" aria-controls="cefran-theme-modal"
-                      data-cefran-opened="false">
-                      {% translate "Display settings" %}
-                    </button>
-                  </li>
-                  <li>
-                    {% include "django_cefran/language_selector.html" %}
-                  </li>
-{% endblock header_tools %}
-                </ul>
-              </div>
+              {% translate "Search" as search_label %}
+              <button class="cefran-btn--search cefran-btn" data-cefran-opened="false" aria-controls="modal-search"
+                id="cefran-btn-search-mobile" title="{{ search_label }}">
+                {{ search_label }}
+              </button>
+              {% translate "Menu" as menu_label %}
+              <button class="cefran-btn--menu cefran-btn" data-cefran-opened="false" aria-controls="cefran-menu-mobile"
+                id="cefran-btn-menu-mobile" title="{{ menu_label }}">
+                {{ menu_label }}
+              </button>
+{% endblock burger_menu %}
             </div>
           </div>
+            <div class="cefran-header__service">
+{% block service_title %}
+              <a href="{{ home_url }}" title="{% translate 'Accueil' %} — {{ SITE_CONFIG.site_title }}">
+                <p class="cefran-header__service-title">
+                  {{ SITE_CONFIG.site_title }}
+                  {% if SITE_CONFIG.beta_tag %}
+                  <span class="cefran-badge cefran-badge--sm cefran-badge--green-emeraude">BETA</span>
+                  {% endif %}
+                </p>
+              </a>
+{% endblock service_title %}
+              <p class="cefran-header__service-tagline">
+{% block service_tagline %}
+                {{ SITE_CONFIG.site_tagline }}
+{% endblock service_tagline %}
+              </p>
+            </div>
+          </div>
+          <div class="cefran-header__tools">
+            <div class="cefran-header__tools-links">
+              <ul class="cefran-btns-group">
+{% block header_tools %}
+                <li>
+                  <button class="cefran-btn--display cefran-btn" aria-controls="cefran-theme-modal"
+                    data-cefran-opened="false">
+                    {% translate "Display settings" %}
+                  </button>
+                </li>
+                <li>
+                  {% include "django_cefran/language_selector.html" %}
+                </li>
+{% endblock header_tools %}
+              </ul>
+            </div>
+{% block header_search %}
+            <div class="cefran-header__search cefran-modal" id="modal-search"
+              aria-labelledby="cefran-btn-search-mobile">
+              <div class="cefran-container cefran-container-lg--fluid">
+                {% translate "Search" as search_label %}
+                {% translate "Close" as close_label %}
+                <button class="cefran-btn--close cefran-btn" aria-controls="modal-search" title="{{ close_label }}">
+                  {{ close_label }}
+                </button>
+                <form action="{% url 'page_search' %}" method="get">
+                  <div class="cefran-search-bar" id="search-bar" role="search">
+                    <label class="cefran-label" for="search-bar-input">
+                      {{ search_label }}
+                    </label>
+                    <input class="cefran-input" placeholder="{{ search_label }}" type="search" id="search-bar-input" name="q">
+                    <button class="cefran-btn" title="{{ search_label }}">
+                      {{ search_label }}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+{% endblock header_search %}
+          </div>
         </div>
+      </div>
+    </div>
   </div>
 </header>

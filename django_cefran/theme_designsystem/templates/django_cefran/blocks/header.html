@@ -36,10 +36,11 @@
                 </ul>
 {% endblock not_header_tools %}
 
+
+  <div class="cefran-header__navbar">
 {# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
 {% block not_burger_menu %}
   {% translate "Search" as search_label %}
-  <div class="cefran-header__navbar">
     <button class="cefran-btn--search cefran-btn"
             data-cefran-opened="false"
             aria-controls="modal-search"
@@ -57,8 +58,8 @@
             data-cefran-js-modal-button="true">
       {{ menu_label }}
     </button>
-  </div>
 {% endblock not_burger_menu %}
+  </div>
 
 {% block not_main_menu %}
   {% include "django_cefran/main_menu.html" %}
