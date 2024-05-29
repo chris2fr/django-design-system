@@ -1,0 +1,195 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-badge::before,
+  .village-badge::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-badge--sm::before {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .village-badge.village-badge--info::before,
+  .village-badge.village-badge--info::after,
+  .village-badge--sm.village-badge--info::before,
+  .village-badge--sm.village-badge--info::after {
+    background-image: url("../../icons/system/village--info-fill.svg");
+  }
+
+  .village-badge.village-badge--success::before,
+  .village-badge.village-badge--success::after,
+  .village-badge--sm.village-badge--success::before,
+  .village-badge--sm.village-badge--success::after {
+    background-image: url("../../icons/system/village--success-fill.svg");
+  }
+
+  .village-badge.village-badge--error::before,
+  .village-badge.village-badge--error::after,
+  .village-badge--sm.village-badge--error::before,
+  .village-badge--sm.village-badge--error::after {
+    background-image: url("../../icons/system/village--error-fill.svg");
+  }
+
+  .village-badge.village-badge--warning::before,
+  .village-badge.village-badge--warning::after,
+  .village-badge--sm.village-badge--warning::before,
+  .village-badge--sm.village-badge--warning::after {
+    background-image: url("../../icons/system/village--warning-fill.svg");
+  }
+
+  .village-badge.village-badge--new::before,
+  .village-badge.village-badge--new::after,
+  .village-badge--sm.village-badge--new::before,
+  .village-badge--sm.village-badge--new::after {
+    background-image: url("../../icons/weather/flashlight-fill.svg");
+  }
+
+  ul.village-badges-group {
+    list-style-type: none;
+  }
+
+  ol.village-badges-group {
+    list-style-type: none;
+  }
+
+  ul.village-badges-group,
+  ol.village-badges-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .village-badge {
+    color: #3a3a3a;
+    background-color: #eee;
+  }
+
+  .village-badge--info {
+    color: hsl(180, 45%, 43%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .village-badge--error {
+    color: hsl(0, 45%, 43%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .village-badge--success {
+    color: hsl(90, 45%, 43%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .village-badge--warning {
+    color: hsl(270, 45%, 43%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .village-badge--new {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .village-badge--village-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .village-badge--village-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .village-badge--village-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .village-badge--village-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .village-badge--village-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .village-badge--village-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .village-badge--village-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .village-badge--village-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .village-badge--village-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .village-badge--village-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .village-badge--village-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .village-badge--village-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .village-badge--village-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .village-badge--village-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .village-badge--village-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .village-badge--village-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .village-badge--village-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 96%);
+  }
+}

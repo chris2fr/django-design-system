@@ -1,0 +1,215 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-icon-code-view::before,
+.village-icon-code-view::after {
+  -webkit-mask-image: url("../../../icons/editor/code-view.svg");
+  mask-image: url("../../../icons/editor/code-view.svg");
+}
+
+.village-icon-font-size::before,
+.village-icon-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
+}
+
+.village-icon-h-1::before,
+.village-icon-h-1::after {
+  -webkit-mask-image: url("../../../icons/editor/h-1.svg");
+  mask-image: url("../../../icons/editor/h-1.svg");
+}
+
+.village-icon-h-2::before,
+.village-icon-h-2::after {
+  -webkit-mask-image: url("../../../icons/editor/h-2.svg");
+  mask-image: url("../../../icons/editor/h-2.svg");
+}
+
+.village-icon-h-3::before,
+.village-icon-h-3::after {
+  -webkit-mask-image: url("../../../icons/editor/h-3.svg");
+  mask-image: url("../../../icons/editor/h-3.svg");
+}
+
+.village-icon-h-4::before,
+.village-icon-h-4::after {
+  -webkit-mask-image: url("../../../icons/editor/h-4.svg");
+  mask-image: url("../../../icons/editor/h-4.svg");
+}
+
+.village-icon-h-5::before,
+.village-icon-h-5::after {
+  -webkit-mask-image: url("../../../icons/editor/h-5.svg");
+  mask-image: url("../../../icons/editor/h-5.svg");
+}
+
+.village-icon-h-6::before,
+.village-icon-h-6::after {
+  -webkit-mask-image: url("../../../icons/editor/h-6.svg");
+  mask-image: url("../../../icons/editor/h-6.svg");
+}
+
+.village-icon-hashtag::before,
+.village-icon-hashtag::after {
+  -webkit-mask-image: url("../../../icons/editor/hashtag.svg");
+  mask-image: url("../../../icons/editor/hashtag.svg");
+}
+
+.village-icon-italic::before,
+.village-icon-italic::after {
+  -webkit-mask-image: url("../../../icons/editor/italic.svg");
+  mask-image: url("../../../icons/editor/italic.svg");
+}
+
+.village-icon-link-unlink::before,
+.village-icon-link-unlink::after {
+  -webkit-mask-image: url("../../../icons/editor/link-unlink.svg");
+  mask-image: url("../../../icons/editor/link-unlink.svg");
+}
+
+.village-icon-link::before,
+.village-icon-link::after {
+  -webkit-mask-image: url("../../../icons/editor/link.svg");
+  mask-image: url("../../../icons/editor/link.svg");
+}
+
+.village-icon-list-ordered::before,
+.village-icon-list-ordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-ordered.svg");
+  mask-image: url("../../../icons/editor/list-ordered.svg");
+}
+
+.village-icon-list-unordered::before,
+.village-icon-list-unordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-unordered.svg");
+  mask-image: url("../../../icons/editor/list-unordered.svg");
+}
+
+.village-icon-question-mark::before,
+.village-icon-question-mark::after {
+  -webkit-mask-image: url("../../../icons/editor/question-mark.svg");
+  mask-image: url("../../../icons/editor/question-mark.svg");
+}
+
+.village-icon-separator::before,
+.village-icon-separator::after {
+  -webkit-mask-image: url("../../../icons/editor/separator.svg");
+  mask-image: url("../../../icons/editor/separator.svg");
+}
+
+.village-icon-space::before,
+.village-icon-space::after {
+  -webkit-mask-image: url("../../../icons/editor/space.svg");
+  mask-image: url("../../../icons/editor/space.svg");
+}
+
+.village-icon-subscript::before,
+.village-icon-subscript::after {
+  -webkit-mask-image: url("../../../icons/editor/subscript.svg");
+  mask-image: url("../../../icons/editor/subscript.svg");
+}
+
+.village-icon-superscript::before,
+.village-icon-superscript::after {
+  -webkit-mask-image: url("../../../icons/editor/superscript.svg");
+  mask-image: url("../../../icons/editor/superscript.svg");
+}
+
+.village-icon-table-2::before,
+.village-icon-table-2::after {
+  -webkit-mask-image: url("../../../icons/editor/table-2.svg");
+  mask-image: url("../../../icons/editor/table-2.svg");
+}
+
+.village-icon-translate-2::before,
+.village-icon-translate-2::after {
+  -webkit-mask-image: url("../../../icons/editor/translate-2.svg");
+  mask-image: url("../../../icons/editor/translate-2.svg");
+}
+
+.village-icon-bold::before,
+.village-icon-bold::after {
+  -webkit-mask-image: url("../../../icons/editor/village--bold.svg");
+  mask-image: url("../../../icons/editor/village--bold.svg");
+}
+
+.village-icon-highlight::before,
+.village-icon-highlight::after {
+  -webkit-mask-image: url("../../../icons/editor/village--highlight.svg");
+  mask-image: url("../../../icons/editor/village--highlight.svg");
+}
+
+.village-icon-quote-fill::before,
+.village-icon-quote-fill::after {
+  -webkit-mask-image: url("../../../icons/editor/village--quote-fill.svg");
+  mask-image: url("../../../icons/editor/village--quote-fill.svg");
+}
+
+.village-icon-quote-line::before,
+.village-icon-quote-line::after {
+  -webkit-mask-image: url("../../../icons/editor/village--quote-line.svg");
+  mask-image: url("../../../icons/editor/village--quote-line.svg");
+}
+
+.village-fi-font-size::before,
+.village-fi-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
+}
+
+.village-fi-italic::before,
+.village-fi-italic::after {
+  -webkit-mask-image: url("../../../icons/editor/italic.svg");
+  mask-image: url("../../../icons/editor/italic.svg");
+}
+
+.village-fi-link-unlink::before,
+.village-fi-link-unlink::after {
+  -webkit-mask-image: url("../../../icons/editor/link-unlink.svg");
+  mask-image: url("../../../icons/editor/link-unlink.svg");
+}
+
+.village-fi-list-ordered::before,
+.village-fi-list-ordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-ordered.svg");
+  mask-image: url("../../../icons/editor/list-ordered.svg");
+}
+
+.village-fi-list-unordered::before,
+.village-fi-list-unordered::after {
+  -webkit-mask-image: url("../../../icons/editor/list-unordered.svg");
+  mask-image: url("../../../icons/editor/list-unordered.svg");
+}
+
+.village-fi-bold::before,
+.village-fi-bold::after {
+  -webkit-mask-image: url("../../../icons/editor/village--bold.svg");
+  mask-image: url("../../../icons/editor/village--bold.svg");
+}
+
+.village-fi-highlight::before,
+.village-fi-highlight::after {
+  -webkit-mask-image: url("../../../icons/editor/village--highlight.svg");
+  mask-image: url("../../../icons/editor/village--highlight.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

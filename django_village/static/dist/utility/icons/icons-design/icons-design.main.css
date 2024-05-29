@@ -1,0 +1,287 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON DESIGN
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-icon-ball-pen-fill::before,
+.village-icon-ball-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-fill.svg");
+  mask-image: url("../../../icons/design/ball-pen-fill.svg");
+}
+
+.village-icon-ball-pen-line::before,
+.village-icon-ball-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/ball-pen-line.svg");
+  mask-image: url("../../../icons/design/ball-pen-line.svg");
+}
+
+.village-icon-brush-3-fill::before,
+.village-icon-brush-3-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-fill.svg");
+  mask-image: url("../../../icons/design/brush-3-fill.svg");
+}
+
+.village-icon-brush-3-line::before,
+.village-icon-brush-3-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-3-line.svg");
+  mask-image: url("../../../icons/design/brush-3-line.svg");
+}
+
+.village-icon-brush-fill::before,
+.village-icon-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/brush-fill.svg");
+  mask-image: url("../../../icons/design/brush-fill.svg");
+}
+
+.village-icon-brush-line::before,
+.village-icon-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/brush-line.svg");
+  mask-image: url("../../../icons/design/brush-line.svg");
+}
+
+.village-icon-contrast-fill::before,
+.village-icon-contrast-fill::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-fill.svg");
+  mask-image: url("../../../icons/design/contrast-fill.svg");
+}
+
+.village-icon-contrast-line::before,
+.village-icon-contrast-line::after {
+  -webkit-mask-image: url("../../../icons/design/contrast-line.svg");
+  mask-image: url("../../../icons/design/contrast-line.svg");
+}
+
+.village-icon-crop-fill::before,
+.village-icon-crop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/crop-fill.svg");
+  mask-image: url("../../../icons/design/crop-fill.svg");
+}
+
+.village-icon-crop-line::before,
+.village-icon-crop-line::after {
+  -webkit-mask-image: url("../../../icons/design/crop-line.svg");
+  mask-image: url("../../../icons/design/crop-line.svg");
+}
+
+.village-icon-drag-move-2-fill::before,
+.village-icon-drag-move-2-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+  mask-image: url("../../../icons/design/drag-move-2-fill.svg");
+}
+
+.village-icon-drag-move-2-line::before,
+.village-icon-drag-move-2-line::after {
+  -webkit-mask-image: url("../../../icons/design/drag-move-2-line.svg");
+  mask-image: url("../../../icons/design/drag-move-2-line.svg");
+}
+
+.village-icon-drop-fill::before,
+.village-icon-drop-fill::after {
+  -webkit-mask-image: url("../../../icons/design/drop-fill.svg");
+  mask-image: url("../../../icons/design/drop-fill.svg");
+}
+
+.village-icon-drop-line::before,
+.village-icon-drop-line::after {
+  -webkit-mask-image: url("../../../icons/design/drop-line.svg");
+  mask-image: url("../../../icons/design/drop-line.svg");
+}
+
+.village-icon-edit-box-fill::before,
+.village-icon-edit-box-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-fill.svg");
+  mask-image: url("../../../icons/design/edit-box-fill.svg");
+}
+
+.village-icon-edit-box-line::before,
+.village-icon-edit-box-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-box-line.svg");
+  mask-image: url("../../../icons/design/edit-box-line.svg");
+}
+
+.village-icon-edit-fill::before,
+.village-icon-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.village-icon-edit-line::before,
+.village-icon-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+.village-icon-ink-bottle-fill::before,
+.village-icon-ink-bottle-fill::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+  mask-image: url("../../../icons/design/ink-bottle-fill.svg");
+}
+
+.village-icon-ink-bottle-line::before,
+.village-icon-ink-bottle-line::after {
+  -webkit-mask-image: url("../../../icons/design/ink-bottle-line.svg");
+  mask-image: url("../../../icons/design/ink-bottle-line.svg");
+}
+
+.village-icon-layout-grid-fill::before,
+.village-icon-layout-grid-fill::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-fill.svg");
+  mask-image: url("../../../icons/design/layout-grid-fill.svg");
+}
+
+.village-icon-layout-grid-line::before,
+.village-icon-layout-grid-line::after {
+  -webkit-mask-image: url("../../../icons/design/layout-grid-line.svg");
+  mask-image: url("../../../icons/design/layout-grid-line.svg");
+}
+
+.village-icon-mark-pen-fill::before,
+.village-icon-mark-pen-fill::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-fill.svg");
+  mask-image: url("../../../icons/design/mark-pen-fill.svg");
+}
+
+.village-icon-mark-pen-line::before,
+.village-icon-mark-pen-line::after {
+  -webkit-mask-image: url("../../../icons/design/mark-pen-line.svg");
+  mask-image: url("../../../icons/design/mark-pen-line.svg");
+}
+
+.village-icon-paint-brush-fill::before,
+.village-icon-paint-brush-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-fill.svg");
+  mask-image: url("../../../icons/design/paint-brush-fill.svg");
+}
+
+.village-icon-paint-brush-line::before,
+.village-icon-paint-brush-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-brush-line.svg");
+  mask-image: url("../../../icons/design/paint-brush-line.svg");
+}
+
+.village-icon-paint-fill::before,
+.village-icon-paint-fill::after {
+  -webkit-mask-image: url("../../../icons/design/paint-fill.svg");
+  mask-image: url("../../../icons/design/paint-fill.svg");
+}
+
+.village-icon-paint-line::before,
+.village-icon-paint-line::after {
+  -webkit-mask-image: url("../../../icons/design/paint-line.svg");
+  mask-image: url("../../../icons/design/paint-line.svg");
+}
+
+.village-icon-palette-fill::before,
+.village-icon-palette-fill::after {
+  -webkit-mask-image: url("../../../icons/design/palette-fill.svg");
+  mask-image: url("../../../icons/design/palette-fill.svg");
+}
+
+.village-icon-palette-line::before,
+.village-icon-palette-line::after {
+  -webkit-mask-image: url("../../../icons/design/palette-line.svg");
+  mask-image: url("../../../icons/design/palette-line.svg");
+}
+
+.village-icon-pantone-fill::before,
+.village-icon-pantone-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-fill.svg");
+  mask-image: url("../../../icons/design/pantone-fill.svg");
+}
+
+.village-icon-pantone-line::before,
+.village-icon-pantone-line::after {
+  -webkit-mask-image: url("../../../icons/design/pantone-line.svg");
+  mask-image: url("../../../icons/design/pantone-line.svg");
+}
+
+.village-icon-pen-nib-fill::before,
+.village-icon-pen-nib-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-fill.svg");
+  mask-image: url("../../../icons/design/pen-nib-fill.svg");
+}
+
+.village-icon-pen-nib-line::before,
+.village-icon-pen-nib-line::after {
+  -webkit-mask-image: url("../../../icons/design/pen-nib-line.svg");
+  mask-image: url("../../../icons/design/pen-nib-line.svg");
+}
+
+.village-icon-pencil-fill::before,
+.village-icon-pencil-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-fill.svg");
+  mask-image: url("../../../icons/design/pencil-fill.svg");
+}
+
+.village-icon-pencil-line::before,
+.village-icon-pencil-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-line.svg");
+  mask-image: url("../../../icons/design/pencil-line.svg");
+}
+
+.village-icon-pencil-ruler-fill::before,
+.village-icon-pencil-ruler-fill::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-fill.svg");
+}
+
+.village-icon-pencil-ruler-line::before,
+.village-icon-pencil-ruler-line::after {
+  -webkit-mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+  mask-image: url("../../../icons/design/pencil-ruler-line.svg");
+}
+
+.village-icon-sip-fill::before,
+.village-icon-sip-fill::after {
+  -webkit-mask-image: url("../../../icons/design/sip-fill.svg");
+  mask-image: url("../../../icons/design/sip-fill.svg");
+}
+
+.village-icon-sip-line::before,
+.village-icon-sip-line::after {
+  -webkit-mask-image: url("../../../icons/design/sip-line.svg");
+  mask-image: url("../../../icons/design/sip-line.svg");
+}
+
+.village-icon-table-fill::before,
+.village-icon-table-fill::after {
+  -webkit-mask-image: url("../../../icons/design/table-fill.svg");
+  mask-image: url("../../../icons/design/table-fill.svg");
+}
+
+.village-icon-table-line::before,
+.village-icon-table-line::after {
+  -webkit-mask-image: url("../../../icons/design/table-line.svg");
+  mask-image: url("../../../icons/design/table-line.svg");
+}
+
+.village-fi-edit-fill::before,
+.village-fi-edit-fill::after {
+  -webkit-mask-image: url("../../../icons/design/edit-fill.svg");
+  mask-image: url("../../../icons/design/edit-fill.svg");
+}
+
+.village-fi-edit-line::before,
+.village-fi-edit-line::after {
+  -webkit-mask-image: url("../../../icons/design/edit-line.svg");
+  mask-image: url("../../../icons/design/edit-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

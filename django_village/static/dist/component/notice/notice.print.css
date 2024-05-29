@@ -1,0 +1,14 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .village-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .village-notice--info {
+    background-color: hsl(180, 80%, 96%);
+    color: hsl(180, 45%, 43%);
+  }
+}

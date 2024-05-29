@@ -1,0 +1,250 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  QUOTE
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-quote {
+  position: relative;
+  margin: 0;
+  padding: 0 0.5rem 2rem 0.5rem;
+  background-size: 50% 1px;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 100%;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+}
+
+.village-quote::before,
+.village-quote::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/editor/village--quote-line.svg");
+  mask-image: url("../../icons/editor/village--quote-line.svg");
+  --icon-size: 2rem;
+}
+
+.village-quote::before {
+  content: "";
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--artwork-minor-village-primary);
+}
+
+.village-quote--column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.village-quote--column .village-quote__author {
+  margin-left: 5.25rem;
+}
+
+.village-quote--column .village-quote__source {
+  margin-left: 5.25rem;
+}
+
+.village-quote--column figcaption {
+  min-height: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.village-quote blockquote {
+  margin: 0;
+
+  --text-spacing: 0 0 1rem;
+}
+
+.village-quote blockquote p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.village-quote__author {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  --text-spacing: 0 0 0.25rem;
+}
+
+.village-quote__image {
+  width: 4.25rem;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.village-quote__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.village-quote cite {
+  font-style: italic;
+}
+
+.village-quote figcaption {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+}
+
+.village-quote figcaption .village-quote__source {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.village-quote figcaption .village-quote__source li {
+  display: inline-block;
+}
+
+.village-quote figcaption .village-quote__source li:not(:last-child)::after {
+  content: "·";
+  display: inline-block;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.village-quote--village-color3::before {
+  color: var(--artwork-minor-village-color3);
+}
+
+.village-quote--village-color4::before {
+  color: var(--artwork-minor-village-color4);
+}
+
+.village-quote--village-color5::before {
+  color: var(--artwork-minor-village-color5);
+}
+
+.village-quote--village-color6::before {
+  color: var(--artwork-minor-village-color6);
+}
+
+.village-quote--village-color7::before {
+  color: var(--artwork-minor-village-color7);
+}
+
+.village-quote--village-color8::before {
+  color: var(--artwork-minor-village-color8);
+}
+
+.village-quote--village-color9::before {
+  color: var(--artwork-minor-village-color9);
+}
+
+.village-quote--village-color10::before {
+  color: var(--artwork-minor-village-color10);
+}
+
+.village-quote--village-color11::before {
+  color: var(--artwork-minor-village-color11);
+}
+
+.village-quote--village-color12::before {
+  color: var(--artwork-minor-village-color12);
+}
+
+.village-quote--village-color13::before {
+  color: var(--artwork-minor-village-color13);
+}
+
+.village-quote--village-color14::before {
+  color: var(--artwork-minor-village-color14);
+}
+
+.village-quote--village-color15::before {
+  color: var(--artwork-minor-village-color15);
+}
+
+.village-quote--village-color16::before {
+  color: var(--artwork-minor-village-color16);
+}
+
+.village-quote--village-color17::before {
+  color: var(--artwork-minor-village-color17);
+}
+
+.village-quote--village-color18::before {
+  color: var(--artwork-minor-village-color18);
+}
+
+.village-quote--village-color19::before {
+  color: var(--artwork-minor-village-color19);
+}
+
+.village-quote__source {
+  color: var(--text-mention-grey);
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .village-quote {
+    padding: 0 0 0 2rem;
+    background-size: 1px 100%;
+    background-position: 0 0;
+  }
+
+  .village-quote--column {
+    margin-left: 13.5rem;
+    min-height: 13rem;
+  }
+
+  .village-quote--column .village-quote__author {
+    margin-left: 0;
+  }
+
+  .village-quote--column .village-quote__source {
+    margin-left: 0;
+  }
+
+  .village-quote--column figcaption {
+    min-height: auto;
+  }
+
+  .village-quote__image {
+    position: absolute;
+    top: 50%;
+    left: -13.5rem;
+    width: 11.5rem;
+    height: 11.5rem;
+    margin-top: -5.75rem;
+  }
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

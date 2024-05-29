@@ -1,0 +1,207 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .village-message--error::before,
+  .village-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/village--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-message--valid::before,
+  .village-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/village--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-message--info::before,
+  .village-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/village--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-select-group--valid label,
+  .village-input-group--valid label,
+  .village-range-group--valid label,
+  .village-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .village-select-group--error label,
+  .village-input-group--error label,
+  .village-range-group--error label,
+  .village-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .village-select-group--info label,
+  .village-input-group--info label,
+  .village-range-group--info label,
+  .village-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .village-select-group--disabled label,
+  .village-select-group--disabled .village-hint-text,
+  .village-input-group--disabled label,
+  .village-input-group--disabled .village-hint-text,
+  .village-range-group--disabled label,
+  .village-range-group--disabled .village-hint-text,
+  .village-upload-group--disabled label,
+  .village-upload-group--disabled .village-hint-text {
+    color: #929292;
+  }
+
+  .village-label {
+    color: #161616;
+  }
+
+  .village-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .village-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .village-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .village-label--disabled,
+  .village-label--disabled .village-hint-text {
+    color: #929292;
+  }
+
+  .village-hint-text,
+  .village-message {
+    color: #666;
+  }
+
+  .village-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .village-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .village-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .village-fieldset:disabled .village-label,
+  .village-fieldset:disabled .village-hint-text,
+  .village-fieldset:disabled .village-fieldset__legend {
+    color: #929292;
+  }
+
+  .village-fieldset input:disabled + label,
+  .village-fieldset input:disabled + label .village-hint-text,
+  .village-fieldset input:disabled + label + .village-hint-text {
+    color: #929292;
+  }
+
+  .village-fieldset--error,
+  .village-fieldset--error .village-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .village-fieldset--error .village-fieldset__legend,
+  .village-fieldset--error .village-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .village-fieldset--valid,
+  .village-fieldset--valid .village-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .village-fieldset--valid .village-fieldset__legend,
+  .village-fieldset--valid .village-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .village-fieldset--info,
+  .village-fieldset--info .village-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .village-fieldset--info .village-fieldset__legend,
+  .village-fieldset--info .village-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .village-error-text::before,
+  .village-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/village--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-valid-text::before,
+  .village-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/village--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .village-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .village-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .village-fieldset--valid .village-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .village-fieldset--error .village-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .village-fieldset--info .village-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+}

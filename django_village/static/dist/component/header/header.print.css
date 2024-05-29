@@ -1,0 +1,274 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .village-header__brand {
+    background-color: #fff;
+    flex-wrap: nowrap;
+  }
+
+  .village-header__service {
+    text-align: left; /* chris2fr */
+    color: #161616;
+    box-shadow: inset 0 1px 0 0 #ddd;
+    box-shadow: none;
+  }
+
+  .village-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .village-header__menu-links .village-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-header__menu-links .village-btn:disabled,
+  .village-header__menu-links a.village-btn:not([href]) {
+    color: #929292;
+  }
+
+  .village-header__tools-links .village-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-header__tools-links .village-btn:disabled,
+  .village-header__tools-links a.village-btn:not([href]) {
+    color: #929292;
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:disabled,
+  .village-header__tools-links > .village-translate:first-child:last-child a.village-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .village-header__navbar .village-service__title {
+    color: #161616;
+  }
+
+  .village-header__navbar .village-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-header__navbar .village-btn:disabled,
+  .village-header__navbar a.village-btn:not([href]) {
+    color: #929292;
+  }
+
+  .village-header__navbar .village-btn--menu {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .village-header__navbar .village-btn--menu:disabled,
+  .village-header__navbar a.village-btn--menu:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .village-header .village-header__menu .village-container {
+    display: grid; /* chris2fr */
+    grid-template-columns: 1fr;
+    grid-template-areas: "l" "h" "m" "t";
+  }
+
+  .village-header__menu-logo {
+    grid-area: l;
+  }
+
+  .village-header .village-modal {
+    background-color: #fff;
+  }
+
+  .village-header__menu {
+    display: none;
+  }
+
+  .village-header__body-row {
+    padding: 0;
+  }
+
+  .village-header__body .village-header__tools,
+  .village-header__body .village-header__navbar {
+    display: none;
+  }
+
+  .village-header__brand-top {
+    width: auto;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .village-header__brand {
+    z-index: 750;
+  }
+
+  .village-header__menu-links .village-btn {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .village-header__menu-links .village-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__menu-links .village-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__menu-links .village-btn:disabled,
+  .village-header__menu-links a.village-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-header__menu-links .village-btn:disabled:hover,
+  .village-header__menu-links a.village-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__menu-links .village-btn:disabled:active,
+  .village-header__menu-links a.village-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__tools-links .village-btn {
+    background-color: transparent;
+  }
+
+  .village-header__tools-links .village-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__tools-links .village-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__tools-links .village-btn:disabled,
+  .village-header__tools-links a.village-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-header__tools-links .village-btn:disabled:hover,
+  .village-header__tools-links a.village-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__tools-links .village-btn:disabled:active,
+  .village-header__tools-links a.village-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn {
+    background-color: transparent;
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:disabled,
+  .village-header__tools-links > .village-translate:first-child:last-child a.village-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:disabled:hover,
+  .village-header__tools-links > .village-translate:first-child:last-child a.village-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__tools-links > .village-translate:first-child:last-child .village-btn:disabled:active,
+  .village-header__tools-links > .village-translate:first-child:last-child a.village-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__navbar .village-btn {
+    background-color: transparent;
+  }
+
+  .village-header__navbar .village-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__navbar .village-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__navbar .village-btn:disabled,
+  .village-header__navbar a.village-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-header__navbar .village-btn:disabled:hover,
+  .village-header__navbar a.village-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__navbar .village-btn:disabled:active,
+  .village-header__navbar a.village-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__navbar .village-btn--menu {
+    background-color: transparent;
+  }
+
+  .village-header__navbar .village-btn--menu:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__navbar .village-btn--menu:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-header__navbar .village-btn--menu:disabled,
+  .village-header__navbar a.village-btn--menu:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-header__navbar .village-btn--menu:disabled:hover,
+  .village-header__navbar a.village-btn--menu:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-header__navbar .village-btn--menu:disabled:active,
+  .village-header__navbar a.village-btn--menu:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 62em) {
+  .village-header {
+    background-color: #fff;
+  }
+
+  .village-header .village-header__menu .village-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "l m" "h h";
+  }
+
+  .village-header .village-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}
+@media print and (min-width: 62em) and (-ms-high-contrast: none), print and (min-width: 62em) and (-ms-high-contrast: active) {
+  .village-header {
+    z-index: 750;
+  }
+
+  .village-header__brand {
+    z-index: auto;
+    background: transparent;
+  }
+
+  .village-header__service {
+    box-shadow: none;
+  }
+}

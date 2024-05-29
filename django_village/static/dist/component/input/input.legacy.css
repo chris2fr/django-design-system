@@ -1,0 +1,94 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.village-input:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-input-wrap--addon .village-btn {
+    flex-shrink: 0;
+  }
+
+  .village-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .village-input::placeholder {
+    color: #666;
+  }
+
+  .village-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .village-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .village-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .village-input:autofill,
+  .village-input:autofill:hover,
+  .village-input:autofill:focus,
+  .village-input:-webkit-autofill,
+  .village-input:-webkit-autofill:hover,
+  .village-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .village-input-wrap--addon > .village-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .village-fieldset--valid .village-input,
+  .village-fieldset--valid .village-input-wrap--addon > .village-input:not(:last-child),
+  .village-input-group--valid .village-input,
+  .village-input-group--valid .village-input-wrap--addon > .village-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .village-fieldset--error .village-input,
+  .village-fieldset--error .village-input-wrap--addon > .village-input:not(:last-child),
+  .village-input-group--error .village-input,
+  .village-input-group--error .village-input-wrap--addon > .village-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .village-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .village-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .village-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+}

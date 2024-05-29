@@ -1,0 +1,230 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .village-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .village-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .village-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .village-btn:disabled,
+  a.village-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .village-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .village-btn--secondary:disabled,
+  a.village-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .village-btn--tertiary,
+  .village-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .village-btn--tertiary:disabled,
+  a.village-btn--tertiary:not([href]),
+  a.village-btn--account:not([href]),
+  .village-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .village-btn--tertiary-no-outline,
+  .village-btn--close,
+  .village-btn--display,
+  .village-btn--fullscreen,
+  .village-btn--tooltip,
+  .village-btn--briefcase,
+  .village-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-btn--tertiary-no-outline:disabled,
+  a.village-btn--tertiary-no-outline:not([href]),
+  a.village-btn--close:not([href]),
+  a.village-btn--display:not([href]),
+  a.village-btn--fullscreen:not([href]),
+  a.village-btn--tooltip:not([href]),
+  a.village-btn--briefcase:not([href]),
+  a.village-btn--team:not([href]),
+  .village-btn--close:disabled,
+  .village-btn--display:disabled,
+  .village-btn--fullscreen:disabled,
+  .village-btn--tooltip:disabled,
+  .village-btn--briefcase:disabled,
+  .village-btn--team:disabled {
+    color: #929292;
+  }
+
+  .village-btn--secondary,
+  .village-btn--tertiary,
+  .village-btn--tertiary-no-outline,
+  .village-btn--close,
+  .village-btn--display,
+  .village-btn--fullscreen,
+  .village-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .village-btn--secondary {
+    background-color: transparent;
+  }
+
+  .village-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-btn--secondary:disabled,
+  a.village-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-btn--secondary:disabled:hover,
+  a.village-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--secondary:disabled:active,
+  a.village-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-btn--tertiary,
+  .village-btn--account {
+    background-color: transparent;
+  }
+
+  .village-btn--tertiary:hover,
+  .village-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--tertiary:active,
+  .village-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-btn--tertiary:disabled,
+  a.village-btn--tertiary:not([href]),
+  a.village-btn--account:not([href]),
+  .village-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .village-btn--tertiary:disabled:hover,
+  a.village-btn--tertiary:not([href]):hover,
+  a.village-btn--account:not([href]):hover,
+  .village-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--tertiary:disabled:active,
+  a.village-btn--tertiary:not([href]):active,
+  a.village-btn--account:not([href]):active,
+  .village-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-btn--tertiary-no-outline,
+  .village-btn--close,
+  .village-btn--display,
+  .village-btn--fullscreen,
+  .village-btn--tooltip,
+  .village-btn--briefcase,
+  .village-btn--team {
+    background-color: transparent;
+  }
+
+  .village-btn--tertiary-no-outline:hover,
+  .village-btn--close:hover,
+  .village-btn--display:hover,
+  .village-btn--fullscreen:hover,
+  .village-btn--tooltip:hover,
+  .village-btn--briefcase:hover,
+  .village-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--tertiary-no-outline:active,
+  .village-btn--close:active,
+  .village-btn--display:active,
+  .village-btn--fullscreen:active,
+  .village-btn--tooltip:active,
+  .village-btn--briefcase:active,
+  .village-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-btn--tertiary-no-outline:disabled,
+  a.village-btn--tertiary-no-outline:not([href]),
+  a.village-btn--close:not([href]),
+  a.village-btn--display:not([href]),
+  a.village-btn--fullscreen:not([href]),
+  a.village-btn--tooltip:not([href]),
+  a.village-btn--briefcase:not([href]),
+  a.village-btn--team:not([href]),
+  .village-btn--close:disabled,
+  .village-btn--display:disabled,
+  .village-btn--fullscreen:disabled,
+  .village-btn--tooltip:disabled,
+  .village-btn--briefcase:disabled,
+  .village-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .village-btn--tertiary-no-outline:disabled:hover,
+  a.village-btn--tertiary-no-outline:not([href]):hover,
+  a.village-btn--close:not([href]):hover,
+  a.village-btn--display:not([href]):hover,
+  a.village-btn--fullscreen:not([href]):hover,
+  a.village-btn--tooltip:not([href]):hover,
+  a.village-btn--briefcase:not([href]):hover,
+  a.village-btn--team:not([href]):hover,
+  .village-btn--close:disabled:hover,
+  .village-btn--display:disabled:hover,
+  .village-btn--fullscreen:disabled:hover,
+  .village-btn--tooltip:disabled:hover,
+  .village-btn--briefcase:disabled:hover,
+  .village-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-btn--tertiary-no-outline:disabled:active,
+  a.village-btn--tertiary-no-outline:not([href]):active,
+  a.village-btn--close:not([href]):active,
+  a.village-btn--display:not([href]):active,
+  a.village-btn--fullscreen:not([href]):active,
+  a.village-btn--tooltip:not([href]):active,
+  a.village-btn--briefcase:not([href]):active,
+  a.village-btn--team:not([href]):active,
+  .village-btn--close:disabled:active,
+  .village-btn--display:disabled:active,
+  .village-btn--fullscreen:disabled:active,
+  .village-btn--tooltip:disabled:active,
+  .village-btn--briefcase:disabled:active,
+  .village-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

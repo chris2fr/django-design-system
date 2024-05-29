@@ -1,0 +1,146 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-icon-bug-fill::before,
+  .village-icon-bug-fill::after {
+    background-image: url("../../../icons/development/bug-fill.svg");
+  }
+
+  .village-icon-bug-line::before,
+  .village-icon-bug-line::after {
+    background-image: url("../../../icons/development/bug-line.svg");
+  }
+
+  .village-icon-code-box-fill::before,
+  .village-icon-code-box-fill::after {
+    background-image: url("../../../icons/development/code-box-fill.svg");
+  }
+
+  .village-icon-code-box-line::before,
+  .village-icon-code-box-line::after {
+    background-image: url("../../../icons/development/code-box-line.svg");
+  }
+
+  .village-icon-code-s-slash-line::before,
+  .village-icon-code-s-slash-line::after {
+    background-image: url("../../../icons/development/code-s-slash-line.svg");
+  }
+
+  .village-icon-cursor-fill::before,
+  .village-icon-cursor-fill::after {
+    background-image: url("../../../icons/development/cursor-fill.svg");
+  }
+
+  .village-icon-cursor-line::before,
+  .village-icon-cursor-line::after {
+    background-image: url("../../../icons/development/cursor-line.svg");
+  }
+
+  .village-icon-git-branch-fill::before,
+  .village-icon-git-branch-fill::after {
+    background-image: url("../../../icons/development/git-branch-fill.svg");
+  }
+
+  .village-icon-git-branch-line::before,
+  .village-icon-git-branch-line::after {
+    background-image: url("../../../icons/development/git-branch-line.svg");
+  }
+
+  .village-icon-git-commit-fill::before,
+  .village-icon-git-commit-fill::after {
+    background-image: url("../../../icons/development/git-commit-fill.svg");
+  }
+
+  .village-icon-git-commit-line::before,
+  .village-icon-git-commit-line::after {
+    background-image: url("../../../icons/development/git-commit-line.svg");
+  }
+
+  .village-icon-git-merge-fill::before,
+  .village-icon-git-merge-fill::after {
+    background-image: url("../../../icons/development/git-merge-fill.svg");
+  }
+
+  .village-icon-git-merge-line::before,
+  .village-icon-git-merge-line::after {
+    background-image: url("../../../icons/development/git-merge-line.svg");
+  }
+
+  .village-icon-git-pull-request-fill::before,
+  .village-icon-git-pull-request-fill::after {
+    background-image: url("../../../icons/development/git-pull-request-fill.svg");
+  }
+
+  .village-icon-git-pull-request-line::before,
+  .village-icon-git-pull-request-line::after {
+    background-image: url("../../../icons/development/git-pull-request-line.svg");
+  }
+
+  .village-icon-git-repository-commits-fill::before,
+  .village-icon-git-repository-commits-fill::after {
+    background-image: url("../../../icons/development/git-repository-commits-fill.svg");
+  }
+
+  .village-icon-git-repository-commits-line::before,
+  .village-icon-git-repository-commits-line::after {
+    background-image: url("../../../icons/development/git-repository-commits-line.svg");
+  }
+
+  .village-icon-git-repository-fill::before,
+  .village-icon-git-repository-fill::after {
+    background-image: url("../../../icons/development/git-repository-fill.svg");
+  }
+
+  .village-icon-git-repository-line::before,
+  .village-icon-git-repository-line::after {
+    background-image: url("../../../icons/development/git-repository-line.svg");
+  }
+
+  .village-icon-git-repository-private-fill::before,
+  .village-icon-git-repository-private-fill::after {
+    background-image: url("../../../icons/development/git-repository-private-fill.svg");
+  }
+
+  .village-icon-git-repository-private-line::before,
+  .village-icon-git-repository-private-line::after {
+    background-image: url("../../../icons/development/git-repository-private-line.svg");
+  }
+
+  .village-icon-terminal-box-fill::before,
+  .village-icon-terminal-box-fill::after {
+    background-image: url("../../../icons/development/terminal-box-fill.svg");
+  }
+
+  .village-icon-terminal-box-line::before,
+  .village-icon-terminal-box-line::after {
+    background-image: url("../../../icons/development/terminal-box-line.svg");
+  }
+
+  .village-icon-terminal-line::before,
+  .village-icon-terminal-line::after {
+    background-image: url("../../../icons/development/terminal-line.svg");
+  }
+
+  .village-icon-terminal-window-fill::before,
+  .village-icon-terminal-window-fill::after {
+    background-image: url("../../../icons/development/terminal-window-fill.svg");
+  }
+
+  .village-icon-terminal-window-line::before,
+  .village-icon-terminal-window-line::after {
+    background-image: url("../../../icons/development/terminal-window-line.svg");
+  }
+}

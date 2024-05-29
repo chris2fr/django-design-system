@@ -1,0 +1,401 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-icon-article-fill::before,
+.village-icon-article-fill::after {
+  -webkit-mask-image: url("../../../icons/document/article-fill.svg");
+  mask-image: url("../../../icons/document/article-fill.svg");
+}
+
+.village-icon-article-line::before,
+.village-icon-article-line::after {
+  -webkit-mask-image: url("../../../icons/document/article-line.svg");
+  mask-image: url("../../../icons/document/article-line.svg");
+}
+
+.village-icon-book-2-fill::before,
+.village-icon-book-2-fill::after {
+  -webkit-mask-image: url("../../../icons/document/book-2-fill.svg");
+  mask-image: url("../../../icons/document/book-2-fill.svg");
+}
+
+.village-icon-book-2-line::before,
+.village-icon-book-2-line::after {
+  -webkit-mask-image: url("../../../icons/document/book-2-line.svg");
+  mask-image: url("../../../icons/document/book-2-line.svg");
+}
+
+.village-icon-booklet-fill::before,
+.village-icon-booklet-fill::after {
+  -webkit-mask-image: url("../../../icons/document/booklet-fill.svg");
+  mask-image: url("../../../icons/document/booklet-fill.svg");
+}
+
+.village-icon-booklet-line::before,
+.village-icon-booklet-line::after {
+  -webkit-mask-image: url("../../../icons/document/booklet-line.svg");
+  mask-image: url("../../../icons/document/booklet-line.svg");
+}
+
+.village-icon-clipboard-fill::before,
+.village-icon-clipboard-fill::after {
+  -webkit-mask-image: url("../../../icons/document/clipboard-fill.svg");
+  mask-image: url("../../../icons/document/clipboard-fill.svg");
+}
+
+.village-icon-clipboard-line::before,
+.village-icon-clipboard-line::after {
+  -webkit-mask-image: url("../../../icons/document/clipboard-line.svg");
+  mask-image: url("../../../icons/document/clipboard-line.svg");
+}
+
+.village-icon-draft-fill::before,
+.village-icon-draft-fill::after {
+  -webkit-mask-image: url("../../../icons/document/draft-fill.svg");
+  mask-image: url("../../../icons/document/draft-fill.svg");
+}
+
+.village-icon-draft-line::before,
+.village-icon-draft-line::after {
+  -webkit-mask-image: url("../../../icons/document/draft-line.svg");
+  mask-image: url("../../../icons/document/draft-line.svg");
+}
+
+.village-icon-file-add-fill::before,
+.village-icon-file-add-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-add-fill.svg");
+  mask-image: url("../../../icons/document/file-add-fill.svg");
+}
+
+.village-icon-file-add-line::before,
+.village-icon-file-add-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-add-line.svg");
+  mask-image: url("../../../icons/document/file-add-line.svg");
+}
+
+.village-icon-file-download-fill::before,
+.village-icon-file-download-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-download-fill.svg");
+  mask-image: url("../../../icons/document/file-download-fill.svg");
+}
+
+.village-icon-file-download-line::before,
+.village-icon-file-download-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-download-line.svg");
+  mask-image: url("../../../icons/document/file-download-line.svg");
+}
+
+.village-icon-file-fill::before,
+.village-icon-file-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-fill.svg");
+  mask-image: url("../../../icons/document/file-fill.svg");
+}
+
+.village-icon-file-line::before,
+.village-icon-file-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-line.svg");
+  mask-image: url("../../../icons/document/file-line.svg");
+}
+
+.village-icon-file-pdf-fill::before,
+.village-icon-file-pdf-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-pdf-fill.svg");
+  mask-image: url("../../../icons/document/file-pdf-fill.svg");
+}
+
+.village-icon-file-pdf-line::before,
+.village-icon-file-pdf-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-pdf-line.svg");
+  mask-image: url("../../../icons/document/file-pdf-line.svg");
+}
+
+.village-icon-file-text-fill::before,
+.village-icon-file-text-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-text-fill.svg");
+  mask-image: url("../../../icons/document/file-text-fill.svg");
+}
+
+.village-icon-file-text-line::before,
+.village-icon-file-text-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-text-line.svg");
+  mask-image: url("../../../icons/document/file-text-line.svg");
+}
+
+.village-icon-folder-2-fill::before,
+.village-icon-folder-2-fill::after {
+  -webkit-mask-image: url("../../../icons/document/folder-2-fill.svg");
+  mask-image: url("../../../icons/document/folder-2-fill.svg");
+}
+
+.village-icon-folder-2-line::before,
+.village-icon-folder-2-line::after {
+  -webkit-mask-image: url("../../../icons/document/folder-2-line.svg");
+  mask-image: url("../../../icons/document/folder-2-line.svg");
+}
+
+.village-icon-newspaper-fill::before,
+.village-icon-newspaper-fill::after {
+  -webkit-mask-image: url("../../../icons/document/newspaper-fill.svg");
+  mask-image: url("../../../icons/document/newspaper-fill.svg");
+}
+
+.village-icon-newspaper-line::before,
+.village-icon-newspaper-line::after {
+  -webkit-mask-image: url("../../../icons/document/newspaper-line.svg");
+  mask-image: url("../../../icons/document/newspaper-line.svg");
+}
+
+.village-icon-survey-fill::before,
+.village-icon-survey-fill::after {
+  -webkit-mask-image: url("../../../icons/document/survey-fill.svg");
+  mask-image: url("../../../icons/document/survey-fill.svg");
+}
+
+.village-icon-survey-line::before,
+.village-icon-survey-line::after {
+  -webkit-mask-image: url("../../../icons/document/survey-line.svg");
+  mask-image: url("../../../icons/document/survey-line.svg");
+}
+
+.village-icon-todo-fill::before,
+.village-icon-todo-fill::after {
+  -webkit-mask-image: url("../../../icons/document/todo-fill.svg");
+  mask-image: url("../../../icons/document/todo-fill.svg");
+}
+
+.village-icon-todo-line::before,
+.village-icon-todo-line::after {
+  -webkit-mask-image: url("../../../icons/document/todo-line.svg");
+  mask-image: url("../../../icons/document/todo-line.svg");
+}
+
+.village-fi-file-download-fill::before,
+.village-fi-file-download-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-download-fill.svg");
+  mask-image: url("../../../icons/document/file-download-fill.svg");
+}
+
+.village-fi-file-download-line::before,
+.village-fi-file-download-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-download-line.svg");
+  mask-image: url("../../../icons/document/file-download-line.svg");
+}
+
+.village-fi-file-fill::before,
+.village-fi-file-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-fill.svg");
+  mask-image: url("../../../icons/document/file-fill.svg");
+}
+
+.village-fi-file-line::before,
+.village-fi-file-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-line.svg");
+  mask-image: url("../../../icons/document/file-line.svg");
+}
+
+.village-fi-file-pdf-fill::before,
+.village-fi-file-pdf-fill::after {
+  -webkit-mask-image: url("../../../icons/document/file-pdf-fill.svg");
+  mask-image: url("../../../icons/document/file-pdf-fill.svg");
+}
+
+.village-fi-file-pdf-line::before,
+.village-fi-file-pdf-line::after {
+  -webkit-mask-image: url("../../../icons/document/file-pdf-line.svg");
+  mask-image: url("../../../icons/document/file-pdf-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-icon-article-fill::before,
+  .village-icon-article-fill::after {
+    background-image: url("../../../icons/document/article-fill.svg");
+  }
+
+  .village-icon-article-line::before,
+  .village-icon-article-line::after {
+    background-image: url("../../../icons/document/article-line.svg");
+  }
+
+  .village-icon-book-2-fill::before,
+  .village-icon-book-2-fill::after {
+    background-image: url("../../../icons/document/book-2-fill.svg");
+  }
+
+  .village-icon-book-2-line::before,
+  .village-icon-book-2-line::after {
+    background-image: url("../../../icons/document/book-2-line.svg");
+  }
+
+  .village-icon-booklet-fill::before,
+  .village-icon-booklet-fill::after {
+    background-image: url("../../../icons/document/booklet-fill.svg");
+  }
+
+  .village-icon-booklet-line::before,
+  .village-icon-booklet-line::after {
+    background-image: url("../../../icons/document/booklet-line.svg");
+  }
+
+  .village-icon-clipboard-fill::before,
+  .village-icon-clipboard-fill::after {
+    background-image: url("../../../icons/document/clipboard-fill.svg");
+  }
+
+  .village-icon-clipboard-line::before,
+  .village-icon-clipboard-line::after {
+    background-image: url("../../../icons/document/clipboard-line.svg");
+  }
+
+  .village-icon-draft-fill::before,
+  .village-icon-draft-fill::after {
+    background-image: url("../../../icons/document/draft-fill.svg");
+  }
+
+  .village-icon-draft-line::before,
+  .village-icon-draft-line::after {
+    background-image: url("../../../icons/document/draft-line.svg");
+  }
+
+  .village-icon-file-add-fill::before,
+  .village-icon-file-add-fill::after {
+    background-image: url("../../../icons/document/file-add-fill.svg");
+  }
+
+  .village-icon-file-add-line::before,
+  .village-icon-file-add-line::after {
+    background-image: url("../../../icons/document/file-add-line.svg");
+  }
+
+  .village-icon-file-download-fill::before,
+  .village-icon-file-download-fill::after {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .village-icon-file-download-line::before,
+  .village-icon-file-download-line::after {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .village-icon-file-fill::before,
+  .village-icon-file-fill::after {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .village-icon-file-line::before,
+  .village-icon-file-line::after {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .village-icon-file-pdf-fill::before,
+  .village-icon-file-pdf-fill::after {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .village-icon-file-pdf-line::before,
+  .village-icon-file-pdf-line::after {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+
+  .village-icon-file-text-fill::before,
+  .village-icon-file-text-fill::after {
+    background-image: url("../../../icons/document/file-text-fill.svg");
+  }
+
+  .village-icon-file-text-line::before,
+  .village-icon-file-text-line::after {
+    background-image: url("../../../icons/document/file-text-line.svg");
+  }
+
+  .village-icon-folder-2-fill::before,
+  .village-icon-folder-2-fill::after {
+    background-image: url("../../../icons/document/folder-2-fill.svg");
+  }
+
+  .village-icon-folder-2-line::before,
+  .village-icon-folder-2-line::after {
+    background-image: url("../../../icons/document/folder-2-line.svg");
+  }
+
+  .village-icon-newspaper-fill::before,
+  .village-icon-newspaper-fill::after {
+    background-image: url("../../../icons/document/newspaper-fill.svg");
+  }
+
+  .village-icon-newspaper-line::before,
+  .village-icon-newspaper-line::after {
+    background-image: url("../../../icons/document/newspaper-line.svg");
+  }
+
+  .village-icon-survey-fill::before,
+  .village-icon-survey-fill::after {
+    background-image: url("../../../icons/document/survey-fill.svg");
+  }
+
+  .village-icon-survey-line::before,
+  .village-icon-survey-line::after {
+    background-image: url("../../../icons/document/survey-line.svg");
+  }
+
+  .village-icon-todo-fill::before,
+  .village-icon-todo-fill::after {
+    background-image: url("../../../icons/document/todo-fill.svg");
+  }
+
+  .village-icon-todo-line::before,
+  .village-icon-todo-line::after {
+    background-image: url("../../../icons/document/todo-line.svg");
+  }
+
+  .village-fi-file-download-fill::before {
+    background-image: url("../../../icons/document/file-download-fill.svg");
+  }
+
+  .village-fi-file-download-line::before {
+    background-image: url("../../../icons/document/file-download-line.svg");
+  }
+
+  .village-fi-file-fill::before {
+    background-image: url("../../../icons/document/file-fill.svg");
+  }
+
+  .village-fi-file-line::before {
+    background-image: url("../../../icons/document/file-line.svg");
+  }
+
+  .village-fi-file-pdf-fill::before {
+    background-image: url("../../../icons/document/file-pdf-fill.svg");
+  }
+
+  .village-fi-file-pdf-line::before {
+    background-image: url("../../../icons/document/file-pdf-line.svg");
+  }
+}

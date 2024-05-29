@@ -1,0 +1,467 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-icon-bluetooth-fill::before,
+.village-icon-bluetooth-fill::after {
+  -webkit-mask-image: url("../../../icons/device/bluetooth-fill.svg");
+  mask-image: url("../../../icons/device/bluetooth-fill.svg");
+}
+
+.village-icon-bluetooth-line::before,
+.village-icon-bluetooth-line::after {
+  -webkit-mask-image: url("../../../icons/device/bluetooth-line.svg");
+  mask-image: url("../../../icons/device/bluetooth-line.svg");
+}
+
+.village-icon-computer-fill::before,
+.village-icon-computer-fill::after {
+  -webkit-mask-image: url("../../../icons/device/computer-fill.svg");
+  mask-image: url("../../../icons/device/computer-fill.svg");
+}
+
+.village-icon-computer-line::before,
+.village-icon-computer-line::after {
+  -webkit-mask-image: url("../../../icons/device/computer-line.svg");
+  mask-image: url("../../../icons/device/computer-line.svg");
+}
+
+.village-icon-dashboard-3-fill::before,
+.village-icon-dashboard-3-fill::after {
+  -webkit-mask-image: url("../../../icons/device/dashboard-3-fill.svg");
+  mask-image: url("../../../icons/device/dashboard-3-fill.svg");
+}
+
+.village-icon-dashboard-3-line::before,
+.village-icon-dashboard-3-line::after {
+  -webkit-mask-image: url("../../../icons/device/dashboard-3-line.svg");
+  mask-image: url("../../../icons/device/dashboard-3-line.svg");
+}
+
+.village-icon-database-fill::before,
+.village-icon-database-fill::after {
+  -webkit-mask-image: url("../../../icons/device/database-fill.svg");
+  mask-image: url("../../../icons/device/database-fill.svg");
+}
+
+.village-icon-database-line::before,
+.village-icon-database-line::after {
+  -webkit-mask-image: url("../../../icons/device/database-line.svg");
+  mask-image: url("../../../icons/device/database-line.svg");
+}
+
+.village-icon-device-fill::before,
+.village-icon-device-fill::after {
+  -webkit-mask-image: url("../../../icons/device/device-fill.svg");
+  mask-image: url("../../../icons/device/device-fill.svg");
+}
+
+.village-icon-device-line::before,
+.village-icon-device-line::after {
+  -webkit-mask-image: url("../../../icons/device/device-line.svg");
+  mask-image: url("../../../icons/device/device-line.svg");
+}
+
+.village-icon-hard-drive-2-fill::before,
+.village-icon-hard-drive-2-fill::after {
+  -webkit-mask-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  mask-image: url("../../../icons/device/hard-drive-2-fill.svg");
+}
+
+.village-icon-hard-drive-2-line::before,
+.village-icon-hard-drive-2-line::after {
+  -webkit-mask-image: url("../../../icons/device/hard-drive-2-line.svg");
+  mask-image: url("../../../icons/device/hard-drive-2-line.svg");
+}
+
+.village-icon-mac-fill::before,
+.village-icon-mac-fill::after {
+  -webkit-mask-image: url("../../../icons/device/mac-fill.svg");
+  mask-image: url("../../../icons/device/mac-fill.svg");
+}
+
+.village-icon-mac-line::before,
+.village-icon-mac-line::after {
+  -webkit-mask-image: url("../../../icons/device/mac-line.svg");
+  mask-image: url("../../../icons/device/mac-line.svg");
+}
+
+.village-icon-phone-fill::before,
+.village-icon-phone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/phone-fill.svg");
+  mask-image: url("../../../icons/device/phone-fill.svg");
+}
+
+.village-icon-phone-line::before,
+.village-icon-phone-line::after {
+  -webkit-mask-image: url("../../../icons/device/phone-line.svg");
+  mask-image: url("../../../icons/device/phone-line.svg");
+}
+
+.village-icon-qr-code-fill::before,
+.village-icon-qr-code-fill::after {
+  -webkit-mask-image: url("../../../icons/device/qr-code-fill.svg");
+  mask-image: url("../../../icons/device/qr-code-fill.svg");
+}
+
+.village-icon-qr-code-line::before,
+.village-icon-qr-code-line::after {
+  -webkit-mask-image: url("../../../icons/device/qr-code-line.svg");
+  mask-image: url("../../../icons/device/qr-code-line.svg");
+}
+
+.village-icon-rss-fill::before,
+.village-icon-rss-fill::after {
+  -webkit-mask-image: url("../../../icons/device/rss-fill.svg");
+  mask-image: url("../../../icons/device/rss-fill.svg");
+}
+
+.village-icon-rss-line::before,
+.village-icon-rss-line::after {
+  -webkit-mask-image: url("../../../icons/device/rss-line.svg");
+  mask-image: url("../../../icons/device/rss-line.svg");
+}
+
+.village-icon-save-3-fill::before,
+.village-icon-save-3-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-3-fill.svg");
+  mask-image: url("../../../icons/device/save-3-fill.svg");
+}
+
+.village-icon-save-3-line::before,
+.village-icon-save-3-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-3-line.svg");
+  mask-image: url("../../../icons/device/save-3-line.svg");
+}
+
+.village-icon-save-fill::before,
+.village-icon-save-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-fill.svg");
+  mask-image: url("../../../icons/device/save-fill.svg");
+}
+
+.village-icon-save-line::before,
+.village-icon-save-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-line.svg");
+  mask-image: url("../../../icons/device/save-line.svg");
+}
+
+.village-icon-server-fill::before,
+.village-icon-server-fill::after {
+  -webkit-mask-image: url("../../../icons/device/server-fill.svg");
+  mask-image: url("../../../icons/device/server-fill.svg");
+}
+
+.village-icon-server-line::before,
+.village-icon-server-line::after {
+  -webkit-mask-image: url("../../../icons/device/server-line.svg");
+  mask-image: url("../../../icons/device/server-line.svg");
+}
+
+.village-icon-smartphone-fill::before,
+.village-icon-smartphone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/smartphone-fill.svg");
+  mask-image: url("../../../icons/device/smartphone-fill.svg");
+}
+
+.village-icon-smartphone-line::before,
+.village-icon-smartphone-line::after {
+  -webkit-mask-image: url("../../../icons/device/smartphone-line.svg");
+  mask-image: url("../../../icons/device/smartphone-line.svg");
+}
+
+.village-icon-tablet-fill::before,
+.village-icon-tablet-fill::after {
+  -webkit-mask-image: url("../../../icons/device/tablet-fill.svg");
+  mask-image: url("../../../icons/device/tablet-fill.svg");
+}
+
+.village-icon-tablet-line::before,
+.village-icon-tablet-line::after {
+  -webkit-mask-image: url("../../../icons/device/tablet-line.svg");
+  mask-image: url("../../../icons/device/tablet-line.svg");
+}
+
+.village-icon-tv-fill::before,
+.village-icon-tv-fill::after {
+  -webkit-mask-image: url("../../../icons/device/tv-fill.svg");
+  mask-image: url("../../../icons/device/tv-fill.svg");
+}
+
+.village-icon-tv-line::before,
+.village-icon-tv-line::after {
+  -webkit-mask-image: url("../../../icons/device/tv-line.svg");
+  mask-image: url("../../../icons/device/tv-line.svg");
+}
+
+.village-icon-wifi-fill::before,
+.village-icon-wifi-fill::after {
+  -webkit-mask-image: url("../../../icons/device/wifi-fill.svg");
+  mask-image: url("../../../icons/device/wifi-fill.svg");
+}
+
+.village-icon-wifi-line::before,
+.village-icon-wifi-line::after {
+  -webkit-mask-image: url("../../../icons/device/wifi-line.svg");
+  mask-image: url("../../../icons/device/wifi-line.svg");
+}
+
+.village-fi-phone-fill::before,
+.village-fi-phone-fill::after {
+  -webkit-mask-image: url("../../../icons/device/phone-fill.svg");
+  mask-image: url("../../../icons/device/phone-fill.svg");
+}
+
+.village-fi-phone-line::before,
+.village-fi-phone-line::after {
+  -webkit-mask-image: url("../../../icons/device/phone-line.svg");
+  mask-image: url("../../../icons/device/phone-line.svg");
+}
+
+.village-fi-rss-fill::before,
+.village-fi-rss-fill::after {
+  -webkit-mask-image: url("../../../icons/device/rss-fill.svg");
+  mask-image: url("../../../icons/device/rss-fill.svg");
+}
+
+.village-fi-rss-line::before,
+.village-fi-rss-line::after {
+  -webkit-mask-image: url("../../../icons/device/rss-line.svg");
+  mask-image: url("../../../icons/device/rss-line.svg");
+}
+
+.village-fi-save-fill::before,
+.village-fi-save-fill::after {
+  -webkit-mask-image: url("../../../icons/device/save-fill.svg");
+  mask-image: url("../../../icons/device/save-fill.svg");
+}
+
+.village-fi-save-line::before,
+.village-fi-save-line::after {
+  -webkit-mask-image: url("../../../icons/device/save-line.svg");
+  mask-image: url("../../../icons/device/save-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-icon-bluetooth-fill::before,
+  .village-icon-bluetooth-fill::after {
+    background-image: url("../../../icons/device/bluetooth-fill.svg");
+  }
+
+  .village-icon-bluetooth-line::before,
+  .village-icon-bluetooth-line::after {
+    background-image: url("../../../icons/device/bluetooth-line.svg");
+  }
+
+  .village-icon-computer-fill::before,
+  .village-icon-computer-fill::after {
+    background-image: url("../../../icons/device/computer-fill.svg");
+  }
+
+  .village-icon-computer-line::before,
+  .village-icon-computer-line::after {
+    background-image: url("../../../icons/device/computer-line.svg");
+  }
+
+  .village-icon-dashboard-3-fill::before,
+  .village-icon-dashboard-3-fill::after {
+    background-image: url("../../../icons/device/dashboard-3-fill.svg");
+  }
+
+  .village-icon-dashboard-3-line::before,
+  .village-icon-dashboard-3-line::after {
+    background-image: url("../../../icons/device/dashboard-3-line.svg");
+  }
+
+  .village-icon-database-fill::before,
+  .village-icon-database-fill::after {
+    background-image: url("../../../icons/device/database-fill.svg");
+  }
+
+  .village-icon-database-line::before,
+  .village-icon-database-line::after {
+    background-image: url("../../../icons/device/database-line.svg");
+  }
+
+  .village-icon-device-fill::before,
+  .village-icon-device-fill::after {
+    background-image: url("../../../icons/device/device-fill.svg");
+  }
+
+  .village-icon-device-line::before,
+  .village-icon-device-line::after {
+    background-image: url("../../../icons/device/device-line.svg");
+  }
+
+  .village-icon-hard-drive-2-fill::before,
+  .village-icon-hard-drive-2-fill::after {
+    background-image: url("../../../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .village-icon-hard-drive-2-line::before,
+  .village-icon-hard-drive-2-line::after {
+    background-image: url("../../../icons/device/hard-drive-2-line.svg");
+  }
+
+  .village-icon-mac-fill::before,
+  .village-icon-mac-fill::after {
+    background-image: url("../../../icons/device/mac-fill.svg");
+  }
+
+  .village-icon-mac-line::before,
+  .village-icon-mac-line::after {
+    background-image: url("../../../icons/device/mac-line.svg");
+  }
+
+  .village-icon-phone-fill::before,
+  .village-icon-phone-fill::after {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .village-icon-phone-line::before,
+  .village-icon-phone-line::after {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .village-icon-qr-code-fill::before,
+  .village-icon-qr-code-fill::after {
+    background-image: url("../../../icons/device/qr-code-fill.svg");
+  }
+
+  .village-icon-qr-code-line::before,
+  .village-icon-qr-code-line::after {
+    background-image: url("../../../icons/device/qr-code-line.svg");
+  }
+
+  .village-icon-rss-fill::before,
+  .village-icon-rss-fill::after {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .village-icon-rss-line::before,
+  .village-icon-rss-line::after {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .village-icon-save-3-fill::before,
+  .village-icon-save-3-fill::after {
+    background-image: url("../../../icons/device/save-3-fill.svg");
+  }
+
+  .village-icon-save-3-line::before,
+  .village-icon-save-3-line::after {
+    background-image: url("../../../icons/device/save-3-line.svg");
+  }
+
+  .village-icon-save-fill::before,
+  .village-icon-save-fill::after {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .village-icon-save-line::before,
+  .village-icon-save-line::after {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+
+  .village-icon-server-fill::before,
+  .village-icon-server-fill::after {
+    background-image: url("../../../icons/device/server-fill.svg");
+  }
+
+  .village-icon-server-line::before,
+  .village-icon-server-line::after {
+    background-image: url("../../../icons/device/server-line.svg");
+  }
+
+  .village-icon-smartphone-fill::before,
+  .village-icon-smartphone-fill::after {
+    background-image: url("../../../icons/device/smartphone-fill.svg");
+  }
+
+  .village-icon-smartphone-line::before,
+  .village-icon-smartphone-line::after {
+    background-image: url("../../../icons/device/smartphone-line.svg");
+  }
+
+  .village-icon-tablet-fill::before,
+  .village-icon-tablet-fill::after {
+    background-image: url("../../../icons/device/tablet-fill.svg");
+  }
+
+  .village-icon-tablet-line::before,
+  .village-icon-tablet-line::after {
+    background-image: url("../../../icons/device/tablet-line.svg");
+  }
+
+  .village-icon-tv-fill::before,
+  .village-icon-tv-fill::after {
+    background-image: url("../../../icons/device/tv-fill.svg");
+  }
+
+  .village-icon-tv-line::before,
+  .village-icon-tv-line::after {
+    background-image: url("../../../icons/device/tv-line.svg");
+  }
+
+  .village-icon-wifi-fill::before,
+  .village-icon-wifi-fill::after {
+    background-image: url("../../../icons/device/wifi-fill.svg");
+  }
+
+  .village-icon-wifi-line::before,
+  .village-icon-wifi-line::after {
+    background-image: url("../../../icons/device/wifi-line.svg");
+  }
+
+  .village-fi-phone-fill::before {
+    background-image: url("../../../icons/device/phone-fill.svg");
+  }
+
+  .village-fi-phone-line::before {
+    background-image: url("../../../icons/device/phone-line.svg");
+  }
+
+  .village-fi-rss-fill::before {
+    background-image: url("../../../icons/device/rss-fill.svg");
+  }
+
+  .village-fi-rss-line::before {
+    background-image: url("../../../icons/device/rss-line.svg");
+  }
+
+  .village-fi-save-fill::before {
+    background-image: url("../../../icons/device/save-fill.svg");
+  }
+
+  .village-fi-save-line::before {
+    background-image: url("../../../icons/device/save-line.svg");
+  }
+}
