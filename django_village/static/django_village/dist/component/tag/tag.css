@@ -1,0 +1,1661 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TAG
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-tag {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  min-width: 2.25rem;
+  justify-content: center;
+  color: var(--text-label-grey);
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.village-tag::before,
+.village-tag::after {
+  display: block;
+}
+
+.village-tag[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-tag[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.25rem;
+}
+
+.village-tag--icon-left[class^=village-icon-],
+.village-tag--icon-left[class*=" village-icon-"],
+.village-tag--icon-left[class^=village-fi-],
+.village-tag--icon-left[class*=" village-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-tag--icon-left[class^=village-icon-]::before,
+.village-tag--icon-left[class*=" village-icon-"]::before,
+.village-tag--icon-left[class^=village-fi-]::before,
+.village-tag--icon-left[class*=" village-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+}
+
+.village-tag[class^=village-icon-]:not([class*=village-tag--icon-])::before,
+.village-tag[class*=" village-icon-"]:not([class*=village-tag--icon-])::before,
+.village-tag[class^=village-fi-]:not([class*=village-tag--icon-])::before,
+.village-tag[class*=" village-fi-"]:not([class*=village-tag--icon-])::before {
+  content: none;
+}
+
+.village-tag--sm {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.village-tag--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-tag--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 0.75rem;
+  margin-right: -0.09375rem;
+  margin-left: 0.25rem;
+}
+
+.village-tag--sm.village-tag--icon-left[class^=village-icon-],
+.village-tag--sm.village-tag--icon-left[class*=" village-icon-"],
+.village-tag--sm.village-tag--icon-left[class^=village-fi-],
+.village-tag--sm.village-tag--icon-left[class*=" village-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-tag--sm.village-tag--icon-left[class^=village-icon-]::before,
+.village-tag--sm.village-tag--icon-left[class*=" village-icon-"]::before,
+.village-tag--sm.village-tag--icon-left[class^=village-fi-]::before,
+.village-tag--sm.village-tag--icon-left[class*=" village-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.village-tag--sm[class^=village-icon-]:not([class*=village-tag--icon-])::before,
+.village-tag--sm[class*=" village-icon-"]:not([class*=village-tag--icon-])::before,
+.village-tag--sm[class^=village-fi-]:not([class*=village-tag--icon-])::before,
+.village-tag--sm[class*=" village-fi-"]:not([class*=village-tag--icon-])::before {
+  content: none;
+}
+
+a.village-tag[aria-pressed=true],
+button.village-tag[aria-pressed=true],
+input[type=button].village-tag[aria-pressed=true],
+input[type=image].village-tag[aria-pressed=true],
+input[type=reset].village-tag[aria-pressed=true],
+input[type=submit].village-tag[aria-pressed=true] {
+  position: relative;
+  overflow: visible;
+  background-position: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a.village-tag[aria-pressed=true]::after,
+button.village-tag[aria-pressed=true]::after,
+input[type=button].village-tag[aria-pressed=true]::after,
+input[type=image].village-tag[aria-pressed=true]::after,
+input[type=reset].village-tag[aria-pressed=true]::after,
+input[type=submit].village-tag[aria-pressed=true]::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/checkbox-circle-line.svg");
+  mask-image: url("../../icons/system/checkbox-circle-line.svg");
+  --icon-size: 1rem;
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: -0.5rem;
+}
+
+a.village-tag[aria-pressed=true].village-tag--sm::after,
+button.village-tag[aria-pressed=true].village-tag--sm::after,
+input[type=button].village-tag[aria-pressed=true].village-tag--sm::after,
+input[type=image].village-tag[aria-pressed=true].village-tag--sm::after,
+input[type=reset].village-tag[aria-pressed=true].village-tag--sm::after,
+input[type=submit].village-tag[aria-pressed=true].village-tag--sm::after {
+  --icon-size: 0.75rem;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin: -0.375rem;
+}
+
+a.village-tag--dismiss::before,
+button.village-tag--dismiss::before,
+input[type=button].village-tag--dismiss::before,
+input[type=image].village-tag--dismiss::before,
+input[type=reset].village-tag--dismiss::before,
+input[type=submit].village-tag--dismiss::before {
+  content: none;
+}
+
+a.village-tag--dismiss::after,
+button.village-tag--dismiss::after,
+input[type=button].village-tag--dismiss::after,
+input[type=image].village-tag--dismiss::after,
+input[type=reset].village-tag--dismiss::after,
+input[type=submit].village-tag--dismiss::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  --icon-size: 1rem;
+  content: "";
+  margin-left: 0.25rem;
+  margin-right: -0.25rem;
+}
+
+a.village-tag--dismiss.village-tag--sm::after,
+button.village-tag--dismiss.village-tag--sm::after,
+input[type=button].village-tag--dismiss.village-tag--sm::after,
+input[type=image].village-tag--dismiss.village-tag--sm::after,
+input[type=reset].village-tag--dismiss.village-tag--sm::after,
+input[type=submit].village-tag--dismiss.village-tag--sm::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  margin-right: -0.1875rem;
+  margin-left: 0.125rem;
+}
+
+.village-tags-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  flex-wrap: wrap;
+}
+
+.village-tags-group > li {
+  line-height: 2.75rem;
+}
+
+.village-tags-group .village-tag {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+  vertical-align: top;
+}
+
+.village-tags-group.village-tags-group--sm .village-tag {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.village-tags-group.village-tags-group--sm .village-tag::before,
+.village-tags-group.village-tags-group--sm .village-tag::after {
+  --icon-size: 0.75rem;
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag.village-tag--dismiss::after,
+.village-tags-group.village-tags-group--sm input[type=button].village-tag.village-tag--dismiss::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  margin-right: -0.1875rem;
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]::after,
+.village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]::after {
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --icon-size: 0.75rem;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin: -0.375rem;
+}
+
+.village-tag[aria-pressed=false] {
+  color: var(--text-action-high-village-primary);
+  background-color: var(--background-action-low-village-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-primary-hover);
+  --active: var(--background-action-low-village-primary-active);
+}
+
+.village-tag.village-tag--dismiss {
+  color: var(--text-inverted-village-primary);
+  background-color: var(--background-action-high-village-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-village-primary-hover);
+  --active: var(--background-action-high-village-primary-active);
+}
+
+a.village-tag,
+button.village-tag,
+input[type=button].village-tag {
+  color: var(--text-action-high-village-primary);
+  background-color: var(--background-action-low-village-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-primary-hover);
+  --active: var(--background-action-low-village-primary-active);
+}
+
+a.village-tag--village-color3,
+button.village-tag--village-color3,
+input[type=button].village-tag--village-color3 {
+  color: var(--text-action-high-village-color3);
+  background-color: var(--background-action-low-village-color3);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color3-hover);
+  --active: var(--background-action-low-village-color3-active);
+}
+
+a.village-tag--village-color4,
+button.village-tag--village-color4,
+input[type=button].village-tag--village-color4 {
+  color: var(--text-action-high-village-color4);
+  background-color: var(--background-action-low-village-color4);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color4-hover);
+  --active: var(--background-action-low-village-color4-active);
+}
+
+a.village-tag--village-color5,
+button.village-tag--village-color5,
+input[type=button].village-tag--village-color5 {
+  color: var(--text-action-high-village-color5);
+  background-color: var(--background-action-low-village-color5);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color5-hover);
+  --active: var(--background-action-low-village-color5-active);
+}
+
+a.village-tag--village-color6,
+button.village-tag--village-color6,
+input[type=button].village-tag--village-color6 {
+  color: var(--text-action-high-village-color6);
+  background-color: var(--background-action-low-village-color6);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color6-hover);
+  --active: var(--background-action-low-village-color6-active);
+}
+
+a.village-tag--village-color7,
+button.village-tag--village-color7,
+input[type=button].village-tag--village-color7 {
+  color: var(--text-action-high-village-color7);
+  background-color: var(--background-action-low-village-color7);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color7-hover);
+  --active: var(--background-action-low-village-color7-active);
+}
+
+a.village-tag--village-color8,
+button.village-tag--village-color8,
+input[type=button].village-tag--village-color8 {
+  color: var(--text-action-high-village-color8);
+  background-color: var(--background-action-low-village-color8);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color8-hover);
+  --active: var(--background-action-low-village-color8-active);
+}
+
+a.village-tag--village-color9,
+button.village-tag--village-color9,
+input[type=button].village-tag--village-color9 {
+  color: var(--text-action-high-village-color9);
+  background-color: var(--background-action-low-village-color9);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color9-hover);
+  --active: var(--background-action-low-village-color9-active);
+}
+
+a.village-tag--village-color10,
+button.village-tag--village-color10,
+input[type=button].village-tag--village-color10 {
+  color: var(--text-action-high-village-color10);
+  background-color: var(--background-action-low-village-color10);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color10-hover);
+  --active: var(--background-action-low-village-color10-active);
+}
+
+a.village-tag--village-color11,
+button.village-tag--village-color11,
+input[type=button].village-tag--village-color11 {
+  color: var(--text-action-high-village-color11);
+  background-color: var(--background-action-low-village-color11);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color11-hover);
+  --active: var(--background-action-low-village-color11-active);
+}
+
+a.village-tag--village-color12,
+button.village-tag--village-color12,
+input[type=button].village-tag--village-color12 {
+  color: var(--text-action-high-village-color12);
+  background-color: var(--background-action-low-village-color12);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color12-hover);
+  --active: var(--background-action-low-village-color12-active);
+}
+
+a.village-tag--village-color13,
+button.village-tag--village-color13,
+input[type=button].village-tag--village-color13 {
+  color: var(--text-action-high-village-color13);
+  background-color: var(--background-action-low-village-color13);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color13-hover);
+  --active: var(--background-action-low-village-color13-active);
+}
+
+a.village-tag--village-color14,
+button.village-tag--village-color14,
+input[type=button].village-tag--village-color14 {
+  color: var(--text-action-high-village-color14);
+  background-color: var(--background-action-low-village-color14);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color14-hover);
+  --active: var(--background-action-low-village-color14-active);
+}
+
+a.village-tag--village-color15,
+button.village-tag--village-color15,
+input[type=button].village-tag--village-color15 {
+  color: var(--text-action-high-village-color15);
+  background-color: var(--background-action-low-village-color15);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color15-hover);
+  --active: var(--background-action-low-village-color15-active);
+}
+
+a.village-tag--village-color16,
+button.village-tag--village-color16,
+input[type=button].village-tag--village-color16 {
+  color: var(--text-action-high-village-color16);
+  background-color: var(--background-action-low-village-color16);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color16-hover);
+  --active: var(--background-action-low-village-color16-active);
+}
+
+a.village-tag--village-color17,
+button.village-tag--village-color17,
+input[type=button].village-tag--village-color17 {
+  color: var(--text-action-high-village-color17);
+  background-color: var(--background-action-low-village-color17);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color17-hover);
+  --active: var(--background-action-low-village-color17-active);
+}
+
+a.village-tag--village-color18,
+button.village-tag--village-color18,
+input[type=button].village-tag--village-color18 {
+  color: var(--text-action-high-village-color18);
+  background-color: var(--background-action-low-village-color18);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color18-hover);
+  --active: var(--background-action-low-village-color18-active);
+}
+
+a.village-tag--village-color19,
+button.village-tag--village-color19,
+input[type=button].village-tag--village-color19 {
+  color: var(--text-action-high-village-color19);
+  background-color: var(--background-action-low-village-color19);
+
+  --idle: transparent;
+  --hover: var(--background-action-low-village-color19-hover);
+  --active: var(--background-action-low-village-color19-active);
+}
+
+button.village-tag[aria-pressed=true]:not(:disabled),
+input[type=button].village-tag[aria-pressed=true]:not(:disabled) {
+  background-color: transparent;
+  color: var(--text-inverted-village-primary);
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-village-primary) 0.625rem);
+}
+
+button.village-tag[aria-pressed=true]:not(:disabled):hover,
+input[type=button].village-tag[aria-pressed=true]:not(:disabled):hover {
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-village-primary-hover) 0.625rem);
+}
+
+button.village-tag[aria-pressed=true]:not(:disabled):active,
+input[type=button].village-tag[aria-pressed=true]:not(:disabled):active {
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-active-village-primary-active) 0.625rem);
+}
+
+button.village-tag[aria-pressed=true]::after,
+input[type=button].village-tag[aria-pressed=true]::after {
+  color: var(--text-action-high-village-primary);
+}
+
+button.village-tag[aria-pressed=true]:disabled,
+input[type=button].village-tag[aria-pressed=true]:disabled {
+  background-color: transparent;
+  background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, var(--background-disabled-grey) 0.625rem);
+}
+
+button.village-tag[aria-pressed=true]:disabled::after,
+input[type=button].village-tag[aria-pressed=true]:disabled::after {
+  color: var(--text-disabled-grey);
+}
+
+button.village-tag[aria-pressed=true].village-tag--sm,
+input[type=button].village-tag[aria-pressed=true].village-tag--sm {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary) 0.5rem);
+}
+
+button.village-tag[aria-pressed=true].village-tag--sm:hover,
+input[type=button].village-tag[aria-pressed=true].village-tag--sm:hover {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary-hover) 0.5rem);
+}
+
+button.village-tag[aria-pressed=true].village-tag--sm:active,
+input[type=button].village-tag[aria-pressed=true].village-tag--sm:active {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary-active) 0.5rem);
+}
+
+button.village-tag[aria-pressed=true].village-tag--sm:disabled,
+input[type=button].village-tag[aria-pressed=true].village-tag--sm:disabled {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-disabled-grey) 0.5rem);
+}
+
+button.village-tag:disabled,
+input[type=button].village-tag:disabled {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+a:not([href]).village-tag {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true],
+.village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true] {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary) 0.5rem);
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:hover,
+.village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:hover {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary-hover) 0.5rem);
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:active,
+.village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:active {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-active-village-primary-active) 0.5rem);
+}
+
+.village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:disabled,
+.village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:disabled {
+  background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, var(--background-disabled-grey) 0.5rem);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-tag {
+    text-decoration: none;
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .village-tag::before,
+  .village-tag::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-tag .village-tag--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .village-tag[aria-pressed=true],
+  input[type=button] .village-tag[aria-pressed=true] {
+    background-size: 100% 100%, 100% 100%;
+  }
+
+  button .village-tag[aria-pressed=true]::after,
+  input[type=button] .village-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/checkbox-circle-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .village-tag[aria-pressed=true] .village-tag--sm::after,
+  input[type=button] .village-tag[aria-pressed=true] .village-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  button .village-tag .village-tag--dismiss::after,
+  input[type=button] .village-tag .village-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  button .village-tag .village-tag--dismiss .village-tag--sm::after,
+  input[type=button] .village-tag .village-tag--dismiss .village-tag--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ul.village-tags-group {
+    list-style-type: none;
+  }
+
+  ol.village-tags-group {
+    list-style-type: none;
+  }
+
+  ul.village-tags-group,
+  ol.village-tags-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .village-tags-group--sm::before,
+  .village-tags-group--sm::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-tags-group--sm a .village-tag .village-tag--dismiss::after,
+  .village-tags-group--sm button .village-tag .village-tag--dismiss::after,
+  .village-tags-group--sm input[type=button] .village-tag .village-tag--dismiss::after,
+  .village-tags-group--sm input[type=image] .village-tag .village-tag--dismiss::after,
+  .village-tags-group--sm input[type=reset] .village-tag .village-tag--dismiss::after,
+  .village-tags-group--sm input[type=submit] .village-tag .village-tag--dismiss::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .village-tags-group--sm a .village-tag[aria-pressed=true]::after,
+  .village-tags-group--sm button .village-tag[aria-pressed=true]::after,
+  .village-tags-group--sm input[type=button] .village-tag[aria-pressed=true]::after,
+  .village-tags-group--sm input[type=image] .village-tag[aria-pressed=true]::after,
+  .village-tags-group--sm input[type=reset] .village-tag[aria-pressed=true]::after,
+  .village-tags-group--sm input[type=submit] .village-tag[aria-pressed=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent !important;
+  }
+
+  .village-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .village-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .village-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .village-tag.village-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .village-tag.village-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .village-tag.village-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.village-tag,
+  button.village-tag,
+  input[type=button].village-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag:hover,
+  button.village-tag:hover,
+  input[type=button].village-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag:active,
+  button.village-tag:active,
+  input[type=button].village-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color3,
+  button.village-tag--village-color3,
+  input[type=button].village-tag--village-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color3:hover,
+  button.village-tag--village-color3:hover,
+  input[type=button].village-tag--village-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color3:active,
+  button.village-tag--village-color3:active,
+  input[type=button].village-tag--village-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color4,
+  button.village-tag--village-color4,
+  input[type=button].village-tag--village-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color4:hover,
+  button.village-tag--village-color4:hover,
+  input[type=button].village-tag--village-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color4:active,
+  button.village-tag--village-color4:active,
+  input[type=button].village-tag--village-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color5,
+  button.village-tag--village-color5,
+  input[type=button].village-tag--village-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color5:hover,
+  button.village-tag--village-color5:hover,
+  input[type=button].village-tag--village-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color5:active,
+  button.village-tag--village-color5:active,
+  input[type=button].village-tag--village-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color6,
+  button.village-tag--village-color6,
+  input[type=button].village-tag--village-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.village-tag--village-color6:hover,
+  button.village-tag--village-color6:hover,
+  input[type=button].village-tag--village-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.village-tag--village-color6:active,
+  button.village-tag--village-color6:active,
+  input[type=button].village-tag--village-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.village-tag--village-color7,
+  button.village-tag--village-color7,
+  input[type=button].village-tag--village-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color7:hover,
+  button.village-tag--village-color7:hover,
+  input[type=button].village-tag--village-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color7:active,
+  button.village-tag--village-color7:active,
+  input[type=button].village-tag--village-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color8,
+  button.village-tag--village-color8,
+  input[type=button].village-tag--village-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color8:hover,
+  button.village-tag--village-color8:hover,
+  input[type=button].village-tag--village-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color8:active,
+  button.village-tag--village-color8:active,
+  input[type=button].village-tag--village-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color9,
+  button.village-tag--village-color9,
+  input[type=button].village-tag--village-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color9:hover,
+  button.village-tag--village-color9:hover,
+  input[type=button].village-tag--village-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color9:active,
+  button.village-tag--village-color9:active,
+  input[type=button].village-tag--village-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color10,
+  button.village-tag--village-color10,
+  input[type=button].village-tag--village-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color10:hover,
+  button.village-tag--village-color10:hover,
+  input[type=button].village-tag--village-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color10:active,
+  button.village-tag--village-color10:active,
+  input[type=button].village-tag--village-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color11,
+  button.village-tag--village-color11,
+  input[type=button].village-tag--village-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color11:hover,
+  button.village-tag--village-color11:hover,
+  input[type=button].village-tag--village-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color11:active,
+  button.village-tag--village-color11:active,
+  input[type=button].village-tag--village-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color12,
+  button.village-tag--village-color12,
+  input[type=button].village-tag--village-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color12:hover,
+  button.village-tag--village-color12:hover,
+  input[type=button].village-tag--village-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color12:active,
+  button.village-tag--village-color12:active,
+  input[type=button].village-tag--village-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color13,
+  button.village-tag--village-color13,
+  input[type=button].village-tag--village-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color13:hover,
+  button.village-tag--village-color13:hover,
+  input[type=button].village-tag--village-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color13:active,
+  button.village-tag--village-color13:active,
+  input[type=button].village-tag--village-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color14,
+  button.village-tag--village-color14,
+  input[type=button].village-tag--village-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color14:hover,
+  button.village-tag--village-color14:hover,
+  input[type=button].village-tag--village-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color14:active,
+  button.village-tag--village-color14:active,
+  input[type=button].village-tag--village-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color15,
+  button.village-tag--village-color15,
+  input[type=button].village-tag--village-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color15:hover,
+  button.village-tag--village-color15:hover,
+  input[type=button].village-tag--village-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color15:active,
+  button.village-tag--village-color15:active,
+  input[type=button].village-tag--village-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color16,
+  button.village-tag--village-color16,
+  input[type=button].village-tag--village-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color16:hover,
+  button.village-tag--village-color16:hover,
+  input[type=button].village-tag--village-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color16:active,
+  button.village-tag--village-color16:active,
+  input[type=button].village-tag--village-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color17,
+  button.village-tag--village-color17,
+  input[type=button].village-tag--village-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color17:hover,
+  button.village-tag--village-color17:hover,
+  input[type=button].village-tag--village-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color17:active,
+  button.village-tag--village-color17:active,
+  input[type=button].village-tag--village-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color18,
+  button.village-tag--village-color18,
+  input[type=button].village-tag--village-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color18:hover,
+  button.village-tag--village-color18:hover,
+  input[type=button].village-tag--village-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color18:active,
+  button.village-tag--village-color18:active,
+  input[type=button].village-tag--village-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color19,
+  button.village-tag--village-color19,
+  input[type=button].village-tag--village-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color19:hover,
+  button.village-tag--village-color19:hover,
+  input[type=button].village-tag--village-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color19:active,
+  button.village-tag--village-color19:active,
+  input[type=button].village-tag--village-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]::after,
+  input[type=button].village-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.village-tag[aria-pressed=true]:disabled,
+  input[type=button].village-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:disabled::after,
+  input[type=button].village-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:hover,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:active,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:disabled,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.village-tag:disabled,
+  input[type=button].village-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).village-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true],
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:hover,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:active,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:disabled,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}
+@media print {
+  .village-tag {
+    color: #161616;
+    background-color: #eee;
+  }
+
+  .village-tag[aria-pressed=false] {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .village-tag[aria-pressed=false]:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  .village-tag[aria-pressed=false]:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  .village-tag.village-tag--dismiss {
+    color: hsl(180, 80%, 98%);
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .village-tag.village-tag--dismiss:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .village-tag.village-tag--dismiss:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  a.village-tag,
+  button.village-tag,
+  input[type=button].village-tag {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag:hover,
+  button.village-tag:hover,
+  input[type=button].village-tag:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag:active,
+  button.village-tag:active,
+  input[type=button].village-tag:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color3,
+  button.village-tag--village-color3,
+  input[type=button].village-tag--village-color3 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color3:hover,
+  button.village-tag--village-color3:hover,
+  input[type=button].village-tag--village-color3:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color3:active,
+  button.village-tag--village-color3:active,
+  input[type=button].village-tag--village-color3:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color4,
+  button.village-tag--village-color4,
+  input[type=button].village-tag--village-color4 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color4:hover,
+  button.village-tag--village-color4:hover,
+  input[type=button].village-tag--village-color4:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color4:active,
+  button.village-tag--village-color4:active,
+  input[type=button].village-tag--village-color4:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color5,
+  button.village-tag--village-color5,
+  input[type=button].village-tag--village-color5 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color5:hover,
+  button.village-tag--village-color5:hover,
+  input[type=button].village-tag--village-color5:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color5:active,
+  button.village-tag--village-color5:active,
+  input[type=button].village-tag--village-color5:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color6,
+  button.village-tag--village-color6,
+  input[type=button].village-tag--village-color6 {
+    color: hsl(290, 75%, 25%);
+    background-color: hsl(290, 80%, 93%);
+  }
+
+  a.village-tag--village-color6:hover,
+  button.village-tag--village-color6:hover,
+  input[type=button].village-tag--village-color6:hover {
+    background-color: hsl(290, 60%, 65%);
+  }
+
+  a.village-tag--village-color6:active,
+  button.village-tag--village-color6:active,
+  input[type=button].village-tag--village-color6:active {
+    background-color: hsl(290, 90%, 65%);
+  }
+
+  a.village-tag--village-color7,
+  button.village-tag--village-color7,
+  input[type=button].village-tag--village-color7 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color7:hover,
+  button.village-tag--village-color7:hover,
+  input[type=button].village-tag--village-color7:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color7:active,
+  button.village-tag--village-color7:active,
+  input[type=button].village-tag--village-color7:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color8,
+  button.village-tag--village-color8,
+  input[type=button].village-tag--village-color8 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color8:hover,
+  button.village-tag--village-color8:hover,
+  input[type=button].village-tag--village-color8:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color8:active,
+  button.village-tag--village-color8:active,
+  input[type=button].village-tag--village-color8:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color9,
+  button.village-tag--village-color9,
+  input[type=button].village-tag--village-color9 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color9:hover,
+  button.village-tag--village-color9:hover,
+  input[type=button].village-tag--village-color9:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color9:active,
+  button.village-tag--village-color9:active,
+  input[type=button].village-tag--village-color9:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color10,
+  button.village-tag--village-color10,
+  input[type=button].village-tag--village-color10 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color10:hover,
+  button.village-tag--village-color10:hover,
+  input[type=button].village-tag--village-color10:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color10:active,
+  button.village-tag--village-color10:active,
+  input[type=button].village-tag--village-color10:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color11,
+  button.village-tag--village-color11,
+  input[type=button].village-tag--village-color11 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color11:hover,
+  button.village-tag--village-color11:hover,
+  input[type=button].village-tag--village-color11:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color11:active,
+  button.village-tag--village-color11:active,
+  input[type=button].village-tag--village-color11:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color12,
+  button.village-tag--village-color12,
+  input[type=button].village-tag--village-color12 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color12:hover,
+  button.village-tag--village-color12:hover,
+  input[type=button].village-tag--village-color12:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color12:active,
+  button.village-tag--village-color12:active,
+  input[type=button].village-tag--village-color12:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color13,
+  button.village-tag--village-color13,
+  input[type=button].village-tag--village-color13 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color13:hover,
+  button.village-tag--village-color13:hover,
+  input[type=button].village-tag--village-color13:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color13:active,
+  button.village-tag--village-color13:active,
+  input[type=button].village-tag--village-color13:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color14,
+  button.village-tag--village-color14,
+  input[type=button].village-tag--village-color14 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color14:hover,
+  button.village-tag--village-color14:hover,
+  input[type=button].village-tag--village-color14:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color14:active,
+  button.village-tag--village-color14:active,
+  input[type=button].village-tag--village-color14:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color15,
+  button.village-tag--village-color15,
+  input[type=button].village-tag--village-color15 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color15:hover,
+  button.village-tag--village-color15:hover,
+  input[type=button].village-tag--village-color15:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color15:active,
+  button.village-tag--village-color15:active,
+  input[type=button].village-tag--village-color15:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  a.village-tag--village-color16,
+  button.village-tag--village-color16,
+  input[type=button].village-tag--village-color16 {
+    color: hsl(90, 75%, 25%);
+    background-color: hsl(90, 80%, 93%);
+  }
+
+  a.village-tag--village-color16:hover,
+  button.village-tag--village-color16:hover,
+  input[type=button].village-tag--village-color16:hover {
+    background-color: hsl(90, 60%, 65%);
+  }
+
+  a.village-tag--village-color16:active,
+  button.village-tag--village-color16:active,
+  input[type=button].village-tag--village-color16:active {
+    background-color: hsl(90, 90%, 65%);
+  }
+
+  a.village-tag--village-color17,
+  button.village-tag--village-color17,
+  input[type=button].village-tag--village-color17 {
+    color: hsl(180, 75%, 25%);
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  a.village-tag--village-color17:hover,
+  button.village-tag--village-color17:hover,
+  input[type=button].village-tag--village-color17:hover {
+    background-color: hsl(180, 60%, 65%);
+  }
+
+  a.village-tag--village-color17:active,
+  button.village-tag--village-color17:active,
+  input[type=button].village-tag--village-color17:active {
+    background-color: hsl(180, 90%, 65%);
+  }
+
+  a.village-tag--village-color18,
+  button.village-tag--village-color18,
+  input[type=button].village-tag--village-color18 {
+    color: hsl(270, 75%, 25%);
+    background-color: hsl(270, 80%, 93%);
+  }
+
+  a.village-tag--village-color18:hover,
+  button.village-tag--village-color18:hover,
+  input[type=button].village-tag--village-color18:hover {
+    background-color: hsl(270, 60%, 65%);
+  }
+
+  a.village-tag--village-color18:active,
+  button.village-tag--village-color18:active,
+  input[type=button].village-tag--village-color18:active {
+    background-color: hsl(270, 90%, 65%);
+  }
+
+  a.village-tag--village-color19,
+  button.village-tag--village-color19,
+  input[type=button].village-tag--village-color19 {
+    color: hsl(0, 75%, 25%);
+    background-color: hsl(0, 80%, 93%);
+  }
+
+  a.village-tag--village-color19:hover,
+  button.village-tag--village-color19:hover,
+  input[type=button].village-tag--village-color19:hover {
+    background-color: hsl(0, 60%, 65%);
+  }
+
+  a.village-tag--village-color19:active,
+  button.village-tag--village-color19:active,
+  input[type=button].village-tag--village-color19:active {
+    background-color: hsl(0, 90%, 65%);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled) {
+    color: hsl(180, 80%, 98%);
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 75%, 25%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled):hover,
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled):hover {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 60%, 20%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:not(:disabled):active,
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled):active {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, hsl(180, 40%, 15%) 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]::after,
+  input[type=button].village-tag[aria-pressed=true]::after {
+    color: hsl(180, 75%, 25%);
+  }
+
+  button.village-tag[aria-pressed=true]:disabled,
+  input[type=button].village-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.25rem, transparent 0.578125rem, #e5e5e5 0.625rem);
+  }
+
+  button.village-tag[aria-pressed=true]:disabled::after,
+  input[type=button].village-tag[aria-pressed=true]:disabled::after {
+    color: #929292;
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:hover,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:active,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  button.village-tag[aria-pressed=true].village-tag--sm:disabled,
+  input[type=button].village-tag[aria-pressed=true].village-tag--sm:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+
+  button.village-tag:disabled,
+  input[type=button].village-tag:disabled {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  a:not([href]).village-tag {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true],
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true] {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 75%, 25%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:hover,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:hover {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 60%, 20%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:active,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:active {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, hsl(180, 40%, 15%) 0.5rem);
+  }
+
+  .village-tags-group.village-tags-group--sm button.village-tag[aria-pressed=true]:disabled,
+  .village-tags-group.village-tags-group--sm input[type=button].village-tag[aria-pressed=true]:disabled {
+    background-image: radial-gradient(circle at 100% 0.1875rem, transparent 0.4475rem, #e5e5e5 0.5rem);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  button.village-tag[aria-pressed=true]:not(:disabled),
+  input[type=button].village-tag[aria-pressed=true]:not(:disabled) {
+    background-color: transparent;
+  }
+
+  button.village-tag[aria-pressed=true]:disabled,
+  input[type=button].village-tag[aria-pressed=true]:disabled {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,68 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-tooltip {
+    position: relative;
+    color: #3a3a3a;
+  }
+
+  .village-tooltip__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-tooltip__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/add-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-tooltip__btn[aria-expanded=true]::before,
+  .village-tooltip__btn[aria-expanded=true]::after {
+    background-image: url("../../icons/system/subtract-line.svg");
+  }
+
+  ul.village-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ol.village-tooltip__actions-group {
+    list-style-type: none;
+  }
+
+  ul.village-tooltip__actions-group,
+  ol.village-tooltip__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .village-tooltip .village-modal:not(.village-modal--opened) .village-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .village-tooltip.village-placement {
+    z-index: 1000;
+    background-image: linear-gradient(90deg, #fff, #fff);
+  }
+}

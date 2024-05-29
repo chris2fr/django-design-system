@@ -1,0 +1,436 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+/* ------------------------------------ *\
+  Badge
+\* ------------------------------------ */
+.village-badge {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  padding: 0 0.5rem;
+  overflow: initial;
+  max-height: none;
+  font-weight: 700;
+  max-width: 100%;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  color: var(--text-default-grey);
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.village-badge::before,
+.village-badge::after {
+  display: block;
+}
+
+.village-badge--icon-left[class^=village-icon-],
+.village-badge--icon-left[class*=" village-icon-"],
+.village-badge--icon-left[class^=village-fi-],
+.village-badge--icon-left[class*=" village-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-badge--icon-left[class^=village-icon-]::before,
+.village-badge--icon-left[class*=" village-icon-"]::before,
+.village-badge--icon-left[class^=village-fi-]::before,
+.village-badge--icon-left[class*=" village-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+}
+
+.village-badge[class^=village-icon-]:not([class*=village-badge--icon-])::before,
+.village-badge[class*=" village-icon-"]:not([class*=village-badge--icon-])::before,
+.village-badge[class^=village-fi-]:not([class*=village-badge--icon-])::before,
+.village-badge[class*=" village-fi-"]:not([class*=village-badge--icon-])::before {
+  content: none;
+}
+
+.village-badge--sm {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-badge--sm.village-badge--icon-left[class^=village-icon-],
+.village-badge--sm.village-badge--icon-left[class*=" village-icon-"],
+.village-badge--sm.village-badge--icon-left[class^=village-fi-],
+.village-badge--sm.village-badge--icon-left[class*=" village-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.village-badge--sm.village-badge--icon-left[class^=village-icon-]::before,
+.village-badge--sm.village-badge--icon-left[class*=" village-icon-"]::before,
+.village-badge--sm.village-badge--icon-left[class^=village-fi-]::before,
+.village-badge--sm.village-badge--icon-left[class*=" village-fi-"]::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.village-badge--sm[class^=village-icon-]:not([class*=village-badge--icon-])::before,
+.village-badge--sm[class*=" village-icon-"]:not([class*=village-badge--icon-])::before,
+.village-badge--sm[class^=village-fi-]:not([class*=village-badge--icon-])::before,
+.village-badge--sm[class*=" village-fi-"]:not([class*=village-badge--icon-])::before {
+  content: none;
+}
+
+.village-badge::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.25rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.village-badge--sm::before {
+  --icon-size: 0.75rem;
+  margin-left: -0.09375rem;
+  margin-right: 0.25rem;
+}
+
+.village-badge.village-badge--info::before,
+.village-badge--sm.village-badge--info::before {
+  -webkit-mask-image: url("../../icons/system/village--info-fill.svg");
+  mask-image: url("../../icons/system/village--info-fill.svg");
+}
+
+.village-badge.village-badge--success::before,
+.village-badge--sm.village-badge--success::before {
+  -webkit-mask-image: url("../../icons/system/village--success-fill.svg");
+  mask-image: url("../../icons/system/village--success-fill.svg");
+}
+
+.village-badge.village-badge--error::before,
+.village-badge--sm.village-badge--error::before {
+  -webkit-mask-image: url("../../icons/system/village--error-fill.svg");
+  mask-image: url("../../icons/system/village--error-fill.svg");
+}
+
+.village-badge.village-badge--warning::before,
+.village-badge--sm.village-badge--warning::before {
+  -webkit-mask-image: url("../../icons/system/village--warning-fill.svg");
+  mask-image: url("../../icons/system/village--warning-fill.svg");
+}
+
+.village-badge.village-badge--new::before,
+.village-badge--sm.village-badge--new::before {
+  -webkit-mask-image: url("../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../icons/weather/flashlight-fill.svg");
+}
+
+.village-badge--info::before,
+.village-badge--success::before,
+.village-badge--error::before,
+.village-badge--warning::before,
+.village-badge--new::before,
+.village-badge--sm--info::before,
+.village-badge--sm--success::before,
+.village-badge--sm--error::before,
+.village-badge--sm--warning::before,
+.village-badge--sm--new::before {
+  content: "";
+}
+
+.village-badge.village-badge--no-icon::before,
+.village-badge--sm.village-badge--no-icon::before {
+  content: none;
+}
+
+.village-badges-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  margin-bottom: 0;
+}
+
+.village-badges-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.village-badges-group .village-badge {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.village-badges-group--sm .village-badge {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  min-height: 1.125rem;
+  padding: 0 0.375rem;
+}
+
+.village-badges-group--sm .village-badge::before,
+.village-badges-group--sm .village-badge::after {
+  --icon-size: 0.75rem;
+}
+
+.village-badge--info {
+  color: var(--text-default-info);
+  background-color: var(--background-contrast-info);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-info-hover);
+  --active: var(--background-contrast-info-active);
+}
+
+.village-badge--error {
+  color: var(--text-default-error);
+  background-color: var(--background-contrast-error);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-error-hover);
+  --active: var(--background-contrast-error-active);
+}
+
+.village-badge--success {
+  color: var(--text-default-success);
+  background-color: var(--background-contrast-success);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-success-hover);
+  --active: var(--background-contrast-success-active);
+}
+
+.village-badge--warning {
+  color: var(--text-default-warning);
+  background-color: var(--background-contrast-warning);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-warning-hover);
+  --active: var(--background-contrast-warning-active);
+}
+
+.village-badge--new {
+  color: var(--text-action-high-village-color14);
+  background-color: var(--background-contrast-village-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color14-hover);
+  --active: var(--background-contrast-village-color14-active);
+}
+
+.village-badge--village-color3 {
+  color: var(--text-label-village-color3);
+  background-color: var(--background-contrast-village-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color3-hover);
+  --active: var(--background-contrast-village-color3-active);
+}
+
+.village-badge--village-color4 {
+  color: var(--text-label-village-color4);
+  background-color: var(--background-contrast-village-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color4-hover);
+  --active: var(--background-contrast-village-color4-active);
+}
+
+.village-badge--village-color5 {
+  color: var(--text-label-village-color5);
+  background-color: var(--background-contrast-village-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color5-hover);
+  --active: var(--background-contrast-village-color5-active);
+}
+
+.village-badge--village-color6 {
+  color: var(--text-label-village-color6);
+  background-color: var(--background-contrast-village-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color6-hover);
+  --active: var(--background-contrast-village-color6-active);
+}
+
+.village-badge--village-color7 {
+  color: var(--text-label-village-color7);
+  background-color: var(--background-contrast-village-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color7-hover);
+  --active: var(--background-contrast-village-color7-active);
+}
+
+.village-badge--village-color8 {
+  color: var(--text-label-village-color8);
+  background-color: var(--background-contrast-village-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color8-hover);
+  --active: var(--background-contrast-village-color8-active);
+}
+
+.village-badge--village-color9 {
+  color: var(--text-label-village-color9);
+  background-color: var(--background-contrast-village-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color9-hover);
+  --active: var(--background-contrast-village-color9-active);
+}
+
+.village-badge--village-color10 {
+  color: var(--text-label-village-color10);
+  background-color: var(--background-contrast-village-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color10-hover);
+  --active: var(--background-contrast-village-color10-active);
+}
+
+.village-badge--village-color11 {
+  color: var(--text-label-village-color11);
+  background-color: var(--background-contrast-village-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color11-hover);
+  --active: var(--background-contrast-village-color11-active);
+}
+
+.village-badge--village-color12 {
+  color: var(--text-label-village-color12);
+  background-color: var(--background-contrast-village-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color12-hover);
+  --active: var(--background-contrast-village-color12-active);
+}
+
+.village-badge--village-color13 {
+  color: var(--text-label-village-color13);
+  background-color: var(--background-contrast-village-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color13-hover);
+  --active: var(--background-contrast-village-color13-active);
+}
+
+.village-badge--village-color14 {
+  color: var(--text-label-village-color14);
+  background-color: var(--background-contrast-village-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color14-hover);
+  --active: var(--background-contrast-village-color14-active);
+}
+
+.village-badge--village-color15 {
+  color: var(--text-label-village-color15);
+  background-color: var(--background-contrast-village-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color15-hover);
+  --active: var(--background-contrast-village-color15-active);
+}
+
+.village-badge--village-color16 {
+  color: var(--text-label-village-color16);
+  background-color: var(--background-contrast-village-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color16-hover);
+  --active: var(--background-contrast-village-color16-active);
+}
+
+.village-badge--village-color17 {
+  color: var(--text-label-village-color17);
+  background-color: var(--background-contrast-village-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color17-hover);
+  --active: var(--background-contrast-village-color17-active);
+}
+
+.village-badge--village-color18 {
+  color: var(--text-label-village-color18);
+  background-color: var(--background-contrast-village-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color18-hover);
+  --active: var(--background-contrast-village-color18-active);
+}
+
+.village-badge--village-color19 {
+  color: var(--text-label-village-color19);
+  background-color: var(--background-contrast-village-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-village-color19-hover);
+  --active: var(--background-contrast-village-color19-active);
+}
+
+.village-badge-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.village-badge-group > li {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.village-badge-group .village-badge {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

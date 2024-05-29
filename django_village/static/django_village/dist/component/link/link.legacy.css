@@ -1,0 +1,102 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-link {
+    background-image: none;
+    text-decoration: underline;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-link::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-link--sm::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-link--lg::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  ul.village-links-group {
+    list-style-type: none;
+  }
+
+  ol.village-links-group {
+    list-style-type: none;
+  }
+
+  ul.village-links-group,
+  ol.village-links-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .village-link__detail {
+    color: #666;
+  }
+
+  .village-links-group li::marker {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-links-group--bordered {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .village-link--close {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-link--close:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-link--close:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-link--close:disabled,
+  a.village-link--close:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .village-link--close:disabled:hover,
+  a.village-link--close:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-link--close:disabled:active,
+  a.village-link--close:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

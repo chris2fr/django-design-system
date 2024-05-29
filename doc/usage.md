@@ -1,8 +1,8 @@
 ## Bien commencer
 
-Pour utiliser Django-CEFRAN dans votre application après l’installation, vous pouvez commencer à utiliser la balise `{% extends "django_cefran/base.html" %}` dans vos [gabarits Django](https://docs.djangoproject.com/fr/5.0/topics/templates/) et mettre votre contenu dans le bloc `{% block content %}{% endblock content %}`.
+Pour utiliser Django-VILLAGE dans votre application après l’installation, vous pouvez commencer à utiliser la balise `{% extends "django_village/base.html" %}` dans vos [gabarits Django](https://docs.djangoproject.com/fr/5.0/topics/templates/) et mettre votre contenu dans le bloc `{% block content %}{% endblock content %}`.
 
-Vous pouvez faire appel aux [composants du système de design implémentés](/django_cefran/components/) en appelant la balise `{% load cefran_tags %}` en haut de vos fichiers.
+Vous pouvez faire appel aux [composants du système de design implémentés](/django_village/components/) en appelant la balise `{% load village_tags %}` en haut de vos fichiers.
 
 
 ## Étendre les gabarits de base
@@ -13,7 +13,7 @@ Dans le répertoire de votre application, créez le ficher `<votre_app>/template
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_cefran/base.html" %}
+{% extends "django_village/base.html" %}
 
 {% block header %}
   {% include "<votre_app>/blocks/header.html" %}
@@ -28,16 +28,16 @@ Dans le répertoire de votre application, créez le ficher `<votre_app>/template
 
 Voir la documentation de ces composants :
 
-- [En-tête (header)](/django_cefran/components/header/)
-- [Pied de page (footer)](/django_cefran/components/footer/)
+- [En-tête (header)](/django_village/components/header/)
+- [Pied de page (footer)](/django_village/components/footer/)
 
 ### Remplacer au lieu d’étendre
 
 Dans le cas où les gabarits fournis se révéleraient trop limités, n’hésitez pas à les remplacer complètement par les vôtres. En plus des composants du Système de design de l’État lui-même, vous pouvez alors utiliser certaines balises pour vous faciliter le travail, notamment :
 
-- [CSS global](/django_cefran/components/css/)
-- [JS global](/django_cefran/components/js/)
-- [Messages Django dans une alerte](/django_cefran/components/django_messages/)
+- [CSS global](/django_village/components/css/)
+- [JS global](/django_village/components/js/)
+- [Messages Django dans une alerte](/django_village/components/django_messages/)
 
 
 ## Gestion de la configuration en admin
@@ -55,14 +55,14 @@ TEMPLATES = [
         "OPTIONS": {
             "context_processors": [
                 [...]
-                "cefran.context_processors.site_config",
+                "village.context_processors.site_config",
             ],
         },
     },
 ]
 ```
 
-- Créez un objet "DjangoCefranConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
+- Créez un objet "DjangoVillageConfig" dans le panneau d’administration (section Système de design de l’État > Configurations.)
 
 ## Application d’exemple
-Vous pouvez prendre exemple sur cette application (cf. [code source](https://github.com/numerique-gouv/django_cefran/tree/main/example_cefran)). Elle consiste en un générateur pour la présente documentation. Dans la mesure où celle-ci est hébergée de manière statique, un export est fait automatiquement via <a href="https://github.com/meeb/django-distill">Django-distill</a>.
+Vous pouvez prendre exemple sur cette application (cf. [code source](https://github.com/numerique-gouv/django_village/tree/main/example_village)). Elle consiste en un générateur pour la présente documentation. Dans la mesure où celle-ci est hébergée de manière statique, un export est fait automatiquement via <a href="https://github.com/meeb/django-distill">Django-distill</a>.

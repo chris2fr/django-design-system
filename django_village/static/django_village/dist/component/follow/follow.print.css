@@ -1,0 +1,74 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media print {
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+  .village-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .village-follow .village-input {
+    background-color: #fff;
+  }
+
+  .village-follow__title {
+    color: #161616;
+  }
+
+  .village-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .village-follow__social .village-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-follow__social .village-btn:disabled,
+  .village-follow__social a.village-btn:not([href]) {
+    color: #929292;
+  }
+
+  .village-follow .village-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .village-follow__social .village-btn {
+    background-color: transparent;
+  }
+
+  .village-follow__social .village-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-follow__social .village-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-follow__social .village-btn:disabled,
+  .village-follow__social a.village-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .village-follow__social .village-btn:disabled:hover,
+  .village-follow__social a.village-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-follow__social .village-btn:disabled:active,
+  .village-follow__social a.village-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 48em) {
+  .village-follow .village-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

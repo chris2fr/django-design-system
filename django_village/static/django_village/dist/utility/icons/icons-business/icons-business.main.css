@@ -1,0 +1,413 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON BUSINESS
+\* ˍˍˍˍˍˍˍˍˍ */
+.village-icon-archive-fill::before,
+.village-icon-archive-fill::after {
+  -webkit-mask-image: url("../../../icons/business/archive-fill.svg");
+  mask-image: url("../../../icons/business/archive-fill.svg");
+}
+
+.village-icon-archive-line::before,
+.village-icon-archive-line::after {
+  -webkit-mask-image: url("../../../icons/business/archive-line.svg");
+  mask-image: url("../../../icons/business/archive-line.svg");
+}
+
+.village-icon-attachment-fill::before,
+.village-icon-attachment-fill::after {
+  -webkit-mask-image: url("../../../icons/business/attachment-fill.svg");
+  mask-image: url("../../../icons/business/attachment-fill.svg");
+}
+
+.village-icon-attachment-line::before,
+.village-icon-attachment-line::after {
+  -webkit-mask-image: url("../../../icons/business/attachment-line.svg");
+  mask-image: url("../../../icons/business/attachment-line.svg");
+}
+
+.village-icon-award-fill::before,
+.village-icon-award-fill::after {
+  -webkit-mask-image: url("../../../icons/business/award-fill.svg");
+  mask-image: url("../../../icons/business/award-fill.svg");
+}
+
+.village-icon-award-line::before,
+.village-icon-award-line::after {
+  -webkit-mask-image: url("../../../icons/business/award-line.svg");
+  mask-image: url("../../../icons/business/award-line.svg");
+}
+
+.village-icon-bar-chart-box-fill::before,
+.village-icon-bar-chart-box-fill::after {
+  -webkit-mask-image: url("../../../icons/business/bar-chart-box-fill.svg");
+  mask-image: url("../../../icons/business/bar-chart-box-fill.svg");
+}
+
+.village-icon-bar-chart-box-line::before,
+.village-icon-bar-chart-box-line::after {
+  -webkit-mask-image: url("../../../icons/business/bar-chart-box-line.svg");
+  mask-image: url("../../../icons/business/bar-chart-box-line.svg");
+}
+
+.village-icon-bookmark-fill::before,
+.village-icon-bookmark-fill::after {
+  -webkit-mask-image: url("../../../icons/business/bookmark-fill.svg");
+  mask-image: url("../../../icons/business/bookmark-fill.svg");
+}
+
+.village-icon-bookmark-line::before,
+.village-icon-bookmark-line::after {
+  -webkit-mask-image: url("../../../icons/business/bookmark-line.svg");
+  mask-image: url("../../../icons/business/bookmark-line.svg");
+}
+
+.village-icon-briefcase-fill::before,
+.village-icon-briefcase-fill::after {
+  -webkit-mask-image: url("../../../icons/business/briefcase-fill.svg");
+  mask-image: url("../../../icons/business/briefcase-fill.svg");
+}
+
+.village-icon-briefcase-line::before,
+.village-icon-briefcase-line::after {
+  -webkit-mask-image: url("../../../icons/business/briefcase-line.svg");
+  mask-image: url("../../../icons/business/briefcase-line.svg");
+}
+
+.village-icon-calendar-2-fill::before,
+.village-icon-calendar-2-fill::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-2-fill.svg");
+  mask-image: url("../../../icons/business/calendar-2-fill.svg");
+}
+
+.village-icon-calendar-2-line::before,
+.village-icon-calendar-2-line::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-2-line.svg");
+  mask-image: url("../../../icons/business/calendar-2-line.svg");
+}
+
+.village-icon-calendar-event-fill::before,
+.village-icon-calendar-event-fill::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-event-fill.svg");
+  mask-image: url("../../../icons/business/calendar-event-fill.svg");
+}
+
+.village-icon-calendar-event-line::before,
+.village-icon-calendar-event-line::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-event-line.svg");
+  mask-image: url("../../../icons/business/calendar-event-line.svg");
+}
+
+.village-icon-calendar-fill::before,
+.village-icon-calendar-fill::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-fill.svg");
+  mask-image: url("../../../icons/business/calendar-fill.svg");
+}
+
+.village-icon-calendar-line::before,
+.village-icon-calendar-line::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-line.svg");
+  mask-image: url("../../../icons/business/calendar-line.svg");
+}
+
+.village-icon-cloud-fill::before,
+.village-icon-cloud-fill::after {
+  -webkit-mask-image: url("../../../icons/business/cloud-fill.svg");
+  mask-image: url("../../../icons/business/cloud-fill.svg");
+}
+
+.village-icon-cloud-line::before,
+.village-icon-cloud-line::after {
+  -webkit-mask-image: url("../../../icons/business/cloud-line.svg");
+  mask-image: url("../../../icons/business/cloud-line.svg");
+}
+
+.village-icon-copyright-fill::before,
+.village-icon-copyright-fill::after {
+  -webkit-mask-image: url("../../../icons/business/copyright-fill.svg");
+  mask-image: url("../../../icons/business/copyright-fill.svg");
+}
+
+.village-icon-copyright-line::before,
+.village-icon-copyright-line::after {
+  -webkit-mask-image: url("../../../icons/business/copyright-line.svg");
+  mask-image: url("../../../icons/business/copyright-line.svg");
+}
+
+.village-icon-customer-service-fill::before,
+.village-icon-customer-service-fill::after {
+  -webkit-mask-image: url("../../../icons/business/customer-service-fill.svg");
+  mask-image: url("../../../icons/business/customer-service-fill.svg");
+}
+
+.village-icon-customer-service-line::before,
+.village-icon-customer-service-line::after {
+  -webkit-mask-image: url("../../../icons/business/customer-service-line.svg");
+  mask-image: url("../../../icons/business/customer-service-line.svg");
+}
+
+.village-icon-flag-fill::before,
+.village-icon-flag-fill::after {
+  -webkit-mask-image: url("../../../icons/business/flag-fill.svg");
+  mask-image: url("../../../icons/business/flag-fill.svg");
+}
+
+.village-icon-flag-line::before,
+.village-icon-flag-line::after {
+  -webkit-mask-image: url("../../../icons/business/flag-line.svg");
+  mask-image: url("../../../icons/business/flag-line.svg");
+}
+
+.village-icon-global-fill::before,
+.village-icon-global-fill::after {
+  -webkit-mask-image: url("../../../icons/business/global-fill.svg");
+  mask-image: url("../../../icons/business/global-fill.svg");
+}
+
+.village-icon-global-line::before,
+.village-icon-global-line::after {
+  -webkit-mask-image: url("../../../icons/business/global-line.svg");
+  mask-image: url("../../../icons/business/global-line.svg");
+}
+
+.village-icon-line-chart-fill::before,
+.village-icon-line-chart-fill::after {
+  -webkit-mask-image: url("../../../icons/business/line-chart-fill.svg");
+  mask-image: url("../../../icons/business/line-chart-fill.svg");
+}
+
+.village-icon-line-chart-line::before,
+.village-icon-line-chart-line::after {
+  -webkit-mask-image: url("../../../icons/business/line-chart-line.svg");
+  mask-image: url("../../../icons/business/line-chart-line.svg");
+}
+
+.village-icon-links-fill::before,
+.village-icon-links-fill::after {
+  -webkit-mask-image: url("../../../icons/business/links-fill.svg");
+  mask-image: url("../../../icons/business/links-fill.svg");
+}
+
+.village-icon-links-line::before,
+.village-icon-links-line::after {
+  -webkit-mask-image: url("../../../icons/business/links-line.svg");
+  mask-image: url("../../../icons/business/links-line.svg");
+}
+
+.village-icon-mail-fill::before,
+.village-icon-mail-fill::after {
+  -webkit-mask-image: url("../../../icons/business/mail-fill.svg");
+  mask-image: url("../../../icons/business/mail-fill.svg");
+}
+
+.village-icon-mail-line::before,
+.village-icon-mail-line::after {
+  -webkit-mask-image: url("../../../icons/business/mail-line.svg");
+  mask-image: url("../../../icons/business/mail-line.svg");
+}
+
+.village-icon-mail-open-fill::before,
+.village-icon-mail-open-fill::after {
+  -webkit-mask-image: url("../../../icons/business/mail-open-fill.svg");
+  mask-image: url("../../../icons/business/mail-open-fill.svg");
+}
+
+.village-icon-mail-open-line::before,
+.village-icon-mail-open-line::after {
+  -webkit-mask-image: url("../../../icons/business/mail-open-line.svg");
+  mask-image: url("../../../icons/business/mail-open-line.svg");
+}
+
+.village-icon-medal-fill::before,
+.village-icon-medal-fill::after {
+  -webkit-mask-image: url("../../../icons/business/medal-fill.svg");
+  mask-image: url("../../../icons/business/medal-fill.svg");
+}
+
+.village-icon-medal-line::before,
+.village-icon-medal-line::after {
+  -webkit-mask-image: url("../../../icons/business/medal-line.svg");
+  mask-image: url("../../../icons/business/medal-line.svg");
+}
+
+.village-icon-pie-chart-2-fill::before,
+.village-icon-pie-chart-2-fill::after {
+  -webkit-mask-image: url("../../../icons/business/pie-chart-2-fill.svg");
+  mask-image: url("../../../icons/business/pie-chart-2-fill.svg");
+}
+
+.village-icon-pie-chart-2-line::before,
+.village-icon-pie-chart-2-line::after {
+  -webkit-mask-image: url("../../../icons/business/pie-chart-2-line.svg");
+  mask-image: url("../../../icons/business/pie-chart-2-line.svg");
+}
+
+.village-icon-pie-chart-box-fill::before,
+.village-icon-pie-chart-box-fill::after {
+  -webkit-mask-image: url("../../../icons/business/pie-chart-box-fill.svg");
+  mask-image: url("../../../icons/business/pie-chart-box-fill.svg");
+}
+
+.village-icon-pie-chart-box-line::before,
+.village-icon-pie-chart-box-line::after {
+  -webkit-mask-image: url("../../../icons/business/pie-chart-box-line.svg");
+  mask-image: url("../../../icons/business/pie-chart-box-line.svg");
+}
+
+.village-icon-printer-fill::before,
+.village-icon-printer-fill::after {
+  -webkit-mask-image: url("../../../icons/business/printer-fill.svg");
+  mask-image: url("../../../icons/business/printer-fill.svg");
+}
+
+.village-icon-printer-line::before,
+.village-icon-printer-line::after {
+  -webkit-mask-image: url("../../../icons/business/printer-line.svg");
+  mask-image: url("../../../icons/business/printer-line.svg");
+}
+
+.village-icon-profil-fill::before,
+.village-icon-profil-fill::after {
+  -webkit-mask-image: url("../../../icons/business/profil-fill.svg");
+  mask-image: url("../../../icons/business/profil-fill.svg");
+}
+
+.village-icon-profil-line::before,
+.village-icon-profil-line::after {
+  -webkit-mask-image: url("../../../icons/business/profil-line.svg");
+  mask-image: url("../../../icons/business/profil-line.svg");
+}
+
+.village-icon-projector-2-fill::before,
+.village-icon-projector-2-fill::after {
+  -webkit-mask-image: url("../../../icons/business/projector-2-fill.svg");
+  mask-image: url("../../../icons/business/projector-2-fill.svg");
+}
+
+.village-icon-projector-2-line::before,
+.village-icon-projector-2-line::after {
+  -webkit-mask-image: url("../../../icons/business/projector-2-line.svg");
+  mask-image: url("../../../icons/business/projector-2-line.svg");
+}
+
+.village-icon-send-plane-fill::before,
+.village-icon-send-plane-fill::after {
+  -webkit-mask-image: url("../../../icons/business/send-plane-fill.svg");
+  mask-image: url("../../../icons/business/send-plane-fill.svg");
+}
+
+.village-icon-send-plane-line::before,
+.village-icon-send-plane-line::after {
+  -webkit-mask-image: url("../../../icons/business/send-plane-line.svg");
+  mask-image: url("../../../icons/business/send-plane-line.svg");
+}
+
+.village-icon-slideshow-fill::before,
+.village-icon-slideshow-fill::after {
+  -webkit-mask-image: url("../../../icons/business/slideshow-fill.svg");
+  mask-image: url("../../../icons/business/slideshow-fill.svg");
+}
+
+.village-icon-slideshow-line::before,
+.village-icon-slideshow-line::after {
+  -webkit-mask-image: url("../../../icons/business/slideshow-line.svg");
+  mask-image: url("../../../icons/business/slideshow-line.svg");
+}
+
+.village-icon-window-fill::before,
+.village-icon-window-fill::after {
+  -webkit-mask-image: url("../../../icons/business/window-fill.svg");
+  mask-image: url("../../../icons/business/window-fill.svg");
+}
+
+.village-icon-window-line::before,
+.village-icon-window-line::after {
+  -webkit-mask-image: url("../../../icons/business/window-line.svg");
+  mask-image: url("../../../icons/business/window-line.svg");
+}
+
+.village-fi-attachment-fill::before,
+.village-fi-attachment-fill::after {
+  -webkit-mask-image: url("../../../icons/business/attachment-fill.svg");
+  mask-image: url("../../../icons/business/attachment-fill.svg");
+}
+
+.village-fi-attachment-line::before,
+.village-fi-attachment-line::after {
+  -webkit-mask-image: url("../../../icons/business/attachment-line.svg");
+  mask-image: url("../../../icons/business/attachment-line.svg");
+}
+
+.village-fi-calendar-fill::before,
+.village-fi-calendar-fill::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-fill.svg");
+  mask-image: url("../../../icons/business/calendar-fill.svg");
+}
+
+.village-fi-calendar-line::before,
+.village-fi-calendar-line::after {
+  -webkit-mask-image: url("../../../icons/business/calendar-line.svg");
+  mask-image: url("../../../icons/business/calendar-line.svg");
+}
+
+.village-fi-line-chart-fill::before,
+.village-fi-line-chart-fill::after {
+  -webkit-mask-image: url("../../../icons/business/line-chart-fill.svg");
+  mask-image: url("../../../icons/business/line-chart-fill.svg");
+}
+
+.village-fi-line-chart-line::before,
+.village-fi-line-chart-line::after {
+  -webkit-mask-image: url("../../../icons/business/line-chart-line.svg");
+  mask-image: url("../../../icons/business/line-chart-line.svg");
+}
+
+.village-fi-links-fill::before,
+.village-fi-links-fill::after {
+  -webkit-mask-image: url("../../../icons/business/links-fill.svg");
+  mask-image: url("../../../icons/business/links-fill.svg");
+}
+
+.village-fi-mail-fill::before,
+.village-fi-mail-fill::after {
+  -webkit-mask-image: url("../../../icons/business/mail-fill.svg");
+  mask-image: url("../../../icons/business/mail-fill.svg");
+}
+
+.village-fi-mail-line::before,
+.village-fi-mail-line::after {
+  -webkit-mask-image: url("../../../icons/business/mail-line.svg");
+  mask-image: url("../../../icons/business/mail-line.svg");
+}
+
+.village-fi-printer-fill::before,
+.village-fi-printer-fill::after {
+  -webkit-mask-image: url("../../../icons/business/printer-fill.svg");
+  mask-image: url("../../../icons/business/printer-fill.svg");
+}
+
+.village-fi-printer-line::before,
+.village-fi-printer-line::after {
+  -webkit-mask-image: url("../../../icons/business/printer-line.svg");
+  mask-image: url("../../../icons/business/printer-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

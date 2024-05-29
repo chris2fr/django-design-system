@@ -1,0 +1,86 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-icon-leaf-fill::before,
+  .village-icon-leaf-fill::after {
+    background-image: url("../../../icons/others/leaf-fill.svg");
+  }
+
+  .village-icon-leaf-line::before,
+  .village-icon-leaf-line::after {
+    background-image: url("../../../icons/others/leaf-line.svg");
+  }
+
+  .village-icon-lightbulb-fill::before,
+  .village-icon-lightbulb-fill::after {
+    background-image: url("../../../icons/others/lightbulb-fill.svg");
+  }
+
+  .village-icon-lightbulb-line::before,
+  .village-icon-lightbulb-line::after {
+    background-image: url("../../../icons/others/lightbulb-line.svg");
+  }
+
+  .village-icon-plant-fill::before,
+  .village-icon-plant-fill::after {
+    background-image: url("../../../icons/others/plant-fill.svg");
+  }
+
+  .village-icon-plant-line::before,
+  .village-icon-plant-line::after {
+    background-image: url("../../../icons/others/plant-line.svg");
+  }
+
+  .village-icon-recycle-fill::before,
+  .village-icon-recycle-fill::after {
+    background-image: url("../../../icons/others/recycle-fill.svg");
+  }
+
+  .village-icon-recycle-line::before,
+  .village-icon-recycle-line::after {
+    background-image: url("../../../icons/others/recycle-line.svg");
+  }
+
+  .village-icon-scales-3-fill::before,
+  .village-icon-scales-3-fill::after {
+    background-image: url("../../../icons/others/scales-3-fill.svg");
+  }
+
+  .village-icon-scales-3-line::before,
+  .village-icon-scales-3-line::after {
+    background-image: url("../../../icons/others/scales-3-line.svg");
+  }
+
+  .village-icon-seedling-fill::before,
+  .village-icon-seedling-fill::after {
+    background-image: url("../../../icons/others/seedling-fill.svg");
+  }
+
+  .village-icon-seedling-line::before,
+  .village-icon-seedling-line::after {
+    background-image: url("../../../icons/others/seedling-line.svg");
+  }
+
+  .village-icon-umbrella-fill::before,
+  .village-icon-umbrella-fill::after {
+    background-image: url("../../../icons/others/umbrella-fill.svg");
+  }
+
+  .village-icon-umbrella-line::before,
+  .village-icon-umbrella-line::after {
+    background-image: url("../../../icons/others/umbrella-line.svg");
+  }
+}

@@ -2,13 +2,13 @@ L’en-tête est géré grâce à une balise `include` dans le fichier `base.htm
 
 Il est alors possible de personnaliser le titre, le sous-titre, ainsi que le bloc-marque, via la configuration du site dans l’administration de Django.
 
-- <a class="cefran-link cefran-icon-external-link-line cefran-link--icon-right cefran-link--lg" href="https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete" target="_blank" rel="noopener noreferrer">
+- <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg" href="https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete" target="_blank" rel="noopener noreferrer">
         Voir la page de documentation du composant sur le Système de Design de l’État
-        <span class="cefran-sr-only">Ouvre une nouvelle fenêtre</span>
+        <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
   </a>
-- <a class="cefran-link cefran-icon-external-link-line cefran-link--icon-right cefran-link--lg" href="https://main--ds-gouv.netlify.app/example/component/header/" target="_blank" rel="noopener noreferrer">
+- <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg" href="https://main--ds-gouv.netlify.app/example/component/header/" target="_blank" rel="noopener noreferrer">
         Voir la page d’exemple du Système de Design de l’État
-        <span class="cefran-sr-only">Ouvre une nouvelle fenêtre</span>
+        <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
   </a>
 
 ## Composants liés
@@ -23,7 +23,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_cefran/base.html" %}
+{% extends "django_village/base.html" %}
 
 <!-- [...] -->
 {% block header %}
@@ -34,27 +34,27 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```
 <!-- <votre_app>/templates/<votre_app>/blocks/header.html -->
-{% extends "django_cefran/header.html" %}
+{% extends "django_village/header.html" %}
 
 {% block header_search %}
-  <div class="cefran-header__search cefran-modal" id="modal-search">
-    <div class="cefran-container cefran-container-lg--fluid">
-      <button class="cefran-btn--close cefran-btn"
+  <div class="village-header__search village-modal" id="modal-search">
+    <div class="village-container village-container-lg--fluid">
+      <button class="village-btn--close village-btn"
               aria-controls="modal-search"
               title="Fermer">
         Fermer
       </button>
       <form action="{% url 'page_search' %}" method="get">
-        <div class="cefran-search-bar" id="search-bar" role="search">
-          <label class="cefran-label" for="search-bar-input">
+        <div class="village-search-bar" id="search-bar" role="search">
+          <label class="village-label" for="search-bar-input">
             Rechercher
           </label>
-          <input class="cefran-input"
+          <input class="village-input"
                  placeholder="Rechercher"
                  type="search"
                  id="query"
                  name="q">
-          <button class="cefran-btn" title="Rechercher">
+          <button class="village-btn" title="Rechercher">
             Rechercher
           </button>
         </div>
@@ -71,7 +71,7 @@ Un bloc `opengraph`, vide par défaut, est fourni pour permettre d’entrer des 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_cefran/base.html" %}
+{% extends "django_village/base.html" %}
 
 <!-- [...] -->
 {% block opengraph }

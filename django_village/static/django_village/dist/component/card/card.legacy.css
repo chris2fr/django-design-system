@@ -1,0 +1,166 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-card--no-icon::after {
+    content: none;
+  }
+
+  .village-card__title,
+  .village-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .village-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .village-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-card--download .village-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .village-card--download .village-card__header {
+    padding-top: 56.25%;
+  }
+
+  .village-card--download .village-card__header .village-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .village-card.village-enlarge-link .village-card__title a {
+    text-decoration: none;
+  }
+
+  .village-card.village-enlarge-link .village-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .village-card--sm.village-enlarge-link .village-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-card--sm .village-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-card--lg.village-enlarge-link .village-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .village-card--lg .village-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .village-card > .village-card__img {
+    flex-shrink: 0;
+  }
+
+  .village-card {
+    background-color: #fff;
+  }
+
+  .village-card:not(.village-card--no-border):not(.village-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .village-card--grey {
+    background-color: #eee;
+  }
+
+  .village-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .village-card--shadow.village-card--grey {
+    background-color: #eee;
+  }
+
+  .village-card--no-background {
+    background-color: transparent;
+  }
+
+  .village-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .village-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .village-card--download:not(.village-card--no-background) .village-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .village-card__detail {
+    color: #666;
+  }
+
+  .village-card__title {
+    color: #161616;
+  }
+
+  .village-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-card__title:disabled,
+  a.village-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .village-card--download .village-card__header {
+    padding-top: 0;
+  }
+
+  .village-card--download .village-card__body,
+  .village-card--horizontal .village-card__body,
+  .village-card--horizontal-half .village-card__body,
+  .village-card--horizontal-tier .village-card__body {
+    flex-basis: 100%;
+  }
+}

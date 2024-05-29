@@ -1,0 +1,85 @@
+/*!
+ * VILLAGE v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .village-transcription {
+    position: relative;
+  }
+
+  .village-transcription__btn::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/media/align-left.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-transcription__btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .village-transcription__btn[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+  }
+
+  ul.village-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ol.village-transcription__actions-group {
+    list-style-type: none;
+  }
+
+  ul.village-transcription__actions-group,
+  ol.village-transcription__actions-group {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .village-transcription .village-modal:not(.village-modal--opened) .village-modal__content {
+    max-height: 9.5rem;
+  }
+
+  .village-transcription::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .village-transcription__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .village-transcription__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .village-transcription__content::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .village-transcription__footer::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .village-transcription .village-modal:not(.village-modal--opened)::before {
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+}

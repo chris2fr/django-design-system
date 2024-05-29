@@ -1,9 +1,9 @@
 [tool.poetry]
 authors = ["Chris Mann <chris@mann.fr>"]
-description = "Render Fabrique CEFRAN into a generic Django app"
+description = "Render Fabrique VILLAGE into a generic Django app"
 license = "MIT"
-name = "django-cefran"
-version = "0.0.5"
+name = "django-village"
+version = "0.0.1"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Web Environment",
@@ -32,10 +32,10 @@ readme = "README.rst"
 repository = "https://github.com/chris2fr/django-cefran"
 
 packages = [
-  {include = "django_cefran"},
+  {include = "django_village"},
 ]
 
-include = ["LICENSE", "README.rst", "django_django_cefran/static/django_cefran/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "django_django_village/static/django_village/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"
