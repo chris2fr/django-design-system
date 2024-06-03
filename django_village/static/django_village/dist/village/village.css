@@ -169,8 +169,8 @@ a {
   --background-contrast-error-hover: var(--error-950-100-hover);
   --background-contrast-error-active: var(--error-950-100-active);
   --background-flat-grey: var(--grey-200-850);
-  --background-flat-village-primary: var(--village-primary-sun-625);
-  --background-flat-village-secondary: var(--village-secondary-sun-625);
+  --background-flat-village-primary: var(--village-primary-sun-moon);
+  --background-flat-village-secondary: var(--village-secondary-sun-moon);
   --background-flat-village-color3: var(--village-color3-sun-moon);
   --background-flat-village-color4: var(--village-color4-sun-moon);
   --background-flat-village-color5: var(--village-color5-sun-moon);
@@ -192,12 +192,12 @@ a {
   --background-flat-success: var(--success-425-625);
   --background-flat-warning: var(--warning-425-625);
   --background-flat-error: var(--error-425-625);
-  --background-action-high-village-primary: var(--village-primary-sun-625);
-  --background-action-high-village-primary-hover: var(--village-primary-sun-625-hover);
-  --background-action-high-village-primary-active: var(--village-primary-sun-625-active);
-  --background-action-high-village-secondary: var(--village-secondary-sun-625);
-  --background-action-high-village-secondary-hover: var(--village-secondary-sun-625-hover);
-  --background-action-high-village-secondary-active: var(--village-secondary-sun-625-active);
+  --background-action-high-village-primary: var(--village-primary-sun-moon);
+  --background-action-high-village-primary-hover: var(--village-primary-sun-moon-hover);
+  --background-action-high-village-primary-active: var(--village-primary-sun-moon-active);
+  --background-action-high-village-secondary: var(--village-secondary-sun-moon);
+  --background-action-high-village-secondary-hover: var(--village-secondary-sun-moon-hover);
+  --background-action-high-village-secondary-active: var(--village-secondary-sun-moon-active);
   --background-action-high-village-color3: var(--village-color3-sun-moon);
   --background-action-high-village-color3-hover: var(--village-color3-sun-moon-hover);
   --background-action-high-village-color3-active: var(--village-color3-sun-moon-active);
@@ -318,12 +318,12 @@ a {
   --background-action-low-village-color19: var(--village-color19-925-125);
   --background-action-low-village-color19-hover: var(--village-color19-925-125-hover);
   --background-action-low-village-color19-active: var(--village-color19-925-125-active);
-  --background-active-village-primary: var(--village-primary-sun-625);
-  --background-active-village-primary-hover: var(--village-primary-sun-625-hover);
-  --background-active-village-primary-active: var(--village-primary-sun-625-active);
-  --background-active-village-secondary: var(--village-secondary-sun-625);
-  --background-active-village-secondary-hover: var(--village-secondary-sun-625-hover);
-  --background-active-village-secondary-active: var(--village-secondary-sun-625-active);
+  --background-active-village-primary: var(--village-primary-sun-moon);
+  --background-active-village-primary-hover: var(--village-primary-sun-moon-hover);
+  --background-active-village-primary-active: var(--village-primary-sun-moon-active);
+  --background-active-village-secondary: var(--village-secondary-sun-moon);
+  --background-active-village-secondary-hover: var(--village-secondary-sun-moon-hover);
+  --background-active-village-secondary-active: var(--village-secondary-sun-moon-active);
   --background-open-village-primary: var(--village-primary-925-125);
   --background-open-village-primary-hover: var(--village-primary-925-125-hover);
   --background-open-village-primary-active: var(--village-primary-925-125-active);
@@ -358,8 +358,8 @@ a {
   --text-default-warning: var(--warning-425-625);
   --text-default-error: var(--error-425-625);
   --text-action-high-grey: var(--grey-50-1000);
-  --text-action-high-village-primary: var(--village-primary-sun-625);
-  --text-action-high-village-secondary: var(--village-secondary-sun-625);
+  --text-action-high-village-primary: var(--village-primary-sun-moon);
+  --text-action-high-village-secondary: var(--village-secondary-sun-moon);
   --text-action-high-village-color3: var(--village-color3-sun-moon);
   --text-action-high-village-color4: var(--village-color4-sun-moon);
   --text-action-high-village-color5: var(--village-color5-sun-moon);
@@ -378,11 +378,11 @@ a {
   --text-action-high-village-color18: var(--village-color18-sun-moon);
   --text-action-high-village-color19: var(--village-color19-sun-moon);
   --text-title-grey: var(--grey-50-1000);
-  --text-title-village-primary: var(--village-primary-sun-625);
-  --text-title-village-secondary: var(--village-secondary-sun-625);
+  --text-title-village-primary: var(--village-primary-sun-moon);
+  --text-title-village-secondary: var(--village-secondary-sun-moon);
   --text-label-grey: var(--grey-50-1000);
-  --text-label-village-primary: var(--village-primary-sun-625);
-  --text-label-village-secondary: var(--village-secondary-sun-625);
+  --text-label-village-primary: var(--village-primary-sun-moon);
+  --text-label-village-secondary: var(--village-secondary-sun-moon);
   --text-label-village-color3: var(--village-color3-sun-moon);
   --text-label-village-color4: var(--village-color4-sun-moon);
   --text-label-village-color5: var(--village-color5-sun-moon);
@@ -401,12 +401,12 @@ a {
   --text-label-village-color18: var(--village-color18-sun-moon);
   --text-label-village-color19: var(--village-color19-sun-moon);
   --text-active-grey: var(--grey-50-1000);
-  --text-active-village-primary: var(--village-primary-sun-625);
-  --text-active-village-secondary: var(--village-secondary-sun-625);
+  --text-active-village-primary: var(--village-primary-sun-moon);
+  --text-active-village-secondary: var(--village-secondary-sun-moon);
   --text-mention-grey: var(--grey-425-625);
   --text-inverted-grey: var(--grey-1000-50);
-  --text-inverted-village-primary: var(--village-primary-975-sun);
-  --text-inverted-village-secondary: var(--village-secondary-975-sun);
+  --text-inverted-village-primary: var(--village-primary-975-75);
+  --text-inverted-village-secondary: var(--village-secondary-975-75);
   --text-inverted-info: var(--info-975-75);
   --text-inverted-success: var(--success-975-75);
   --text-inverted-warning: var(--warning-975-75);
@@ -450,11 +450,11 @@ a {
   --border-default-village-color17: var(--village-color17-sun-moon);
   --border-default-village-color18: var(--village-color18-sun-moon);
   --border-default-village-color19: var(--village-color19-sun-moon);
-  --border-active-village-primary: var(--village-primary-sun-625);
-  --border-active-village-secondary: var(--village-secondary-sun-625);
+  --border-active-village-primary: var(--village-primary-sun-moon);
+  --border-active-village-secondary: var(--village-secondary-sun-moon);
   --border-action-high-grey: var(--grey-50-1000);
-  --border-action-high-village-primary: var(--village-primary-sun-625);
-  --border-action-high-village-secondary: var(--village-secondary-sun-625);
+  --border-action-high-village-primary: var(--village-primary-sun-moon);
+  --border-action-high-village-secondary: var(--village-secondary-sun-moon);
   --border-action-high-info: var(--info-425-625);
   --border-action-high-success: var(--success-425-625);
   --border-action-high-warning: var(--warning-425-625);
@@ -481,8 +481,8 @@ a {
   --border-open-village-primary: var(--village-primary-925-125);
   --border-open-village-secondary: var(--village-secondary-925-125);
   --border-plain-grey: var(--grey-200-850);
-  --border-plain-village-primary: var(--village-primary-sun-625);
-  --border-plain-village-secondary: var(--village-secondary-sun-625);
+  --border-plain-village-primary: var(--village-primary-sun-moon);
+  --border-plain-village-secondary: var(--village-secondary-sun-moon);
   --border-plain-info: var(--info-425-625);
   --border-plain-success: var(--success-425-625);
   --border-plain-warning: var(--warning-425-625);
@@ -505,12 +505,12 @@ a {
   --border-plain-village-color18: var(--village-color18-sun-moon);
   --border-plain-village-color19: var(--village-color19-sun-moon);
   --border-disabled-grey: var(--grey-925-125);
-  --artwork-major-village-primary: var(--village-primary-sun-625);
-  --artwork-major-village-primary-hover: var(--village-primary-sun-625-hover);
-  --artwork-major-village-primary-active: var(--village-primary-sun-625-active);
-  --artwork-major-village-secondary: var(--village-secondary-sun-625);
-  --artwork-major-village-secondary-hover: var(--village-secondary-sun-625-hover);
-  --artwork-major-village-secondary-active: var(--village-secondary-sun-625-active);
+  --artwork-major-village-primary: var(--village-primary-sun-moon);
+  --artwork-major-village-primary-hover: var(--village-primary-sun-moon-hover);
+  --artwork-major-village-primary-active: var(--village-primary-sun-moon-active);
+  --artwork-major-village-secondary: var(--village-secondary-sun-moon);
+  --artwork-major-village-secondary-hover: var(--village-secondary-sun-moon-hover);
+  --artwork-major-village-secondary-active: var(--village-secondary-sun-moon-active);
   --artwork-major-village-color3: var(--village-color3-sun-moon);
   --artwork-major-village-color3-hover: var(--village-color3-sun-moon-hover);
   --artwork-major-village-color3-active: var(--village-color3-sun-moon-active);
@@ -681,13 +681,12 @@ a {
   --village-primary-950-100: hsl(180, 80%, 96%);
   --village-primary-950-100-hover: hsl(180, 60%, 65%);
   --village-primary-950-100-active: hsl(180, 90%, 65%);
-  --village-primary-sun-625: hsl(180, 75%, 25%);
-  --village-primary-sun-625-hover: hsl(180, 60%, 20%);
-  --village-primary-sun-625-active: hsl(180, 40%, 15%);
+  --village-primary-sun-moon: hsl(180, 75%, 25%);
+  --village-primary-sun-moon-hover: hsl(180, 60%, 20%);
+  --village-primary-sun-moon-active: hsl(180, 40%, 15%);
   --village-primary-925-125: hsl(180, 80%, 93%);
   --village-primary-925-125-hover: hsl(180, 60%, 65%);
   --village-primary-925-125-active: hsl(180, 90%, 65%);
-  --village-primary-975-sun: hsl(180, 80%, 98%);
   --village-primary-main: hsl(180, 85%, 25%);
   --village-primary-850-200: hsl(180, 80%, 85%);
   --village-secondary-975-75: hsl(270, 80%, 98%);
@@ -696,13 +695,12 @@ a {
   --village-secondary-950-100: hsl(270, 80%, 96%);
   --village-secondary-950-100-hover: hsl(270, 60%, 65%);
   --village-secondary-950-100-active: hsl(270, 90%, 65%);
-  --village-secondary-sun-625: hsl(270, 75%, 25%);
-  --village-secondary-sun-625-hover: hsl(270, 60%, 20%);
-  --village-secondary-sun-625-active: hsl(270, 40%, 15%);
+  --village-secondary-sun-moon: hsl(270, 75%, 25%);
+  --village-secondary-sun-moon-hover: hsl(270, 60%, 20%);
+  --village-secondary-sun-moon-active: hsl(270, 40%, 15%);
   --village-secondary-925-125: hsl(270, 80%, 93%);
   --village-secondary-925-125-hover: hsl(270, 60%, 65%);
   --village-secondary-925-125-active: hsl(270, 90%, 65%);
-  --village-secondary-975-sun: hsl(270, 80%, 98%);
   --village-secondary-main: hsl(270, 85%, 25%);
   --village-secondary-850-200: hsl(270, 80%, 85%);
   --info-950-100: hsl(180, 80%, 96%);
@@ -6746,13 +6744,12 @@ iframe[class*=" village-ratio"] {
   --village-primary-950-100: hsl(180, 20%, 10%);
   --village-primary-950-100-hover: hsl(180, 22%, 13%);
   --village-primary-950-100-active: hsl(180, 33%, 18%);
-  --village-primary-sun-625: hsl(180, 80%, 65%);
-  --village-primary-sun-625-hover: hsl(180, 60%, 65%);
-  --village-primary-sun-625-active: hsl(180, 90%, 65%);
+  --village-primary-sun-moon: hsl(180, 80%, 75%);
+  --village-primary-sun-moon-hover: hsl(180, 60%, 75%);
+  --village-primary-sun-moon-active: hsl(180, 40%, 75%);
   --village-primary-925-125: hsl(180, 33%, 13%);
-  --village-primary-925-125-hover: hsl(180, 40%, 65%);
-  --village-primary-925-125-active: hsl(180, 45%, 65%);
-  --village-primary-975-sun: hsl(180, 75%, 25%);
+  --village-primary-925-125-hover: hsl(180, 40%, 18%);
+  --village-primary-925-125-active: hsl(180, 45%, 22%);
   --village-primary-main: hsl(180, 85%, 25%);
   --village-primary-850-200: hsl(180, 45%, 20%);
   --village-secondary-975-75: hsl(270, 20%, 7%);
@@ -6761,13 +6758,12 @@ iframe[class*=" village-ratio"] {
   --village-secondary-950-100: hsl(270, 20%, 10%);
   --village-secondary-950-100-hover: hsl(270, 22%, 13%);
   --village-secondary-950-100-active: hsl(270, 33%, 18%);
-  --village-secondary-sun-625: hsl(270, 80%, 65%);
-  --village-secondary-sun-625-hover: hsl(270, 60%, 65%);
-  --village-secondary-sun-625-active: hsl(270, 90%, 65%);
+  --village-secondary-sun-moon: hsl(270, 80%, 75%);
+  --village-secondary-sun-moon-hover: hsl(270, 60%, 75%);
+  --village-secondary-sun-moon-active: hsl(270, 40%, 75%);
   --village-secondary-925-125: hsl(270, 33%, 13%);
-  --village-secondary-925-125-hover: hsl(270, 40%, 65%);
-  --village-secondary-925-125-active: hsl(270, 45%, 65%);
-  --village-secondary-975-sun: hsl(270, 75%, 25%);
+  --village-secondary-925-125-hover: hsl(270, 40%, 18%);
+  --village-secondary-925-125-active: hsl(270, 45%, 22%);
   --village-secondary-main: hsl(270, 85%, 25%);
   --village-secondary-850-200: hsl(270, 45%, 20%);
   --info-950-100: hsl(180, 20%, 10%);
@@ -6808,8 +6804,8 @@ iframe[class*=" village-ratio"] {
   --village-color3-sun-moon-hover: hsl(0, 60%, 75%);
   --village-color3-sun-moon-active: hsl(0, 40%, 75%);
   --village-color3-925-125: hsl(0, 33%, 13%);
-  --village-color3-925-125-hover: hsl(0, 40%, 65%);
-  --village-color3-925-125-active: hsl(0, 45%, 65%);
+  --village-color3-925-125-hover: hsl(0, 40%, 18%);
+  --village-color3-925-125-active: hsl(0, 45%, 22%);
   --village-color3-850-200: hsl(0, 45%, 20%);
   --village-color4-975-75: hsl(90, 20%, 7%);
   --village-color4-975-75-hover: hsl(90, 20%, 12%);
@@ -6821,8 +6817,8 @@ iframe[class*=" village-ratio"] {
   --village-color4-sun-moon-hover: hsl(90, 60%, 75%);
   --village-color4-sun-moon-active: hsl(90, 40%, 75%);
   --village-color4-925-125: hsl(90, 33%, 13%);
-  --village-color4-925-125-hover: hsl(90, 40%, 65%);
-  --village-color4-925-125-active: hsl(90, 45%, 65%);
+  --village-color4-925-125-hover: hsl(90, 40%, 18%);
+  --village-color4-925-125-active: hsl(90, 45%, 22%);
   --village-color4-850-200: hsl(90, 45%, 20%);
   --village-color5-975-75: hsl(180, 20%, 7%);
   --village-color5-975-75-hover: hsl(180, 20%, 12%);
@@ -6834,8 +6830,8 @@ iframe[class*=" village-ratio"] {
   --village-color5-sun-moon-hover: hsl(180, 60%, 75%);
   --village-color5-sun-moon-active: hsl(180, 40%, 75%);
   --village-color5-925-125: hsl(180, 33%, 13%);
-  --village-color5-925-125-hover: hsl(180, 40%, 65%);
-  --village-color5-925-125-active: hsl(180, 45%, 65%);
+  --village-color5-925-125-hover: hsl(180, 40%, 18%);
+  --village-color5-925-125-active: hsl(180, 45%, 22%);
   --village-color5-850-200: hsl(180, 45%, 20%);
   --village-color6-975-75: hsl(290, 20%, 7%);
   --village-color6-975-75-hover: hsl(290, 20%, 12%);
@@ -6847,8 +6843,8 @@ iframe[class*=" village-ratio"] {
   --village-color6-sun-moon-hover: hsl(290, 60%, 75%);
   --village-color6-sun-moon-active: hsl(290, 40%, 75%);
   --village-color6-925-125: hsl(290, 33%, 13%);
-  --village-color6-925-125-hover: hsl(290, 40%, 65%);
-  --village-color6-925-125-active: hsl(290, 45%, 65%);
+  --village-color6-925-125-hover: hsl(290, 40%, 18%);
+  --village-color6-925-125-active: hsl(290, 45%, 22%);
   --village-color6-850-200: hsl(290, 45%, 20%);
   --village-color7-975-75: hsl(0, 20%, 7%);
   --village-color7-975-75-hover: hsl(0, 20%, 12%);
@@ -6860,8 +6856,8 @@ iframe[class*=" village-ratio"] {
   --village-color7-sun-moon-hover: hsl(0, 60%, 75%);
   --village-color7-sun-moon-active: hsl(0, 40%, 75%);
   --village-color7-925-125: hsl(0, 33%, 13%);
-  --village-color7-925-125-hover: hsl(0, 40%, 65%);
-  --village-color7-925-125-active: hsl(0, 45%, 65%);
+  --village-color7-925-125-hover: hsl(0, 40%, 18%);
+  --village-color7-925-125-active: hsl(0, 45%, 22%);
   --village-color7-850-200: hsl(0, 45%, 20%);
   --village-color8-975-75: hsl(90, 20%, 7%);
   --village-color8-975-75-hover: hsl(90, 20%, 12%);
@@ -6873,8 +6869,8 @@ iframe[class*=" village-ratio"] {
   --village-color8-sun-moon-hover: hsl(90, 60%, 75%);
   --village-color8-sun-moon-active: hsl(90, 40%, 75%);
   --village-color8-925-125: hsl(90, 33%, 13%);
-  --village-color8-925-125-hover: hsl(90, 40%, 65%);
-  --village-color8-925-125-active: hsl(90, 45%, 65%);
+  --village-color8-925-125-hover: hsl(90, 40%, 18%);
+  --village-color8-925-125-active: hsl(90, 45%, 22%);
   --village-color8-850-200: hsl(90, 45%, 20%);
   --village-color9-975-75: hsl(180, 20%, 7%);
   --village-color9-975-75-hover: hsl(180, 20%, 12%);
@@ -6886,8 +6882,8 @@ iframe[class*=" village-ratio"] {
   --village-color9-sun-moon-hover: hsl(180, 60%, 75%);
   --village-color9-sun-moon-active: hsl(180, 40%, 75%);
   --village-color9-925-125: hsl(180, 33%, 13%);
-  --village-color9-925-125-hover: hsl(180, 40%, 65%);
-  --village-color9-925-125-active: hsl(180, 45%, 65%);
+  --village-color9-925-125-hover: hsl(180, 40%, 18%);
+  --village-color9-925-125-active: hsl(180, 45%, 22%);
   --village-color9-850-200: hsl(180, 45%, 20%);
   --village-color10-975-75: hsl(270, 20%, 7%);
   --village-color10-975-75-hover: hsl(270, 20%, 12%);
@@ -6899,8 +6895,8 @@ iframe[class*=" village-ratio"] {
   --village-color10-sun-moon-hover: hsl(270, 60%, 75%);
   --village-color10-sun-moon-active: hsl(270, 40%, 75%);
   --village-color10-925-125: hsl(270, 33%, 13%);
-  --village-color10-925-125-hover: hsl(270, 40%, 65%);
-  --village-color10-925-125-active: hsl(270, 45%, 65%);
+  --village-color10-925-125-hover: hsl(270, 40%, 18%);
+  --village-color10-925-125-active: hsl(270, 45%, 22%);
   --village-color10-850-200: hsl(270, 45%, 20%);
   --village-color11-975-75: hsl(0, 20%, 7%);
   --village-color11-975-75-hover: hsl(0, 20%, 12%);
@@ -6912,8 +6908,8 @@ iframe[class*=" village-ratio"] {
   --village-color11-sun-moon-hover: hsl(0, 60%, 75%);
   --village-color11-sun-moon-active: hsl(0, 40%, 75%);
   --village-color11-925-125: hsl(0, 33%, 13%);
-  --village-color11-925-125-hover: hsl(0, 40%, 65%);
-  --village-color11-925-125-active: hsl(0, 45%, 65%);
+  --village-color11-925-125-hover: hsl(0, 40%, 18%);
+  --village-color11-925-125-active: hsl(0, 45%, 22%);
   --village-color11-850-200: hsl(0, 45%, 20%);
   --village-color12-975-75: hsl(90, 20%, 7%);
   --village-color12-975-75-hover: hsl(90, 20%, 12%);
@@ -6925,8 +6921,8 @@ iframe[class*=" village-ratio"] {
   --village-color12-sun-moon-hover: hsl(90, 60%, 75%);
   --village-color12-sun-moon-active: hsl(90, 40%, 75%);
   --village-color12-925-125: hsl(90, 33%, 13%);
-  --village-color12-925-125-hover: hsl(90, 40%, 65%);
-  --village-color12-925-125-active: hsl(90, 45%, 65%);
+  --village-color12-925-125-hover: hsl(90, 40%, 18%);
+  --village-color12-925-125-active: hsl(90, 45%, 22%);
   --village-color12-850-200: hsl(90, 45%, 20%);
   --village-color13-975-75: hsl(180, 20%, 7%);
   --village-color13-975-75-hover: hsl(180, 20%, 12%);
@@ -6938,8 +6934,8 @@ iframe[class*=" village-ratio"] {
   --village-color13-sun-moon-hover: hsl(180, 60%, 75%);
   --village-color13-sun-moon-active: hsl(180, 40%, 75%);
   --village-color13-925-125: hsl(180, 33%, 13%);
-  --village-color13-925-125-hover: hsl(180, 40%, 65%);
-  --village-color13-925-125-active: hsl(180, 45%, 65%);
+  --village-color13-925-125-hover: hsl(180, 40%, 18%);
+  --village-color13-925-125-active: hsl(180, 45%, 22%);
   --village-color13-850-200: hsl(180, 45%, 20%);
   --village-color14-975-75: hsl(270, 20%, 7%);
   --village-color14-975-75-hover: hsl(270, 20%, 12%);
@@ -6951,8 +6947,8 @@ iframe[class*=" village-ratio"] {
   --village-color14-sun-moon-hover: hsl(270, 60%, 75%);
   --village-color14-sun-moon-active: hsl(270, 40%, 75%);
   --village-color14-925-125: hsl(270, 33%, 13%);
-  --village-color14-925-125-hover: hsl(270, 40%, 65%);
-  --village-color14-925-125-active: hsl(270, 45%, 65%);
+  --village-color14-925-125-hover: hsl(270, 40%, 18%);
+  --village-color14-925-125-active: hsl(270, 45%, 22%);
   --village-color14-850-200: hsl(270, 45%, 20%);
   --village-color15-975-75: hsl(0, 20%, 7%);
   --village-color15-975-75-hover: hsl(0, 20%, 12%);
@@ -6964,8 +6960,8 @@ iframe[class*=" village-ratio"] {
   --village-color15-sun-moon-hover: hsl(0, 60%, 75%);
   --village-color15-sun-moon-active: hsl(0, 40%, 75%);
   --village-color15-925-125: hsl(0, 33%, 13%);
-  --village-color15-925-125-hover: hsl(0, 40%, 65%);
-  --village-color15-925-125-active: hsl(0, 45%, 65%);
+  --village-color15-925-125-hover: hsl(0, 40%, 18%);
+  --village-color15-925-125-active: hsl(0, 45%, 22%);
   --village-color15-850-200: hsl(0, 45%, 20%);
   --village-color16-975-75: hsl(90, 20%, 7%);
   --village-color16-975-75-hover: hsl(90, 20%, 12%);
@@ -6977,8 +6973,8 @@ iframe[class*=" village-ratio"] {
   --village-color16-sun-moon-hover: hsl(90, 60%, 75%);
   --village-color16-sun-moon-active: hsl(90, 40%, 75%);
   --village-color16-925-125: hsl(90, 33%, 13%);
-  --village-color16-925-125-hover: hsl(90, 40%, 65%);
-  --village-color16-925-125-active: hsl(90, 45%, 65%);
+  --village-color16-925-125-hover: hsl(90, 40%, 18%);
+  --village-color16-925-125-active: hsl(90, 45%, 22%);
   --village-color16-850-200: hsl(90, 45%, 20%);
   --village-color17-975-75: hsl(180, 20%, 7%);
   --village-color17-975-75-hover: hsl(180, 20%, 12%);
@@ -6990,8 +6986,8 @@ iframe[class*=" village-ratio"] {
   --village-color17-sun-moon-hover: hsl(180, 60%, 75%);
   --village-color17-sun-moon-active: hsl(180, 40%, 75%);
   --village-color17-925-125: hsl(180, 33%, 13%);
-  --village-color17-925-125-hover: hsl(180, 40%, 65%);
-  --village-color17-925-125-active: hsl(180, 45%, 65%);
+  --village-color17-925-125-hover: hsl(180, 40%, 18%);
+  --village-color17-925-125-active: hsl(180, 45%, 22%);
   --village-color17-850-200: hsl(180, 45%, 20%);
   --village-color18-975-75: hsl(270, 20%, 7%);
   --village-color18-975-75-hover: hsl(270, 20%, 12%);
@@ -7003,8 +6999,8 @@ iframe[class*=" village-ratio"] {
   --village-color18-sun-moon-hover: hsl(270, 60%, 75%);
   --village-color18-sun-moon-active: hsl(270, 40%, 75%);
   --village-color18-925-125: hsl(270, 33%, 13%);
-  --village-color18-925-125-hover: hsl(270, 40%, 65%);
-  --village-color18-925-125-active: hsl(270, 45%, 65%);
+  --village-color18-925-125-hover: hsl(270, 40%, 18%);
+  --village-color18-925-125-active: hsl(270, 45%, 22%);
   --village-color18-850-200: hsl(270, 45%, 20%);
   --village-color19-975-75: hsl(0, 20%, 7%);
   --village-color19-975-75-hover: hsl(0, 20%, 12%);
@@ -7016,8 +7012,8 @@ iframe[class*=" village-ratio"] {
   --village-color19-sun-moon-hover: hsl(0, 60%, 75%);
   --village-color19-sun-moon-active: hsl(0, 40%, 75%);
   --village-color19-925-125: hsl(0, 33%, 13%);
-  --village-color19-925-125-hover: hsl(0, 40%, 65%);
-  --village-color19-925-125-active: hsl(0, 45%, 65%);
+  --village-color19-925-125-hover: hsl(0, 40%, 18%);
+  --village-color19-925-125-active: hsl(0, 45%, 22%);
   --village-color19-850-200: hsl(0, 45%, 20%);
 }
 
@@ -14566,7 +14562,7 @@ a.village-card__title:not([href]) {
 }
 
 :root[data-village-theme=dark] .village-checkbox-group input[type=checkbox]:checked + label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 20%, 7%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .village-checkbox-group input[type=checkbox]:disabled + label::before {
@@ -14951,7 +14947,7 @@ a.village-card__title:not([href]) {
 }
 
 :root[data-village-theme=dark] .village-toggle label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle input[type=checkbox]:checked {
@@ -14968,11 +14964,11 @@ a.village-card__title:not([href]) {
 }
 
 :root[data-village-theme=dark] .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 65%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 :root[data-village-theme=dark] .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::after {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 65%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 75%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .village-toggle input[type=checkbox]:disabled {
@@ -15056,7 +15052,7 @@ a.village-card__title:not([href]) {
 
 :root[data-village-theme=dark] .village-toggle--error input[type=checkbox]:checked ~ .village-toggle__label::before,
 :root[data-village-theme=dark] .village-fieldset--error .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 65%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle--valid label,
@@ -15090,7 +15086,7 @@ a.village-card__title:not([href]) {
 
 :root[data-village-theme=dark] .village-toggle--valid input[type=checkbox]:checked ~ .village-toggle__label::before,
 :root[data-village-theme=dark] .village-fieldset--valid .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 65%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 /* ¯¯¯¯¯¯¯¯¯ *\

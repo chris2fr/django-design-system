@@ -112,7 +112,7 @@
 }
 
 :root[data-village-theme=dark] .village-checkbox-group input[type=checkbox]:checked + label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 20%, 7%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .village-checkbox-group input[type=checkbox]:disabled + label::before {
