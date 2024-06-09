@@ -38,21 +38,21 @@
 
   .village-sidemenu__link,
   .village-sidemenu__btn {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-sidemenu__link[aria-current]:not([aria-current=false]),
   .village-sidemenu__btn[aria-current]:not([aria-current=false]) {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-sidemenu__link[aria-current]:not([aria-current=false])::before,
   .village-sidemenu__btn[aria-current]:not([aria-current=false])::before {
-    background-color: hsl(180, 75%, 25%);
+    background-color: hsl(125, 75%, 25%);
   }
 
   .village-sidemenu__btn[aria-expanded=true] {
-    background-color: hsl(180, 80%, 93%);
+    background-color: hsl(125, 80%, 93%);
   }
 }
 @media print and (min-width: 48em) and (-ms-high-contrast: none), print and (min-width: 48em) and (-ms-high-contrast: active) {

@@ -30,7 +30,7 @@
 
 .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::after {
   transform: translateX(1rem);
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(125, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
   background-image: var(--data-uri-svg);
 }
 
@@ -73,7 +73,7 @@
   background-repeat: no-repeat;
   color: var(--text-active-village-primary);
 
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
@@ -164,7 +164,7 @@
 }
 
 :root[data-village-theme=dark] .village-toggle label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(125, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle input[type=checkbox]:checked {
@@ -176,16 +176,16 @@
 }
 
 .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
 :root[data-village-theme=dark] .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(180, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(125, 80%, 75%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 :root[data-village-theme=dark] .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::after {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 75%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(125, 80%, 75%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .village-toggle input[type=checkbox]:disabled {
@@ -247,13 +247,13 @@
 .village-fieldset--error .village-toggle label::before {
   color: var(--text-default-error);
 
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
 :root[data-village-theme=dark] .village-toggle--error label::before,
 :root[data-village-theme=dark] .village-fieldset--error .village-toggle label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(27, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle--error label::after,
@@ -263,13 +263,13 @@
 
 .village-toggle--error input[type=checkbox]:checked ~ .village-toggle__label::before,
 .village-fieldset--error .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
 :root[data-village-theme=dark] .village-toggle--error input[type=checkbox]:checked ~ .village-toggle__label::before,
 :root[data-village-theme=dark] .village-fieldset--error .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(0, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(27, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle--valid label,
@@ -281,13 +281,13 @@
 .village-fieldset--valid .village-toggle label::before {
   color: var(--text-default-success);
 
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
 :root[data-village-theme=dark] .village-toggle--valid label::before,
 :root[data-village-theme=dark] .village-fieldset--valid .village-toggle label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(55, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 
 .village-toggle--valid label::after,
@@ -297,13 +297,13 @@
 
 .village-toggle--valid input[type=checkbox]:checked ~ .village-toggle__label::before,
 .village-fieldset--valid .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
   background-image: var(--data-uri-svg);
 }
 
 :root[data-village-theme=dark] .village-toggle--valid input[type=checkbox]:checked ~ .village-toggle__label::before,
 :root[data-village-theme=dark] .village-fieldset--valid .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(90, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg width='40' stroke='hsl(55, 80%, 65%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 80%, 75%)' xmlns='http://www.w3.org/2000/svg'><rect x='0.5' y='0.5' width='39' height='23' rx='11.5' /></svg>");
 }
 @media (min-width: 36em) {
   /*! media sm */
@@ -350,30 +350,30 @@
   }
 
   .village-toggle label::before {
-    color: hsl(180, 75%, 25%);
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    color: hsl(125, 75%, 25%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle label::after {
-    color: hsl(180, 75%, 25%);
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
     background-color: #fff;
   }
 
   .village-toggle input[type=checkbox] {
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
   }
 
   .village-toggle input[type=checkbox]:checked {
-    background-color: hsl(180, 75%, 25%);
+    background-color: hsl(125, 75%, 25%);
   }
 
   .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::after {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(125, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
   }
 
   .village-toggle input[type=checkbox]:disabled {
@@ -412,44 +412,44 @@
 
   .village-toggle--error label,
   .village-fieldset--error .village-toggle label {
-    color: hsl(0, 45%, 43%);
+    color: hsl(27, 45%, 43%);
   }
 
   .village-toggle--error label::before,
   .village-fieldset--error .village-toggle label::before {
-    color: hsl(0, 45%, 43%);
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    color: hsl(27, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--error label::after,
   .village-fieldset--error .village-toggle label::after {
-    box-shadow: inset 0 0 0 1px hsl(0, 45%, 43%);
+    box-shadow: inset 0 0 0 1px hsl(27, 45%, 43%);
   }
 
   .village-toggle--error input[type=checkbox]:checked ~ .village-toggle__label::before,
   .village-fieldset--error .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--valid label,
   .village-fieldset--valid .village-toggle label {
-    color: hsl(90, 45%, 43%);
+    color: hsl(55, 45%, 43%);
   }
 
   .village-toggle--valid label::before,
   .village-fieldset--valid .village-toggle label::before {
-    color: hsl(90, 45%, 43%);
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    color: hsl(55, 45%, 43%);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--valid label::after,
   .village-fieldset--valid .village-toggle label::after {
-    box-shadow: inset 0 0 0 1px hsl(90, 45%, 43%);
+    box-shadow: inset 0 0 0 1px hsl(55, 45%, 43%);
   }
 
   .village-toggle--valid input[type=checkbox]:checked ~ .village-toggle__label::before,
   .village-fieldset--valid .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 }
 @media print {
@@ -458,7 +458,7 @@
   }
 
   .village-toggle label::before {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
     content: "";
     display: block;
     font-size: 1rem;
@@ -466,17 +466,17 @@
   }
 
   .village-toggle label::after {
-    color: hsl(180, 75%, 25%);
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
     background-color: #fff;
   }
 
   .village-toggle input[type=checkbox] {
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
   }
 
   .village-toggle input[type=checkbox]:checked {
-    background-color: hsl(180, 75%, 25%);
+    background-color: hsl(125, 75%, 25%);
   }
 
   .village-toggle input[type=checkbox]:disabled {
@@ -508,45 +508,45 @@
 
   .village-toggle--error label,
   .village-fieldset--error .village-toggle label {
-    color: hsl(0, 45%, 43%);
+    color: hsl(27, 45%, 43%);
   }
 
   .village-toggle--error label::before,
   .village-fieldset--error .village-toggle label::before {
-    color: hsl(0, 45%, 43%);
+    color: hsl(27, 45%, 43%);
   }
 
   .village-toggle--error label::after,
   .village-fieldset--error .village-toggle label::after {
-    box-shadow: inset 0 0 0 1px hsl(0, 45%, 43%);
+    box-shadow: inset 0 0 0 1px hsl(27, 45%, 43%);
   }
 
   .village-toggle--valid label,
   .village-fieldset--valid .village-toggle label {
-    color: hsl(90, 45%, 43%);
+    color: hsl(55, 45%, 43%);
   }
 
   .village-toggle--valid label::before,
   .village-fieldset--valid .village-toggle label::before {
-    color: hsl(90, 45%, 43%);
+    color: hsl(55, 45%, 43%);
   }
 
   .village-toggle--valid label::after,
   .village-fieldset--valid .village-toggle label::after {
-    box-shadow: inset 0 0 0 1px hsl(90, 45%, 43%);
+    box-shadow: inset 0 0 0 1px hsl(55, 45%, 43%);
   }
 }
 @media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
   .village-toggle label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(180, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(125, 75%, 25%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::after {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(180, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='hsl(125, 75%, 25%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/%3E%3C/svg%3E");
   }
 
   .village-toggle input[type=checkbox]:disabled:checked ~ .village-toggle__label::before {
@@ -563,21 +563,21 @@
 
   .village-toggle--error label::before,
   .village-fieldset--error .village-toggle label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--error input[type=checkbox]:checked ~ .village-toggle__label::before,
   .village-fieldset--error .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(0, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(27, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--valid label::before,
   .village-fieldset--valid .village-toggle label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 
   .village-toggle--valid input[type=checkbox]:checked ~ .village-toggle__label::before,
   .village-fieldset--valid .village-toggle input[type=checkbox]:checked ~ .village-toggle__label::before {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(90, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(180, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='40' stroke='hsl(55, 45%, 43%)' height='24' viewBox='0 0 40 24' fill='hsl(125, 75%, 25%)' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='23' rx='11.5' /%3E%3C/svg%3E");
   }
 }

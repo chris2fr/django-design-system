@@ -545,7 +545,7 @@ a.village-link--close:not([href]) {
   .village-link {
     background-image: none;
     text-decoration: underline;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link::before {
@@ -592,7 +592,7 @@ a.village-link--close:not([href]) {
   }
 
   .village-links-group li::marker {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-links-group--bordered {
@@ -601,7 +601,7 @@ a.village-link--close:not([href]) {
 
   .village-link--close {
     background-color: transparent;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link--close:hover {
@@ -630,7 +630,7 @@ a.village-link--close:not([href]) {
 }
 @media print {
   .village-link {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link__detail {
@@ -638,7 +638,7 @@ a.village-link--close:not([href]) {
   }
 
   .village-links-group li::marker {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-links-group--bordered {

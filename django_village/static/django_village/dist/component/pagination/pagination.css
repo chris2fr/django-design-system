@@ -533,16 +533,16 @@ a.village-pagination__link[aria-current=false]:not([href]),
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]) {
-    background-color: hsl(180, 75%, 25%);
-    color: hsl(180, 80%, 98%);
+    background-color: hsl(125, 75%, 25%);
+    color: hsl(125, 80%, 98%);
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]):hover {
-    background-color: hsl(180, 60%, 20%);
+    background-color: hsl(125, 60%, 20%);
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]):active {
-    background-color: hsl(180, 40%, 15%);
+    background-color: hsl(125, 40%, 15%);
   }
 
   .village-pagination__link:not([aria-current]):disabled,
@@ -567,7 +567,7 @@ a.village-pagination__link[aria-current=false]:not([href]),
 }
 @media (forced-colors: active) and (-ms-high-contrast: none), (forced-colors: active) and (-ms-high-contrast: active), (prefers-contrast: more) and (-ms-high-contrast: none), (prefers-contrast: more) and (-ms-high-contrast: active) {
   .village-pagination__link[aria-current]:not([aria-current=false]) {
-    border: 1px solid hsl(180, 75%, 25%);
+    border: 1px solid hsl(125, 75%, 25%);
   }
 }
 @media print {
@@ -576,16 +576,16 @@ a.village-pagination__link[aria-current=false]:not([href]),
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]) {
-    background-color: hsl(180, 75%, 25%);
-    color: hsl(180, 80%, 98%);
+    background-color: hsl(125, 75%, 25%);
+    color: hsl(125, 80%, 98%);
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]):hover {
-    background-color: hsl(180, 60%, 20%);
+    background-color: hsl(125, 60%, 20%);
   }
 
   .village-pagination__link[aria-current]:not([aria-current=false]):active {
-    background-color: hsl(180, 40%, 15%);
+    background-color: hsl(125, 40%, 15%);
   }
 
   .village-pagination__link:not([aria-current]):disabled,

@@ -306,7 +306,7 @@
 
   .village-range[data-village-js-range]::after {
     content: none;
-    background-color: hsl(180, 75%, 25%);
+    background-color: hsl(125, 75%, 25%);
   }
 
   .village-range[data-village-js-range] .village-range__max {
@@ -336,7 +336,7 @@
     border-radius: 50%;
     z-index: 500;
     background-color: #fff;
-    border: 1px solid hsl(180, 75%, 25%);
+    border: 1px solid hsl(125, 75%, 25%);
   }
 
   .village-range[data-village-js-range] input[type=range]:not(:only-of-type) {
@@ -410,7 +410,7 @@
   }
 
   .village-range[data-village-js-range]::before {
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
   }
 
   .village-range[data-village-js-range] input[type=range]:disabled::-ms-thumb {
@@ -418,7 +418,7 @@
   }
 
   .village-range__output {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-range__min,
@@ -427,24 +427,24 @@
   }
 
   .village-range--step[data-village-js-range]::before {
-    background-image: radial-gradient(circle at 2px 50%, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 1px, transparent 1px);
+    background-image: radial-gradient(circle at 2px 50%, hsl(125, 75%, 25%) 0, hsl(125, 75%, 25%) 1px, transparent 1px);
   }
 
   .village-range--step[data-village-js-range]::after {
-    background-image: radial-gradient(circle at 2px 50%, hsl(180, 80%, 93%) 0, hsl(180, 80%, 93%) 2px, transparent 2px);
-    box-shadow: inset 10px 0 0 0 hsl(180, 75%, 25%), inset -10px 0 0 0 hsl(180, 75%, 25%);
+    background-image: radial-gradient(circle at 2px 50%, hsl(125, 80%, 93%) 0, hsl(125, 80%, 93%) 2px, transparent 2px);
+    box-shadow: inset 10px 0 0 0 hsl(125, 75%, 25%), inset -10px 0 0 0 hsl(125, 75%, 25%);
   }
 
   .village-range--step.village-range--sm[data-village-js-range]::after {
-    box-shadow: inset 6px 0 0 0 hsl(180, 75%, 25%), inset -6px 0 0 0 hsl(180, 75%, 25%);
+    box-shadow: inset 6px 0 0 0 hsl(125, 75%, 25%), inset -6px 0 0 0 hsl(125, 75%, 25%);
   }
 
   .village-range-group--error::before {
-    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+    background-image: linear-gradient(0deg, hsl(27, 45%, 43%), hsl(27, 45%, 43%));
   }
 
   .village-range-group--valid::before {
-    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+    background-image: linear-gradient(0deg, hsl(55, 45%, 43%), hsl(55, 45%, 43%));
   }
 
   .village-range-group--disabled .village-range[data-village-js-range]::before {
@@ -471,7 +471,7 @@
 }
 @media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
   .village-range[data-village-js-range] input[type=range]::-ms-fill-lower {
-    background-color: hsl(180, 75%, 25%);
+    background-color: hsl(125, 75%, 25%);
   }
 
   .village-range[data-village-js-range] input[type=range]:disabled::-ms-fill-lower {
@@ -479,6 +479,6 @@
   }
 
   .village-range[data-village-js-range].village-range--double {
-    background-image: linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) 100%);
+    background-image: linear-gradient(to right, hsl(125, 75%, 25%) 0, hsl(125, 75%, 25%) 100%);
   }
 }

@@ -3,7 +3,7 @@
  */
 @media print {
   .village-link {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link__detail {
@@ -11,7 +11,7 @@
   }
 
   .village-links-group li::marker {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-links-group--bordered {

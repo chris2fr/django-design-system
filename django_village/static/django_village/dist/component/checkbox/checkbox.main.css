@@ -108,11 +108,11 @@
   background-color: var(--background-active-village-primary);
   background-image: radial-gradient(at 5px 4px, transparent 4px, var(--border-active-village-primary) 4px, var(--border-active-village-primary) 5px, transparent 6px), linear-gradient(var(--border-active-village-primary), var(--border-active-village-primary)), radial-gradient(at calc(100% - 5px) 4px, transparent 4px, var(--border-active-village-primary) 4px, var(--border-active-village-primary) 5px, transparent 6px), linear-gradient(var(--border-active-village-primary), var(--border-active-village-primary)), radial-gradient(at calc(100% - 5px) calc(100% - 4px), transparent 4px, var(--border-active-village-primary) 4px, var(--border-active-village-primary) 5px, transparent 6px), linear-gradient(var(--border-active-village-primary), var(--border-active-village-primary)), radial-gradient(at 5px calc(100% - 4px), transparent 4px, var(--border-active-village-primary) 4px, var(--border-active-village-primary) 5px, transparent 6px), linear-gradient(var(--border-active-village-primary), var(--border-active-village-primary)), var(--data-uri-svg);
 
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(125, 80%, 98%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 :root[data-village-theme=dark] .village-checkbox-group input[type=checkbox]:checked + label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(180, 20%, 7%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='hsl(125, 20%, 7%)' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .village-checkbox-group input[type=checkbox]:disabled + label::before {

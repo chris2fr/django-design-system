@@ -130,8 +130,8 @@ a.village-connect:not([href]) {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .village-connect {
-    background-color: hsl(180, 75%, 25%);
-    color: hsl(180, 80%, 98%);
+    background-color: hsl(125, 75%, 25%);
+    color: hsl(125, 80%, 98%);
   }
 
   .village-connect:disabled,
@@ -141,7 +141,7 @@ a.village-connect:not([href]) {
   }
 
   .village-connect-group .village-connect + p a {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-connect-group p {
@@ -150,8 +150,8 @@ a.village-connect:not([href]) {
 }
 @media print {
   .village-connect {
-    background-color: hsl(180, 75%, 25%);
-    color: hsl(180, 80%, 98%);
+    background-color: hsl(125, 75%, 25%);
+    color: hsl(125, 80%, 98%);
   }
 
   .village-connect:disabled,
@@ -161,7 +161,7 @@ a.village-connect:not([href]) {
   }
 
   .village-connect-group .village-connect + p a {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
     font-size: 1rem;
     line-height: 1.5rem;
   }

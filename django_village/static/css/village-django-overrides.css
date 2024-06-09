@@ -45,3 +45,16 @@ div.village-header__menu-links {
 .village-menu {
   top: 50%;
 }
+
+.village-header__menu village-modal {
+  width: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* .village-header .village-modal:not([role=dialog]) {
+  width: 100%;
+} */

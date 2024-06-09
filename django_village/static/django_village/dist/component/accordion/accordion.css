@@ -203,11 +203,11 @@
   }
 
   .village-accordion__btn {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-accordion__btn[aria-expanded=true] {
-    background-color: hsl(180, 80%, 93%);
+    background-color: hsl(125, 80%, 93%);
   }
 }
 @media print {
@@ -216,11 +216,11 @@
   }
 
   .village-accordion__btn {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-accordion__btn[aria-expanded=true] {
-    background-color: hsl(180, 80%, 93%);
+    background-color: hsl(125, 80%, 93%);
   }
 
   .village-accordion__btn::after {

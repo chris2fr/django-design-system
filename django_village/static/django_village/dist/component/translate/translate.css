@@ -177,8 +177,8 @@
   }
 
   .village-translate .village-translate__btn[aria-expanded=true] {
-    color: hsl(180, 75%, 25%);
-    background-color: hsl(180, 80%, 93%);
+    color: hsl(125, 75%, 25%);
+    background-color: hsl(125, 80%, 93%);
   }
 
   .village-translate__menu .village-translate__language {
@@ -187,8 +187,8 @@
 }
 @media print {
   .village-translate .village-translate__btn[aria-expanded=true] {
-    color: hsl(180, 75%, 25%);
-    background-color: hsl(180, 80%, 93%);
+    color: hsl(125, 75%, 25%);
+    background-color: hsl(125, 80%, 93%);
   }
 
   .village-translate .village-translate__btn[aria-expanded=true]:hover {

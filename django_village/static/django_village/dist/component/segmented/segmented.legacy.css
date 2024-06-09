@@ -46,8 +46,8 @@
   }
 
   .village-segmented__element input:checked + label {
-    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
-    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(125, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-segmented__element input:checked:disabled + label {

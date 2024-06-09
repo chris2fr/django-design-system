@@ -42,7 +42,9 @@
 
   </head>
 
-  <body>
+  <body class="{% block bodyclass %}{% endblock bodyclass %}">
+    {% block topbody %}
+    {% endblock topbody %}
 
     {% block skiplinks %}
       {% village_skiplinks skiplinks %}
@@ -61,11 +63,12 @@
       {% village_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    <div class="village-container village-mt-4w village-mb-6w">
+    {% comment %} <div class="village-container village-mt-4w village-mb-6w"> {% endcomment %}
+      <div class="village-container village-mb-6w"> 
       {% block breadcrumb %}
         {% village_breadcrumb %}
       {% endblock breadcrumb %}
-      <main id="content" role="main">
+      <main id="{% block mainid %}content{% endblock mainid %}" role="main" class="{% block mainclass %}{% endblock mainclass %}">
         {% block content %}
         {% endblock content %}
       </main>

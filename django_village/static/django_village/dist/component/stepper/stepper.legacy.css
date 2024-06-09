@@ -21,7 +21,7 @@
 
   .village-stepper__steps {
     display: none;
-    background-image: repeating-linear-gradient(to right, hsl(180, 75%, 25%) 0, hsl(180, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
+    background-image: repeating-linear-gradient(to right, hsl(125, 75%, 25%) 0, hsl(125, 75%, 25%) var(--active-inner), transparent var(--active-inner), transparent var(--active-outer)), repeating-linear-gradient(to right, #eee 0, #eee var(--default-inner), transparent var(--default-inner), transparent var(--default-outer));
   }
 
   .village-stepper__state {

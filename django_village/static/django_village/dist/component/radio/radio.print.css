@@ -3,7 +3,7 @@
  */
 @media print {
   .village-radio-group input[type=radio] + label {
-    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px);
+    background-image: radial-gradient(transparent 10px, hsl(125, 75%, 25%) 11px, transparent 12px);
   }
 
   .village-radio-group input[type=radio]:disabled + label {
@@ -11,7 +11,7 @@
   }
 
   .village-radio-group input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 10px, hsl(180, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+    background-image: radial-gradient(transparent 10px, hsl(125, 75%, 25%) 11px, transparent 12px), radial-gradient(hsl(125, 75%, 25%) 5px, transparent 6px);
   }
 
   .village-radio-group input[type=radio]:checked:disabled + label {
@@ -19,27 +19,27 @@
   }
 
   .village-fieldset--error .village-radio-group input[type=radio] + label {
-    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px);
+    background-image: radial-gradient(transparent 10px, hsl(27, 45%, 43%) 11px, transparent 12px);
   }
 
   .village-fieldset--error .village-radio-group input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 10px, hsl(0, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+    background-image: radial-gradient(transparent 10px, hsl(27, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(125, 75%, 25%) 5px, transparent 6px);
   }
 
   .village-fieldset--valid .village-radio-group input[type=radio] + label {
-    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px);
+    background-image: radial-gradient(transparent 10px, hsl(55, 45%, 43%) 11px, transparent 12px);
   }
 
   .village-fieldset--valid .village-radio-group input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 10px, hsl(90, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+    background-image: radial-gradient(transparent 10px, hsl(55, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(125, 75%, 25%) 5px, transparent 6px);
   }
 
   .village-fieldset--info .village-radio-group input[type=radio] + label {
-    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px);
+    background-image: radial-gradient(transparent 10px, hsl(125, 45%, 43%) 11px, transparent 12px);
   }
 
   .village-fieldset--info .village-radio-group input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 10px, hsl(180, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(180, 75%, 25%) 5px, transparent 6px);
+    background-image: radial-gradient(transparent 10px, hsl(125, 45%, 43%) 11px, transparent 12px), radial-gradient(hsl(125, 75%, 25%) 5px, transparent 6px);
   }
 
   .village-fieldset .village-radio-group input[type=radio]:disabled + label {
@@ -51,7 +51,7 @@
   }
 
   .village-radio-group--sm input[type=radio] + label {
-    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+    background-image: radial-gradient(transparent 6px, hsl(125, 75%, 25%) 7px, transparent 8px);
   }
 
   .village-radio-group--sm input[type=radio]:disabled + label {
@@ -59,7 +59,7 @@
   }
 
   .village-radio-group--sm input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: radial-gradient(transparent 6px, hsl(125, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-radio-group--sm input[type=radio]:checked:disabled + label {
@@ -67,27 +67,27 @@
   }
 
   .village-fieldset--error .village-radio-group--sm input[type=radio] + label {
-    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+    background-image: radial-gradient(transparent 6px, hsl(27, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--error .village-radio-group--sm input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: radial-gradient(transparent 6px, hsl(27, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset--valid .village-radio-group--sm input[type=radio] + label {
-    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+    background-image: radial-gradient(transparent 6px, hsl(55, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--valid .village-radio-group--sm input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: radial-gradient(transparent 6px, hsl(55, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset--info .village-radio-group--sm input[type=radio] + label {
-    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+    background-image: radial-gradient(transparent 6px, hsl(125, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--info .village-radio-group--sm input[type=radio]:checked + label {
-    background-image: radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: radial-gradient(transparent 6px, hsl(125, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset .village-radio-group--sm input[type=radio]:disabled + label {
@@ -104,7 +104,7 @@
   }
 
   .village-radio-rich input[type=radio] + label {
-    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px);
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(125, 75%, 25%) 7px, transparent 8px);
     background-color: #fff;
   }
 
@@ -117,11 +117,11 @@
   }
 
   .village-radio-rich input[type=radio]:checked + label {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), radial-gradient(transparent 6px, hsl(125, 75%, 25%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-radio-rich input[type=radio]:checked ~ .village-radio-rich__pictogram {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd);
   }
 
   .village-radio-rich input[type=radio]:checked:disabled + label {
@@ -133,27 +133,27 @@
   }
 
   .village-fieldset--error .village-radio-rich input[type=radio] + label {
-    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px);
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(27, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--error .village-radio-rich input[type=radio]:checked + label {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(0, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), radial-gradient(transparent 6px, hsl(27, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset--valid .village-radio-rich input[type=radio] + label {
-    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px);
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(55, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--valid .village-radio-rich input[type=radio]:checked + label {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(90, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), radial-gradient(transparent 6px, hsl(55, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset--info .village-radio-rich input[type=radio] + label {
-    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px);
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), radial-gradient(transparent 6px, hsl(125, 45%, 43%) 7px, transparent 8px);
   }
 
   .village-fieldset--info .village-radio-rich input[type=radio]:checked + label {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), radial-gradient(transparent 6px, hsl(180, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(180, 75%, 25%) 3px, transparent 4px);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), radial-gradient(transparent 6px, hsl(125, 45%, 43%) 7px, transparent 8px), radial-gradient(hsl(125, 75%, 25%) 3px, transparent 4px);
   }
 
   .village-fieldset .village-radio-rich input[type=radio]:disabled + label {

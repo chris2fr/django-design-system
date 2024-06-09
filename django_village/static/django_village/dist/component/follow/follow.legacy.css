@@ -177,7 +177,7 @@
   }
 
   .village-follow {
-    background-color: hsl(180, 80%, 98%);
+    background-color: hsl(125, 80%, 98%);
   }
 
   .village-follow .village-input {
@@ -194,7 +194,7 @@
 
   .village-follow__social .village-btn {
     background-color: transparent;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-follow__social .village-btn:hover {
@@ -222,12 +222,12 @@
   }
 
   .village-follow .village-grid-row > *:not(:first-child) {
-    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+    box-shadow: 0 -1px 0 0 hsl(125, 85%, 25%);
   }
 
   .village-follow__social .village-link {
     background-color: transparent;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-follow__social .village-link:hover {
@@ -256,6 +256,6 @@
 }
 @media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
   .village-follow .village-grid-row > *:not(:first-child) {
-    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+    box-shadow: -1px 0 0 0 hsl(125, 85%, 25%);
   }
 }

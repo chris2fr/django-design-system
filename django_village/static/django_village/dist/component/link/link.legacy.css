@@ -17,7 +17,7 @@
   .village-link {
     background-image: none;
     text-decoration: underline;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link::before {
@@ -64,7 +64,7 @@
   }
 
   .village-links-group li::marker {
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-links-group--bordered {
@@ -73,7 +73,7 @@
 
   .village-link--close {
     background-color: transparent;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-link--close:hover {

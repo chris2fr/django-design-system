@@ -20,14 +20,14 @@
   }
 
   .village-tabs__tab:not([aria-selected=true]) {
-    background-color: hsl(180, 80%, 93%);
+    background-color: hsl(125, 80%, 93%);
     color: #161616;
   }
 
   .village-tabs__tab[aria-selected=true]:not(:disabled) {
-    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+    background-image: linear-gradient(0deg, hsl(125, 75%, 25%), hsl(125, 75%, 25%)), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
     background-color: #fff;
-    color: hsl(180, 75%, 25%);
+    color: hsl(125, 75%, 25%);
   }
 
   .village-tabs__tab:disabled {
