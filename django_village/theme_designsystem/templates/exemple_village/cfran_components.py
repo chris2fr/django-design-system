@@ -3,7 +3,7 @@ from django.templatetags.static import static
 from example_app.utils import lorem_ipsum
 
 # Sample SVG file
-with open("django_village/static/img/gouvernement.svg") as svg_file:
+with open("django_design_system/static/img/gouvernement.svg") as svg_file:
     gov_svg = svg_file.read()
 
 IMPLEMENTED_COMPONENTS = {
@@ -51,7 +51,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "type": "warning",
                 "content": "Petite alerte sans titre.",
-                "extra_classes": "village-alert--sm",
+                "extra_classes": "design-system-alert--sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte",
@@ -66,15 +66,15 @@ IMPLEMENTED_COMPONENTS = {
             },
             {
                 "label": "Petit badge",
-                "extra_classes": "village-badge--sm",
+                "extra_classes": "design-system-badge--sm",
             },
             {
                 "label": "Badge coloré",
-                "extra_classes": "village-badge--green-menthe",
+                "extra_classes": "design-system-badge--green-menthe",
             },
             {
                 "label": "Badge système",
-                "extra_classes": "village-badge--success",
+                "extra_classes": "design-system-badge--success",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge",
@@ -96,18 +96,18 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Bouton secondaire",
                 "name": "secundary-button",
                 "type": "button",
-                "extra_classes": "village-btn--secondary",
+                "extra_classes": "design-system-btn--secondary",
                 "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
             },
             {
                 "label": "Bouton tertiaire",
-                "extra_classes": "village-btn--tertiary",
+                "extra_classes": "design-system-btn--tertiary",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
             },
             {
                 "label": "Bouton tertiaire sans bordure",
                 "type": "button",
-                "extra_classes": "village-btn--tertiary-no-outline",
+                "extra_classes": "design-system-btn--tertiary-no-outline",
                 "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
             },
         ],
@@ -122,17 +122,17 @@ IMPLEMENTED_COMPONENTS = {
                     {
                         "label": "Bouton principal",
                         "onclick": "alert('Vous avez cliqué sur le bouton principal')",
-                        "extra_classes": "village-icon-checkbox-circle-line village-btn--icon-left",
+                        "extra_classes": "design-system-icon-checkbox-circle-line design-system-btn--icon-left",
                     },
                     {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "village-icon-checkbox-circle-line village-btn--icon-left village-btn--secondary",
+                        "extra_classes": "design-system-icon-checkbox-circle-line design-system-btn--icon-left design-system-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                 ],
-                "extra_classes": "village-btns-group--icon-left",
+                "extra_classes": "design-system-btns-group--icon-left",
             },
             {
                 "items": [
@@ -144,22 +144,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "village-btn--secondary",
+                        "extra_classes": "design-system-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "village-btn--tertiary",
+                        "extra_classes": "design-system-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "village-btn--tertiary-no-outline",
+                        "extra_classes": "design-system-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "village-btns-group--equisized",
+                "extra_classes": "design-system-btns-group--equisized",
             },
             {
                 "items": [
@@ -171,22 +171,22 @@ IMPLEMENTED_COMPONENTS = {
                         "label": "Bouton secondaire",
                         "name": "secundary-button",
                         "type": "button",
-                        "extra_classes": "village-btn--secondary",
+                        "extra_classes": "design-system-btn--secondary",
                         "onclick": "alert('Vous avez cliqué sur le bouton secondaire')",
                     },
                     {
                         "label": "Bouton tertiaire",
-                        "extra_classes": "village-btn--tertiary",
+                        "extra_classes": "design-system-btn--tertiary",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire')",
                     },
                     {
                         "label": "Bouton tertiaire sans bordure",
                         "type": "button",
-                        "extra_classes": "village-btn--tertiary-no-outline",
+                        "extra_classes": "design-system-btn--tertiary-no-outline",
                         "onclick": "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
                     },
                 ],
-                "extra_classes": "village-btns-group--inline-sm",
+                "extra_classes": "design-system-btns-group--inline-sm",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons",
@@ -198,28 +198,28 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "title": "Mise en avant avec bouton normal",
                 "text": "Cette mise en avant a un bouton normal",
-                "icon_class": "village-icon-alert-line",
+                "icon_class": "design-system-icon-alert-line",
                 "button": {
                     "onclick": "alert('Ce bouton est bien un bouton')",
                     "label": "Bouton normal",
-                    "extra_classes": "village-btn--secondary",
+                    "extra_classes": "design-system-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant avec lien",
                 "text": "Cette mise en avant a un lien d’appel à action",
-                "icon_class": "village-icon-external-link-line",
+                "icon_class": "design-system-icon-external-link-line",
                 "button": {
                     "label": "Bouton qui est un lien",
                     "url": "https://www.systeme-de-design.gouv.fr/",
-                    "extra_classes": "village-btn--secondary",
+                    "extra_classes": "design-system-btn--secondary",
                 },
             },
             {
                 "title": "Mise en avant en couleur",
                 "text": "Cette mise en avant a une classe de couleur",
-                "icon_class": "village-icon-palette-line",
-                "extra_classes": "village-callout--green-emeraude",
+                "icon_class": "design-system-icon-palette-line",
+                "extra_classes": "design-system-callout--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant",
@@ -247,7 +247,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "village-card--horizontal",
+                "extra_classes": "design-system-card--horizontal",
             },
             {
                 "title": "Carte horizontale, largeur tiers",
@@ -258,7 +258,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "village-card--horizontal village-card--horizontal-tier",
+                "extra_classes": "design-system-card--horizontal design-system-card--horizontal-tier",
             },
             {
                 "title": "Carte horizontale, largeur moitié",
@@ -269,7 +269,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
-                "extra_classes": "village-card--horizontal village-card--horizontal-half",
+                "extra_classes": "design-system-card--horizontal design-system-card--horizontal-half",
             },
             {
                 "title": "Carte avec badge",
@@ -282,7 +282,7 @@ IMPLEMENTED_COMPONENTS = {
                 "media_badges": [
                     {
                         "label": "Nouveau",
-                        "extra_classes": "village-badge--new",
+                        "extra_classes": "design-system-badge--new",
                     }
                 ],
             },
@@ -295,7 +295,7 @@ IMPLEMENTED_COMPONENTS = {
                 "new_tab": True,
                 "top_detail": {
                     "detail": {
-                        "icon_class": "village-icon-warning-fill",
+                        "icon_class": "design-system-icon-warning-fill",
                         "text": "Détail (optionnel) avec icône (optionnelle)",
                     },
                     "tags": [{"label": "tag 1"}, {"label": "tag 2"}],
@@ -311,12 +311,12 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
-                        "icon_class": "village-icon-warning-fill",
+                        "icon_class": "design-system-icon-warning-fill",
                         "text": "Détail (optionnel)",
                     },
                     "badges": [
                         {"label": "Badge 1"},
-                        {"extra_classes": "village-badge--warning", "label": "Badge 2"},
+                        {"extra_classes": "design-system-badge--warning", "label": "Badge 2"},
                     ],
                 },
             },
@@ -328,7 +328,7 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
                 "bottom_detail": {
-                    "icon": "village-icon-warning-fill",
+                    "icon": "design-system-icon-warning-fill",
                     "text": "Détail (optionnel)",
                 },
             },
@@ -341,10 +341,10 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "village-card--horizontal",
+                "extra_classes": "design-system-card--horizontal",
                 "call_to_action": {
                     "buttons": [
-                        {"label": "Bouton 1", "extra_classes": "village-btn--secondary"},
+                        {"label": "Bouton 1", "extra_classes": "design-system-btn--secondary"},
                         {"label": "Bouton 2"},
                     ]
                 },
@@ -358,7 +358,7 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
-                "extra_classes": "village-card--horizontal",
+                "extra_classes": "design-system-card--horizontal",
                 "call_to_action": {
                     "links": [
                         {
@@ -382,14 +382,14 @@ IMPLEMENTED_COMPONENTS = {
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "new_tab": True,
-                "extra_classes": "village-card--grey village-card--shadow",
+                "extra_classes": "design-system-card--grey design-system-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
                 "image_url": "/static/img/placeholder.1x1.svg",
                 "enlarge_link": False,
-                "extra_classes": "village-card--horizontal",
+                "extra_classes": "design-system-card--horizontal",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/carte",
@@ -401,7 +401,7 @@ IMPLEMENTED_COMPONENTS = {
         "example_url": "https://main--ds-gouv.netlify.app/example/component/consent/",
         "sample_data": [
             {
-                "title": "À propos des cookies sur Django-VILLAGE",
+                "title": "À propos des cookies sur Django-Design-System",
                 "content": """
                 Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                 services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
@@ -420,24 +420,24 @@ IMPLEMENTED_COMPONENTS = {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "village-ratio-16x9",
+                "ratio_class": "design-system-ratio-16x9",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "ratio_class": "village-ratio-4x3",
+                "ratio_class": "design-system-ratio-4x3",
             },
             {
                 "image_url": "/static/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
-                "extra_classes": "village-content-media--lg",
+                "extra_classes": "design-system-content-media--lg",
             },
             {
                 "svg": gov_svg,
                 "caption": """Image SVG avec un lien dans la légende.
-                                <a class="village-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
+                                <a class="design-system-link" href="https://main--ds-gouv.netlify.app/example/component/content/"
                                     rel=noopener external'
                                     title="Source - Ouvre une nouvelle fenêtre" target='_blank'>Source</a>.""",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
@@ -450,7 +450,7 @@ IMPLEMENTED_COMPONENTS = {
                     "url": "https://tube-numerique-educatif.apps.education.fr/videos/embed/9d0b132d-f836-459a-9b9b-97b1a647232d",
                     "sandbox": "allow-same-origin allow-scripts allow-popups",
                 },
-                "ratio_class": "village-ratio-4x3",
+                "ratio_class": "design-system-ratio-4x3",
                 "caption": "Vidéo avec transcription",
                 "alt_text": "",
                 "transcription": {"content": f"<div>{lorem_ipsum}</div>"},
@@ -487,11 +487,11 @@ IMPLEMENTED_COMPONENTS = {
         "sample_data": [
             {
                 "content": "Contenu de la mise en exergue",
-                "size_class": "village-text--sm",
+                "size_class": "design-system-text--sm",
             },
             {
                 "content": "Mise en exergue avec bordure colorée",
-                "extra_classes": "village-highlight--green-emeraude",
+                "extra_classes": "design-system-highlight--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue",
@@ -523,25 +523,25 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Lien",
         "sample_data": [
             {
-                "url": "/django_village/components/link/",
+                "url": "/django_design_system/components/link/",
                 "label": "Lien interne",
             },
             {
                 "url": "https://www.systeme-de-design.gouv.fr/",
                 "label": "Lien externe, large",
                 "is_external": True,
-                "extra_classes": "village-link--lg",
+                "extra_classes": "design-system-link--lg",
             },
             {
-                "url": "/django_village/components/link/",
+                "url": "/django_design_system/components/link/",
                 "label": "Petit lien interne avec flèche",
                 "is_external": False,
-                "extra_classes": "village-icon-arrow-right-line village-link--icon-right village-link--sm",
+                "extra_classes": "design-system-icon-arrow-right-line design-system-link--icon-right design-system-link--sm",
             },
             {
-                "url": "/django_village/components/link/",
+                "url": "/django_design_system/components/link/",
                 "label": "Lien de téléchargement",
-                "extra_classes": "village-link--download",
+                "extra_classes": "design-system-link--download",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/liens",
@@ -583,7 +583,7 @@ IMPLEMENTED_COMPONENTS = {
                     },
                 ],
                 "image_url": "/static/img/placeholder.1x1.svg",
-                "extra_classes": "village-quote--green-emeraude",
+                "extra_classes": "design-system-quote--green-emeraude",
             },
             {
                 "text": "Citation très basique, sans aucun des champs optionnels.",
@@ -647,7 +647,7 @@ IMPLEMENTED_COMPONENTS = {
                                     {"label": "Page non active", "link": "#"},
                                     {
                                         "label": "Page active",
-                                        "link": "/django_village/components/sidemenu/",
+                                        "link": "/django_design_system/components/sidemenu/",
                                     },
                                 ],
                             },
@@ -762,7 +762,7 @@ IMPLEMENTED_COMPONENTS = {
                         2,
                     ],
                 ],
-                "extra_classes": "village-table--green-emeraude village-table--bordered",
+                "extra_classes": "design-system-table--green-emeraude design-system-table--bordered",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tableau",
@@ -772,15 +772,15 @@ IMPLEMENTED_COMPONENTS = {
         "title": "Tag",
         "sample_data": [
             {"label": "Tag simple"},
-            {"label": "Tag avec lien", "link": "/django_village/components"},
+            {"label": "Tag avec lien", "link": "/django_design_system/components"},
             {
                 "label": "Petit tag avec icône",
-                "extra_classes": "village-tag--sm village-icon-arrow-right-line village-tag--icon-left",  # noqa
+                "extra_classes": "design-system-tag--sm design-system-icon-arrow-right-line design-system-tag--icon-left",  # noqa
             },
             {
                 "label": "Tag avec action",
                 "link": "#",
-                "extra_classes": "village-icon-cursor-line village-tag--icon-right",
+                "extra_classes": "design-system-icon-cursor-line design-system-tag--icon-right",
                 "onclick": "alert('clicked'); return false;",
             },
             {
@@ -794,7 +794,7 @@ IMPLEMENTED_COMPONENTS = {
             {
                 "label": "Tag vert",
                 "link": "#",
-                "extra_classes": "village-tag--green-emeraude",
+                "extra_classes": "design-system-tag--green-emeraude",
             },
         ],
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag",
@@ -819,49 +819,49 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "Avec un pictogramme SVG",
                 "url": "/",
                 "id": "tile-cityhall",
-                "extra_classes": "village-tile--horizontal",
+                "extra_classes": "design-system-tile--horizontal",
                 "svg_path": static(
-                    "django_village/dist/artwork/pictograms/buildings/city-hall.svg"
+                    "django_design_system/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
             },
             {
                 "title": "Tuile verticale (SM)",
                 "url": "/",
                 "id": "tile-nuclear-plant",
-                "extra_classes": "village-tile--sm",
+                "extra_classes": "design-system-tile--sm",
                 "svg_path": static(
-                    "django_village/dist/artwork/pictograms/buildings/nuclear-plant.svg"
+                    "django_design_system/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
             },
             {
                 "title": "Tuile horizontale (SM)",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "village-tile--horizontal village-tile--sm",
+                "extra_classes": "design-system-tile--horizontal design-system-tile--sm",
                 "top_detail": {
                     "badges": [
                         {
                             "label": "Badge coloré",
-                            "extra_classes": "village-badge--sm village-badge--purple-glycine",
+                            "extra_classes": "design-system-badge--sm design-system-badge--purple-glycine",
                         },
                     ]
                 },
-                "svg_path": static("django_village/dist/artwork/pictograms/map/map.svg"),
+                "svg_path": static("django_design_system/dist/artwork/pictograms/map/map.svg"),
             },
             {
                 "title": "Tuile à fond gris et ombre sans bordure",
                 "url": "/",
                 "id": "tile-map",
-                "extra_classes": "village-tile--horizontal village-tile--grey village-tile--shadow village-tile--no-border",
-                "svg_path": static("django_village/dist/artwork/pictograms/leisure/paint.svg"),
+                "extra_classes": "design-system-tile--horizontal design-system-tile--grey design-system-tile--shadow design-system-tile--no-border",
+                "svg_path": static("django_design_system/dist/artwork/pictograms/leisure/paint.svg"),
             },
             {
                 "title": "Tuile de téléchargement",
-                "extra_classes": "village-tile--horizontal village-tile--download",
+                "extra_classes": "design-system-tile--horizontal design-system-tile--download",
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
-                    "django_village/dist/artwork/pictograms/document/document-signature.svg"
+                    "django_design_system/dist/artwork/pictograms/document/document-signature.svg"
                 ),
             },
         ],
@@ -885,7 +885,7 @@ IMPLEMENTED_COMPONENTS = {
                 "label": "Interrupteur complet aligné à gauche",
                 "help_text": "Cet interrupteur présente toutes les options disponibles",
                 "is_disabled": False,
-                "extra_classes": "village-toggle--label-left village-toggle--border-bottom",
+                "extra_classes": "design-system-toggle--label-left design-system-toggle--border-bottom",
                 "id": "toggle-full",
             },
         ],
@@ -951,23 +951,23 @@ EXTRA_COMPONENTS = {
             [
                 {
                     "label": "Succès",
-                    "extra_classes": "village-badge--success",
+                    "extra_classes": "design-system-badge--success",
                 },
                 {
                     "label": "Info",
-                    "extra_classes": "village-badge--info",
+                    "extra_classes": "design-system-badge--info",
                 },
                 {
                     "label": "Avertissement",
-                    "extra_classes": "village-badge--warning",
+                    "extra_classes": "design-system-badge--warning",
                 },
                 {
                     "label": "Erreur",
-                    "extra_classes": "village-badge--error",
+                    "extra_classes": "design-system-badge--error",
                 },
                 {
                     "label": "Nouveau",
-                    "extra_classes": "village-badge--new",
+                    "extra_classes": "design-system-badge--new",
                 },
             ]
         ],
@@ -993,7 +993,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton-radio-riche",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/radio/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#126](https://github.com/numerique-gouv/django_village/issues/126)
+        cf. [#126](https://github.com/numerique-gouv/django_design_system/issues/126)
         """,
     },
     "segmented_control": {
@@ -1001,7 +1001,7 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/controle-segmente",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/segmented/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#128](https://github.com/numerique-gouv/django_village/issues/128)
+        cf. [#128](https://github.com/numerique-gouv/django_design_system/issues/128)
         """,
     },
     "range": {
@@ -1009,20 +1009,20 @@ NOT_YET_IMPLEMENTED_COMPONENTS = {
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/curseur-range",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/range/",
         "note": """À implémenter au sein des formulaires et non comme une balise.
-        cf. [#129](https://github.com/numerique-gouv/django_village/issues/129)
+        cf. [#129](https://github.com/numerique-gouv/django_design_system/issues/129)
         """,
     },
 }
 
 # There is no need for specific tags for these
-# (either because the VILLAGE is implemented globally or because they are
+# (either because the DESIGN_SYSTEM is implemented globally or because they are
 # broken down into more specific tags)
 WONT_BE_IMPLEMENTED = {
     "back_to_top": {
         "title": "Retour en haut de page",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/retour-en-haut-de-page",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/link/back-to-top/",
-        "reason": "Utilisez une balise Lien (`village_link`)",
+        "reason": "Utilisez une balise Lien (`design_system_link`)",
     },
     "checkbox": {
         "title": "Case à cocher",
@@ -1034,7 +1034,7 @@ WONT_BE_IMPLEMENTED = {
         "title": "Téléchargement de fichier",
         "doc_url": "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier",
         "example_url": "https://main--ds-gouv.netlify.app/example/component/download/",
-        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django_village/components/link/), [carte](/django_village/components/card/), [tuile](/django_village/components/tile/). Voir la documentation de ceux-ci.",
+        "reason": "Pas un composant mais une série de variantes d’autres composants : [lien](/django_design_system/components/link/), [carte](/django_design_system/components/card/), [tuile](/django_design_system/components/tile/). Voir la documentation de ceux-ci.",
     },
     "file_upload": {
         "title": "Ajout de fichier",

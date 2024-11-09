@@ -1,9 +1,9 @@
 <li>
-  <a class="village-summary__link" href="{{ item.link }}">{{ item.label }}</a>
+  <a class="design-system-summary__link" href="{{ item.link }}">{{ item.label }}</a>
   {% if item.children %}
     <ol>
       {% for child in item.children %}
-        {% include "django_village/summary_list.html" with item=child %}
+        {% include "django_design_system/summary_list.html" with item=child %}
       {% endfor %}
     </ol>
   {% endif %}

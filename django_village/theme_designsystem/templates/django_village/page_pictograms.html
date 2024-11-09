@@ -1,27 +1,27 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 {% block content %}
   <h1>
     Pictogrammes
   </h1>
-  <div class="village-mb-4w">
-    {% village_summary summary %}
+  <div class="design-system-mb-4w">
+    {% design_system_summary summary %}
   </div>
   <ul>
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/pictogramme"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de documentation du composant sur le Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://main--ds-gouv.netlify.app/example/utility/pictograms/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page sur le site d’exemples du Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
   </ul>
@@ -29,28 +29,28 @@
     <h2 id="{{ folder|slugify }}" tabindex="-1">
       {{ folder|title }}
     </h2>
-    <div class="village-grid-row village-grid-row--gutters">
+    <div class="design-system-grid-row design-system-grid-row--gutters">
       {% for file in files %}
-        <div class="village-col-12 village-col-md-3 village-mb-4w">
-          <div class="village-tile village-enlarge-link">
-            <div class="village-tile__body">
-              <div class="village-tile__content">
-                <h3 class="village-tile__title">
-                  <a class="village-tile__link"
-                     href="/django-django_village/static/village/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
+        <div class="design-system-col-12 design-system-col-md-3 design-system-mb-4w">
+          <div class="design-system-tile design-system-enlarge-link">
+            <div class="design-system-tile__body">
+              <div class="design-system-tile__content">
+                <h3 class="design-system-tile__title">
+                  <a class="design-system-tile__link"
+                     href="/django-django_design_system/static/design-system/dist/artwork/pictograms/{{ folder }}/{{ file }}">{{ file }}</a>
                 </h3>
               </div>
             </div>
-            <div class="village-tile__header">
-              <div class="village-tile__pictogram">
+            <div class="design-system-tile__header">
+              <div class="design-system-tile__pictogram">
                 <svg aria-hidden="true"
-                     class="village-artwork"
+                     class="design-system-artwork"
                      viewBox="0 0 80 80"
                      width="80px"
                      height="80px">
-                  <use class="village-artwork-decorative" href="/django-django_village/static/village/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
-                  <use class="village-artwork-minor" href="/django-django_village/static/village/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
-                  <use class="village-artwork-major" href="/django-django_village/static/village/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
+                  <use class="design-system-artwork-decorative" href="/django-django_design_system/static/design-system/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-decorative"></use>
+                  <use class="design-system-artwork-minor" href="/django-django_design_system/static/design-system/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-minor"></use>
+                  <use class="design-system-artwork-major" href="/django-django_design_system/static/design-system/dist/artwork/pictograms/{{ folder }}/{{ file }}#artwork-major"></use>
                 </svg>
               </div>
             </div>

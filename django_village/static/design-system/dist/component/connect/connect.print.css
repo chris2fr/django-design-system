@@ -1,0 +1,27 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-connect {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-connect:disabled,
+  a.design-system-connect:not([href]) {
+    background-color: #e5e5e5;
+    color: #929292;
+  }
+
+  .design-system-connect-group .design-system-connect + p a {
+    color: hsl(180, 75%, 25%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .design-system-connect-group p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

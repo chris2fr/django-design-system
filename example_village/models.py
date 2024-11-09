@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 # These are example models to show how form and formset can work
-class VillageAuthor(models.Model):
+class DesignSystemAuthor(models.Model):
     first_name = models.CharField(
         _("First name"), max_length=250, null=False, blank=False
     )
@@ -15,10 +15,10 @@ class VillageAuthor(models.Model):
     birth_date = models.DateField(_("Birth date"), null=True, blank=True)
 
     class Meta:
-        verbose_name = _("village VillageAuthor")
+        verbose_name = _("design_system DesignSystemAuthor")
 
 
-class VillageGenre(models.Model):
+class DesignSystemGenre(models.Model):
     code = models.CharField(_("Code"), max_length=15, null=False, blank=False)
     designation = models.CharField(
         _("Designation"), max_length=250, null=False, blank=False
@@ -29,7 +29,7 @@ class VillageGenre(models.Model):
         return str(self.designation)
 
     class Meta:
-        verbose_name = _("village VillageGenre")
+        verbose_name = _("design_system DesignSystemGenre")
 
 
 BOOK_FORMAT = (
@@ -38,16 +38,16 @@ BOOK_FORMAT = (
 )
 
 
-class VillageBook(models.Model):
+class DesignSystemBook(models.Model):
     author = models.ForeignKey(
-        VillageAuthor, on_delete=models.CASCADE, null=False, blank=False
+        DesignSystemAuthor, on_delete=models.CASCADE, null=False, blank=False
     )
     title = models.CharField(_("Title"), max_length=250, null=False, blank=False)
     number_of_pages = models.CharField(_("Number of pages"), max_length=6, blank=True)
     book_format = models.CharField(
         _("Format"), choices=BOOK_FORMAT, max_length=10, blank=True
     )
-    genre = models.ManyToManyField(VillageGenre)
+    genre = models.ManyToManyField(DesignSystemGenre)
 
     class Meta:
-        verbose_name = _("village VillageBook")
+        verbose_name = _("design_system DesignSystemBook")

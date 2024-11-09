@@ -1,0 +1,207 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-fieldset__legend {
+    max-width: 100%;
+    color: #161616;
+  }
+
+  .design-system-message--error::before,
+  .design-system-message--error::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/design-system--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-message--valid::before,
+  .design-system-message--valid::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/design-system--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-message--info::before,
+  .design-system-message--info::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/design-system--info-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-select-group--valid label,
+  .design-system-input-group--valid label,
+  .design-system-range-group--valid label,
+  .design-system-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-select-group--error label,
+  .design-system-input-group--error label,
+  .design-system-range-group--error label,
+  .design-system-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-select-group--info label,
+  .design-system-input-group--info label,
+  .design-system-range-group--info label,
+  .design-system-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-select-group--disabled label,
+  .design-system-select-group--disabled .design-system-hint-text,
+  .design-system-input-group--disabled label,
+  .design-system-input-group--disabled .design-system-hint-text,
+  .design-system-range-group--disabled label,
+  .design-system-range-group--disabled .design-system-hint-text,
+  .design-system-upload-group--disabled label,
+  .design-system-upload-group--disabled .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-label {
+    color: #161616;
+  }
+
+  .design-system-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-label--disabled,
+  .design-system-label--disabled .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-hint-text,
+  .design-system-message {
+    color: #666;
+  }
+
+  .design-system-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-fieldset:disabled .design-system-label,
+  .design-system-fieldset:disabled .design-system-hint-text,
+  .design-system-fieldset:disabled .design-system-fieldset__legend {
+    color: #929292;
+  }
+
+  .design-system-fieldset input:disabled + label,
+  .design-system-fieldset input:disabled + label .design-system-hint-text,
+  .design-system-fieldset input:disabled + label + .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-fieldset--error,
+  .design-system-fieldset--error .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .design-system-fieldset--error .design-system-fieldset__legend,
+  .design-system-fieldset--error .design-system-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-fieldset--valid,
+  .design-system-fieldset--valid .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .design-system-fieldset--valid .design-system-fieldset__legend,
+  .design-system-fieldset--valid .design-system-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-fieldset--info,
+  .design-system-fieldset--info .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .design-system-fieldset--info .design-system-fieldset__legend,
+  .design-system-fieldset--info .design-system-label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-error-text::before,
+  .design-system-error-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/design-system--error-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-valid-text::before,
+  .design-system-valid-text::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/design-system--success-fill.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-error-text {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-valid-text {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-info-text {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-fieldset--valid .design-system-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(90, 45%, 43%);
+  }
+
+  .design-system-fieldset--error .design-system-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(0, 45%, 43%);
+  }
+
+  .design-system-fieldset--info .design-system-fieldset__content::before {
+    box-shadow: inset 2px 0 0 0 hsl(180, 45%, 43%);
+  }
+}

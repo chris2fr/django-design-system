@@ -2,7 +2,7 @@ import os
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from django_village.constants import DJANGO_VILLAGE_LANGUAGES
+from django_design_system.constants import DJANGO_DESIGN_SYSTEM_LANGUAGES
 
 def validate_image_extension(value):
     ext = os.path.splitext(value.name)[1]  # [0] returns path+filename
@@ -10,11 +10,11 @@ def validate_image_extension(value):
     if ext.lower() not in valid_extensions:
         raise ValidationError("Unsupported file extension.")
 
-class DjangoVillageConfig(models.Model):
+class DjangoDesignSystemConfig(models.Model):
     language = models.CharField(
         _("Language"),
         max_length=7,
-        choices=DJANGO_VILLAGE_LANGUAGES,
+        choices=DJANGO_DESIGN_SYSTEM_LANGUAGES,
         help_text=_("Only one configuration is allowed per language"),
         default="fr",
         unique=False,
@@ -50,13 +50,13 @@ class DjangoVillageConfig(models.Model):
     header_brand = models.CharField(
         _("Institution (header)"),
         max_length=200,
-        default="Web Village",
+        default="Web DesignSystem",
         blank=True,
     )
     header_brand_html = models.CharField(
         _("Institution with line break (header)"),
         max_length=200,
-        default="Web<br />Village",
+        default="Web<br />DesignSystem",
         blank=True,
     )
     beta_tag = models.BooleanField(_("Show the BETA tag next to the title"), default=False)  # type: ignore
@@ -65,13 +65,13 @@ class DjangoVillageConfig(models.Model):
     footer_brand = models.CharField(
         _("Institution (footer)"),
         max_length=200,
-        default="Web Village",
+        default="Web DesignSystem",
         blank=True,
     )
     footer_brand_html = models.CharField(
         _("Institution with line break (footer)"),
         max_length=200,
-        default="Web<br />Village",
+        default="Web<br />DesignSystem",
         blank=True,
     )
     footer_description = models.TextField(_("Description"), default="", blank=True)
@@ -129,11 +129,11 @@ class DjangoVillageConfig(models.Model):
         return _("Site config:") + f" {self.site_title} ({self.language})"
 
     def social_media(self):
-        return self.villagesocialmedia_set.all()
+        return self.design_system_socialmedia_set.all()
 
 
-class VillageSocialMedia(models.Model):
-    site_config = models.ForeignKey(DjangoVillageConfig, on_delete=models.CASCADE, null=True)
+class DesignSystemSocialMedia(models.Model):
+    site_config = models.ForeignKey(DjangoDesignSystemConfig, on_delete=models.CASCADE, null=True)
     title = models.CharField(_("Title"), max_length=200, default="", blank=True)
 
     url = models.URLField(

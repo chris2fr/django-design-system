@@ -1,0 +1,27 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-accordion::before {
+    box-shadow: inset 0 1px 0 0 #ddd, 0 1px 0 0 #ddd;
+  }
+
+  .design-system-accordion__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-accordion__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+
+  .design-system-accordion__btn::after {
+    transform: rotate(-180deg);
+  }
+
+  .design-system-accordion .design-system-collapse:not(.design-system-collapse--expanded) {
+    --collapse-max-height: none !important;
+    --collapse: inherit !important;
+    visibility: visible;
+    padding: 1rem;
+  }
+}

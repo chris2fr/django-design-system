@@ -1,0 +1,261 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+
+/**
+* Mixin d'ajout des icones des réseaux sociaux
+**/
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la largeur max des textes
+  */
+  .design-system-follow__newsletter > * {
+    max-width: 100%;
+  }
+
+  .design-system-follow .design-system-btn--dailymotion::before {
+    background-image: url("../../icons/logo/design-system--dailymotion-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--github::before {
+    background-image: url("../../icons/logo/github-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--instagram::before {
+    background-image: url("../../icons/logo/instagram-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--snapchat::before {
+    background-image: url("../../icons/logo/snapchat-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--telegram::before {
+    background-image: url("../../icons/logo/telegram-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--threads::before {
+    background-image: url("../../icons/logo/threads-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--tiktok::before {
+    background-image: url("../../icons/logo/design-system--tiktok-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--twitch::before {
+    background-image: url("../../icons/logo/twitch-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--vimeo::before {
+    background-image: url("../../icons/logo/vimeo-fill.svg");
+  }
+
+  .design-system-follow .design-system-btn--youtube::before {
+    background-image: url("../../icons/logo/youtube-fill.svg");
+  }
+
+  .design-system-follow .design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg) .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::before,
+  .design-system-follow .design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg) .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-btns-group--lg .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::before,
+  .design-system-follow .design-system-btns-group--lg .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .design-system-follow .design-system-link--facebook::before,
+  .design-system-follow .design-system-link--facebook::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-link--twitter::before,
+  .design-system-follow .design-system-link--twitter::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/twitter-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-link--instagram::before,
+  .design-system-follow .design-system-link--instagram::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/instagram-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-link--linkedin::before,
+  .design-system-follow .design-system-link--linkedin::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/linkedin-box-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-link--youtube::before,
+  .design-system-follow .design-system-link--youtube::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/logo/youtube-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-links-group:not(.design-system-links-group--sm):not(.design-system-links-group--lg) .design-system-link:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::before,
+  .design-system-follow .design-system-links-group:not(.design-system-links-group--sm):not(.design-system-links-group--lg) .design-system-link:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-follow .design-system-links-group--lg .design-system-link:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::before,
+  .design-system-follow .design-system-links-group--lg .design-system-link:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .design-system-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-follow .design-system-input {
+    background-color: #fff;
+  }
+
+  .design-system-follow__title {
+    color: #161616;
+  }
+
+  .design-system-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .design-system-follow__social .design-system-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-follow__social .design-system-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-follow__social .design-system-btn:disabled,
+  .design-system-follow__social a.design-system-btn:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .design-system-follow__social .design-system-btn:disabled:hover,
+  .design-system-follow__social a.design-system-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-btn:disabled:active,
+  .design-system-follow__social a.design-system-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-follow .design-system-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+
+  .design-system-follow__social .design-system-link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-follow__social .design-system-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-follow__social .design-system-link:disabled,
+  .design-system-follow__social a.design-system-link:not([href]) {
+    color: #929292;
+    background-color: transparent;
+  }
+
+  .design-system-follow__social .design-system-link:disabled:hover,
+  .design-system-follow__social a.design-system-link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-link:disabled:active,
+  .design-system-follow__social a.design-system-link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .design-system-follow .design-system-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

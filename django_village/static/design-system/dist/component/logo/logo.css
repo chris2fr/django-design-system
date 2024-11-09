@@ -1,0 +1,57 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  LOGO
+\* ˍˍˍˍˍˍˍˍˍ */
+.design-system-logo {
+  max-height: 90px;
+  width: auto;
+  color: var(--text-black-white-grey);
+}
+
+:root[data-design-system-mourning] .design-system-logo::before {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-logo {
+    color: #000;
+  }
+}
+
+@media print {
+  .design-system-logo {
+    color: #000;
+  }
+
+  .design-system-logo::after {
+    background-position: 0 calc(100% + 1.875rem) !important;
+  }
+}

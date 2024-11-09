@@ -1,5 +1,5 @@
 {% if form.non_field_errors %}
-  <section class="village-my-4v village-input-group village-input-group--error">
+  <section class="design-system-my-4v design-system-input-group design-system-input-group--error">
     {{ form.non_field_errors }}
   </section>
 {% endif %}
@@ -7,5 +7,5 @@
   {{ hidden }}
 {% endfor %}
 {% for field in form.visible_fields %}
-  {% include "django_village/form_field_snippets/field_snippet.html" %}
+  {% include "django_design_system/form_field_snippets/field_snippet.html" %}
 {% endfor %}

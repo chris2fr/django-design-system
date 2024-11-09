@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     "django_extensions",
     "csp",
     "widget_tweaks",
-    "django_village.theme_lesgrandsvoisins",
-    "django_village.theme_designsystem",
-    "django_village",
-    "example_village",
+    "django_design_system.theme_lesgrandsvoisins",
+    "django_design_system.theme_designsystem",
+    "django_design_system",
+    "example_design_system",
     "django_distill",
 ]
 
@@ -80,7 +80,7 @@ if DEBUG:
         "debug_toolbar.middleware.DebugToolbarMiddleware",
     ]
 
-ROOT_URLCONF = "django_village.config.urls"
+ROOT_URLCONF = "django_design_system.config.urls"
 
 TEMPLATES = [
     {
@@ -93,9 +93,9 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "django_village.context_processors.site_config",
-                "django_village.context_processors.urlangs",
-                # "village.context_processors.site_config",
+                "django_design_system.context_processors.site_config",
+                "django_design_system.context_processors.urlangs",
+                # "design_system.context_processors.site_config",
             ],
         },
     },
@@ -104,7 +104,7 @@ TEMPLATES = [
 if DJANGO_VERSION < (5, 0):
     FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
-WSGI_APPLICATION = "django_village.config.wsgi.application"
+WSGI_APPLICATION = "django_design_system.config.wsgi.application"
 
 
 # Database

@@ -1,14 +1,14 @@
-{% load static village_tags %}
+{% load static design_system_tags %}
 <!DOCTYPE html>
 <html lang="{% block lang %}fr{% endblock lang %}"
-      data-village-scheme="system"
-      {% if SITE_CONFIG.mourning %}data-village-mourning{% endif %}>
+      data-design-system-scheme="system"
+      {% if SITE_CONFIG.mourning %}data-design-system-mourning{% endif %}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    {% village_css %}
-    {% village_favicon %}
+    {% design_system_css %}
+    {% design_system_favicon %}
 
     {% block extra_css %}
     {% endblock extra_css %}
@@ -30,21 +30,21 @@
   </head>
   <body>
     {% block skiplinks %}
-      {% village_skiplinks skiplinks %}
+      {% design_system_skiplinks skiplinks %}
     {% endblock skiplinks %}
 
     {% block header %}
     {% endblock header %}
 
-    {% village_theme_modale %}
+    {% design_system_theme_modale %}
 
     {% if SITE_CONFIG.notice %}
-      {% village_notice title=SITE_CONFIG.notice %}
+      {% design_system_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    <div class="village-container village-mt-4w village-mb-6w">
+    <div class="design-system-container design-system-mt-4w design-system-mb-6w">
       {% block breadcrumb %}
-        {% village_breadcrumb %}
+        {% design_system_breadcrumb %}
       {% endblock breadcrumb %}
       <main id="content" role="main">
         {% block content %}
@@ -56,10 +56,10 @@
     {% endblock follow_newsletter_social_media %}
 
     {% block footer %}
-      {% include "django_village/footer.html" %}
+      {% include "django_design_system/footer.html" %}
     {% endblock footer %}
 
-    {% village_js nonce=request.csp_nonce %}
+    {% design_system_js nonce=request.csp_nonce %}
 
     {% block extra_js %}
     {% endblock extra_js %}

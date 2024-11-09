@@ -1,13 +1,13 @@
 {% load i18n %}
 {% translate "Hide message" as hide_message %}
-<div class="village-notice village-notice--info">
-  <div class="village-container">
-    <div class="village-notice__body">
-      <p class="village-notice__title">
+<div class="design-system-notice design-system-notice--info">
+  <div class="design-system-container">
+    <div class="design-system-notice__body">
+      <p class="design-system-notice__title">
         {{ self.title|safe }}
       </p>
       {% if self.is_collapsible %}
-        <button class="village-btn--close village-btn"
+        <button class="design-system-btn--close design-system-btn"
                 title="{{ hide_message }}"
                 onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
           {{ hide_message }}

@@ -1,0 +1,1107 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  BUTTON
+\* ˍˍˍˍˍˍˍˍˍ */
+.design-system-btn {
+  --text-spacing: 0;
+  --title-spacing: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  --underline-img: none;
+  --hover-tint: var(--hover);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-action-high-design-system-primary);
+
+  --idle: transparent;
+  --hover: var(--background-action-high-design-system-primary-hover);
+  --active: var(--background-action-high-design-system-primary-active);
+  color: var(--text-inverted-design-system-primary);
+}
+
+.design-system-btn::before,
+.design-system-btn::after {
+  display: block;
+}
+
+.design-system-btn[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--align-on-content {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.design-system-btn[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.design-system-btn[class^=design-system-icon-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn[class^=design-system-fi-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-])::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--align-on-content[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--align-on-content[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn--align-on-content[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--align-on-content[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--icon-left[class^=design-system-icon-]::before,
+.design-system-btn--icon-left[class*=" design-system-icon-"]::before,
+.design-system-btn--icon-left[class^=design-system-fi-]::before,
+.design-system-btn--icon-left[class*=" design-system-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  margin-left: -0.875rem;
+  margin-right: -1rem;
+}
+
+.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--icon-right[class^=design-system-icon-]::after,
+.design-system-btn--icon-right[class*=" design-system-icon-"]::after,
+.design-system-btn--icon-right[class^=design-system-fi-]::after,
+.design-system-btn--icon-right[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--icon-right[class^=design-system-icon-]::before,
+.design-system-btn--icon-right[class*=" design-system-icon-"]::before,
+.design-system-btn--icon-right[class^=design-system-fi-]::before,
+.design-system-btn--icon-right[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  margin-left: -1rem;
+  margin-right: -0.875rem;
+}
+
+.design-system-btn--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.design-system-btn--sm[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--sm[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--sm.design-system-btn--align-on-content {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.design-system-btn--sm[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.design-system-btn--sm[class^=design-system-icon-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--sm[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--sm[class^=design-system-fi-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--sm[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-])::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--sm.design-system-btn--align-on-content[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm.design-system-btn--align-on-content[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm.design-system-btn--align-on-content[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--sm.design-system-btn--align-on-content[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.design-system-btn--sm.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--sm.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--sm.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--sm.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--sm.design-system-btn--icon-left[class^=design-system-icon-]::before,
+.design-system-btn--sm.design-system-btn--icon-left[class*=" design-system-icon-"]::before,
+.design-system-btn--sm.design-system-btn--icon-left[class^=design-system-fi-]::before,
+.design-system-btn--sm.design-system-btn--icon-left[class*=" design-system-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  margin-left: -0.625rem;
+  margin-right: -0.75rem;
+}
+
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-icon-]::after,
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-icon-"]::after,
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-fi-]::after,
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-icon-]::before,
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-icon-"]::before,
+.design-system-btn--sm.design-system-btn--icon-right[class^=design-system-fi-]::before,
+.design-system-btn--sm.design-system-btn--icon-right[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--sm.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  margin-left: -0.75rem;
+  margin-right: -0.625rem;
+}
+
+.design-system-btn--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.design-system-btn--lg[target=_blank] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--lg[target=_blank]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--align-on-content {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.design-system-btn--lg[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.design-system-btn--lg[class^=design-system-icon-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--lg[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--lg[class^=design-system-fi-]:not([class*=design-system-btn--icon-])::before,
+.design-system-btn--lg[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-])::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--align-on-content[class^=design-system-icon-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg.design-system-btn--align-on-content[class*=" design-system-icon-"]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg.design-system-btn--align-on-content[class^=design-system-fi-]:not([class*=design-system-btn--icon-]),
+.design-system-btn--lg.design-system-btn--align-on-content[class*=" design-system-fi-"]:not([class*=design-system-btn--icon-]) {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--lg.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--lg.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--lg.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--lg.design-system-btn--icon-left[class^=design-system-icon-]::before,
+.design-system-btn--lg.design-system-btn--icon-left[class*=" design-system-icon-"]::before,
+.design-system-btn--lg.design-system-btn--icon-left[class^=design-system-fi-]::before,
+.design-system-btn--lg.design-system-btn--icon-left[class*=" design-system-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-icon-],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-icon-"],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-left[class^=design-system-fi-],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-left[class*=" design-system-fi-"] {
+  margin-left: -1.3125rem;
+  margin-right: -1.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-icon-]::after,
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-icon-"]::after,
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-fi-]::after,
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-icon-]::before,
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-icon-"]::before,
+.design-system-btn--lg.design-system-btn--icon-right[class^=design-system-fi-]::before,
+.design-system-btn--lg.design-system-btn--icon-right[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-icon-],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-icon-"],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-right[class^=design-system-fi-],
+.design-system-btn--lg.design-system-btn--align-on-content.design-system-btn--icon-right[class*=" design-system-fi-"] {
+  margin-left: -1.5rem;
+  margin-right: -1.3125rem;
+}
+
+.design-system-btns-group {
+  --ul-type: none;
+  --ol-type: none;
+  --ul-start: 0;
+  --ol-start: 0;
+  --xl-block: 0;
+  --li-bottom: 0;
+  --ol-content: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  /**
+  * design-system-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * design-system-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  */
+
+  /**
+  * design-system-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  */
+
+  /**
+  * design-system-btns-group--right : aligne les boutons sur la droite
+  */
+
+  /**
+  * design-system-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * design-system-btns-group--center : aligne les boutons au centre du conteneur
+  */
+
+  /**
+  * design-system-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  */
+
+  /**
+  * design-system-btns-group--sm : Fixe les boutons à la taille SM
+  */
+
+  /**
+  * design-system-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  */
+
+  /**
+  * design-system-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  */
+}
+
+.design-system-btns-group > li,
+.design-system-btns-group > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.design-system-btns-group .design-system-btn {
+  width: calc(100% - 1rem);
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
+}
+
+.design-system-btns-group--inline .design-system-btn {
+  width: auto;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group--inline > li {
+  display: inline-flex;
+  max-width: 100%;
+  width: auto;
+}
+
+.design-system-btns-group--inline.design-system-btns-group--right.design-system-btns-group--inline-reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.design-system-btns-group--left,
+.design-system-btns-group--left li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.design-system-btns-group--right,
+.design-system-btns-group--right li {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.design-system-btns-group--center,
+.design-system-btns-group--center li {
+  justify-content: center;
+  text-align: center;
+}
+
+.design-system-btns-group--between,
+.design-system-btns-group--between li {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.design-system-btns-group--equisized {
+  --equisized-width: auto;
+}
+
+.design-system-btns-group--equisized .design-system-btn {
+  justify-content: center;
+  width: var(--equisized-width);
+}
+
+.design-system-btns-group--sm .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"]) {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--sm:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::after,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::after,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::after,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--sm.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg) .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"]) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg):not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::after,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::after,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::after,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg).design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-btns-group--lg .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"]) {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 3rem;
+  max-height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--lg:not([class^=design-system-btns-group--icon-]):not([class*=" design-system-btns-group--icon-"]) .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 2rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-left .design-system-btn[class*=" design-system-fi-"]::before {
+  --icon-size: 1.5rem;
+  margin-left: -0.1875rem;
+  margin-right: 0.5rem;
+}
+
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-],
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"],
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-],
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"] {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.5rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::after,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::after,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::after,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::after {
+  content: "";
+
+  --icon-size: 1.5rem;
+  margin-right: -0.1875rem;
+  margin-left: 0.5rem;
+}
+
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-icon-]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-icon-"]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class^=design-system-fi-]::before,
+.design-system-btns-group--lg.design-system-btns-group--icon-right .design-system-btn[class*=" design-system-fi-"]::before {
+  content: none;
+}
+
+.design-system-fieldset__element > .design-system-btns-group {
+  margin-bottom: -1rem;
+}
+
+.design-system-btn--close {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.design-system-btn--close::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/close-line.svg");
+  mask-image: url("../../icons/system/close-line.svg");
+  content: "";
+}
+
+.design-system-btn--close::before {
+  content: none;
+}
+
+.design-system-btn--tooltip {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 2rem;
+  max-height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.design-system-btn--tooltip::before {
+  --icon-size: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/question-line.svg");
+  mask-image: url("../../icons/system/question-line.svg");
+  content: "";
+}
+
+.design-system-btn--fullscreen {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--fullscreen::after {
+
+  --icon-size: 1rem;
+  margin-right: -0.125rem;
+  margin-left: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/media/fullscreen-line.svg");
+  mask-image: url("../../icons/media/fullscreen-line.svg");
+  content: "";
+}
+
+.design-system-btn--fullscreen::before {
+  content: none;
+}
+
+.design-system-btn--display {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--display::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/system/design-system--theme-fill.svg");
+  mask-image: url("../../icons/system/design-system--theme-fill.svg");
+  content: "";
+}
+
+.design-system-btn--account {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--account::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../icons/user/account-circle-fill.svg");
+  content: "";
+}
+
+.design-system-btn--team {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--team::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/user/team-line.svg");
+  mask-image: url("../../icons/user/team-line.svg");
+  content: "";
+}
+
+.design-system-btn--briefcase {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  overflow: initial;
+  max-width: 100%;
+  max-height: none;
+}
+
+.design-system-btn--briefcase::before {
+  --icon-size: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: calc((0.75em - var(--icon-size)) * 0.5);
+  background-color: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("../../icons/business/briefcase-fill.svg");
+  mask-image: url("../../icons/business/briefcase-fill.svg");
+  content: "";
+}
+
+.design-system-btn:disabled,
+a.design-system-btn:not([href]) {
+  color: var(--text-disabled-grey);
+  background-color: var(--background-disabled-grey);
+
+  --idle: transparent;
+  --hover: var(--background-disabled-grey-hover);
+  --active: var(--background-disabled-grey-active);
+}
+
+.design-system-btn--secondary {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-design-system-primary);
+  box-shadow: inset 0 0 0 1px var(--border-action-high-design-system-primary);
+}
+
+.design-system-btn--secondary:disabled,
+a.design-system-btn--secondary:not([href]) {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.design-system-btn--tertiary,
+.design-system-btn--account {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-design-system-primary);
+  box-shadow: inset 0 0 0 1px var(--border-default-grey);
+}
+
+.design-system-btn--tertiary:disabled,
+a.design-system-btn--tertiary:not([href]),
+a.design-system-btn--account:not([href]),
+.design-system-btn--account:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 0 0 1px var(--border-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+.design-system-btn--tertiary-no-outline,
+.design-system-btn--close,
+.design-system-btn--display,
+.design-system-btn--fullscreen,
+.design-system-btn--tooltip,
+.design-system-btn--briefcase,
+.design-system-btn--team {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+  color: var(--text-action-high-design-system-primary);
+}
+
+.design-system-btn--tertiary-no-outline:disabled,
+a.design-system-btn--tertiary-no-outline:not([href]),
+a.design-system-btn--close:not([href]),
+a.design-system-btn--display:not([href]),
+a.design-system-btn--fullscreen:not([href]),
+a.design-system-btn--tooltip:not([href]),
+a.design-system-btn--briefcase:not([href]),
+a.design-system-btn--team:not([href]),
+.design-system-btn--close:disabled,
+.design-system-btn--display:disabled,
+.design-system-btn--fullscreen:disabled,
+.design-system-btn--tooltip:disabled,
+.design-system-btn--briefcase:disabled,
+.design-system-btn--team:disabled {
+  color: var(--text-disabled-grey);
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+  .design-system-btns-group--inline-sm .design-system-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .design-system-btns-group--inline-sm > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .design-system-btns-group--inline-sm.design-system-btns-group--right.design-system-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 48em) {
+  /*! media md */
+  .design-system-btns-group--inline-md .design-system-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .design-system-btns-group--inline-md > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .design-system-btns-group--inline-md.design-system-btns-group--right.design-system-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .design-system-btns-group--inline-lg .design-system-btn {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .design-system-btns-group--inline-lg > li {
+    display: inline-flex;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .design-system-btns-group--inline-lg.design-system-btns-group--right.design-system-btns-group--inline-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}

@@ -1,0 +1,83 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-tile {
+    background-color: #fff;
+  }
+
+  .design-system-tile:not(.design-system-tile--no-border):not(.design-system-tile--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .design-system-tile--grey {
+    background-color: #eee;
+  }
+
+  .design-system-tile--shadow {
+    background-color: #fff;
+  }
+
+  .design-system-tile--shadow.design-system-tile--grey {
+    background-color: #eee;
+  }
+
+  .design-system-tile__title {
+    color: #161616;
+  }
+
+  .design-system-tile__title:disabled,
+  a.design-system-tile__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .design-system-tile__title::before {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+  }
+
+  .design-system-tile__title a {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-tile__title a::before {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-tile__title a:not([href]) {
+    color: #929292;
+  }
+
+  .design-system-tile__title a:not([href])::before {
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  }
+
+  .design-system-tile .design-system-tile__desc,
+  .design-system-tile .design-system-tile__detail,
+  .design-system-tile__desc,
+  .design-system-tile__detail,
+  .design-system-tile--sm .design-system-tile__desc,
+  .design-system-tile--sm .design-system-tile__detail,
+  .design-system-tile--sm__desc,
+  .design-system-tile--sm__detail {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .design-system-tile--shadow {
+    z-index: 500;
+  }
+
+  .design-system-tile--no-background {
+    background-color: transparent;
+  }
+
+  .design-system-tile--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-tile--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

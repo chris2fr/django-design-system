@@ -2,7 +2,7 @@ from django.test import SimpleTestCase
 from django.template import Context, Template
 from unittest.mock import MagicMock
 
-from django_village.checksums import (
+from django_design_system.checksums import (
     INTEGRITY_CSS,
     INTEGRITY_FAVICON_APPLE,
     INTEGRITY_FAVICON_ICO,
@@ -11,78 +11,78 @@ from django_village.checksums import (
     INTEGRITY_JS_MODULE,
     INTEGRITY_JS_NOMODULE,
 )
-from django_village.templatetags.village_tags import concatenate, hyphenate
+from django_design_system.templatetags.design_system_tags import concatenate, hyphenate
 
 
-class VillageCssTagTest(SimpleTestCase):
+class DesignSystemCssTagTest(SimpleTestCase):
     def test_css_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load village_tags %} {% village_css %}")
+        template_to_render = Template("{% load design_system_tags %} {% design_system_css %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            f'<link rel="stylesheet" href="/static/village/dist/village/village.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
+            f'<link rel="stylesheet" href="/static/design-system/dist/design-system/design-system.min.css"  integrity="{ INTEGRITY_CSS }">',  # noqa
             rendered_template,
         )
 
 
-class VillageJsTagTest(SimpleTestCase):
+class DesignSystemJsTagTest(SimpleTestCase):
     def test_js_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load village_tags %} {% village_js %}")
+        template_to_render = Template("{% load design_system_tags %} {% design_system_js %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/static/village/dist/village/village.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
-            <script nomodule src="/static/village/dist/village/village.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
+            <script type="module" src="/static/design-system/dist/design-system/design-system.module.min.js" integrity="{ INTEGRITY_JS_MODULE }"></script>
+            <script nomodule src="/static/design-system/dist/design-system/design-system.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }"></script>
             """,  # noqa
             rendered_template,
         )
 
 
-class VillageJsTagWithNonceTest(SimpleTestCase):
+class DesignSystemJsTagWithNonceTest(SimpleTestCase):
     def test_js_tag_rendered(self):
         context = Context()
         template_to_render = Template(
-            "{% load village_tags %} {% village_js nonce='random-nonce' %}"
+            "{% load design_system_tags %} {% design_system_js nonce='random-nonce' %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <script type="module" src="/static/village/dist/village/village.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
-            <script nomodule src="/static/village/dist/village/village.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
+            <script type="module" src="/static/design-system/dist/design-system/design-system.module.min.js" integrity="{ INTEGRITY_JS_MODULE }" nonce="random-nonce"></script>
+            <script nomodule src="/static/design-system/dist/design-system/design-system.nomodule.min.js" integrity="{ INTEGRITY_JS_NOMODULE }" nonce="random-nonce"></script>
             """,  # noqa
             rendered_template,
         )
 
 
-class VillageFaviconTagTest(SimpleTestCase):
+class DesignSystemFaviconTagTest(SimpleTestCase):
     def test_favicon_tag_rendered(self):
         context = Context()
-        template_to_render = Template("{% load village_tags %} {% village_favicon %}")
+        template_to_render = Template("{% load design_system_tags %} {% design_system_favicon %}")
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             f"""
-            <link rel="apple-touch-icon" href="/static/village/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
-            <link rel="icon" href="/static/village/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
-            <link rel="shortcut icon" href="/static/village/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
+            <link rel="apple-touch-icon" href="/static/design-system/dist/favicon/apple-touch-icon.png" integrity="{ INTEGRITY_FAVICON_APPLE }" /><!-- 180×180 -->
+            <link rel="icon" href="/static/design-system/dist/favicon/favicon.svg" type="image/svg+xml" integrity="{ INTEGRITY_FAVICON_SVG }" />
+            <link rel="shortcut icon" href="/static/design-system/dist/favicon/favicon.ico" type="image/x-icon" integrity="{ INTEGRITY_FAVICON_ICO }" />
             <!-- 32×32 -->
-            <link rel="manifest" href="/static/village/dist/favicon/manifest.webmanifest"
+            <link rel="manifest" href="/static/design-system/dist/favicon/manifest.webmanifest"
             crossorigin="use-credentials" integrity="{ INTEGRITY_FAVICON_MANIFEST }" />
             """,  # noqa
             rendered_template,
         )
 
 
-class VillageThemeModaleTagTest(SimpleTestCase):
+class DesignSystemThemeModaleTagTest(SimpleTestCase):
     def test_theme_modale_tag_rendered(self):
         context = Context()
         template_to_render = Template(
-            "{% load village_tags %} {% village_theme_modale %}"
+            "{% load design_system_tags %} {% design_system_theme_modale %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <h1 id="village-theme-modal-title" class="modal__title">
+            <h1 id="design-system-theme-modal-title" class="modal__title">
                 Paramètres d’affichage
             </h1>
             """,
@@ -90,7 +90,7 @@ class VillageThemeModaleTagTest(SimpleTestCase):
         )
 
 
-class VillageAccordionTagTest(SimpleTestCase):
+class DesignSystemAccordionTagTest(SimpleTestCase):
     test_data = {
         "id": "sample-accordion",
         "title": "Title of the accordion item",
@@ -99,18 +99,18 @@ class VillageAccordionTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_accordion test_data %}"
+        "{% load design_system_tags %} {% design_system_accordion test_data %}"
     )
 
     def test_accordion_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <section class="village-accordion">
-                <h3 class="village-accordion__title">
-                    <button type="button" class="village-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
+            <section class="design-system-accordion">
+                <h3 class="design-system-accordion__title">
+                    <button type="button" class="design-system-accordion__btn" aria-expanded="false" aria-controls="sample-accordion">Title of the accordion item</button>
                 </h3>
-                <div class="village-collapse" id="sample-accordion">
+                <div class="design-system-collapse" id="sample-accordion">
                     <p><b>Bold</b> and <em>emphatic</em> Example content</p>
                 </div>
             </section>
@@ -119,7 +119,7 @@ class VillageAccordionTagTest(SimpleTestCase):
         )
 
 
-class VillageAccordionGroupTagTest(SimpleTestCase):
+class DesignSystemAccordionGroupTagTest(SimpleTestCase):
     test_data = [
         {
             "id": "sample-accordion",
@@ -140,7 +140,7 @@ class VillageAccordionGroupTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_accordion_group test_data %}"
+        "{% load design_system_tags %} {% design_system_accordion_group test_data %}"
     )
 
     def test_accordion_group_count(self):
@@ -152,7 +152,7 @@ class VillageAccordionGroupTagTest(SimpleTestCase):
         )
 
 
-class VillageAlertTagTest(SimpleTestCase):
+class DesignSystemAlertTagTest(SimpleTestCase):
     test_data = {
         "title": "Sample title",
         "type": "info",
@@ -164,7 +164,7 @@ class VillageAlertTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_alert test_data %}"
+        "{% load design_system_tags %} {% design_system_alert test_data %}"
     )
 
     def test_alert_tag_rendered(self):
@@ -174,14 +174,14 @@ class VillageAlertTagTest(SimpleTestCase):
     def test_alert_tag_heading_can_be_set(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h3 class="village-alert__title">Sample title</h3>""", rendered_template
+            """<h3 class="design-system-alert__title">Sample title</h3>""", rendered_template
         )
 
     def test_alert_tag_has_collapse_button(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <button class="village-btn--close village-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
+            <button class="design-system-btn--close design-system-btn" title="Masquer le message" onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert)">
               Masquer le message
             </button>
             """,  # noqa
@@ -189,28 +189,28 @@ class VillageAlertTagTest(SimpleTestCase):
         )
 
 
-class VillageBadgeTagTest(SimpleTestCase):
+class DesignSystemBadgeTagTest(SimpleTestCase):
     test_data = {
         "label": "badge label",
-        "extra_classes": "village-badge--success",
+        "extra_classes": "design-system-badge--success",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_badge test_data %}"
+        "{% load design_system_tags %} {% design_system_badge test_data %}"
     )
 
     def test_badge_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <p class="village-badge village-badge--success">badge label</p>
+            <p class="design-system-badge design-system-badge--success">badge label</p>
             """,
             rendered_template,
         )
 
 
-class VillageBreadcrumbTagTest(SimpleTestCase):
+class DesignSystemBreadcrumbTagTest(SimpleTestCase):
     breadcrumb_data = {
         "links": [{"url": "test-url", "title": "Test title"}],
         "current": "Test page",
@@ -218,36 +218,36 @@ class VillageBreadcrumbTagTest(SimpleTestCase):
 
     context = Context({"breadcrumb_data": breadcrumb_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_breadcrumb breadcrumb_data %}"
+        "{% load design_system_tags %} {% design_system_breadcrumb breadcrumb_data %}"
     )
 
     def test_breadcrumb_tag_current_page(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="village-breadcrumb__link" aria-current="page">Test page</a>""",
+            """<a class="design-system-breadcrumb__link" aria-current="page">Test page</a>""",
             rendered_template,
         )
 
     def test_breadcrumb_tag_middle_link(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<a class="village-breadcrumb__link" href="test-url">Test title</a>""",
+            """<a class="design-system-breadcrumb__link" href="test-url">Test title</a>""",
             rendered_template,
         )
 
 
-class VillageButtonTagTest(SimpleTestCase):
+class DesignSystemButtonTagTest(SimpleTestCase):
     test_data = {
         "onclick": "alert('test button action')",
         "label": "button label",
         "type": "button",
         "name": "test-button",
-        "extra_classes": "village-btn--secondary",
+        "extra_classes": "design-system-btn--secondary",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_button test_data %}"
+        "{% load design_system_tags %} {% design_system_button test_data %}"
     )
 
     def test_button_tag_rendered(self):
@@ -255,7 +255,7 @@ class VillageButtonTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <button
-            class="village-btn village-btn--secondary"
+            class="design-system-btn design-system-btn--secondary"
             onclick="alert(&#x27;test button action&#x27;)"
             type="button"
             name="test-button"
@@ -267,7 +267,7 @@ class VillageButtonTagTest(SimpleTestCase):
         )
 
 
-class VillageButtonGroupTagTest(SimpleTestCase):
+class DesignSystemButtonGroupTagTest(SimpleTestCase):
     test_data = {
         "extra_classes": "btns-group--equisized",
         "items": [
@@ -283,14 +283,14 @@ class VillageButtonGroupTagTest(SimpleTestCase):
                 "label": "Button 2 label",
                 "type": "button",
                 "name": "test-button-2",
-                "extra_classes": "village-btn--secondary",
+                "extra_classes": "design-system-btn--secondary",
             },
         ],
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_button_group test_data %}"
+        "{% load design_system_tags %} {% design_system_button_group test_data %}"
     )
 
     def test_button_group_tag_rendered(self):
@@ -299,7 +299,7 @@ class VillageButtonGroupTagTest(SimpleTestCase):
             """
             <ul class="btns-group btns-group--equisized">
                 <li>
-                    <button class="village-btn"
+                    <button class="design-system-btn"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button">
@@ -308,7 +308,7 @@ class VillageButtonGroupTagTest(SimpleTestCase):
                 </li>
 
                 <li>
-                    <button class="village-btn village-btn--secondary"
+                    <button class="design-system-btn design-system-btn--secondary"
                         onclick="alert(&#x27;test button action&#x27;)"
                         type="button"
                         name="test-button-2">
@@ -321,25 +321,25 @@ class VillageButtonGroupTagTest(SimpleTestCase):
         )
 
 
-class VillageCalloutTagTest(SimpleTestCase):
+class DesignSystemCalloutTagTest(SimpleTestCase):
     test_data = {
         "text": "Text of the callout item",
         "title": "Title of the callout item",
-        "icon_class": "village-icon-information-line",
+        "icon_class": "design-system-icon-information-line",
         "heading_tag": "h4",
         "button": {"onclick": "close()", "label": "button label", "type": "button"},
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_callout test_data %}"
+        "{% load design_system_tags %} {% design_system_callout test_data %}"
     )
 
     def test_callout_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-    <p class="village-callout__text">
+    <p class="design-system-callout__text">
         Text of the callout item
     </p>""",
             rendered_template,
@@ -348,13 +348,13 @@ class VillageCalloutTagTest(SimpleTestCase):
     def test_callout_optional_title_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            """<h4 class="village-callout__title">Title of the callout item</h4>""",
+            """<h4 class="design-system-callout__title">Title of the callout item</h4>""",
             rendered_template,
         )
 
     def test_callout_optional_icon_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("village-icon-information-line" in rendered_template)
+        self.assertTrue("design-system-icon-information-line" in rendered_template)
 
     def test_callout_optional_button_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
@@ -362,7 +362,7 @@ class VillageCalloutTagTest(SimpleTestCase):
             """
             <button
                 type="button"
-                class="village-btn"
+                class="design-system-btn"
                 onclick="close()"
             >
                 button label
@@ -372,7 +372,7 @@ class VillageCalloutTagTest(SimpleTestCase):
         )
 
 
-class VillageCardTagTest(SimpleTestCase):
+class DesignSystemCardTagTest(SimpleTestCase):
     card_data = {
         "top_detail": {"detail": {"text": "Appears before the title of the card item"}},
         "title": "Title of the card item",
@@ -388,17 +388,17 @@ class VillageCardTagTest(SimpleTestCase):
         {"card_data": card_data, "extra_classes": extra_classes, "new_tab": new_tab}
     )
     template_to_render = Template(
-        "{% load village_tags %} {% village_card card_data extra_classes=extra_classes new_tab=newtab %}"  # noqa
+        "{% load design_system_tags %} {% design_system_card card_data extra_classes=extra_classes new_tab=newtab %}"  # noqa
     )
 
     def test_card_is_created(self):
         rendered_template = self.template_to_render.render(self.context)
-        self.assertTrue("village-card" in rendered_template)
+        self.assertTrue("design-system-card" in rendered_template)
 
     def test_card_has_detail(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="village-card__detail">Appears before the title of the card item</p>',
+            '<p class="design-system-card__detail">Appears before the title of the card item</p>',
             rendered_template,
         )
 
@@ -406,7 +406,7 @@ class VillageCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-                <p class="village-card__title">
+                <p class="design-system-card__title">
                 <a href="https://test.gouv.fr" target="_self">
                     Title of the card item
                 </a>
@@ -417,7 +417,7 @@ class VillageCardTagTest(SimpleTestCase):
     def test_card_has_description(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
-            '<p class="village-card__desc">Text of the card item</p>',
+            '<p class="design-system-card__desc">Text of the card item</p>',
             rendered_template,
         )
 
@@ -425,17 +425,17 @@ class VillageCardTagTest(SimpleTestCase):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-card__img">
-                <img src="https://test.gouv.fr/test.png" class="village-responsive-img" alt="">
+            <div class="design-system-card__img">
+                <img src="https://test.gouv.fr/test.png" class="design-system-responsive-img" alt="">
             </div>
             """,  # noqa
             rendered_template,
         )
 
 
-class VillageConsentTagTest(SimpleTestCase):
+class DesignSystemConsentTagTest(SimpleTestCase):
     test_data = {
-        "title": "À propos des cookies sur Django-village",
+        "title": "À propos des cookies sur Django-design-system",
         "content": """
                 Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                 services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
@@ -446,45 +446,45 @@ class VillageConsentTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_consent test_data %}"
+        "{% load design_system_tags %} {% design_system_consent test_data %}"
     )
 
     def test_consent_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-consent-banner">
-            <h2 class="village-h6">
-                À propos des cookies sur Django-village
+            <div class="design-system-consent-banner">
+            <h2 class="design-system-h6">
+                À propos des cookies sur Django-design-system
             </h2>
-            <div class="village-consent-banner__content">
-                <p class="village-text--sm">
+            <div class="design-system-consent-banner__content">
+                <p class="design-system-text--sm">
                     Bienvenue ! Nous utilisons des cookies pour améliorer votre expérience et les
                     services disponibles sur ce site. Pour en savoir plus, visitez la page <a href="#">
                     Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle
                     sur les cookies que vous souhaitez activer.
                 </p>
             </div>
-            <ul class="village-consent-banner__buttons btns-group btns-group--right btns-group--inline-reverse btns-group--inline-sm">
+            <ul class="design-system-consent-banner__buttons btns-group btns-group--right btns-group--inline-reverse btns-group--inline-sm">
                 <li>
-                <button class="village-btn"
+                <button class="design-system-btn"
                         id="consent-accept-all"
                         title="Autoriser tous les cookies">
                     Tout accepter
                 </button>
                 </li>
                 <li>
-                <button class="village-btn"
+                <button class="design-system-btn"
                         id="consent-reject-all"
                         title="Refuser tous les cookies">
                     Tout refuser
                 </button>
                 </li>
                 <li>
-                <button class="village-btn village-btn--secondary"
+                <button class="design-system-btn design-system-btn--secondary"
                         id="consent-customize"
-                        data-village-opened="false"
-                        aria-controls="village-consent-modal"
+                        data-design-system-opened="false"
+                        aria-controls="design-system-consent-modal"
                         title="Personnaliser les cookies">
                     Personnaliser
                 </button>
@@ -496,30 +496,30 @@ class VillageConsentTagTest(SimpleTestCase):
         )
 
 
-class VillageContentTagTest(SimpleTestCase):
+class DesignSystemContentTagTest(SimpleTestCase):
     test_data = {
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
         "image_url": "/static/img/placeholder.16x9.svg",
-        "ratio_class": "village-ratio-4x3",
+        "ratio_class": "design-system-ratio-4x3",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_content test_data %}"
+        "{% load design_system_tags %} {% design_system_content test_data %}"
     )
 
     def test_content_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="village-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
-            <div class="village-content-media__img">
-                <img class="village-responsive-img village-ratio-4x3"
+            <figure class="design-system-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
+            <div class="design-system-content-media__img">
+                <img class="design-system-responsive-img design-system-ratio-4x3"
                     src="/static/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
-                <figcaption class="village-content-media__caption">
+                <figcaption class="design-system-content-media__caption">
                 Image en largeur normale et en 4x3
                 </figcaption>
             </figure>""",
@@ -527,23 +527,23 @@ class VillageContentTagTest(SimpleTestCase):
         )
 
 
-class VillageFranceConnectTagTest(SimpleTestCase):
+class DesignSystemFranceConnectTagTest(SimpleTestCase):
     test_data = {"id": "france-connect"}
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_france_connect test_data %}"
+        "{% load design_system_tags %} {% design_system_france_connect test_data %}"
     )
 
     def test_franceconnect_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-connect-group">
-                <button class="village-connect"
+            <div class="design-system-connect-group">
+                <button class="design-system-connect"
                         id="france-connect">
-                    <span class="village-connect__login">S’identifier avec</span>
-                    <span class="village-connect__brand">FranceConnect</span>
+                    <span class="design-system-connect__login">S’identifier avec</span>
+                    <span class="design-system-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/"
@@ -557,23 +557,23 @@ class VillageFranceConnectTagTest(SimpleTestCase):
         )
 
 
-class VillageFranceConnectPlusTagTest(SimpleTestCase):
+class DesignSystemFranceConnectPlusTagTest(SimpleTestCase):
     test_data = {"id": "france-connect-plus", "plus": True}
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_france_connect test_data %}"
+        "{% load design_system_tags %} {% design_system_france_connect test_data %}"
     )
 
     def test_franceconnectplus_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-connect-group">
-                <button class="village-connect village-connect--plus"
+            <div class="design-system-connect-group">
+                <button class="design-system-connect design-system-connect--plus"
                         id="france-connect-plus">
-                    <span class="village-connect__login">S’identifier avec</span>
-                    <span class="village-connect__brand">FranceConnect</span>
+                    <span class="design-system-connect__login">S’identifier avec</span>
+                    <span class="design-system-connect__brand">FranceConnect</span>
                 </button>
                 <p>
                     <a href="https://franceconnect.gouv.fr/france-connect-plus"
@@ -587,25 +587,25 @@ class VillageFranceConnectPlusTagTest(SimpleTestCase):
         )
 
 
-class VillageHighlightTagTest(SimpleTestCase):
+class DesignSystemHighlightTagTest(SimpleTestCase):
     test_data = {
         "content": "Content of the highlight item (can include html)",
         "title": "(Optional) Title of the highlight item",
         "heading_tag": "h4",
-        "size_class": "village-text--sm",
+        "size_class": "design-system-text--sm",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_highlight test_data %}"
+        "{% load design_system_tags %} {% design_system_highlight test_data %}"
     )
 
     def test_highlight_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-highlight">
-                <p class="village-text--sm">
+            <div class="design-system-highlight">
+                <p class="design-system-text--sm">
                     Content of the highlight item (can include html)
                 </p>
             </div>
@@ -614,7 +614,7 @@ class VillageHighlightTagTest(SimpleTestCase):
         )
 
 
-class VillageInputTagTest(SimpleTestCase):
+class DesignSystemInputTagTest(SimpleTestCase):
     test_data_text = {
         "id": "sample-id",
         "label": "Label of the input item",
@@ -636,17 +636,17 @@ class VillageInputTagTest(SimpleTestCase):
     def test_text_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_text})
         template_to_render = Template(
-            "{% load village_tags %} {% village_input test_data %}"
+            "{% load design_system_tags %} {% design_system_input test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="village-input-group ">
-                <label class="village-label" for="sample-id">
+            <div class="design-system-input-group ">
+                <label class="design-system-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="village-input"
+                    class="design-system-input"
                     type="text"
                     id="sample-id"
                     name="sample-id"
@@ -661,17 +661,17 @@ class VillageInputTagTest(SimpleTestCase):
     def test_date_input_tag_rendered(self):
         context = Context({"test_data": self.test_data_date})
         template_to_render = Template(
-            "{% load village_tags %} {% village_input test_data %}"
+            "{% load design_system_tags %} {% design_system_input test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="village-input-group ">
-                <label class="village-label" for="sample-id">
+            <div class="design-system-input-group ">
+                <label class="design-system-label" for="sample-id">
                 Label of the input item
                 </label>
                 <input
-                    class="village-input"
+                    class="design-system-input"
                     type="date"
                     id="sample-id"
                     name="sample-id"
@@ -686,17 +686,17 @@ class VillageInputTagTest(SimpleTestCase):
         )
 
 
-class VillageLinkTagTest(SimpleTestCase):
+class DesignSystemLinkTagTest(SimpleTestCase):
     test_data = {
         "url": "http://example.com",
         "label": "Label of the link item",
         "is_external": True,
-        "extra_classes": "village-link--lg",
+        "extra_classes": "design-system-link--lg",
     }
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_link test_data %}"
+        "{% load design_system_tags %} {% design_system_link test_data %}"
     )
 
     def test_link_tag_rendered(self):
@@ -704,18 +704,18 @@ class VillageLinkTagTest(SimpleTestCase):
         self.assertInHTML(
             """
             <a
-            class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+            class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
             href="http://example.com"
             target="_blank" rel="noopener noreferrer"
             >
-              Label of the link item <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+              Label of the link item <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
             </a>
             """,  # noqa
             rendered_template,
         )
 
 
-class VillageNoticeTagTest(SimpleTestCase):
+class DesignSystemNoticeTagTest(SimpleTestCase):
     test_data = {
         "title": """Bandeau d’information importante avec <a href='#'
                             rel='noopener external'
@@ -726,21 +726,21 @@ class VillageNoticeTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_notice test_data %}"
+        "{% load design_system_tags %} {% design_system_notice test_data %}"
     )
 
     def test_notice_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-notice__body">
-                <p class="village-notice__title">
+            <div class="design-system-notice__body">
+                <p class="design-system-notice__title">
                     Bandeau d’information importante avec <a href='#'
                         rel='noopener external'
                         title="intitulé - Ouvre une nouvelle fenêtre" target='_blank'>
                         lien</a>.
                 </p>
-                    <button class="village-btn--close village-btn"
+                    <button class="design-system-btn--close design-system-btn"
                         title="Masquer le message"
                         onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)">
                     Masquer le message
@@ -751,7 +751,7 @@ class VillageNoticeTagTest(SimpleTestCase):
         )
 
 
-class VillageQuoteTagTest(SimpleTestCase):
+class DesignSystemQuoteTagTest(SimpleTestCase):
     test_data = {
         "text": "Développer vos sites et applications en utilisant des composants prêts à l'emploi, accessibles et ergonomiques",  # noqa
         "source_url": "https://www.systeme-de-design.gouv.fr/",
@@ -768,28 +768,28 @@ class VillageQuoteTagTest(SimpleTestCase):
     }
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_quote test_data %}"
+        "{% load design_system_tags %} {% design_system_quote test_data %}"
     )
 
     def test_quote_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <figure class="village-quote village-quote--column">
+            <figure class="design-system-quote design-system-quote--column">
                 <blockquote cite="https://www.systeme-de-design.gouv.fr/">
                     <p>Développer vos sites et applications en utilisant des composants prêts à l&#x27;emploi, accessibles et ergonomiques</p>
                 </blockquote>
                 <figcaption>
-                    <p class="village-quote__author">Auteur</p>
-                    <ul class="village-quote__source">
+                    <p class="design-system-quote__author">Auteur</p>
+                    <ul class="design-system-quote__source">
                     <li>
                         <cite>Système de Design de l&#x27;État</cite>
                     </li>
                     <li>Détail sans lien</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="village-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span></a></li>
                     </ul>
-                    <div class="village-quote__image">
-                    <img src="https://via.placeholder.com/150x150" class="village-responsive-img" alt="" />
+                    <div class="design-system-quote__image">
+                    <img src="https://via.placeholder.com/150x150" class="design-system-responsive-img" alt="" />
                     </div>
                 </figcaption>
             </figure>
@@ -798,7 +798,7 @@ class VillageQuoteTagTest(SimpleTestCase):
         )
 
 
-class VillageSidemenuTagTest(SimpleTestCase):
+class DesignSystemSidemenuTagTest(SimpleTestCase):
     test_data = {
         "title": "Menu",
         "heading_tag": "h2",
@@ -831,7 +831,7 @@ class VillageSidemenuTagTest(SimpleTestCase):
                             {"label": "Page non active", "link": "#"},
                             {
                                 "label": "Page active",
-                                "link": "/django_village/components/sidemenu/",
+                                "link": "/django_design_system/components/sidemenu/",
                             },
                         ],
                     },
@@ -841,18 +841,18 @@ class VillageSidemenuTagTest(SimpleTestCase):
     }
 
     request_mock = MagicMock()
-    request_mock.path = "/django_village/components/sidemenu/"
+    request_mock.path = "/django_design_system/components/sidemenu/"
     context = Context({"request": request_mock, "test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_sidemenu test_data %}"
+        "{% load design_system_tags %} {% design_system_sidemenu test_data %}"
     )
     rendered_template = template_to_render.render(context)
 
     def test_sidemenu_tag_rendered(self):
         self.assertInHTML(
             """
-            <li class="village-sidemenu__item">
-                <a class="village-sidemenu__link" href="#" target="_self" >Une page</a>
+            <li class="design-system-sidemenu__item">
+                <a class="design-system-sidemenu__link" href="#" target="_self" >Une page</a>
             </li>
 
             """,
@@ -862,7 +862,7 @@ class VillageSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_heading_can_be_set(self):
         self.assertInHTML(
             """
-            <h2 class="village-sidemenu__title">Menu</h2>
+            <h2 class="design-system-sidemenu__title">Menu</h2>
             """,
             self.rendered_template,
         )
@@ -870,25 +870,25 @@ class VillageSidemenuTagTest(SimpleTestCase):
     def test_sidemenu_tag_current_page_and_parents_are_active(self):
         self.assertInHTML(
             """
-            <li class="village-sidemenu__item village-sidemenu__item--active">
+            <li class="design-system-sidemenu__item design-system-sidemenu__item--active">
                 <button
                     type="button"
-                    class="village-sidemenu__btn"
+                    class="design-system-sidemenu__btn"
                     aria-expanded="true"
-                    aria-controls="village-sidemenu-item-2-2"
+                    aria-controls="design-system-sidemenu-item-2-2"
                 >
                     Sous-menu ouvert
                 </button>
-                <div class="village-collapse" id="village-sidemenu-item-2-2">
-                    <ul class="village-sidemenu__list">
-                        <li class="village-sidemenu__item">
-                        <a class="village-sidemenu__link" href="#" target="_self" >
+                <div class="design-system-collapse" id="design-system-sidemenu-item-2-2">
+                    <ul class="design-system-sidemenu__list">
+                        <li class="design-system-sidemenu__item">
+                        <a class="design-system-sidemenu__link" href="#" target="_self" >
                             Page non active
                         </a>
                         </li>
 
-                        <li class="village-sidemenu__item village-sidemenu__item--active">
-                        <a class="village-sidemenu__link" href="/django_village/components/sidemenu/" target="_self"  aria-current="page">
+                        <li class="design-system-sidemenu__item design-system-sidemenu__item--active">
+                        <a class="design-system-sidemenu__link" href="/django_design_system/components/sidemenu/" target="_self"  aria-current="page">
                             Page active
                         </a>
                         </li>
@@ -900,7 +900,7 @@ class VillageSidemenuTagTest(SimpleTestCase):
         )
 
 
-class VillageSummaryTagTest(SimpleTestCase):
+class DesignSystemSummaryTagTest(SimpleTestCase):
     test_data = [
         {"link": "link 1", "label": "First item title"},
         {"link": "link 2", "label": "Second item title"},
@@ -908,23 +908,23 @@ class VillageSummaryTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_summary test_data %}"
+        "{% load design_system_tags %} {% design_system_summary test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <nav role="navigation" class="village-summary" aria-labelledby="village-summary-title">
-                <p class="village-summary__title" id="village-summary-title">Sommaire</p>
-                <ol class="village-summary__list">
+            <nav role="navigation" class="design-system-summary" aria-labelledby="design-system-summary-title">
+                <p class="design-system-summary__title" id="design-system-summary-title">Sommaire</p>
+                <ol class="design-system-summary__list">
 
                     <li>
-                        <a class="village-summary__link" href="link 1">First item title</a>
+                        <a class="design-system-summary__link" href="link 1">First item title</a>
                     </li>
 
                     <li>
-                        <a class="village-summary__link" href="link 2">Second item title</a>
+                        <a class="design-system-summary__link" href="link 2">Second item title</a>
                     </li>
                 </ol>
             </nav>
@@ -933,7 +933,7 @@ class VillageSummaryTagTest(SimpleTestCase):
         )
 
 
-class VillageSkiplinksTagTest(SimpleTestCase):
+class DesignSystemSkiplinksTagTest(SimpleTestCase):
     test_data = [
         {"link": "#contenu", "label": "Contenu"},
         {"link": "#header-navigation", "label": "Menu"},
@@ -941,21 +941,21 @@ class VillageSkiplinksTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_skiplinks test_data %}"
+        "{% load design_system_tags %} {% design_system_skiplinks test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-skiplinks">
-                <nav role="navigation" class="village-container" aria-label="Accès rapide">
-                    <ul class="village-skiplinks__list">
+            <div class="design-system-skiplinks">
+                <nav role="navigation" class="design-system-container" aria-label="Accès rapide">
+                    <ul class="design-system-skiplinks__list">
                     <li>
-                        <a class="village-link" href="#contenu">Contenu</a>
+                        <a class="design-system-link" href="#contenu">Contenu</a>
                     </li>
                     <li>
-                        <a class="village-link" href="#header-navigation">Menu</a>
+                        <a class="design-system-link" href="#header-navigation">Menu</a>
                     </li>
                     </ul>
                 </nav>
@@ -965,7 +965,7 @@ class VillageSkiplinksTagTest(SimpleTestCase):
         )
 
 
-class VillageTagTagTest(SimpleTestCase):
+class DesignSystemTagTagTest(SimpleTestCase):
     def test_basic_tag_rendered(self):
         test_data = {
             "label": "Label of the tag item",
@@ -973,11 +973,11 @@ class VillageTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_tag test_data %}"
+            "{% load design_system_tags %} {% design_system_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="village-tag">Label of the tag item</p>""", rendered_template
+            """<p class="design-system-tag">Label of the tag item</p>""", rendered_template
         )
 
     def test_tag_with_link_rendered(self):
@@ -985,11 +985,11 @@ class VillageTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_tag test_data %}"
+            "{% load design_system_tags %} {% design_system_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="/components" class="village-tag">Label of the tag item</a>""",
+            """<a href="/components" class="design-system-tag">Label of the tag item</a>""",
             rendered_template,
         )
 
@@ -998,11 +998,11 @@ class VillageTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_tag test_data extra_classes='village-icon-arrow-right-line village-tag--icon-left' %}"  # noqa
+            "{% load design_system_tags %} {% design_system_tag test_data extra_classes='design-system-icon-arrow-right-line design-system-tag--icon-left' %}"  # noqa
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<p class="village-tag village-icon-arrow-right-line village-tag--icon-left">Label of the tag item</p>""",  # noqa
+            """<p class="design-system-tag design-system-icon-arrow-right-line design-system-tag--icon-left">Label of the tag item</p>""",  # noqa
             rendered_template,
         )
 
@@ -1015,44 +1015,44 @@ class VillageTagTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_tag test_data %}"
+            "{% load design_system_tags %} {% design_system_tag test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
-            """<a href="#" class="village-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
+            """<a href="#" class="design-system-tag" onclick="console.log(&#x27;clicked&#x27;);">Label of the tag item</a>""",  # noqa
             rendered_template,
         )
 
 
-class VillageToggleTagTest(SimpleTestCase):
+class DesignSystemToggleTagTest(SimpleTestCase):
     def test_toggle_rendered(self):
         test_data = {
             "label": "Interrupteur complet aligné à gauche",
             "help_text": "Cet interrupteur présente toutes les options disponibles",
             "is_disabled": False,
-            "extra_classes": "village-toggle--label-left village-toggle--border-bottom",
+            "extra_classes": "design-system-toggle--label-left design-system-toggle--border-bottom",
             "id": "toggle-full",
         }
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_toggle test_data %}"
+            "{% load design_system_tags %} {% design_system_toggle test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <div class="village-toggle village-toggle--label-left village-toggle--border-bottom">
+            <div class="design-system-toggle design-system-toggle--label-left design-system-toggle--border-bottom">
                 <input type="checkbox"
-                        class="village-toggle__input"
+                        class="design-system-toggle__input"
                         aria-describedby="toggle-full-hint-text"
                         id="toggle-full">
-                <label class="village-toggle__label"
+                <label class="design-system-toggle__label"
                         for="toggle-full"
-                        data-village-checked-label="Activé"
-                        data-village-unchecked-label="Désactivé">
+                        data-design-system-checked-label="Activé"
+                        data-design-system-unchecked-label="Désactivé">
                     Interrupteur complet aligné à gauche
                 </label>
-                    <p class="village-hint-text" id="toggle-full-hint-text">
+                    <p class="design-system-hint-text" id="toggle-full-hint-text">
                     Cet interrupteur présente toutes les options disponibles
                     </p>
                 </div>
@@ -1061,7 +1061,7 @@ class VillageToggleTagTest(SimpleTestCase):
         )
 
 
-class VillageTooltipTagTest(SimpleTestCase):
+class DesignSystemTooltipTagTest(SimpleTestCase):
     def test_tooltip_rendered(self):
         test_data = {
             "content": "Contenu d’une infobule activée au survol",
@@ -1071,19 +1071,19 @@ class VillageTooltipTagTest(SimpleTestCase):
 
         context = Context({"test_data": test_data})
         template_to_render = Template(
-            "{% load village_tags %} {% village_tooltip test_data %}"
+            "{% load design_system_tags %} {% design_system_tooltip test_data %}"
         )
         rendered_template = template_to_render.render(context)
         self.assertInHTML(
             """
-            <a class="village-link"
+            <a class="design-system-link"
                 aria-describedby="tooltip-test"
                 id="link-tooltip-test"
                 href="#">
                 Libellé du lien
             </a>
 
-            <span class="village-tooltip village-placement"
+            <span class="design-system-tooltip design-system-placement"
                 id="tooltip-test"
                 role="tooltip"
                 aria-hidden="true">Contenu d’une infobule activée au survol</span>
@@ -1092,7 +1092,7 @@ class VillageTooltipTagTest(SimpleTestCase):
         )
 
 
-class VillageTranscriptionTagTest(SimpleTestCase):
+class DesignSystemTranscriptionTagTest(SimpleTestCase):
     test_data = {
         "content": "<div><p>Courte transcription basique</p></div>",
         "id": "transcription-test",
@@ -1100,49 +1100,49 @@ class VillageTranscriptionTagTest(SimpleTestCase):
 
     context = Context({"test_data": test_data})
     template_to_render = Template(
-        "{% load village_tags %} {% village_transcription test_data %}"
+        "{% load design_system_tags %} {% design_system_transcription test_data %}"
     )
 
     def test_summary_tag_rendered(self):
         rendered_template = self.template_to_render.render(self.context)
         self.assertInHTML(
             """
-            <div class="village-transcription">
-                <button class="village-transcription__btn"
+            <div class="design-system-transcription">
+                <button class="design-system-transcription__btn"
                         aria-expanded="false"
-                        aria-controls="village-transcription__collapse-transcription-test">
+                        aria-controls="design-system-transcription__collapse-transcription-test">
                     Transcription
                 </button>
-                <div class="village-collapse" id="village-transcription__collapse-transcription-test">
-                    <div class="village-transcription__footer">
-                        <div class="village-transcription__actions-group">
+                <div class="design-system-collapse" id="design-system-transcription__collapse-transcription-test">
+                    <div class="design-system-transcription__footer">
+                        <div class="design-system-transcription__actions-group">
 
-                            <button class="village-btn village-btn--fullscreen"
-                                    aria-controls="village-transcription-modal-transcription-test"
-                                    data-village-opened="false"
+                            <button class="design-system-btn design-system-btn--fullscreen"
+                                    aria-controls="design-system-transcription-modal-transcription-test"
+                                    data-design-system-opened="false"
                                     title="Agrandir">
                                 Agrandir
                             </button>
                         </div>
                     </div>
-                    <dialog id="village-transcription-modal-transcription-test"
+                    <dialog id="design-system-transcription-modal-transcription-test"
                             class="modal"
                             role="dialog"
-                            aria-labelledby="village-transcription-modal-transcription-test-title">
-                        <div class="village-container village-container--fluid facile-container-md">
-                            <div class="village-grid-row village-grid-row--center">
-                                <div class="village-col-12 village-col-md-10 village-col-lg-8">
+                            aria-labelledby="design-system-transcription-modal-transcription-test-title">
+                        <div class="design-system-container design-system-container--fluid facile-container-md">
+                            <div class="design-system-grid-row design-system-grid-row--center">
+                                <div class="design-system-col-12 design-system-col-md-10 design-system-col-lg-8">
                                     <div class="modal__body">
                                         <div class="modal__header">
 
-                                            <button class="village-btn--close village-btn"
-                                                    aria-controls="village-transcription-modal-transcription-test"
+                                            <button class="design-system-btn--close design-system-btn"
+                                                    aria-controls="design-system-transcription-modal-transcription-test"
                                                     title="Fermer">
                                                 Fermer
                                             </button>
                                         </div>
                                         <div class="modal__content">
-                                            <h1 id="village-transcription-modal-transcription-test-title"
+                                            <h1 id="design-system-transcription-modal-transcription-test-title"
                                                 class="modal__title">
                                                 Transcription
                                             </h1>

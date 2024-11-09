@@ -1,5 +1,5 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 
 {% block extra_css %}
   <style nonce="{{ request.csp_nonce }}">
@@ -15,14 +15,14 @@
 
 {% block content %}
   <h1>
-    Django-VILLAGE
+    Django-Design-System
   </h1>
   <h2>
     Documentation
   </h2>
   <div>
     <p>
-      <strong>Django-village</strong> est une application django permettant d’utiliser le
+      <strong>Django-design-system</strong> est une application django permettant d’utiliser le
       <a href="https://www.systeme-de-design.gouv.fr/">système de design de l’État</a> dans des projets Django.
     </p>
     <p>
@@ -32,9 +32,9 @@
       utilisation), cf. la page <a href="{% url 'components_index' %}">Composants</a>.
     </p>
   </div>
-  <div class="village-grid-row village-grid-row--gutters village-mb-3w">
-    <div class="village-col-12 village-col-md-4">
-      {% village_summary summary_data %}
+  <div class="design-system-grid-row design-system-grid-row--gutters design-system-mb-3w">
+    <div class="design-system-col-12 design-system-col-md-4">
+      {% design_system_summary summary_data %}
     </div>
   </div>
   <h3 id="installation">
@@ -64,7 +64,7 @@
   </h3>
   <ul>
     <li>
-      Il est possible d’utiliser tous les composants du VILLAGE directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
+      Il est possible d’utiliser tous les composants du DESIGN_SYSTEM directement avec leur code HTML, y compris ceux pour lesquels il n’existe pas de balise.
     </li>
     <li>
       De même pour certains où il vaut mieux créer un template ad-hoc à chaque utilisation, comme les modales.

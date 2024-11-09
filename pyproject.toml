@@ -1,8 +1,8 @@
 [tool.poetry]
 authors = ["Chris Mann <chris@mann.fr>"]
-description = "Render Design System VILLAGE into a generic Django app"
+description = "Render Design System DESIGN_SYSTEM into a generic Django app"
 license = "MIT"
-name = "django-village"
+name = "django-design-system"
 version = "0.0.3"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -32,10 +32,10 @@ readme = "README.rst"
 repository = "https://github.com/chris2fr/django-cefran"
 
 packages = [
-  {include = "django_village"},
+  {include = "django_design_system"},
 ]
 
-include = ["LICENSE", "README.rst", "django_django_village/static/django_village/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "django_django_design_system/static/django_design_system/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

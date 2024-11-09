@@ -1,28 +1,28 @@
-{% load widget_tweaks village_tags %}
-<fieldset class="village-fieldset{% if field.errors %} village-fieldset--error{% endif %}"
+{% load widget_tweaks design_system_tags %}
+<fieldset class="design-system-fieldset{% if field.errors %} design-system-fieldset--error{% endif %}"
           id="checkboxes-{{ field.auto_id }}"
           aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
-  <legend class="village-fieldset__legend facile-text--regular"
+  <legend class="design-system-fieldset__legend facile-text--regular"
           id="{{ field.auto_id }}-legend">
     {{ field.label_tag }}
     {% if field.field.required %}
       *
     {% endif %}
     {% if field.help_text %}
-      <span class="village-hint-text">{{ field.help_text }}</span>
+      <span class="design-system-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </legend>
-  <div class="village-fieldset__content">
-    <div class="village-checkbox-group{% if field.errors %} village-checkbox-group--error{% endif %}{% if field.field.disabled %} village-input-group--disabled{% endif %}">
+  <div class="design-system-fieldset__content">
+    <div class="design-system-checkbox-group{% if field.errors %} design-system-checkbox-group--error{% endif %}{% if field.field.disabled %} design-system-input-group--disabled{% endif %}">
       {% if field.errors %}
         {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
-          {{ field|village_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
+          {{ field|design_system_input_class_attr|attr:"type:checkbox"|attr:aria_describedby }}
         {% endwith %}
       {% else %}
-        {{ field|village_input_class_attr|attr:"type:checkbox" }}
+        {{ field|design_system_input_class_attr|attr:"type:checkbox" }}
       {% endif %}
       {% if field.errors %}
-        <div id="{{ field.auto_id }}-desc-error" class="village-error-text">
+        <div id="{{ field.auto_id }}-desc-error" class="design-system-error-text">
           {{ field.errors }}
         </div>
       {% endif %}

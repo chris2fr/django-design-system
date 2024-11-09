@@ -1,0 +1,74 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-consent-service__collapse .design-system-consent-service__collapse-btn {
+    text-decoration: underline;
+  }
+
+  .design-system-consent-service__collapse .design-system-consent-service__collapse-btn::before,
+  .design-system-consent-service__collapse .design-system-consent-service__collapse-btn::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-consent-service__collapse .design-system-consent-service__collapse-btn[aria-expanded=true]::before,
+  .design-system-consent-service__collapse .design-system-consent-service__collapse-btn[aria-expanded=true]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-up-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-consent-placeholder {
+    background-color: #eee;
+  }
+
+  .design-system-consent-banner {
+    z-index: 1500;
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .design-system-consent-manager__header,
+  .design-system-consent-service {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+    color: #3a3a3a;
+  }
+
+  .design-system-consent-manager__header .design-system-radio-group + .design-system-radio-group::before,
+  .design-system-consent-service .design-system-radio-group + .design-system-radio-group::before {
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .design-system-consent-service__title {
+    color: #161616;
+  }
+
+  .design-system-consent-service:last-of-type,
+  .design-system-consent-service .design-system-consent-service {
+    box-shadow: none;
+  }
+
+  .design-system-consent-service .design-system-consent-service__collapse-btn {
+    color: hsl(180, 75%, 25%);
+  }
+}

@@ -1,4 +1,4 @@
-name: Django-VILLAGE deploy documentation
+name: Django-Design-System deploy documentation
 
 on:
   push:
@@ -29,10 +29,10 @@ jobs:
     - name: 📄 Build docs
       run: |
         make export_static
-        touch docs/django_village/.nojekyll
+        touch docs/django_design_system/.nojekyll
     - name: 🚀 Deploy Github Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages     # <- Branche sur laquelle seront commités les fichiers
-        FOLDER: docs/django_village/  # <- Dossier contenant notre documentation générée
+        FOLDER: docs/django_design_system/  # <- Dossier contenant notre documentation générée

@@ -1,28 +1,28 @@
-{% load widget_tweaks village_tags %}
-<fieldset class="village-fieldset{% if field.errors %} village-fieldset--error{% endif %}"
+{% load widget_tweaks design_system_tags %}
+<fieldset class="design-system-fieldset{% if field.errors %} design-system-fieldset--error{% endif %}"
           id="radio-{{ field.auto_id }}"
           aria-labelledby="{{ field.auto_id }}-legend{% if field.errors %} {{ field.auto_id }}-messages{% endif %}">
-  <legend class="village-fieldset__legend facile-text--regular"
+  <legend class="design-system-fieldset__legend facile-text--regular"
           id="{{ field.auto_id }}-legend">
     {{ field.label_tag }}
     {% if field.field.required %}
       *
     {% endif %}
     {% if field.help_text %}
-      <span class="village-hint-text">{{ field.help_text }}</span>
+      <span class="design-system-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </legend>
-  <div class="village-fieldset__content">
-    <div class="village-radio-group">
+  <div class="design-system-fieldset__content">
+    <div class="design-system-radio-group">
       {% if field.field.disabled %}
-        {{ field|village_input_class_attr|attr:"type:radio"|attr:"disabled" }}
+        {{ field|design_system_input_class_attr|attr:"type:radio"|attr:"disabled" }}
       {% else %}
-        {{ field|village_input_class_attr|attr:"type:radio" }}
+        {{ field|design_system_input_class_attr|attr:"type:radio" }}
       {% endif %}
     </div>
   </div>
   {% if field.errors %}
-    <div class="village-messages-group" id="{{ field.auto_id }}-messages">
+    <div class="design-system-messages-group" id="{{ field.auto_id }}-messages">
       {{ field.errors }}
     </div>
   {% endif %}

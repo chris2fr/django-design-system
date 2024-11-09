@@ -1,0 +1,146 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-icon-bug-fill::before,
+  .design-system-icon-bug-fill::after {
+    background-image: url("../../../icons/development/bug-fill.svg");
+  }
+
+  .design-system-icon-bug-line::before,
+  .design-system-icon-bug-line::after {
+    background-image: url("../../../icons/development/bug-line.svg");
+  }
+
+  .design-system-icon-code-box-fill::before,
+  .design-system-icon-code-box-fill::after {
+    background-image: url("../../../icons/development/code-box-fill.svg");
+  }
+
+  .design-system-icon-code-box-line::before,
+  .design-system-icon-code-box-line::after {
+    background-image: url("../../../icons/development/code-box-line.svg");
+  }
+
+  .design-system-icon-code-s-slash-line::before,
+  .design-system-icon-code-s-slash-line::after {
+    background-image: url("../../../icons/development/code-s-slash-line.svg");
+  }
+
+  .design-system-icon-cursor-fill::before,
+  .design-system-icon-cursor-fill::after {
+    background-image: url("../../../icons/development/cursor-fill.svg");
+  }
+
+  .design-system-icon-cursor-line::before,
+  .design-system-icon-cursor-line::after {
+    background-image: url("../../../icons/development/cursor-line.svg");
+  }
+
+  .design-system-icon-git-branch-fill::before,
+  .design-system-icon-git-branch-fill::after {
+    background-image: url("../../../icons/development/git-branch-fill.svg");
+  }
+
+  .design-system-icon-git-branch-line::before,
+  .design-system-icon-git-branch-line::after {
+    background-image: url("../../../icons/development/git-branch-line.svg");
+  }
+
+  .design-system-icon-git-commit-fill::before,
+  .design-system-icon-git-commit-fill::after {
+    background-image: url("../../../icons/development/git-commit-fill.svg");
+  }
+
+  .design-system-icon-git-commit-line::before,
+  .design-system-icon-git-commit-line::after {
+    background-image: url("../../../icons/development/git-commit-line.svg");
+  }
+
+  .design-system-icon-git-merge-fill::before,
+  .design-system-icon-git-merge-fill::after {
+    background-image: url("../../../icons/development/git-merge-fill.svg");
+  }
+
+  .design-system-icon-git-merge-line::before,
+  .design-system-icon-git-merge-line::after {
+    background-image: url("../../../icons/development/git-merge-line.svg");
+  }
+
+  .design-system-icon-git-pull-request-fill::before,
+  .design-system-icon-git-pull-request-fill::after {
+    background-image: url("../../../icons/development/git-pull-request-fill.svg");
+  }
+
+  .design-system-icon-git-pull-request-line::before,
+  .design-system-icon-git-pull-request-line::after {
+    background-image: url("../../../icons/development/git-pull-request-line.svg");
+  }
+
+  .design-system-icon-git-repository-commits-fill::before,
+  .design-system-icon-git-repository-commits-fill::after {
+    background-image: url("../../../icons/development/git-repository-commits-fill.svg");
+  }
+
+  .design-system-icon-git-repository-commits-line::before,
+  .design-system-icon-git-repository-commits-line::after {
+    background-image: url("../../../icons/development/git-repository-commits-line.svg");
+  }
+
+  .design-system-icon-git-repository-fill::before,
+  .design-system-icon-git-repository-fill::after {
+    background-image: url("../../../icons/development/git-repository-fill.svg");
+  }
+
+  .design-system-icon-git-repository-line::before,
+  .design-system-icon-git-repository-line::after {
+    background-image: url("../../../icons/development/git-repository-line.svg");
+  }
+
+  .design-system-icon-git-repository-private-fill::before,
+  .design-system-icon-git-repository-private-fill::after {
+    background-image: url("../../../icons/development/git-repository-private-fill.svg");
+  }
+
+  .design-system-icon-git-repository-private-line::before,
+  .design-system-icon-git-repository-private-line::after {
+    background-image: url("../../../icons/development/git-repository-private-line.svg");
+  }
+
+  .design-system-icon-terminal-box-fill::before,
+  .design-system-icon-terminal-box-fill::after {
+    background-image: url("../../../icons/development/terminal-box-fill.svg");
+  }
+
+  .design-system-icon-terminal-box-line::before,
+  .design-system-icon-terminal-box-line::after {
+    background-image: url("../../../icons/development/terminal-box-line.svg");
+  }
+
+  .design-system-icon-terminal-line::before,
+  .design-system-icon-terminal-line::after {
+    background-image: url("../../../icons/development/terminal-line.svg");
+  }
+
+  .design-system-icon-terminal-window-fill::before,
+  .design-system-icon-terminal-window-fill::after {
+    background-image: url("../../../icons/development/terminal-window-fill.svg");
+  }
+
+  .design-system-icon-terminal-window-line::before,
+  .design-system-icon-terminal-window-line::after {
+    background-image: url("../../../icons/development/terminal-window-line.svg");
+  }
+}

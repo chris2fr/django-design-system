@@ -1,10 +1,10 @@
-{% load village_tags i18n %}
+{% load design_system_tags i18n %}
 {% translate "Opens a new window" as new_window_label %}
-<div class="village-card{% if self.enlarge_link %} village-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+<div class="design-system-card{% if self.enlarge_link %} design-system-enlarge-link{% endif %}{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
      {% if self.id %}id="{{ self.id }}"{% endif %}>
-  <div class="village-card__body">
-    <div class="village-card__content">
-      <{{ self.heading_tag | default:"p" }} class="village-card__title">
+  <div class="design-system-card__body">
+    <div class="design-system-card__content">
+      <{{ self.heading_tag | default:"p" }} class="design-system-card__title">
       {% if self.link %}
         <a href="{{ self.link }}"
            target="{% if self.new_tab %}_blank{% else %}_self{% endif %}"
@@ -15,58 +15,58 @@
         {{ self.title |truncatechars:100 }}
       {% endif %}
       </{{ self.heading_tag | default:"p" }}>
-      <p class="village-card__desc">
+      <p class="design-system-card__desc">
         {{ self.description |truncatechars:200 }}
       </p>
       {% if self.top_detail %}
-        <div class="village-card__start">
+        <div class="design-system-card__start">
           {% if self.top_detail.tags %}
-            <ul class="village-tags-group">
+            <ul class="design-system-tags-group">
               {% for tag in self.top_detail.tags %}
                 <li>
-                  {% village_tag tag %}
+                  {% design_system_tag tag %}
                 </li>
               {% endfor %}
             </ul>
           {% elif self.top_detail.badges %}
-            <ul class="village-badges-group">
+            <ul class="design-system-badges-group">
               {% for badge in self.top_detail.badges %}
                 <li>
-                  {% village_badge badge %}
+                  {% design_system_badge badge %}
                 </li>
               {% endfor %}
             </ul>
           {% endif %}
           {% if self.top_detail.detail %}
-            <p class="village-card__detail{% if self.top_detail.detail.icon_class %} self.top_detail.detail.icon_class{% endif %}">
+            <p class="design-system-card__detail{% if self.top_detail.detail.icon_class %} self.top_detail.detail.icon_class{% endif %}">
               {{ self.top_detail.detail.text }}
             </p>
           {% endif %}
         </div>
       {% endif %}
       {% if self.bottom_detail %}
-        <div class="village-card__end">
-          <p class="village-card__detail{% if self.bottom_detail.icon_class %} self.bottom_detail.icon_class{% endif %}">
+        <div class="design-system-card__end">
+          <p class="design-system-card__detail{% if self.bottom_detail.icon_class %} self.bottom_detail.icon_class{% endif %}">
             {{ self.bottom_detail.text }}
           </p>
         </div>
       {% endif %}
     </div>
     {% if self.call_to_action and not self.bottom_detail %}
-      <div class="village-card__footer">
+      <div class="design-system-card__footer">
         {% if self.call_to_action.buttons %}
-          <ul class="village-btns-group village-btns-group--inline-reverse village-btns-group--inline-lg">
+          <ul class="design-system-btns-group design-system-btns-group--inline-reverse design-system-btns-group--inline-lg">
             {% for button in self.call_to_action.buttons %}
               <li>
-                {% village_button button %}
+                {% design_system_button button %}
               </li>
             {% endfor %}
           </ul>
         {% elif self.call_to_action.links %}
-          <ul class="village-links-group">
+          <ul class="design-system-links-group">
             {% for link in self.call_to_action.links %}
               <li>
-                {% village_link link %}
+                {% design_system_link link %}
               </li>
             {% endfor %}
           </ul>
@@ -74,18 +74,18 @@
       </div>
     {% endif %}
   </div>
-  <div class="village-card__header">
+  <div class="design-system-card__header">
     {% if self.image_url %}
-      <div class="village-card__img">
-        <img class="village-responsive-img"
+      <div class="design-system-card__img">
+        <img class="design-system-responsive-img"
              src="{{ self.image_url }}"
              alt="{{ self.image_alt }}" />
       </div>
       {% if self.media_badges %}
-        <ul class="village-badges-group">
+        <ul class="design-system-badges-group">
           {% for badge in self.media_badges %}
             <li>
-              {% village_badge badge %}
+              {% design_system_badge badge %}
             </li>
           {% endfor %}
         </ul>

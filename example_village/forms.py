@@ -4,18 +4,18 @@ from django.forms import (
     inlineformset_factory,
 )  # /!\ In order to use formsets
 
-from django_village.constants import COLOR_CHOICES_ILLUSTRATION
-from django_village.forms import VillageBaseForm
+from django_design_system.constants import COLOR_CHOICES_ILLUSTRATION
+from django_design_system.forms import DesignSystemBaseForm
 
 # /!\ In order to use formsets
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, Field
 
-from example_village.models import VillageAuthor, VillageBook
-from example_village.utils import populate_genre_choices
+from example_design_system.models import DesignSystemAuthor, DesignSystemBook
+from example_design_system.utils import populate_genre_choices
 
 
-class ExampleForm(VillageBaseForm):
+class ExampleForm(DesignSystemBaseForm):
     # basic fields
     user_name = forms.CharField(label="Nom d’utilisateur", max_length=100)
 
@@ -55,7 +55,7 @@ class ExampleForm(VillageBaseForm):
     )
 
     """
-    Not managed by the village:
+    Not managed by the design_system:
     - DateTimeField
     """
 
@@ -134,9 +134,9 @@ class ExampleForm(VillageBaseForm):
         self.set_autofocus_on_first_error()
 
 
-class VillageAuthorCreateForm(ModelForm, VillageBaseForm):
+class DesignSystemAuthorCreateForm(ModelForm, DesignSystemBaseForm):
     class Meta:
-        model = VillageAuthor
+        model = DesignSystemAuthor
         exclude = []
         widgets = {
             "first_name": forms.TextInput(),
@@ -156,9 +156,9 @@ BOOK_FORMAT = (
 )
 
 
-class VillageBookCreateForm(ModelForm, VillageBaseForm):
+class DesignSystemBookCreateForm(ModelForm, DesignSystemBaseForm):
     class Meta:
-        model = VillageBook
+        model = DesignSystemBook
         exclude = []
         widgets = {
             "title": forms.TextInput(),
@@ -169,14 +169,14 @@ class VillageBookCreateForm(ModelForm, VillageBaseForm):
     book_format = forms.ChoiceField(
         label="Format",
         choices=BOOK_FORMAT,  # If the choices are in a constant
-        widget=forms.RadioSelect(attrs={"class": "village-fieldset--inline"}),
+        widget=forms.RadioSelect(attrs={"class": "design-system-fieldset--inline"}),
     )
 
-    # /!\ VillageGenre is a model, but it requires to format the list of object before passing to the field
+    # /!\ DesignSystemGenre is a model, but it requires to format the list of object before passing to the field
     # Using a ModelMultipleChoiceField won't show individual help_texts under each checkbox
     # I declared a variable GENRES in order to show individual help_texts
     genre = forms.MultipleChoiceField(
-        label="VillageGenre",
+        label="DesignSystemGenre",
         choices=populate_genre_choices,
         widget=forms.CheckboxSelectMultiple(),
         required=False,
@@ -189,9 +189,9 @@ class VillageBookCreateForm(ModelForm, VillageBaseForm):
 
 
 # /!\ In order to use formsets, you have to define a crispy FormHelper for the form used for the formset
-class VillageBookCreateFormHelper(FormHelper):
+class DesignSystemBookCreateFormHelper(FormHelper):
     def __init__(self, *args, **kwargs):
-        super(VillageBookCreateFormHelper, self).__init__(*args, **kwargs)
+        super(DesignSystemBookCreateFormHelper, self).__init__(*args, **kwargs)
         # self.form_tag = False
         self.layout = Layout(
             Fieldset(
@@ -205,16 +205,16 @@ class VillageBookCreateFormHelper(FormHelper):
 
 
 # /!\ In order to use formsets, you have to define an formset factory
-VillageBookCreateFormSet = inlineformset_factory(
-    VillageAuthor,
-    VillageBook,
-    form=VillageBookCreateForm,
+DesignSystemBookCreateFormSet = inlineformset_factory(
+    DesignSystemAuthor,
+    DesignSystemBook,
+    form=DesignSystemBookCreateForm,
     extra=1,
     exclude=[],
 )
 
 
-class ColorForm(VillageBaseForm):
+class ColorForm(DesignSystemBaseForm):
     color = forms.ChoiceField(
         label="Choisissez une couleur",
         required=False,

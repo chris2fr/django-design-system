@@ -6,7 +6,7 @@ from django.template import Template
 from django.template.context import Context
 from django.utils.html import format_html, format_html_join
 
-from django_village.checksums import (
+from django_design_system.checksums import (
     INTEGRITY_CSS,
     INTEGRITY_CSS_ICONS,
     INTEGRITY_FAVICON_APPLE,
@@ -16,31 +16,31 @@ from django_village.checksums import (
     INTEGRITY_JS_MODULE,
     INTEGRITY_JS_NOMODULE,
 )
-from django_village.utils import (
+from django_design_system.utils import (
     find_active_menu_items,
     generate_random_id,
     parse_tag_args,
-    village_input_class_attr,
+    design_system_input_class_attr,
 )
 
 register = template.Library()
 """
-Tags used in the "village" templates.
+Tags used in the "design_system" templates.
 """
 
 # Global tags
 
 
-@register.inclusion_tag("django_village/global_css.html")
-def village_css() -> dict:
+@register.inclusion_tag("django_design_system/global_css.html")
+def design_system_css() -> dict:
     """
-    Returns the HTML for the CSS header tags for village
+    Returns the HTML for the CSS header tags for design_system
 
     **Tag name**:
-        village_css
+        design_system_css
 
     **Usage**:
-        `{% village_css %}`
+        `{% design_system_css %}`
     """
     tag_data = {}
     tag_data["INTEGRITY_CSS"] = INTEGRITY_CSS
@@ -49,16 +49,16 @@ def village_css() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/global_js.html", takes_context=True)
-def village_js(context, *args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/global_js.html", takes_context=True)
+def design_system_js(context, *args, **kwargs) -> dict:
     """
-    Returns the HTML for the JS body tags for village
+    Returns the HTML for the JS body tags for design_system
 
     **Tag name**:
-        village_js
+        design_system_js
 
     **Usage**:
-        `{% village_js %}`
+        `{% design_system_js %}`
     """
 
     allowed_keys = [
@@ -72,16 +72,16 @@ def village_js(context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/favicon.html")
-def village_favicon() -> dict:
+@register.inclusion_tag("django_design_system/favicon.html")
+def design_system_favicon() -> dict:
     """
-    Returns the HTML for the CSS header tags for the village "Marianne" Favicon
+    Returns the HTML for the CSS header tags for the design_system "Marianne" Favicon
 
     **Tag name**:
-        village_favicon
+        design_system_favicon
 
     **Usage**:
-        `{% village_favicon %}`
+        `{% design_system_favicon %}`
     """
 
     tag_data = {}
@@ -93,25 +93,25 @@ def village_favicon() -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/theme_modale.html")
-def village_theme_modale() -> None:
+@register.inclusion_tag("django_design_system/theme_modale.html")
+def design_system_theme_modale() -> None:
     """
-    Returns the HTML for the theme selection modale for village
+    Returns the HTML for the theme selection modale for design_system
 
     **Tag name**:
-        village_theme_modale
+        design_system_theme_modale
 
     **Usage**:
-        `{% village_theme_modale %}`
+        `{% design_system_theme_modale %}`
     """
     return None
 
 
-# village components
+# design_system components
 
 
-@register.inclusion_tag("django_village/accordion.html")
-def village_accordion(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/accordion.html")
+def design_system_accordion(*args, **kwargs) -> dict:
     """
     Returns an accordion item. Takes a dict as parameter, with the following structure:
 
@@ -126,13 +126,13 @@ def village_accordion(*args, **kwargs) -> dict:
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
-    Can be used alone or in a group with the tag `village_accordion_group`.
+    Can be used alone or in a group with the tag `design_system_accordion_group`.
 
     **Tag name**:
-        village_accordion
+        design_system_accordion
 
     **Usage**:
-        `{% village_accordion data_dict %}`
+        `{% design_system_accordion data_dict %}`
     """
     allowed_keys = ["id", "title", "content", "heading_tag"]
     tag_data = parse_tag_args(args, kwargs, allowed_keys)
@@ -143,23 +143,23 @@ def village_accordion(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/accordion_group.html")
-def village_accordion_group(items: list) -> dict:
+@register.inclusion_tag("django_design_system/accordion_group.html")
+def design_system_accordion_group(items: list) -> dict:
     """
     Returns a group of accordion items. Takes a list of dicts as parameters (see the
     accordion tag for the structure of these dicts.)
 
     **Tag name**:
-        village_accordion_group
+        design_system_accordion_group
 
     **Usage**:
-        `{% village_accordion_group data_list %}`
+        `{% design_system_accordion_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("django_village/alert.html")
-def village_alert(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/alert.html")
+def design_system_alert(*args, **kwargs) -> dict:
     """
     Returns an alert item. Takes a dict as parameter, with the following structure:
 
@@ -179,16 +179,16 @@ def village_alert(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `village-alert--sm` : small alert
+    - `design-system-alert--sm` : small alert
 
     On normal (median) alerts, the title is mandatory, the content is optional.
     On small alerts, the title is optional, the content is mandatory.
 
     **Tag name**:
-        village_alert
+        design_system_alert
 
     **Usage**:
-        `{% village_alert data_dict %}`
+        `{% design_system_alert data_dict %}`
     """  # noqa
 
     allowed_keys = [
@@ -209,8 +209,8 @@ def village_alert(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/badge.html")
-def village_badge(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/badge.html")
+def design_system_badge(*args, **kwargs) -> dict:
     """
     Returns a badge item. Takes a dict as parameter, with the following structure:
 
@@ -226,16 +226,16 @@ def village_badge(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `village-badge--sm`: small-sized badge
-    - `village-badge--green-menthe` other color codes: change the color of the badge
-    - `village-badge--success` (or error/info/warning/new): system badges
-    - `village-badge--no-icon`: removes the icon on system badges
+    - `design-system-badge--sm`: small-sized badge
+    - `design-system-badge--green-menthe` other color codes: change the color of the badge
+    - `design-system-badge--success` (or error/info/warning/new): system badges
+    - `design-system-badge--no-icon`: removes the icon on system badges
 
     **Tag name**:
-        village_badge
+        design_system_badge
 
     **Usage**:
-        `{% village_badge data_dict %}`
+        `{% design_system_badge data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -246,24 +246,24 @@ def village_badge(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/badge_group.html")
-def village_badge_group(items: list) -> dict:
+@register.inclusion_tag("django_design_system/badge_group.html")
+def design_system_badge_group(items: list) -> dict:
     """
     Returns a group of badge items. Takes a list of dicts as parameters (see the badge
     tag for the structure of these dicts.)
 
 
     **Tag name**:
-        village_badge_group
+        design_system_badge_group
 
     **Usage**:
-        `{% village_badge_group data_list %}`
+        `{% design_system_badge_group data_list %}`
     """
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("django_village/breadcrumb.html", takes_context=True)
-def village_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
+@register.inclusion_tag("django_design_system/breadcrumb.html", takes_context=True)
+def design_system_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     """
     Returns a breadcrumb item. Takes a dict as parameter, with the following structure:
 
@@ -278,10 +278,10 @@ def village_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     If the dict is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        village_breadcrumb
+        design_system_breadcrumb
 
     **Usage**:
-        `{% village_breadcrumb data_dict %}`
+        `{% design_system_breadcrumb data_dict %}`
     """  # noqa
     if not tag_data:
         if "breadcrumb_data" in context:
@@ -291,8 +291,8 @@ def village_breadcrumb(context: Context, tag_data: dict = {}) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/button.html")
-def village_button(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/button.html")
+def design_system_button(*args, **kwargs) -> dict:
     """
     Returns a button item. Takes a dict as parameter, with the following structure:
 
@@ -312,18 +312,18 @@ def village_button(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - `village-btn--secondary`: secundary button
-    - `village-btn--tertiary`: tertiary button
-    - `village-btn--tertiary-no-outline`: tertiary button with no outline
-    - `village-btn--icon-left` and `village-btn--icon-right`: add an icon to the button
+    - `design-system-btn--secondary`: secundary button
+    - `design-system-btn--tertiary`: tertiary button
+    - `design-system-btn--tertiary-no-outline`: tertiary button with no outline
+    - `design-system-btn--icon-left` and `design-system-btn--icon-right`: add an icon to the button
       (associated with an icon class)
-    - `village-btn--sm` and `village-btn--lg`: button smaller or larger than the default size
+    - `design-system-btn--sm` and `design-system-btn--lg`: button smaller or larger than the default size
 
     **Tag name**:
-        village_button
+        design_system_button
 
     **Usage**:
-        `{% village_button data_dict %}`
+        `{% design_system_button data_dict %}`
     """
     allowed_keys = [
         "label",
@@ -340,8 +340,8 @@ def village_button(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/button_group.html")
-def village_button_group(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/button_group.html")
+def design_system_button_group(*args, **kwargs) -> dict:
     """
     Returns a group of button items. Takes a dict as parameter, with the following structure:
 
@@ -363,10 +363,10 @@ def village_button_group(*args, **kwargs) -> dict:
     - `btns-group--icon-right`: Buttons with an icon on the right side
 
     **Tag name**:
-        village_button_group
+        design_system_button_group
 
     **Usage**:
-        `{% village_button_group data_dict %}`
+        `{% design_system_button_group data_dict %}`
     """
     allowed_keys = [
         "items",
@@ -377,8 +377,8 @@ def village_button_group(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/callout.html")
-def village_callout(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/callout.html")
+def design_system_callout(*args, **kwargs) -> dict:
     """
     Returns a callout item. Takes a dict as parameter, with the following structure:
 
@@ -400,13 +400,13 @@ def village_callout(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django_village/resources/colors)), for example `village-callout--green-emeraude`
+    - Color classes ([See the list](/django_design_system/resources/colors)), for example `design-system-callout--green-emeraude`
 
     **Tag name**:
-        village_callout
+        design_system_callout
 
     **Usage**:
-        `{% village_callout data_dict %}`
+        `{% design_system_callout data_dict %}`
     """
     allowed_keys = [
         "text",
@@ -421,8 +421,8 @@ def village_callout(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/card.html")
-def village_card(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/card.html")
+def design_system_card(*args, **kwargs) -> dict:
     """
     Returns a card item. Takes a dict as parameter, with the following structure:
 
@@ -449,14 +449,14 @@ def village_card(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `village-card--horizontal`: makes the card horizontal
-    - `village-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
-    - `village-card--horizontal-half`: allows a 50% ratio instead of the 40% default
-    - `village-card--download`: replaces the forward arrow icon with a download one
-    - `village-card--grey`: adds a grey background on the card
-    - `village-card--no-border`: removes the card border
-    - `village-card--no-background`: removes the card background
-    - `village-card--shadow`: adds a shadow to the card border
+    - `design-system-card--horizontal`: makes the card horizontal
+    - `design-system-card--horizontal-tier`: allows a 33% ratio instead of the 40% default
+    - `design-system-card--horizontal-half`: allows a 50% ratio instead of the 40% default
+    - `design-system-card--download`: replaces the forward arrow icon with a download one
+    - `design-system-card--grey`: adds a grey background on the card
+    - `design-system-card--no-border`: removes the card border
+    - `design-system-card--no-background`: removes the card background
+    - `design-system-card--shadow`: adds a shadow to the card border
 
     Format of the top_detail dict (every field is optional):
 
@@ -464,7 +464,7 @@ def village_card(*args, **kwargs) -> dict:
     top_detail = {
         "detail": {
             "text": "the detail text",
-            "icon_class": "(Optional) an icon class (eg, village-icon-warning-fill)"
+            "icon_class": "(Optional) an icon class (eg, design-system-icon-warning-fill)"
         },
         "tags": "a list of tag items (mutually exclusive with badges)",
         "badges": "a list of badge items (mutually exclusive with tags)"
@@ -476,16 +476,16 @@ def village_card(*args, **kwargs) -> dict:
     ```python
     bottom_detail = {
         "text": "the detail text",
-        "icon_class": "(Optional) an icon class (eg, village-icon-warning-fill)"
+        "icon_class": "(Optional) an icon class (eg, design-system-icon-warning-fill)"
     }
     ```
 
 
     **Tag name**:
-        village_card
+        design_system_card
 
     **Usage**:
-        `{% village_card data_dict %}`
+        `{% design_system_card data_dict %}`
     """  # noqa
     allowed_keys = [
         "title",
@@ -515,8 +515,8 @@ def village_card(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/consent.html")
-def village_consent(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/consent.html")
+def design_system_consent(*args, **kwargs) -> dict:
     """
     Returns a consent banner item. Takes a dict as parameter, with the following structure:
 
@@ -532,10 +532,10 @@ def village_consent(*args, **kwargs) -> dict:
     The tag only manages the banner. The logic needs to be implemented.
 
     **Tag name**:
-        village_consent
+        design_system_consent
 
     **Usage**:
-        `{% village_consent data_dict %}`
+        `{% design_system_consent data_dict %}`
     """
 
     allowed_keys = [
@@ -547,8 +547,8 @@ def village_consent(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/content.html")
-def village_content(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/content.html")
+def design_system_content(*args, **kwargs) -> dict:
     """
     Returns a media content item. Takes a dict as parameter, with the following structure:
 
@@ -561,7 +561,7 @@ def village_content(*args, **kwargs) -> dict:
         "alt_text": "(optional) Alternative text of the media"
         "extra_classes": "(Optional) string with names of extra classes for the whole component",
         "ratio_class": "(Optional) string with the name of a ratio class",
-        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django_village/components/transcription/)",
+        "transcription": "(Optional) A transcription item dictionary, see [component documentation](/django_design_system/components/transcription/)",
     }
     ```
 
@@ -582,30 +582,30 @@ def village_content(*args, **kwargs) -> dict:
 
     Relevant extra classes:
 
-    - `village-content-media--lg`: media is 125% of the main text width.
-    - `village-content-media--sm`: media is 75% of the the main text width.
+    - `design-system-content-media--lg`: media is 125% of the main text width.
+    - `design-system-content-media--sm`: media is 75% of the the main text width.
 
     Relevant ratio classes for images:
 
-    - `village-ratio-32x9`
-    - `village-ratio-16x9`
-    - `village-ratio-3x2`
-    - `village-ratio-4x3`
-    - `village-ratio-1x1`
-    - `village-ratio-3x4`
-    - `village-ratio-2x3`
+    - `design-system-ratio-32x9`
+    - `design-system-ratio-16x9`
+    - `design-system-ratio-3x2`
+    - `design-system-ratio-4x3`
+    - `design-system-ratio-1x1`
+    - `design-system-ratio-3x4`
+    - `design-system-ratio-2x3`
 
     Relevant ratio classes for videos:
 
-    - `village-ratio-16x9`
-    - `village-ratio-4x3`
-    - `village-ratio-1x1`
+    - `design-system-ratio-16x9`
+    - `design-system-ratio-4x3`
+    - `design-system-ratio-1x1`
 
     **Tag name**:
-        village_content
+        design_system_content
 
     **Usage**:
-        `{% village_content data_dict %}`
+        `{% design_system_content data_dict %}`
     """
 
     allowed_keys = [
@@ -624,8 +624,8 @@ def village_content(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/france_connect.html")
-def village_france_connect(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/france_connect.html")
+def design_system_france_connect(*args, **kwargs) -> dict:
     """
     Returns a FranceConnect button item. Takes a dict as parameter, with the following structure:
 
@@ -639,10 +639,10 @@ def village_france_connect(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_france_connect
+        design_system_france_connect
 
     **Usage**:
-        `{% village_france_connect data_dict %}`
+        `{% design_system_france_connect data_dict %}`
     """
 
     allowed_keys = [
@@ -660,8 +660,8 @@ def village_france_connect(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/highlight.html")
-def village_highlight(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/highlight.html")
+def design_system_highlight(*args, **kwargs) -> dict:
     """
     Returns a highlight item. Takes a dict as parameter, with the following structure:
 
@@ -675,20 +675,20 @@ def village_highlight(*args, **kwargs) -> dict:
 
     Relevant size_classes:
 
-    - `village-text--sm`
-    - `village-text--lg`
+    - `design-system-text--sm`
+    - `design-system-text--lg`
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django_village/resources/colors)), for example `village-highlight--green-emeraude`
+    - Color classes ([See the list](/django_design_system/resources/colors)), for example `design-system-highlight--green-emeraude`
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_highlight
+        design_system_highlight
 
     **Usage**:
-        `{% village_highlight data_dict %}`
+        `{% design_system_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -701,8 +701,8 @@ def village_highlight(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/input.html")
-def village_input(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/input.html")
+def design_system_input(*args, **kwargs) -> dict:
     """
     Returns a input item. Prefer the use of an actual form (see documentation)
 
@@ -725,10 +725,10 @@ def village_input(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_input
+        design_system_input
 
     **Usage**:
-        `{% village_input data_dict %}`
+        `{% design_system_input data_dict %}`
     """
 
     allowed_keys = [
@@ -749,8 +749,8 @@ def village_input(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/link.html")
-def village_link(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/link.html")
+def design_system_link(*args, **kwargs) -> dict:
     """
     Returns a link item. Takes a dict as parameter, with the following structure:
 
@@ -765,18 +765,18 @@ def village_link(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `village-link--icon-left` or `village-link--icon-right` with an icon class
-    - `village-link--sm` for small links
-    - `village-link--lg` for large links
+    - `design-system-link--icon-left` or `design-system-link--icon-right` with an icon class
+    - `design-system-link--sm` for small links
+    - `design-system-link--lg` for large links
 
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_link
+        design_system_link
 
     **Usage**:
-        `{% village_link data_dict %}`
+        `{% design_system_link data_dict %}`
     """
 
     allowed_keys = [
@@ -790,8 +790,8 @@ def village_link(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/notice.html")
-def village_notice(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/notice.html")
+def design_system_notice(*args, **kwargs) -> dict:
     """
     Returns a notice item. Takes a dict as parameter, with the following structure:
 
@@ -805,10 +805,10 @@ def village_notice(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_notice
+        design_system_notice
 
     **Usage**:
-        `{% village_notice data_dict %}`
+        `{% design_system_notice data_dict %}`
     """
 
     allowed_keys = [
@@ -820,23 +820,23 @@ def village_notice(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/pagination.html", takes_context=True)
-def village_pagination(context: Context, page_obj: Page) -> dict:
+@register.inclusion_tag("django_design_system/pagination.html", takes_context=True)
+def design_system_pagination(context: Context, page_obj: Page) -> dict:
     """
     Returns a pagination item. Takes a Django paginator object as parameter
     Cf. https://docs.djangoproject.com/fr/3.2/topics/pagination/
 
     **Tag name**:
-        village_pagination
+        design_system_pagination
 
     **Usage**:
-        `{% village_pagination page_obj %}`
+        `{% design_system_pagination page_obj %}`
     """
     return {"request": context["request"], "page_obj": page_obj}
 
 
-@register.inclusion_tag("django_village/quote.html")
-def village_quote(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/quote.html")
+def design_system_quote(*args, **kwargs) -> dict:
     """
     Returns a quote item. Takes a dict as parameter, with the following structure:
 
@@ -858,13 +858,13 @@ def village_quote(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django_village/resources/colors)), for example `village-quote--green-emeraude`
+    - Color classes ([See the list](/django_design_system/resources/colors)), for example `design-system-quote--green-emeraude`
 
     **Tag name**:
-        village_quote
+        design_system_quote
 
     **Usage**:
-        `{% village_quote data_dict %}`
+        `{% design_system_quote data_dict %}`
     """
 
     allowed_keys = [
@@ -881,8 +881,8 @@ def village_quote(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/select.html")
-def village_select(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/select.html")
+def design_system_select(*args, **kwargs) -> dict:
     """
     Returns a select item. Prefer the use of an actual form (see documentation)
 
@@ -907,17 +907,17 @@ def village_select(*args, **kwargs) -> dict:
     ```
     Relevant extra_classes:
 
-    - `village-sidemenu--sticky`: Makes the menu sticky
-    - `village-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
-    - `village-sidemenu--right`: Moves the menu to the right side of the screen
+    - `design-system-sidemenu--sticky`: Makes the menu sticky
+    - `design-system-sidemenu--sticky-full-height`: Makes the menu take the full height of the screen
+    - `design-system-sidemenu--right`: Moves the menu to the right side of the screen
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_select
+        design_system_select
 
     **Usage**:
-        `{% village_select data_dict %}`
+        `{% design_system_select data_dict %}`
     """
 
     allowed_keys = [
@@ -937,8 +937,8 @@ def village_select(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/sidemenu.html", takes_context=True)
-def village_sidemenu(context: Context, *args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/sidemenu.html", takes_context=True)
+def design_system_sidemenu(context: Context, *args, **kwargs) -> dict:
     """
     Returns a side menu item. Takes a dict as parameter, with the following structure:
 
@@ -965,10 +965,10 @@ def village_sidemenu(context: Context, *args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_sidemenu
+        design_system_sidemenu
 
     **Usage**:
-        `{% village_sidemenu data_dict %}`
+        `{% design_system_sidemenu data_dict %}`
     """
 
     allowed_keys = ["label", "items", "heading_tag", "extra_classes"]
@@ -980,8 +980,8 @@ def village_sidemenu(context: Context, *args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/skiplinks.html", takes_context=True)
-def village_skiplinks(context: Context, items: list) -> dict:
+@register.inclusion_tag("django_design_system/skiplinks.html", takes_context=True)
+def design_system_skiplinks(context: Context, items: list) -> dict:
     """
     Returns a skiplinks item. Takes a list as parameter, with the following structure:
 
@@ -992,10 +992,10 @@ def village_skiplinks(context: Context, items: list) -> dict:
     If the list is not passed as a parameter, it extracts it from context.
 
     **Tag name**:
-        village_skiplinks
+        design_system_skiplinks
 
     **Usage**:
-        `{% village_skiplinks items %}`
+        `{% design_system_skiplinks items %}`
     """
     if not items:
         if "skiplinks" in context:
@@ -1005,8 +1005,8 @@ def village_skiplinks(context: Context, items: list) -> dict:
     return {"self": {"items": items}}
 
 
-@register.inclusion_tag("django_village/stepper.html")
-def village_stepper(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/stepper.html")
+def design_system_stepper(*args, **kwargs) -> dict:
     """
     Returns a stepper item. Takes a dict as parameter, with the following structure:
 
@@ -1023,10 +1023,10 @@ def village_stepper(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_stepper
+        design_system_stepper
 
     **Usage**:
-        `{% village_stepper data_dict %}`
+        `{% design_system_stepper data_dict %}`
     """
     allowed_keys = [
         "current_step_id",
@@ -1040,8 +1040,8 @@ def village_stepper(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/summary.html")
-def village_summary(items: list, heading_tag: str = "p") -> dict:
+@register.inclusion_tag("django_design_system/summary.html")
+def design_system_summary(items: list, heading_tag: str = "p") -> dict:
     """
     Returns a summary item. Takes a list as parameter, with the following structure:
 
@@ -1059,16 +1059,16 @@ def village_summary(items: list, heading_tag: str = "p") -> dict:
     Also takes an optional "heading_tag" parameter, which can be "p" (default) or h2>h6.
 
     **Tag name**:
-        village_summary
+        design_system_summary
 
     **Usage**:
-        `{% village_summary items heading_tag %}`
+        `{% design_system_summary items heading_tag %}`
     """
     return {"self": {"items": items, "heading_tag": heading_tag}}
 
 
-@register.inclusion_tag("django_village/table.html")
-def village_table(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/table.html")
+def design_system_table(*args, **kwargs) -> dict:
     """
     Returns a table item. Takes a dict as parameter, with the following structure:
 
@@ -1086,18 +1086,18 @@ def village_table(*args, **kwargs) -> dict:
 
     Relevant `extra_classes`:
 
-    - Color classes ([See the list](/django_village/resources/colors)), for example `village-table--green-emeraude`
-    - `village-table--bordered`: adds a border under each line
-    - `village-table--no-scroll` prevents horizontal scrolling on mobile
-    - `village-table--layout-fixed`: forces the table at 100% and equal size columns
-    - `village-table--no-caption`: hides the caption
-    - `village-table--caption-bottom`: sets the caption after the table instead of before
+    - Color classes ([See the list](/django_design_system/resources/colors)), for example `design-system-table--green-emeraude`
+    - `design-system-table--bordered`: adds a border under each line
+    - `design-system-table--no-scroll` prevents horizontal scrolling on mobile
+    - `design-system-table--layout-fixed`: forces the table at 100% and equal size columns
+    - `design-system-table--no-caption`: hides the caption
+    - `design-system-table--caption-bottom`: sets the caption after the table instead of before
 
     **Tag name**:
-        village_table
+        design_system_table
 
     **Usage**:
-        `{% village_table data_dict %}`
+        `{% design_system_table data_dict %}`
     """
     allowed_keys = [
         "caption",
@@ -1110,8 +1110,8 @@ def village_table(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/tag.html")
-def village_tag(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/tag.html")
+def design_system_tag(*args, **kwargs) -> dict:
     """
     Returns a tag item. Takes a dict as parameter, with the following structure:
 
@@ -1128,17 +1128,17 @@ def village_tag(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `village-tag--sm`: for a small tag
+    - `design-system-tag--sm`: for a small tag
     - icon classes: an icon for the tag, along with a positional class
-      (eg, `village-icon-arrow-right-line` `village-tag--icon-left`)
+      (eg, `design-system-icon-arrow-right-line` `design-system-tag--icon-left`)
 
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_highlight
+        design_system_highlight
 
     **Usage**:
-        `{% village_highlight data_dict %}`
+        `{% design_system_highlight data_dict %}`
     """
 
     allowed_keys = [
@@ -1154,8 +1154,8 @@ def village_tag(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/tile.html")
-def village_tile(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/tile.html")
+def design_system_tile(*args, **kwargs) -> dict:
     """
     Returns a tile item. Takes a dict as parameter, with the following structure:
 
@@ -1179,13 +1179,13 @@ def village_tile(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `village-tile--sm`: for a small (SM) tile
-    - `village-tile--horizontal`: for an horizontal tile
-    - `village-tile--download`: Replaces the forward arrow icon with a download one
-    - `village-tile--grey`: adds a grey background on the tile
-    - `village-tile--no-border`: removes the tile border
-    - `village-tile--no-background`: removes the tile background
-    - `village-tile--shadow`: adds a shadow to the tile border
+    - `design-system-tile--sm`: for a small (SM) tile
+    - `design-system-tile--horizontal`: for an horizontal tile
+    - `design-system-tile--download`: Replaces the forward arrow icon with a download one
+    - `design-system-tile--grey`: adds a grey background on the tile
+    - `design-system-tile--no-border`: removes the tile border
+    - `design-system-tile--no-background`: removes the tile background
+    - `design-system-tile--shadow`: adds a shadow to the tile border
 
 
     Format of the top_detail dict (every field is optional):
@@ -1201,10 +1201,10 @@ def village_tile(*args, **kwargs) -> dict:
     `<svg>` html tag instead of the `<img>` tag.
 
     **Tag name**:
-        village_tile
+        design_system_tile
 
     **Usage**:
-        `{% village_tile data_dict %}`
+        `{% design_system_tile data_dict %}`
     """
 
     allowed_keys = [
@@ -1227,8 +1227,8 @@ def village_tile(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/toggle.html")
-def village_toggle(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/toggle.html")
+def design_system_toggle(*args, **kwargs) -> dict:
     """
     Returns a toggle item. Takes a dict as parameter, with the following structure:
 
@@ -1247,15 +1247,15 @@ def village_toggle(*args, **kwargs) -> dict:
 
     Relevant extra_classes:
 
-    - `village-toggle--label-left`: sets the label on the left side
-    - `village-toggle--border-bottom`: adds a border at the bottom
+    - `design-system-toggle--label-left`: sets the label on the left side
+    - `design-system-toggle--border-bottom`: adds a border at the bottom
 
 
     **Tag name**:
-        village_toggle
+        design_system_toggle
 
     **Usage**:
-        `{% village_toggle data_dict %}`
+        `{% design_system_toggle data_dict %}`
     """
 
     allowed_keys = [
@@ -1276,8 +1276,8 @@ def village_toggle(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/tooltip.html")
-def village_tooltip(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/tooltip.html")
+def design_system_tooltip(*args, **kwargs) -> dict:
     """
     Returns a tooltip item. Takes a dict as parameter, with the following structure:
 
@@ -1293,10 +1293,10 @@ def village_tooltip(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_tooltip
+        design_system_tooltip
 
     **Usage**:
-        `{% village_tooltip data_dict %}`
+        `{% design_system_tooltip data_dict %}`
     """
 
     allowed_keys = [
@@ -1313,8 +1313,8 @@ def village_tooltip(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("django_village/transcription.html")
-def village_transcription(*args, **kwargs) -> dict:
+@register.inclusion_tag("django_design_system/transcription.html")
+def design_system_transcription(*args, **kwargs) -> dict:
     """
     Returns a transcription item. Takes a dict as parameter, with the following structure:
 
@@ -1329,10 +1329,10 @@ def village_transcription(*args, **kwargs) -> dict:
     All of the keys of the dict can be passed directly as named parameters of the tag.
 
     **Tag name**:
-        village_transcription
+        design_system_transcription
 
     **Usage**:
-        `{% village_transcription data_dict %}`
+        `{% design_system_transcription data_dict %}`
     """
 
     allowed_keys = [
@@ -1352,16 +1352,16 @@ def village_transcription(*args, **kwargs) -> dict:
 
 
 @register.simple_tag(takes_context=True)
-def village_django_messages(
+def design_system_django_messages(
     context, is_collapsible=False, extra_classes=None, wrapper_classes=None
 ):
     """
-    Renders django messages in a series a village alerts
+    Renders django messages in a series a design_system alerts
 
     ```python
     data_dict = {
         "is_collapsible" : "(Optional) Boolean, set to true to add a 'close' button for the alert (default: false)",
-        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `village-my-4v`)",
+        "wrapper_classes": "(Optional) extra classes for the wrapper of the alerts (default `design-system-my-4v`)",
         "extra_classes": "(Optional) extra classes for the alert."
     }
     ```
@@ -1370,15 +1370,15 @@ def village_django_messages(
 
     Relevant extra_classes:
 
-    - `village-alert--sm` : small alert
+    - `design-system-alert--sm` : small alert
 
     See: [https://docs.djangoproject.com/en/4.2/ref/contrib/messages/](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 
     By default, the following message level are mapped to the following alert types:
 
-    <div class="village-table" markdown="1">
+    <div class="design-system-table" markdown="1">
 
-    Message level | village alert type
+    Message level | design_system alert type
     :------------:|:--------------:
     `DEBUG`       | `info`
     `INFO`        | `info`
@@ -1388,13 +1388,13 @@ def village_django_messages(
 
     </div>
 
-    There types are then concatenated with ``village-alert--`` to form the CSS classe in the template.
+    There types are then concatenated with ``design-system-alert--`` to form the CSS classe in the template.
 
-    These classes can be modified by setting ``village_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
+    These classes can be modified by setting ``design_system_MESSAGE_TAGS_CSS_CLASSES`` in your ``settings.py``, like so:
 
     ```python
     from django.contrib import messages
-    village_MESSAGE_TAGS_CSS_CLASSES = {
+    design_system_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "error"
     }
     ```
@@ -1408,7 +1408,7 @@ def village_django_messages(
     MESSAGE_TAGS = {
         50: "fatal"
     }
-    village_MESSAGE_TAGS_CSS_CLASSES = {
+    design_system_MESSAGE_TAGS_CSS_CLASSES = {
         messages.DEBUG: "debug",
         50: "warning"
     }
@@ -1420,13 +1420,13 @@ def village_django_messages(
     messages.add_message(request, 50, "A serious error occurred.")
     ```
 
-    renders an alert with the following CSS class: `village-alert--warning`.
+    renders an alert with the following CSS class: `design-system-alert--warning`.
 
     **Tag name**:
-        village_django_messages
+        design_system_django_messages
 
     **Usage**:
-        `{% village_django_messages data_dict %}`
+        `{% design_system_django_messages data_dict %}`
     """  # noqa
 
     messages = context.get("messages")
@@ -1434,7 +1434,7 @@ def village_django_messages(
     if not messages:
         return ""
 
-    wrapper_classes = wrapper_classes or "village-my-4v"
+    wrapper_classes = wrapper_classes or "design-system-my-4v"
     extra_classes = extra_classes or ""
 
     message_tags_css_classes = {
@@ -1443,12 +1443,12 @@ def village_django_messages(
         SUCCESS: "success",
         WARNING: "warning",
         ERROR: "error",
-        **getattr(settings, "village_MESSAGE_TAGS_CSS_CLASSES", {}),
+        **getattr(settings, "design_system_MESSAGE_TAGS_CSS_CLASSES", {}),
     }
 
     def _render_alert_tag(message):
         return Template(
-            "{% load village_tags %}{% village_alert data_dict %}"
+            "{% load design_system_tags %}{% design_system_alert data_dict %}"
         ).render(
             Context(
                 {
@@ -1473,35 +1473,35 @@ def village_django_messages(
     )
 
 
-@register.inclusion_tag("django_village/form_snippet.html", takes_context=True)
-def village_form(context) -> dict:
+@register.inclusion_tag("django_design_system/form_snippet.html", takes_context=True)
+def design_system_form(context) -> dict:
     """
     Returns the HTML for a form snippet
 
     **Tag name**:
-        village_form
+        design_system_form
 
     **Usage**:
-        `{% village_form %}`
+        `{% design_system_form %}`
     """
     return context
 
 
-@register.inclusion_tag("django_village/form_field_snippets/field_snippet.html")
-def village_form_field(field) -> dict:
+@register.inclusion_tag("django_design_system/form_field_snippets/field_snippet.html")
+def design_system_form_field(field) -> dict:
     """
     Returns the HTML for a form field snippet
 
     **Tag name**:
-        village_form_field
+        design_system_form_field
 
     **Usage**:
-        `{% village_form_field field %}`
+        `{% design_system_form_field field %}`
     """
     return {"field": field}
 
 
-register.filter(name="village_input_class_attr", filter_func=village_input_class_attr)
+register.filter(name="design_system_input_class_attr", filter_func=design_system_input_class_attr)
 
 
 # Other tags and helpers

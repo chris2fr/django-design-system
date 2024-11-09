@@ -5,9 +5,9 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Removes extra files from the village/dist folder in order to save space."
+    help = "Removes extra files from the design-system/dist folder in order to save space."
 
-    BASE_PATH = "django_django_village/static/village/dist"
+    BASE_PATH = "django_django_design_system/static/design-system/dist"
 
     def handle(self, *args, **options):
         print("Delete CSS map files and non-minified CSS files")

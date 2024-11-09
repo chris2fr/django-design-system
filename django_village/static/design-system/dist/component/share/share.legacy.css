@@ -1,0 +1,137 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-share__group > li {
+    list-style: none;
+  }
+
+  .design-system-share .design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg) .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::before,
+  .design-system-share .design-system-btns-group:not(.design-system-btns-group--sm):not(.design-system-btns-group--lg) .design-system-btn:not([class^=design-system-icon-]):not([class*=" design-system-icon-"]):not([class^=design-system-fi-]):not([class*=" design-system-fi-"])::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-share .design-system-btn--facebook::before {
+    background-image: url("../../icons/logo/facebook-circle-line.svg");
+  }
+
+  .design-system-share .design-system-btn--linkedin::before {
+    background-image: url("../../icons/logo/linkedin-box-line.svg");
+  }
+
+  .design-system-share .design-system-btn--mastodon::before {
+    background-image: url("../../icons/logo/mastodon-line.svg");
+  }
+
+  .design-system-share .design-system-btn--threads::before {
+    background-image: url("../../icons/logo/threads-line.svg");
+  }
+
+  .design-system-share .design-system-btn--twitter::before {
+    background-image: url("../../icons/logo/twitter-line.svg");
+  }
+
+  .design-system-share .design-system-btn--twitter-x::before {
+    background-image: url("../../icons/logo/twitter-x-line.svg");
+  }
+
+  .design-system-share .design-system-btn--mail::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/mail-line.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-share .design-system-btn--copy::before {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/business/links-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-share .design-system-btn {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .design-system-share .design-system-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-share .design-system-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-share .design-system-btn:disabled,
+  .design-system-share a.design-system-btn:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .design-system-share .design-system-btn:disabled:hover,
+  .design-system-share a.design-system-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-share .design-system-btn:disabled:active,
+  .design-system-share a.design-system-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-share__text {
+    color: #666;
+  }
+
+  .design-system-share__link {
+    background-color: transparent;
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .design-system-share__link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-share__link:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-share__link:disabled,
+  a.design-system-share__link:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    background-color: transparent;
+  }
+
+  .design-system-share__link:disabled:hover,
+  a.design-system-share__link:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-share__link:disabled:active,
+  a.design-system-share__link:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

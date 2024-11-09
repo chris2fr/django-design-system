@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("django_village", "0001_initial"),
+        ("django_design_system", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name="djangovillageconfig",
+            model_name="djangodesignsystemconfig",
             name="language",
             field=models.CharField(
                 choices=[("en", "English"), ("fr", "French")],

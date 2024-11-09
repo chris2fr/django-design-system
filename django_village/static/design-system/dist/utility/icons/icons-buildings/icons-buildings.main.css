@@ -1,0 +1,155 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON BUILDINGS
+\* ˍˍˍˍˍˍˍˍˍ */
+.design-system-icon-ancient-gate-fill::before,
+.design-system-icon-ancient-gate-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/ancient-gate-fill.svg");
+  mask-image: url("../../../icons/buildings/ancient-gate-fill.svg");
+}
+
+.design-system-icon-ancient-gate-line::before,
+.design-system-icon-ancient-gate-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/ancient-gate-line.svg");
+  mask-image: url("../../../icons/buildings/ancient-gate-line.svg");
+}
+
+.design-system-icon-ancient-pavilion-fill::before,
+.design-system-icon-ancient-pavilion-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/ancient-pavilion-fill.svg");
+  mask-image: url("../../../icons/buildings/ancient-pavilion-fill.svg");
+}
+
+.design-system-icon-ancient-pavilion-line::before,
+.design-system-icon-ancient-pavilion-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/ancient-pavilion-line.svg");
+  mask-image: url("../../../icons/buildings/ancient-pavilion-line.svg");
+}
+
+.design-system-icon-bank-fill::before,
+.design-system-icon-bank-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/bank-fill.svg");
+  mask-image: url("../../../icons/buildings/bank-fill.svg");
+}
+
+.design-system-icon-bank-line::before,
+.design-system-icon-bank-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/bank-line.svg");
+  mask-image: url("../../../icons/buildings/bank-line.svg");
+}
+
+.design-system-icon-building-fill::before,
+.design-system-icon-building-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/building-fill.svg");
+  mask-image: url("../../../icons/buildings/building-fill.svg");
+}
+
+.design-system-icon-building-line::before,
+.design-system-icon-building-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/building-line.svg");
+  mask-image: url("../../../icons/buildings/building-line.svg");
+}
+
+.design-system-icon-community-fill::before,
+.design-system-icon-community-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/community-fill.svg");
+  mask-image: url("../../../icons/buildings/community-fill.svg");
+}
+
+.design-system-icon-community-line::before,
+.design-system-icon-community-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/community-line.svg");
+  mask-image: url("../../../icons/buildings/community-line.svg");
+}
+
+.design-system-icon-government-fill::before,
+.design-system-icon-government-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/government-fill.svg");
+  mask-image: url("../../../icons/buildings/government-fill.svg");
+}
+
+.design-system-icon-government-line::before,
+.design-system-icon-government-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/government-line.svg");
+  mask-image: url("../../../icons/buildings/government-line.svg");
+}
+
+.design-system-icon-home-4-fill::before,
+.design-system-icon-home-4-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/home-4-fill.svg");
+  mask-image: url("../../../icons/buildings/home-4-fill.svg");
+}
+
+.design-system-icon-home-4-line::before,
+.design-system-icon-home-4-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/home-4-line.svg");
+  mask-image: url("../../../icons/buildings/home-4-line.svg");
+}
+
+.design-system-icon-hospital-fill::before,
+.design-system-icon-hospital-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/hospital-fill.svg");
+  mask-image: url("../../../icons/buildings/hospital-fill.svg");
+}
+
+.design-system-icon-hospital-line::before,
+.design-system-icon-hospital-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/hospital-line.svg");
+  mask-image: url("../../../icons/buildings/hospital-line.svg");
+}
+
+.design-system-icon-hotel-fill::before,
+.design-system-icon-hotel-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/hotel-fill.svg");
+  mask-image: url("../../../icons/buildings/hotel-fill.svg");
+}
+
+.design-system-icon-hotel-line::before,
+.design-system-icon-hotel-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/hotel-line.svg");
+  mask-image: url("../../../icons/buildings/hotel-line.svg");
+}
+
+.design-system-icon-store-fill::before,
+.design-system-icon-store-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/store-fill.svg");
+  mask-image: url("../../../icons/buildings/store-fill.svg");
+}
+
+.design-system-icon-store-line::before,
+.design-system-icon-store-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/store-line.svg");
+  mask-image: url("../../../icons/buildings/store-line.svg");
+}
+
+.design-system-fi-home-4-fill::before,
+.design-system-fi-home-4-fill::after {
+  -webkit-mask-image: url("../../../icons/buildings/home-4-fill.svg");
+  mask-image: url("../../../icons/buildings/home-4-fill.svg");
+}
+
+.design-system-fi-home-4-line::before,
+.design-system-fi-home-4-line::after {
+  -webkit-mask-image: url("../../../icons/buildings/home-4-line.svg");
+  mask-image: url("../../../icons/buildings/home-4-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+}

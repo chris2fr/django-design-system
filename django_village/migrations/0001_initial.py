@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import django_village.models
+import django_design_system.models
 
 
 class Migration(migrations.Migration):
@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="DjangoVillageConfig",
+            name="DjangoDesignSystemConfig",
             fields=[
                 (
                     "id",
@@ -66,7 +66,7 @@ class Migration(migrations.Migration):
                     "header_brand",
                     models.CharField(
                         blank=True,
-                        default="Web Village",
+                        default="Web DesignSystem",
                         max_length=200,
                         verbose_name="Institution (header)",
                     ),
@@ -75,7 +75,7 @@ class Migration(migrations.Migration):
                     "header_brand_html",
                     models.CharField(
                         blank=True,
-                        default="Web<br />Village",
+                        default="Web<br />DesignSystem",
                         max_length=200,
                         verbose_name="Institution with line break (header)",
                     ),
@@ -91,7 +91,7 @@ class Migration(migrations.Migration):
                     "footer_brand",
                     models.CharField(
                         blank=True,
-                        default="Web Village",
+                        default="Web DesignSystem",
                         max_length=200,
                         verbose_name="Institution (footer)",
                     ),
@@ -100,7 +100,7 @@ class Migration(migrations.Migration):
                     "footer_brand_html",
                     models.CharField(
                         blank=True,
-                        default="Web<br />Village",
+                        default="Web<br />DesignSystem",
                         max_length=200,
                         verbose_name="Institution with line break (footer)",
                     ),
@@ -131,7 +131,7 @@ class Migration(migrations.Migration):
                         blank=True,
                         null=True,
                         upload_to="logos",
-                        validators=[django_village.models.validate_image_extension],
+                        validators=[django_design_system.models.validate_image_extension],
                         verbose_name="Operator logo",
                     ),
                 ),
@@ -178,7 +178,7 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.CreateModel(
-            name="VillageSocialMedia",
+            name="DesignSystemSocialMedia",
             fields=[
                 (
                     "id",
@@ -210,7 +210,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         null=True,
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="django_village.djangovillageconfig",
+                        to="django_design_system.djangodesignsystemconfig",
                     ),
                 ),
             ],

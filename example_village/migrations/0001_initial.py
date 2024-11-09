@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="VillageAuthor",
+            name="DesignSystemAuthor",
             fields=[
                 (
                     "id",
@@ -37,11 +37,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "village VillageAuthor",
+                "verbose_name": "design_system DesignSystemAuthor",
             },
         ),
         migrations.CreateModel(
-            name="VillageGenre",
+            name="DesignSystemGenre",
             fields=[
                 (
                     "id",
@@ -65,11 +65,11 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "village VillageGenre",
+                "verbose_name": "design_system DesignSystemGenre",
             },
         ),
         migrations.CreateModel(
-            name="VillageBook",
+            name="DesignSystemBook",
             fields=[
                 (
                     "id",
@@ -100,13 +100,13 @@ class Migration(migrations.Migration):
                     "author",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="example_village.villageauthor",
+                        to="example_design_system.design_systemauthor",
                     ),
                 ),
-                ("genre", models.ManyToManyField(to="example_village.villagegenre")),
+                ("genre", models.ManyToManyField(to="example_design_system.design_systemgenre")),
             ],
             options={
-                "verbose_name": "village VillageBook",
+                "verbose_name": "design_system DesignSystemBook",
             },
         ),
     ]

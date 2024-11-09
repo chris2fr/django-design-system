@@ -1,8 +1,8 @@
-{% load static village_tags i18n %}
+{% load static design_system_tags i18n %}
 <!DOCTYPE html>
 <html lang="{{ langcode }}"
-      data-village-scheme="system"
-      {{ data_village_mourning }}>
+      data-design-system-scheme="system"
+      {{ data_design_system_mourning }}>
 
   <head>
 
@@ -11,11 +11,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    {% village_css %}
+    {% design_system_css %}
 
-    {% village_favicon %}
+    {% design_system_favicon %}
 
-    <link href="{% static 'django_village/dist/utility/utility.min.css' %}"
+    <link href="{% static 'django_design_system/dist/utility/utility.min.css' %}"
           rel="stylesheet"
           type="text/css" />
 
@@ -47,26 +47,26 @@
     {% endblock topbody %}
 
     {% block skiplinks %}
-      {% village_skiplinks skiplinks %}
+      {% design_system_skiplinks skiplinks %}
     {% endblock skiplinks %}
 
     {% block header %}
-      {% include "django_village/blocks/header.html" %}
+      {% include "django_design_system/blocks/header.html" %}
     {% endblock header %}
 
     {% block header_after %}
     {% endblock header_after %}
 
-    {% village_theme_modale %}
+    {% design_system_theme_modale %}
 
     {% if SITE_CONFIG.notice %}
-      {% village_notice title=SITE_CONFIG.notice %}
+      {% design_system_notice title=SITE_CONFIG.notice %}
     {% endif %}
 
-    {% comment %} <div class="village-container village-mt-4w village-mb-6w"> {% endcomment %}
-      <div class="village-container village-mb-6w"> 
+    {% comment %} <div class="design-system-container design-system-mt-4w design-system-mb-6w"> {% endcomment %}
+      <div class="design-system-container design-system-mb-6w"> 
       {% block breadcrumb %}
-        {% village_breadcrumb %}
+        {% design_system_breadcrumb %}
       {% endblock breadcrumb %}
       <main id="{% block mainid %}content{% endblock mainid %}" role="main" class="{% block mainclass %}{% endblock mainclass %}">
         {% block content %}
@@ -78,10 +78,10 @@
     {% endblock follow_newsletter_social_media %}
 
     {% block footer %}
-      {% include "django_village/footer.html" %}
+      {% include "django_design_system/footer.html" %}
     {% endblock footer %}
 
-    {% village_js nonce=request.csp_nonce %}
+    {% design_system_js nonce=request.csp_nonce %}
 
     <script src="{% static 'js/common.js' %}">
     </script>

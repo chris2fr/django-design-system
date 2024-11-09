@@ -1,38 +1,38 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 {% block content %}
   <h1>
     Icônes
   </h1>
   <ul>
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de documentation du composant sur le Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de documentation du composant sur le Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://main--ds-gouv.netlify.app/example/utility/icons/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page sur le site d’exemples du Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page sur le site d’exemples du Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
   </ul>
 
-  <div class="village-mt-4w">
+  <div class="design-system-mt-4w">
     <h2 id="search-icon-by-name">
       Chercher une icône par son nom
     </h2>
 
-    <div class="village-search-bar" id="icon-filter" role="search">
-      <label class="village-label" for="uip-select-input">
+    <div class="design-system-search-bar" id="icon-filter" role="search">
+      <label class="design-system-label" for="uip-select-input">
         Chercher une icône
       </label>
-      <input class="village-input"
+      <input class="design-system-input"
              type="text"
              name="uip-select-input"
              id="uip-select-input"
@@ -44,11 +44,11 @@
     </div>
   </div>
 
-  <div class="village-mt-4w">
+  <div class="design-system-mt-4w">
     <h2 id="full-icon-list">
       Liste complète
     </h2>
-    {% village_summary summary %}
+    {% design_system_summary summary %}
 
     <p>
       Cliquer sur une icône ci-dessous pour copier le nom de sa classe.
@@ -57,10 +57,10 @@
       <h3 id="{{ folder|slugify }}" tabindex="-1">
         {{ folder|title }}
       </h3>
-      <div class="village-mb-4w">
+      <div class="design-system-mb-4w">
         {% for item in items %}
-          <span class="village-icon-{{ item }} click-to-copy"
-                title="village-icon-{{ item }}"
+          <span class="design-system-icon-{{ item }} click-to-copy"
+                title="design-system-icon-{{ item }}"
                 aria-hidden="true"></span>
         {% endfor %}
       </div>
@@ -68,11 +68,11 @@
   </div>
 {% endblock content %}
 {% block extra_js %}
-  <script src="{% static 'django_village/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
+  <script src="{% static 'django_design_system/icon-picker/assets/js/universal-icon-picker.js' %}"></script>
 
   <script>
     const options = {
-      iconLibraries: ['village-buildings.json', 'village-business.json', 'village-communication.json', 'village-design.json', 'village-development.json', 'village-device.json', 'village-document.json', 'village-editor.json', 'village-finance.json', 'village-health.json', 'village-logo.json', 'village-map.json', 'village-media.json', 'village-others.json', 'village-system.json', 'village-user.json', 'village-weather.json'],
+      iconLibraries: ['design-system-buildings.json', 'design-system-business.json', 'design-system-communication.json', 'design-system-design.json', 'design-system-development.json', 'design-system-device.json', 'design-system-document.json', 'design-system-editor.json', 'design-system-finance.json', 'design-system-health.json', 'design-system-logo.json', 'design-system-map.json', 'design-system-media.json', 'design-system-others.json', 'design-system-system.json', 'design-system-user.json', 'design-system-weather.json'],
       allowEmpty: true,
       onSelect: function (jsonIconData) {
         document.getElementById('output-icon').innerHTML = "Copié dans le presse-papier : '" +jsonIconData.iconClass + "'";

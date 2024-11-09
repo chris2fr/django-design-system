@@ -1,0 +1,86 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-icon-leaf-fill::before,
+  .design-system-icon-leaf-fill::after {
+    background-image: url("../../../icons/others/leaf-fill.svg");
+  }
+
+  .design-system-icon-leaf-line::before,
+  .design-system-icon-leaf-line::after {
+    background-image: url("../../../icons/others/leaf-line.svg");
+  }
+
+  .design-system-icon-lightbulb-fill::before,
+  .design-system-icon-lightbulb-fill::after {
+    background-image: url("../../../icons/others/lightbulb-fill.svg");
+  }
+
+  .design-system-icon-lightbulb-line::before,
+  .design-system-icon-lightbulb-line::after {
+    background-image: url("../../../icons/others/lightbulb-line.svg");
+  }
+
+  .design-system-icon-plant-fill::before,
+  .design-system-icon-plant-fill::after {
+    background-image: url("../../../icons/others/plant-fill.svg");
+  }
+
+  .design-system-icon-plant-line::before,
+  .design-system-icon-plant-line::after {
+    background-image: url("../../../icons/others/plant-line.svg");
+  }
+
+  .design-system-icon-recycle-fill::before,
+  .design-system-icon-recycle-fill::after {
+    background-image: url("../../../icons/others/recycle-fill.svg");
+  }
+
+  .design-system-icon-recycle-line::before,
+  .design-system-icon-recycle-line::after {
+    background-image: url("../../../icons/others/recycle-line.svg");
+  }
+
+  .design-system-icon-scales-3-fill::before,
+  .design-system-icon-scales-3-fill::after {
+    background-image: url("../../../icons/others/scales-3-fill.svg");
+  }
+
+  .design-system-icon-scales-3-line::before,
+  .design-system-icon-scales-3-line::after {
+    background-image: url("../../../icons/others/scales-3-line.svg");
+  }
+
+  .design-system-icon-seedling-fill::before,
+  .design-system-icon-seedling-fill::after {
+    background-image: url("../../../icons/others/seedling-fill.svg");
+  }
+
+  .design-system-icon-seedling-line::before,
+  .design-system-icon-seedling-line::after {
+    background-image: url("../../../icons/others/seedling-line.svg");
+  }
+
+  .design-system-icon-umbrella-fill::before,
+  .design-system-icon-umbrella-fill::after {
+    background-image: url("../../../icons/others/umbrella-fill.svg");
+  }
+
+  .design-system-icon-umbrella-line::before,
+  .design-system-icon-umbrella-line::after {
+    background-image: url("../../../icons/others/umbrella-line.svg");
+  }
+}

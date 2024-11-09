@@ -1,0 +1,94 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+.design-system-input:disabled {
+  color: var(--text-disabled-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-input-wrap--addon .design-system-btn {
+    flex-shrink: 0;
+  }
+
+  .design-system-input {
+    color: #3a3a3a;
+    background-color: #eee;
+    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+  }
+
+  .design-system-input::placeholder {
+    color: #666;
+  }
+
+  .design-system-input::-webkit-contacts-auto-fill-button {
+    background-color: #161616;
+  }
+
+  .design-system-input::-webkit-contacts-auto-fill-button:hover {
+    background-color: #343434;
+  }
+
+  .design-system-input::-webkit-contacts-auto-fill-button:active {
+    background-color: #474747;
+  }
+
+  .design-system-input:autofill,
+  .design-system-input:autofill:hover,
+  .design-system-input:autofill:focus,
+  .design-system-input:-webkit-autofill,
+  .design-system-input:-webkit-autofill:hover,
+  .design-system-input:-webkit-autofill:focus {
+    box-shadow: inset 0 -2px 0 0 #3a3a3a, inset 0 0 0 1000px hsl(180, 80%, 96%);
+    -webkit-text-fill-color: #161616;
+  }
+
+  .design-system-input-wrap--addon > .design-system-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(180, 75%, 25%);
+  }
+
+  .design-system-fieldset--valid .design-system-input,
+  .design-system-fieldset--valid .design-system-input-wrap--addon > .design-system-input:not(:last-child),
+  .design-system-input-group--valid .design-system-input,
+  .design-system-input-group--valid .design-system-input-wrap--addon > .design-system-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(90, 45%, 43%);
+  }
+
+  .design-system-fieldset--error .design-system-input,
+  .design-system-fieldset--error .design-system-input-wrap--addon > .design-system-input:not(:last-child),
+  .design-system-input-group--error .design-system-input,
+  .design-system-input-group--error .design-system-input-wrap--addon > .design-system-input:not(:last-child) {
+    box-shadow: inset 0 -2px 0 0 hsl(0, 45%, 43%);
+  }
+
+  .design-system-input-group--error::before {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .design-system-input-group--valid::before {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .design-system-input-group--info::before {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+}

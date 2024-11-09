@@ -1,17 +1,17 @@
 from django.contrib import admin
-from django_village.models import DjangoVillageConfig, VillageSocialMedia
+from django_design_system.models import DjangoDesignSystemConfig, DesignSystemSocialMedia
 
 from django.utils.translation import gettext_lazy as _
 
 
-class VillageSocialMediaInline(admin.TabularInline):
-    model = VillageSocialMedia
+class DesignSystemSocialMediaInline(admin.TabularInline):
+    model = DesignSystemSocialMedia
     readonly_fields = ("id",)
     extra = 1
 
 
-@admin.register(DjangoVillageConfig)
-class DjangoVillageConfigAdmin(admin.ModelAdmin):
+@admin.register(DjangoDesignSystemConfig)
+class DjangoDesignSystemConfigAdmin(admin.ModelAdmin):
     fieldsets = (
         ("", {"fields": ("language",)}),
         (
@@ -65,4 +65,4 @@ class DjangoVillageConfigAdmin(admin.ModelAdmin):
             },
         ),
     )
-    inlines = [VillageSocialMediaInline]
+    inlines = [DesignSystemSocialMediaInline]

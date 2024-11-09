@@ -5,13 +5,13 @@ from django.forms import Form
 from django.forms.renderers import DjangoTemplates, get_default_renderer
 from django.utils.functional import cached_property
 
-from django_village.utils import village_input_class_attr
+from django_design_system.utils import design_system_input_class_attr
 
-from django_village.constants import COLOR_CHOICES_ILLUSTRATION
+from django_design_system.constants import COLOR_CHOICES_ILLUSTRATION
 
 
 
-class VillageDjangoTemplates(DjangoTemplates):
+class DesignSystemDjangoTemplates(DjangoTemplates):
     @cached_property
     def engine(self):
         return self.backend(
@@ -27,7 +27,7 @@ class VillageDjangoTemplates(DjangoTemplates):
         )
 
 
-class VillageBaseForm(Form):
+class DesignSystemBaseForm(Form):
     """
     A base form that adds the necessary class on relevant fields
     """
@@ -35,14 +35,14 @@ class VillageBaseForm(Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for visible in self.visible_fields():
-            village_input_class_attr(visible)
+            design_system_input_class_attr(visible)
 
     @property
     def default_renderer(self):
         from django.conf import settings, global_settings
 
         return (
-            VillageDjangoTemplates  # Settings wasn't modified
+            DesignSystemDjangoTemplates  # Settings wasn't modified
             if settings.FORM_RENDERER == global_settings.FORM_RENDERER
             else get_default_renderer()
         )
@@ -58,7 +58,7 @@ class VillageBaseForm(Form):
             break
 
 
-class ColorForm(VillageBaseForm):
+class ColorForm(DesignSystemBaseForm):
     color = forms.ChoiceField(
         label="Choisissez une couleur",
         required=False,

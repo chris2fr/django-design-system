@@ -1,17 +1,17 @@
-{% load i18n village_tags %}
-<figure class="village-content-media{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
+{% load i18n design_system_tags %}
+<figure class="design-system-content-media{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}"
         role="group"
         {% if self.caption %} aria-label="{{ self.caption }}"{% endif %}>
-  <div class="village-content-media__img">
+  <div class="design-system-content-media__img">
     {% if self.image_url %}
-      <img class="village-responsive-img{% if self.ratio_class %} {{ self.ratio_class }}{% endif %}"
+      <img class="design-system-responsive-img{% if self.ratio_class %} {{ self.ratio_class }}{% endif %}"
            src="{{ self.image_url }}"
            alt="{{ self.alt_text }}" />
     {% elif self.svg %}
       {{ self.svg|safe }}
     {% elif self.iframe %}
       <iframe title="{{ self.iframe.title }}"
-              class="village-responsive-vid{% if self.ratio_class %} {{ self.ratio_class }}{% endif %}"
+              class="design-system-responsive-vid{% if self.ratio_class %} {{ self.ratio_class }}{% endif %}"
               src="{{ self.iframe.url }}"
               {% if self.iframe.width %}width="{{ self.iframe.width }}"{% endif %}
               {% if self.iframe.height %}height="{{ self.iframe.height }}"{% endif %}
@@ -21,11 +21,11 @@
     {% endif %}
   </div>
   {% if self.caption %}
-    <figcaption class="village-content-media__caption">
+    <figcaption class="design-system-content-media__caption">
       {{ self.caption|safe }}
     </figcaption>
   {% endif %}
   {% if self.transcription %}
-    {% village_transcription self.transcription %}
+    {% design_system_transcription self.transcription %}
   {% endif %}
 </figure>

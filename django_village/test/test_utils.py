@@ -1,5 +1,5 @@
 from django.test import SimpleTestCase
-from django_village.utils import generate_random_id, generate_summary_items
+from django_design_system.utils import generate_random_id, generate_summary_items
 
 
 class GenerateRandomIdTestCase(SimpleTestCase):

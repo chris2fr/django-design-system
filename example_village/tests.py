@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 
-class VillageBaseForm(TestCase):
+class DesignSystemBaseForm(TestCase):
     sample_data = {"user_name": "Example Name", "sample_number": 5, "sample_json": "{}"}
 
     def test_valid_form(self):
@@ -26,7 +26,7 @@ class VillageBaseForm(TestCase):
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(
             response,
-            """<input type="number" name="sample_number" value="-5" class="village-input"
+            """<input type="number" name="sample_number" value="-5" class="design-system-input"
             autofocus="" aria-describedby="id_sample_number-desc-error" aria-invalid="true"
             required id="id_sample_number">""",
             html=True,

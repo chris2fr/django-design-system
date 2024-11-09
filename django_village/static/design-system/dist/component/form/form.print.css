@@ -1,0 +1,122 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-select-group--valid label,
+  .design-system-input-group--valid label,
+  .design-system-range-group--valid label,
+  .design-system-upload-group--valid label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-select-group--error label,
+  .design-system-input-group--error label,
+  .design-system-range-group--error label,
+  .design-system-upload-group--error label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-select-group--info label,
+  .design-system-input-group--info label,
+  .design-system-range-group--info label,
+  .design-system-upload-group--info label {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-select-group--disabled label,
+  .design-system-select-group--disabled .design-system-hint-text,
+  .design-system-input-group--disabled label,
+  .design-system-input-group--disabled .design-system-hint-text,
+  .design-system-range-group--disabled label,
+  .design-system-range-group--disabled .design-system-hint-text,
+  .design-system-upload-group--disabled label,
+  .design-system-upload-group--disabled .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-label {
+    color: #161616;
+  }
+
+  .design-system-label--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-label--success {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-label--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-label--disabled,
+  .design-system-label--disabled .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-hint-text,
+  .design-system-message {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .design-system-message--error {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-message--valid {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-message--info {
+    color: hsl(180, 45%, 43%);
+  }
+
+  .design-system-fieldset:disabled .design-system-label,
+  .design-system-fieldset:disabled .design-system-hint-text,
+  .design-system-fieldset:disabled .design-system-fieldset__legend {
+    color: #929292;
+  }
+
+  .design-system-fieldset input:disabled + label,
+  .design-system-fieldset input:disabled + label .design-system-hint-text,
+  .design-system-fieldset input:disabled + label + .design-system-hint-text {
+    color: #929292;
+  }
+
+  .design-system-fieldset__legend {
+    color: #161616;
+  }
+
+  .design-system-fieldset--error,
+  .design-system-fieldset--error .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(0, 45%, 43%), hsl(0, 45%, 43%));
+  }
+
+  .design-system-fieldset--error .design-system-fieldset__legend,
+  .design-system-fieldset--error .design-system-label {
+    color: hsl(0, 45%, 43%);
+  }
+
+  .design-system-fieldset--valid,
+  .design-system-fieldset--valid .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(90, 45%, 43%), hsl(90, 45%, 43%));
+  }
+
+  .design-system-fieldset--valid .design-system-fieldset__legend,
+  .design-system-fieldset--valid .design-system-label {
+    color: hsl(90, 45%, 43%);
+  }
+
+  .design-system-fieldset--info,
+  .design-system-fieldset--info .design-system-fieldset__legend {
+    background-image: linear-gradient(0deg, hsl(180, 45%, 43%), hsl(180, 45%, 43%));
+  }
+
+  .design-system-fieldset--info .design-system-fieldset__legend,
+  .design-system-fieldset--info .design-system-label {
+    color: hsl(180, 45%, 43%);
+  }
+}

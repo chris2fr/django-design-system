@@ -1,13 +1,13 @@
 from django.contrib import admin
 
-from example_village.models import VillageAuthor, VillageGenre, VillageBook
+from example_design_system.models import DesignSystemAuthor, DesignSystemGenre, DesignSystemBook
 
 
 # Register your models here.
-@admin.register(VillageAuthor)
-class VillageAuthorAdmin(admin.ModelAdmin):
+@admin.register(DesignSystemAuthor)
+class DesignSystemAuthorAdmin(admin.ModelAdmin):
     """
-    Admin model for VillageAuthor
+    Admin model for DesignSystemAuthor
     """
 
     list_display = (
@@ -17,10 +17,10 @@ class VillageAuthorAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(VillageGenre)
-class VillageGenreAdmin(admin.ModelAdmin):
+@admin.register(DesignSystemGenre)
+class DesignSystemGenreAdmin(admin.ModelAdmin):
     """
-    Admin model for VillageGenre
+    Admin model for DesignSystemGenre
     """
 
     list_display = (
@@ -30,10 +30,10 @@ class VillageGenreAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(VillageBook)
-class VillageBookAdmin(admin.ModelAdmin):
+@admin.register(DesignSystemBook)
+class DesignSystemBookAdmin(admin.ModelAdmin):
     """
-    Admin model for VillageBook
+    Admin model for DesignSystemBook
     """
 
     pass

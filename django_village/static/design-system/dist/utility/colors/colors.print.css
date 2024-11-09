@@ -1,0 +1,1828 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .design-system-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .design-system-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .design-system-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .design-system-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .design-system-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .design-system-background-alt--design-system-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .design-system-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .design-system-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .design-system-background-contrast--design-system-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .design-system-background-flat--design-system-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .design-system-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-title--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-title--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-label--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .design-system-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .design-system-text-inverted--design-system-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-action-high--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .design-system-artwork-decorative--design-system-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .design-system-artwork-background--design-system-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .design-system-artwork-motif--design-system-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+}

@@ -18,92 +18,92 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4\n"
 
-#: example_village/apps.py:9
+#: example_design_system/apps.py:9
 msgid "Example app"
 msgstr "Application d’exemple"
 
-#: example_village/models.py:10
+#: example_design_system/models.py:10
 msgid "First name"
 msgstr "Prénom"
 
-#: example_village/models.py:13
+#: example_design_system/models.py:13
 msgid "Last name"
 msgstr "Nom"
 
-#: example_village/models.py:15
+#: example_design_system/models.py:15
 msgid "Birth date"
 msgstr "Date de naissance"
 
-#: example_village/models.py:18
-msgid "villageAuthor"
+#: example_design_system/models.py:18
+msgid "design_systemAuthor"
 msgstr "Auteur"
 
-#: example_village/models.py:22
+#: example_design_system/models.py:22
 msgid "Code"
 msgstr "Code"
 
-#: example_village/models.py:24
+#: example_design_system/models.py:24
 msgid "Designation"
 msgstr "Désignation"
 
-#: example_village/models.py:26
+#: example_design_system/models.py:26
 msgid "Help text"
 msgstr "Texte d’aide"
 
-#: example_village/models.py:32
-msgid "villageGenre"
-msgstr "villageGenre"
+#: example_design_system/models.py:32
+msgid "design_systemGenre"
+msgstr "design_systemGenre"
 
-#: example_village/models.py:36
+#: example_design_system/models.py:36
 msgid "Paper"
 msgstr "Papier"
 
-#: example_village/models.py:37
+#: example_design_system/models.py:37
 msgid "Digital"
 msgstr "Numérique"
 
-#: example_village/models.py:45
+#: example_design_system/models.py:45
 msgid "Title"
 msgstr "Titre"
 
-#: example_village/models.py:46
+#: example_design_system/models.py:46
 msgid "Number of pages"
 msgstr "Nombre de pages"
 
-#: example_village/models.py:48
+#: example_design_system/models.py:48
 msgid "Format"
 msgstr "Format"
 
-#: example_village/models.py:53
-msgid "villageBook"
+#: example_design_system/models.py:53
+msgid "design_systemBook"
 msgstr "Livre"
 
-#: example_village/templates/village/blocks/footer.html:12
-#: example_village/templates/village/blocks/header.html:31
+#: example_design_system/templates/design-system/blocks/footer.html:12
+#: example_design_system/templates/design-system/blocks/header.html:31
 msgid "Display settings"
 msgstr "Paramètres d’affichage"
 
-#: example_village/templates/village/blocks/footer.html:18
+#: example_design_system/templates/design-system/blocks/footer.html:18
 msgid "Back to home page"
 msgstr "Retour à l’accueil du site"
 
-#: example_village/templates/village/blocks/header.html:6
+#: example_design_system/templates/design-system/blocks/header.html:6
 msgid "Home page"
 msgstr "Accueil"
 
-#: example_village/templates/village/blocks/header.html:43
-#: example_village/templates/village/blocks/header.html:68
+#: example_design_system/templates/design-system/blocks/header.html:43
+#: example_design_system/templates/design-system/blocks/header.html:68
 msgid "Search"
 msgstr "Rechercher"
 
-#: example_village/templates/village/blocks/header.html:52
+#: example_design_system/templates/design-system/blocks/header.html:52
 msgid "Menu"
 msgstr "Menu"
 
-#: example_village/templates/village/blocks/header.html:71
+#: example_design_system/templates/design-system/blocks/header.html:71
 msgid "Close"
 msgstr "Fermer"
 
-#: example_village/templates/village/blocks/language_selector.html:10
+#: example_design_system/templates/design-system/blocks/language_selector.html:10
 msgid "Select language"
 msgstr "Sélectionner une langue"

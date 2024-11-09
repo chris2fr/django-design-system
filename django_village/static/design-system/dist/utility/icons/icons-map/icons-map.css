@@ -1,0 +1,601 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  ICON COMMUNICATION
+\* ˍˍˍˍˍˍˍˍˍ */
+.design-system-icon-anchor-fill::before,
+.design-system-icon-anchor-fill::after {
+  -webkit-mask-image: url("../../../icons/map/anchor-fill.svg");
+  mask-image: url("../../../icons/map/anchor-fill.svg");
+}
+
+.design-system-icon-anchor-line::before,
+.design-system-icon-anchor-line::after {
+  -webkit-mask-image: url("../../../icons/map/anchor-line.svg");
+  mask-image: url("../../../icons/map/anchor-line.svg");
+}
+
+.design-system-icon-bike-fill::before,
+.design-system-icon-bike-fill::after {
+  -webkit-mask-image: url("../../../icons/map/bike-fill.svg");
+  mask-image: url("../../../icons/map/bike-fill.svg");
+}
+
+.design-system-icon-bike-line::before,
+.design-system-icon-bike-line::after {
+  -webkit-mask-image: url("../../../icons/map/bike-line.svg");
+  mask-image: url("../../../icons/map/bike-line.svg");
+}
+
+.design-system-icon-bus-fill::before,
+.design-system-icon-bus-fill::after {
+  -webkit-mask-image: url("../../../icons/map/bus-fill.svg");
+  mask-image: url("../../../icons/map/bus-fill.svg");
+}
+
+.design-system-icon-bus-line::before,
+.design-system-icon-bus-line::after {
+  -webkit-mask-image: url("../../../icons/map/bus-line.svg");
+  mask-image: url("../../../icons/map/bus-line.svg");
+}
+
+.design-system-icon-car-fill::before,
+.design-system-icon-car-fill::after {
+  -webkit-mask-image: url("../../../icons/map/car-fill.svg");
+  mask-image: url("../../../icons/map/car-fill.svg");
+}
+
+.design-system-icon-car-line::before,
+.design-system-icon-car-line::after {
+  -webkit-mask-image: url("../../../icons/map/car-line.svg");
+  mask-image: url("../../../icons/map/car-line.svg");
+}
+
+.design-system-icon-caravan-fill::before,
+.design-system-icon-caravan-fill::after {
+  -webkit-mask-image: url("../../../icons/map/caravan-fill.svg");
+  mask-image: url("../../../icons/map/caravan-fill.svg");
+}
+
+.design-system-icon-caravan-line::before,
+.design-system-icon-caravan-line::after {
+  -webkit-mask-image: url("../../../icons/map/caravan-line.svg");
+  mask-image: url("../../../icons/map/caravan-line.svg");
+}
+
+.design-system-icon-charging-pile-2-fill::before,
+.design-system-icon-charging-pile-2-fill::after {
+  -webkit-mask-image: url("../../../icons/map/charging-pile-2-fill.svg");
+  mask-image: url("../../../icons/map/charging-pile-2-fill.svg");
+}
+
+.design-system-icon-charging-pile-2-line::before,
+.design-system-icon-charging-pile-2-line::after {
+  -webkit-mask-image: url("../../../icons/map/charging-pile-2-line.svg");
+  mask-image: url("../../../icons/map/charging-pile-2-line.svg");
+}
+
+.design-system-icon-compass-3-fill::before,
+.design-system-icon-compass-3-fill::after {
+  -webkit-mask-image: url("../../../icons/map/compass-3-fill.svg");
+  mask-image: url("../../../icons/map/compass-3-fill.svg");
+}
+
+.design-system-icon-compass-3-line::before,
+.design-system-icon-compass-3-line::after {
+  -webkit-mask-image: url("../../../icons/map/compass-3-line.svg");
+  mask-image: url("../../../icons/map/compass-3-line.svg");
+}
+
+.design-system-icon-cup-fill::before,
+.design-system-icon-cup-fill::after {
+  -webkit-mask-image: url("../../../icons/map/cup-fill.svg");
+  mask-image: url("../../../icons/map/cup-fill.svg");
+}
+
+.design-system-icon-cup-line::before,
+.design-system-icon-cup-line::after {
+  -webkit-mask-image: url("../../../icons/map/cup-line.svg");
+  mask-image: url("../../../icons/map/cup-line.svg");
+}
+
+.design-system-icon-earth-fill::before,
+.design-system-icon-earth-fill::after {
+  -webkit-mask-image: url("../../../icons/map/earth-fill.svg");
+  mask-image: url("../../../icons/map/earth-fill.svg");
+}
+
+.design-system-icon-earth-line::before,
+.design-system-icon-earth-line::after {
+  -webkit-mask-image: url("../../../icons/map/earth-line.svg");
+  mask-image: url("../../../icons/map/earth-line.svg");
+}
+
+.design-system-icon-france-fill::before,
+.design-system-icon-france-fill::after {
+  -webkit-mask-image: url("../../../icons/map/france-fill.svg");
+  mask-image: url("../../../icons/map/france-fill.svg");
+}
+
+.design-system-icon-france-line::before,
+.design-system-icon-france-line::after {
+  -webkit-mask-image: url("../../../icons/map/france-line.svg");
+  mask-image: url("../../../icons/map/france-line.svg");
+}
+
+.design-system-icon-gas-station-fill::before,
+.design-system-icon-gas-station-fill::after {
+  -webkit-mask-image: url("../../../icons/map/gas-station-fill.svg");
+  mask-image: url("../../../icons/map/gas-station-fill.svg");
+}
+
+.design-system-icon-gas-station-line::before,
+.design-system-icon-gas-station-line::after {
+  -webkit-mask-image: url("../../../icons/map/gas-station-line.svg");
+  mask-image: url("../../../icons/map/gas-station-line.svg");
+}
+
+.design-system-icon-goblet-fill::before,
+.design-system-icon-goblet-fill::after {
+  -webkit-mask-image: url("../../../icons/map/goblet-fill.svg");
+  mask-image: url("../../../icons/map/goblet-fill.svg");
+}
+
+.design-system-icon-goblet-line::before,
+.design-system-icon-goblet-line::after {
+  -webkit-mask-image: url("../../../icons/map/goblet-line.svg");
+  mask-image: url("../../../icons/map/goblet-line.svg");
+}
+
+.design-system-icon-map-pin-2-fill::before,
+.design-system-icon-map-pin-2-fill::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-2-fill.svg");
+  mask-image: url("../../../icons/map/map-pin-2-fill.svg");
+}
+
+.design-system-icon-map-pin-2-line::before,
+.design-system-icon-map-pin-2-line::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-2-line.svg");
+  mask-image: url("../../../icons/map/map-pin-2-line.svg");
+}
+
+.design-system-icon-map-pin-user-fill::before,
+.design-system-icon-map-pin-user-fill::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-user-fill.svg");
+  mask-image: url("../../../icons/map/map-pin-user-fill.svg");
+}
+
+.design-system-icon-map-pin-user-line::before,
+.design-system-icon-map-pin-user-line::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-user-line.svg");
+  mask-image: url("../../../icons/map/map-pin-user-line.svg");
+}
+
+.design-system-icon-motorbike-fill::before,
+.design-system-icon-motorbike-fill::after {
+  -webkit-mask-image: url("../../../icons/map/motorbike-fill.svg");
+  mask-image: url("../../../icons/map/motorbike-fill.svg");
+}
+
+.design-system-icon-motorbike-line::before,
+.design-system-icon-motorbike-line::after {
+  -webkit-mask-image: url("../../../icons/map/motorbike-line.svg");
+  mask-image: url("../../../icons/map/motorbike-line.svg");
+}
+
+.design-system-icon-passport-fill::before,
+.design-system-icon-passport-fill::after {
+  -webkit-mask-image: url("../../../icons/map/passport-fill.svg");
+  mask-image: url("../../../icons/map/passport-fill.svg");
+}
+
+.design-system-icon-passport-line::before,
+.design-system-icon-passport-line::after {
+  -webkit-mask-image: url("../../../icons/map/passport-line.svg");
+  mask-image: url("../../../icons/map/passport-line.svg");
+}
+
+.design-system-icon-restaurant-fill::before,
+.design-system-icon-restaurant-fill::after {
+  -webkit-mask-image: url("../../../icons/map/restaurant-fill.svg");
+  mask-image: url("../../../icons/map/restaurant-fill.svg");
+}
+
+.design-system-icon-restaurant-line::before,
+.design-system-icon-restaurant-line::after {
+  -webkit-mask-image: url("../../../icons/map/restaurant-line.svg");
+  mask-image: url("../../../icons/map/restaurant-line.svg");
+}
+
+.design-system-icon-road-map-fill::before,
+.design-system-icon-road-map-fill::after {
+  -webkit-mask-image: url("../../../icons/map/road-map-fill.svg");
+  mask-image: url("../../../icons/map/road-map-fill.svg");
+}
+
+.design-system-icon-road-map-line::before,
+.design-system-icon-road-map-line::after {
+  -webkit-mask-image: url("../../../icons/map/road-map-line.svg");
+  mask-image: url("../../../icons/map/road-map-line.svg");
+}
+
+.design-system-icon-sailboat-fill::before,
+.design-system-icon-sailboat-fill::after {
+  -webkit-mask-image: url("../../../icons/map/sailboat-fill.svg");
+  mask-image: url("../../../icons/map/sailboat-fill.svg");
+}
+
+.design-system-icon-sailboat-line::before,
+.design-system-icon-sailboat-line::after {
+  -webkit-mask-image: url("../../../icons/map/sailboat-line.svg");
+  mask-image: url("../../../icons/map/sailboat-line.svg");
+}
+
+.design-system-icon-ship-2-fill::before,
+.design-system-icon-ship-2-fill::after {
+  -webkit-mask-image: url("../../../icons/map/ship-2-fill.svg");
+  mask-image: url("../../../icons/map/ship-2-fill.svg");
+}
+
+.design-system-icon-ship-2-line::before,
+.design-system-icon-ship-2-line::after {
+  -webkit-mask-image: url("../../../icons/map/ship-2-line.svg");
+  mask-image: url("../../../icons/map/ship-2-line.svg");
+}
+
+.design-system-icon-signal-tower-fill::before,
+.design-system-icon-signal-tower-fill::after {
+  -webkit-mask-image: url("../../../icons/map/signal-tower-fill.svg");
+  mask-image: url("../../../icons/map/signal-tower-fill.svg");
+}
+
+.design-system-icon-signal-tower-line::before,
+.design-system-icon-signal-tower-line::after {
+  -webkit-mask-image: url("../../../icons/map/signal-tower-line.svg");
+  mask-image: url("../../../icons/map/signal-tower-line.svg");
+}
+
+.design-system-icon-suitcase-2-fill::before,
+.design-system-icon-suitcase-2-fill::after {
+  -webkit-mask-image: url("../../../icons/map/suitcase-2-fill.svg");
+  mask-image: url("../../../icons/map/suitcase-2-fill.svg");
+}
+
+.design-system-icon-suitcase-2-line::before,
+.design-system-icon-suitcase-2-line::after {
+  -webkit-mask-image: url("../../../icons/map/suitcase-2-line.svg");
+  mask-image: url("../../../icons/map/suitcase-2-line.svg");
+}
+
+.design-system-icon-taxi-fill::before,
+.design-system-icon-taxi-fill::after {
+  -webkit-mask-image: url("../../../icons/map/taxi-fill.svg");
+  mask-image: url("../../../icons/map/taxi-fill.svg");
+}
+
+.design-system-icon-taxi-line::before,
+.design-system-icon-taxi-line::after {
+  -webkit-mask-image: url("../../../icons/map/taxi-line.svg");
+  mask-image: url("../../../icons/map/taxi-line.svg");
+}
+
+.design-system-icon-train-fill::before,
+.design-system-icon-train-fill::after {
+  -webkit-mask-image: url("../../../icons/map/train-fill.svg");
+  mask-image: url("../../../icons/map/train-fill.svg");
+}
+
+.design-system-icon-train-line::before,
+.design-system-icon-train-line::after {
+  -webkit-mask-image: url("../../../icons/map/train-line.svg");
+  mask-image: url("../../../icons/map/train-line.svg");
+}
+
+.design-system-fi-map-pin-2-fill::before,
+.design-system-fi-map-pin-2-fill::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-2-fill.svg");
+  mask-image: url("../../../icons/map/map-pin-2-fill.svg");
+}
+
+.design-system-fi-map-pin-2-line::before,
+.design-system-fi-map-pin-2-line::after {
+  -webkit-mask-image: url("../../../icons/map/map-pin-2-line.svg");
+  mask-image: url("../../../icons/map/map-pin-2-line.svg");
+}
+
+.design-system-fi-road-map-fill::before,
+.design-system-fi-road-map-fill::after {
+  -webkit-mask-image: url("../../../icons/map/road-map-fill.svg");
+  mask-image: url("../../../icons/map/road-map-fill.svg");
+}
+
+.design-system-fi-road-map-line::before,
+.design-system-fi-road-map-line::after {
+  -webkit-mask-image: url("../../../icons/map/road-map-line.svg");
+  mask-image: url("../../../icons/map/road-map-line.svg");
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-icon-anchor-fill::before,
+  .design-system-icon-anchor-fill::after {
+    background-image: url("../../../icons/map/anchor-fill.svg");
+  }
+
+  .design-system-icon-anchor-line::before,
+  .design-system-icon-anchor-line::after {
+    background-image: url("../../../icons/map/anchor-line.svg");
+  }
+
+  .design-system-icon-bike-fill::before,
+  .design-system-icon-bike-fill::after {
+    background-image: url("../../../icons/map/bike-fill.svg");
+  }
+
+  .design-system-icon-bike-line::before,
+  .design-system-icon-bike-line::after {
+    background-image: url("../../../icons/map/bike-line.svg");
+  }
+
+  .design-system-icon-bus-fill::before,
+  .design-system-icon-bus-fill::after {
+    background-image: url("../../../icons/map/bus-fill.svg");
+  }
+
+  .design-system-icon-bus-line::before,
+  .design-system-icon-bus-line::after {
+    background-image: url("../../../icons/map/bus-line.svg");
+  }
+
+  .design-system-icon-car-fill::before,
+  .design-system-icon-car-fill::after {
+    background-image: url("../../../icons/map/car-fill.svg");
+  }
+
+  .design-system-icon-car-line::before,
+  .design-system-icon-car-line::after {
+    background-image: url("../../../icons/map/car-line.svg");
+  }
+
+  .design-system-icon-caravan-fill::before,
+  .design-system-icon-caravan-fill::after {
+    background-image: url("../../../icons/map/caravan-fill.svg");
+  }
+
+  .design-system-icon-caravan-line::before,
+  .design-system-icon-caravan-line::after {
+    background-image: url("../../../icons/map/caravan-line.svg");
+  }
+
+  .design-system-icon-charging-pile-2-fill::before,
+  .design-system-icon-charging-pile-2-fill::after {
+    background-image: url("../../../icons/map/charging-pile-2-fill.svg");
+  }
+
+  .design-system-icon-charging-pile-2-line::before,
+  .design-system-icon-charging-pile-2-line::after {
+    background-image: url("../../../icons/map/charging-pile-2-line.svg");
+  }
+
+  .design-system-icon-compass-3-fill::before,
+  .design-system-icon-compass-3-fill::after {
+    background-image: url("../../../icons/map/compass-3-fill.svg");
+  }
+
+  .design-system-icon-compass-3-line::before,
+  .design-system-icon-compass-3-line::after {
+    background-image: url("../../../icons/map/compass-3-line.svg");
+  }
+
+  .design-system-icon-cup-fill::before,
+  .design-system-icon-cup-fill::after {
+    background-image: url("../../../icons/map/cup-fill.svg");
+  }
+
+  .design-system-icon-cup-line::before,
+  .design-system-icon-cup-line::after {
+    background-image: url("../../../icons/map/cup-line.svg");
+  }
+
+  .design-system-icon-earth-fill::before,
+  .design-system-icon-earth-fill::after {
+    background-image: url("../../../icons/map/earth-fill.svg");
+  }
+
+  .design-system-icon-earth-line::before,
+  .design-system-icon-earth-line::after {
+    background-image: url("../../../icons/map/earth-line.svg");
+  }
+
+  .design-system-icon-france-fill::before,
+  .design-system-icon-france-fill::after {
+    background-image: url("../../../icons/map/france-fill.svg");
+  }
+
+  .design-system-icon-france-line::before,
+  .design-system-icon-france-line::after {
+    background-image: url("../../../icons/map/france-line.svg");
+  }
+
+  .design-system-icon-gas-station-fill::before,
+  .design-system-icon-gas-station-fill::after {
+    background-image: url("../../../icons/map/gas-station-fill.svg");
+  }
+
+  .design-system-icon-gas-station-line::before,
+  .design-system-icon-gas-station-line::after {
+    background-image: url("../../../icons/map/gas-station-line.svg");
+  }
+
+  .design-system-icon-goblet-fill::before,
+  .design-system-icon-goblet-fill::after {
+    background-image: url("../../../icons/map/goblet-fill.svg");
+  }
+
+  .design-system-icon-goblet-line::before,
+  .design-system-icon-goblet-line::after {
+    background-image: url("../../../icons/map/goblet-line.svg");
+  }
+
+  .design-system-icon-map-pin-2-fill::before,
+  .design-system-icon-map-pin-2-fill::after {
+    background-image: url("../../../icons/map/map-pin-2-fill.svg");
+  }
+
+  .design-system-icon-map-pin-2-line::before,
+  .design-system-icon-map-pin-2-line::after {
+    background-image: url("../../../icons/map/map-pin-2-line.svg");
+  }
+
+  .design-system-icon-map-pin-user-fill::before,
+  .design-system-icon-map-pin-user-fill::after {
+    background-image: url("../../../icons/map/map-pin-user-fill.svg");
+  }
+
+  .design-system-icon-map-pin-user-line::before,
+  .design-system-icon-map-pin-user-line::after {
+    background-image: url("../../../icons/map/map-pin-user-line.svg");
+  }
+
+  .design-system-icon-motorbike-fill::before,
+  .design-system-icon-motorbike-fill::after {
+    background-image: url("../../../icons/map/motorbike-fill.svg");
+  }
+
+  .design-system-icon-motorbike-line::before,
+  .design-system-icon-motorbike-line::after {
+    background-image: url("../../../icons/map/motorbike-line.svg");
+  }
+
+  .design-system-icon-passport-fill::before,
+  .design-system-icon-passport-fill::after {
+    background-image: url("../../../icons/map/passport-fill.svg");
+  }
+
+  .design-system-icon-passport-line::before,
+  .design-system-icon-passport-line::after {
+    background-image: url("../../../icons/map/passport-line.svg");
+  }
+
+  .design-system-icon-restaurant-fill::before,
+  .design-system-icon-restaurant-fill::after {
+    background-image: url("../../../icons/map/restaurant-fill.svg");
+  }
+
+  .design-system-icon-restaurant-line::before,
+  .design-system-icon-restaurant-line::after {
+    background-image: url("../../../icons/map/restaurant-line.svg");
+  }
+
+  .design-system-icon-road-map-fill::before,
+  .design-system-icon-road-map-fill::after {
+    background-image: url("../../../icons/map/road-map-fill.svg");
+  }
+
+  .design-system-icon-road-map-line::before,
+  .design-system-icon-road-map-line::after {
+    background-image: url("../../../icons/map/road-map-line.svg");
+  }
+
+  .design-system-icon-sailboat-fill::before,
+  .design-system-icon-sailboat-fill::after {
+    background-image: url("../../../icons/map/sailboat-fill.svg");
+  }
+
+  .design-system-icon-sailboat-line::before,
+  .design-system-icon-sailboat-line::after {
+    background-image: url("../../../icons/map/sailboat-line.svg");
+  }
+
+  .design-system-icon-ship-2-fill::before,
+  .design-system-icon-ship-2-fill::after {
+    background-image: url("../../../icons/map/ship-2-fill.svg");
+  }
+
+  .design-system-icon-ship-2-line::before,
+  .design-system-icon-ship-2-line::after {
+    background-image: url("../../../icons/map/ship-2-line.svg");
+  }
+
+  .design-system-icon-signal-tower-fill::before,
+  .design-system-icon-signal-tower-fill::after {
+    background-image: url("../../../icons/map/signal-tower-fill.svg");
+  }
+
+  .design-system-icon-signal-tower-line::before,
+  .design-system-icon-signal-tower-line::after {
+    background-image: url("../../../icons/map/signal-tower-line.svg");
+  }
+
+  .design-system-icon-suitcase-2-fill::before,
+  .design-system-icon-suitcase-2-fill::after {
+    background-image: url("../../../icons/map/suitcase-2-fill.svg");
+  }
+
+  .design-system-icon-suitcase-2-line::before,
+  .design-system-icon-suitcase-2-line::after {
+    background-image: url("../../../icons/map/suitcase-2-line.svg");
+  }
+
+  .design-system-icon-taxi-fill::before,
+  .design-system-icon-taxi-fill::after {
+    background-image: url("../../../icons/map/taxi-fill.svg");
+  }
+
+  .design-system-icon-taxi-line::before,
+  .design-system-icon-taxi-line::after {
+    background-image: url("../../../icons/map/taxi-line.svg");
+  }
+
+  .design-system-icon-train-fill::before,
+  .design-system-icon-train-fill::after {
+    background-image: url("../../../icons/map/train-fill.svg");
+  }
+
+  .design-system-icon-train-line::before,
+  .design-system-icon-train-line::after {
+    background-image: url("../../../icons/map/train-line.svg");
+  }
+
+  .design-system-fi-map-pin-2-fill::before {
+    background-image: url("../../../icons/map/map-pin-2-fill.svg");
+  }
+
+  .design-system-fi-map-pin-2-line::before {
+    background-image: url("../../../icons/map/map-pin-2-line.svg");
+  }
+
+  .design-system-fi-road-map-fill::before {
+    background-image: url("../../../icons/map/road-map-fill.svg");
+  }
+
+  .design-system-fi-road-map-line::before {
+    background-image: url("../../../icons/map/road-map-line.svg");
+  }
+}

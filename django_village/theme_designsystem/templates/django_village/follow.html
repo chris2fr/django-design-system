@@ -1,22 +1,22 @@
 {% load i18n %}
 {% translate "Opens a new window" as new_window_label %}
-<div class="village-follow">
-  <div class="village-container">
-    <div class="village-grid-row">
+<div class="design-system-follow">
+  <div class="design-system-container">
+    <div class="design-system-grid-row">
       {% block follow_newsletter %}
-        <div class="village-col-12 village-col-md-8">
-          <div class="village-follow__newsletter">
+        <div class="design-system-col-12 design-system-col-md-8">
+          <div class="design-system-follow__newsletter">
             <div>
-              <h2 class="village-h5">
+              <h2 class="design-system-h5">
                 {% translate "Subscribe to our newsletter" context "Section title" %}
               </h2>
-              <p class="village-text--sm">
+              <p class="design-system-text--sm">
                 {{ SITE_CONFIG.newsletter_description | safe }}
               </p>
             </div>
-            <div class="village-btns-group village-btns-group--inline-md">
+            <div class="design-system-btns-group design-system-btns-group--inline-md">
               {% translate "Subscribe to our newsletter" context "Button title" as subcribe_button_title %}
-              <a class="village-btn"
+              <a class="design-system-btn"
                  href="{{ SITE_CONFIG.newsletter_url }}"
                  target="_blank"
                  rel="noopener external"
@@ -28,19 +28,19 @@
         </div>
       {% endblock follow_newsletter %}
       {% block follow_social %}
-        <div class="village-col-12 village-col-md-4">
-          <div class="village-follow__social">
-            <h2 class="village-h5">
+        <div class="design-system-col-12 design-system-col-md-4">
+          <div class="design-system-follow__social">
+            <h2 class="design-system-h5">
               {% blocktranslate trimmed %}
                 Follow us
                 <br />
                 on social media
               {% endblocktranslate %}
             </h2>
-            <ul class="village-btns-group">
+            <ul class="design-system-btns-group">
               {% for link in SITE_CONFIG.social_media %}
                 <li>
-                  <a class="{{ link.icon_class }} village-btn"
+                  <a class="{{ link.icon_class }} design-system-btn"
                      href="{{ link.url }}"
                      target="_blank"
                      title="{{ link.title }} - {{ new_window_label }}"

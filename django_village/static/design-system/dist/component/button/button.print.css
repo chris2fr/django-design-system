@@ -1,0 +1,230 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-btn {
+    background-color: hsl(180, 75%, 25%);
+    color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-btn:hover {
+    background-color: hsl(180, 60%, 20%);
+  }
+
+  .design-system-btn:active {
+    background-color: hsl(180, 40%, 15%);
+  }
+
+  .design-system-btn:disabled,
+  a.design-system-btn:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .design-system-btn--secondary {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px hsl(180, 75%, 25%);
+  }
+
+  .design-system-btn--secondary:disabled,
+  a.design-system-btn--secondary:not([href]) {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .design-system-btn--tertiary,
+  .design-system-btn--account {
+    color: hsl(180, 75%, 25%);
+    box-shadow: inset 0 0 0 1px #ddd;
+  }
+
+  .design-system-btn--tertiary:disabled,
+  a.design-system-btn--tertiary:not([href]),
+  a.design-system-btn--account:not([href]),
+  .design-system-btn--account:disabled {
+    color: #929292;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+  }
+
+  .design-system-btn--tertiary-no-outline,
+  .design-system-btn--close,
+  .design-system-btn--display,
+  .design-system-btn--fullscreen,
+  .design-system-btn--tooltip,
+  .design-system-btn--briefcase,
+  .design-system-btn--team {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-btn--tertiary-no-outline:disabled,
+  a.design-system-btn--tertiary-no-outline:not([href]),
+  a.design-system-btn--close:not([href]),
+  a.design-system-btn--display:not([href]),
+  a.design-system-btn--fullscreen:not([href]),
+  a.design-system-btn--tooltip:not([href]),
+  a.design-system-btn--briefcase:not([href]),
+  a.design-system-btn--team:not([href]),
+  .design-system-btn--close:disabled,
+  .design-system-btn--display:disabled,
+  .design-system-btn--fullscreen:disabled,
+  .design-system-btn--tooltip:disabled,
+  .design-system-btn--briefcase:disabled,
+  .design-system-btn--team:disabled {
+    color: #929292;
+  }
+
+  .design-system-btn--secondary,
+  .design-system-btn--tertiary,
+  .design-system-btn--tertiary-no-outline,
+  .design-system-btn--close,
+  .design-system-btn--display,
+  .design-system-btn--fullscreen,
+  .design-system-btn--tooltip {
+    background-color: transparent;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .design-system-btn--secondary {
+    background-color: transparent;
+  }
+
+  .design-system-btn--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--secondary:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-btn--secondary:disabled,
+  a.design-system-btn--secondary:not([href]) {
+    background-color: transparent;
+  }
+
+  .design-system-btn--secondary:disabled:hover,
+  a.design-system-btn--secondary:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--secondary:disabled:active,
+  a.design-system-btn--secondary:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-btn--tertiary,
+  .design-system-btn--account {
+    background-color: transparent;
+  }
+
+  .design-system-btn--tertiary:hover,
+  .design-system-btn--account:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--tertiary:active,
+  .design-system-btn--account:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-btn--tertiary:disabled,
+  a.design-system-btn--tertiary:not([href]),
+  a.design-system-btn--account:not([href]),
+  .design-system-btn--account:disabled {
+    background-color: transparent;
+  }
+
+  .design-system-btn--tertiary:disabled:hover,
+  a.design-system-btn--tertiary:not([href]):hover,
+  a.design-system-btn--account:not([href]):hover,
+  .design-system-btn--account:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--tertiary:disabled:active,
+  a.design-system-btn--tertiary:not([href]):active,
+  a.design-system-btn--account:not([href]):active,
+  .design-system-btn--account:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-btn--tertiary-no-outline,
+  .design-system-btn--close,
+  .design-system-btn--display,
+  .design-system-btn--fullscreen,
+  .design-system-btn--tooltip,
+  .design-system-btn--briefcase,
+  .design-system-btn--team {
+    background-color: transparent;
+  }
+
+  .design-system-btn--tertiary-no-outline:hover,
+  .design-system-btn--close:hover,
+  .design-system-btn--display:hover,
+  .design-system-btn--fullscreen:hover,
+  .design-system-btn--tooltip:hover,
+  .design-system-btn--briefcase:hover,
+  .design-system-btn--team:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--tertiary-no-outline:active,
+  .design-system-btn--close:active,
+  .design-system-btn--display:active,
+  .design-system-btn--fullscreen:active,
+  .design-system-btn--tooltip:active,
+  .design-system-btn--briefcase:active,
+  .design-system-btn--team:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-btn--tertiary-no-outline:disabled,
+  a.design-system-btn--tertiary-no-outline:not([href]),
+  a.design-system-btn--close:not([href]),
+  a.design-system-btn--display:not([href]),
+  a.design-system-btn--fullscreen:not([href]),
+  a.design-system-btn--tooltip:not([href]),
+  a.design-system-btn--briefcase:not([href]),
+  a.design-system-btn--team:not([href]),
+  .design-system-btn--close:disabled,
+  .design-system-btn--display:disabled,
+  .design-system-btn--fullscreen:disabled,
+  .design-system-btn--tooltip:disabled,
+  .design-system-btn--briefcase:disabled,
+  .design-system-btn--team:disabled {
+    background-color: transparent;
+  }
+
+  .design-system-btn--tertiary-no-outline:disabled:hover,
+  a.design-system-btn--tertiary-no-outline:not([href]):hover,
+  a.design-system-btn--close:not([href]):hover,
+  a.design-system-btn--display:not([href]):hover,
+  a.design-system-btn--fullscreen:not([href]):hover,
+  a.design-system-btn--tooltip:not([href]):hover,
+  a.design-system-btn--briefcase:not([href]):hover,
+  a.design-system-btn--team:not([href]):hover,
+  .design-system-btn--close:disabled:hover,
+  .design-system-btn--display:disabled:hover,
+  .design-system-btn--fullscreen:disabled:hover,
+  .design-system-btn--tooltip:disabled:hover,
+  .design-system-btn--briefcase:disabled:hover,
+  .design-system-btn--team:disabled:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-btn--tertiary-no-outline:disabled:active,
+  a.design-system-btn--tertiary-no-outline:not([href]):active,
+  a.design-system-btn--close:not([href]):active,
+  a.design-system-btn--display:not([href]):active,
+  a.design-system-btn--fullscreen:not([href]):active,
+  a.design-system-btn--tooltip:not([href]):active,
+  a.design-system-btn--briefcase:not([href]):active,
+  a.design-system-btn--team:not([href]):active,
+  .design-system-btn--close:disabled:active,
+  .design-system-btn--display:disabled:active,
+  .design-system-btn--fullscreen:disabled:active,
+  .design-system-btn--tooltip:disabled:active,
+  .design-system-btn--briefcase:disabled:active,
+  .design-system-btn--team:disabled:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

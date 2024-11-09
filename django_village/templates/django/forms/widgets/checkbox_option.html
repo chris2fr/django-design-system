@@ -1,18 +1,18 @@
-{% if widget.attrs.village == "village" %}
-  <div class="village-checkbox-group">
+{% if widget.attrs.design_system == "design_system" %}
+  <div class="design-system-checkbox-group">
   {% endif %}
   {% include "django/forms/widgets/input.html" %}
   {% if widget.wrap_label %}
-    <label class="village-label"
+    <label class="design-system-label"
            {% if widget.attrs.id %}for="{{ widget.attrs.id }}"{% endif %}>
       {% if widget.label.label %}
         {{ widget.label.label }}
-        <span class="village-hint-text">{{ widget.label.help_text }}</span>
+        <span class="design-system-hint-text">{{ widget.label.help_text }}</span>
       {% else %}
         {{ widget.label }}
       {% endif %}
     </label>
   {% endif %}
-  {% if widget.attrs.village == "village" %}
+  {% if widget.attrs.design_system == "design_system" %}
   </div>
 {% endif %}

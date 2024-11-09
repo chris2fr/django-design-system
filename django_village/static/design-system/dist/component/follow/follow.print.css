@@ -1,0 +1,74 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+@media print {
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+
+  /**
+  * Mixin d'ajout des icones des réseaux sociaux
+  **/
+  .design-system-follow {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-follow .design-system-input {
+    background-color: #fff;
+  }
+
+  .design-system-follow__title {
+    color: #161616;
+  }
+
+  .design-system-follow__newsletter-legal {
+    color: #666;
+  }
+
+  .design-system-follow__social .design-system-btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-follow__social .design-system-btn:disabled,
+  .design-system-follow__social a.design-system-btn:not([href]) {
+    color: #929292;
+  }
+
+  .design-system-follow .design-system-grid-row > *:not(:first-child) {
+    box-shadow: 0 -1px 0 0 hsl(180, 85%, 25%);
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .design-system-follow__social .design-system-btn {
+    background-color: transparent;
+  }
+
+  .design-system-follow__social .design-system-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-follow__social .design-system-btn:disabled,
+  .design-system-follow__social a.design-system-btn:not([href]) {
+    background-color: transparent;
+  }
+
+  .design-system-follow__social .design-system-btn:disabled:hover,
+  .design-system-follow__social a.design-system-btn:not([href]):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-follow__social .design-system-btn:disabled:active,
+  .design-system-follow__social a.design-system-btn:not([href]):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media print and (min-width: 48em) {
+  .design-system-follow .design-system-grid-row > *:not(:first-child) {
+    box-shadow: -1px 0 0 0 hsl(180, 85%, 25%);
+  }
+}

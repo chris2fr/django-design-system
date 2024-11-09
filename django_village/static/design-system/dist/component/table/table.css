@@ -1,0 +1,1622 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+/* ¯¯¯¯¯¯¯¯¯ *\
+  TABLE
+\* ˍˍˍˍˍˍˍˍˍ */
+.design-system-table {
+  --table-offset: 1rem;
+  --text-spacing: 0;
+  --title-spacing: 0;
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-top: var(--table-offset);
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.design-system-table:not(.design-system-table--no-scroll) table {
+  width: 100%;
+}
+
+.design-system-table table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-spacing: 0;
+}
+
+.design-system-table[data-design-system-js-table=true] caption {
+  position: absolute;
+  top: 0;
+}
+
+.design-system-table caption {
+  position: initial;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: var(--title-spacing);
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-title-grey);
+}
+
+.design-system-table td,
+.design-system-table th {
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+  border: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.design-system-table th {
+  font-weight: 700;
+}
+
+.design-system-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
+}
+
+.design-system-table thead td,
+.design-system-table thead th {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+/*
+* Cache la caption
+*/
+.design-system-table--no-caption {
+  padding-top: 0;
+}
+
+.design-system-table--no-caption caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+  display: block;
+  height: 0;
+}
+
+/*
+* Fixe le caption en bas du tableau
+*/
+.design-system-table--caption-bottom {
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.design-system-table--caption-bottom table {
+  margin-bottom: calc(var(--table-offset) + 2.75rem);
+}
+
+.design-system-table--caption-bottom[data-design-system-js-table=true] caption {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.design-system-table--caption-bottom caption {
+  margin-top: 1rem;
+  height: min-content;
+  caption-side: bottom;
+}
+
+/*
+* pas de scroll ni de shadow
+*/
+.design-system-table--no-scroll {
+  min-width: auto;
+}
+
+.design-system-table--no-scroll table {
+  overflow-x: hidden;
+}
+
+.design-system-table--no-scroll caption {
+  max-width: calc(100vw - 2rem);
+}
+
+/*
+* Fixe la taille des colonnes du tableau
+*/
+.design-system-table--layout-fixed table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.design-system-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+  /* Style bordered, enleve le style even/odd  */
+}
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+.design-system-table__shadow {
+  /**
+  * Modifier ombre à gauche
+  **/
+
+  /**
+  * Modifier ombre à droite
+  **/
+
+  /**
+  * Modifier combinaison ombre à gauche et ombre à droite
+  **/
+}
+
+.design-system-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: var(--table-offset);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 0 0 #161616, inset 0 0 0 0 #161616;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: box-shadow 0.3s;
+}
+
+.design-system-table__shadow--left::before {
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset 0 0 0 0 #161616;
+}
+
+.design-system-table__shadow--right::before {
+  box-shadow: inset 0 0 0 0 #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+.design-system-table__shadow--left.design-system-table__shadow--right::before {
+  content: "";
+  display: block;
+  box-shadow: inset 2rem 0 1rem -2rem #161616, inset -2rem 0 1rem -2rem #161616;
+}
+
+/*
+* Positionnement ombres sur le tableau sans caption
+*/
+.design-system-table--no-caption .design-system-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Positionnement ombres sur le tableau avec caption en bas
+*/
+.design-system-table--caption-bottom .design-system-table__shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:root[data-design-system-theme=dark] .design-system-table__shadow::before {
+  opacity: 1;
+}
+
+.design-system-table tbody {
+  background-color: var(--background-alt-grey);
+
+  --idle: transparent;
+  --hover: var(--background-alt-grey-hover);
+  --active: var(--background-alt-grey-active);
+}
+
+.design-system-table tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-grey);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+}
+
+.design-system-table--design-system-color3 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color3 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color3), var(--border-plain-design-system-color3));
+  background-color: var(--background-contrast-design-system-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color3-hover);
+  --active: var(--background-contrast-design-system-color3-active);
+}
+
+.design-system-table--design-system-color3 tbody {
+  background-color: var(--background-alt-design-system-color3);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color3-hover);
+  --active: var(--background-alt-design-system-color3-active);
+}
+
+.design-system-table--design-system-color3 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color3);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color3-hover);
+  --active: var(--background-contrast-design-system-color3-active);
+}
+
+.design-system-table--design-system-color3.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color3), var(--border-default-design-system-color3));
+}
+
+.design-system-table--design-system-color4 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color4 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color4), var(--border-plain-design-system-color4));
+  background-color: var(--background-contrast-design-system-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color4-hover);
+  --active: var(--background-contrast-design-system-color4-active);
+}
+
+.design-system-table--design-system-color4 tbody {
+  background-color: var(--background-alt-design-system-color4);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color4-hover);
+  --active: var(--background-alt-design-system-color4-active);
+}
+
+.design-system-table--design-system-color4 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color4);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color4-hover);
+  --active: var(--background-contrast-design-system-color4-active);
+}
+
+.design-system-table--design-system-color4.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color4), var(--border-default-design-system-color4));
+}
+
+.design-system-table--design-system-color5 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color5 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color5), var(--border-plain-design-system-color5));
+  background-color: var(--background-contrast-design-system-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color5-hover);
+  --active: var(--background-contrast-design-system-color5-active);
+}
+
+.design-system-table--design-system-color5 tbody {
+  background-color: var(--background-alt-design-system-color5);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color5-hover);
+  --active: var(--background-alt-design-system-color5-active);
+}
+
+.design-system-table--design-system-color5 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color5);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color5-hover);
+  --active: var(--background-contrast-design-system-color5-active);
+}
+
+.design-system-table--design-system-color5.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color5), var(--border-default-design-system-color5));
+}
+
+.design-system-table--design-system-color6 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color6 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color6), var(--border-plain-design-system-color6));
+  background-color: var(--background-contrast-design-system-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color6-hover);
+  --active: var(--background-contrast-design-system-color6-active);
+}
+
+.design-system-table--design-system-color6 tbody {
+  background-color: var(--background-alt-design-system-color6);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color6-hover);
+  --active: var(--background-alt-design-system-color6-active);
+}
+
+.design-system-table--design-system-color6 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color6);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color6-hover);
+  --active: var(--background-contrast-design-system-color6-active);
+}
+
+.design-system-table--design-system-color6.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color6), var(--border-default-design-system-color6));
+}
+
+.design-system-table--design-system-color7 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color7 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color7), var(--border-plain-design-system-color7));
+  background-color: var(--background-contrast-design-system-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color7-hover);
+  --active: var(--background-contrast-design-system-color7-active);
+}
+
+.design-system-table--design-system-color7 tbody {
+  background-color: var(--background-alt-design-system-color7);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color7-hover);
+  --active: var(--background-alt-design-system-color7-active);
+}
+
+.design-system-table--design-system-color7 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color7);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color7-hover);
+  --active: var(--background-contrast-design-system-color7-active);
+}
+
+.design-system-table--design-system-color7.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color7), var(--border-default-design-system-color7));
+}
+
+.design-system-table--design-system-color8 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color8 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color8), var(--border-plain-design-system-color8));
+  background-color: var(--background-contrast-design-system-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color8-hover);
+  --active: var(--background-contrast-design-system-color8-active);
+}
+
+.design-system-table--design-system-color8 tbody {
+  background-color: var(--background-alt-design-system-color8);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color8-hover);
+  --active: var(--background-alt-design-system-color8-active);
+}
+
+.design-system-table--design-system-color8 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color8);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color8-hover);
+  --active: var(--background-contrast-design-system-color8-active);
+}
+
+.design-system-table--design-system-color8.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color8), var(--border-default-design-system-color8));
+}
+
+.design-system-table--design-system-color9 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color9 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color9), var(--border-plain-design-system-color9));
+  background-color: var(--background-contrast-design-system-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color9-hover);
+  --active: var(--background-contrast-design-system-color9-active);
+}
+
+.design-system-table--design-system-color9 tbody {
+  background-color: var(--background-alt-design-system-color9);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color9-hover);
+  --active: var(--background-alt-design-system-color9-active);
+}
+
+.design-system-table--design-system-color9 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color9);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color9-hover);
+  --active: var(--background-contrast-design-system-color9-active);
+}
+
+.design-system-table--design-system-color9.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color9), var(--border-default-design-system-color9));
+}
+
+.design-system-table--design-system-color10 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color10 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color10), var(--border-plain-design-system-color10));
+  background-color: var(--background-contrast-design-system-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color10-hover);
+  --active: var(--background-contrast-design-system-color10-active);
+}
+
+.design-system-table--design-system-color10 tbody {
+  background-color: var(--background-alt-design-system-color10);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color10-hover);
+  --active: var(--background-alt-design-system-color10-active);
+}
+
+.design-system-table--design-system-color10 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color10);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color10-hover);
+  --active: var(--background-contrast-design-system-color10-active);
+}
+
+.design-system-table--design-system-color10.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color10), var(--border-default-design-system-color10));
+}
+
+.design-system-table--design-system-color11 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color11 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color11), var(--border-plain-design-system-color11));
+  background-color: var(--background-contrast-design-system-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color11-hover);
+  --active: var(--background-contrast-design-system-color11-active);
+}
+
+.design-system-table--design-system-color11 tbody {
+  background-color: var(--background-alt-design-system-color11);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color11-hover);
+  --active: var(--background-alt-design-system-color11-active);
+}
+
+.design-system-table--design-system-color11 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color11);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color11-hover);
+  --active: var(--background-contrast-design-system-color11-active);
+}
+
+.design-system-table--design-system-color11.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color11), var(--border-default-design-system-color11));
+}
+
+.design-system-table--design-system-color12 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color12 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color12), var(--border-plain-design-system-color12));
+  background-color: var(--background-contrast-design-system-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color12-hover);
+  --active: var(--background-contrast-design-system-color12-active);
+}
+
+.design-system-table--design-system-color12 tbody {
+  background-color: var(--background-alt-design-system-color12);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color12-hover);
+  --active: var(--background-alt-design-system-color12-active);
+}
+
+.design-system-table--design-system-color12 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color12);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color12-hover);
+  --active: var(--background-contrast-design-system-color12-active);
+}
+
+.design-system-table--design-system-color12.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color12), var(--border-default-design-system-color12));
+}
+
+.design-system-table--design-system-color13 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color13 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color13), var(--border-plain-design-system-color13));
+  background-color: var(--background-contrast-design-system-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color13-hover);
+  --active: var(--background-contrast-design-system-color13-active);
+}
+
+.design-system-table--design-system-color13 tbody {
+  background-color: var(--background-alt-design-system-color13);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color13-hover);
+  --active: var(--background-alt-design-system-color13-active);
+}
+
+.design-system-table--design-system-color13 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color13);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color13-hover);
+  --active: var(--background-contrast-design-system-color13-active);
+}
+
+.design-system-table--design-system-color13.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color13), var(--border-default-design-system-color13));
+}
+
+.design-system-table--design-system-color14 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color14 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color14), var(--border-plain-design-system-color14));
+  background-color: var(--background-contrast-design-system-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color14-hover);
+  --active: var(--background-contrast-design-system-color14-active);
+}
+
+.design-system-table--design-system-color14 tbody {
+  background-color: var(--background-alt-design-system-color14);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color14-hover);
+  --active: var(--background-alt-design-system-color14-active);
+}
+
+.design-system-table--design-system-color14 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color14);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color14-hover);
+  --active: var(--background-contrast-design-system-color14-active);
+}
+
+.design-system-table--design-system-color14.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color14), var(--border-default-design-system-color14));
+}
+
+.design-system-table--design-system-color15 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color15 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color15), var(--border-plain-design-system-color15));
+  background-color: var(--background-contrast-design-system-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color15-hover);
+  --active: var(--background-contrast-design-system-color15-active);
+}
+
+.design-system-table--design-system-color15 tbody {
+  background-color: var(--background-alt-design-system-color15);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color15-hover);
+  --active: var(--background-alt-design-system-color15-active);
+}
+
+.design-system-table--design-system-color15 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color15);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color15-hover);
+  --active: var(--background-contrast-design-system-color15-active);
+}
+
+.design-system-table--design-system-color15.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color15), var(--border-default-design-system-color15));
+}
+
+.design-system-table--design-system-color16 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color16 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color16), var(--border-plain-design-system-color16));
+  background-color: var(--background-contrast-design-system-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color16-hover);
+  --active: var(--background-contrast-design-system-color16-active);
+}
+
+.design-system-table--design-system-color16 tbody {
+  background-color: var(--background-alt-design-system-color16);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color16-hover);
+  --active: var(--background-alt-design-system-color16-active);
+}
+
+.design-system-table--design-system-color16 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color16);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color16-hover);
+  --active: var(--background-contrast-design-system-color16-active);
+}
+
+.design-system-table--design-system-color16.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color16), var(--border-default-design-system-color16));
+}
+
+.design-system-table--design-system-color17 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color17 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color17), var(--border-plain-design-system-color17));
+  background-color: var(--background-contrast-design-system-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color17-hover);
+  --active: var(--background-contrast-design-system-color17-active);
+}
+
+.design-system-table--design-system-color17 tbody {
+  background-color: var(--background-alt-design-system-color17);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color17-hover);
+  --active: var(--background-alt-design-system-color17-active);
+}
+
+.design-system-table--design-system-color17 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color17);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color17-hover);
+  --active: var(--background-contrast-design-system-color17-active);
+}
+
+.design-system-table--design-system-color17.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color17), var(--border-default-design-system-color17));
+}
+
+.design-system-table--design-system-color18 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color18 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color18), var(--border-plain-design-system-color18));
+  background-color: var(--background-contrast-design-system-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color18-hover);
+  --active: var(--background-contrast-design-system-color18-active);
+}
+
+.design-system-table--design-system-color18 tbody {
+  background-color: var(--background-alt-design-system-color18);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color18-hover);
+  --active: var(--background-alt-design-system-color18-active);
+}
+
+.design-system-table--design-system-color18 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color18);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color18-hover);
+  --active: var(--background-contrast-design-system-color18-active);
+}
+
+.design-system-table--design-system-color18.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color18), var(--border-default-design-system-color18));
+}
+
+.design-system-table--design-system-color19 {
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+  /* Style bordered, ajoute des bordures entre chaque ligne */
+}
+
+.design-system-table--design-system-color19 thead {
+  background-image: linear-gradient(0deg, var(--border-plain-design-system-color19), var(--border-plain-design-system-color19));
+  background-color: var(--background-contrast-design-system-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color19-hover);
+  --active: var(--background-contrast-design-system-color19-active);
+}
+
+.design-system-table--design-system-color19 tbody {
+  background-color: var(--background-alt-design-system-color19);
+
+  --idle: transparent;
+  --hover: var(--background-alt-design-system-color19-hover);
+  --active: var(--background-alt-design-system-color19-active);
+}
+
+.design-system-table--design-system-color19 tbody tr:nth-child(even) {
+  background-color: var(--background-contrast-design-system-color19);
+
+  --idle: transparent;
+  --hover: var(--background-contrast-design-system-color19-hover);
+  --active: var(--background-contrast-design-system-color19-active);
+}
+
+.design-system-table--design-system-color19.design-system-table--bordered tbody tr {
+  background-image: linear-gradient(0deg, var(--border-default-design-system-color19), var(--border-default-design-system-color19));
+}
+
+.design-system-table--bordered tbody tr:nth-child(even) {
+  background-color: transparent;
+
+  --hover: inherit;
+  --active: inherit;
+}
+
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+
+@media (min-width: 48em) {
+  /*! media md */
+  .design-system-table caption {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .design-system-table td,
+  .design-system-table th {
+    padding: 1rem;
+  }
+
+  .design-system-table thead td,
+  .design-system-table thead th {
+    padding-bottom: 1.125rem;
+  }
+
+  /*! media md */
+}
+
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif placement caption
+  */
+  .design-system-table[data-design-system-js-table=true] caption {
+    position: relative;
+  }
+
+  .design-system-table caption {
+    color: #161616;
+  }
+
+  .design-system-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .design-system-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .design-system-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .design-system-table--design-system-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color3.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color4.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color5.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color6.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color7.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color8.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color9.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color10.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color11.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color12.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color13.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color14.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color15.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color16.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color17.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color18.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color19.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .design-system-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .design-system-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media print {
+  .design-system-table {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table caption {
+    color: #161616;
+  }
+
+  .design-system-table thead {
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .design-system-table tbody {
+    background-color: #f6f6f6;
+  }
+
+  .design-system-table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .design-system-table--design-system-color3 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color3 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color3 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color3 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color3.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color4 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color4 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color4 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color4 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color4.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color5 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color5 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color5 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color5 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color5.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color6 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color6 thead {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color6 tbody {
+    background-color: hsl(290, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color6 tbody tr:nth-child(even) {
+    background-color: hsl(290, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color6.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(290, 75%, 25%), hsl(290, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color7 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color7 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color7 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color7 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color7.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color8 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color8 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color8 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color8 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color8.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color9 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color9 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color9 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color9 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color9.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color10 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color10 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color10 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color10 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color10.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color11 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color11 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color11 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color11 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color11.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color12 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color12 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color12 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color12 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color12.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color13 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color13 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color13 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color13 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color13.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color14 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color14 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color14 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color14 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color14.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color15 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color15 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color15 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color15 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color15.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color16 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color16 thead {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color16 tbody {
+    background-color: hsl(90, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color16 tbody tr:nth-child(even) {
+    background-color: hsl(90, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color16.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(90, 75%, 25%), hsl(90, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color17 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color17 thead {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color17 tbody {
+    background-color: hsl(180, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color17 tbody tr:nth-child(even) {
+    background-color: hsl(180, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color17.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(180, 75%, 25%), hsl(180, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color18 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color18 thead {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color18 tbody {
+    background-color: hsl(270, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color18 tbody tr:nth-child(even) {
+    background-color: hsl(270, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color18.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(270, 75%, 25%), hsl(270, 75%, 25%));
+  }
+
+  .design-system-table--design-system-color19 {
+    /* Style bordered, ajoute des bordures entre chaque ligne */
+  }
+
+  .design-system-table--design-system-color19 thead {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color19 tbody {
+    background-color: hsl(0, 80%, 98%);
+  }
+
+  .design-system-table--design-system-color19 tbody tr:nth-child(even) {
+    background-color: hsl(0, 80%, 96%);
+  }
+
+  .design-system-table--design-system-color19.design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, hsl(0, 75%, 25%), hsl(0, 75%, 25%));
+  }
+
+  .design-system-table--bordered tbody tr {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+
+    /* Style bordered, enleve le style even/odd  */
+  }
+
+  .design-system-table td,
+  .design-system-table th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .design-system-table--bordered tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .design-system-table--bordered tbody tr:nth-child(even):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-table--bordered tbody tr:nth-child(even):active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,33 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-modal__body {
+    z-index: 2000;
+    background-color: #fff;
+  }
+
+  .design-system-modal__title {
+    color: #161616;
+  }
+
+  .design-system-modal__footer {
+    background-color: #fff;
+  }
+
+  .design-system-modal__body.design-system-scroll-divider .design-system-modal__footer {
+    background-image: linear-gradient(0deg, #ddd, #ddd);
+  }
+}

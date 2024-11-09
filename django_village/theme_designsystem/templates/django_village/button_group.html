@@ -1,8 +1,8 @@
-{% load village_tags %}
-<ul class="village-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
+{% load design_system_tags %}
+<ul class="design-system-btns-group{% if self.extra_classes %} {{ self.extra_classes }}{% endif %}">
   {% for item in self.items %}
     <li>
-      {% village_button item %}
+      {% design_system_button item %}
     </li>
   {% endfor %}
 </ul>

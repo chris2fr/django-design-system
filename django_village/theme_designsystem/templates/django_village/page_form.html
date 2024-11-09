@@ -1,17 +1,17 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 {% block content %}
   <h1>
     Exemple de formulaire
   </h1>
   <form action="{% url 'page_form' %}" method="post">
     {% csrf_token %}
-    {% village_form %}
-    <div class="village-input-group village-my-4w">
-      <button type="submit" class="village-btn" title="Valider">
+    {% design_system_form %}
+    <div class="design-system-input-group design-system-my-4w">
+      <button type="submit" class="design-system-btn" title="Valider">
         Valider ce formulaire
       </button>
-      <button type="" class="village-btn village-btn--secondary" title="Annuler">
+      <button type="" class="design-system-btn design-system-btn--secondary" title="Annuler">
         Annuler
       </button>
     </div>

@@ -1,24 +1,24 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 {% block content %}
   <h1>
     Couleurs
   </h1>
-  <ul class="village-mb-4w">
+  <ul class="design-system-mb-4w">
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette/"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de présentation de la palette de couleurs sur le Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de présentation de la palette de couleurs sur le Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
     <li>
-      <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg"
+      <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg"
          href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-utilisation-dans-le-dsfr"
          target="_blank"
          rel="noopener noreferrer">
-        Voir la page de règles d’utilisation de la palette de couleurs sur le Système de Design de l’État <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        Voir la page de règles d’utilisation de la palette de couleurs sur le Système de Design de l’État <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
       </a>
     </li>
   </ul>
@@ -28,26 +28,26 @@
   <p>
     Les cartes et tuiles peuvent prendre un fond gris à la place de la couleur par défaut.
   </p>
-  <div class="village-grid-row village-grid-row--gutters village-mb-4w">
-    <div class="village-col-12 village-col-md-6">
-      {% village_card components_data.card.sample_data.0 %}
+  <div class="design-system-grid-row design-system-grid-row--gutters design-system-mb-4w">
+    <div class="design-system-col-12 design-system-col-md-6">
+      {% design_system_card components_data.card.sample_data.0 %}
     </div>
-    <div class="village-col-12 village-col-md-6">
-      {% village_card components_data.card.sample_data.0 extra_classes="village-card--grey" %}
+    <div class="design-system-col-12 design-system-col-md-6">
+      {% design_system_card components_data.card.sample_data.0 extra_classes="design-system-card--grey" %}
     </div>
   </div>
-  <div class="village-grid-row village-grid-row--gutters village-mb-4w">
-    <div class="village-col-12 village-col-md-3">
-      {% village_tile components_data.tile.sample_data.0 %}
+  <div class="design-system-grid-row design-system-grid-row--gutters design-system-mb-4w">
+    <div class="design-system-col-12 design-system-col-md-3">
+      {% design_system_tile components_data.tile.sample_data.0 %}
     </div>
-    <div class="village-col-12 village-col-md-3">
-      {% village_tile components_data.tile.sample_data.0 extra_classes="village-tile--grey" %}
+    <div class="design-system-col-12 design-system-col-md-3">
+      {% design_system_tile components_data.tile.sample_data.0 extra_classes="design-system-tile--grey" %}
     </div>
-    <div class="village-col-12 village-col-md-3">
-      {% village_tile components_data.tile.sample_data.0 %}
+    <div class="design-system-col-12 design-system-col-md-3">
+      {% design_system_tile components_data.tile.sample_data.0 %}
     </div>
-    <div class="village-col-12 village-col-md-3">
-      {% village_tile components_data.tile.sample_data.0 extra_classes="village-tile--grey" %}
+    <div class="design-system-col-12 design-system-col-md-3">
+      {% design_system_tile components_data.tile.sample_data.0 extra_classes="design-system-tile--grey" %}
     </div>
   </div>
   <h2>
@@ -56,8 +56,8 @@
   <p>
     Certains composants prennent une couleur d’accentuation comme paramètre. Seules les couleurs illustratives sont prises en compte.
   </p>
-  <form class="village-mb-4w">
-    {% village_form %}
+  <form class="design-system-mb-4w">
+    {% design_system_form %}
   </form>
   <div class="example-use">
     <h3>
@@ -66,40 +66,40 @@
     <p>
       Personnalise la couleur de l’icône.
     </p>
-    {% village_quote components_data.quote.sample_data.0 %}
+    {% design_system_quote components_data.quote.sample_data.0 %}
     <h3>
       Mise en avant
     </h3>
     <p>
       Personnalise la couleur du fond et de la bordure.
     </p>
-    {% village_callout components_data.callout.sample_data.0 %}
+    {% design_system_callout components_data.callout.sample_data.0 %}
     <h3>
       Mise en exergue
     </h3>
     <p>
       Personnalise la couleur de la bordure.
     </p>
-    {% village_highlight components_data.highlight.sample_data.0 %}
+    {% design_system_highlight components_data.highlight.sample_data.0 %}
     <h3>
       Tableau
     </h3>
     <p>
       Personnalise la couleur de la bordure et du fond.
     </p>
-    {% village_table components_data.table.sample_data.0 %}
+    {% design_system_table components_data.table.sample_data.0 %}
     <h3>
       Tag
     </h3>
     <p>
       Personnalise la couleur de la bordure, du fond et de l’icône. Seuls les tags cliquables sont pris en compte.
     </p>
-    <ul class="village-tags-group">
+    <ul class="design-system-tags-group">
       <li>
-        {% village_tag components_data.tag.sample_data.1 %}
+        {% design_system_tag components_data.tag.sample_data.1 %}
       </li>
       <li>
-        {% village_tag components_data.tag.sample_data.3 %}
+        {% design_system_tag components_data.tag.sample_data.3 %}
       </li>
     </ul>
   </div>
@@ -146,11 +146,11 @@
 
 
     document.getElementById('id_color').addEventListener('input', function (event) {
-      manageColorClasses("village-quote", event.target.value);
-      manageColorClasses("village-callout", event.target.value);
-      manageColorClasses("village-highlight", event.target.value);
-      manageColorClasses("village-table", event.target.value);
-      manageColorClasses("village-tag", event.target.value);
+      manageColorClasses("design-system-quote", event.target.value);
+      manageColorClasses("design-system-callout", event.target.value);
+      manageColorClasses("design-system-highlight", event.target.value);
+      manageColorClasses("design-system-table", event.target.value);
+      manageColorClasses("design-system-tag", event.target.value);
     }, false);
   </script>
 {% endblock extra_js %}

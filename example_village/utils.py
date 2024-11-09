@@ -1,7 +1,7 @@
 import markdown
 from markdown.extensions.codehilite import CodeHiliteExtension
 from markdown.extensions.toc import TocExtension
-from example_village.models import VillageGenre
+from example_design_system.models import DesignSystemGenre
 
 
 def populate_genre_choices():
@@ -13,7 +13,7 @@ def populate_genre_choices():
 
     genres_list = []
 
-    for genre in VillageGenre.objects.all():
+    for genre in DesignSystemGenre.objects.all():
         if not genre.help_text:
             to_add = (
                 genre.pk,
@@ -35,7 +35,7 @@ def format_markdown_from_file(filename: str, ignore_first_line: bool = False) ->
             extensions=[
                 "markdown.extensions.fenced_code",
                 TocExtension(toc_depth="2-6"),
-                CodeHiliteExtension(css_class="village-code"),
+                CodeHiliteExtension(css_class="design-system-code"),
             ],
         )
 
@@ -54,7 +54,7 @@ def format_markdown_from_file(filename: str, ignore_first_line: bool = False) ->
 
 
 def md_format_toc(toc: dict) -> list:
-    # Format the generated TOC into a Django-village summary dict
+    # Format the generated TOC into a Django-design-system summary dict
     summary_level = []
     for item in toc:
         if len(item["children"]):
@@ -70,7 +70,7 @@ def md_format_toc(toc: dict) -> list:
 
 # Lorem ipsum paragraphs
 lorem_ipsum = """
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim. At risus viverra
     adipiscing at in tellus integer feugiat. Aliquam purus sit amet luctus venenatis lectus.
@@ -80,7 +80,7 @@ lorem_ipsum = """
     ipsum a arcu cursus vitae congue mauris rhoncus. Sed id semper risus in hendrerit gravida.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Suspendisse potenti nullam ac tortor vitae purus faucibus. Condimentum lacinia quis vel eros.
     Pellentesque sit amet porttitor eget dolor. Varius duis at consectetur lorem donec massa sapien
     faucibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Tristique magna
@@ -91,7 +91,7 @@ lorem_ipsum = """
     velit dignissim sodales ut eu sem integer.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Diam maecenas ultricies mi eget mauris pharetra et ultrices. Justo nec ultrices dui sapien eget
     mi proin. Viverra mauris in aliquam sem fringilla ut. Pretium lectus quam id leo in vitae
     turpis massa. Ultricies integer quis auctor elit sed vulputate mi sit amet. Non quam lacus
@@ -103,7 +103,7 @@ lorem_ipsum = """
     quis auctor elit. Sagittis vitae et leo duis ut diam.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Urna porttitor rhoncus dolor purus. Enim eu turpis egestas pretium. Risus ultricies tristique
     nulla aliquet enim tortor at auctor urna. Etiam non quam lacus suspendisse faucibus interdum
     posuere lorem. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Ac tortor
@@ -114,7 +114,7 @@ lorem_ipsum = """
     semper risus in hendrerit gravida rutrum. Tempus iaculis urna id volutpat lacus laoreet.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Massa tempor nec feugiat nisl pretium fusce. Urna porttitor rhoncus dolor purus non enim
     praesent. Suspendisse ultrices gravida dictum fusce. Habitant morbi tristique senectus et netus.
     Adipiscing vitae proin sagittis nisl. Bibendum ut tristique et egestas quis. Dictum non

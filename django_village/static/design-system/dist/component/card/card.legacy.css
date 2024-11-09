@@ -1,0 +1,166 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-card--no-icon::after {
+    content: none;
+  }
+
+  .design-system-card__title,
+  .design-system-card__desc {
+    flex: 1 0 auto;
+  }
+
+  .design-system-card__title a::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-right-line.svg");
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+  }
+
+  .design-system-card__title [target=_blank]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/external-link-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-card__detail::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-card--download .design-system-tile__title a::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .design-system-card--download .design-system-card__header {
+    padding-top: 56.25%;
+  }
+
+  .design-system-card--download .design-system-card__header .design-system-card__img img {
+    height: auto !important;
+    width: auto;
+    margin: auto;
+  }
+
+  .design-system-card.design-system-enlarge-link .design-system-card__title a {
+    text-decoration: none;
+  }
+
+  .design-system-card.design-system-enlarge-link .design-system-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .design-system-card--sm.design-system-enlarge-link .design-system-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-card--sm .design-system-card__title a::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-card--lg.design-system-enlarge-link .design-system-card__title a::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .design-system-card--lg .design-system-card__title a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .design-system-card > .design-system-card__img {
+    flex-shrink: 0;
+  }
+
+  .design-system-card {
+    background-color: #fff;
+  }
+
+  .design-system-card:not(.design-system-card--no-border):not(.design-system-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .design-system-card--grey {
+    background-color: #eee;
+  }
+
+  .design-system-card--shadow {
+    z-index: 500;
+    background-color: #fff;
+  }
+
+  .design-system-card--shadow.design-system-card--grey {
+    background-color: #eee;
+  }
+
+  .design-system-card--no-background {
+    background-color: transparent;
+  }
+
+  .design-system-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .design-system-card--download:not(.design-system-card--no-background) .design-system-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .design-system-card__detail {
+    color: #666;
+  }
+
+  .design-system-card__title {
+    color: #161616;
+  }
+
+  .design-system-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-card__title:disabled,
+  a.design-system-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 48em), (-ms-high-contrast: active) and (min-width: 48em) {
+  .design-system-card--download .design-system-card__header {
+    padding-top: 0;
+  }
+
+  .design-system-card--download .design-system-card__body,
+  .design-system-card--horizontal .design-system-card__body,
+  .design-system-card--horizontal-half .design-system-card__body,
+  .design-system-card--horizontal-tier .design-system-card__body {
+    flex-basis: 100%;
+  }
+}

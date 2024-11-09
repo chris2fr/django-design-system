@@ -1,0 +1,5643 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .design-system-background-default--grey {
+    background-color: #fff !important;
+  }
+
+  .design-system-background-default--grey:hover {
+    background-color: #f6f6f6 !important;
+  }
+
+  .design-system-background-default--grey:active {
+    background-color: #ededed !important;
+  }
+
+  .design-system-background-alt--grey {
+    background-color: #f6f6f6 !important;
+  }
+
+  .design-system-background-alt--grey:hover {
+    background-color: #dfdfdf !important;
+  }
+
+  .design-system-background-alt--grey:active {
+    background-color: #cfcfcf !important;
+  }
+
+  .design-system-background-alt--design-system-primary {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6 {
+    background-color: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16 {
+    background-color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17 {
+    background-color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18 {
+    background-color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19 {
+    background-color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-alt--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--grey {
+    background-color: #eee !important;
+  }
+
+  .design-system-background-contrast--grey:hover {
+    background-color: #d2d2d2 !important;
+  }
+
+  .design-system-background-contrast--grey:active {
+    background-color: #c1c1c1 !important;
+  }
+
+  .design-system-background-contrast--design-system-primary {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6 {
+    background-color: hsl(290, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16 {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17 {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18 {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19 {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--info {
+    background-color: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--info:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--info:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--success {
+    background-color: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--success:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--success:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--warning {
+    background-color: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--warning:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--warning:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-contrast--error {
+    background-color: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-background-contrast--error:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-contrast--error:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-flat--grey {
+    background-color: #3a3a3a !important;
+  }
+
+  .design-system-background-flat--design-system-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--design-system-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-flat--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-background-flat--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-primary:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-secondary:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color3:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color4:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color5:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6 {
+    background-color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6:hover {
+    background-color: hsl(290, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color6:active {
+    background-color: hsl(290, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color7:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color8:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color9:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color10:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color11:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color12:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color13:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color14:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color15:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16 {
+    background-color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16:hover {
+    background-color: hsl(90, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color16:active {
+    background-color: hsl(90, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17 {
+    background-color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17:hover {
+    background-color: hsl(180, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color17:active {
+    background-color: hsl(180, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18 {
+    background-color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18:hover {
+    background-color: hsl(270, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color18:active {
+    background-color: hsl(270, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19 {
+    background-color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19:hover {
+    background-color: hsl(0, 60%, 20%) !important;
+  }
+
+  .design-system-background-action-high--design-system-color19:active {
+    background-color: hsl(0, 40%, 15%) !important;
+  }
+
+  .design-system-background-action-high--info {
+    background-color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--info:hover {
+    background-color: hsl(180, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--info:active {
+    background-color: hsl(180, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--success {
+    background-color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--success:hover {
+    background-color: hsl(90, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--success:active {
+    background-color: hsl(90, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--warning {
+    background-color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--warning:hover {
+    background-color: hsl(270, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--warning:active {
+    background-color: hsl(270, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-high--error {
+    background-color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-background-action-high--error:hover {
+    background-color: hsl(0, 50%, 50%) !important;
+  }
+
+  .design-system-background-action-high--error:active {
+    background-color: hsl(0, 60%, 50%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-primary:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-secondary:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color3:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color4:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color5:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6 {
+    background-color: hsl(290, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6:hover {
+    background-color: hsl(290, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color6:active {
+    background-color: hsl(290, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color7:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color8:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color9:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color10:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color11:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color12:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color13:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color14:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color15:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16 {
+    background-color: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16:hover {
+    background-color: hsl(90, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color16:active {
+    background-color: hsl(90, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17 {
+    background-color: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17:hover {
+    background-color: hsl(180, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color17:active {
+    background-color: hsl(180, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18 {
+    background-color: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18:hover {
+    background-color: hsl(270, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color18:active {
+    background-color: hsl(270, 90%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19 {
+    background-color: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19:hover {
+    background-color: hsl(0, 60%, 65%) !important;
+  }
+
+  .design-system-background-action-low--design-system-color19:active {
+    background-color: hsl(0, 90%, 65%) !important;
+  }
+
+  .design-system-text-default--grey {
+    color: #3a3a3a !important;
+  }
+
+  .design-system-text-default--info {
+    color: hsl(180, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--success {
+    color: hsl(90, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--warning {
+    color: hsl(270, 45%, 43%) !important;
+  }
+
+  .design-system-text-default--error {
+    color: hsl(0, 45%, 43%) !important;
+  }
+
+  .design-system-text-title--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-title--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-title--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-label--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-label--design-system-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-mention--grey {
+    color: #666 !important;
+  }
+
+  .design-system-text-inverted--grey {
+    color: #fff !important;
+  }
+
+  .design-system-text-inverted--design-system-primary {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-secondary {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--info {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--success {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--warning {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--error {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color3 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color4 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color5 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color6 {
+    color: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color7 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color8 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color9 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color10 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color11 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color12 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color13 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color14 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color15 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color16 {
+    color: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color17 {
+    color: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color18 {
+    color: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-text-inverted--design-system-color19 {
+    color: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-text-action-high--grey {
+    color: #161616 !important;
+  }
+
+  .design-system-text-action-high--design-system-primary {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-secondary {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color3 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color4 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color5 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color6 {
+    color: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color7 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color8 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color9 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color10 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color11 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color12 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color13 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color14 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color15 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color16 {
+    color: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color17 {
+    color: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color18 {
+    color: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-text-action-high--design-system-color19 {
+    color: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-primary {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-secondary {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-major--design-system-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-primary {
+    fill: hsl(180, 85%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-secondary {
+    fill: hsl(270, 85%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color3 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color4 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color5 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color6 {
+    fill: hsl(290, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color7 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color8 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color9 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color10 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color11 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color12 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color13 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color14 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color15 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color16 {
+    fill: hsl(90, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color17 {
+    fill: hsl(180, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color18 {
+    fill: hsl(270, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-minor--design-system-color19 {
+    fill: hsl(0, 75%, 25%) !important;
+  }
+
+  .design-system-artwork-decorative--grey {
+    fill: #eee !important;
+  }
+
+  .design-system-artwork-decorative--design-system-primary {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-secondary {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color3 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color4 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color5 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color6 {
+    fill: hsl(290, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color7 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color8 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color9 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color10 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color11 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color12 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color13 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color14 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color15 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color16 {
+    fill: hsl(90, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color17 {
+    fill: hsl(180, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color18 {
+    fill: hsl(270, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-decorative--design-system-color19 {
+    fill: hsl(0, 80%, 96%) !important;
+  }
+
+  .design-system-artwork-background--grey {
+    fill: #f6f6f6 !important;
+  }
+
+  .design-system-artwork-background--design-system-primary {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-secondary {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color3 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color4 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color5 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color6 {
+    fill: hsl(290, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color7 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color8 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color9 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color10 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color11 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color12 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color13 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color14 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color15 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color16 {
+    fill: hsl(90, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color17 {
+    fill: hsl(180, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color18 {
+    fill: hsl(270, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-background--design-system-color19 {
+    fill: hsl(0, 80%, 98%) !important;
+  }
+
+  .design-system-artwork-motif--grey {
+    fill: #e5e5e5 !important;
+  }
+
+  .design-system-artwork-motif--design-system-primary {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-secondary {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color3 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color4 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color5 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color6 {
+    fill: hsl(290, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color7 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color8 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color9 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color10 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color11 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color12 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color13 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color14 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color15 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color16 {
+    fill: hsl(90, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color17 {
+    fill: hsl(180, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color18 {
+    fill: hsl(270, 80%, 93%) !important;
+  }
+
+  .design-system-artwork-motif--design-system-color19 {
+    fill: hsl(0, 80%, 93%) !important;
+  }
+
+  .design-system-icon-ancient-gate-fill::before,
+  .design-system-icon-ancient-gate-fill::after {
+    background-image: url("../icons/buildings/ancient-gate-fill.svg");
+  }
+
+  .design-system-icon-ancient-gate-line::before,
+  .design-system-icon-ancient-gate-line::after {
+    background-image: url("../icons/buildings/ancient-gate-line.svg");
+  }
+
+  .design-system-icon-ancient-pavilion-fill::before,
+  .design-system-icon-ancient-pavilion-fill::after {
+    background-image: url("../icons/buildings/ancient-pavilion-fill.svg");
+  }
+
+  .design-system-icon-ancient-pavilion-line::before,
+  .design-system-icon-ancient-pavilion-line::after {
+    background-image: url("../icons/buildings/ancient-pavilion-line.svg");
+  }
+
+  .design-system-icon-bank-fill::before,
+  .design-system-icon-bank-fill::after {
+    background-image: url("../icons/buildings/bank-fill.svg");
+  }
+
+  .design-system-icon-bank-line::before,
+  .design-system-icon-bank-line::after {
+    background-image: url("../icons/buildings/bank-line.svg");
+  }
+
+  .design-system-icon-building-fill::before,
+  .design-system-icon-building-fill::after {
+    background-image: url("../icons/buildings/building-fill.svg");
+  }
+
+  .design-system-icon-building-line::before,
+  .design-system-icon-building-line::after {
+    background-image: url("../icons/buildings/building-line.svg");
+  }
+
+  .design-system-icon-community-fill::before,
+  .design-system-icon-community-fill::after {
+    background-image: url("../icons/buildings/community-fill.svg");
+  }
+
+  .design-system-icon-community-line::before,
+  .design-system-icon-community-line::after {
+    background-image: url("../icons/buildings/community-line.svg");
+  }
+
+  .design-system-icon-government-fill::before,
+  .design-system-icon-government-fill::after {
+    background-image: url("../icons/buildings/government-fill.svg");
+  }
+
+  .design-system-icon-government-line::before,
+  .design-system-icon-government-line::after {
+    background-image: url("../icons/buildings/government-line.svg");
+  }
+
+  .design-system-icon-home-4-fill::before,
+  .design-system-icon-home-4-fill::after {
+    background-image: url("../icons/buildings/home-4-fill.svg");
+  }
+
+  .design-system-icon-home-4-line::before,
+  .design-system-icon-home-4-line::after {
+    background-image: url("../icons/buildings/home-4-line.svg");
+  }
+
+  .design-system-icon-hospital-fill::before,
+  .design-system-icon-hospital-fill::after {
+    background-image: url("../icons/buildings/hospital-fill.svg");
+  }
+
+  .design-system-icon-hospital-line::before,
+  .design-system-icon-hospital-line::after {
+    background-image: url("../icons/buildings/hospital-line.svg");
+  }
+
+  .design-system-icon-hotel-fill::before,
+  .design-system-icon-hotel-fill::after {
+    background-image: url("../icons/buildings/hotel-fill.svg");
+  }
+
+  .design-system-icon-hotel-line::before,
+  .design-system-icon-hotel-line::after {
+    background-image: url("../icons/buildings/hotel-line.svg");
+  }
+
+  .design-system-icon-store-fill::before,
+  .design-system-icon-store-fill::after {
+    background-image: url("../icons/buildings/store-fill.svg");
+  }
+
+  .design-system-icon-store-line::before,
+  .design-system-icon-store-line::after {
+    background-image: url("../icons/buildings/store-line.svg");
+  }
+
+  .design-system-fi-home-4-fill::before {
+    background-image: url("../icons/buildings/home-4-fill.svg");
+  }
+
+  .design-system-fi-home-4-line::before {
+    background-image: url("../icons/buildings/home-4-line.svg");
+  }
+
+  .design-system-icon-archive-fill::before,
+  .design-system-icon-archive-fill::after {
+    background-image: url("../icons/business/archive-fill.svg");
+  }
+
+  .design-system-icon-archive-line::before,
+  .design-system-icon-archive-line::after {
+    background-image: url("../icons/business/archive-line.svg");
+  }
+
+  .design-system-icon-attachment-fill::before,
+  .design-system-icon-attachment-fill::after {
+    background-image: url("../icons/business/attachment-fill.svg");
+  }
+
+  .design-system-icon-attachment-line::before,
+  .design-system-icon-attachment-line::after {
+    background-image: url("../icons/business/attachment-line.svg");
+  }
+
+  .design-system-icon-award-fill::before,
+  .design-system-icon-award-fill::after {
+    background-image: url("../icons/business/award-fill.svg");
+  }
+
+  .design-system-icon-award-line::before,
+  .design-system-icon-award-line::after {
+    background-image: url("../icons/business/award-line.svg");
+  }
+
+  .design-system-icon-bar-chart-box-fill::before,
+  .design-system-icon-bar-chart-box-fill::after {
+    background-image: url("../icons/business/bar-chart-box-fill.svg");
+  }
+
+  .design-system-icon-bar-chart-box-line::before,
+  .design-system-icon-bar-chart-box-line::after {
+    background-image: url("../icons/business/bar-chart-box-line.svg");
+  }
+
+  .design-system-icon-bookmark-fill::before,
+  .design-system-icon-bookmark-fill::after {
+    background-image: url("../icons/business/bookmark-fill.svg");
+  }
+
+  .design-system-icon-bookmark-line::before,
+  .design-system-icon-bookmark-line::after {
+    background-image: url("../icons/business/bookmark-line.svg");
+  }
+
+  .design-system-icon-briefcase-fill::before,
+  .design-system-icon-briefcase-fill::after {
+    background-image: url("../icons/business/briefcase-fill.svg");
+  }
+
+  .design-system-icon-briefcase-line::before,
+  .design-system-icon-briefcase-line::after {
+    background-image: url("../icons/business/briefcase-line.svg");
+  }
+
+  .design-system-icon-calendar-2-fill::before,
+  .design-system-icon-calendar-2-fill::after {
+    background-image: url("../icons/business/calendar-2-fill.svg");
+  }
+
+  .design-system-icon-calendar-2-line::before,
+  .design-system-icon-calendar-2-line::after {
+    background-image: url("../icons/business/calendar-2-line.svg");
+  }
+
+  .design-system-icon-calendar-event-fill::before,
+  .design-system-icon-calendar-event-fill::after {
+    background-image: url("../icons/business/calendar-event-fill.svg");
+  }
+
+  .design-system-icon-calendar-event-line::before,
+  .design-system-icon-calendar-event-line::after {
+    background-image: url("../icons/business/calendar-event-line.svg");
+  }
+
+  .design-system-icon-calendar-fill::before,
+  .design-system-icon-calendar-fill::after {
+    background-image: url("../icons/business/calendar-fill.svg");
+  }
+
+  .design-system-icon-calendar-line::before,
+  .design-system-icon-calendar-line::after {
+    background-image: url("../icons/business/calendar-line.svg");
+  }
+
+  .design-system-icon-cloud-fill::before,
+  .design-system-icon-cloud-fill::after {
+    background-image: url("../icons/business/cloud-fill.svg");
+  }
+
+  .design-system-icon-cloud-line::before,
+  .design-system-icon-cloud-line::after {
+    background-image: url("../icons/business/cloud-line.svg");
+  }
+
+  .design-system-icon-copyright-fill::before,
+  .design-system-icon-copyright-fill::after {
+    background-image: url("../icons/business/copyright-fill.svg");
+  }
+
+  .design-system-icon-copyright-line::before,
+  .design-system-icon-copyright-line::after {
+    background-image: url("../icons/business/copyright-line.svg");
+  }
+
+  .design-system-icon-customer-service-fill::before,
+  .design-system-icon-customer-service-fill::after {
+    background-image: url("../icons/business/customer-service-fill.svg");
+  }
+
+  .design-system-icon-customer-service-line::before,
+  .design-system-icon-customer-service-line::after {
+    background-image: url("../icons/business/customer-service-line.svg");
+  }
+
+  .design-system-icon-flag-fill::before,
+  .design-system-icon-flag-fill::after {
+    background-image: url("../icons/business/flag-fill.svg");
+  }
+
+  .design-system-icon-flag-line::before,
+  .design-system-icon-flag-line::after {
+    background-image: url("../icons/business/flag-line.svg");
+  }
+
+  .design-system-icon-global-fill::before,
+  .design-system-icon-global-fill::after {
+    background-image: url("../icons/business/global-fill.svg");
+  }
+
+  .design-system-icon-global-line::before,
+  .design-system-icon-global-line::after {
+    background-image: url("../icons/business/global-line.svg");
+  }
+
+  .design-system-icon-line-chart-fill::before,
+  .design-system-icon-line-chart-fill::after {
+    background-image: url("../icons/business/line-chart-fill.svg");
+  }
+
+  .design-system-icon-line-chart-line::before,
+  .design-system-icon-line-chart-line::after {
+    background-image: url("../icons/business/line-chart-line.svg");
+  }
+
+  .design-system-icon-links-fill::before,
+  .design-system-icon-links-fill::after {
+    background-image: url("../icons/business/links-fill.svg");
+  }
+
+  .design-system-icon-links-line::before,
+  .design-system-icon-links-line::after {
+    background-image: url("../icons/business/links-line.svg");
+  }
+
+  .design-system-icon-mail-fill::before,
+  .design-system-icon-mail-fill::after {
+    background-image: url("../icons/business/mail-fill.svg");
+  }
+
+  .design-system-icon-mail-line::before,
+  .design-system-icon-mail-line::after {
+    background-image: url("../icons/business/mail-line.svg");
+  }
+
+  .design-system-icon-mail-open-fill::before,
+  .design-system-icon-mail-open-fill::after {
+    background-image: url("../icons/business/mail-open-fill.svg");
+  }
+
+  .design-system-icon-mail-open-line::before,
+  .design-system-icon-mail-open-line::after {
+    background-image: url("../icons/business/mail-open-line.svg");
+  }
+
+  .design-system-icon-medal-fill::before,
+  .design-system-icon-medal-fill::after {
+    background-image: url("../icons/business/medal-fill.svg");
+  }
+
+  .design-system-icon-medal-line::before,
+  .design-system-icon-medal-line::after {
+    background-image: url("../icons/business/medal-line.svg");
+  }
+
+  .design-system-icon-pie-chart-2-fill::before,
+  .design-system-icon-pie-chart-2-fill::after {
+    background-image: url("../icons/business/pie-chart-2-fill.svg");
+  }
+
+  .design-system-icon-pie-chart-2-line::before,
+  .design-system-icon-pie-chart-2-line::after {
+    background-image: url("../icons/business/pie-chart-2-line.svg");
+  }
+
+  .design-system-icon-pie-chart-box-fill::before,
+  .design-system-icon-pie-chart-box-fill::after {
+    background-image: url("../icons/business/pie-chart-box-fill.svg");
+  }
+
+  .design-system-icon-pie-chart-box-line::before,
+  .design-system-icon-pie-chart-box-line::after {
+    background-image: url("../icons/business/pie-chart-box-line.svg");
+  }
+
+  .design-system-icon-printer-fill::before,
+  .design-system-icon-printer-fill::after {
+    background-image: url("../icons/business/printer-fill.svg");
+  }
+
+  .design-system-icon-printer-line::before,
+  .design-system-icon-printer-line::after {
+    background-image: url("../icons/business/printer-line.svg");
+  }
+
+  .design-system-icon-profil-fill::before,
+  .design-system-icon-profil-fill::after {
+    background-image: url("../icons/business/profil-fill.svg");
+  }
+
+  .design-system-icon-profil-line::before,
+  .design-system-icon-profil-line::after {
+    background-image: url("../icons/business/profil-line.svg");
+  }
+
+  .design-system-icon-projector-2-fill::before,
+  .design-system-icon-projector-2-fill::after {
+    background-image: url("../icons/business/projector-2-fill.svg");
+  }
+
+  .design-system-icon-projector-2-line::before,
+  .design-system-icon-projector-2-line::after {
+    background-image: url("../icons/business/projector-2-line.svg");
+  }
+
+  .design-system-icon-send-plane-fill::before,
+  .design-system-icon-send-plane-fill::after {
+    background-image: url("../icons/business/send-plane-fill.svg");
+  }
+
+  .design-system-icon-send-plane-line::before,
+  .design-system-icon-send-plane-line::after {
+    background-image: url("../icons/business/send-plane-line.svg");
+  }
+
+  .design-system-icon-slideshow-fill::before,
+  .design-system-icon-slideshow-fill::after {
+    background-image: url("../icons/business/slideshow-fill.svg");
+  }
+
+  .design-system-icon-slideshow-line::before,
+  .design-system-icon-slideshow-line::after {
+    background-image: url("../icons/business/slideshow-line.svg");
+  }
+
+  .design-system-icon-window-fill::before,
+  .design-system-icon-window-fill::after {
+    background-image: url("../icons/business/window-fill.svg");
+  }
+
+  .design-system-icon-window-line::before,
+  .design-system-icon-window-line::after {
+    background-image: url("../icons/business/window-line.svg");
+  }
+
+  .design-system-fi-attachment-fill::before {
+    background-image: url("../icons/business/attachment-fill.svg");
+  }
+
+  .design-system-fi-attachment-line::before {
+    background-image: url("../icons/business/attachment-line.svg");
+  }
+
+  .design-system-fi-calendar-fill::before {
+    background-image: url("../icons/business/calendar-fill.svg");
+  }
+
+  .design-system-fi-calendar-line::before {
+    background-image: url("../icons/business/calendar-line.svg");
+  }
+
+  .design-system-fi-line-chart-fill::before {
+    background-image: url("../icons/business/line-chart-fill.svg");
+  }
+
+  .design-system-fi-line-chart-line::before {
+    background-image: url("../icons/business/line-chart-line.svg");
+  }
+
+  .design-system-fi-links-fill::before {
+    background-image: url("../icons/business/links-fill.svg");
+  }
+
+  .design-system-fi-mail-fill::before {
+    background-image: url("../icons/business/mail-fill.svg");
+  }
+
+  .design-system-fi-mail-line::before {
+    background-image: url("../icons/business/mail-line.svg");
+  }
+
+  .design-system-fi-printer-fill::before {
+    background-image: url("../icons/business/printer-fill.svg");
+  }
+
+  .design-system-fi-printer-line::before {
+    background-image: url("../icons/business/printer-line.svg");
+  }
+
+  .design-system-icon-chat-2-fill::before,
+  .design-system-icon-chat-2-fill::after {
+    background-image: url("../icons/communication/chat-2-fill.svg");
+  }
+
+  .design-system-icon-chat-2-line::before,
+  .design-system-icon-chat-2-line::after {
+    background-image: url("../icons/communication/chat-2-line.svg");
+  }
+
+  .design-system-icon-chat-3-fill::before,
+  .design-system-icon-chat-3-fill::after {
+    background-image: url("../icons/communication/chat-3-fill.svg");
+  }
+
+  .design-system-icon-chat-3-line::before,
+  .design-system-icon-chat-3-line::after {
+    background-image: url("../icons/communication/chat-3-line.svg");
+  }
+
+  .design-system-icon-chat-check-fill::before,
+  .design-system-icon-chat-check-fill::after {
+    background-image: url("../icons/communication/chat-check-fill.svg");
+  }
+
+  .design-system-icon-chat-check-line::before,
+  .design-system-icon-chat-check-line::after {
+    background-image: url("../icons/communication/chat-check-line.svg");
+  }
+
+  .design-system-icon-chat-delete-fill::before,
+  .design-system-icon-chat-delete-fill::after {
+    background-image: url("../icons/communication/chat-delete-fill.svg");
+  }
+
+  .design-system-icon-chat-delete-line::before,
+  .design-system-icon-chat-delete-line::after {
+    background-image: url("../icons/communication/chat-delete-line.svg");
+  }
+
+  .design-system-icon-chat-poll-fill::before,
+  .design-system-icon-chat-poll-fill::after {
+    background-image: url("../icons/communication/chat-poll-fill.svg");
+  }
+
+  .design-system-icon-chat-poll-line::before,
+  .design-system-icon-chat-poll-line::after {
+    background-image: url("../icons/communication/chat-poll-line.svg");
+  }
+
+  .design-system-icon-discuss-fill::before,
+  .design-system-icon-discuss-fill::after {
+    background-image: url("../icons/communication/discuss-fill.svg");
+  }
+
+  .design-system-icon-discuss-line::before,
+  .design-system-icon-discuss-line::after {
+    background-image: url("../icons/communication/discuss-line.svg");
+  }
+
+  .design-system-icon-feedback-fill::before,
+  .design-system-icon-feedback-fill::after {
+    background-image: url("../icons/communication/feedback-fill.svg");
+  }
+
+  .design-system-icon-feedback-line::before,
+  .design-system-icon-feedback-line::after {
+    background-image: url("../icons/communication/feedback-line.svg");
+  }
+
+  .design-system-icon-message-2-fill::before,
+  .design-system-icon-message-2-fill::after {
+    background-image: url("../icons/communication/message-2-fill.svg");
+  }
+
+  .design-system-icon-message-2-line::before,
+  .design-system-icon-message-2-line::after {
+    background-image: url("../icons/communication/message-2-line.svg");
+  }
+
+  .design-system-icon-question-answer-fill::before,
+  .design-system-icon-question-answer-fill::after {
+    background-image: url("../icons/communication/question-answer-fill.svg");
+  }
+
+  .design-system-icon-question-answer-line::before,
+  .design-system-icon-question-answer-line::after {
+    background-image: url("../icons/communication/question-answer-line.svg");
+  }
+
+  .design-system-icon-questionnaire-fill::before,
+  .design-system-icon-questionnaire-fill::after {
+    background-image: url("../icons/communication/questionnaire-fill.svg");
+  }
+
+  .design-system-icon-questionnaire-line::before,
+  .design-system-icon-questionnaire-line::after {
+    background-image: url("../icons/communication/questionnaire-line.svg");
+  }
+
+  .design-system-icon-video-chat-fill::before,
+  .design-system-icon-video-chat-fill::after {
+    background-image: url("../icons/communication/video-chat-fill.svg");
+  }
+
+  .design-system-icon-video-chat-line::before,
+  .design-system-icon-video-chat-line::after {
+    background-image: url("../icons/communication/video-chat-line.svg");
+  }
+
+  .design-system-icon-ball-pen-fill::before,
+  .design-system-icon-ball-pen-fill::after {
+    background-image: url("../icons/design/ball-pen-fill.svg");
+  }
+
+  .design-system-icon-ball-pen-line::before,
+  .design-system-icon-ball-pen-line::after {
+    background-image: url("../icons/design/ball-pen-line.svg");
+  }
+
+  .design-system-icon-brush-3-fill::before,
+  .design-system-icon-brush-3-fill::after {
+    background-image: url("../icons/design/brush-3-fill.svg");
+  }
+
+  .design-system-icon-brush-3-line::before,
+  .design-system-icon-brush-3-line::after {
+    background-image: url("../icons/design/brush-3-line.svg");
+  }
+
+  .design-system-icon-brush-fill::before,
+  .design-system-icon-brush-fill::after {
+    background-image: url("../icons/design/brush-fill.svg");
+  }
+
+  .design-system-icon-brush-line::before,
+  .design-system-icon-brush-line::after {
+    background-image: url("../icons/design/brush-line.svg");
+  }
+
+  .design-system-icon-contrast-fill::before,
+  .design-system-icon-contrast-fill::after {
+    background-image: url("../icons/design/contrast-fill.svg");
+  }
+
+  .design-system-icon-contrast-line::before,
+  .design-system-icon-contrast-line::after {
+    background-image: url("../icons/design/contrast-line.svg");
+  }
+
+  .design-system-icon-crop-fill::before,
+  .design-system-icon-crop-fill::after {
+    background-image: url("../icons/design/crop-fill.svg");
+  }
+
+  .design-system-icon-crop-line::before,
+  .design-system-icon-crop-line::after {
+    background-image: url("../icons/design/crop-line.svg");
+  }
+
+  .design-system-icon-drag-move-2-fill::before,
+  .design-system-icon-drag-move-2-fill::after {
+    background-image: url("../icons/design/drag-move-2-fill.svg");
+  }
+
+  .design-system-icon-drag-move-2-line::before,
+  .design-system-icon-drag-move-2-line::after {
+    background-image: url("../icons/design/drag-move-2-line.svg");
+  }
+
+  .design-system-icon-drop-fill::before,
+  .design-system-icon-drop-fill::after {
+    background-image: url("../icons/design/drop-fill.svg");
+  }
+
+  .design-system-icon-drop-line::before,
+  .design-system-icon-drop-line::after {
+    background-image: url("../icons/design/drop-line.svg");
+  }
+
+  .design-system-icon-edit-box-fill::before,
+  .design-system-icon-edit-box-fill::after {
+    background-image: url("../icons/design/edit-box-fill.svg");
+  }
+
+  .design-system-icon-edit-box-line::before,
+  .design-system-icon-edit-box-line::after {
+    background-image: url("../icons/design/edit-box-line.svg");
+  }
+
+  .design-system-icon-edit-fill::before,
+  .design-system-icon-edit-fill::after {
+    background-image: url("../icons/design/edit-fill.svg");
+  }
+
+  .design-system-icon-edit-line::before,
+  .design-system-icon-edit-line::after {
+    background-image: url("../icons/design/edit-line.svg");
+  }
+
+  .design-system-icon-ink-bottle-fill::before,
+  .design-system-icon-ink-bottle-fill::after {
+    background-image: url("../icons/design/ink-bottle-fill.svg");
+  }
+
+  .design-system-icon-ink-bottle-line::before,
+  .design-system-icon-ink-bottle-line::after {
+    background-image: url("../icons/design/ink-bottle-line.svg");
+  }
+
+  .design-system-icon-layout-grid-fill::before,
+  .design-system-icon-layout-grid-fill::after {
+    background-image: url("../icons/design/layout-grid-fill.svg");
+  }
+
+  .design-system-icon-layout-grid-line::before,
+  .design-system-icon-layout-grid-line::after {
+    background-image: url("../icons/design/layout-grid-line.svg");
+  }
+
+  .design-system-icon-mark-pen-fill::before,
+  .design-system-icon-mark-pen-fill::after {
+    background-image: url("../icons/design/mark-pen-fill.svg");
+  }
+
+  .design-system-icon-mark-pen-line::before,
+  .design-system-icon-mark-pen-line::after {
+    background-image: url("../icons/design/mark-pen-line.svg");
+  }
+
+  .design-system-icon-paint-brush-fill::before,
+  .design-system-icon-paint-brush-fill::after {
+    background-image: url("../icons/design/paint-brush-fill.svg");
+  }
+
+  .design-system-icon-paint-brush-line::before,
+  .design-system-icon-paint-brush-line::after {
+    background-image: url("../icons/design/paint-brush-line.svg");
+  }
+
+  .design-system-icon-paint-fill::before,
+  .design-system-icon-paint-fill::after {
+    background-image: url("../icons/design/paint-fill.svg");
+  }
+
+  .design-system-icon-paint-line::before,
+  .design-system-icon-paint-line::after {
+    background-image: url("../icons/design/paint-line.svg");
+  }
+
+  .design-system-icon-palette-fill::before,
+  .design-system-icon-palette-fill::after {
+    background-image: url("../icons/design/palette-fill.svg");
+  }
+
+  .design-system-icon-palette-line::before,
+  .design-system-icon-palette-line::after {
+    background-image: url("../icons/design/palette-line.svg");
+  }
+
+  .design-system-icon-pantone-fill::before,
+  .design-system-icon-pantone-fill::after {
+    background-image: url("../icons/design/pantone-fill.svg");
+  }
+
+  .design-system-icon-pantone-line::before,
+  .design-system-icon-pantone-line::after {
+    background-image: url("../icons/design/pantone-line.svg");
+  }
+
+  .design-system-icon-pen-nib-fill::before,
+  .design-system-icon-pen-nib-fill::after {
+    background-image: url("../icons/design/pen-nib-fill.svg");
+  }
+
+  .design-system-icon-pen-nib-line::before,
+  .design-system-icon-pen-nib-line::after {
+    background-image: url("../icons/design/pen-nib-line.svg");
+  }
+
+  .design-system-icon-pencil-fill::before,
+  .design-system-icon-pencil-fill::after {
+    background-image: url("../icons/design/pencil-fill.svg");
+  }
+
+  .design-system-icon-pencil-line::before,
+  .design-system-icon-pencil-line::after {
+    background-image: url("../icons/design/pencil-line.svg");
+  }
+
+  .design-system-icon-pencil-ruler-fill::before,
+  .design-system-icon-pencil-ruler-fill::after {
+    background-image: url("../icons/design/pencil-ruler-fill.svg");
+  }
+
+  .design-system-icon-pencil-ruler-line::before,
+  .design-system-icon-pencil-ruler-line::after {
+    background-image: url("../icons/design/pencil-ruler-line.svg");
+  }
+
+  .design-system-icon-sip-fill::before,
+  .design-system-icon-sip-fill::after {
+    background-image: url("../icons/design/sip-fill.svg");
+  }
+
+  .design-system-icon-sip-line::before,
+  .design-system-icon-sip-line::after {
+    background-image: url("../icons/design/sip-line.svg");
+  }
+
+  .design-system-icon-table-fill::before,
+  .design-system-icon-table-fill::after {
+    background-image: url("../icons/design/table-fill.svg");
+  }
+
+  .design-system-icon-table-line::before,
+  .design-system-icon-table-line::after {
+    background-image: url("../icons/design/table-line.svg");
+  }
+
+  .design-system-fi-edit-fill::before {
+    background-image: url("../icons/design/edit-fill.svg");
+  }
+
+  .design-system-fi-edit-line::before {
+    background-image: url("../icons/design/edit-line.svg");
+  }
+
+  .design-system-icon-bug-fill::before,
+  .design-system-icon-bug-fill::after {
+    background-image: url("../icons/development/bug-fill.svg");
+  }
+
+  .design-system-icon-bug-line::before,
+  .design-system-icon-bug-line::after {
+    background-image: url("../icons/development/bug-line.svg");
+  }
+
+  .design-system-icon-code-box-fill::before,
+  .design-system-icon-code-box-fill::after {
+    background-image: url("../icons/development/code-box-fill.svg");
+  }
+
+  .design-system-icon-code-box-line::before,
+  .design-system-icon-code-box-line::after {
+    background-image: url("../icons/development/code-box-line.svg");
+  }
+
+  .design-system-icon-code-s-slash-line::before,
+  .design-system-icon-code-s-slash-line::after {
+    background-image: url("../icons/development/code-s-slash-line.svg");
+  }
+
+  .design-system-icon-cursor-fill::before,
+  .design-system-icon-cursor-fill::after {
+    background-image: url("../icons/development/cursor-fill.svg");
+  }
+
+  .design-system-icon-cursor-line::before,
+  .design-system-icon-cursor-line::after {
+    background-image: url("../icons/development/cursor-line.svg");
+  }
+
+  .design-system-icon-git-branch-fill::before,
+  .design-system-icon-git-branch-fill::after {
+    background-image: url("../icons/development/git-branch-fill.svg");
+  }
+
+  .design-system-icon-git-branch-line::before,
+  .design-system-icon-git-branch-line::after {
+    background-image: url("../icons/development/git-branch-line.svg");
+  }
+
+  .design-system-icon-git-commit-fill::before,
+  .design-system-icon-git-commit-fill::after {
+    background-image: url("../icons/development/git-commit-fill.svg");
+  }
+
+  .design-system-icon-git-commit-line::before,
+  .design-system-icon-git-commit-line::after {
+    background-image: url("../icons/development/git-commit-line.svg");
+  }
+
+  .design-system-icon-git-merge-fill::before,
+  .design-system-icon-git-merge-fill::after {
+    background-image: url("../icons/development/git-merge-fill.svg");
+  }
+
+  .design-system-icon-git-merge-line::before,
+  .design-system-icon-git-merge-line::after {
+    background-image: url("../icons/development/git-merge-line.svg");
+  }
+
+  .design-system-icon-git-pull-request-fill::before,
+  .design-system-icon-git-pull-request-fill::after {
+    background-image: url("../icons/development/git-pull-request-fill.svg");
+  }
+
+  .design-system-icon-git-pull-request-line::before,
+  .design-system-icon-git-pull-request-line::after {
+    background-image: url("../icons/development/git-pull-request-line.svg");
+  }
+
+  .design-system-icon-git-repository-commits-fill::before,
+  .design-system-icon-git-repository-commits-fill::after {
+    background-image: url("../icons/development/git-repository-commits-fill.svg");
+  }
+
+  .design-system-icon-git-repository-commits-line::before,
+  .design-system-icon-git-repository-commits-line::after {
+    background-image: url("../icons/development/git-repository-commits-line.svg");
+  }
+
+  .design-system-icon-git-repository-fill::before,
+  .design-system-icon-git-repository-fill::after {
+    background-image: url("../icons/development/git-repository-fill.svg");
+  }
+
+  .design-system-icon-git-repository-line::before,
+  .design-system-icon-git-repository-line::after {
+    background-image: url("../icons/development/git-repository-line.svg");
+  }
+
+  .design-system-icon-git-repository-private-fill::before,
+  .design-system-icon-git-repository-private-fill::after {
+    background-image: url("../icons/development/git-repository-private-fill.svg");
+  }
+
+  .design-system-icon-git-repository-private-line::before,
+  .design-system-icon-git-repository-private-line::after {
+    background-image: url("../icons/development/git-repository-private-line.svg");
+  }
+
+  .design-system-icon-terminal-box-fill::before,
+  .design-system-icon-terminal-box-fill::after {
+    background-image: url("../icons/development/terminal-box-fill.svg");
+  }
+
+  .design-system-icon-terminal-box-line::before,
+  .design-system-icon-terminal-box-line::after {
+    background-image: url("../icons/development/terminal-box-line.svg");
+  }
+
+  .design-system-icon-terminal-line::before,
+  .design-system-icon-terminal-line::after {
+    background-image: url("../icons/development/terminal-line.svg");
+  }
+
+  .design-system-icon-terminal-window-fill::before,
+  .design-system-icon-terminal-window-fill::after {
+    background-image: url("../icons/development/terminal-window-fill.svg");
+  }
+
+  .design-system-icon-terminal-window-line::before,
+  .design-system-icon-terminal-window-line::after {
+    background-image: url("../icons/development/terminal-window-line.svg");
+  }
+
+  .design-system-icon-bluetooth-fill::before,
+  .design-system-icon-bluetooth-fill::after {
+    background-image: url("../icons/device/bluetooth-fill.svg");
+  }
+
+  .design-system-icon-bluetooth-line::before,
+  .design-system-icon-bluetooth-line::after {
+    background-image: url("../icons/device/bluetooth-line.svg");
+  }
+
+  .design-system-icon-computer-fill::before,
+  .design-system-icon-computer-fill::after {
+    background-image: url("../icons/device/computer-fill.svg");
+  }
+
+  .design-system-icon-computer-line::before,
+  .design-system-icon-computer-line::after {
+    background-image: url("../icons/device/computer-line.svg");
+  }
+
+  .design-system-icon-dashboard-3-fill::before,
+  .design-system-icon-dashboard-3-fill::after {
+    background-image: url("../icons/device/dashboard-3-fill.svg");
+  }
+
+  .design-system-icon-dashboard-3-line::before,
+  .design-system-icon-dashboard-3-line::after {
+    background-image: url("../icons/device/dashboard-3-line.svg");
+  }
+
+  .design-system-icon-database-fill::before,
+  .design-system-icon-database-fill::after {
+    background-image: url("../icons/device/database-fill.svg");
+  }
+
+  .design-system-icon-database-line::before,
+  .design-system-icon-database-line::after {
+    background-image: url("../icons/device/database-line.svg");
+  }
+
+  .design-system-icon-device-fill::before,
+  .design-system-icon-device-fill::after {
+    background-image: url("../icons/device/device-fill.svg");
+  }
+
+  .design-system-icon-device-line::before,
+  .design-system-icon-device-line::after {
+    background-image: url("../icons/device/device-line.svg");
+  }
+
+  .design-system-icon-hard-drive-2-fill::before,
+  .design-system-icon-hard-drive-2-fill::after {
+    background-image: url("../icons/device/hard-drive-2-fill.svg");
+  }
+
+  .design-system-icon-hard-drive-2-line::before,
+  .design-system-icon-hard-drive-2-line::after {
+    background-image: url("../icons/device/hard-drive-2-line.svg");
+  }
+
+  .design-system-icon-mac-fill::before,
+  .design-system-icon-mac-fill::after {
+    background-image: url("../icons/device/mac-fill.svg");
+  }
+
+  .design-system-icon-mac-line::before,
+  .design-system-icon-mac-line::after {
+    background-image: url("../icons/device/mac-line.svg");
+  }
+
+  .design-system-icon-phone-fill::before,
+  .design-system-icon-phone-fill::after {
+    background-image: url("../icons/device/phone-fill.svg");
+  }
+
+  .design-system-icon-phone-line::before,
+  .design-system-icon-phone-line::after {
+    background-image: url("../icons/device/phone-line.svg");
+  }
+
+  .design-system-icon-qr-code-fill::before,
+  .design-system-icon-qr-code-fill::after {
+    background-image: url("../icons/device/qr-code-fill.svg");
+  }
+
+  .design-system-icon-qr-code-line::before,
+  .design-system-icon-qr-code-line::after {
+    background-image: url("../icons/device/qr-code-line.svg");
+  }
+
+  .design-system-icon-rss-fill::before,
+  .design-system-icon-rss-fill::after {
+    background-image: url("../icons/device/rss-fill.svg");
+  }
+
+  .design-system-icon-rss-line::before,
+  .design-system-icon-rss-line::after {
+    background-image: url("../icons/device/rss-line.svg");
+  }
+
+  .design-system-icon-save-3-fill::before,
+  .design-system-icon-save-3-fill::after {
+    background-image: url("../icons/device/save-3-fill.svg");
+  }
+
+  .design-system-icon-save-3-line::before,
+  .design-system-icon-save-3-line::after {
+    background-image: url("../icons/device/save-3-line.svg");
+  }
+
+  .design-system-icon-save-fill::before,
+  .design-system-icon-save-fill::after {
+    background-image: url("../icons/device/save-fill.svg");
+  }
+
+  .design-system-icon-save-line::before,
+  .design-system-icon-save-line::after {
+    background-image: url("../icons/device/save-line.svg");
+  }
+
+  .design-system-icon-server-fill::before,
+  .design-system-icon-server-fill::after {
+    background-image: url("../icons/device/server-fill.svg");
+  }
+
+  .design-system-icon-server-line::before,
+  .design-system-icon-server-line::after {
+    background-image: url("../icons/device/server-line.svg");
+  }
+
+  .design-system-icon-smartphone-fill::before,
+  .design-system-icon-smartphone-fill::after {
+    background-image: url("../icons/device/smartphone-fill.svg");
+  }
+
+  .design-system-icon-smartphone-line::before,
+  .design-system-icon-smartphone-line::after {
+    background-image: url("../icons/device/smartphone-line.svg");
+  }
+
+  .design-system-icon-tablet-fill::before,
+  .design-system-icon-tablet-fill::after {
+    background-image: url("../icons/device/tablet-fill.svg");
+  }
+
+  .design-system-icon-tablet-line::before,
+  .design-system-icon-tablet-line::after {
+    background-image: url("../icons/device/tablet-line.svg");
+  }
+
+  .design-system-icon-tv-fill::before,
+  .design-system-icon-tv-fill::after {
+    background-image: url("../icons/device/tv-fill.svg");
+  }
+
+  .design-system-icon-tv-line::before,
+  .design-system-icon-tv-line::after {
+    background-image: url("../icons/device/tv-line.svg");
+  }
+
+  .design-system-icon-wifi-fill::before,
+  .design-system-icon-wifi-fill::after {
+    background-image: url("../icons/device/wifi-fill.svg");
+  }
+
+  .design-system-icon-wifi-line::before,
+  .design-system-icon-wifi-line::after {
+    background-image: url("../icons/device/wifi-line.svg");
+  }
+
+  .design-system-fi-phone-fill::before {
+    background-image: url("../icons/device/phone-fill.svg");
+  }
+
+  .design-system-fi-phone-line::before {
+    background-image: url("../icons/device/phone-line.svg");
+  }
+
+  .design-system-fi-rss-fill::before {
+    background-image: url("../icons/device/rss-fill.svg");
+  }
+
+  .design-system-fi-rss-line::before {
+    background-image: url("../icons/device/rss-line.svg");
+  }
+
+  .design-system-fi-save-fill::before {
+    background-image: url("../icons/device/save-fill.svg");
+  }
+
+  .design-system-fi-save-line::before {
+    background-image: url("../icons/device/save-line.svg");
+  }
+
+  .design-system-icon-article-fill::before,
+  .design-system-icon-article-fill::after {
+    background-image: url("../icons/document/article-fill.svg");
+  }
+
+  .design-system-icon-article-line::before,
+  .design-system-icon-article-line::after {
+    background-image: url("../icons/document/article-line.svg");
+  }
+
+  .design-system-icon-book-2-fill::before,
+  .design-system-icon-book-2-fill::after {
+    background-image: url("../icons/document/book-2-fill.svg");
+  }
+
+  .design-system-icon-book-2-line::before,
+  .design-system-icon-book-2-line::after {
+    background-image: url("../icons/document/book-2-line.svg");
+  }
+
+  .design-system-icon-booklet-fill::before,
+  .design-system-icon-booklet-fill::after {
+    background-image: url("../icons/document/booklet-fill.svg");
+  }
+
+  .design-system-icon-booklet-line::before,
+  .design-system-icon-booklet-line::after {
+    background-image: url("../icons/document/booklet-line.svg");
+  }
+
+  .design-system-icon-clipboard-fill::before,
+  .design-system-icon-clipboard-fill::after {
+    background-image: url("../icons/document/clipboard-fill.svg");
+  }
+
+  .design-system-icon-clipboard-line::before,
+  .design-system-icon-clipboard-line::after {
+    background-image: url("../icons/document/clipboard-line.svg");
+  }
+
+  .design-system-icon-draft-fill::before,
+  .design-system-icon-draft-fill::after {
+    background-image: url("../icons/document/draft-fill.svg");
+  }
+
+  .design-system-icon-draft-line::before,
+  .design-system-icon-draft-line::after {
+    background-image: url("../icons/document/draft-line.svg");
+  }
+
+  .design-system-icon-file-add-fill::before,
+  .design-system-icon-file-add-fill::after {
+    background-image: url("../icons/document/file-add-fill.svg");
+  }
+
+  .design-system-icon-file-add-line::before,
+  .design-system-icon-file-add-line::after {
+    background-image: url("../icons/document/file-add-line.svg");
+  }
+
+  .design-system-icon-file-download-fill::before,
+  .design-system-icon-file-download-fill::after {
+    background-image: url("../icons/document/file-download-fill.svg");
+  }
+
+  .design-system-icon-file-download-line::before,
+  .design-system-icon-file-download-line::after {
+    background-image: url("../icons/document/file-download-line.svg");
+  }
+
+  .design-system-icon-file-fill::before,
+  .design-system-icon-file-fill::after {
+    background-image: url("../icons/document/file-fill.svg");
+  }
+
+  .design-system-icon-file-line::before,
+  .design-system-icon-file-line::after {
+    background-image: url("../icons/document/file-line.svg");
+  }
+
+  .design-system-icon-file-pdf-fill::before,
+  .design-system-icon-file-pdf-fill::after {
+    background-image: url("../icons/document/file-pdf-fill.svg");
+  }
+
+  .design-system-icon-file-pdf-line::before,
+  .design-system-icon-file-pdf-line::after {
+    background-image: url("../icons/document/file-pdf-line.svg");
+  }
+
+  .design-system-icon-file-text-fill::before,
+  .design-system-icon-file-text-fill::after {
+    background-image: url("../icons/document/file-text-fill.svg");
+  }
+
+  .design-system-icon-file-text-line::before,
+  .design-system-icon-file-text-line::after {
+    background-image: url("../icons/document/file-text-line.svg");
+  }
+
+  .design-system-icon-folder-2-fill::before,
+  .design-system-icon-folder-2-fill::after {
+    background-image: url("../icons/document/folder-2-fill.svg");
+  }
+
+  .design-system-icon-folder-2-line::before,
+  .design-system-icon-folder-2-line::after {
+    background-image: url("../icons/document/folder-2-line.svg");
+  }
+
+  .design-system-icon-newspaper-fill::before,
+  .design-system-icon-newspaper-fill::after {
+    background-image: url("../icons/document/newspaper-fill.svg");
+  }
+
+  .design-system-icon-newspaper-line::before,
+  .design-system-icon-newspaper-line::after {
+    background-image: url("../icons/document/newspaper-line.svg");
+  }
+
+  .design-system-icon-survey-fill::before,
+  .design-system-icon-survey-fill::after {
+    background-image: url("../icons/document/survey-fill.svg");
+  }
+
+  .design-system-icon-survey-line::before,
+  .design-system-icon-survey-line::after {
+    background-image: url("../icons/document/survey-line.svg");
+  }
+
+  .design-system-icon-todo-fill::before,
+  .design-system-icon-todo-fill::after {
+    background-image: url("../icons/document/todo-fill.svg");
+  }
+
+  .design-system-icon-todo-line::before,
+  .design-system-icon-todo-line::after {
+    background-image: url("../icons/document/todo-line.svg");
+  }
+
+  .design-system-fi-file-download-fill::before {
+    background-image: url("../icons/document/file-download-fill.svg");
+  }
+
+  .design-system-fi-file-download-line::before {
+    background-image: url("../icons/document/file-download-line.svg");
+  }
+
+  .design-system-fi-file-fill::before {
+    background-image: url("../icons/document/file-fill.svg");
+  }
+
+  .design-system-fi-file-line::before {
+    background-image: url("../icons/document/file-line.svg");
+  }
+
+  .design-system-fi-file-pdf-fill::before {
+    background-image: url("../icons/document/file-pdf-fill.svg");
+  }
+
+  .design-system-fi-file-pdf-line::before {
+    background-image: url("../icons/document/file-pdf-line.svg");
+  }
+
+  .design-system-icon-code-view::before,
+  .design-system-icon-code-view::after {
+    background-image: url("../icons/editor/code-view.svg");
+  }
+
+  .design-system-icon-font-size::before,
+  .design-system-icon-font-size::after {
+    background-image: url("../icons/editor/font-size.svg");
+  }
+
+  .design-system-icon-bold::before,
+  .design-system-icon-bold::after {
+    background-image: url("../icons/editor/design-system--bold.svg");
+  }
+
+  .design-system-icon-highlight::before,
+  .design-system-icon-highlight::after {
+    background-image: url("../icons/editor/design-system--highlight.svg");
+  }
+
+  .design-system-icon-quote-fill::before,
+  .design-system-icon-quote-fill::after {
+    background-image: url("../icons/editor/design-system--quote-fill.svg");
+  }
+
+  .design-system-icon-quote-line::before,
+  .design-system-icon-quote-line::after {
+    background-image: url("../icons/editor/design-system--quote-line.svg");
+  }
+
+  .design-system-icon-h-1::before,
+  .design-system-icon-h-1::after {
+    background-image: url("../icons/editor/h-1.svg");
+  }
+
+  .design-system-icon-h-2::before,
+  .design-system-icon-h-2::after {
+    background-image: url("../icons/editor/h-2.svg");
+  }
+
+  .design-system-icon-h-3::before,
+  .design-system-icon-h-3::after {
+    background-image: url("../icons/editor/h-3.svg");
+  }
+
+  .design-system-icon-h-4::before,
+  .design-system-icon-h-4::after {
+    background-image: url("../icons/editor/h-4.svg");
+  }
+
+  .design-system-icon-h-5::before,
+  .design-system-icon-h-5::after {
+    background-image: url("../icons/editor/h-5.svg");
+  }
+
+  .design-system-icon-h-6::before,
+  .design-system-icon-h-6::after {
+    background-image: url("../icons/editor/h-6.svg");
+  }
+
+  .design-system-icon-hashtag::before,
+  .design-system-icon-hashtag::after {
+    background-image: url("../icons/editor/hashtag.svg");
+  }
+
+  .design-system-icon-italic::before,
+  .design-system-icon-italic::after {
+    background-image: url("../icons/editor/italic.svg");
+  }
+
+  .design-system-icon-link-unlink::before,
+  .design-system-icon-link-unlink::after {
+    background-image: url("../icons/editor/link-unlink.svg");
+  }
+
+  .design-system-icon-link::before,
+  .design-system-icon-link::after {
+    background-image: url("../icons/editor/link.svg");
+  }
+
+  .design-system-icon-list-ordered::before,
+  .design-system-icon-list-ordered::after {
+    background-image: url("../icons/editor/list-ordered.svg");
+  }
+
+  .design-system-icon-list-unordered::before,
+  .design-system-icon-list-unordered::after {
+    background-image: url("../icons/editor/list-unordered.svg");
+  }
+
+  .design-system-icon-question-mark::before,
+  .design-system-icon-question-mark::after {
+    background-image: url("../icons/editor/question-mark.svg");
+  }
+
+  .design-system-icon-separator::before,
+  .design-system-icon-separator::after {
+    background-image: url("../icons/editor/separator.svg");
+  }
+
+  .design-system-icon-space::before,
+  .design-system-icon-space::after {
+    background-image: url("../icons/editor/space.svg");
+  }
+
+  .design-system-icon-subscript::before,
+  .design-system-icon-subscript::after {
+    background-image: url("../icons/editor/subscript.svg");
+  }
+
+  .design-system-icon-superscript::before,
+  .design-system-icon-superscript::after {
+    background-image: url("../icons/editor/superscript.svg");
+  }
+
+  .design-system-icon-table-2::before,
+  .design-system-icon-table-2::after {
+    background-image: url("../icons/editor/table-2.svg");
+  }
+
+  .design-system-icon-translate-2::before,
+  .design-system-icon-translate-2::after {
+    background-image: url("../icons/editor/translate-2.svg");
+  }
+
+  .design-system-fi-font-size::before {
+    background-image: url("../icons/editor/font-size.svg");
+  }
+
+  .design-system-fi-bold::before {
+    background-image: url("../icons/editor/design-system--bold.svg");
+  }
+
+  .design-system-fi-highlight::before {
+    background-image: url("../icons/editor/design-system--highlight.svg");
+  }
+
+  .design-system-fi-italic::before {
+    background-image: url("../icons/editor/italic.svg");
+  }
+
+  .design-system-fi-link-unlink::before {
+    background-image: url("../icons/editor/link-unlink.svg");
+  }
+
+  .design-system-fi-list-ordered::before {
+    background-image: url("../icons/editor/list-ordered.svg");
+  }
+
+  .design-system-fi-list-unordered::before {
+    background-image: url("../icons/editor/list-unordered.svg");
+  }
+
+  .design-system-icon-bank-card-fill::before,
+  .design-system-icon-bank-card-fill::after {
+    background-image: url("../icons/finance/bank-card-fill.svg");
+  }
+
+  .design-system-icon-bank-card-line::before,
+  .design-system-icon-bank-card-line::after {
+    background-image: url("../icons/finance/bank-card-line.svg");
+  }
+
+  .design-system-icon-coin-fill::before,
+  .design-system-icon-coin-fill::after {
+    background-image: url("../icons/finance/coin-fill.svg");
+  }
+
+  .design-system-icon-gift-fill::before,
+  .design-system-icon-gift-fill::after {
+    background-image: url("../icons/finance/gift-fill.svg");
+  }
+
+  .design-system-icon-gift-line::before,
+  .design-system-icon-gift-line::after {
+    background-image: url("../icons/finance/gift-line.svg");
+  }
+
+  .design-system-icon-money-euro-box-fill::before,
+  .design-system-icon-money-euro-box-fill::after {
+    background-image: url("../icons/finance/money-euro-box-fill.svg");
+  }
+
+  .design-system-icon-money-euro-box-line::before,
+  .design-system-icon-money-euro-box-line::after {
+    background-image: url("../icons/finance/money-euro-box-line.svg");
+  }
+
+  .design-system-icon-money-euro-circle-fill::before,
+  .design-system-icon-money-euro-circle-fill::after {
+    background-image: url("../icons/finance/money-euro-circle-fill.svg");
+  }
+
+  .design-system-icon-money-euro-circle-line::before,
+  .design-system-icon-money-euro-circle-line::after {
+    background-image: url("../icons/finance/money-euro-circle-line.svg");
+  }
+
+  .design-system-icon-secure-payment-fill::before,
+  .design-system-icon-secure-payment-fill::after {
+    background-image: url("../icons/finance/secure-payment-fill.svg");
+  }
+
+  .design-system-icon-secure-payment-line::before,
+  .design-system-icon-secure-payment-line::after {
+    background-image: url("../icons/finance/secure-payment-line.svg");
+  }
+
+  .design-system-icon-shopping-bag-fill::before,
+  .design-system-icon-shopping-bag-fill::after {
+    background-image: url("../icons/finance/shopping-bag-fill.svg");
+  }
+
+  .design-system-icon-shopping-bag-line::before,
+  .design-system-icon-shopping-bag-line::after {
+    background-image: url("../icons/finance/shopping-bag-line.svg");
+  }
+
+  .design-system-icon-shopping-cart-2-fill::before,
+  .design-system-icon-shopping-cart-2-fill::after {
+    background-image: url("../icons/finance/shopping-cart-2-fill.svg");
+  }
+
+  .design-system-icon-shopping-cart-2-line::before,
+  .design-system-icon-shopping-cart-2-line::after {
+    background-image: url("../icons/finance/shopping-cart-2-line.svg");
+  }
+
+  .design-system-icon-trophy-fill::before,
+  .design-system-icon-trophy-fill::after {
+    background-image: url("../icons/finance/trophy-fill.svg");
+  }
+
+  .design-system-icon-trophy-line::before,
+  .design-system-icon-trophy-line::after {
+    background-image: url("../icons/finance/trophy-line.svg");
+  }
+
+  .design-system-icon-capsule-fill::before,
+  .design-system-icon-capsule-fill::after {
+    background-image: url("../icons/health/capsule-fill.svg");
+  }
+
+  .design-system-icon-capsule-line::before,
+  .design-system-icon-capsule-line::after {
+    background-image: url("../icons/health/capsule-line.svg");
+  }
+
+  .design-system-icon-dislike-fill::before,
+  .design-system-icon-dislike-fill::after {
+    background-image: url("../icons/health/dislike-fill.svg");
+  }
+
+  .design-system-icon-dislike-line::before,
+  .design-system-icon-dislike-line::after {
+    background-image: url("../icons/health/dislike-line.svg");
+  }
+
+  .design-system-icon-dossier-fill::before,
+  .design-system-icon-dossier-fill::after {
+    background-image: url("../icons/health/dossier-fill.svg");
+  }
+
+  .design-system-icon-dossier-line::before,
+  .design-system-icon-dossier-line::after {
+    background-image: url("../icons/health/dossier-line.svg");
+  }
+
+  .design-system-icon-first-aid-kit-fill::before,
+  .design-system-icon-first-aid-kit-fill::after {
+    background-image: url("../icons/health/first-aid-kit-fill.svg");
+  }
+
+  .design-system-icon-first-aid-kit-line::before,
+  .design-system-icon-first-aid-kit-line::after {
+    background-image: url("../icons/health/first-aid-kit-line.svg");
+  }
+
+  .design-system-icon-hand-sanitizer-fill::before,
+  .design-system-icon-hand-sanitizer-fill::after {
+    background-image: url("../icons/health/hand-sanitizer-fill.svg");
+  }
+
+  .design-system-icon-hand-sanitizer-line::before,
+  .design-system-icon-hand-sanitizer-line::after {
+    background-image: url("../icons/health/hand-sanitizer-line.svg");
+  }
+
+  .design-system-icon-health-book-fill::before,
+  .design-system-icon-health-book-fill::after {
+    background-image: url("../icons/health/health-book-fill.svg");
+  }
+
+  .design-system-icon-health-book-line::before,
+  .design-system-icon-health-book-line::after {
+    background-image: url("../icons/health/health-book-line.svg");
+  }
+
+  .design-system-icon-heart-fill::before,
+  .design-system-icon-heart-fill::after {
+    background-image: url("../icons/health/heart-fill.svg");
+  }
+
+  .design-system-icon-heart-line::before,
+  .design-system-icon-heart-line::after {
+    background-image: url("../icons/health/heart-line.svg");
+  }
+
+  .design-system-icon-heart-pulse-fill::before,
+  .design-system-icon-heart-pulse-fill::after {
+    background-image: url("../icons/health/heart-pulse-fill.svg");
+  }
+
+  .design-system-icon-heart-pulse-line::before,
+  .design-system-icon-heart-pulse-line::after {
+    background-image: url("../icons/health/heart-pulse-line.svg");
+  }
+
+  .design-system-icon-lungs-fill::before,
+  .design-system-icon-lungs-fill::after {
+    background-image: url("../icons/health/lungs-fill.svg");
+  }
+
+  .design-system-icon-lungs-line::before,
+  .design-system-icon-lungs-line::after {
+    background-image: url("../icons/health/lungs-line.svg");
+  }
+
+  .design-system-icon-medicine-bottle-fill::before,
+  .design-system-icon-medicine-bottle-fill::after {
+    background-image: url("../icons/health/medicine-bottle-fill.svg");
+  }
+
+  .design-system-icon-medicine-bottle-line::before,
+  .design-system-icon-medicine-bottle-line::after {
+    background-image: url("../icons/health/medicine-bottle-line.svg");
+  }
+
+  .design-system-icon-mental-health-fill::before,
+  .design-system-icon-mental-health-fill::after {
+    background-image: url("../icons/health/mental-health-fill.svg");
+  }
+
+  .design-system-icon-mental-health-line::before,
+  .design-system-icon-mental-health-line::after {
+    background-image: url("../icons/health/mental-health-line.svg");
+  }
+
+  .design-system-icon-microscope-fill::before,
+  .design-system-icon-microscope-fill::after {
+    background-image: url("../icons/health/microscope-fill.svg");
+  }
+
+  .design-system-icon-microscope-line::before,
+  .design-system-icon-microscope-line::after {
+    background-image: url("../icons/health/microscope-line.svg");
+  }
+
+  .design-system-icon-psychotherapy-fill::before,
+  .design-system-icon-psychotherapy-fill::after {
+    background-image: url("../icons/health/psychotherapy-fill.svg");
+  }
+
+  .design-system-icon-psychotherapy-line::before,
+  .design-system-icon-psychotherapy-line::after {
+    background-image: url("../icons/health/psychotherapy-line.svg");
+  }
+
+  .design-system-icon-pulse-line::before,
+  .design-system-icon-pulse-line::after {
+    background-image: url("../icons/health/pulse-line.svg");
+  }
+
+  .design-system-icon-stethoscope-fill::before,
+  .design-system-icon-stethoscope-fill::after {
+    background-image: url("../icons/health/stethoscope-fill.svg");
+  }
+
+  .design-system-icon-stethoscope-line::before,
+  .design-system-icon-stethoscope-line::after {
+    background-image: url("../icons/health/stethoscope-line.svg");
+  }
+
+  .design-system-icon-surgical-mask-fill::before,
+  .design-system-icon-surgical-mask-fill::after {
+    background-image: url("../icons/health/surgical-mask-fill.svg");
+  }
+
+  .design-system-icon-surgical-mask-line::before,
+  .design-system-icon-surgical-mask-line::after {
+    background-image: url("../icons/health/surgical-mask-line.svg");
+  }
+
+  .design-system-icon-syringe-fill::before,
+  .design-system-icon-syringe-fill::after {
+    background-image: url("../icons/health/syringe-fill.svg");
+  }
+
+  .design-system-icon-syringe-line::before,
+  .design-system-icon-syringe-line::after {
+    background-image: url("../icons/health/syringe-line.svg");
+  }
+
+  .design-system-icon-test-tube-fill::before,
+  .design-system-icon-test-tube-fill::after {
+    background-image: url("../icons/health/test-tube-fill.svg");
+  }
+
+  .design-system-icon-test-tube-line::before,
+  .design-system-icon-test-tube-line::after {
+    background-image: url("../icons/health/test-tube-line.svg");
+  }
+
+  .design-system-icon-thermometer-fill::before,
+  .design-system-icon-thermometer-fill::after {
+    background-image: url("../icons/health/thermometer-fill.svg");
+  }
+
+  .design-system-icon-thermometer-line::before,
+  .design-system-icon-thermometer-line::after {
+    background-image: url("../icons/health/thermometer-line.svg");
+  }
+
+  .design-system-icon-virus-fill::before,
+  .design-system-icon-virus-fill::after {
+    background-image: url("../icons/health/virus-fill.svg");
+  }
+
+  .design-system-icon-virus-line::before,
+  .design-system-icon-virus-line::after {
+    background-image: url("../icons/health/virus-line.svg");
+  }
+
+  .design-system-icon-chrome-fill::before,
+  .design-system-icon-chrome-fill::after {
+    background-image: url("../icons/logo/chrome-fill.svg");
+  }
+
+  .design-system-icon-chrome-line::before,
+  .design-system-icon-chrome-line::after {
+    background-image: url("../icons/logo/chrome-line.svg");
+  }
+
+  .design-system-icon-edge-fill::before,
+  .design-system-icon-edge-fill::after {
+    background-image: url("../icons/logo/edge-fill.svg");
+  }
+
+  .design-system-icon-edge-line::before,
+  .design-system-icon-edge-line::after {
+    background-image: url("../icons/logo/edge-line.svg");
+  }
+
+  .design-system-icon-facebook-circle-fill::before,
+  .design-system-icon-facebook-circle-fill::after {
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .design-system-icon-facebook-circle-line::before,
+  .design-system-icon-facebook-circle-line::after {
+    background-image: url("../icons/logo/facebook-circle-line.svg");
+  }
+
+  .design-system-icon-firefox-fill::before,
+  .design-system-icon-firefox-fill::after {
+    background-image: url("../icons/logo/firefox-fill.svg");
+  }
+
+  .design-system-icon-firefox-line::before,
+  .design-system-icon-firefox-line::after {
+    background-image: url("../icons/logo/firefox-line.svg");
+  }
+
+  .design-system-icon-dailymotion-fill::before,
+  .design-system-icon-dailymotion-fill::after {
+    background-image: url("../icons/logo/design-system--dailymotion-fill.svg");
+  }
+
+  .design-system-icon-dailymotion-line::before,
+  .design-system-icon-dailymotion-line::after {
+    background-image: url("../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-icon-tiktok-fill::before,
+  .design-system-icon-tiktok-fill::after {
+    background-image: url("../icons/logo/design-system--tiktok-fill.svg");
+  }
+
+  .design-system-icon-tiktok-line::before,
+  .design-system-icon-tiktok-line::after {
+    background-image: url("../icons/logo/design-system--tiktok-line.svg");
+  }
+
+  .design-system-icon-github-fill::before,
+  .design-system-icon-github-fill::after {
+    background-image: url("../icons/logo/github-fill.svg");
+  }
+
+  .design-system-icon-github-line::before,
+  .design-system-icon-github-line::after {
+    background-image: url("../icons/logo/github-line.svg");
+  }
+
+  .design-system-icon-google-fill::before,
+  .design-system-icon-google-fill::after {
+    background-image: url("../icons/logo/google-fill.svg");
+  }
+
+  .design-system-icon-google-line::before,
+  .design-system-icon-google-line::after {
+    background-image: url("../icons/logo/google-line.svg");
+  }
+
+  .design-system-icon-ie-fill::before,
+  .design-system-icon-ie-fill::after {
+    background-image: url("../icons/logo/ie-fill.svg");
+  }
+
+  .design-system-icon-ie-line::before,
+  .design-system-icon-ie-line::after {
+    background-image: url("../icons/logo/ie-line.svg");
+  }
+
+  .design-system-icon-instagram-fill::before,
+  .design-system-icon-instagram-fill::after {
+    background-image: url("../icons/logo/instagram-fill.svg");
+  }
+
+  .design-system-icon-instagram-line::before,
+  .design-system-icon-instagram-line::after {
+    background-image: url("../icons/logo/instagram-line.svg");
+  }
+
+  .design-system-icon-linkedin-box-fill::before,
+  .design-system-icon-linkedin-box-fill::after {
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .design-system-icon-linkedin-box-line::before,
+  .design-system-icon-linkedin-box-line::after {
+    background-image: url("../icons/logo/linkedin-box-line.svg");
+  }
+
+  .design-system-icon-mastodon-fill::before,
+  .design-system-icon-mastodon-fill::after {
+    background-image: url("../icons/logo/mastodon-fill.svg");
+  }
+
+  .design-system-icon-mastodon-line::before,
+  .design-system-icon-mastodon-line::after {
+    background-image: url("../icons/logo/mastodon-line.svg");
+  }
+
+  .design-system-icon-npmjs-fill::before,
+  .design-system-icon-npmjs-fill::after {
+    background-image: url("../icons/logo/npmjs-fill.svg");
+  }
+
+  .design-system-icon-npmjs-line::before,
+  .design-system-icon-npmjs-line::after {
+    background-image: url("../icons/logo/npmjs-line.svg");
+  }
+
+  .design-system-icon-remixicon-fill::before,
+  .design-system-icon-remixicon-fill::after {
+    background-image: url("../icons/logo/remixicon-fill.svg");
+  }
+
+  .design-system-icon-remixicon-line::before,
+  .design-system-icon-remixicon-line::after {
+    background-image: url("../icons/logo/remixicon-line.svg");
+  }
+
+  .design-system-icon-safari-fill::before,
+  .design-system-icon-safari-fill::after {
+    background-image: url("../icons/logo/safari-fill.svg");
+  }
+
+  .design-system-icon-safari-line::before,
+  .design-system-icon-safari-line::after {
+    background-image: url("../icons/logo/safari-line.svg");
+  }
+
+  .design-system-icon-slack-fill::before,
+  .design-system-icon-slack-fill::after {
+    background-image: url("../icons/logo/slack-fill.svg");
+  }
+
+  .design-system-icon-slack-line::before,
+  .design-system-icon-slack-line::after {
+    background-image: url("../icons/logo/slack-line.svg");
+  }
+
+  .design-system-icon-snapchat-fill::before,
+  .design-system-icon-snapchat-fill::after {
+    background-image: url("../icons/logo/snapchat-fill.svg");
+  }
+
+  .design-system-icon-snapchat-line::before,
+  .design-system-icon-snapchat-line::after {
+    background-image: url("../icons/logo/snapchat-line.svg");
+  }
+
+  .design-system-icon-telegram-fill::before,
+  .design-system-icon-telegram-fill::after {
+    background-image: url("../icons/logo/telegram-fill.svg");
+  }
+
+  .design-system-icon-telegram-line::before,
+  .design-system-icon-telegram-line::after {
+    background-image: url("../icons/logo/telegram-line.svg");
+  }
+
+  .design-system-icon-threads-fill::before,
+  .design-system-icon-threads-fill::after {
+    background-image: url("../icons/logo/threads-fill.svg");
+  }
+
+  .design-system-icon-threads-line::before,
+  .design-system-icon-threads-line::after {
+    background-image: url("../icons/logo/threads-line.svg");
+  }
+
+  .design-system-icon-twitch-fill::before,
+  .design-system-icon-twitch-fill::after {
+    background-image: url("../icons/logo/twitch-fill.svg");
+  }
+
+  .design-system-icon-twitch-line::before,
+  .design-system-icon-twitch-line::after {
+    background-image: url("../icons/logo/twitch-line.svg");
+  }
+
+  .design-system-icon-twitter-fill::before,
+  .design-system-icon-twitter-fill::after {
+    background-image: url("../icons/logo/twitter-fill.svg");
+  }
+
+  .design-system-icon-twitter-line::before,
+  .design-system-icon-twitter-line::after {
+    background-image: url("../icons/logo/twitter-line.svg");
+  }
+
+  .design-system-icon-twitter-x-fill::before,
+  .design-system-icon-twitter-x-fill::after {
+    background-image: url("../icons/logo/twitter-x-fill.svg");
+  }
+
+  .design-system-icon-twitter-x-line::before,
+  .design-system-icon-twitter-x-line::after {
+    background-image: url("../icons/logo/twitter-x-line.svg");
+  }
+
+  .design-system-icon-vimeo-fill::before,
+  .design-system-icon-vimeo-fill::after {
+    background-image: url("../icons/logo/vimeo-fill.svg");
+  }
+
+  .design-system-icon-vimeo-line::before,
+  .design-system-icon-vimeo-line::after {
+    background-image: url("../icons/logo/vimeo-line.svg");
+  }
+
+  .design-system-icon-vuejs-fill::before,
+  .design-system-icon-vuejs-fill::after {
+    background-image: url("../icons/logo/vuejs-fill.svg");
+  }
+
+  .design-system-icon-vuejs-line::before,
+  .design-system-icon-vuejs-line::after {
+    background-image: url("../icons/logo/vuejs-line.svg");
+  }
+
+  .design-system-icon-youtube-fill::before,
+  .design-system-icon-youtube-fill::after {
+    background-image: url("../icons/logo/youtube-fill.svg");
+  }
+
+  .design-system-icon-youtube-line::before,
+  .design-system-icon-youtube-line::after {
+    background-image: url("../icons/logo/youtube-line.svg");
+  }
+
+  .design-system-fi-facebook-circle-fill::before {
+    background-image: url("../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .design-system-fi-facebook-circle-line::before {
+    background-image: url("../icons/logo/facebook-circle-line.svg");
+  }
+
+  .design-system-fi-dailymotion-fill::before {
+    background-image: url("../icons/logo/design-system--dailymotion-fill.svg");
+  }
+
+  .design-system-fi-dailymotion-line::before {
+    background-image: url("../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-fi-github-fill::before {
+    background-image: url("../icons/logo/github-fill.svg");
+  }
+
+  .design-system-fi-github-line::before {
+    background-image: url("../icons/logo/github-line.svg");
+  }
+
+  .design-system-fi-instagram-fill::before {
+    background-image: url("../icons/logo/instagram-fill.svg");
+  }
+
+  .design-system-fi-instagram-line::before {
+    background-image: url("../icons/logo/instagram-line.svg");
+  }
+
+  .design-system-fi-linkedin-box-fill::before {
+    background-image: url("../icons/logo/linkedin-box-fill.svg");
+  }
+
+  .design-system-fi-linkedin-box-line::before {
+    background-image: url("../icons/logo/linkedin-box-line.svg");
+  }
+
+  .design-system-fi-npmjs-fill::before {
+    background-image: url("../icons/logo/npmjs-fill.svg");
+  }
+
+  .design-system-fi-npmjs-line::before {
+    background-image: url("../icons/logo/npmjs-line.svg");
+  }
+
+  .design-system-fi-remixicon-fill::before {
+    background-image: url("../icons/logo/remixicon-fill.svg");
+  }
+
+  .design-system-fi-remixicon-line::before {
+    background-image: url("../icons/logo/remixicon-line.svg");
+  }
+
+  .design-system-fi-slack-fill::before {
+    background-image: url("../icons/logo/slack-fill.svg");
+  }
+
+  .design-system-fi-slack-line::before {
+    background-image: url("../icons/logo/slack-line.svg");
+  }
+
+  .design-system-fi-snapchat-fill::before {
+    background-image: url("../icons/logo/snapchat-fill.svg");
+  }
+
+  .design-system-fi-snapchat-line::before {
+    background-image: url("../icons/logo/snapchat-line.svg");
+  }
+
+  .design-system-fi-telegram-fill::before {
+    background-image: url("../icons/logo/telegram-fill.svg");
+  }
+
+  .design-system-fi-telegram-line::before {
+    background-image: url("../icons/logo/telegram-line.svg");
+  }
+
+  .design-system-fi-twitch-fill::before {
+    background-image: url("../icons/logo/twitch-fill.svg");
+  }
+
+  .design-system-fi-twitch-line::before {
+    background-image: url("../icons/logo/twitch-line.svg");
+  }
+
+  .design-system-fi-twitter-fill::before {
+    background-image: url("../icons/logo/twitter-fill.svg");
+  }
+
+  .design-system-fi-twitter-line::before {
+    background-image: url("../icons/logo/twitter-line.svg");
+  }
+
+  .design-system-fi-vimeo-fill::before {
+    background-image: url("../icons/logo/vimeo-fill.svg");
+  }
+
+  .design-system-fi-vimeo-line::before {
+    background-image: url("../icons/logo/vimeo-line.svg");
+  }
+
+  .design-system-fi-youtube-fill::before {
+    background-image: url("../icons/logo/youtube-fill.svg");
+  }
+
+  .design-system-fi-youtube-line::before {
+    background-image: url("../icons/logo/youtube-line.svg");
+  }
+
+  .design-system-icon-anchor-fill::before,
+  .design-system-icon-anchor-fill::after {
+    background-image: url("../icons/map/anchor-fill.svg");
+  }
+
+  .design-system-icon-anchor-line::before,
+  .design-system-icon-anchor-line::after {
+    background-image: url("../icons/map/anchor-line.svg");
+  }
+
+  .design-system-icon-bike-fill::before,
+  .design-system-icon-bike-fill::after {
+    background-image: url("../icons/map/bike-fill.svg");
+  }
+
+  .design-system-icon-bike-line::before,
+  .design-system-icon-bike-line::after {
+    background-image: url("../icons/map/bike-line.svg");
+  }
+
+  .design-system-icon-bus-fill::before,
+  .design-system-icon-bus-fill::after {
+    background-image: url("../icons/map/bus-fill.svg");
+  }
+
+  .design-system-icon-bus-line::before,
+  .design-system-icon-bus-line::after {
+    background-image: url("../icons/map/bus-line.svg");
+  }
+
+  .design-system-icon-car-fill::before,
+  .design-system-icon-car-fill::after {
+    background-image: url("../icons/map/car-fill.svg");
+  }
+
+  .design-system-icon-car-line::before,
+  .design-system-icon-car-line::after {
+    background-image: url("../icons/map/car-line.svg");
+  }
+
+  .design-system-icon-caravan-fill::before,
+  .design-system-icon-caravan-fill::after {
+    background-image: url("../icons/map/caravan-fill.svg");
+  }
+
+  .design-system-icon-caravan-line::before,
+  .design-system-icon-caravan-line::after {
+    background-image: url("../icons/map/caravan-line.svg");
+  }
+
+  .design-system-icon-charging-pile-2-fill::before,
+  .design-system-icon-charging-pile-2-fill::after {
+    background-image: url("../icons/map/charging-pile-2-fill.svg");
+  }
+
+  .design-system-icon-charging-pile-2-line::before,
+  .design-system-icon-charging-pile-2-line::after {
+    background-image: url("../icons/map/charging-pile-2-line.svg");
+  }
+
+  .design-system-icon-compass-3-fill::before,
+  .design-system-icon-compass-3-fill::after {
+    background-image: url("../icons/map/compass-3-fill.svg");
+  }
+
+  .design-system-icon-compass-3-line::before,
+  .design-system-icon-compass-3-line::after {
+    background-image: url("../icons/map/compass-3-line.svg");
+  }
+
+  .design-system-icon-cup-fill::before,
+  .design-system-icon-cup-fill::after {
+    background-image: url("../icons/map/cup-fill.svg");
+  }
+
+  .design-system-icon-cup-line::before,
+  .design-system-icon-cup-line::after {
+    background-image: url("../icons/map/cup-line.svg");
+  }
+
+  .design-system-icon-earth-fill::before,
+  .design-system-icon-earth-fill::after {
+    background-image: url("../icons/map/earth-fill.svg");
+  }
+
+  .design-system-icon-earth-line::before,
+  .design-system-icon-earth-line::after {
+    background-image: url("../icons/map/earth-line.svg");
+  }
+
+  .design-system-icon-france-fill::before,
+  .design-system-icon-france-fill::after {
+    background-image: url("../icons/map/france-fill.svg");
+  }
+
+  .design-system-icon-france-line::before,
+  .design-system-icon-france-line::after {
+    background-image: url("../icons/map/france-line.svg");
+  }
+
+  .design-system-icon-gas-station-fill::before,
+  .design-system-icon-gas-station-fill::after {
+    background-image: url("../icons/map/gas-station-fill.svg");
+  }
+
+  .design-system-icon-gas-station-line::before,
+  .design-system-icon-gas-station-line::after {
+    background-image: url("../icons/map/gas-station-line.svg");
+  }
+
+  .design-system-icon-goblet-fill::before,
+  .design-system-icon-goblet-fill::after {
+    background-image: url("../icons/map/goblet-fill.svg");
+  }
+
+  .design-system-icon-goblet-line::before,
+  .design-system-icon-goblet-line::after {
+    background-image: url("../icons/map/goblet-line.svg");
+  }
+
+  .design-system-icon-map-pin-2-fill::before,
+  .design-system-icon-map-pin-2-fill::after {
+    background-image: url("../icons/map/map-pin-2-fill.svg");
+  }
+
+  .design-system-icon-map-pin-2-line::before,
+  .design-system-icon-map-pin-2-line::after {
+    background-image: url("../icons/map/map-pin-2-line.svg");
+  }
+
+  .design-system-icon-map-pin-user-fill::before,
+  .design-system-icon-map-pin-user-fill::after {
+    background-image: url("../icons/map/map-pin-user-fill.svg");
+  }
+
+  .design-system-icon-map-pin-user-line::before,
+  .design-system-icon-map-pin-user-line::after {
+    background-image: url("../icons/map/map-pin-user-line.svg");
+  }
+
+  .design-system-icon-motorbike-fill::before,
+  .design-system-icon-motorbike-fill::after {
+    background-image: url("../icons/map/motorbike-fill.svg");
+  }
+
+  .design-system-icon-motorbike-line::before,
+  .design-system-icon-motorbike-line::after {
+    background-image: url("../icons/map/motorbike-line.svg");
+  }
+
+  .design-system-icon-passport-fill::before,
+  .design-system-icon-passport-fill::after {
+    background-image: url("../icons/map/passport-fill.svg");
+  }
+
+  .design-system-icon-passport-line::before,
+  .design-system-icon-passport-line::after {
+    background-image: url("../icons/map/passport-line.svg");
+  }
+
+  .design-system-icon-restaurant-fill::before,
+  .design-system-icon-restaurant-fill::after {
+    background-image: url("../icons/map/restaurant-fill.svg");
+  }
+
+  .design-system-icon-restaurant-line::before,
+  .design-system-icon-restaurant-line::after {
+    background-image: url("../icons/map/restaurant-line.svg");
+  }
+
+  .design-system-icon-road-map-fill::before,
+  .design-system-icon-road-map-fill::after {
+    background-image: url("../icons/map/road-map-fill.svg");
+  }
+
+  .design-system-icon-road-map-line::before,
+  .design-system-icon-road-map-line::after {
+    background-image: url("../icons/map/road-map-line.svg");
+  }
+
+  .design-system-icon-sailboat-fill::before,
+  .design-system-icon-sailboat-fill::after {
+    background-image: url("../icons/map/sailboat-fill.svg");
+  }
+
+  .design-system-icon-sailboat-line::before,
+  .design-system-icon-sailboat-line::after {
+    background-image: url("../icons/map/sailboat-line.svg");
+  }
+
+  .design-system-icon-ship-2-fill::before,
+  .design-system-icon-ship-2-fill::after {
+    background-image: url("../icons/map/ship-2-fill.svg");
+  }
+
+  .design-system-icon-ship-2-line::before,
+  .design-system-icon-ship-2-line::after {
+    background-image: url("../icons/map/ship-2-line.svg");
+  }
+
+  .design-system-icon-signal-tower-fill::before,
+  .design-system-icon-signal-tower-fill::after {
+    background-image: url("../icons/map/signal-tower-fill.svg");
+  }
+
+  .design-system-icon-signal-tower-line::before,
+  .design-system-icon-signal-tower-line::after {
+    background-image: url("../icons/map/signal-tower-line.svg");
+  }
+
+  .design-system-icon-suitcase-2-fill::before,
+  .design-system-icon-suitcase-2-fill::after {
+    background-image: url("../icons/map/suitcase-2-fill.svg");
+  }
+
+  .design-system-icon-suitcase-2-line::before,
+  .design-system-icon-suitcase-2-line::after {
+    background-image: url("../icons/map/suitcase-2-line.svg");
+  }
+
+  .design-system-icon-taxi-fill::before,
+  .design-system-icon-taxi-fill::after {
+    background-image: url("../icons/map/taxi-fill.svg");
+  }
+
+  .design-system-icon-taxi-line::before,
+  .design-system-icon-taxi-line::after {
+    background-image: url("../icons/map/taxi-line.svg");
+  }
+
+  .design-system-icon-train-fill::before,
+  .design-system-icon-train-fill::after {
+    background-image: url("../icons/map/train-fill.svg");
+  }
+
+  .design-system-icon-train-line::before,
+  .design-system-icon-train-line::after {
+    background-image: url("../icons/map/train-line.svg");
+  }
+
+  .design-system-fi-map-pin-2-fill::before {
+    background-image: url("../icons/map/map-pin-2-fill.svg");
+  }
+
+  .design-system-fi-map-pin-2-line::before {
+    background-image: url("../icons/map/map-pin-2-line.svg");
+  }
+
+  .design-system-fi-road-map-fill::before {
+    background-image: url("../icons/map/road-map-fill.svg");
+  }
+
+  .design-system-fi-road-map-line::before {
+    background-image: url("../icons/map/road-map-line.svg");
+  }
+
+  .design-system-icon-align-left::before,
+  .design-system-icon-align-left::after {
+    background-image: url("../icons/media/align-left.svg");
+  }
+
+  .design-system-icon-camera-fill::before,
+  .design-system-icon-camera-fill::after {
+    background-image: url("../icons/media/camera-fill.svg");
+  }
+
+  .design-system-icon-camera-line::before,
+  .design-system-icon-camera-line::after {
+    background-image: url("../icons/media/camera-line.svg");
+  }
+
+  .design-system-icon-clapperboard-fill::before,
+  .design-system-icon-clapperboard-fill::after {
+    background-image: url("../icons/media/clapperboard-fill.svg");
+  }
+
+  .design-system-icon-clapperboard-line::before,
+  .design-system-icon-clapperboard-line::after {
+    background-image: url("../icons/media/clapperboard-line.svg");
+  }
+
+  .design-system-icon-equalizer-fill::before,
+  .design-system-icon-equalizer-fill::after {
+    background-image: url("../icons/media/equalizer-fill.svg");
+  }
+
+  .design-system-icon-equalizer-line::before,
+  .design-system-icon-equalizer-line::after {
+    background-image: url("../icons/media/equalizer-line.svg");
+  }
+
+  .design-system-icon-film-fill::before,
+  .design-system-icon-film-fill::after {
+    background-image: url("../icons/media/film-fill.svg");
+  }
+
+  .design-system-icon-film-line::before,
+  .design-system-icon-film-line::after {
+    background-image: url("../icons/media/film-line.svg");
+  }
+
+  .design-system-icon-fullscreen-line::before,
+  .design-system-icon-fullscreen-line::after {
+    background-image: url("../icons/media/fullscreen-line.svg");
+  }
+
+  .design-system-icon-gallery-fill::before,
+  .design-system-icon-gallery-fill::after {
+    background-image: url("../icons/media/gallery-fill.svg");
+  }
+
+  .design-system-icon-gallery-line::before,
+  .design-system-icon-gallery-line::after {
+    background-image: url("../icons/media/gallery-line.svg");
+  }
+
+  .design-system-icon-headphone-fill::before,
+  .design-system-icon-headphone-fill::after {
+    background-image: url("../icons/media/headphone-fill.svg");
+  }
+
+  .design-system-icon-headphone-line::before,
+  .design-system-icon-headphone-line::after {
+    background-image: url("../icons/media/headphone-line.svg");
+  }
+
+  .design-system-icon-image-add-fill::before,
+  .design-system-icon-image-add-fill::after {
+    background-image: url("../icons/media/image-add-fill.svg");
+  }
+
+  .design-system-icon-image-add-line::before,
+  .design-system-icon-image-add-line::after {
+    background-image: url("../icons/media/image-add-line.svg");
+  }
+
+  .design-system-icon-image-edit-fill::before,
+  .design-system-icon-image-edit-fill::after {
+    background-image: url("../icons/media/image-edit-fill.svg");
+  }
+
+  .design-system-icon-image-edit-line::before,
+  .design-system-icon-image-edit-line::after {
+    background-image: url("../icons/media/image-edit-line.svg");
+  }
+
+  .design-system-icon-image-fill::before,
+  .design-system-icon-image-fill::after {
+    background-image: url("../icons/media/image-fill.svg");
+  }
+
+  .design-system-icon-image-line::before,
+  .design-system-icon-image-line::after {
+    background-image: url("../icons/media/image-line.svg");
+  }
+
+  .design-system-icon-live-fill::before,
+  .design-system-icon-live-fill::after {
+    background-image: url("../icons/media/live-fill.svg");
+  }
+
+  .design-system-icon-live-line::before,
+  .design-system-icon-live-line::after {
+    background-image: url("../icons/media/live-line.svg");
+  }
+
+  .design-system-icon-mic-fill::before,
+  .design-system-icon-mic-fill::after {
+    background-image: url("../icons/media/mic-fill.svg");
+  }
+
+  .design-system-icon-mic-line::before,
+  .design-system-icon-mic-line::after {
+    background-image: url("../icons/media/mic-line.svg");
+  }
+
+  .design-system-icon-music-2-fill::before,
+  .design-system-icon-music-2-fill::after {
+    background-image: url("../icons/media/music-2-fill.svg");
+  }
+
+  .design-system-icon-music-2-line::before,
+  .design-system-icon-music-2-line::after {
+    background-image: url("../icons/media/music-2-line.svg");
+  }
+
+  .design-system-icon-notification-3-fill::before,
+  .design-system-icon-notification-3-fill::after {
+    background-image: url("../icons/media/notification-3-fill.svg");
+  }
+
+  .design-system-icon-notification-3-line::before,
+  .design-system-icon-notification-3-line::after {
+    background-image: url("../icons/media/notification-3-line.svg");
+  }
+
+  .design-system-icon-pause-circle-fill::before,
+  .design-system-icon-pause-circle-fill::after {
+    background-image: url("../icons/media/pause-circle-fill.svg");
+  }
+
+  .design-system-icon-pause-circle-line::before,
+  .design-system-icon-pause-circle-line::after {
+    background-image: url("../icons/media/pause-circle-line.svg");
+  }
+
+  .design-system-icon-play-circle-fill::before,
+  .design-system-icon-play-circle-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .design-system-icon-play-circle-line::before,
+  .design-system-icon-play-circle-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .design-system-icon-stop-circle-fill::before,
+  .design-system-icon-stop-circle-fill::after {
+    background-image: url("../icons/media/stop-circle-fill.svg");
+  }
+
+  .design-system-icon-stop-circle-line::before,
+  .design-system-icon-stop-circle-line::after {
+    background-image: url("../icons/media/stop-circle-line.svg");
+  }
+
+  .design-system-icon-volume-down-fill::before,
+  .design-system-icon-volume-down-fill::after {
+    background-image: url("../icons/media/volume-down-fill.svg");
+  }
+
+  .design-system-icon-volume-down-line::before,
+  .design-system-icon-volume-down-line::after {
+    background-image: url("../icons/media/volume-down-line.svg");
+  }
+
+  .design-system-icon-volume-mute-fill::before,
+  .design-system-icon-volume-mute-fill::after {
+    background-image: url("../icons/media/volume-mute-fill.svg");
+  }
+
+  .design-system-icon-volume-mute-line::before,
+  .design-system-icon-volume-mute-line::after {
+    background-image: url("../icons/media/volume-mute-line.svg");
+  }
+
+  .design-system-icon-volume-up-fill::before,
+  .design-system-icon-volume-up-fill::after {
+    background-image: url("../icons/media/volume-up-fill.svg");
+  }
+
+  .design-system-icon-volume-up-line::before,
+  .design-system-icon-volume-up-line::after {
+    background-image: url("../icons/media/volume-up-line.svg");
+  }
+
+  .design-system-fi-equalizer-fill::before {
+    background-image: url("../icons/media/equalizer-fill.svg");
+  }
+
+  .design-system-fi-equalizer-line::before {
+    background-image: url("../icons/media/equalizer-line.svg");
+  }
+
+  .design-system-fi-image-fill::before {
+    background-image: url("../icons/media/image-fill.svg");
+  }
+
+  .design-system-fi-image-line::before {
+    background-image: url("../icons/media/image-line.svg");
+  }
+
+  .design-system-fi-pause-circle-fill::before {
+    background-image: url("../icons/media/pause-circle-fill.svg");
+  }
+
+  .design-system-fi-pause-circle-line::before {
+    background-image: url("../icons/media/pause-circle-line.svg");
+  }
+
+  .design-system-fi-volume-down-fill::before {
+    background-image: url("../icons/media/volume-down-fill.svg");
+  }
+
+  .design-system-fi-volume-down-line::before {
+    background-image: url("../icons/media/volume-down-line.svg");
+  }
+
+  .design-system-fi-volume-mute-fill::before {
+    background-image: url("../icons/media/volume-mute-fill.svg");
+  }
+
+  .design-system-fi-volume-mute-line::before {
+    background-image: url("../icons/media/volume-mute-line.svg");
+  }
+
+  .design-system-fi-volume-up-fill::before {
+    background-image: url("../icons/media/volume-up-fill.svg");
+  }
+
+  .design-system-fi-volume-up-line::before {
+    background-image: url("../icons/media/volume-up-line.svg");
+  }
+
+  .design-system-fi-play-line::before,
+  .design-system-fi-play-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .design-system-fi-play-fill::before,
+  .design-system-fi-play-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .design-system-icon-play-line::before,
+  .design-system-icon-play-line::after {
+    background-image: url("../icons/media/play-circle-line.svg");
+  }
+
+  .design-system-icon-play-fill::before,
+  .design-system-icon-play-fill::after {
+    background-image: url("../icons/media/play-circle-fill.svg");
+  }
+
+  .design-system-icon-leaf-fill::before,
+  .design-system-icon-leaf-fill::after {
+    background-image: url("../icons/others/leaf-fill.svg");
+  }
+
+  .design-system-icon-leaf-line::before,
+  .design-system-icon-leaf-line::after {
+    background-image: url("../icons/others/leaf-line.svg");
+  }
+
+  .design-system-icon-lightbulb-fill::before,
+  .design-system-icon-lightbulb-fill::after {
+    background-image: url("../icons/others/lightbulb-fill.svg");
+  }
+
+  .design-system-icon-lightbulb-line::before,
+  .design-system-icon-lightbulb-line::after {
+    background-image: url("../icons/others/lightbulb-line.svg");
+  }
+
+  .design-system-icon-plant-fill::before,
+  .design-system-icon-plant-fill::after {
+    background-image: url("../icons/others/plant-fill.svg");
+  }
+
+  .design-system-icon-plant-line::before,
+  .design-system-icon-plant-line::after {
+    background-image: url("../icons/others/plant-line.svg");
+  }
+
+  .design-system-icon-recycle-fill::before,
+  .design-system-icon-recycle-fill::after {
+    background-image: url("../icons/others/recycle-fill.svg");
+  }
+
+  .design-system-icon-recycle-line::before,
+  .design-system-icon-recycle-line::after {
+    background-image: url("../icons/others/recycle-line.svg");
+  }
+
+  .design-system-icon-scales-3-fill::before,
+  .design-system-icon-scales-3-fill::after {
+    background-image: url("../icons/others/scales-3-fill.svg");
+  }
+
+  .design-system-icon-scales-3-line::before,
+  .design-system-icon-scales-3-line::after {
+    background-image: url("../icons/others/scales-3-line.svg");
+  }
+
+  .design-system-icon-seedling-fill::before,
+  .design-system-icon-seedling-fill::after {
+    background-image: url("../icons/others/seedling-fill.svg");
+  }
+
+  .design-system-icon-seedling-line::before,
+  .design-system-icon-seedling-line::after {
+    background-image: url("../icons/others/seedling-line.svg");
+  }
+
+  .design-system-icon-umbrella-fill::before,
+  .design-system-icon-umbrella-fill::after {
+    background-image: url("../icons/others/umbrella-fill.svg");
+  }
+
+  .design-system-icon-umbrella-line::before,
+  .design-system-icon-umbrella-line::after {
+    background-image: url("../icons/others/umbrella-line.svg");
+  }
+
+  .design-system-icon-add-circle-fill::before,
+  .design-system-icon-add-circle-fill::after {
+    background-image: url("../icons/system/add-circle-fill.svg");
+  }
+
+  .design-system-icon-add-circle-line::before,
+  .design-system-icon-add-circle-line::after {
+    background-image: url("../icons/system/add-circle-line.svg");
+  }
+
+  .design-system-icon-add-line::before,
+  .design-system-icon-add-line::after {
+    background-image: url("../icons/system/add-line.svg");
+  }
+
+  .design-system-icon-alarm-warning-fill::before,
+  .design-system-icon-alarm-warning-fill::after {
+    background-image: url("../icons/system/alarm-warning-fill.svg");
+  }
+
+  .design-system-icon-alarm-warning-line::before,
+  .design-system-icon-alarm-warning-line::after {
+    background-image: url("../icons/system/alarm-warning-line.svg");
+  }
+
+  .design-system-icon-alert-fill::before,
+  .design-system-icon-alert-fill::after {
+    background-image: url("../icons/system/alert-fill.svg");
+  }
+
+  .design-system-icon-alert-line::before,
+  .design-system-icon-alert-line::after {
+    background-image: url("../icons/system/alert-line.svg");
+  }
+
+  .design-system-icon-arrow-down-fill::before,
+  .design-system-icon-arrow-down-fill::after {
+    background-image: url("../icons/system/arrow-down-fill.svg");
+  }
+
+  .design-system-icon-arrow-down-line::before,
+  .design-system-icon-arrow-down-line::after {
+    background-image: url("../icons/system/arrow-down-line.svg");
+  }
+
+  .design-system-icon-arrow-down-s-fill::before,
+  .design-system-icon-arrow-down-s-fill::after {
+    background-image: url("../icons/system/arrow-down-s-fill.svg");
+  }
+
+  .design-system-icon-arrow-down-s-line::before,
+  .design-system-icon-arrow-down-s-line::after {
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+  }
+
+  .design-system-icon-arrow-go-back-fill::before,
+  .design-system-icon-arrow-go-back-fill::after {
+    background-image: url("../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .design-system-icon-arrow-go-back-line::before,
+  .design-system-icon-arrow-go-back-line::after {
+    background-image: url("../icons/system/arrow-go-back-line.svg");
+  }
+
+  .design-system-icon-arrow-go-forward-fill::before,
+  .design-system-icon-arrow-go-forward-fill::after {
+    background-image: url("../icons/system/arrow-go-forward-fill.svg");
+  }
+
+  .design-system-icon-arrow-go-forward-line::before,
+  .design-system-icon-arrow-go-forward-line::after {
+    background-image: url("../icons/system/arrow-go-forward-line.svg");
+  }
+
+  .design-system-icon-arrow-left-fill::before,
+  .design-system-icon-arrow-left-fill::after {
+    background-image: url("../icons/system/arrow-left-fill.svg");
+  }
+
+  .design-system-icon-arrow-left-line::before,
+  .design-system-icon-arrow-left-line::after {
+    background-image: url("../icons/system/arrow-left-line.svg");
+  }
+
+  .design-system-icon-arrow-left-s-fill::before,
+  .design-system-icon-arrow-left-s-fill::after {
+    background-image: url("../icons/system/arrow-left-s-fill.svg");
+  }
+
+  .design-system-icon-arrow-left-s-line::before,
+  .design-system-icon-arrow-left-s-line::after {
+    background-image: url("../icons/system/arrow-left-s-line.svg");
+  }
+
+  .design-system-icon-arrow-right-fill::before,
+  .design-system-icon-arrow-right-fill::after {
+    background-image: url("../icons/system/arrow-right-fill.svg");
+  }
+
+  .design-system-icon-arrow-right-line::before,
+  .design-system-icon-arrow-right-line::after {
+    background-image: url("../icons/system/arrow-right-line.svg");
+  }
+
+  .design-system-icon-arrow-right-s-fill::before,
+  .design-system-icon-arrow-right-s-fill::after {
+    background-image: url("../icons/system/arrow-right-s-fill.svg");
+  }
+
+  .design-system-icon-arrow-right-s-line::before,
+  .design-system-icon-arrow-right-s-line::after {
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+  }
+
+  .design-system-icon-arrow-right-up-line::before,
+  .design-system-icon-arrow-right-up-line::after {
+    background-image: url("../icons/system/arrow-right-up-line.svg");
+  }
+
+  .design-system-icon-arrow-up-fill::before,
+  .design-system-icon-arrow-up-fill::after {
+    background-image: url("../icons/system/arrow-up-fill.svg");
+  }
+
+  .design-system-icon-arrow-up-line::before,
+  .design-system-icon-arrow-up-line::after {
+    background-image: url("../icons/system/arrow-up-line.svg");
+  }
+
+  .design-system-icon-arrow-up-s-fill::before,
+  .design-system-icon-arrow-up-s-fill::after {
+    background-image: url("../icons/system/arrow-up-s-fill.svg");
+  }
+
+  .design-system-icon-arrow-up-s-line::before,
+  .design-system-icon-arrow-up-s-line::after {
+    background-image: url("../icons/system/arrow-up-s-line.svg");
+  }
+
+  .design-system-icon-check-line::before,
+  .design-system-icon-check-line::after {
+    background-image: url("../icons/system/check-line.svg");
+  }
+
+  .design-system-icon-checkbox-circle-fill::before,
+  .design-system-icon-checkbox-circle-fill::after {
+    background-image: url("../icons/system/checkbox-circle-fill.svg");
+  }
+
+  .design-system-icon-checkbox-circle-line::before,
+  .design-system-icon-checkbox-circle-line::after {
+    background-image: url("../icons/system/checkbox-circle-line.svg");
+  }
+
+  .design-system-icon-checkbox-fill::before,
+  .design-system-icon-checkbox-fill::after {
+    background-image: url("../icons/system/checkbox-fill.svg");
+  }
+
+  .design-system-icon-checkbox-line::before,
+  .design-system-icon-checkbox-line::after {
+    background-image: url("../icons/system/checkbox-line.svg");
+  }
+
+  .design-system-icon-close-circle-fill::before,
+  .design-system-icon-close-circle-fill::after {
+    background-image: url("../icons/system/close-circle-fill.svg");
+  }
+
+  .design-system-icon-close-circle-line::before,
+  .design-system-icon-close-circle-line::after {
+    background-image: url("../icons/system/close-circle-line.svg");
+  }
+
+  .design-system-icon-close-line::before,
+  .design-system-icon-close-line::after {
+    background-image: url("../icons/system/close-line.svg");
+  }
+
+  .design-system-icon-delete-bin-fill::before,
+  .design-system-icon-delete-bin-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .design-system-icon-delete-bin-line::before,
+  .design-system-icon-delete-bin-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .design-system-icon-download-fill::before,
+  .design-system-icon-download-fill::after {
+    background-image: url("../icons/system/download-fill.svg");
+  }
+
+  .design-system-icon-download-line::before,
+  .design-system-icon-download-line::after {
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .design-system-icon-error-warning-fill::before,
+  .design-system-icon-error-warning-fill::after {
+    background-image: url("../icons/system/error-warning-fill.svg");
+  }
+
+  .design-system-icon-error-warning-line::before,
+  .design-system-icon-error-warning-line::after {
+    background-image: url("../icons/system/error-warning-line.svg");
+  }
+
+  .design-system-icon-external-link-fill::before,
+  .design-system-icon-external-link-fill::after {
+    background-image: url("../icons/system/external-link-fill.svg");
+  }
+
+  .design-system-icon-external-link-line::before,
+  .design-system-icon-external-link-line::after {
+    background-image: url("../icons/system/external-link-line.svg");
+  }
+
+  .design-system-icon-eye-fill::before,
+  .design-system-icon-eye-fill::after {
+    background-image: url("../icons/system/eye-fill.svg");
+  }
+
+  .design-system-icon-eye-line::before,
+  .design-system-icon-eye-line::after {
+    background-image: url("../icons/system/eye-line.svg");
+  }
+
+  .design-system-icon-eye-off-fill::before,
+  .design-system-icon-eye-off-fill::after {
+    background-image: url("../icons/system/eye-off-fill.svg");
+  }
+
+  .design-system-icon-eye-off-line::before,
+  .design-system-icon-eye-off-line::after {
+    background-image: url("../icons/system/eye-off-line.svg");
+  }
+
+  .design-system-icon-filter-fill::before,
+  .design-system-icon-filter-fill::after {
+    background-image: url("../icons/system/filter-fill.svg");
+  }
+
+  .design-system-icon-filter-line::before,
+  .design-system-icon-filter-line::after {
+    background-image: url("../icons/system/filter-line.svg");
+  }
+
+  .design-system-icon-arrow-left-s-first-line::before,
+  .design-system-icon-arrow-left-s-first-line::after {
+    background-image: url("../icons/system/design-system--arrow-left-s-first-line.svg");
+  }
+
+  .design-system-icon-arrow-left-s-line-double::before,
+  .design-system-icon-arrow-left-s-line-double::after {
+    background-image: url("../icons/system/design-system--arrow-left-s-line-double.svg");
+  }
+
+  .design-system-icon-arrow-right-down-circle-fill::before,
+  .design-system-icon-arrow-right-down-circle-fill::after {
+    background-image: url("../icons/system/design-system--arrow-right-down-circle-fill.svg");
+  }
+
+  .design-system-icon-arrow-right-s-last-line::before,
+  .design-system-icon-arrow-right-s-last-line::after {
+    background-image: url("../icons/system/design-system--arrow-right-s-last-line.svg");
+  }
+
+  .design-system-icon-arrow-right-s-line-double::before,
+  .design-system-icon-arrow-right-s-line-double::after {
+    background-image: url("../icons/system/design-system--arrow-right-s-line-double.svg");
+  }
+
+  .design-system-icon-arrow-right-up-circle-fill::before,
+  .design-system-icon-arrow-right-up-circle-fill::after {
+    background-image: url("../icons/system/design-system--arrow-right-up-circle-fill.svg");
+  }
+
+  .design-system-icon-capslock-line::before,
+  .design-system-icon-capslock-line::after {
+    background-image: url("../icons/system/design-system--capslock-line.svg");
+  }
+
+  .design-system-icon-equal-circle-fill::before,
+  .design-system-icon-equal-circle-fill::after {
+    background-image: url("../icons/system/design-system--equal-circle-fill.svg");
+  }
+
+  .design-system-icon-error-fill::before,
+  .design-system-icon-error-fill::after {
+    background-image: url("../icons/system/design-system--error-fill.svg");
+  }
+
+  .design-system-icon-error-line::before,
+  .design-system-icon-error-line::after {
+    background-image: url("../icons/system/design-system--error-line.svg");
+  }
+
+  .design-system-icon-info-fill::before,
+  .design-system-icon-info-fill::after {
+    background-image: url("../icons/system/design-system--info-fill.svg");
+  }
+
+  .design-system-icon-info-line::before,
+  .design-system-icon-info-line::after {
+    background-image: url("../icons/system/design-system--info-line.svg");
+  }
+
+  .design-system-icon-success-fill::before,
+  .design-system-icon-success-fill::after {
+    background-image: url("../icons/system/design-system--success-fill.svg");
+  }
+
+  .design-system-icon-success-line::before,
+  .design-system-icon-success-line::after {
+    background-image: url("../icons/system/design-system--success-line.svg");
+  }
+
+  .design-system-icon-theme-fill::before,
+  .design-system-icon-theme-fill::after {
+    background-image: url("../icons/system/design-system--theme-fill.svg");
+  }
+
+  .design-system-icon-warning-fill::before,
+  .design-system-icon-warning-fill::after {
+    background-image: url("../icons/system/design-system--warning-fill.svg");
+  }
+
+  .design-system-icon-warning-line::before,
+  .design-system-icon-warning-line::after {
+    background-image: url("../icons/system/design-system--warning-line.svg");
+  }
+
+  .design-system-icon-information-fill::before,
+  .design-system-icon-information-fill::after {
+    background-image: url("../icons/system/information-fill.svg");
+  }
+
+  .design-system-icon-information-line::before,
+  .design-system-icon-information-line::after {
+    background-image: url("../icons/system/information-line.svg");
+  }
+
+  .design-system-icon-lock-fill::before,
+  .design-system-icon-lock-fill::after {
+    background-image: url("../icons/system/lock-fill.svg");
+  }
+
+  .design-system-icon-lock-line::before,
+  .design-system-icon-lock-line::after {
+    background-image: url("../icons/system/lock-line.svg");
+  }
+
+  .design-system-icon-lock-unlock-fill::before,
+  .design-system-icon-lock-unlock-fill::after {
+    background-image: url("../icons/system/lock-unlock-fill.svg");
+  }
+
+  .design-system-icon-lock-unlock-line::before,
+  .design-system-icon-lock-unlock-line::after {
+    background-image: url("../icons/system/lock-unlock-line.svg");
+  }
+
+  .design-system-icon-logout-box-r-fill::before,
+  .design-system-icon-logout-box-r-fill::after {
+    background-image: url("../icons/system/logout-box-r-fill.svg");
+  }
+
+  .design-system-icon-logout-box-r-line::before,
+  .design-system-icon-logout-box-r-line::after {
+    background-image: url("../icons/system/logout-box-r-line.svg");
+  }
+
+  .design-system-icon-menu-2-fill::before,
+  .design-system-icon-menu-2-fill::after {
+    background-image: url("../icons/system/menu-2-fill.svg");
+  }
+
+  .design-system-icon-menu-fill::before,
+  .design-system-icon-menu-fill::after {
+    background-image: url("../icons/system/menu-fill.svg");
+  }
+
+  .design-system-icon-more-fill::before,
+  .design-system-icon-more-fill::after {
+    background-image: url("../icons/system/more-fill.svg");
+  }
+
+  .design-system-icon-more-line::before,
+  .design-system-icon-more-line::after {
+    background-image: url("../icons/system/more-line.svg");
+  }
+
+  .design-system-icon-notification-badge-fill::before,
+  .design-system-icon-notification-badge-fill::after {
+    background-image: url("../icons/system/notification-badge-fill.svg");
+  }
+
+  .design-system-icon-notification-badge-line::before,
+  .design-system-icon-notification-badge-line::after {
+    background-image: url("../icons/system/notification-badge-line.svg");
+  }
+
+  .design-system-icon-question-fill::before,
+  .design-system-icon-question-fill::after {
+    background-image: url("../icons/system/question-fill.svg");
+  }
+
+  .design-system-icon-question-line::before,
+  .design-system-icon-question-line::after {
+    background-image: url("../icons/system/question-line.svg");
+  }
+
+  .design-system-icon-refresh-fill::before,
+  .design-system-icon-refresh-fill::after {
+    background-image: url("../icons/system/refresh-fill.svg");
+  }
+
+  .design-system-icon-refresh-line::before,
+  .design-system-icon-refresh-line::after {
+    background-image: url("../icons/system/refresh-line.svg");
+  }
+
+  .design-system-icon-search-fill::before,
+  .design-system-icon-search-fill::after {
+    background-image: url("../icons/system/search-fill.svg");
+  }
+
+  .design-system-icon-search-line::before,
+  .design-system-icon-search-line::after {
+    background-image: url("../icons/system/search-line.svg");
+  }
+
+  .design-system-icon-settings-5-fill::before,
+  .design-system-icon-settings-5-fill::after {
+    background-image: url("../icons/system/settings-5-fill.svg");
+  }
+
+  .design-system-icon-settings-5-line::before,
+  .design-system-icon-settings-5-line::after {
+    background-image: url("../icons/system/settings-5-line.svg");
+  }
+
+  .design-system-icon-shield-fill::before,
+  .design-system-icon-shield-fill::after {
+    background-image: url("../icons/system/shield-fill.svg");
+  }
+
+  .design-system-icon-shield-line::before,
+  .design-system-icon-shield-line::after {
+    background-image: url("../icons/system/shield-line.svg");
+  }
+
+  .design-system-icon-star-fill::before,
+  .design-system-icon-star-fill::after {
+    background-image: url("../icons/system/star-fill.svg");
+  }
+
+  .design-system-icon-star-line::before,
+  .design-system-icon-star-line::after {
+    background-image: url("../icons/system/star-line.svg");
+  }
+
+  .design-system-icon-star-s-fill::before,
+  .design-system-icon-star-s-fill::after {
+    background-image: url("../icons/system/star-s-fill.svg");
+  }
+
+  .design-system-icon-star-s-line::before,
+  .design-system-icon-star-s-line::after {
+    background-image: url("../icons/system/star-s-line.svg");
+  }
+
+  .design-system-icon-subtract-line::before,
+  .design-system-icon-subtract-line::after {
+    background-image: url("../icons/system/subtract-line.svg");
+  }
+
+  .design-system-icon-thumb-down-fill::before,
+  .design-system-icon-thumb-down-fill::after {
+    background-image: url("../icons/system/thumb-down-fill.svg");
+  }
+
+  .design-system-icon-thumb-down-line::before,
+  .design-system-icon-thumb-down-line::after {
+    background-image: url("../icons/system/thumb-down-line.svg");
+  }
+
+  .design-system-icon-thumb-up-fill::before,
+  .design-system-icon-thumb-up-fill::after {
+    background-image: url("../icons/system/thumb-up-fill.svg");
+  }
+
+  .design-system-icon-thumb-up-line::before,
+  .design-system-icon-thumb-up-line::after {
+    background-image: url("../icons/system/thumb-up-line.svg");
+  }
+
+  .design-system-icon-time-fill::before,
+  .design-system-icon-time-fill::after {
+    background-image: url("../icons/system/time-fill.svg");
+  }
+
+  .design-system-icon-time-line::before,
+  .design-system-icon-time-line::after {
+    background-image: url("../icons/system/time-line.svg");
+  }
+
+  .design-system-icon-timer-fill::before,
+  .design-system-icon-timer-fill::after {
+    background-image: url("../icons/system/timer-fill.svg");
+  }
+
+  .design-system-icon-timer-line::before,
+  .design-system-icon-timer-line::after {
+    background-image: url("../icons/system/timer-line.svg");
+  }
+
+  .design-system-icon-upload-2-fill::before,
+  .design-system-icon-upload-2-fill::after {
+    background-image: url("../icons/system/upload-2-fill.svg");
+  }
+
+  .design-system-icon-upload-2-line::before,
+  .design-system-icon-upload-2-line::after {
+    background-image: url("../icons/system/upload-2-line.svg");
+  }
+
+  .design-system-icon-upload-fill::before,
+  .design-system-icon-upload-fill::after {
+    background-image: url("../icons/system/upload-fill.svg");
+  }
+
+  .design-system-icon-upload-line::before,
+  .design-system-icon-upload-line::after {
+    background-image: url("../icons/system/upload-line.svg");
+  }
+
+  .design-system-icon-zoom-in-fill::before,
+  .design-system-icon-zoom-in-fill::after {
+    background-image: url("../icons/system/zoom-in-fill.svg");
+  }
+
+  .design-system-icon-zoom-in-line::before,
+  .design-system-icon-zoom-in-line::after {
+    background-image: url("../icons/system/zoom-in-line.svg");
+  }
+
+  .design-system-icon-zoom-out-fill::before,
+  .design-system-icon-zoom-out-fill::after {
+    background-image: url("../icons/system/zoom-out-fill.svg");
+  }
+
+  .design-system-icon-zoom-out-line::before,
+  .design-system-icon-zoom-out-line::after {
+    background-image: url("../icons/system/zoom-out-line.svg");
+  }
+
+  .design-system-fi-add-circle-fill::before {
+    background-image: url("../icons/system/add-circle-fill.svg");
+  }
+
+  .design-system-fi-add-circle-line::before {
+    background-image: url("../icons/system/add-circle-line.svg");
+  }
+
+  .design-system-fi-add-line::before {
+    background-image: url("../icons/system/add-line.svg");
+  }
+
+  .design-system-fi-arrow-down-line::before {
+    background-image: url("../icons/system/arrow-down-line.svg");
+  }
+
+  .design-system-fi-arrow-down-s-line::before {
+    background-image: url("../icons/system/arrow-down-s-line.svg");
+  }
+
+  .design-system-fi-arrow-go-back-fill::before {
+    background-image: url("../icons/system/arrow-go-back-fill.svg");
+  }
+
+  .design-system-fi-arrow-go-back-line::before {
+    background-image: url("../icons/system/arrow-go-back-line.svg");
+  }
+
+  .design-system-fi-arrow-left-line::before {
+    background-image: url("../icons/system/arrow-left-line.svg");
+  }
+
+  .design-system-fi-arrow-left-s-line::before {
+    background-image: url("../icons/system/arrow-left-s-line.svg");
+  }
+
+  .design-system-fi-arrow-right-line::before {
+    background-image: url("../icons/system/arrow-right-line.svg");
+  }
+
+  .design-system-fi-arrow-right-s-line::before {
+    background-image: url("../icons/system/arrow-right-s-line.svg");
+  }
+
+  .design-system-fi-arrow-right-up-line::before {
+    background-image: url("../icons/system/arrow-right-up-line.svg");
+  }
+
+  .design-system-fi-arrow-up-fill::before {
+    background-image: url("../icons/system/arrow-up-fill.svg");
+  }
+
+  .design-system-fi-arrow-up-line::before {
+    background-image: url("../icons/system/arrow-up-line.svg");
+  }
+
+  .design-system-fi-arrow-up-s-line::before {
+    background-image: url("../icons/system/arrow-up-s-line.svg");
+  }
+
+  .design-system-fi-check-line::before {
+    background-image: url("../icons/system/check-line.svg");
+  }
+
+  .design-system-fi-checkbox-circle-line::before {
+    background-image: url("../icons/system/checkbox-circle-line.svg");
+  }
+
+  .design-system-fi-close-line::before {
+    background-image: url("../icons/system/close-line.svg");
+  }
+
+  .design-system-fi-download-line::before {
+    background-image: url("../icons/system/download-line.svg");
+  }
+
+  .design-system-fi-error-warning-fill::before {
+    background-image: url("../icons/system/error-warning-fill.svg");
+  }
+
+  .design-system-fi-error-warning-line::before {
+    background-image: url("../icons/system/error-warning-line.svg");
+  }
+
+  .design-system-fi-external-link-line::before {
+    background-image: url("../icons/system/external-link-line.svg");
+  }
+
+  .design-system-fi-eye-fill::before {
+    background-image: url("../icons/system/eye-fill.svg");
+  }
+
+  .design-system-fi-eye-line::before {
+    background-image: url("../icons/system/eye-line.svg");
+  }
+
+  .design-system-fi-eye-off-fill::before {
+    background-image: url("../icons/system/eye-off-fill.svg");
+  }
+
+  .design-system-fi-eye-off-line::before {
+    background-image: url("../icons/system/eye-off-line.svg");
+  }
+
+  .design-system-fi-filter-fill::before {
+    background-image: url("../icons/system/filter-fill.svg");
+  }
+
+  .design-system-fi-filter-line::before {
+    background-image: url("../icons/system/filter-line.svg");
+  }
+
+  .design-system-fi-arrow-left-s-first-line::before {
+    background-image: url("../icons/system/design-system--arrow-left-s-first-line.svg");
+  }
+
+  .design-system-fi-arrow-left-s-line-double::before {
+    background-image: url("../icons/system/design-system--arrow-left-s-line-double.svg");
+  }
+
+  .design-system-fi-arrow-right-s-last-line::before {
+    background-image: url("../icons/system/design-system--arrow-right-s-last-line.svg");
+  }
+
+  .design-system-fi-arrow-right-s-line-double::before {
+    background-image: url("../icons/system/design-system--arrow-right-s-line-double.svg");
+  }
+
+  .design-system-fi-error-fill::before {
+    background-image: url("../icons/system/design-system--error-fill.svg");
+  }
+
+  .design-system-fi-error-line::before {
+    background-image: url("../icons/system/design-system--error-line.svg");
+  }
+
+  .design-system-fi-info-fill::before {
+    background-image: url("../icons/system/design-system--info-fill.svg");
+  }
+
+  .design-system-fi-info-line::before {
+    background-image: url("../icons/system/design-system--info-line.svg");
+  }
+
+  .design-system-fi-success-fill::before {
+    background-image: url("../icons/system/design-system--success-fill.svg");
+  }
+
+  .design-system-fi-success-line::before {
+    background-image: url("../icons/system/design-system--success-line.svg");
+  }
+
+  .design-system-fi-theme-fill::before {
+    background-image: url("../icons/system/design-system--theme-fill.svg");
+  }
+
+  .design-system-fi-warning-fill::before {
+    background-image: url("../icons/system/design-system--warning-fill.svg");
+  }
+
+  .design-system-fi-warning-line::before {
+    background-image: url("../icons/system/design-system--warning-line.svg");
+  }
+
+  .design-system-fi-information-fill::before {
+    background-image: url("../icons/system/information-fill.svg");
+  }
+
+  .design-system-fi-information-line::before {
+    background-image: url("../icons/system/information-line.svg");
+  }
+
+  .design-system-fi-lock-fill::before {
+    background-image: url("../icons/system/lock-fill.svg");
+  }
+
+  .design-system-fi-lock-line::before {
+    background-image: url("../icons/system/lock-line.svg");
+  }
+
+  .design-system-fi-logout-box-r-fill::before {
+    background-image: url("../icons/system/logout-box-r-fill.svg");
+  }
+
+  .design-system-fi-logout-box-r-line::before {
+    background-image: url("../icons/system/logout-box-r-line.svg");
+  }
+
+  .design-system-fi-menu-2-fill::before {
+    background-image: url("../icons/system/menu-2-fill.svg");
+  }
+
+  .design-system-fi-menu-fill::before {
+    background-image: url("../icons/system/menu-fill.svg");
+  }
+
+  .design-system-fi-question-fill::before {
+    background-image: url("../icons/system/question-fill.svg");
+  }
+
+  .design-system-fi-question-line::before {
+    background-image: url("../icons/system/question-line.svg");
+  }
+
+  .design-system-fi-refresh-fill::before {
+    background-image: url("../icons/system/refresh-fill.svg");
+  }
+
+  .design-system-fi-refresh-line::before {
+    background-image: url("../icons/system/refresh-line.svg");
+  }
+
+  .design-system-fi-search-fill::before {
+    background-image: url("../icons/system/search-fill.svg");
+  }
+
+  .design-system-fi-search-line::before {
+    background-image: url("../icons/system/search-line.svg");
+  }
+
+  .design-system-fi-subtract-line::before {
+    background-image: url("../icons/system/subtract-line.svg");
+  }
+
+  .design-system-fi-timer-fill::before {
+    background-image: url("../icons/system/timer-fill.svg");
+  }
+
+  .design-system-fi-timer-line::before {
+    background-image: url("../icons/system/timer-line.svg");
+  }
+
+  .design-system-fi-upload-2-fill::before {
+    background-image: url("../icons/system/upload-2-fill.svg");
+  }
+
+  .design-system-fi-upload-2-line::before {
+    background-image: url("../icons/system/upload-2-line.svg");
+  }
+
+  .design-system-fi-zoom-in-fill::before {
+    background-image: url("../icons/system/zoom-in-fill.svg");
+  }
+
+  .design-system-fi-zoom-in-line::before {
+    background-image: url("../icons/system/zoom-in-line.svg");
+  }
+
+  .design-system-fi-zoom-out-fill::before {
+    background-image: url("../icons/system/zoom-out-fill.svg");
+  }
+
+  .design-system-fi-zoom-out-line::before {
+    background-image: url("../icons/system/zoom-out-line.svg");
+  }
+
+  .design-system-fi-delete-line::before,
+  .design-system-fi-delete-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .design-system-fi-delete-fill::before,
+  .design-system-fi-delete-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .design-system-icon-delete-line::before,
+  .design-system-icon-delete-line::after {
+    background-image: url("../icons/system/delete-bin-line.svg");
+  }
+
+  .design-system-icon-delete-fill::before,
+  .design-system-icon-delete-fill::after {
+    background-image: url("../icons/system/delete-bin-fill.svg");
+  }
+
+  .design-system-icon-account-circle-fill::before,
+  .design-system-icon-account-circle-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .design-system-icon-account-circle-line::before,
+  .design-system-icon-account-circle-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .design-system-icon-account-pin-circle-fill::before,
+  .design-system-icon-account-pin-circle-fill::after {
+    background-image: url("../icons/user/account-pin-circle-fill.svg");
+  }
+
+  .design-system-icon-account-pin-circle-line::before,
+  .design-system-icon-account-pin-circle-line::after {
+    background-image: url("../icons/user/account-pin-circle-line.svg");
+  }
+
+  .design-system-icon-admin-fill::before,
+  .design-system-icon-admin-fill::after {
+    background-image: url("../icons/user/admin-fill.svg");
+  }
+
+  .design-system-icon-admin-line::before,
+  .design-system-icon-admin-line::after {
+    background-image: url("../icons/user/admin-line.svg");
+  }
+
+  .design-system-icon-group-fill::before,
+  .design-system-icon-group-fill::after {
+    background-image: url("../icons/user/group-fill.svg");
+  }
+
+  .design-system-icon-group-line::before,
+  .design-system-icon-group-line::after {
+    background-image: url("../icons/user/group-line.svg");
+  }
+
+  .design-system-icon-parent-fill::before,
+  .design-system-icon-parent-fill::after {
+    background-image: url("../icons/user/parent-fill.svg");
+  }
+
+  .design-system-icon-parent-line::before,
+  .design-system-icon-parent-line::after {
+    background-image: url("../icons/user/parent-line.svg");
+  }
+
+  .design-system-icon-team-fill::before,
+  .design-system-icon-team-fill::after {
+    background-image: url("../icons/user/team-fill.svg");
+  }
+
+  .design-system-icon-team-line::before,
+  .design-system-icon-team-line::after {
+    background-image: url("../icons/user/team-line.svg");
+  }
+
+  .design-system-icon-user-add-fill::before,
+  .design-system-icon-user-add-fill::after {
+    background-image: url("../icons/user/user-add-fill.svg");
+  }
+
+  .design-system-icon-user-add-line::before,
+  .design-system-icon-user-add-line::after {
+    background-image: url("../icons/user/user-add-line.svg");
+  }
+
+  .design-system-icon-user-fill::before,
+  .design-system-icon-user-fill::after {
+    background-image: url("../icons/user/user-fill.svg");
+  }
+
+  .design-system-icon-user-heart-fill::before,
+  .design-system-icon-user-heart-fill::after {
+    background-image: url("../icons/user/user-heart-fill.svg");
+  }
+
+  .design-system-icon-user-heart-line::before,
+  .design-system-icon-user-heart-line::after {
+    background-image: url("../icons/user/user-heart-line.svg");
+  }
+
+  .design-system-icon-user-line::before,
+  .design-system-icon-user-line::after {
+    background-image: url("../icons/user/user-line.svg");
+  }
+
+  .design-system-icon-user-search-fill::before,
+  .design-system-icon-user-search-fill::after {
+    background-image: url("../icons/user/user-search-fill.svg");
+  }
+
+  .design-system-icon-user-search-line::before,
+  .design-system-icon-user-search-line::after {
+    background-image: url("../icons/user/user-search-line.svg");
+  }
+
+  .design-system-icon-user-setting-fill::before,
+  .design-system-icon-user-setting-fill::after {
+    background-image: url("../icons/user/user-setting-fill.svg");
+  }
+
+  .design-system-icon-user-setting-line::before,
+  .design-system-icon-user-setting-line::after {
+    background-image: url("../icons/user/user-setting-line.svg");
+  }
+
+  .design-system-icon-user-star-fill::before,
+  .design-system-icon-user-star-fill::after {
+    background-image: url("../icons/user/user-star-fill.svg");
+  }
+
+  .design-system-icon-user-star-line::before,
+  .design-system-icon-user-star-line::after {
+    background-image: url("../icons/user/user-star-line.svg");
+  }
+
+  .design-system-fi-user-fill::before {
+    background-image: url("../icons/user/user-fill.svg");
+  }
+
+  .design-system-fi-user-line::before {
+    background-image: url("../icons/user/user-line.svg");
+  }
+
+  .design-system-fi-account-line::before,
+  .design-system-fi-account-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .design-system-fi-account-fill::before,
+  .design-system-fi-account-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .design-system-icon-account-line::before,
+  .design-system-icon-account-line::after {
+    background-image: url("../icons/user/account-circle-line.svg");
+  }
+
+  .design-system-icon-account-fill::before,
+  .design-system-icon-account-fill::after {
+    background-image: url("../icons/user/account-circle-fill.svg");
+  }
+
+  .design-system-icon-cloudy-2-fill::before,
+  .design-system-icon-cloudy-2-fill::after {
+    background-image: url("../icons/weather/cloudy-2-fill.svg");
+  }
+
+  .design-system-icon-cloudy-2-line::before,
+  .design-system-icon-cloudy-2-line::after {
+    background-image: url("../icons/weather/cloudy-2-line.svg");
+  }
+
+  .design-system-icon-flashlight-fill::before,
+  .design-system-icon-flashlight-fill::after {
+    background-image: url("../icons/weather/flashlight-fill.svg");
+  }
+
+  .design-system-icon-flashlight-line::before,
+  .design-system-icon-flashlight-line::after {
+    background-image: url("../icons/weather/flashlight-line.svg");
+  }
+
+  .design-system-icon-moon-fill::before,
+  .design-system-icon-moon-fill::after {
+    background-image: url("../icons/weather/moon-fill.svg");
+  }
+
+  .design-system-icon-moon-line::before,
+  .design-system-icon-moon-line::after {
+    background-image: url("../icons/weather/moon-line.svg");
+  }
+
+  .design-system-icon-sun-fill::before,
+  .design-system-icon-sun-fill::after {
+    background-image: url("../icons/weather/sun-fill.svg");
+  }
+
+  .design-system-icon-sun-line::before,
+  .design-system-icon-sun-line::after {
+    background-image: url("../icons/weather/sun-line.svg");
+  }
+
+  .design-system-fi-flashlight-fill::before {
+    background-image: url("../icons/weather/flashlight-fill.svg");
+  }
+
+  .design-system-fi-flashlight-line::before {
+    background-image: url("../icons/weather/flashlight-line.svg");
+  }
+}

@@ -1,14 +1,14 @@
-{% extends "django_village/footer.html" %}
+{% extends "django_design_system/footer.html" %}
 {% load i18n l10n %}
 
 {% block footer_links %}
   {{ block.super }}
-  <li class="village-footer__bottom-item">
+  <li class="design-system-footer__bottom-item">
     <button id="footer__bottom-link__parametres-affichage"
-            aria-controls="village-theme-modal"
-            data-village-opened="false"
-            class="village-icon-theme-fill village-link--icon-left village-footer__bottom-link"
-            data-village-js-modal-button="true">
+            aria-controls="design-system-theme-modal"
+            data-design-system-opened="false"
+            class="design-system-icon-theme-fill design-system-link--icon-left design-system-footer__bottom-link"
+            data-design-system-js-modal-button="true">
       {% translate "Display settings" %}
     </button>
   </li>
@@ -18,15 +18,15 @@
   {% translate "Back to home page" as back_to_home_label %}
   {% url 'index' as home_url %}
   {% if SITE_CONFIG.operator_logo_file and SITE_CONFIG.operator_logo_alt %}
-    <div class="village-footer__brand village-enlarge-link">
-      <p class="village-logo"
-         title="{{ SITE_CONFIG.footer_brand|default:'village' }}">
+    <div class="design-system-footer__brand design-system-enlarge-link">
+      <p class="design-system-logo"
+         title="{{ SITE_CONFIG.footer_brand|default:'design_system' }}">
         {{ SITE_CONFIG.footer_brand_html| default_if_none:'république<br />française' | safe }}
       </p>
-      <a class="village-footer__brand-link"
+      <a class="design-system-footer__brand-link"
          href="{{ home_url }}"
-         title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'village' }}">
-        <img class="village-footer__logo"
+         title="{{ back_to_home_label }} - {{ SITE_CONFIG.operator_logo_alt }} - {{ SITE_CONFIG.footer_brand|default:'design_system' }}">
+        <img class="design-system-footer__logo"
              src="{{ SITE_CONFIG.operator_logo_file.url }}"
              alt="{{ SITE_CONFIG.operator_logo_alt }}"
              {% if SITE_CONFIG.operator_logo_width >= 1 %}style="max-width:{{ SITE_CONFIG.operator_logo_width|unlocalize }}rem;"{% endif %} />
@@ -34,13 +34,13 @@
       </a>
     </div>
   {% else %}
-    <div class="village-footer__brand village-enlarge-link">
+    <div class="design-system-footer__brand design-system-enlarge-link">
       <a id="footer-operator"
          href="{{ home_url }}"
-         title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'VILLAGE' }}">
+         title="{{ back_to_home_label }} - {{ SITE_CONFIG.site_title }} - {{ SITE_CONFIG.footer_brand|default:'DESIGN_SYSTEM' }}">
         {% block brand %}
-          <p class="village-logo">
-            {{ SITE_CONFIG.footer_brand_html| default_if_none:'VILLAGE.org' | safe }}
+          <p class="design-system-logo">
+            {{ SITE_CONFIG.footer_brand_html| default_if_none:'DESIGN_SYSTEM.org' | safe }}
           </p>
         {% endblock brand %}
       </a>

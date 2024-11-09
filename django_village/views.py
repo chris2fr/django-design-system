@@ -13,12 +13,12 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.views.decorators.http import require_safe
 
-from django_village.utils import generate_summary_items
-from django_village.context_processors import site_config, urlangs
+from django_design_system.utils import generate_summary_items
+from django_design_system.context_processors import site_config, urlangs
 
-from django_village.forms import ColorForm
+from django_design_system.forms import ColorForm
 
-from django_village.village_components import (
+from django_design_system.design_system_components import (
     ALL_IMPLEMENTED_COMPONENTS,
     IMPLEMENTED_COMPONENTS,
     EXTRA_COMPONENTS,
@@ -26,19 +26,19 @@ from django_village.village_components import (
     WONT_BE_IMPLEMENTED,
 )
 
-# Used by the module = getattr(globals()["village_tags"], f"village_{tag_name}") line
-from django_village.templatetags import village_tags  # noqa
+# Used by the module = getattr(globals()["design_system_tags"], f"design_system_{tag_name}") line
+from django_design_system.templatetags import design_system_tags  # noqa
 
 # /!\ In order to test formset
 from django.views.generic import CreateView
 from django.http import HttpResponse
-# from django_village.forms import (
-#     VillageAuthorCreateForm,
-#     VillageBookCreateFormSet,
-#     VillageBookCreateFormHelper,
+# from django_design_system.forms import (
+#     DesignSystemAuthorCreateForm,
+#     DesignSystemBookCreateFormSet,
+#     DesignSystemBookCreateFormHelper,
 # )
-# from django_village.models import VillageAuthor
-from django_village.utils import format_markdown_from_file
+# from django_design_system.models import DesignSystemAuthor
+from django_design_system.utils import format_markdown_from_file
 
 
 def chunks(data, SIZE=10000):
@@ -56,12 +56,12 @@ def init_payload(page_title: str, request: object, links: list = []):
     breadcrumb_data = {
         "current": page_title,
         "links": links,
-        "root_dir": "/django-village",
+        "root_dir": "/django-design-system",
     }
 
     skiplinks = [
         {"link": "#content", "label": "Contenu"},
-        {"link": "#village-navigation", "label": "Menu"},
+        {"link": "#design-system-navigation", "label": "Menu"},
     ]
 
     implemented_component_tags_unsorted = ALL_IMPLEMENTED_COMPONENTS
@@ -74,7 +74,7 @@ def init_payload(page_title: str, request: object, links: list = []):
                 "see_all",
                 {
                     "title": "Voir tous les composants",
-                    "url": "/django_village/components/",
+                    "url": "/django_design_system/components/",
                 },
             )
         ]
@@ -82,10 +82,10 @@ def init_payload(page_title: str, request: object, links: list = []):
 
     mega_menu_categories = chunks(implemented_component_tags, 8)
 
-    data_village_mourning = ""
+    data_design_system_mourning = ""
     current_site_config = site_config(request)["SITE_CONFIG"]
     if current_site_config.mourning:
-        data_village_mourning = "data-village-mourning"
+        data_design_system_mourning = "data-design-system-mourning"
 
     full_title = current_site_config.site_title
     if page_title: 
@@ -97,7 +97,7 @@ def init_payload(page_title: str, request: object, links: list = []):
         "breadcrumb_data": breadcrumb_data,
         "skiplinks": skiplinks,
         "langcode": request.LANGUAGE_CODE,
-        "data_village_mourning": data_village_mourning,
+        "data_design_system_mourning": data_design_system_mourning,
         "full_title": full_title,
     }
 
@@ -117,7 +117,7 @@ def index(request):
 
     payload["langcode"] = "fr"
 
-    return render(request, "django_village/index.html", payload)
+    return render(request, "django_design_system/index.html", payload)
 
 
 @require_safe
@@ -139,7 +139,7 @@ def components_index(request):
     md = markdown.Markdown(
         extensions=[
             "markdown.extensions.fenced_code",
-            CodeHiliteExtension(css_class="village-code"),
+            CodeHiliteExtension(css_class="design-system-code"),
         ],
     )
 
@@ -155,7 +155,7 @@ def components_index(request):
             md.convert(v["reason"]).replace("<p>", "").replace("</p>", "")
         )
     payload["wont_be"] = wont_be
-    return render(request, "django_village/components_index.html", payload)
+    return render(request, "django_design_system/components_index.html", payload)
 
 
 @require_safe
@@ -187,14 +187,14 @@ def page_component(request, tag_name):  # NOSONAR
             messages.warning(request, "Ceci est un avertissement")
             messages.error(request, "Ceci est une erreur")
 
-        module = getattr(globals()["village_tags"], f"village_{tag_name}")
+        module = getattr(globals()["design_system_tags"], f"design_system_{tag_name}")
         payload["tag_comment"] = markdown.markdown(
             dedent(module.__doc__),
             extensions=[
                 "markdown.extensions.tables",
                 "md_in_html",
                 "markdown.extensions.fenced_code",
-                CodeHiliteExtension(css_class="village-code"),
+                CodeHiliteExtension(css_class="design-system-code"),
             ],
         )
 
@@ -235,14 +235,14 @@ def page_component(request, tag_name):  # NOSONAR
                 },
             ]
         }
-        return render(request, "django_village/page_component.html", payload)
+        return render(request, "django_design_system/page_component.html", payload)
     else:
         payload = init_payload("Non implémenté", request)
         payload["not_yet"] = {
             "text": "Le contenu recherché n’est pas encore implémenté",
             "title": "Non implémenté",
         }
-        return render(request, "django_village/not_yet.html", payload)
+        return render(request, "django_design_system/not_yet.html", payload)
 
 
 @require_safe
@@ -257,7 +257,7 @@ def page_component_header(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
@@ -271,7 +271,7 @@ def page_component_footer(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
@@ -285,38 +285,38 @@ def page_component_follow(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_follow.html", payload)
+    return render(request, "django_design_system/doc_follow.html", payload)
 
 @require_safe
 def doc_contributing(request):
-    payload = init_payload("Contribuer à Django-village", request)
+    payload = init_payload("Contribuer à Django-design-system", request)
     md = format_markdown_from_file("CONTRIBUTING.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_install(request):
-    payload = init_payload("Installation de Django-village", request)
+    payload = init_payload("Installation de Django-design-system", request)
 
     md = format_markdown_from_file("INSTALL.md", ignore_first_line=True)
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
 def doc_usage(request):
-    payload = init_payload("Utiliser Django-village", request)
+    payload = init_payload("Utiliser Django-design-system", request)
 
     md = format_markdown_from_file("doc/usage.md")
     payload["documentation"] = md["text"]
     payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
@@ -326,21 +326,21 @@ def doc_form(request):
     payload["documentation"] = md["text"]
     # payload["summary_data"] = md["summary"]
 
-    return render(request, "django_village/doc_markdown.html", payload)
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 
 @require_safe
 def resource_icons(request):
     payload = init_payload("Icônes", request)
 
-    icons_root = "django_village/static/django_village/dist/icons/"
+    icons_root = "django_design_system/static/django_design_system/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
     summary = []
     for folder in icons_folders:
         files = os.listdir(os.path.join(icons_root, folder))
-        files_without_extensions = [f.split(".")[0].replace("village--", "") for f in files]
+        files_without_extensions = [f.split(".")[0].replace("design-system--", "") for f in files]
         files_without_extensions.sort()
         all_icons[folder] = files_without_extensions
         summary.append({"link": f"#{slugify(folder)}", "label": folder.capitalize()})
@@ -348,14 +348,14 @@ def resource_icons(request):
     payload["icons"] = all_icons
     payload["summary"] = summary
 
-    return render(request, "django_village/page_icons.html", payload)
+    return render(request, "django_design_system/page_icons.html", payload)
 
 
 @require_safe
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes", request)
 
-    picto_root = "django_village/static/django_village/dist/artwork/pictograms/"
+    picto_root = "django_design_system/static/django_design_system/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}
@@ -369,7 +369,7 @@ def resource_pictograms(request):
     payload["pictograms"] = all_pictos
     payload["summary"] = summary
 
-    return render(request, "django_village/page_pictograms.html", payload)
+    return render(request, "django_design_system/page_pictograms.html", payload)
 
 
 @require_safe
@@ -381,11 +381,11 @@ def resource_colors(request):
     payload["form"] = form
     payload["components_data"] = IMPLEMENTED_COMPONENTS
 
-    return render(request, "django_village/page_colors.html", payload)
+    return render(request, "django_design_system/page_colors.html", payload)
 
 
 @require_safe
 def search(request):
     payload = init_payload("Recherche", request)
 
-    return render(request, "django_village/search.html", payload)
+    return render(request, "django_design_system/search.html", payload)

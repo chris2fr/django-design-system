@@ -8,7 +8,7 @@ from pathlib import Path
 class Command(BaseCommand):
     help = "Exports the whole site as a single JSON file."
 
-    STATIC_ROOT = Path("docs", "django-village")
+    STATIC_ROOT = Path("docs", "django-design-system")
 
     def handle(self, *args, **options):
         # Path where django-distill puts the documentation
@@ -28,12 +28,12 @@ class Command(BaseCommand):
         with open(self.STATIC_ROOT / "static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
-        with open("django_village/static/json/search_data.json", "w") as data_file:
+        with open("django_design_system/static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
     def get_page_content(self, file: str):
         filename = str(file).split("/")[-2]
-        if filename == "django-village":
+        if filename == "django-design-system":
             filename = "homepage"
 
         if filename != "search":

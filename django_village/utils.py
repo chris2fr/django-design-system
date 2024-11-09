@@ -60,7 +60,7 @@ def parse_tag_args(args, kwargs, allowed_keys: list) -> dict:
 
 def find_active_menu_items(menu: list, active_path: str) -> tuple:
     """
-    Utility function for the village_sidemenu tag: recusively locates the current
+    Utility function for the design_system_sidemenu tag: recusively locates the current
     active page and its parent menus and sets them to active
     """
     set_active = False
@@ -94,7 +94,7 @@ def generate_random_id(start: str = ""):
 def generate_summary_items(sections_names: list) -> list:
     """
     Takes a list of section names and returns them as a list of links
-    that can be used with village_summary or village_menu tags.
+    that can be used with design_system_summary or design_system_menu tags.
     """
     items = []
     for section_name in sections_names:
@@ -108,17 +108,17 @@ def generate_summary_items(sections_names: list) -> list:
     return items
 
 
-def village_input_class_attr(bf: BoundField):
+def design_system_input_class_attr(bf: BoundField):
     if not bf.is_hidden and "class" not in bf.field.widget.attrs:
         bf.field.label_suffix = ""
         if isinstance(bf.field.widget, (widgets.Select, widgets.SelectMultiple)):
-            bf.field.widget.attrs["class"] = "village-select"
-            bf.field.widget.group_class = "village-select-group"
+            bf.field.widget.attrs["class"] = "design-system-select"
+            bf.field.widget.group_class = "design-system-select-group"
         elif isinstance(bf.field.widget, widgets.RadioSelect):
-            bf.field.widget.attrs["village"] = "village"
-            bf.field.widget.group_class = "village-radio-group"
+            bf.field.widget.attrs["design_system"] = "design_system"
+            bf.field.widget.group_class = "design-system-radio-group"
         elif isinstance(bf.field.widget, widgets.CheckboxSelectMultiple):
-            bf.field.widget.attrs["village"] = "village"
+            bf.field.widget.attrs["design_system"] = "design_system"
         elif not isinstance(
             bf.field.widget,
             (
@@ -127,7 +127,7 @@ def village_input_class_attr(bf: BoundField):
                 widgets.ClearableFileInput,
             ),
         ):
-            bf.field.widget.attrs["class"] = "village-input"
+            bf.field.widget.attrs["class"] = "design-system-input"
     return bf
 
 
@@ -138,7 +138,7 @@ def format_markdown_from_file(filename: str, ignore_first_line: bool = False) ->
             extensions=[
                 "markdown.extensions.fenced_code",
                 TocExtension(toc_depth="2-6"),
-                CodeHiliteExtension(css_class="village-code"),
+                CodeHiliteExtension(css_class="design-system-code"),
             ],
         )
 
@@ -157,7 +157,7 @@ def format_markdown_from_file(filename: str, ignore_first_line: bool = False) ->
 
 
 def md_format_toc(toc: dict) -> list:
-    # Format the generated TOC into a Django-VILLAGE summary dict
+    # Format the generated TOC into a Django-Design-System summary dict
     summary_level = []
     for item in toc:
         if len(item["children"]):
@@ -172,7 +172,7 @@ def md_format_toc(toc: dict) -> list:
 
 # Lorem ipsum paragraphs
 lorem_ipsum = """
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim. At risus viverra
     adipiscing at in tellus integer feugiat. Aliquam purus sit amet luctus venenatis lectus.
@@ -182,7 +182,7 @@ lorem_ipsum = """
     ipsum a arcu cursus vitae congue mauris rhoncus. Sed id semper risus in hendrerit gravida.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Suspendisse potenti nullam ac tortor vitae purus faucibus. Condimentum lacinia quis vel eros.
     Pellentesque sit amet porttitor eget dolor. Varius duis at consectetur lorem donec massa sapien
     faucibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Tristique magna
@@ -193,7 +193,7 @@ lorem_ipsum = """
     velit dignissim sodales ut eu sem integer.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Diam maecenas ultricies mi eget mauris pharetra et ultrices. Justo nec ultrices dui sapien eget
     mi proin. Viverra mauris in aliquam sem fringilla ut. Pretium lectus quam id leo in vitae
     turpis massa. Ultricies integer quis auctor elit sed vulputate mi sit amet. Non quam lacus
@@ -205,7 +205,7 @@ lorem_ipsum = """
     quis auctor elit. Sagittis vitae et leo duis ut diam.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Urna porttitor rhoncus dolor purus. Enim eu turpis egestas pretium. Risus ultricies tristique
     nulla aliquet enim tortor at auctor urna. Etiam non quam lacus suspendisse faucibus interdum
     posuere lorem. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Ac tortor
@@ -216,7 +216,7 @@ lorem_ipsum = """
     semper risus in hendrerit gravida rutrum. Tempus iaculis urna id volutpat lacus laoreet.
 </p>
 
-<p class="village-mb-2w">
+<p class="design-system-mb-2w">
     Massa tempor nec feugiat nisl pretium fusce. Urna porttitor rhoncus dolor purus non enim
     praesent. Suspendisse ultrices gravida dictum fusce. Habitant morbi tristique senectus et netus.
     Adipiscing vitae proin sagittis nisl. Bibendum ut tristique et egestas quis. Dictum non

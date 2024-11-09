@@ -2,7 +2,7 @@ import unittest
 from django.test import Client
 from django.urls import reverse
 
-from example_app.village_components import ALL_TAGS
+from example_app.design_system_components import ALL_TAGS
 
 
 class BasicPagesTest(unittest.TestCase):
@@ -14,7 +14,7 @@ class BasicPagesTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_page_search(self):
-        response = self.client.get(reverse("wagtail_village_search"))
+        response = self.client.get(reverse("wagtail_design_system_search"))
         self.assertEqual(response.status_code, 200)
 
 

@@ -1,0 +1,51 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * reset des marges dans le bandeau
+  */
+  .design-system-notice__title,
+  .design-system-notice p {
+    margin: 0;
+  }
+
+  .design-system-notice--info .design-system-notice__body::before {
+    background-image: url("../../icons/system/design-system--info-fill.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    color: transparent;
+  }
+
+  .design-system-notice .design-system-btn--close::before,
+  .design-system-notice .design-system-btn--close::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/close-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-notice {
+    background-color: #eee;
+    color: #161616;
+  }
+
+  .design-system-notice--info {
+    background-color: hsl(180, 80%, 96%);
+    color: hsl(180, 45%, 43%);
+  }
+}

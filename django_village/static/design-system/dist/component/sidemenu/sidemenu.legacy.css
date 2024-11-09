@@ -1,0 +1,120 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@charset "UTF-8";
+
+.design-system-sidemenu {
+  /*
+  @include elevation.elevate(raised, (legacy:$legacy));
+  @include respond-from(md) {
+    @include elevation.drop((legacy:$legacy));
+  }
+   */
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+  * Correctif de la hauteur de la navigation latérale
+  */
+  .design-system-sidemenu {
+    height: auto;
+    box-shadow: inset 0 -1px 0 0 #ddd, inset 0 1px 0 0 #ddd;
+  }
+
+  .design-system-sidemenu ul {
+    list-style-type: none;
+  }
+
+  .design-system-sidemenu ol {
+    list-style-type: none;
+  }
+
+  .design-system-sidemenu ul,
+  .design-system-sidemenu ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .design-system-sidemenu [href] {
+    text-decoration: none;
+  }
+
+  .design-system-sidemenu__btn[aria-expanded]::after {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/system/arrow-down-s-line.svg");
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .design-system-sidemenu__title {
+    color: #161616;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .design-system-sidemenu__item .design-system-sidemenu__link,
+  .design-system-sidemenu__item .design-system-sidemenu__btn {
+    color: #161616;
+  }
+
+  .design-system-sidemenu__item::before {
+    box-shadow: 0 -1px 0 0 #ddd, inset 0 -1px 0 0 #ddd;
+  }
+
+  .design-system-sidemenu__item:first-child::before {
+    box-shadow: inset 0 -1px 0 0 #ddd;
+  }
+
+  .design-system-sidemenu__item:last-child::before {
+    box-shadow: 0 -1px 0 0 #ddd;
+  }
+
+  .design-system-sidemenu__link,
+  .design-system-sidemenu__btn {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-sidemenu__link[aria-current]:not([aria-current=false]),
+  .design-system-sidemenu__btn[aria-current]:not([aria-current=false]) {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-sidemenu__link[aria-current]:not([aria-current=false])::before,
+  .design-system-sidemenu__btn[aria-current]:not([aria-current=false])::before {
+    background-color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-sidemenu__btn[aria-expanded=true] {
+    background-color: hsl(180, 80%, 93%);
+  }
+}
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+  .design-system-sidemenu {
+    box-shadow: none;
+  }
+
+  .design-system-sidemenu__title {
+    box-shadow: none;
+  }
+
+  .design-system-sidemenu__inner {
+    box-shadow: inset -1px 0 0 0 #ddd;
+  }
+
+  .design-system-sidemenu--right .design-system-sidemenu__inner {
+    box-shadow: inset 1px 0 0 0 #ddd;
+  }
+}

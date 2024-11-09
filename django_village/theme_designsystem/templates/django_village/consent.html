@@ -1,17 +1,17 @@
 {% load i18n %}
-<div class="village-consent-banner">
-  <h2 class="village-h6">
+<div class="design-system-consent-banner">
+  <h2 class="design-system-h6">
     {{ self.title }}
   </h2>
-  <div class="village-consent-banner__content">
-    <p class="village-text--sm">
+  <div class="design-system-consent-banner__content">
+    <p class="design-system-text--sm">
       {{ self.content|safe }}
     </p>
   </div>
-  <ul class="village-consent-banner__buttons village-btns-group village-btns-group--right village-btns-group--inline-reverse village-btns-group--inline-sm">
+  <ul class="design-system-consent-banner__buttons design-system-btns-group design-system-btns-group--right design-system-btns-group--inline-reverse design-system-btns-group--inline-sm">
     <li>
       {% translate "Allow all cookies" as allow_all_cookies %}
-      <button class="village-btn"
+      <button class="design-system-btn"
               id="consent-accept-all"
               title="{{ allow_all_cookies }}">
         {% translate "Accept all" %}
@@ -19,7 +19,7 @@
     </li>
     <li>
       {% translate "Reject all cookies" as reject_all_cookies %}
-      <button class="village-btn"
+      <button class="design-system-btn"
               id="consent-reject-all"
               title="{{ reject_all_cookies }}">
         {% translate "Reject all" %}
@@ -27,10 +27,10 @@
     </li>
     <li>
       {% translate "Customize cookies" as customize_cookies %}
-      <button class="village-btn village-btn--secondary"
+      <button class="design-system-btn design-system-btn--secondary"
               id="consent-customize"
-              data-village-opened="false"
-              aria-controls="village-consent-modal"
+              data-design-system-opened="false"
+              aria-controls="design-system-consent-modal"
               title="{{ customize_cookies }}">
         {% translate "Customize" %}
       </button>

@@ -11,8 +11,8 @@ class Command(BaseCommand):
 
     # Build paths inside the project like this: BASE_DIR / 'subdir'.
     # BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-    # STATIC_ROOT = os.path.join(BASE_DIR, "docs/django_village")
-    STATIC_ROOT = Path("docs", "django_village")
+    # STATIC_ROOT = os.path.join(BASE_DIR, "docs/django_design_system")
+    STATIC_ROOT = Path("docs", "django_design_system")
 
     def handle(self, *args, **options):
         # Path where django-distill puts the documentation
@@ -33,12 +33,12 @@ class Command(BaseCommand):
         with open(self.STATIC_ROOT / "static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
-        with open("example_village/static/json/search_data.json", "w") as data_file:
+        with open("example_design_system/static/json/search_data.json", "w") as data_file:
             json.dump(output, data_file, indent=4, sort_keys=True)
 
     def get_page_content(self, file: str):
         filename = str(file).split("/")[-2]
-        if filename == "django-village":
+        if filename == "django-design-system":
             filename = "homepage"
 
         if filename != "search":

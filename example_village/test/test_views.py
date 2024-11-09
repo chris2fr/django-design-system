@@ -2,7 +2,7 @@ import unittest
 from django.test import Client
 from django.urls import reverse
 
-from example_village.village_components import ALL_TAGS
+from example_design_system.design_system_components import ALL_TAGS
 
 
 class BasicPagesTest(unittest.TestCase):

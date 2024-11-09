@@ -2,13 +2,13 @@ L’en-tête est géré grâce à une balise `include` dans le fichier `base.htm
 
 Il est alors possible de personnaliser le titre, le sous-titre, ainsi que le bloc-marque, via la configuration du site dans l’administration de Django.
 
-- <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg" href="https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete" target="_blank" rel="noopener noreferrer">
+- <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg" href="https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete" target="_blank" rel="noopener noreferrer">
         Voir la page de documentation du composant sur le Système de Design de l’État
-        <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
   </a>
-- <a class="village-link village-icon-external-link-line village-link--icon-right village-link--lg" href="https://main--ds-gouv.netlify.app/example/component/header/" target="_blank" rel="noopener noreferrer">
+- <a class="design-system-link design-system-icon-external-link-line design-system-link--icon-right design-system-link--lg" href="https://main--ds-gouv.netlify.app/example/component/header/" target="_blank" rel="noopener noreferrer">
         Voir la page d’exemple du Système de Design de l’État
-        <span class="village-sr-only">Ouvre une nouvelle fenêtre</span>
+        <span class="design-system-sr-only">Ouvre une nouvelle fenêtre</span>
   </a>
 
 ## Composants liés
@@ -23,7 +23,7 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_village/base.html" %}
+{% extends "django_design_system/base.html" %}
 
 <!-- [...] -->
 {% block header %}
@@ -34,27 +34,27 @@ Il est possible de l’étendre pour le personnaliser, par exemple pour ajouter 
 
 ```
 <!-- <votre_app>/templates/<votre_app>/blocks/header.html -->
-{% extends "django_village/header.html" %}
+{% extends "django_design_system/header.html" %}
 
 {% block header_search %}
-  <div class="village-header__search village-modal" id="modal-search">
-    <div class="village-container village-container-lg--fluid">
-      <button class="village-btn--close village-btn"
+  <div class="design-system-header__search design-system-modal" id="modal-search">
+    <div class="design-system-container design-system-container-lg--fluid">
+      <button class="design-system-btn--close design-system-btn"
               aria-controls="modal-search"
               title="Fermer">
         Fermer
       </button>
       <form action="{% url 'page_search' %}" method="get">
-        <div class="village-search-bar" id="search-bar" role="search">
-          <label class="village-label" for="search-bar-input">
+        <div class="design-system-search-bar" id="search-bar" role="search">
+          <label class="design-system-label" for="search-bar-input">
             Rechercher
           </label>
-          <input class="village-input"
+          <input class="design-system-input"
                  placeholder="Rechercher"
                  type="search"
                  id="query"
                  name="q">
-          <button class="village-btn" title="Rechercher">
+          <button class="design-system-btn" title="Rechercher">
             Rechercher
           </button>
         </div>
@@ -71,7 +71,7 @@ Un bloc `opengraph`, vide par défaut, est fourni pour permettre d’entrer des 
 
 ```{.django}
 <!-- <votre_app>/templates/<votre_app>/base.html -->
-{% extends "django_village/base.html" %}
+{% extends "django_design_system/base.html" %}
 
 <!-- [...] -->
 {% block opengraph }

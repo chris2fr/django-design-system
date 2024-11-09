@@ -1,43 +1,43 @@
 {% load i18n %}
 {% translate "Transcript" as transcript_label %}
-<div class="village-transcription">
-  <button class="village-transcription__btn"
+<div class="design-system-transcription">
+  <button class="design-system-transcription__btn"
           aria-expanded="false"
-          aria-controls="village-transcription__collapse-{{ self.id }}">
+          aria-controls="design-system-transcription__collapse-{{ self.id }}">
     {{ transcript_label }}
   </button>
-  <div class="village-collapse"
-       id="village-transcription__collapse-{{ self.id }}">
-    <div class="village-transcription__footer">
-      <div class="village-transcription__actions-group">
+  <div class="design-system-collapse"
+       id="design-system-transcription__collapse-{{ self.id }}">
+    <div class="design-system-transcription__footer">
+      <div class="design-system-transcription__actions-group">
         {% translate "Enlarge" as enlarge_label %}
-        <button class="village-btn village-btn--fullscreen"
-                aria-controls="village-transcription-modal-{{ self.id }}"
-                data-village-opened="false"
+        <button class="design-system-btn design-system-btn--fullscreen"
+                aria-controls="design-system-transcription-modal-{{ self.id }}"
+                data-design-system-opened="false"
                 title="{{ enlarge_label }}">
           {{ enlarge_label }}
         </button>
       </div>
     </div>
-    <dialog id="village-transcription-modal-{{ self.id }}"
-            class="village-modal"
+    <dialog id="design-system-transcription-modal-{{ self.id }}"
+            class="design-system-modal"
             role="dialog"
-            aria-labelledby="village-transcription-modal-{{ self.id }}-title">
-      <div class="village-container village-container--fluid facile-container-md">
-        <div class="village-grid-row village-grid-row--center">
-          <div class="village-col-12 village-col-md-10 village-col-lg-8">
-            <div class="village-modal__body">
-              <div class="village-modal__header">
+            aria-labelledby="design-system-transcription-modal-{{ self.id }}-title">
+      <div class="design-system-container design-system-container--fluid facile-container-md">
+        <div class="design-system-grid-row design-system-grid-row--center">
+          <div class="design-system-col-12 design-system-col-md-10 design-system-col-lg-8">
+            <div class="design-system-modal__body">
+              <div class="design-system-modal__header">
                 {% translate "Close" as close_label %}
-                <button class="village-btn--close village-btn"
-                        aria-controls="village-transcription-modal-{{ self.id }}"
+                <button class="design-system-btn--close design-system-btn"
+                        aria-controls="design-system-transcription-modal-{{ self.id }}"
                         title="{{ close_label }}">
                   {{ close_label }}
                 </button>
               </div>
-              <div class="village-modal__content">
-                <h1 id="village-transcription-modal-{{ self.id }}-title"
-                    class="village-modal__title">
+              <div class="design-system-modal__content">
+                <h1 id="design-system-transcription-modal-{{ self.id }}-title"
+                    class="design-system-modal__title">
                   {{ self.title|default:transcript_label }}
                 </h1>
                 {{ self.content|safe }}

@@ -1,8 +1,8 @@
-{% extends "django_village/base.html" %}
-{% load static village_tags %}
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
 
 {% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/village-code.css' %}">
+  <link rel="stylesheet" href="{% static 'css/design-system-code.css' %}">
   <style>
     .example-textarea {
       background: var(--background-alt-grey);
@@ -21,23 +21,23 @@ p code, li code {
 {% endblock extra_css %}
 
 {% block content %}
-  <div class="village-grid-row village-grid-row--gutters village-b__two-col">
-    <div class="village-col-12 village-col-md-4">
-      {% village_sidemenu side_menu extra_classes="" %}
+  <div class="design-system-grid-row design-system-grid-row--gutters design-system-b__two-col">
+    <div class="design-system-col-12 design-system-col-md-4">
+      {% design_system_sidemenu side_menu extra_classes="" %}
     </div>
-    <div class="village-col-12 village-col-md-8 village-py-2w">
+    <div class="design-system-col-12 design-system-col-md-8 design-system-py-2w">
       <h1>
         {{ title }}
       </h1>
       <ul>
         {% if doc_url %}
           <li>
-            {% village_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="village-link--lg" %}
+            {% design_system_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="design-system-link--lg" %}
           </li>
         {% endif %}
         {% if example_url %}
           <li>
-            {% village_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="village-link--lg" %}
+            {% design_system_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="design-system-link--lg" %}
           </li>
         {% endif %}
       </ul>
@@ -50,15 +50,15 @@ p code, li code {
           Exemples
         </h2>
         {% for sample_data_item in sample_data %}
-          <h3 class="village-mt-3w">
+          <h3 class="design-system-mt-3w">
             Données
           </h3>
-          <div class="village-my-2w">
+          <div class="design-system-my-2w">
             {# djlint:off #}
             {% with sample_data_item|pprint as raw_sample_code %}
               {# djlint:off #}
-              {% with '<pre class="village-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
-                {% village_accordion title="Données d’exemple" content=sample_data_code %}
+              {% with '<pre class="design-system-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
+                {% design_system_accordion title="Données d’exemple" content=sample_data_code %}
               {% endwith %}
             {% endwith %}
             {# djlint:on #}
@@ -67,80 +67,80 @@ p code, li code {
             Résultat
           </h3>
           {% if tag_name == "accordion" %}
-            {% village_accordion sample_data_item %}
+            {% design_system_accordion sample_data_item %}
           {% elif tag_name == "accordion_group" %}
-            {% village_accordion_group sample_data_item %}
+            {% design_system_accordion_group sample_data_item %}
           {% elif tag_name == "alert" %}
-            {% village_alert sample_data_item %}
+            {% design_system_alert sample_data_item %}
           {% elif tag_name == "badge" %}
-            {% village_badge sample_data_item %}
+            {% design_system_badge sample_data_item %}
           {% elif tag_name == "badge_group" %}
-            {% village_badge_group sample_data_item %}
+            {% design_system_badge_group sample_data_item %}
           {% elif tag_name == "button" %}
-            {% village_button sample_data_item %}
+            {% design_system_button sample_data_item %}
           {% elif tag_name == "button_group" %}
-            {% village_button_group sample_data_item %}
+            {% design_system_button_group sample_data_item %}
           {% elif tag_name == "callout" %}
-            {% village_callout sample_data_item %}
+            {% design_system_callout sample_data_item %}
           {% elif tag_name == "card" %}
             {% if not "horizontal" in sample_data_item.extra_classes %}
-              <div class="village-grid-row village-grid-row--gutters">
-                <div class="village-col-12 village-col-md-4">
-                  {% village_card sample_data_item %}
+              <div class="design-system-grid-row design-system-grid-row--gutters">
+                <div class="design-system-col-12 design-system-col-md-4">
+                  {% design_system_card sample_data_item %}
                 </div>
               </div>
             {% else %}
-              <div class="village-grid-row village-grid-row--gutters">
-                {% village_card sample_data_item %}
+              <div class="design-system-grid-row design-system-grid-row--gutters">
+                {% design_system_card sample_data_item %}
               </div>
             {% endif %}
           {% elif tag_name == "consent" %}
             <p>
               Voir en bas de votre écran.
             </p>
-            {% village_consent sample_data_item %}
+            {% design_system_consent sample_data_item %}
           {% elif tag_name == "content" %}
-            {% village_content sample_data_item %}
+            {% design_system_content sample_data_item %}
           {% elif tag_name == "django_messages" %}
-            {% village_django_messages sample_data_item %}
+            {% design_system_django_messages sample_data_item %}
           {% elif tag_name == "france_connect" %}
-            {% village_france_connect sample_data_item %}
+            {% design_system_france_connect sample_data_item %}
           {% elif tag_name == "highlight" %}
-            {% village_highlight sample_data_item %}
+            {% design_system_highlight sample_data_item %}
           {% elif tag_name == "input" %}
-            {% village_input sample_data_item %}
+            {% design_system_input sample_data_item %}
           {% elif tag_name == "link" %}
-            {% village_link sample_data_item %}
+            {% design_system_link sample_data_item %}
           {% elif tag_name == "notice" %}
-            {% village_notice sample_data_item %}
+            {% design_system_notice sample_data_item %}
           {% elif tag_name == "quote" %}
-            {% village_quote sample_data_item %}
+            {% design_system_quote sample_data_item %}
           {% elif tag_name == "select" %}
-            {% village_select sample_data_item %}
+            {% design_system_select sample_data_item %}
           {% elif tag_name == "sidemenu" %}
-            {% village_sidemenu sample_data_item %}
+            {% design_system_sidemenu sample_data_item %}
           {% elif tag_name == "skiplinks" %}
-            {% village_skiplinks sample_data_item %}
+            {% design_system_skiplinks sample_data_item %}
           {% elif tag_name == "stepper" %}
-            {% village_stepper sample_data_item %}
+            {% design_system_stepper sample_data_item %}
           {% elif tag_name == "summary" %}
-            {% village_summary sample_data_item %}
+            {% design_system_summary sample_data_item %}
           {% elif tag_name == "table" %}
-            {% village_table sample_data_item %}
+            {% design_system_table sample_data_item %}
           {% elif tag_name == "tag" %}
-            {% village_tag sample_data_item %}
+            {% design_system_tag sample_data_item %}
           {% elif tag_name == "tile" %}
-            <div class="village-grid-row village-grid-row--gutters">
-              <div class="village-col-12">
-                {% village_tile sample_data_item %}
+            <div class="design-system-grid-row design-system-grid-row--gutters">
+              <div class="design-system-col-12">
+                {% design_system_tile sample_data_item %}
               </div>
             </div>
           {% elif tag_name == "toggle" %}
-            {% village_toggle sample_data_item %}
+            {% design_system_toggle sample_data_item %}
           {% elif tag_name == "tooltip" %}
-            {% village_tooltip sample_data_item %}
+            {% design_system_tooltip sample_data_item %}
           {% elif tag_name == "transcription" %}
-            {% village_transcription sample_data_item %}
+            {% design_system_transcription sample_data_item %}
           {% endif %}
         {% endfor %}
       {% else %}
@@ -148,7 +148,7 @@ p code, li code {
           Résultat
         </h2>
         {% if tag_name == "breadcrumb" %}
-          {% village_breadcrumb %}
+          {% design_system_breadcrumb %}
         {% elif tag_name == "css" %}
           <label for="example-textarea">
             Code source :
@@ -157,7 +157,7 @@ p code, li code {
                     readonly
                     rows="8"
                     cols="90"
-                    class="example-textarea">{% village_css %}</textarea>
+                    class="example-textarea">{% design_system_css %}</textarea>
           <br />
         {% elif tag_name == "favicon" %}
           <label for="example-textarea">
@@ -167,7 +167,7 @@ p code, li code {
                     readonly
                     rows="14"
                     cols="90"
-                    class="example-textarea">{% village_favicon %}</textarea>
+                    class="example-textarea">{% design_system_favicon %}</textarea>
           <br />
         {% elif tag_name == "js" %}
           <label for="example-textarea">
@@ -177,10 +177,10 @@ p code, li code {
                     readonly
                     rows="6"
                     cols="90"
-                    class="example-textarea">{% village_js %}</textarea>
+                    class="example-textarea">{% design_system_js %}</textarea>
           <br />
         {% elif tag_name == "pagination" %}
-          {% village_pagination page_obj %}
+          {% design_system_pagination page_obj %}
         {% elif tag_name == "theme_modale" %}
           <label for="example-textarea">
             Code source :
@@ -189,7 +189,7 @@ p code, li code {
                     readonly
                     rows="62"
                     cols="120"
-                    class="example-textarea">{% village_theme_modale %}</textarea>
+                    class="example-textarea">{% design_system_theme_modale %}</textarea>
           <br />
         {% endif %}
       {% endif %}

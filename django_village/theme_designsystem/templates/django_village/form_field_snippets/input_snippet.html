@@ -1,21 +1,21 @@
-{% load widget_tweaks village_tags %}
+{% load widget_tweaks design_system_tags %}
 {# Generic input snippet used by most of the field types #}
-<div class="{{ field.field.widget.group_class|default:'village-input-group' }}{% if field.errors %} {{ field.field.widget.group_class|default:'village-input-group' }}--error{% endif %}{% if field.field.disabled %} village-input-group--disabled{% endif %}">
-  <label for="{{ field.id_for_label }}" class="village-label">
+<div class="{{ field.field.widget.group_class|default:'design-system-input-group' }}{% if field.errors %} {{ field.field.widget.group_class|default:'design-system-input-group' }}--error{% endif %}{% if field.field.disabled %} design-system-input-group--disabled{% endif %}">
+  <label for="{{ field.id_for_label }}" class="design-system-label">
     {{ field.label }}
     {% if field.field.required %}
       *
     {% endif %}
     {% if field.help_text %}
-      <span class="village-hint-text">{{ field.help_text }}</span>
+      <span class="design-system-hint-text">{{ field.help_text }}</span>
     {% endif %}
   </label>
   {% if field.errors %}
     {% with aria_describedby="aria-describedby:"|add:field.auto_id|add:"-desc-error" %}
-      {{ field|village_input_class_attr|attr:"aria-invalid:true"|attr:aria_describedby }}
+      {{ field|design_system_input_class_attr|attr:"aria-invalid:true"|attr:aria_describedby }}
     {% endwith %}
   {% else %}
-    {{ field|village_input_class_attr }}
+    {{ field|design_system_input_class_attr }}
   {% endif %}
   {% if field.errors %}
     <div id="{{ field.auto_id }}-desc-error">

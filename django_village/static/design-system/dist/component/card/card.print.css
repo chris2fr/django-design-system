@@ -1,0 +1,70 @@
+/*!
+ * DESIGN-SYSTEM v0.0.3 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ */
+@media print {
+  .design-system-card {
+    background-color: #fff;
+  }
+
+  .design-system-card:not(.design-system-card--no-border):not(.design-system-card--shadow) {
+    background-image: linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
+  }
+
+  .design-system-card--grey {
+    background-color: #eee;
+  }
+
+  .design-system-card--shadow {
+    background-color: #fff;
+  }
+
+  .design-system-card--shadow.design-system-card--grey {
+    background-color: #eee;
+  }
+
+  .design-system-card--download:not(.design-system-card--no-background) .design-system-card__header {
+    background-color: #f6f6f6;
+  }
+
+  .design-system-card__detail {
+    color: #666;
+    line-height: 1rem !important;
+  }
+
+  .design-system-card__title {
+    color: #161616;
+  }
+
+  .design-system-card__title a[href] {
+    color: hsl(180, 75%, 25%);
+  }
+
+  .design-system-card__title:disabled,
+  a.design-system-card__title:not([href]) {
+    color: #929292;
+    background-color: #e5e5e5;
+  }
+
+  .design-system-card__detail,
+  .design-system-card__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media print and (-ms-high-contrast: none), print and (-ms-high-contrast: active) {
+  .design-system-card--shadow {
+    z-index: 500;
+  }
+
+  .design-system-card--no-background {
+    background-color: transparent;
+  }
+
+  .design-system-card--no-background:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .design-system-card--no-background:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
