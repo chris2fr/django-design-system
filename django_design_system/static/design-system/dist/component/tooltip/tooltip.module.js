@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -191,3 +191,4 @@ api.tooltip = {
 };
 
 api.internals.register(api.tooltip.TooltipSelector.TOOLTIP, api.tooltip.Tooltip);
+//# sourceMappingURL=tooltip.module.js.map

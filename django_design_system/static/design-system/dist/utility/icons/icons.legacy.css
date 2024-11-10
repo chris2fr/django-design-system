@@ -1393,11 +1393,6 @@
     background-image: url("../../icons/editor/code-view.svg");
   }
 
-  .design-system-icon-font-size::before,
-  .design-system-icon-font-size::after {
-    background-image: url("../../icons/editor/font-size.svg");
-  }
-
   .design-system-icon-bold::before,
   .design-system-icon-bold::after {
     background-image: url("../../icons/editor/design-system--bold.svg");
@@ -1416,6 +1411,11 @@
   .design-system-icon-quote-line::before,
   .design-system-icon-quote-line::after {
     background-image: url("../../icons/editor/design-system--quote-line.svg");
+  }
+
+  .design-system-icon-font-size::before,
+  .design-system-icon-font-size::after {
+    background-image: url("../../icons/editor/font-size.svg");
   }
 
   .design-system-icon-h-1::before,
@@ -1513,16 +1513,16 @@
     background-image: url("../../icons/editor/translate-2.svg");
   }
 
-  .design-system-fi-font-size::before {
-    background-image: url("../../icons/editor/font-size.svg");
-  }
-
   .design-system-fi-bold::before {
     background-image: url("../../icons/editor/design-system--bold.svg");
   }
 
   .design-system-fi-highlight::before {
     background-image: url("../../icons/editor/design-system--highlight.svg");
+  }
+
+  .design-system-fi-font-size::before {
+    background-image: url("../../icons/editor/font-size.svg");
   }
 
   .design-system-fi-italic::before {
@@ -1831,6 +1831,26 @@
     background-image: url("../../icons/logo/chrome-line.svg");
   }
 
+  .design-system-icon-dailymotion-fill::before,
+  .design-system-icon-dailymotion-fill::after {
+    background-image: url("../../icons/logo/design-system--dailymotion-fill.svg");
+  }
+
+  .design-system-icon-dailymotion-line::before,
+  .design-system-icon-dailymotion-line::after {
+    background-image: url("../../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-icon-tiktok-fill::before,
+  .design-system-icon-tiktok-fill::after {
+    background-image: url("../../icons/logo/design-system--tiktok-fill.svg");
+  }
+
+  .design-system-icon-tiktok-line::before,
+  .design-system-icon-tiktok-line::after {
+    background-image: url("../../icons/logo/design-system--tiktok-line.svg");
+  }
+
   .design-system-icon-edge-fill::before,
   .design-system-icon-edge-fill::after {
     background-image: url("../../icons/logo/edge-fill.svg");
@@ -1859,26 +1879,6 @@
   .design-system-icon-firefox-line::before,
   .design-system-icon-firefox-line::after {
     background-image: url("../../icons/logo/firefox-line.svg");
-  }
-
-  .design-system-icon-dailymotion-fill::before,
-  .design-system-icon-dailymotion-fill::after {
-    background-image: url("../../icons/logo/design-system--dailymotion-fill.svg");
-  }
-
-  .design-system-icon-dailymotion-line::before,
-  .design-system-icon-dailymotion-line::after {
-    background-image: url("../../icons/logo/design-system--dailymotion-line.svg");
-  }
-
-  .design-system-icon-tiktok-fill::before,
-  .design-system-icon-tiktok-fill::after {
-    background-image: url("../../icons/logo/design-system--tiktok-fill.svg");
-  }
-
-  .design-system-icon-tiktok-line::before,
-  .design-system-icon-tiktok-line::after {
-    background-image: url("../../icons/logo/design-system--tiktok-line.svg");
   }
 
   .design-system-icon-github-fill::before,
@@ -2071,20 +2071,20 @@
     background-image: url("../../icons/logo/youtube-line.svg");
   }
 
-  .design-system-fi-facebook-circle-fill::before {
-    background-image: url("../../icons/logo/facebook-circle-fill.svg");
-  }
-
-  .design-system-fi-facebook-circle-line::before {
-    background-image: url("../../icons/logo/facebook-circle-line.svg");
-  }
-
   .design-system-fi-dailymotion-fill::before {
     background-image: url("../../icons/logo/design-system--dailymotion-fill.svg");
   }
 
   .design-system-fi-dailymotion-line::before {
     background-image: url("../../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-fi-facebook-circle-fill::before {
+    background-image: url("../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .design-system-fi-facebook-circle-line::before {
+    background-image: url("../../icons/logo/facebook-circle-line.svg");
   }
 
   .design-system-fi-github-fill::before {
@@ -2967,66 +2967,6 @@
     background-image: url("../../icons/system/delete-bin-line.svg");
   }
 
-  .design-system-icon-download-fill::before,
-  .design-system-icon-download-fill::after {
-    background-image: url("../../icons/system/download-fill.svg");
-  }
-
-  .design-system-icon-download-line::before,
-  .design-system-icon-download-line::after {
-    background-image: url("../../icons/system/download-line.svg");
-  }
-
-  .design-system-icon-error-warning-fill::before,
-  .design-system-icon-error-warning-fill::after {
-    background-image: url("../../icons/system/error-warning-fill.svg");
-  }
-
-  .design-system-icon-error-warning-line::before,
-  .design-system-icon-error-warning-line::after {
-    background-image: url("../../icons/system/error-warning-line.svg");
-  }
-
-  .design-system-icon-external-link-fill::before,
-  .design-system-icon-external-link-fill::after {
-    background-image: url("../../icons/system/external-link-fill.svg");
-  }
-
-  .design-system-icon-external-link-line::before,
-  .design-system-icon-external-link-line::after {
-    background-image: url("../../icons/system/external-link-line.svg");
-  }
-
-  .design-system-icon-eye-fill::before,
-  .design-system-icon-eye-fill::after {
-    background-image: url("../../icons/system/eye-fill.svg");
-  }
-
-  .design-system-icon-eye-line::before,
-  .design-system-icon-eye-line::after {
-    background-image: url("../../icons/system/eye-line.svg");
-  }
-
-  .design-system-icon-eye-off-fill::before,
-  .design-system-icon-eye-off-fill::after {
-    background-image: url("../../icons/system/eye-off-fill.svg");
-  }
-
-  .design-system-icon-eye-off-line::before,
-  .design-system-icon-eye-off-line::after {
-    background-image: url("../../icons/system/eye-off-line.svg");
-  }
-
-  .design-system-icon-filter-fill::before,
-  .design-system-icon-filter-fill::after {
-    background-image: url("../../icons/system/filter-fill.svg");
-  }
-
-  .design-system-icon-filter-line::before,
-  .design-system-icon-filter-line::after {
-    background-image: url("../../icons/system/filter-line.svg");
-  }
-
   .design-system-icon-arrow-left-s-first-line::before,
   .design-system-icon-arrow-left-s-first-line::after {
     background-image: url("../../icons/system/design-system--arrow-left-s-first-line.svg");
@@ -3110,6 +3050,66 @@
   .design-system-icon-warning-line::before,
   .design-system-icon-warning-line::after {
     background-image: url("../../icons/system/design-system--warning-line.svg");
+  }
+
+  .design-system-icon-download-fill::before,
+  .design-system-icon-download-fill::after {
+    background-image: url("../../icons/system/download-fill.svg");
+  }
+
+  .design-system-icon-download-line::before,
+  .design-system-icon-download-line::after {
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .design-system-icon-error-warning-fill::before,
+  .design-system-icon-error-warning-fill::after {
+    background-image: url("../../icons/system/error-warning-fill.svg");
+  }
+
+  .design-system-icon-error-warning-line::before,
+  .design-system-icon-error-warning-line::after {
+    background-image: url("../../icons/system/error-warning-line.svg");
+  }
+
+  .design-system-icon-external-link-fill::before,
+  .design-system-icon-external-link-fill::after {
+    background-image: url("../../icons/system/external-link-fill.svg");
+  }
+
+  .design-system-icon-external-link-line::before,
+  .design-system-icon-external-link-line::after {
+    background-image: url("../../icons/system/external-link-line.svg");
+  }
+
+  .design-system-icon-eye-fill::before,
+  .design-system-icon-eye-fill::after {
+    background-image: url("../../icons/system/eye-fill.svg");
+  }
+
+  .design-system-icon-eye-line::before,
+  .design-system-icon-eye-line::after {
+    background-image: url("../../icons/system/eye-line.svg");
+  }
+
+  .design-system-icon-eye-off-fill::before,
+  .design-system-icon-eye-off-fill::after {
+    background-image: url("../../icons/system/eye-off-fill.svg");
+  }
+
+  .design-system-icon-eye-off-line::before,
+  .design-system-icon-eye-off-line::after {
+    background-image: url("../../icons/system/eye-off-line.svg");
+  }
+
+  .design-system-icon-filter-fill::before,
+  .design-system-icon-filter-fill::after {
+    background-image: url("../../icons/system/filter-fill.svg");
+  }
+
+  .design-system-icon-filter-line::before,
+  .design-system-icon-filter-line::after {
+    background-image: url("../../icons/system/filter-line.svg");
   }
 
   .design-system-icon-information-fill::before,
@@ -3409,46 +3409,6 @@
     background-image: url("../../icons/system/close-line.svg");
   }
 
-  .design-system-fi-download-line::before {
-    background-image: url("../../icons/system/download-line.svg");
-  }
-
-  .design-system-fi-error-warning-fill::before {
-    background-image: url("../../icons/system/error-warning-fill.svg");
-  }
-
-  .design-system-fi-error-warning-line::before {
-    background-image: url("../../icons/system/error-warning-line.svg");
-  }
-
-  .design-system-fi-external-link-line::before {
-    background-image: url("../../icons/system/external-link-line.svg");
-  }
-
-  .design-system-fi-eye-fill::before {
-    background-image: url("../../icons/system/eye-fill.svg");
-  }
-
-  .design-system-fi-eye-line::before {
-    background-image: url("../../icons/system/eye-line.svg");
-  }
-
-  .design-system-fi-eye-off-fill::before {
-    background-image: url("../../icons/system/eye-off-fill.svg");
-  }
-
-  .design-system-fi-eye-off-line::before {
-    background-image: url("../../icons/system/eye-off-line.svg");
-  }
-
-  .design-system-fi-filter-fill::before {
-    background-image: url("../../icons/system/filter-fill.svg");
-  }
-
-  .design-system-fi-filter-line::before {
-    background-image: url("../../icons/system/filter-line.svg");
-  }
-
   .design-system-fi-arrow-left-s-first-line::before {
     background-image: url("../../icons/system/design-system--arrow-left-s-first-line.svg");
   }
@@ -3499,6 +3459,46 @@
 
   .design-system-fi-warning-line::before {
     background-image: url("../../icons/system/design-system--warning-line.svg");
+  }
+
+  .design-system-fi-download-line::before {
+    background-image: url("../../icons/system/download-line.svg");
+  }
+
+  .design-system-fi-error-warning-fill::before {
+    background-image: url("../../icons/system/error-warning-fill.svg");
+  }
+
+  .design-system-fi-error-warning-line::before {
+    background-image: url("../../icons/system/error-warning-line.svg");
+  }
+
+  .design-system-fi-external-link-line::before {
+    background-image: url("../../icons/system/external-link-line.svg");
+  }
+
+  .design-system-fi-eye-fill::before {
+    background-image: url("../../icons/system/eye-fill.svg");
+  }
+
+  .design-system-fi-eye-line::before {
+    background-image: url("../../icons/system/eye-line.svg");
+  }
+
+  .design-system-fi-eye-off-fill::before {
+    background-image: url("../../icons/system/eye-off-fill.svg");
+  }
+
+  .design-system-fi-eye-off-line::before {
+    background-image: url("../../icons/system/eye-off-line.svg");
+  }
+
+  .design-system-fi-filter-fill::before {
+    background-image: url("../../icons/system/filter-fill.svg");
+  }
+
+  .design-system-fi-filter-line::before {
+    background-image: url("../../icons/system/filter-line.svg");
   }
 
   .design-system-fi-information-fill::before {

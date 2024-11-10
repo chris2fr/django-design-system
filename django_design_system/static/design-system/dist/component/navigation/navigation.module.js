@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -171,3 +171,4 @@ api.navigation = {
 
 api.internals.register(api.navigation.NavigationSelector.NAVIGATION, api.navigation.Navigation);
 api.internals.register(api.navigation.NavigationSelector.ITEM, api.navigation.NavigationItem);
+//# sourceMappingURL=navigation.module.js.map

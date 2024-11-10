@@ -58,7 +58,7 @@ const state = new State();
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 class LogLevel {
@@ -3605,3 +3605,4 @@ api$1.internals.register(api$1.core.InjectSvgSelector.INJECT_SVG, api$1.core.Inj
 api$1.internals.register(api$1.core.RatioSelector.RATIO, api$1.core.Ratio);
 api$1.internals.register(api$1.core.AssessSelector.ASSESS_FILE, api$1.core.AssessFile);
 api$1.internals.register(api$1.core.AssessSelector.DETAIL, api$1.core.AssessDetail);
+//# sourceMappingURL=core.module.js.map

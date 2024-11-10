@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -32,3 +32,4 @@ api.transcription = {
 };
 
 api.internals.register(api.transcription.TranscriptionSelector.TRANSCRIPTION, api.transcription.Transcription);
+//# sourceMappingURL=transcription.module.js.map

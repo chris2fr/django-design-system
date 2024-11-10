@@ -78,7 +78,7 @@ Quand une nouvelle version du système de design de l’État est publiée, il e
 make update_design_system
 ```
 
-La commande télécharge la dernière version depuis le dépôt Github, la met dans le répertoire `django_design_system/static/django_design_system/dist/`, retire des fichiers pour réduire la taille du paquet Python et met à jour les sommes de contrôle d’intégrité dans le fichier `design-system/checksums`.
+La commande télécharge la dernière version depuis le dépôt Github, la met dans le répertoire `django_design_system/static/design-system/dist/`, retire des fichiers pour réduire la taille du paquet Python et met à jour les sommes de contrôle d’intégrité dans le fichier `design-system/checksums`.
 
 Une fois la mise à jour faite, il reste à :
 - lancer les tests unitaires avec `make test` ;

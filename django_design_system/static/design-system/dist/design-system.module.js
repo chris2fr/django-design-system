@@ -58,7 +58,7 @@ const state = new State();
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 class LogLevel {
@@ -6420,3 +6420,4 @@ api.display = {
 };
 
 api.internals.register(api.display.DisplaySelector.DISPLAY, api.display.Display);
+//# sourceMappingURL=design-system.module.js.map

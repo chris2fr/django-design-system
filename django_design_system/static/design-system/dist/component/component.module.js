@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -2640,3 +2640,4 @@ api.display = {
 };
 
 api.internals.register(api.display.DisplaySelector.DISPLAY, api.display.Display);
+//# sourceMappingURL=component.module.js.map

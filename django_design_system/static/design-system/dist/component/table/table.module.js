@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -129,3 +129,4 @@ api.table = {
 api.internals.register(api.table.TableSelector.TABLE, api.table.Table);
 api.internals.register(api.table.TableSelector.ELEMENT, api.table.TableElement);
 api.internals.register(api.table.TableSelector.CAPTION, api.table.TableCaption);
+//# sourceMappingURL=table.module.js.map

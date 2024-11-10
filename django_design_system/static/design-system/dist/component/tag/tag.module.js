@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -56,3 +56,4 @@ api.tag = {
 
 api.internals.register(api.tag.TagSelector.PRESSABLE, api.core.Toggle);
 api.internals.register(api.tag.TagSelector.DISMISSIBLE, api.tag.TagDismissible);
+//# sourceMappingURL=tag.module.js.map

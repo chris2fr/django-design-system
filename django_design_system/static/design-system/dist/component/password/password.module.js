@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -137,3 +137,4 @@ api.internals.register(api.password.PasswordSelector.INPUT, api.password.Passwor
 api.internals.register(api.password.PasswordSelector.PASSWORD, api.password.Password);
 api.internals.register(api.password.PasswordSelector.TOOGLE, api.password.PasswordToggle);
 api.internals.register(api.password.PasswordSelector.LABEL, api.password.PasswordLabel);
+//# sourceMappingURL=password.module.js.map

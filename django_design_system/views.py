@@ -101,6 +101,22 @@ def init_payload(page_title: str, request: object, links: list = []):
         "full_title": full_title,
     }
 
+@require_safe
+def search(request):
+    payload = init_payload("Accueil", request)
+
+    payload["summary_data"] = generate_summary_items(
+        [
+            "Installation",
+            "Utilisation",
+            "Développement",
+            "Notes",
+        ]
+    )
+
+    payload["langcode"] = "fr"
+
+    return render(request, "django_design_system/index.html", payload)
 
 @require_safe
 def index(request):
@@ -296,6 +312,14 @@ def doc_contributing(request):
 
     return render(request, "django_design_system/doc_markdown.html", payload)
 
+@require_safe
+def doc_search(request):
+    payload = init_payload("Recherche", request)
+    md = format_markdown_from_file("doc/SEARCH.md", ignore_first_line=True)
+    payload["documentation"] = md["text"]
+    payload["summary_data"] = md["summary"]
+
+    return render(request, "django_design_system/doc_markdown.html", payload)
 
 @require_safe
 def doc_install(request):
@@ -333,7 +357,7 @@ def doc_form(request):
 def resource_icons(request):
     payload = init_payload("Icônes", request)
 
-    icons_root = "django_design_system/static/django_design_system/dist/icons/"
+    icons_root = "django_design_system/static/design-system/dist/icons/"
     icons_folders = os.listdir(icons_root)
     icons_folders.sort()
     all_icons = {}
@@ -355,7 +379,7 @@ def resource_icons(request):
 def resource_pictograms(request):
     payload = init_payload("Pictogrammes", request)
 
-    picto_root = "django_design_system/static/django_design_system/dist/artwork/pictograms/"
+    picto_root = "django_design_system/static/design-system/dist/artwork/pictograms/"
     picto_folders = os.listdir(picto_root)
     picto_folders.sort()
     all_pictos = {}

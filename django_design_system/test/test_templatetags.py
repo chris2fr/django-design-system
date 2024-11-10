@@ -500,7 +500,7 @@ class DesignSystemContentTagTest(SimpleTestCase):
     test_data = {
         "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
         "caption": "Image en largeur normale et en 4x3",
-        "image_url": "/static/img/placeholder.16x9.svg",
+        "image_url": "/static/design-system/img/placeholder.16x9.svg",
         "ratio_class": "design-system-ratio-4x3",
     }
 
@@ -516,7 +516,7 @@ class DesignSystemContentTagTest(SimpleTestCase):
             <figure class="design-system-content-media" role="group" aria-label="Image en largeur normale et en 4x3">
             <div class="design-system-content-media__img">
                 <img class="design-system-responsive-img design-system-ratio-4x3"
-                    src="/static/img/placeholder.16x9.svg"
+                    src="/static/design-system/img/placeholder.16x9.svg"
                     alt="Silhouette stylisée représentant le soleil au-dessus de deux montagnes." />
             </div>
                 <figcaption class="design-system-content-media__caption">

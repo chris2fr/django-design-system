@@ -35,7 +35,7 @@ packages = [
   {include = "django_design_system"},
 ]
 
-include = ["LICENSE", "README.rst", "django_django_design_system/static/django_design_system/dist/*/*.*"]
+include = ["LICENSE", "README.rst", "django_django_design_system/static/design-system/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

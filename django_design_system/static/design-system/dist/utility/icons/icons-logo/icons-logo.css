@@ -18,6 +18,30 @@
   mask-image: url("../../../icons/logo/chrome-line.svg");
 }
 
+.design-system-icon-dailymotion-fill::before,
+.design-system-icon-dailymotion-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
+  mask-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
+}
+
+.design-system-icon-dailymotion-line::before,
+.design-system-icon-dailymotion-line::after {
+  -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
+  mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
+}
+
+.design-system-icon-tiktok-fill::before,
+.design-system-icon-tiktok-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
+  mask-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
+}
+
+.design-system-icon-tiktok-line::before,
+.design-system-icon-tiktok-line::after {
+  -webkit-mask-image: url("../../../icons/logo/design-system--tiktok-line.svg");
+  mask-image: url("../../../icons/logo/design-system--tiktok-line.svg");
+}
+
 .design-system-icon-edge-fill::before,
 .design-system-icon-edge-fill::after {
   -webkit-mask-image: url("../../../icons/logo/edge-fill.svg");
@@ -52,30 +76,6 @@
 .design-system-icon-firefox-line::after {
   -webkit-mask-image: url("../../../icons/logo/firefox-line.svg");
   mask-image: url("../../../icons/logo/firefox-line.svg");
-}
-
-.design-system-icon-dailymotion-fill::before,
-.design-system-icon-dailymotion-fill::after {
-  -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
-  mask-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
-}
-
-.design-system-icon-dailymotion-line::before,
-.design-system-icon-dailymotion-line::after {
-  -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
-  mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
-}
-
-.design-system-icon-tiktok-fill::before,
-.design-system-icon-tiktok-fill::after {
-  -webkit-mask-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
-  mask-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
-}
-
-.design-system-icon-tiktok-line::before,
-.design-system-icon-tiktok-line::after {
-  -webkit-mask-image: url("../../../icons/logo/design-system--tiktok-line.svg");
-  mask-image: url("../../../icons/logo/design-system--tiktok-line.svg");
 }
 
 .design-system-icon-github-fill::before,
@@ -306,18 +306,6 @@
   mask-image: url("../../../icons/logo/youtube-line.svg");
 }
 
-.design-system-fi-facebook-circle-fill::before,
-.design-system-fi-facebook-circle-fill::after {
-  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
-  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
-}
-
-.design-system-fi-facebook-circle-line::before,
-.design-system-fi-facebook-circle-line::after {
-  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
-  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
-}
-
 .design-system-fi-dailymotion-fill::before,
 .design-system-fi-dailymotion-fill::after {
   -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
@@ -328,6 +316,18 @@
 .design-system-fi-dailymotion-line::after {
   -webkit-mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
   mask-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
+}
+
+.design-system-fi-facebook-circle-fill::before,
+.design-system-fi-facebook-circle-fill::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-fill.svg");
+}
+
+.design-system-fi-facebook-circle-line::before,
+.design-system-fi-facebook-circle-line::after {
+  -webkit-mask-image: url("../../../icons/logo/facebook-circle-line.svg");
+  mask-image: url("../../../icons/logo/facebook-circle-line.svg");
 }
 
 .design-system-fi-github-fill::before,
@@ -509,6 +509,26 @@
     background-image: url("../../../icons/logo/chrome-line.svg");
   }
 
+  .design-system-icon-dailymotion-fill::before,
+  .design-system-icon-dailymotion-fill::after {
+    background-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
+  }
+
+  .design-system-icon-dailymotion-line::before,
+  .design-system-icon-dailymotion-line::after {
+    background-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-icon-tiktok-fill::before,
+  .design-system-icon-tiktok-fill::after {
+    background-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
+  }
+
+  .design-system-icon-tiktok-line::before,
+  .design-system-icon-tiktok-line::after {
+    background-image: url("../../../icons/logo/design-system--tiktok-line.svg");
+  }
+
   .design-system-icon-edge-fill::before,
   .design-system-icon-edge-fill::after {
     background-image: url("../../../icons/logo/edge-fill.svg");
@@ -537,26 +557,6 @@
   .design-system-icon-firefox-line::before,
   .design-system-icon-firefox-line::after {
     background-image: url("../../../icons/logo/firefox-line.svg");
-  }
-
-  .design-system-icon-dailymotion-fill::before,
-  .design-system-icon-dailymotion-fill::after {
-    background-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
-  }
-
-  .design-system-icon-dailymotion-line::before,
-  .design-system-icon-dailymotion-line::after {
-    background-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
-  }
-
-  .design-system-icon-tiktok-fill::before,
-  .design-system-icon-tiktok-fill::after {
-    background-image: url("../../../icons/logo/design-system--tiktok-fill.svg");
-  }
-
-  .design-system-icon-tiktok-line::before,
-  .design-system-icon-tiktok-line::after {
-    background-image: url("../../../icons/logo/design-system--tiktok-line.svg");
   }
 
   .design-system-icon-github-fill::before,
@@ -749,20 +749,20 @@
     background-image: url("../../../icons/logo/youtube-line.svg");
   }
 
-  .design-system-fi-facebook-circle-fill::before {
-    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
-  }
-
-  .design-system-fi-facebook-circle-line::before {
-    background-image: url("../../../icons/logo/facebook-circle-line.svg");
-  }
-
   .design-system-fi-dailymotion-fill::before {
     background-image: url("../../../icons/logo/design-system--dailymotion-fill.svg");
   }
 
   .design-system-fi-dailymotion-line::before {
     background-image: url("../../../icons/logo/design-system--dailymotion-line.svg");
+  }
+
+  .design-system-fi-facebook-circle-fill::before {
+    background-image: url("../../../icons/logo/facebook-circle-fill.svg");
+  }
+
+  .design-system-fi-facebook-circle-line::before {
+    background-image: url("../../../icons/logo/facebook-circle-line.svg");
   }
 
   .design-system-fi-github-fill::before {

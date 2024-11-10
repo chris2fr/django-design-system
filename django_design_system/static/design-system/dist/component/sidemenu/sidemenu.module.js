@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -48,3 +48,4 @@ api.sidemenu = {
 
 api.internals.register(api.sidemenu.SidemenuSelector.LIST, api.sidemenu.SidemenuList);
 api.internals.register(api.sidemenu.SidemenuSelector.ITEM, api.sidemenu.SidemenuItem);
+//# sourceMappingURL=sidemenu.module.js.map

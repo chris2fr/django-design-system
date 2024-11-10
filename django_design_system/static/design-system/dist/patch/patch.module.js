@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const patch = {
@@ -33,3 +33,4 @@ const patchInternals = () => {
 };
 
 patchInternals();
+//# sourceMappingURL=patch.module.js.map

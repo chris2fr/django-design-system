@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -49,3 +49,4 @@ api.accordion = {
 
 api.internals.register(api.accordion.AccordionSelector.GROUP, api.accordion.AccordionsGroup);
 api.internals.register(api.accordion.AccordionSelector.ACCORDION, api.accordion.Accordion);
+//# sourceMappingURL=accordion.module.js.map

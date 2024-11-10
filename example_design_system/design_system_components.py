@@ -3,7 +3,7 @@ from django.templatetags.static import static
 from example_design_system.utils import lorem_ipsum
 
 # Sample SVG file
-with open("example_design_system/static/img/gouvernement.svg") as svg_file:
+with open("example_design_system/static/design-system/img/gouvernement.svg") as svg_file:
     gov_svg = svg_file.read()
 
 IMPLEMENTED_COMPONENTS = {
@@ -235,7 +235,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ cinq lignes dans le mode vertical, et deux en horizontal.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "new_tab": True,
             },
             {
@@ -245,7 +245,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "design-system-card--horizontal",
             },
@@ -256,7 +256,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "design-system-card--horizontal design-system-card--horizontal-tier",
             },
@@ -267,7 +267,7 @@ IMPLEMENTED_COMPONENTS = {
                     à environ deux lignes dans le mode horizontal, et cinq en vertical.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "extra_classes": "design-system-card--horizontal design-system-card--horizontal-half",
             },
@@ -277,7 +277,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "media_badges": [
                     {
@@ -308,7 +308,7 @@ IMPLEMENTED_COMPONENTS = {
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
                 "new_tab": True,
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "top_detail": {
                     "detail": {
                         "icon_class": "design-system-icon-warning-fill",
@@ -338,7 +338,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
                 "extra_classes": "design-system-card--horizontal",
@@ -355,7 +355,7 @@ IMPLEMENTED_COMPONENTS = {
                     Il peut prendre jusqu’à 200 caractères.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "new_tab": True,
                 "enlarge_link": False,
                 "extra_classes": "design-system-card--horizontal",
@@ -380,14 +380,14 @@ IMPLEMENTED_COMPONENTS = {
                     à environ cinq lignes dans le mode vertical, et deux en horizontal.
                     """,
                 "link": "https://www.systeme-de-design.gouv.fr/",
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "new_tab": True,
                 "extra_classes": "design-system-card--grey design-system-card--shadow",
             },
             {
                 "title": "Carte sans lien",
                 "description": """Peut être utile au besoin.""",
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "enlarge_link": False,
                 "extra_classes": "design-system-card--horizontal",
             },
@@ -417,19 +417,19 @@ IMPLEMENTED_COMPONENTS = {
         "example_url": "https://main--ds-gouv.netlify.app/example/component/content/",
         "sample_data": [
             {
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 16x9",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "ratio_class": "design-system-ratio-16x9",
             },
             {
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "caption": "Image en largeur normale et en 4x3",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "ratio_class": "design-system-ratio-4x3",
             },
             {
-                "image_url": "/static/img/placeholder.16x9.svg",
+                "image_url": "/static/design-system/img/placeholder.16x9.svg",
                 "caption": "Image plus large que la colonne de contenu",
                 "alt_text": "Silhouette stylisée représentant le soleil au-dessus de deux montagnes.",
                 "extra_classes": "design-system-content-media--lg",
@@ -582,7 +582,7 @@ IMPLEMENTED_COMPONENTS = {
                         "link": "https://template.incubateur.net/",
                     },
                 ],
-                "image_url": "/static/img/placeholder.1x1.svg",
+                "image_url": "/static/design-system/img/placeholder.1x1.svg",
                 "extra_classes": "design-system-quote--green-emeraude",
             },
             {
@@ -821,7 +821,7 @@ IMPLEMENTED_COMPONENTS = {
                 "id": "tile-cityhall",
                 "extra_classes": "design-system-tile--horizontal",
                 "svg_path": static(
-                    "django_design_system/dist/artwork/pictograms/buildings/city-hall.svg"
+                    "design-system/dist/artwork/pictograms/buildings/city-hall.svg"
                 ),
             },
             {
@@ -830,7 +830,7 @@ IMPLEMENTED_COMPONENTS = {
                 "id": "tile-nuclear-plant",
                 "extra_classes": "design-system-tile--sm",
                 "svg_path": static(
-                    "django_design_system/dist/artwork/pictograms/buildings/nuclear-plant.svg"
+                    "design-system/dist/artwork/pictograms/buildings/nuclear-plant.svg"
                 ),
             },
             {
@@ -846,7 +846,7 @@ IMPLEMENTED_COMPONENTS = {
                         },
                     ]
                 },
-                "svg_path": static("django_design_system/dist/artwork/pictograms/map/map.svg"),
+                "svg_path": static("design-system/dist/artwork/pictograms/map/map.svg"),
             },
             {
                 "title": "Tuile à fond gris et ombre sans bordure",
@@ -854,7 +854,7 @@ IMPLEMENTED_COMPONENTS = {
                 "id": "tile-map",
                 "extra_classes": "design-system-tile--horizontal design-system-tile--grey design-system-tile--shadow design-system-tile--no-border",
                 "svg_path": static(
-                    "django_design_system/dist/artwork/pictograms/leisure/paint.svg"
+                    "design-system/dist/artwork/pictograms/leisure/paint.svg"
                 ),
             },
             {
@@ -863,7 +863,7 @@ IMPLEMENTED_COMPONENTS = {
                 "detail": "PDF — 1,7 Mo",
                 "url": "/",
                 "svg_path": static(
-                    "django_design_system/dist/artwork/pictograms/document/document-signature.svg"
+                    "design-system/dist/artwork/pictograms/document/document-signature.svg"
                 ),
             },
         ],

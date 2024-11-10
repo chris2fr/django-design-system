@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from django_design_system import views
 from django_design_system.design_system_components import ALL_TAGS
 from django_distill import distill_path
-from django_design_system.config import settings
+from config import settings
 
 def get_all_tags():
     for key in ALL_TAGS:
@@ -11,10 +11,19 @@ def get_all_tags():
 
 
 urlpatterns = [
-    # path(_("search/"), SearchResultsView.as_view(), name="cms_search"),
+    # path(_("search/"), SearchResultsView.as_view(), na  me="cms_search"),
     # path("tags/<str:tag>/", TagView.as_view(), name="global_tag"),
     # path("tags/", TagsListView.as_view(), name="global_tags_list"),
     # path("", include(wagtail_urls)),
+    distill_path(
+        "", views.index, name="index", distill_file="django_design_system/index.html"
+    ),
+    distill_path(
+        "search",
+        views.doc_search,
+        name="search",
+        distill_file="django_design_system/doc-contributing/index.html",
+    ),
     distill_path(
         "doc-contributing",
         views.doc_contributing,

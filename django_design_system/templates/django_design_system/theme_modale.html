@@ -1,0 +1,76 @@
+{% load static i18n static %}
+<dialog id="design-system-theme-modal"
+        class="design-system-modal"
+        aria-labelledby="design-system-theme-modal-title">
+  <div class="design-system-container design-system-container--fluid facile-container-md">
+    <div class="design-system-grid-row design-system-grid-row--center">
+      <div class="design-system-col-12 design-system-col-md-6 design-system-col-lg-4">
+        <div class="design-system-modal__body">
+          <div class="design-system-modal__header">
+            <button class="design-system-btn--close design-system-btn"
+                    aria-describedby="design-system-theme-modal-title"
+                    aria-controls="design-system-theme-modal">
+              {% translate "Close" %}
+            </button>
+          </div>
+          <div class="design-system-modal__content">
+            <h1 id="design-system-theme-modal-title" class="design-system-modal__title">
+              {% translate "Display settings" %}
+            </h1>
+            <div id="design-system-display" class="design-system-form-group design-system-display">
+              <div class="design-system-form-group">
+                <fieldset class="design-system-fieldset">
+                  <legend class="design-system-fieldset__legend facile-text--regular" id="-legend">
+                    {% translate "Choose a theme to customize the appearance of the site." %}
+                  </legend>
+                  <div class="design-system-fieldset__content">
+                    <div class="design-system-radio-group design-system-radio-rich">
+                      <input value="light"
+                             type="radio"
+                             id="design-system-radios-theme-light"
+                             name="design-system-radios-theme" />
+                      <label class="design-system-label" for="design-system-radios-theme-light">
+                        {% translate "Light theme" %}
+                      </label>
+                      <div class="design-system-radio-rich__img" data-design-system-inject-svg>
+                        <img src="{% static 'design-system/dist/artwork/light.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="design-system-radio-group design-system-radio-rich">
+                      <input value="dark"
+                             type="radio"
+                             id="design-system-radios-theme-dark"
+                             name="design-system-radios-theme" />
+                      <label class="design-system-label" for="design-system-radios-theme-dark">
+                        {% translate "Dark theme" %}
+                      </label>
+                      <div class="design-system-radio-rich__img" data-design-system-inject-svg>
+                        <img src="{% static 'design-system/dist/artwork/dark.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                    <div class="design-system-radio-group design-system-radio-rich">
+                      <input value="system"
+                             type="radio"
+                             id="design-system-radios-theme-system"
+                             name="design-system-radios-theme" />
+                      <label class="design-system-label" for="design-system-radios-theme-system">
+                        {% translate "System" %}
+                        <span class="design-system-hint-text">{% translate "Uses system settings." %}</span>
+                      </label>
+                      <div class="design-system-radio-rich__img" data-design-system-inject-svg>
+                        <img src="{% static 'design-system/dist/artwork/system.svg' %}" alt="" />
+                        {# L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance #}
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

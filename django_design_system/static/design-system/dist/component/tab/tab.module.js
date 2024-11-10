@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -392,3 +392,4 @@ api.tab = {
 api.internals.register(api.tab.TabSelector.PANEL, api.tab.TabPanel);
 api.internals.register(api.tab.TabSelector.GROUP, api.tab.TabsGroup);
 api.internals.register(api.tab.TabSelector.LIST, api.tab.TabsList);
+//# sourceMappingURL=tab.module.js.map

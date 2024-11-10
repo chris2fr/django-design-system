@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -109,3 +109,4 @@ api.header = {
 
 api.internals.register(api.header.HeaderSelector.TOOLS_LINKS, api.header.HeaderLinks);
 api.internals.register(api.header.HeaderSelector.MODALS, api.header.HeaderModal);
+//# sourceMappingURL=header.module.js.map

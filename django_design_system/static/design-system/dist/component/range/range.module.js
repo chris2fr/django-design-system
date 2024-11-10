@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -584,3 +584,4 @@ api.internals.register(api.range.RangeSelector.RANGE_INPUT2, api.range.RangeInpu
 api.internals.register(api.range.RangeSelector.RANGE_OUTPUT, api.range.RangeOutput);
 api.internals.register(api.range.RangeSelector.RANGE_MIN, api.range.RangeLimit);
 api.internals.register(api.range.RangeSelector.RANGE_MAX, api.range.RangeLimit);
+//# sourceMappingURL=range.module.js.map

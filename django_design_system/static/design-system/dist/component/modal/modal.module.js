@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -453,3 +453,4 @@ api.modal = {
 api.internals.register(api.modal.ModalSelector.MODAL, api.modal.Modal);
 api.internals.register(api.modal.ModalSelector.BODY, api.modal.ModalBody);
 api.internals.register(api.core.RootSelector.ROOT, api.modal.ModalsGroup);
+//# sourceMappingURL=modal.module.js.map

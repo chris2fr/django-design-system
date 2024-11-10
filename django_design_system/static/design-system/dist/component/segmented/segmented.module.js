@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -80,3 +80,4 @@ api.segmented = {
 
 api.internals.register(api.segmented.SegmentedSelector.SEGMENTED, api.segmented.Segmented);
 api.internals.register(api.segmented.SegmentedSelector.SEGMENTED_ELEMENT, api.segmented.SegmentedElement);
+//# sourceMappingURL=segmented.module.js.map

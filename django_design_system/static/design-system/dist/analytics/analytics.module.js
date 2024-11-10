@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -4893,3 +4893,4 @@ const integration = () => {
 };
 
 api.analytics.readiness.then(() => integration(), () => {});
+//# sourceMappingURL=analytics.module.js.map

@@ -1,0 +1,95 @@
+{% extends "django_design_system/header.html" %}
+{% load i18n static %}
+{% url 'index' as home_url %}
+
+{% block not_brand %}
+  {% translate "Home page" as home_page %}
+  <a href="{{ home_url }}"
+     title="{{ home_page }} — {{ SITE_CONFIG.site_title }}">
+     <img src="{% static 'design-system/dist/artwork/logo/logo.svg' %}" class="design-system-logo" alt="logo" />
+
+  </a>
+{% endblock not_brand %}
+
+{% block not_service_title %}
+  <a href="{{ home_url }}" title="Accueil — {{ SITE_CONFIG.site_title }}">
+    <p class="design-system-header__service-title">
+      {{ SITE_CONFIG.site_title }}
+      {% if SITE_CONFIG.beta_tag %}
+        <span class="design-system-badge design-system-badge--sm design-system-badge--green-emeraude">BETA</span>
+      {% endif %}
+    </p>
+  </a>
+{% endblock not_service_title %}
+
+{% block not_header_tools %}
+                <ul class="design-system-btns-group">
+                  <li>
+                    <button class="design-system-btn--display design-system-btn" aria-controls="design-system-theme-modal"
+                      data-design-system-opened="false">
+                      {% translate "Display settings" %}
+                    </button>
+                  </li>
+                  <li>
+                    {% include "django_design_system/blocks/language_selector.html" %}
+                  </li>
+                </ul>
+{% endblock not_header_tools %}
+
+
+  <div class="design-system-header__navbar">
+{# Leave burger_menu and main_menu blocks empty if the main menu is not used #}
+{% block not_burger_menu %}
+  {% translate "Search" as search_label %}
+    <button class="design-system-btn--search design-system-btn"
+            data-design-system-opened="false"
+            aria-controls="modal-search"
+            id="design-system-btn-search-mobile"
+            title="{{ search_label }}"
+            data-design-system-js-modal-button="true">
+      {{ search_label }}
+    </button>
+    {% translate "Menu" as menu_label %}
+    <button class="design-system-btn--menu design-system-btn"
+            data-design-system-opened="false"
+            aria-controls="design-system-menu-mobile"
+            id="design-system-btn-menu-mobile"
+            title="{{ menu_label }}"
+            data-design-system-js-modal-button="true">
+      {{ menu_label }}
+    </button>
+{% endblock not_burger_menu %}
+  </div>
+
+{% block not_main_menu %}
+  {% include "django_design_system/main_menu.html" %}
+{% endblock not_main_menu %}
+
+{% block not_header_search %}
+  {% translate "Search" as search_label %}
+  <div class="design-system-header__search design-system-modal" id="modal-search">
+    <div class="design-system-container design-system-container-lg--fluid">
+      {% translate "Close" as close_label %}
+      <button class="design-system-btn--close design-system-btn"
+              aria-controls="modal-search"
+              title="{{ close_label }}">
+        {{ close_label }}
+      </button>
+      <form action="{% url 'wagtail_design_system_search' %}" method="get">
+        <div class="design-system-search-bar" id="search-bar" role="search">
+          <label class="design-system-label" for="search-bar-input">
+            {{ search_label }}
+          </label>
+          <input class="design-system-input"
+                 placeholder="{{ search_label }}"
+                 type="search"
+                 id="query"
+                 name="q">
+          <button class="design-system-btn" title="{{ search_label }}">
+            {{ search_label }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock not_header_search %}

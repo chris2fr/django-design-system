@@ -1,0 +1,199 @@
+{% extends "django_design_system/base.html" %}
+{% load static design_system_tags %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'design-system/css/design-system-code.css' %}">
+  <style>
+    .example-textarea {
+      background: var(--background-alt-grey);
+      border: 1px solid var(--border-default-grey);
+      color: var(--text-default-grey);
+      padding: 1rem;
+      margin: 2rem 0;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+p code, li code {
+  background: var(--background-alt-grey);
+  padding: 0.2em;
+}
+  </style>
+{% endblock extra_css %}
+
+{% block content %}
+  <div class="design-system-grid-row design-system-grid-row--gutters design-system-b__two-col">
+    <div class="design-system-col-12 design-system-col-md-4">
+      {% design_system_sidemenu side_menu extra_classes="" %}
+    </div>
+    <div class="design-system-col-12 design-system-col-md-8 design-system-py-2w">
+      <h1>
+        {{ title }}
+      </h1>
+      <ul>
+        {% if doc_url %}
+          <li>
+            {% design_system_link url=doc_url label="Voir la page de documentation du composant sur le Système de Design de l’État" is_external=True extra_classes="design-system-link--lg" %}
+          </li>
+        {% endif %}
+        {% if example_url %}
+          <li>
+            {% design_system_link url=example_url label="Voir la page d’exemple du Système de Design de l’État" is_external=True extra_classes="design-system-link--lg" %}
+          </li>
+        {% endif %}
+      </ul>
+      <h2>
+        Documentation du tag
+      </h2>
+      {{ tag_comment|safe }}
+      {% if sample_data %}
+        <h2>
+          Exemples
+        </h2>
+        {% for sample_data_item in sample_data %}
+          <h3 class="design-system-mt-3w">
+            Données
+          </h3>
+          <div class="design-system-my-2w">
+            {# djlint:off #}
+            {% with sample_data_item|pprint as raw_sample_code %}
+              {# djlint:off #}
+              {% with '<pre class="design-system-code">'|concatenate:raw_sample_code|concatenate:"</pre>" as sample_data_code %}
+                {% design_system_accordion title="Données d’exemple" content=sample_data_code %}
+              {% endwith %}
+            {% endwith %}
+            {# djlint:on #}
+          </div>
+          <h3>
+            Résultat
+          </h3>
+          {% if tag_name == "accordion" %}
+            {% design_system_accordion sample_data_item %}
+          {% elif tag_name == "accordion_group" %}
+            {% design_system_accordion_group sample_data_item %}
+          {% elif tag_name == "alert" %}
+            {% design_system_alert sample_data_item %}
+          {% elif tag_name == "badge" %}
+            {% design_system_badge sample_data_item %}
+          {% elif tag_name == "badge_group" %}
+            {% design_system_badge_group sample_data_item %}
+          {% elif tag_name == "button" %}
+            {% design_system_button sample_data_item %}
+          {% elif tag_name == "button_group" %}
+            {% design_system_button_group sample_data_item %}
+          {% elif tag_name == "callout" %}
+            {% design_system_callout sample_data_item %}
+          {% elif tag_name == "card" %}
+            {% if not "horizontal" in sample_data_item.extra_classes %}
+              <div class="design-system-grid-row design-system-grid-row--gutters">
+                <div class="design-system-col-12 design-system-col-md-4">
+                  {% design_system_card sample_data_item %}
+                </div>
+              </div>
+            {% else %}
+              <div class="design-system-grid-row design-system-grid-row--gutters">
+                {% design_system_card sample_data_item %}
+              </div>
+            {% endif %}
+          {% elif tag_name == "consent" %}
+            <p>
+              Voir en bas de votre écran.
+            </p>
+            {% design_system_consent sample_data_item %}
+          {% elif tag_name == "content" %}
+            {% design_system_content sample_data_item %}
+          {% elif tag_name == "django_messages" %}
+            {% design_system_django_messages sample_data_item %}
+          {% elif tag_name == "france_connect" %}
+            {% design_system_france_connect sample_data_item %}
+          {% elif tag_name == "highlight" %}
+            {% design_system_highlight sample_data_item %}
+          {% elif tag_name == "input" %}
+            {% design_system_input sample_data_item %}
+          {% elif tag_name == "link" %}
+            {% design_system_link sample_data_item %}
+          {% elif tag_name == "notice" %}
+            {% design_system_notice sample_data_item %}
+          {% elif tag_name == "quote" %}
+            {% design_system_quote sample_data_item %}
+          {% elif tag_name == "select" %}
+            {% design_system_select sample_data_item %}
+          {% elif tag_name == "sidemenu" %}
+            {% design_system_sidemenu sample_data_item %}
+          {% elif tag_name == "skiplinks" %}
+            {% design_system_skiplinks sample_data_item %}
+          {% elif tag_name == "stepper" %}
+            {% design_system_stepper sample_data_item %}
+          {% elif tag_name == "summary" %}
+            {% design_system_summary sample_data_item %}
+          {% elif tag_name == "table" %}
+            {% design_system_table sample_data_item %}
+          {% elif tag_name == "tag" %}
+            {% design_system_tag sample_data_item %}
+          {% elif tag_name == "tile" %}
+            <div class="design-system-grid-row design-system-grid-row--gutters">
+              <div class="design-system-col-12">
+                {% design_system_tile sample_data_item %}
+              </div>
+            </div>
+          {% elif tag_name == "toggle" %}
+            {% design_system_toggle sample_data_item %}
+          {% elif tag_name == "tooltip" %}
+            {% design_system_tooltip sample_data_item %}
+          {% elif tag_name == "transcription" %}
+            {% design_system_transcription sample_data_item %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <h2>
+          Résultat
+        </h2>
+        {% if tag_name == "breadcrumb" %}
+          {% design_system_breadcrumb %}
+        {% elif tag_name == "css" %}
+          <label for="example-textarea">
+            Code source :
+          </label>
+          <textarea id="example-textarea"
+                    readonly
+                    rows="8"
+                    cols="90"
+                    class="example-textarea">{% design_system_css %}</textarea>
+          <br />
+        {% elif tag_name == "favicon" %}
+          <label for="example-textarea">
+            Code source :
+          </label>
+          <textarea id="example-textarea"
+                    readonly
+                    rows="14"
+                    cols="90"
+                    class="example-textarea">{% design_system_favicon %}</textarea>
+          <br />
+        {% elif tag_name == "js" %}
+          <label for="example-textarea">
+            Code source :
+          </label>
+          <textarea id="example-textarea"
+                    readonly
+                    rows="6"
+                    cols="90"
+                    class="example-textarea">{% design_system_js %}</textarea>
+          <br />
+        {% elif tag_name == "pagination" %}
+          {% design_system_pagination page_obj %}
+        {% elif tag_name == "theme_modale" %}
+          <label for="example-textarea">
+            Code source :
+          </label>
+          <textarea id="example-textarea"
+                    readonly
+                    rows="62"
+                    cols="120"
+                    class="example-textarea">{% design_system_theme_modale %}</textarea>
+          <br />
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+  <br />
+{% endblock content %}

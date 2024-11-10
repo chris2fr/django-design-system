@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -19,3 +19,4 @@ api.button = {
 
 api.internals.register(api.button.ButtonSelector.EQUISIZED_BUTTON, api.core.Equisized);
 api.internals.register(api.button.ButtonSelector.EQUISIZED_GROUP, api.core.EquisizedsGroup);
+//# sourceMappingURL=button.module.js.map

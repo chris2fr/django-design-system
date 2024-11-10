@@ -9,13 +9,12 @@ pip install django-design-system
 ```
 ### Pour Django 5.0+
 
-- Ajoutez `widget_tweaks` et `design_system` à `INSTALLED_APPS` dans le `settings.py` avant la ou les app avec laquelle vous voulez l’utiliser :
-
+- Ajoutez `widget_tweaks` et `django_design_system` à `INSTALLED_APPS` dans le `settings.py` avant la ou les app avec laquelle vous voulez l’utiliser :
 ```{ .python }
 INSTALLED_APPS = [
     ...
     "widget_tweaks",
-    "design_system",
+    "django_design_system",
     <votre_app>
 ]
 ```
@@ -28,7 +27,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS = [
     ...
     "widget_tweaks",
-    "design_system",
+    "django_design_system",
     "django.forms",
     <votre_app>
 ]

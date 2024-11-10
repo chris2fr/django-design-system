@@ -12,12 +12,6 @@
   mask-image: url("../../../icons/editor/code-view.svg");
 }
 
-.design-system-icon-font-size::before,
-.design-system-icon-font-size::after {
-  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
-  mask-image: url("../../../icons/editor/font-size.svg");
-}
-
 .design-system-icon-bold::before,
 .design-system-icon-bold::after {
   -webkit-mask-image: url("../../../icons/editor/design-system--bold.svg");
@@ -40,6 +34,12 @@
 .design-system-icon-quote-line::after {
   -webkit-mask-image: url("../../../icons/editor/design-system--quote-line.svg");
   mask-image: url("../../../icons/editor/design-system--quote-line.svg");
+}
+
+.design-system-icon-font-size::before,
+.design-system-icon-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
 }
 
 .design-system-icon-h-1::before,
@@ -156,12 +156,6 @@
   mask-image: url("../../../icons/editor/translate-2.svg");
 }
 
-.design-system-fi-font-size::before,
-.design-system-fi-font-size::after {
-  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
-  mask-image: url("../../../icons/editor/font-size.svg");
-}
-
 .design-system-fi-bold::before,
 .design-system-fi-bold::after {
   -webkit-mask-image: url("../../../icons/editor/design-system--bold.svg");
@@ -172,6 +166,12 @@
 .design-system-fi-highlight::after {
   -webkit-mask-image: url("../../../icons/editor/design-system--highlight.svg");
   mask-image: url("../../../icons/editor/design-system--highlight.svg");
+}
+
+.design-system-fi-font-size::before,
+.design-system-fi-font-size::after {
+  -webkit-mask-image: url("../../../icons/editor/font-size.svg");
+  mask-image: url("../../../icons/editor/font-size.svg");
 }
 
 .design-system-fi-italic::before,

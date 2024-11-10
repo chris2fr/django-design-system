@@ -3,7 +3,7 @@
 const config = {
   prefix: 'design-system',
   namespace: 'design-system',
-  version: '11.2.1'
+  version: '0.0.3'
 };
 
 const api = window[config.namespace];
@@ -35,3 +35,4 @@ api.card = {
 
 api.internals.register(api.card.CardSelector.DOWNLOAD, api.card.CardDownload);
 api.internals.register(api.card.CardSelector.DOWNLOAD_DETAIL, api.core.AssessDetail);
+//# sourceMappingURL=card.module.js.map
