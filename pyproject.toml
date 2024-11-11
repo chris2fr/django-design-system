@@ -3,14 +3,11 @@ authors = ["Chris Mann <chris@mann.fr>"]
 description = "Render Design System DESIGN_SYSTEM into a generic Django app"
 license = "MIT"
 name = "django-design-system"
-version = "0.0.3"
+version = "0.0.1"
 classifiers = [
-  "Development Status :: 5 - Production/Stable",
+  "Development Status :: 4 - Beta",
   "Environment :: Web Environment",
   "Framework :: Django",
-  "Framework :: Django :: 3.2",
-  "Framework :: Django :: 4.0",
-  "Framework :: Django :: 4.1",
   "Framework :: Django :: 4.2",
   "Framework :: Django :: 5.0",
   "Operating System :: OS Independent",
@@ -18,18 +15,18 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
   "Topic :: Software Development :: Libraries",
   "Topic :: Utilities",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Framework :: Wagtail",
+  "Framework :: Wagtail :: 5",
+  "Framework :: Wagtail :: 6",
 ]
-documentation = "https://"
-homepage = "https://github.com/chris2fr/django-cefran"
-keywords = ["django"]
+documentation = "https://github.com/chris2fr/django-design-system"
+homepage = "https://github.com/chris2fr/django-design-system"
+keywords = ["django", "design-system"]
 readme = "README.rst"
-repository = "https://github.com/chris2fr/django-cefran"
+repository = "https://github.com/chris2fr/django-design-system"
 
 packages = [
   {include = "django_design_system"},
