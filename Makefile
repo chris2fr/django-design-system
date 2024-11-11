@@ -54,3 +54,8 @@ export_static:
 	poetry run python manage.py import_sample_data
 	poetry run python manage.py distill-local docs --force --collectstatic
 	poetry run python manage.py export_json
+
+build_packages:
+	python -m build --sdist .
+	python -m build --wheel .
+
