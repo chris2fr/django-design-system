@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-design-system"
-version = "0.0.1"
+version = "0.0.3-alpha"
 authors = ["Chris Mann <chris@mann.fr>"]
 description = "Render Design System DESIGN_SYSTEM into a generic Django app"
 classifiers = [
@@ -21,16 +21,16 @@ classifiers = [
   "Framework :: Wagtail :: 5",
   "Framework :: Wagtail :: 6",
 ]
-homepage = "https://github.com/chris2fr/django-design-system"
-keywords = ["django",]
-readme = "README.md"
-repository = "https://github.com/chris2fr/django-design-system"
+  homepage = "https://github.com/chris2fr/django-design-system"
+  keywords = ["django",]
+  readme = "README.md"
+  repository = "https://github.com/chris2fr/django-design-system"
 
 packages = [
   {include = "django_design_system"},
 ]
 
-include = ["LICENSE", "README.md", "django_django_design_system/static/design-system/dist/*/*.*"]
+include = ["LICENSE", "README.md", "django_design_system/static/design-system/dist/*/*.*"]
 
 [tool.poetry.dependencies]
 Django = ">3.2.5"

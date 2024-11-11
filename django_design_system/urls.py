@@ -3,7 +3,6 @@ from django.utils.translation import gettext_lazy as _
 from django_design_system import views
 from django_design_system.design_system_components import ALL_TAGS
 from django_distill import distill_path
-from config import settings
 
 def get_all_tags():
     for key in ALL_TAGS:
@@ -115,7 +114,3 @@ urlpatterns = [
         distill_file="django_design_system/search/index.html",
     ),
 ]
-if settings.DEBUG:
-    urlpatterns += [
-        path("__debug__/", include("debug_toolbar.urls")),
-    ]
